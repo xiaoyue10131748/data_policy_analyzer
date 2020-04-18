@@ -11,12 +11,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
+We use seleimun, webdriver, scrapy framework to dynamic crawler the sentence in each Tos url. 
+1. install seleimun
 ```
-Give examples
+pip install selenium
 ```
-
+2. install webdriver. we have already download the webdriver for chrome Version 81.0.4044.113. If you chrome version is inconsistent with this version, please re-download the webdriver for the right verion. Please check [here]https://chromedriver.chromium.org/downloads 
+```
+pip install selenium
+```
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running

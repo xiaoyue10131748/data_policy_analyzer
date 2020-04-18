@@ -28,14 +28,15 @@ pip install selenium
 
 ## usage
 
-Moudle one: crawl all the text from website and split them into sentence.
+Here we will explain how to run the each module for this system.
 
-### Break down into end to end tests
+### Moudle one: web crawler 
 
-Explain what these tests test and why
+The crawler will extract all the text from website and split them into sentence. Put urls you want to crawl in the file "domainList_developer.txt" and specify which folder you want to store the crawl results. Each url will generate a csv file that contains sentences of the webpage.
 
 ```
-Give an example
+python3 execute.py -i domainList_developer.txt -o /Users/huthvincent/Desktop/
+
 ```
 
 ### And coding style tests

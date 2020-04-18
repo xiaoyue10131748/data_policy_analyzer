@@ -20,7 +20,7 @@ pip install selenium
 ```
 DRIVER_BIN = "../webdriver/chromedriver"
 ```
-3.install scrapy: It is an open source and collaborative framework for extracting the data you need from websites in a fast, simple, yet extensible way.
+3. install scrapy: It is an open source and collaborative framework for extracting the data you need from websites in a fast, simple, yet extensible way.
 ``` 
 pip install selenium
 ``` 

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from filterSentenceByVerb.get_verb_entities import *
 import sys
 import getopt

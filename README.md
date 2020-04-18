@@ -1,8 +1,6 @@
-## data_policy_analyzer
-The goal ofData Policy Analyzer(DPA) is to extract third-party  data  sharing  policies  from  an  SDK  ToS
 
-## Project Title
-data_policy_analyzer
+## Data_policy_analyzer
+The goal ofData Policy Analyzer(DPA) is to extract third-party  data  sharing  policies  from  an  SDK  ToS
 
 ## Getting Started
 
@@ -38,13 +36,13 @@ python3 execute.py -i domainList_developer.txt -o /Users/huthvincent/Desktop/
 
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+### Moudle two: customized ner model
+The ner model is a sensitive data extracter. You can input a sentence as a paramater, and it will show you the sentensive data entity in the sentence. 
 
 ```
-Give an example
+python3 extract_sensitive_data.py -i "Do not store Twitter passwords."
 ```
+The output is {'Twitter passwords'}
 
 ## Deployment
 

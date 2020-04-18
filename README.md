@@ -28,7 +28,7 @@ pip install selenium
 
 ## usage
 
-Explain how to run the automated tests for this system
+Moudle one: crawl all the text from website and split them into sentence.
 
 ### Break down into end to end tests
 

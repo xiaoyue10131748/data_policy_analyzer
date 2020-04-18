@@ -1,0 +1,2669 @@
+The	O	DT	DT	NP	following	1	The	the	 
+following	O	JJ	JJ	NP	Snap	1	follow	follow	The
+Snap	O	NNP	NNP	NP	Developer	1	Snap	snap	following
+Developer	O	NNP	NNP	NP	Terms	1	Developer	develop	Snap
+Terms	O	NNS	NNS	NP	 	1	Terms	term	Developer
+of	O	IN	IN	PP	 	0	of	of	 
+Service	O	NNP	NNP	NP	 	0	Service	serv	 
+“Terms”,	O	NNP	NNP	NP	Terms	0	“Terms”,	“terms”,	 
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+a	O	DT	DT	NP	legal	1	a	a	 
+legal	O	JJ	JJ	NP	legal	1	legal	leg	 
+document	O	NN	NN	NP	 	1	document	docu	legal
+you	O	PRP	PRP	NP	 	0	you	you	 
+must	O	MD	MD	VP	 	0	must	must	 
+follow	O	VB	VB	VP	 	0	follow	follow	 
+and	O	CC	CC	VP	 	0	and	and	 
+comply	O	VB	VB	VP	 	0	comply	comply	 
+with	O	IN	IN	PP	 	0	with	with	 
+when	O	WRB	WRB	WHADVP	 	0	when	when	 
+accessing	O	VBG	VBG	VP	 	0	access	access	 
+or	O	CC	CC	VP	 	0	or	or	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+as	O	RB	RB	SBAR	 	0	as	as	 
+defined	O	JJ	JJ	VP	 	0	define	defin	 
+below,.	O	NN	NN	ADVP	 	0	below,.	below,.	 
+ 	 	 	 	 	 	 	 	 	 
+The	O	DT	DT	NP	Snap	1	The	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	The
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+are	O	VBP	VBP	VP	 	0	be	ar	 
+provided	O	VBN	VBN	VP	 	0	provide	provid	 
+to	O	TO	TO	PP	 	0	to	to	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+by	O	IN	IN	VP	 	0	by	by	 
+Snap	O	NNP	NNP	NP	Inc.	1	Snap	snap	 
+Inc.,	O	NNP	NNP	NP	 	1	Inc.,	inc.,	Snap
+a	O	DT	DT	NP	Delaware	1	a	a	 
+Delaware	O	NNP	NNP	NP	Delaware	1	Delaware	delaw	 
+corporation,	O	NN	NN	NP	 	1	corporation,	corporation,	Delaware
+and	O	CC	CC	VP	 	0	and	and	 
+its	O	PRP$	PRP$	NP	affiliates	1	its	it	 
+affiliates	O	NNS	NNS	NP	 	1	affiliate	affy	its
+“Snap”,.	O	VBP	VBP	VP	 	0	“Snap”,.	“snap”,.	 
+As	O	IN	IN	SBAR	 	0	As	as	 
+used	O	VBN	VBN	VP	 	0	use	us	 
+in	O	IN	IN	PP	 	0	in	in	 
+these	O	DT	DT	NP	Terms	1	these	thes	 
+Terms,	O	NNP	NNP	VP	 	0	Terms,	terms,	 
+“you”	O	NN	NN	VP	 	0	“you”	“you”	 
+or	O	CC	CC	VP	 	0	or	or	 
+“your”	O	NN	NN	VP	 	0	“your”	“your”	 
+means	O	VBZ	VBZ	VP	 	0	mean	mean	 
+the	O	DT	DT	NP	Terms	1	the	the	 
+party	O	NN	NN	NP	 	1	party	party	the
+who	O	WP	WP	WHNP	 	0	who	who	 
+clicks	O	VBZ	VBZ	VP	 	0	click	click	 
+the	O	DT	DT	NP	Terms	1	the	the	 
+“Accept”	O	JJ	JJ	S	 	0	“Accept”	“accept”	 
+button	O	NN	NN	NP	 	1	button	button	”
+or	O	CC	CC	VP	 	0	or	or	 
+accesses	O	NNS	NNS	VP	 	0	access	access	 
+or	O	CC	CC	VP	 	0	or	or	 
+uses	O	VBZ	VBZ	VP	 	0	use	us	 
+the	O	DT	DT	NP	party	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+,	O	,	,	SBAR	 	0	,	,	 
+and	O	CC	CC	SBAR	 	0	and	and	 
+any	O	DT	DT	NP	 	0	any	any	 
+company,	O	JJ	JJ	SBAR	 	0	company,	company,	 
+entity,	O	NN	NN	SBAR	 	0	entity,	entity,	 
+or	O	CC	CC	SBAR	 	0	or	or	 
+organization	O	NN	NN	SBAR	 	0	organization	org	 
+on	O	IN	IN	NP	 	1	on	on	”
+whose	O	WP$	WP$	WHNP	 	0	whose	whos	 
+behalf	O	NN	NN	WHNP	 	0	behalf	behalf	 
+that	O	IN	IN	NP	party	1	that	that	 
+party	O	NN	NN	NP	 	1	party	party	the
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+acting.	O	JJ	JJ	VP	 	0	acting.	acting.	 
+ 	 	 	 	 	 	 	 	 	 
+If	O	IN	IN	SBAR	 	0	If	if	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+are	O	VBP	VBP	VP	 	0	be	ar	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+on	O	IN	IN	PP	 	0	on	on	 
+behalf	O	NN	NN	NP	 	0	behalf	behalf	 
+of	O	IN	IN	PP	 	0	of	of	 
+any	O	DT	DT	NP	 	0	any	any	 
+company,	O	JJ	JJ	NX	,	1	company,	company,	 
+entity,	O	NN	NN	NX	entity	1	entity,	entity,	company
+or	O	CC	CC	NX	organization	1	or	or	,
+organization,	O	NN	NN	NX	or	1	organization,	organization,	entity
+you	O	PRP	PRP	NP	 	0	you	you	 
+represent	O	VBP	VBP	VP	 	0	represent	repres	 
+and	O	CC	CC	VP	 	0	and	and	 
+warrant	O	VBP	VBP	VP	 	0	warrant	war	 
+that	O	IN	IN	SBAR	 	0	that	that	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+have	O	VBP	VBP	VP	 	0	have	hav	 
+authority	O	VBN	VBN	NP	 	0	authority	auth	 
+to	O	TO	TO	VP	 	0	to	to	 
+bind	O	VB	VB	VP	 	0	bind	bind	 
+such	O	JJ	JJ	NP	company	1	such	such	 
+company,	O	JJ	JJ	NP	,	1	company,	company,	such
+entity,	O	NN	NN	NP	entity	1	entity,	entity,	company
+or	O	CC	CC	NP	 	0	or	or	 
+organization,	O	NN	NN	NP	entity	1	organization,	organization,	company
+as	O	IN	IN	PP	 	0	as	as	 
+applicable.	O	NN	NN	ADJP	 	0	applicable.	applicable.	 
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+may	O	MD	MD	VP	 	0	may	may	 
+not	O	RB	RB	VP	 	0	not	not	 
+use	O	VB	VB	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+and	O	CC	CC	S	 	0	and	and	 
+may	O	MD	MD	S	 	0	may	may	 
+not	O	RB	RB	S	 	0	not	not	 
+accept	O	VB	VB	S	 	0	accept	acceiv	 
+the	O	DT	DT	NP	Terms	1	the	the	 
+Terms	O	NNS	NNS	NP	 	1	Terms	term	the
+if	O	IN	IN	S	 	0	if	if	 
+i,	O	NN	NN	NP	 	0	i,	i,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+are	O	VBP	VBP	VP	 	0	be	ar	 
+not	O	RB	RB	VP	 	0	not	not	 
+of	O	IN	IN	PP	 	0	of	of	 
+legal	O	JJ	JJ	NP	age	1	legal	leg	 
+age	O	NN	NN	NP	 	1	age	ag	legal
+to	O	TO	TO	VP	 	0	to	to	 
+form	O	VB	VB	VP	 	0	form	form	 
+a	O	DT	DT	NP	binding	1	a	a	 
+binding	O	NN	NN	NP	contract	1	bind	bind	a
+contract	O	NN	NN	NP	 	1	contract	contract	binding
+with	O	IN	IN	PP	 	0	with	with	 
+Snap,	O	NNP	NNP	NP	 	0	Snap,	snap,	 
+or	O	CC	CC	S	 	0	or	or	 
+ii,	O	VB	VB	S	 	0	ii,	ii,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+are	O	VBP	VBP	VP	 	0	be	ar	 
+a	O	DT	DT	VP	 	0	a	a	 
+person	O	NN	NN	NP	 	1	person	person	a
+barred	O	VBN	VBN	NP	person	1	bar	bar	 
+from	O	IN	IN	VP	 	0	from	from	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+or	O	CC	CC	VP	 	0	or	or	 
+receiving	O	VBG	VBG	VP	 	0	receive	receiv	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+under	O	IN	IN	PP	 	0	under	und	 
+applicable	O	JJ	JJ	NP	laws	1	applicable	appl	 
+laws	O	NNS	NNS	NP	 	1	laws	law	applicable
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	United	1	the	the	 
+United	O	NNP	NNP	NP	States	1	United	unit	the
+States	O	NNPS	NNPS	NP	 	1	States	stat	United
+or	O	CC	CC	NP	 	0	or	or	 
+other	O	JJ	JJ	NP	United	1	other	oth	 
+countries	O	NNS	NNS	NP	 	1	countries	country	other
+including	O	VBG	VBG	PP	 	0	include	includ	 
+the	O	DT	DT	NP	countries	1	the	the	 
+country	O	NN	NN	NP	 	1	country	country	the
+in	O	IN	IN	PP	 	0	in	in	 
+which	O	WDT	WDT	WHNP	 	0	which	which	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+are	O	VBP	VBP	VP	 	0	be	ar	 
+a	O	DT	DT	VP	 	0	a	a	 
+resident	O	NN	NN	NP	 	1	resident	resid	a
+or	O	CC	CC	NP	 	0	or	or	 
+from	O	IN	IN	WHPP	 	0	from	from	 
+which	O	WDT	WDT	WHNP	 	0	which	which	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+use	O	VBP	VBP	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	B-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+are	O	VBP	VBP	VP	 	0	be	ar	 
+responsible	O	JJ	JJ	ADJP	 	0	responsible	respons	 
+for	O	IN	IN	PP	 	0	for	for	 
+i,	O	JJ	JJ	NP	 	0	i,	i,	 
+ensuring	O	VBG	VBG	VP	 	0	ensure	ens	 
+the	O	DT	DT	NP	confidentiality	1	the	the	 
+confidentiality	O	NN	NN	NP	 	1	confidentiality	confid	the
+of	O	IN	IN	PP	 	0	of	of	 
+your	O	PRP$	PRP$	NP	 	0	your	yo	 
+username	B-SEC	NN	NN	NX	 	0	username	usernam	 
+,	O	,	,	NP	account	0	,	,	 
+account	B-SEC	NN	NN	NP	,	0	account	account	,
+,	O	,	,	NP	and	0	,	,	account
+and	O	CC	CC	NP	password	0	and	and	,
+password	B-SEC	NN	NN	NP	 	0	password	password	and
+,	O	,	,	NP	and	0	,	,	 
+and	O	CC	CC	NP	 	0	and	and	,
+ii,	O	VB	VB	NP	 	0	ii,	ii,	 
+all	O	DT	DT	NP	acts	1	all	al	 
+acts	O	NNS	NNS	NP	or	1	act	act	all
+or	O	CC	CC	NP	omissions	1	or	or	acts
+omissions	O	NNS	NNS	NP	 	1	omissions	omit	or
+that	O	IN	IN	WHNP	 	0	that	that	 
+occur	O	VBP	VBP	VP	 	0	occur	occ	 
+under	O	IN	IN	PP	 	0	under	und	 
+your	O	PRP$	PRP$	NP	account	1	your	yo	 
+account	B-SEC	NN	NN	NP	 	1	account	account	your
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+To	O	TO	TO	VP	 	0	To	to	 
+access	O	NN	NN	VP	 	0	access	access	 
+and	O	CC	CC	VP	 	0	and	and	 
+use	O	VB	VB	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNP	NNP	NP	 	1	Services	serv	API
+you	O	PRP	PRP	NP	 	0	you	you	 
+may	O	MD	MD	VP	 	0	may	may	 
+be	O	VB	VB	VP	 	0	be	be	 
+required	O	VBN	VBN	VP	 	0	require	requir	 
+to	O	TO	TO	VP	 	0	to	to	 
+create	O	VB	VB	VP	 	0	create	cre	 
+a	O	DT	DT	NP	username	1	a	a	 
+username	B-SEC	JJ	JJ	NP	and	1	username	usernam	a
+and	O	CC	CC	NP	password	1	and	and	username
+password	I-SEC	NN	NN	NP	 	1	password	password	and
+and	O	CC	CC	VP	 	0	and	and	 
+provide	O	VB	VB	VP	 	0	provide	provid	 
+certain	O	JJ	JJ	NP	information	1	certain	certain	 
+information	B-SEC	NN	NN	NP	 	1	information	inform	certain
+such	O	JJ	JJ	PP	 	0	such	such	 
+as	O	IN	IN	PP	 	0	as	as	 
+contact	B-SEC	NN	NN	NP	details	1	contact	contact	 
+details	I-SEC	NNS	NNS	NP	 	1	detail	detail	contact
+and	O	CC	CC	NP	 	0	and	and	 
+an	O	DT	DT	NP	email	1	an	an	 
+email	B-SEC	NN	NN	NP	address	1	email	email	an
+address	I-SEC	NN	NN	NP	 	1	address	address	email
+,	O	,	,	NP	 	0	,	,	 
+as	O	IN	IN	PP	 	0	as	as	 
+part	O	NN	NN	NP	 	0	part	part	 
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	account	1	the	the	 
+account	O	NN	NN	NP	registration	1	account	account	the
+registration	O	NN	NN	NP	process	1	registration	reg	account
+process,	O	NN	NN	NP	 	1	process,	process,	registration
+or	O	CC	CC	VP	 	0	or	or	 
+as	O	IN	IN	PP	 	0	as	as	 
+part	O	NN	NN	NP	 	0	part	part	 
+of	O	IN	IN	PP	 	0	of	of	 
+your	O	PRP$	PRP$	NP	continued	1	your	yo	 
+continued	O	JJ	JJ	NP	access	1	continue	continu	your
+access	O	NN	NN	NP	 	1	access	access	continued
+to,	O	NN	NN	NP	,	0	to,	to,	 
+or	O	CC	CC	NP	use	0	or	or	,
+use	O	NN	NN	NP	of	0	use	us	or
+of,	O	IN	IN	NP	or	0	of,	of,	to
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+and	O	CC	CC	VP	 	0	and	and	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+agree	O	VBP	VBP	VP	 	0	agree	agr	 
+to	O	TO	TO	VP	 	0	to	to	 
+provide	O	VB	VB	VP	 	0	provide	provid	 
+such	O	JJ	JJ	NP	information	1	such	such	 
+information	B-SEC	NN	NN	NP	 	1	information	inform	such
+when	O	WRB	WRB	WHADVP	 	0	when	when	 
+requested	O	VBN	VBN	VP	 	0	request	request	 
+by	O	IN	IN	PP	 	0	by	by	 
+Snap.	O	NNP	NNP	NP	 	0	Snap.	snap.	 
+ 	 	 	 	 	 	 	 	 	 
+Access	O	NNP	NNP	NP	and	1	Access	access	 
+and	O	CC	CC	NP	use	1	and	and	Access
+use	O	NN	NN	NP	 	1	use	us	and
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNP	NNP	NP	 	1	Services	serv	API
+also	O	RB	RB	ADVP	 	0	also	also	 
+requires	O	VBZ	VBZ	VP	 	0	require	requir	 
+your	O	PRP$	PRP$	NP	compliance	1	your	yo	 
+compliance	O	NN	NN	NP	 	1	compliance	comply	your
+with	O	IN	IN	VP	 	0	with	with	 
+each	O	DT	DT	NP	 	0	each	each	 
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	following	1	the	the	 
+following	O	VBG	VBG	NP	Snap	1	follow	follow	the
+Snap	O	NNP	NNP	NP	policies	1	Snap	snap	following
+policies,	O	NN	NN	NP	,	1	policies,	policies,	Snap
+terms,	O	NN	NN	NP	terms	1	terms,	terms,	policies
+and	O	CC	CC	NP	guidelines	1	and	and	,
+guidelines,	O	NN	NN	NP	and	1	guidelines,	guidelines,	terms
+as	O	IN	IN	SBAR	 	0	as	as	 
+applicable	O	JJ	JJ	ADJP	 	0	applicable	appl	 
+collectively,	O	NN	NN	VP	 	0	collectively,	collectively,	 
+the	O	DT	DT	NP	 	0	the	the	 
+“Snap	O	NNP	NNP	NP	 	0	“Snap	“snap	 
+Policies”,:i,	O	NNP	NNP	VP	 	0	Policies”,:i,	policies”,:i,	 
+Snap	O	NNP	NNP	NP	Policies”,:i	1	Snap	snap	 
+Terms	O	NNS	NNS	NP	 	1	Terms	term	Snap
+of	O	IN	IN	PP	 	0	of	of	 
+Service;ii,	O	NNP	NNP	VP	 	0	Service;ii,	service;ii,	 
+Snap	O	NNP	NNP	NP	Policies”,:i	1	Snap	snap	 
+Privacy	O	NNP	NNP	NP	Policy;iii	1	Privacy	priv	Snap
+Policy;iii,	O	NNP	NNP	VP	 	0	Policy;iii,	policy;iii,	 
+Snap	O	NNP	NNP	NP	Terms	1	Snap	snap	 
+Community	O	NNP	NNP	NP	Guidelines;iv	1	Community	commun	Snap
+Guidelines;iv,	O	NNP	NNP	VP	 	0	Guidelines;iv,	guidelines;iv,	 
+Snap	O	NNP	NNP	NP	Privacy	1	Snap	snap	 
+Brand	O	NNP	NNP	NP	Guidelines	1	Brand	brand	Snap
+Guidelines;	O	NNP	NNP	NP	 	1	Guidelines;	guidelines;	Community
+and	O	CC	CC	NP	Guidelines	1	and	and	Snap
+v,	O	VB	VB	NP	 	0	v,	v,	 
+any	O	DT	DT	NP	Supplemental	1	any	any	 
+Supplemental	O	JJ	JJ	NP	Terms	1	Supplemental	suppl	any
+Terms	O	NNS	NNS	NP	 	1	Terms	term	Snap
+as	O	IN	IN	SBAR	 	0	as	as	 
+defined	O	VBN	VBN	VP	 	0	define	defin	 
+below,.	O	NN	NN	VP	 	0	below,.	below,.	 
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+may	O	MD	MD	VP	 	0	may	may	 
+also	O	RB	RB	ADVP	 	0	also	also	 
+be	O	VB	VB	VP	 	0	be	be	 
+subject	O	JJ	JJ	ADJP	 	0	subject	subject	 
+to	O	TO	TO	PP	 	0	to	to	 
+additional	O	JJ	JJ	NP	terms	1	additional	addit	 
+terms,	O	NN	NN	NP	,	1	terms,	terms,	additional
+guidelines,	O	NN	NN	NP	guidelines	1	guidelines,	guidelines,	terms
+or	O	CC	CC	NP	policies	1	or	or	,
+policies	O	NNS	NNS	NP	 	1	policies	policy	or
+that	O	WDT	WDT	WHNP	 	0	that	that	 
+apply	O	VBP	VBP	VP	 	0	apply	apply	 
+to	O	TO	TO	PP	 	0	to	to	 
+your	O	PRP$	PRP$	NP	use	1	your	yo	 
+use	O	NN	NN	NP	 	1	use	us	your
+of	O	IN	IN	PP	 	0	of	of	 
+certain	O	JJ	JJ	NP	Snap	0	certain	certain	 
+Snap	B-SEC	NNP	NNP	NP	API	0	Snap	snap	certain
+API	I-SEC	NNP	NNP	NP	Services	0	API	ap	Snap
+Services	I-SEC	NNP	NNP	NP	“	0	Services	serv	API
+“Supplemental	O	NNP	NNP	NP	 	0	“Supplemental	“supplemental	Services
+Terms”,.	O	NNP	NNP	NP	 	1	Terms”,.	terms”,.	Supplemental
+ 	 	 	 	 	 	 	 	 	 
+In	O	IN	IN	PP	 	0	In	in	 
+the	O	DT	DT	NP	event	1	the	the	 
+event	O	NN	NN	NP	 	1	event	ev	the
+of	O	IN	IN	PP	 	0	of	of	 
+a	O	DT	DT	NP	conflict	1	a	a	 
+conflict	O	NN	NN	NP	 	1	conflict	conflict	a
+between	O	IN	IN	PP	 	0	between	between	 
+the	O	DT	DT	NP	Terms	1	the	the	 
+Terms	O	NNS	NNS	NP	 	1	Terms	term	the
+and	O	CC	CC	NP	 	0	and	and	 
+any	O	DT	DT	NP	Supplemental	1	any	any	 
+Supplemental	O	NNP	NNP	NP	Terms	1	Supplemental	suppl	any
+Terms,	O	NNP	NNP	NP	 	1	Terms,	terms,	Supplemental
+the	O	DT	DT	NP	Supplemental	1	the	the	 
+Supplemental	O	NNP	NNP	NP	Terms	1	Supplemental	suppl	the
+Terms	O	NNS	NNS	NP	 	1	Terms	term	Supplemental
+will	O	MD	MD	VP	 	0	will	wil	 
+govern	O	VB	VB	VP	 	0	govern	govern	 
+with	O	IN	IN	PP	 	0	with	with	 
+respect	O	NN	NN	NP	 	0	respect	respect	 
+to	O	TO	TO	PP	 	0	to	to	 
+the	O	DT	DT	NP	conflict	1	the	the	 
+conflict	O	NN	NN	NP	 	1	conflict	conflict	the
+as	O	IN	IN	SBAR	 	0	as	as	 
+it	O	PRP	PRP	NP	 	0	it	it	 
+relates	O	VBZ	VBZ	VP	 	0	relate	rel	 
+to	O	TO	TO	PP	 	0	to	to	 
+your	O	PRP$	PRP$	NP	access	1	your	yo	 
+access	O	NN	NN	NP	and	1	access	access	your
+and	O	CC	CC	NP	use	1	and	and	access
+use	O	NN	NN	NP	 	1	use	us	and
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	specific	1	the	the	 
+specific	O	JJ	JJ	NP	Snap	1	specific	spec	the
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	specific
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+may	O	MD	MD	VP	 	0	may	may	 
+update	O	VB	VB	VP	 	0	update	upd	 
+the	O	DT	DT	NP	Terms	1	the	the	 
+Terms	O	NNS	NNS	NP	 	1	Terms	term	the
+at	O	IN	IN	PP	 	0	at	at	 
+any	O	DT	DT	NP	time	1	any	any	 
+time,	O	NN	NN	NP	 	1	time,	time,	any
+and	O	CC	CC	S	 	0	and	and	 
+your	O	PRP$	PRP$	NP	continued	1	your	yo	 
+continued	O	JJ	JJ	NP	use	1	continue	continu	your
+use	O	NN	NN	NP	 	1	use	us	continued
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+will	O	MD	MD	VP	 	0	will	wil	 
+constitute	O	VB	VB	VP	 	0	constitute	constitut	 
+acceptance	O	NN	NN	NP	 	0	acceptance	acceiv	 
+of	O	IN	IN	PP	 	0	of	of	 
+such	O	JJ	JJ	NP	updates	1	such	such	 
+updates.	O	JJ	JJ	NP	 	1	updates.	updates.	such
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+agree	O	VBP	VBP	VP	 	0	agree	agr	 
+that	O	IN	IN	SBAR	 	0	that	that	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+may	O	MD	MD	VP	 	0	may	may	 
+monitor	O	VB	VB	VP	 	0	monitor	monit	 
+your	O	PRP$	PRP$	NP	use	1	your	yo	 
+use	O	NN	NN	NP	 	1	use	us	your
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+and	O	CC	CC	S	 	0	and	and	 
+may	O	MD	MD	VP	 	0	may	may	 
+immediately	O	RB	RB	ADVP	 	0	immediately	immedy	 
+limit,	O	VB	VB	VP	 	0	limit,	limit,	 
+suspend,	O	NN	NN	VP	 	0	suspend,	suspend,	 
+or	O	CC	CC	VP	 	0	or	or	 
+terminate	O	VB	VB	VP	 	0	terminate	termin	 
+your	O	PRP$	PRP$	NP	access	1	your	yo	 
+access	O	NN	NN	NP	 	1	access	access	your
+to	O	TO	TO	PP	 	0	to	to	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNP	NNP	NP	 	1	Services	serv	API
+at	O	IN	IN	PP	 	0	at	at	 
+any	O	DT	DT	NP	time	1	any	any	 
+time	O	NN	NN	NP	 	1	time	tim	any
+if	O	IN	IN	SBAR	 	0	if	if	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+determines	O	VBZ	VBZ	VP	 	0	determine	determin	 
+in	O	IN	IN	VP	 	0	in	in	 
+its	O	PRP$	PRP$	NP	sole	1	its	it	 
+sole	O	JJ	JJ	NP	discretion	1	sole	sol	its
+discretion	O	NN	NN	NP	 	1	discretion	discret	sole
+that	O	IN	IN	SBAR	 	0	that	that	 
+you	O	PRP	PRP	NP	or	0	you	you	 
+or	O	CC	CC	NP	 	0	or	or	you
+your	O	PRP$	PRP$	NP	or	0	your	yo	 
+Application	O	NN	NN	NP	 	1	Application	apply	your
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+not	O	RB	RB	VP	 	0	not	not	 
+in	O	IN	IN	PP	 	0	in	in	 
+compliance	O	NN	NN	NP	 	0	compliance	comply	 
+with	O	IN	IN	PP	 	0	with	with	 
+these	O	DT	DT	NP	Terms	1	these	thes	 
+Terms	O	NNS	NNS	NP	 	1	Terms	term	these
+or	O	CC	CC	S	 	0	or	or	 
+is	O	VBZ	VBZ	S	 	0	be	is	 
+otherwise	O	RB	RB	S	 	0	otherwise	otherw	 
+operating	O	VBG	VBG	VP	 	0	operate	op	 
+in	O	IN	IN	VP	 	0	in	in	 
+a	O	DT	DT	VP	 	0	a	a	 
+way	O	NN	NN	NP	way	1	way	way	 
+that	O	WDT	WDT	NP	way	1	that	that	 
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+detrimental	O	JJ	JJ	ADJP	 	0	detrimental	detry	 
+or	O	CC	CC	SBAR	 	0	or	or	 
+may	O	MD	MD	VP	 	0	may	may	 
+cause	O	VB	VB	VP	 	0	cause	caus	 
+harm	O	NN	NN	NP	 	0	harm	harm	 
+to	O	TO	TO	PP	 	0	to	to	 
+Snap,	O	VB	VB	NP	 	0	Snap,	snap,	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	 	0	Snap	snap	 
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+,	O	,	,	NP	 	0	,	,	 
+or	O	CC	CC	NP	 	0	or	or	,
+any	O	DT	DT	NP	Snap	1	any	any	 
+Snap	O	NNP	NNP	NP	users	1	Snap	snap	any
+users.	O	NN	NN	NP	 	1	users.	users.	Snap
+ 	 	 	 	 	 	 	 	 	 
+The	O	DT	DT	NP	Snap	1	The	the	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	The
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+accessed	O	VBD	VBD	VP	 	0	access	access	 
+through	O	IN	IN	PP	 	0	through	through	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+may	O	MD	MD	VP	 	0	may	may	 
+contain	O	VB	VB	VP	 	0	contain	contain	 
+content	O	JJ	JJ	NP	 	0	content	cont	 
+created,	O	NN	NN	VP	 	0	created,	created,	 
+uploaded,	O	JJ	JJ	NP	uploaded	0	uploaded,	uploaded,	 
+posted,	O	NN	NN	NP	posted	0	posted,	posted,	uploaded
+sent,	O	NN	NN	NP	posted	0	sent,	sent,	uploaded
+received,	O	NN	NN	NP	sent	0	received,	received,	posted
+stored,	O	NN	NN	NP	sent	0	stored,	stored,	posted
+or	O	CC	CC	NP	,	0	or	or	,
+otherwise	O	RB	RB	ADVP	 	0	otherwise	otherw	 
+provided	O	VBN	VBN	NP	 	0	provide	provid	 
+by	O	IN	IN	PP	 	0	by	by	 
+Snap	O	NNP	NNP	NP	users	1	Snap	snap	 
+users	O	NNS	NNS	NP	 	1	users	us	Snap
+or	O	CC	CC	NP	 	0	or	or	,
+by	O	IN	IN	PP	 	0	by	by	 
+other	O	JJ	JJ	ADVP	 	0	other	oth	 
+third	O	JJ	JJ	NP	party	1	third	third	other
+party	O	NN	NN	NP	licensors	1	party	party	third
+licensors	O	NNS	NNS	NP	by	0	licensors	licens	 
+“	O	VBP	VBP	NP	 	0	“	“	 
+Snap	B-SEC	NNP	NNP	NP	users	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+”,.	O	NN	NN	NP	,	0	”,.	”,.	 
+ 	 	 	 	 	 	 	 	 	 
+As	O	IN	IN	PP	 	0	As	as	 
+such,	O	NN	NN	NP	 	0	such,	such,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+agree	O	VBP	VBP	VP	 	0	agree	agr	 
+that	O	IN	IN	SBAR	 	0	that	that	 
+any	O	DT	DT	NP	Snap	1	any	any	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	any
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+accessible	O	JJ	JJ	ADJP	 	0	accessible	access	 
+through	O	IN	IN	PP	 	0	through	through	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNP	NNP	NP	ii	1	Services	serv	API
+ii,	O	NN	NN	NP	 	1	ii,	ii,	Services
+may	O	MD	MD	VP	 	0	may	may	 
+not	O	RB	RB	VP	 	0	not	not	 
+be	O	VB	VB	VP	 	0	be	be	 
+appropriate	O	JJ	JJ	ADJP	 	0	appropriate	appropry	 
+for	O	IN	IN	PP	 	0	for	for	 
+all	O	DT	DT	NP	audiences	1	all	al	 
+audiences	O	NNS	NNS	NP	or	1	audiences	audy	all
+or	O	CC	CC	PP	 	0	or	or	 
+ages.	O	NN	NN	NP	 	1	ages.	ages.	or
+ 	 	 	 	 	 	 	 	 	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+may	O	MD	MD	VP	 	0	may	may	 
+review	O	VB	VB	VP	 	0	review	review	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+to	O	TO	TO	VP	 	0	to	to	 
+determine	O	VB	VB	VP	 	0	determine	determin	 
+whether	O	IN	IN	SBAR	 	0	whether	wheth	 
+it	O	PRP	PRP	NP	 	0	it	it	 
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+illegal	O	JJ	JJ	ADJP	 	0	illegal	illeg	 
+or	O	CC	CC	VP	 	0	or	or	 
+violates	O	VBZ	VBZ	VP	 	0	violate	viol	 
+the	O	DT	DT	NP	Terms	1	the	the	 
+Terms,	O	NNP	NNP	NP	 	1	Terms,	terms,	the
+and	O	CC	CC	S	 	0	and	and	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+may	O	MD	MD	VP	 	0	may	may	 
+remove	O	VB	VB	VP	 	0	remove	remov	 
+or	O	CC	CC	VP	 	0	or	or	 
+refuse	O	VB	VB	VP	 	0	refuse	refus	 
+to	O	TO	TO	VP	 	0	to	to	 
+make	O	VB	VB	VP	 	0	make	mak	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	the
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+available,	O	NN	NN	ADJP	 	0	available,	available,	 
+but	O	CC	CC	S	 	0	but	but	 
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+under	O	IN	IN	PP	 	0	under	und	 
+no	O	DT	DT	NP	obligation	0	no	no	 
+obligation	O	NN	NN	NP	 	0	obligation	oblig	no
+to	O	TO	TO	VP	 	0	to	to	 
+do	O	VB	VB	VP	 	0	do	do	 
+so,	O	VB	VB	ADVP	 	0	so,	so,	 
+unless	O	IN	IN	SBAR	 	0	unless	unless	 
+otherwise	O	RB	RB	S	 	0	otherwise	otherw	 
+required	O	VBN	VBN	VP	 	0	require	requir	 
+by	O	IN	IN	PP	 	0	by	by	 
+applicable	O	JJ	JJ	NP	law	1	applicable	appl	 
+law.	O	NN	NN	NP	 	1	law.	law.	applicable
+ 	 	 	 	 	 	 	 	 	 
+Your	O	PRP$	PRP$	NP	access	1	Your	yo	 
+access	O	NN	NN	NP	 	1	access	access	Your
+to	O	TO	TO	PP	 	0	to	to	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	the
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+provided	O	VBN	VBN	VP	 	0	provide	provid	 
+by	O	IN	IN	PP	 	0	by	by	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+may	O	MD	MD	VP	 	0	may	may	 
+be	O	VB	VB	VP	 	0	be	be	 
+restricted,	O	VBN	VBN	VP	 	0	restricted,	restricted,	 
+limited	O	JJ	JJ	VP	 	0	limit	limit	 
+or	O	CC	CC	VP	 	0	or	or	 
+filtered	O	VBN	VBN	VP	 	0	filter	filt	 
+in	O	IN	IN	PP	 	0	in	in	 
+accordance	O	NN	NN	NP	 	0	accordance	accord	 
+with	O	IN	IN	PP	 	0	with	with	 
+applicable	O	JJ	JJ	NP	law	1	applicable	appl	 
+law,	O	NN	NN	NP	,	1	law,	law,	applicable
+regulation,	O	NN	NN	NP	regulation	1	regulation,	regulation,	law
+and	O	CC	CC	NP	policy	1	and	and	,
+policy.	O	NN	NN	NP	 	1	policy.	policy.	and
+ 	 	 	 	 	 	 	 	 	 
+By	O	IN	IN	PP	 	0	By	by	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+do	O	VBP	VBP	VP	 	0	do	do	 
+not	O	RB	RB	VP	 	0	not	not	 
+acquire	O	VB	VB	VP	 	0	acquire	acquir	 
+any	O	DT	DT	NP	ownership	1	any	any	 
+ownership	O	NN	NN	NP	 	1	ownership	own	any
+in	O	IN	IN	PP	 	0	in	in	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+any	O	DT	DT	NP	Snap	1	any	any	 
+Snap	O	NNP	NNP	NP	Content	1	Snap	snap	any
+Content,	O	NNP	NNP	NP	 	1	Content,	content,	Snap
+that	O	WDT	WDT	WHNP	 	0	that	that	 
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+accessed	O	VBN	VBN	VP	 	0	access	access	 
+through	O	IN	IN	PP	 	0	through	through	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+If	O	IN	IN	SBAR	 	0	If	if	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+provide	O	VBP	VBP	VP	 	0	provide	provid	 
+any	O	DT	DT	NP	comments	0	any	any	 
+comments,	O	NN	NN	NP	,	0	comments,	comments,	any
+suggestions,	O	NN	NN	NP	suggestions	0	suggestions,	suggestions,	comments
+ideas,	O	NN	NN	NP	ideas	0	ideas,	ideas,	suggestions
+improvements,	O	NN	NN	NP	ideas	0	improvements,	improvements,	suggestions
+or	O	CC	CC	NP	 	0	or	or	,
+feedback	O	NN	NN	NP	 	0	feedback	feedback	 
+about	O	IN	IN	PP	 	0	about	about	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+collectively,	O	NN	NN	ADVP	 	0	collectively,	collectively,	 
+“Feedback”,	O	NNP	NNP	S	 	0	“Feedback”,	“feedback”,	 
+Snap	O	NNP	NNP	NP	API	1	Snap	snap	the
+and	O	CC	CC	S	 	0	and	and	 
+those	O	DT	DT	NP	Snap	1	those	thos	 
+Snap	O	NNP	NNP	NP	API	1	Snap	snap	the
+allows,	O	NN	NN	S	 	0	allows,	allows,	 
+may	O	MD	MD	VP	 	0	may	may	 
+use	O	VB	VB	VP	 	0	use	us	 
+such	O	JJ	JJ	NP	Feedback	1	such	such	 
+Feedback	O	NNP	NNP	NP	 	0	Feedback	feedback	 
+for	O	IN	IN	PP	 	0	for	for	 
+any	O	DT	DT	NP	purpose	1	any	any	 
+purpose,	O	NN	NN	S	 	0	purpose,	purpose,	 
+without	O	IN	IN	PP	 	0	without	without	 
+restriction	O	NN	NN	NP	or	1	restriction	restrict	 
+or	O	CC	CC	PP	 	0	or	or	 
+obligation	O	NN	NN	NP	 	1	obligation	oblig	or
+to	O	TO	TO	PP	 	0	to	to	 
+you.	O	VB	VB	NP	 	0	you.	you.	 
+ 	 	 	 	 	 	 	 	 	 
+If	O	IN	IN	SBAR	 	0	If	if	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+includes	O	VBZ	VBZ	VP	 	0	include	includ	 
+or	O	CC	CC	VP	 	0	or	or	 
+requires	O	VBZ	VBZ	VP	 	0	require	requir	 
+the	O	DT	DT	NP	use	1	the	the	 
+use	O	NN	NN	NP	and	1	use	us	the
+and	O	CC	CC	NP	display	1	and	and	use
+display	O	NN	NN	NP	 	1	display	display	and
+of	O	IN	IN	VP	 	0	of	of	 
+any	O	DT	DT	VP	 	0	any	any	 
+Snap	B-SEC	NNP	NNP	VP	 	0	Snap	snap	 
+names	I-SEC	NNS	NNS	VP	 	0	name	nam	 
+,	O	,	,	VP	 	0	,	,	 
+trademarks	I-SEC	NNS	NNS	NX	 	0	trademark	trademark	 
+,	O	,	,	VP	 	0	,	,	 
+service	B-SEC	NN	NN	NP	marks	1	service	serv	 
+marks	I-SEC	NNS	NNS	NP	 	1	mark	mark	service
+,	O	,	,	VP	 	0	,	,	 
+logos	B-SEC	NN	NN	VP	 	0	logos	logo	 
+,	O	,	,	VP	 	0	,	,	 
+domain	O	NN	NN	NP	names	1	domain	domain	 
+names	I-SEC	NNS	NNS	NP	 	1	name	nam	domain
+,	O	,	,	VP	 	0	,	,	 
+or	O	CC	CC	VP	 	0	or	or	 
+other	O	JJ	JJ	NP	distinctive	1	other	oth	 
+distinctive	O	JJ	JJ	NP	brand	1	distinctive	distinct	other
+brand	O	NN	NN	NP	feature	1	brand	brand	distinctive
+feature	O	NN	NN	NP	 	1	feature	feat	brand
+of	O	IN	IN	NP	 	0	of	of	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+“Snap	O	NNP	NNP	VP	 	0	“Snap	“snap	 
+Brand	O	NNP	NNP	NP	Features	1	Brand	brand	 
+Features”,	O	NNP	NNP	NP	 	1	Features”,	features”,	Brand
+associated	O	VBD	VBD	NP	 	0	associate	assocy	 
+therewith,	O	JJ	JJ	VP	 	0	therewith,	therewith,	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+grants	O	NNS	NNS	VP	 	0	grant	grant	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+a	O	DT	DT	NP	 	0	a	a	 
+personal,	O	JJ	JJ	VP	 	0	personal,	personal,	 
+non-exclusive,	O	JJ	JJ	VP	 	0	non-exclusive,	non-exclusive,	 
+non-sublicensable,	O	JJ	JJ	NP	 	0	non-sublicensable,	non-sublicensable,	 
+revocable	O	NN	NN	NP	 	0	revocable	revoc	 
+and	O	CC	CC	NP	 	0	and	and	 
+limited	O	JJ	JJ	ADJP	 	0	limit	limit	 
+license	O	NN	NN	NP	 	0	license	licens	 
+to	O	TO	TO	VP	 	0	to	to	 
+display	O	VB	VB	NP	 	0	display	display	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+Brand	O	NNP	NNP	ADJP	 	0	Brand	brand	 
+Features	O	NNP	NNP	NP	 	0	Features	feat	 
+on	O	IN	IN	ADJP	 	0	on	on	 
+or	O	CC	CC	VP	 	0	or	or	 
+through	O	IN	IN	VP	 	0	through	through	 
+your	O	PRP$	PRP$	NP	Application	1	your	yo	 
+Application	O	NNP	NNP	VP	 	0	Application	apply	 
+only	O	RB	RB	VP	 	0	only	on	 
+in	O	IN	IN	PP	 	0	in	in	 
+accordance	O	NN	NN	VP	 	0	accordance	accord	 
+with	O	IN	IN	PP	 	0	with	with	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	O	NNP	NNP	NP	Brand	1	Snap	snap	 
+Brand	O	NNP	NNP	NP	Features	1	Brand	brand	Snap
+Guidelines.	O	NNP	NNP	PP	 	0	Guidelines.	guidelines.	 
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+and	O	CC	CC	NP	 	0	and	and	 
+your	O	PRP$	PRP$	NP	Application	1	your	yo	 
+Application	O	NNP	NNP	NP	 	1	Application	apply	your
+will,	O	NN	NN	VP	 	0	will,	will,	 
+and	O	CC	CC	S	 	0	and	and	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+require	O	VB	VB	VP	 	0	require	requir	 
+anyone	O	NN	NN	NP	 	0	anyone	anyon	 
+acting	O	VBG	VBG	VP	 	0	act	act	 
+on	O	IN	IN	PP	 	0	on	on	 
+your	O	PRP$	PRP$	NP	behalf	1	your	yo	 
+behalf	O	NN	NN	NP	 	1	behalf	behalf	your
+and	O	CC	CC	VP	 	0	and	and	 
+your	O	PRP$	PRP$	NP	users	1	your	yo	 
+users,	O	NN	NN	NP	 	1	users,	users,	your
+to	O	TO	TO	VP	 	0	to	to	 
+comply	O	VB	VB	VP	 	0	comply	comply	 
+with,	O	NN	NN	VP	 	0	with,	with,	 
+and	O	CC	CC	VP	 	0	and	and	 
+not	O	RB	RB	VP	 	0	not	not	 
+access	O	NN	NN	VP	 	0	access	access	 
+or	O	CC	CC	VP	 	0	or	or	 
+use	O	VB	VB	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+in	O	IN	IN	PP	 	0	in	in	 
+a	O	DT	DT	NP	API	1	a	a	the
+manner	O	NN	NN	NP	manner	1	manner	man	 
+that	O	WDT	WDT	NP	manner	1	that	that	 
+violates	O	VBZ	VBZ	NP	manner	1	violate	viol	 
+these	O	DT	DT	NP	Terms	1	these	thes	 
+Terms	O	NNS	NNS	NP	 	1	Terms	term	these
+and	O	CC	CC	NP	 	0	and	and	 
+all	O	DT	DT	NP	 	0	all	al	 
+applicable	O	JJ	JJ	NX	laws	1	applicable	appl	 
+laws,	O	NN	NN	NX	 	1	laws,	laws,	applicable
+rules	O	NNS	NNS	NP	and	1	rule	rul	 
+and	O	CC	CC	NP	 	0	and	and	 
+regulations.	O	NN	NN	NP	 	1	regulations.	regulations.	and
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+implement	O	VB	VB	VP	 	0	implement	impl	 
+and	O	CC	CC	VP	 	0	and	and	 
+maintain	O	VB	VB	VP	 	0	maintain	maintain	 
+technical,	O	JJ	JJ	ADJP	 	0	technical,	technical,	 
+physical,	O	NN	NN	ADJP	 	0	physical,	physical,	 
+and	O	CC	CC	ADJP	 	0	and	and	 
+administrative	O	JJ	JJ	ADJP	 	0	administrative	admin	 
+safeguards	O	NNS	NNS	NP	 	0	safeguard	safeguard	 
+in	O	IN	IN	ADJP	 	0	in	in	 
+accordance	O	NN	NN	NP	 	0	accordance	accord	 
+with	O	IN	IN	PP	 	0	with	with	 
+these	O	DT	DT	NP	Terms	1	these	thes	 
+Terms	O	NNS	NNS	NP	 	1	Terms	term	these
+and	O	CC	CC	NP	 	0	and	and	 
+current	O	JJ	JJ	NP	industry	1	current	cur	 
+industry	O	NN	NN	NP	standards	1	industry	industry	current
+standards	O	NNS	NNS	NP	 	0	standards	standard	 
+to	O	TO	TO	VP	 	0	to	to	 
+protect	O	VB	VB	VP	 	0	protect	protect	 
+your	O	PRP$	PRP$	NP	username	1	your	yo	 
+username	B-SEC	NN	NN	NP	and	1	username	usernam	your
+and	O	CC	CC	NP	password	1	and	and	username
+password	B-SEC	NN	NN	NP	 	1	password	password	and
+,	O	,	,	NP	 	0	,	,	 
+all	O	DT	DT	NP	 	0	all	al	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+,	O	,	,	NP	and	0	,	,	 
+and	O	CC	CC	NP	 	0	and	and	,
+any	O	DT	DT	NP	user	1	any	any	 
+user	B-SEC	JJ	JJ	NP	information	1	user	us	any
+information	I-SEC	NN	NN	NP	 	1	information	inform	user
+collected	O	VBN	VBN	NP	 	0	collect	collect	 
+by	O	IN	IN	PP	 	0	by	by	 
+your	O	PRP$	PRP$	NP	Applications	1	your	yo	 
+Applications,	O	NNP	NNP	NP	 	1	Applications,	applications,	your
+including	O	VBG	VBG	PP	 	0	include	includ	 
+personal	B-SEC	JJ	JJ	NP	data	1	personal	person	 
+data	I-SEC	NNS	NNS	NP	 	1	data	dat	personal
+,	O	,	,	NP	 	0	,	,	 
+from	O	IN	IN	PP	 	0	from	from	 
+unauthorized	O	JJ	JJ	NP	access	1	unauthorized	unauth	 
+access	O	NN	NN	NP	or	1	access	access	unauthorized
+or	O	CC	CC	NP	access	1	or	or	 
+use.	O	NN	NN	NP	 	1	use.	use.	or
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+comply	O	VB	VB	VP	 	0	comply	comply	 
+with	O	IN	IN	PP	 	0	with	with	 
+all	O	DT	DT	NP	applicable	1	all	al	 
+applicable	O	JJ	JJ	NP	privacy	1	applicable	appl	all
+privacy	O	NN	NN	NP	laws	1	privacy	priv	applicable
+laws	O	NNS	NNS	NP	and	1	laws	law	privacy
+and	O	CC	CC	NP	regulations	1	and	and	laws
+regulations,	O	NN	NN	NP	 	1	regulations,	regulations,	and
+including	O	VBG	VBG	PP	 	0	include	includ	 
+those	O	DT	DT	NP	 	0	those	thos	 
+applying	O	VBG	VBG	VP	 	0	apply	apply	 
+to	O	TO	TO	PP	 	0	to	to	 
+personal	B-SEC	JJ	JJ	NP	data	1	personal	person	 
+data	I-SEC	NNS	NNS	NP	 	1	data	dat	personal
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+provide	O	VB	VB	VP	 	0	provide	provid	 
+and	O	CC	CC	VP	 	0	and	and	 
+adhere	O	VB	VB	VP	 	0	adhere	adh	 
+to	O	TO	TO	VP	 	0	to	to	 
+a	O	DT	DT	NP	published	1	a	a	 
+published	O	VBN	VBN	NP	privacy	1	publish	publ	a
+privacy	O	NN	NN	NP	policy	1	privacy	priv	published
+policy	O	NN	NN	NP	 	1	policy	policy	privacy
+for	O	IN	IN	PP	 	0	for	for	 
+your	O	PRP$	PRP$	NP	Application	1	your	yo	 
+Application	O	NN	NN	NP	 	1	Application	apply	your
+that	O	IN	IN	WHNP	 	0	that	that	 
+incorporates	O	VBZ	VBZ	VP	 	0	incorporate	incorp	 
+by	O	IN	IN	PP	 	0	by	by	 
+reference	O	NN	NN	NP	 	0	reference	ref	 
+and	O	CC	CC	PP	 	0	and	and	 
+links	O	NNS	NNS	NP	 	0	link	link	 
+to	O	TO	TO	PP	 	0	to	to	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	O	NNP	NNP	NP	Privacy	1	Snap	snap	the
+Privacy	O	NNP	NNP	NP	Policy	1	Privacy	priv	Snap
+Policy	O	NNP	NNP	NP	 	1	Policy	policy	Privacy
+and	O	CC	CC	VP	 	0	and	and	 
+clearly	O	RB	RB	ADVP	 	0	clearly	clear	 
+and	O	CC	CC	ADVP	 	0	and	and	 
+accurately	O	RB	RB	ADVP	 	0	accurately	acc	 
+describes	O	VB	VB	VP	 	0	describe	describ	 
+to	O	TO	TO	PP	 	0	to	to	 
+users	O	NNS	NNS	NP	 	0	users	us	 
+of	O	IN	IN	PP	 	0	of	of	 
+your	O	PRP$	PRP$	NP	Application	1	your	yo	 
+Application	O	NNP	NNP	NP	 	1	Application	apply	your
+what	O	WP	WP	WHADVP	 	0	what	what	 
+user	B-SEC	VBZ	VBZ	WHNP	 	0	user	us	 
+information	I-SEC	NN	NN	WHNP	 	0	information	inform	 
+you	O	PRP	PRP	SBAR	 	0	you	you	 
+and	O	CC	CC	SBAR	 	0	and	and	 
+your	O	PRP$	PRP$	NP	Application	1	your	yo	 
+Application	O	NNP	NNP	NP	 	1	Application	apply	your
+accesses,	O	NN	NN	SBAR	 	0	accesses,	accesses,	 
+collects,	O	NN	NN	SBAR	 	0	collects,	collects,	 
+and	O	CC	CC	SBAR	 	0	and	and	 
+stores,	O	NN	NN	SBAR	 	0	stores,	stores,	 
+and	O	CC	CC	SBAR	 	0	and	and	 
+how	O	WRB	WRB	WHADVP	 	0	how	how	 
+and	O	CC	CC	SBAR	 	0	and	and	 
+why	O	WRB	WRB	WHADVP	 	0	why	why	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+and	O	CC	CC	WHADVP	 	0	and	and	 
+your	O	PRP$	PRP$	NP	 	0	your	yo	 
+Application	O	NNP	NNP	NP	 	1	Application	apply	your
+uses,	O	NN	NN	S	 	0	uses,	uses,	 
+processes,	O	NN	NN	S	 	0	processes,	processes,	 
+and	O	CC	CC	NP	 	0	and	and	 
+shares	O	NNS	NNS	VP	 	0	share	shar	 
+such	O	JJ	JJ	NP	information	1	such	such	 
+information	I-SEC	NN	NN	NP	 	1	information	inform	such
+with	O	IN	IN	PP	 	0	with	with	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+and	O	CC	CC	S	 	0	and	and	 
+other	O	JJ	JJ	NP	third	1	other	oth	 
+third	O	JJ	JJ	NP	parties	1	third	third	other
+parties.	O	NN	NN	NP	 	1	parties.	parties.	third
+ 	 	 	 	 	 	 	 	 	 
+While	O	IN	IN	SBAR	 	0	While	whil	 
+users	O	NNS	NNS	NP	 	0	users	us	 
+of	O	IN	IN	PP	 	0	of	of	 
+your	O	PRP$	PRP$	NP	Application	1	your	yo	 
+Application	O	NN	NN	NP	 	1	Application	apply	your
+may	O	MD	MD	VP	 	0	may	may	 
+provide	O	VB	VB	VP	 	0	provide	provid	 
+information	B-SEC	NN	NN	NP	 	0	information	inform	 
+directly	O	RB	RB	ADVP	 	0	directly	direct	 
+to	O	TO	TO	VP	 	0	to	to	 
+Snap	O	NNP	NNP	VP	 	0	Snap	snap	 
+through	O	IN	IN	PP	 	0	through	through	 
+your	O	PRP$	PRP$	NP	implementation	1	your	yo	 
+implementation	O	NN	NN	NP	 	1	implementation	impl	your
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+must	O	MD	MD	VP	 	0	must	must	 
+not	O	RB	RB	VP	 	0	not	not	 
+provide	O	VB	VB	VP	 	0	provide	provid	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+with	O	IN	IN	PP	 	0	with	with	 
+any	O	DT	DT	NP	personal	1	any	any	 
+personal	B-SEC	JJ	JJ	NP	data	1	personal	person	any
+data	I-SEC	NNS	NNS	NP	 	1	data	dat	personal
+unless	O	IN	IN	SBAR	 	0	unless	unless	 
+otherwise	O	RB	RB	ADVP	 	0	otherwise	otherw	 
+agreed	O	VBN	VBN	S	 	0	agree	agree	 
+to	O	TO	TO	PP	 	0	to	to	 
+in	O	IN	IN	S	 	0	in	in	 
+writing	O	VBG	VBG	NP	 	0	write	writ	 
+by	O	IN	IN	PP	 	0	by	by	 
+you	O	PRP	PRP	NP	and	1	you	you	 
+and	O	CC	CC	NP	Snap	1	and	and	you
+Snap.	O	VB	VB	NP	 	1	Snap.	snap.	and
+ 	 	 	 	 	 	 	 	 	 
+If	O	IN	IN	SBAR	 	0	If	if	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+allows	O	VBZ	VBZ	VP	 	0	allow	allow	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+to	O	TO	TO	VP	 	0	to	to	 
+submit	O	VB	VB	VP	 	0	submit	submit	 
+or	O	CC	CC	VP	 	0	or	or	 
+create	O	VB	VB	VP	 	0	create	cre	 
+functionality	O	NN	NN	NP	 	0	functionality	funct	 
+that	O	WDT	WDT	WHNP	 	0	that	that	 
+enables	O	VBZ	VBZ	VP	 	0	enable	en	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to	O	TO	TO	VP	 	0	to	to	 
+submit	O	VB	VB	VP	 	0	submit	submit	 
+text,	O	JJ	JJ	NP	 	0	text,	text,	 
+graphics	O	NNS	NNS	NP	 	0	graphics	graph	,
+including	O	VBG	VBG	PP	 	0	include	includ	 
+logos	B-SEC	NN	NN	NP	and	1	logos	logo	 
+and	O	CC	CC	NP	marks	1	and	and	logos
+marks	B-SEC	NNS	NNS	NP	 	1	mark	mark	and
+,	O	,	,	NP	 	0	,	,	 
+photos,	O	NN	NN	NP	 	0	photos,	photos,	 
+video,	O	NN	NN	NP	 	0	video,	video,	 
+audio,	O	NN	NN	NP	 	0	audio,	audio,	 
+music,	O	NN	NN	NP	 	0	music,	music,	 
+or	O	CC	CC	NP	 	0	or	or	,
+other	O	JJ	JJ	NP	content	1	other	oth	 
+content	O	JJ	JJ	NP	 	1	content	cont	other
+“Your	O	NNS	NNS	VP	 	0	“Your	“your	 
+Content”,	O	NNP	NNP	NP	or	0	Content”,	content”,	 
+to	O	TO	TO	PP	 	0	to	to	 
+the	O	DT	DT	NP	content	1	the	the	 
+Snap	O	NNP	NNP	NP	applications	1	Snap	snap	the
+applications,	O	NN	NN	VP	 	0	applications,	applications,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+hereby	O	VBP	VBP	ADVP	 	0	hereby	hereby	 
+grant	O	JJ	JJ	S	 	0	grant	grant	 
+Snap	O	NNP	NNP	NP	applications	1	Snap	snap	the
+a	O	DT	DT	NP	applications	1	a	a	the
+perpetual,	O	NN	NN	VP	 	0	perpetual,	perpetual,	 
+irrevocable,	O	NN	NN	SBAR	 	0	irrevocable,	irrevocable,	 
+worldwide,	O	NN	NN	SBAR	 	0	worldwide,	worldwide,	 
+sublicensable,	O	VBD	VBD	SBAR	 	0	sublicensable,	sublicensable,	 
+royalty-free,	O	JJ	JJ	SBAR	 	0	royalty-free,	royalty-free,	 
+and	O	CC	CC	NP	perpetual	0	and	and	 
+non-exclusive	O	JJ	JJ	NP	 	0	non-exclusive	non-exclusive	 
+license	O	NN	NN	NP	 	0	license	licens	 
+to	O	TO	TO	PP	 	0	to	to	 
+use,	O	VB	VB	NP	irrevocable	0	use,	use,	perpetual
+host,	O	JJ	JJ	NP	irrevocable	0	host,	host,	perpetual
+store,	O	NN	NN	NP	worldwide	0	store,	store,	irrevocable
+archive,	O	NN	NN	NP	worldwide	0	archive,	archive,	irrevocable
+copy,	O	NN	NN	NP	sublicensable	0	copy,	copy,	worldwide
+modify,	O	NN	NN	NP	sublicensable	0	modify,	modify,	worldwide
+cache,	O	NN	NN	NP	 	0	cache,	cache,	sublicensable
+encode,	O	NN	NN	NP	 	0	encode,	encode,	sublicensable
+reproduce,	O	NN	NN	NP	 	0	reproduce,	reproduce,	sublicensable
+distribute,	O	NN	NN	ADJP	 	0	distribute,	distribute,	 
+transmit,	O	NN	NN	ADJP	 	0	transmit,	transmit,	 
+synchronize,	O	NN	NN	ADJP	 	0	synchronize,	synchronize,	 
+display,	O	NN	NN	ADJP	 	0	display,	display,	 
+create	O	VBP	VBP	NP	perpetual	0	create	cre	 
+derivative	O	JJ	JJ	NP	perpetual	0	derivative	der	 
+works	O	NNS	NNS	NP	 	1	work	work	derivative
+from,	O	RB	RB	VP	 	0	from,	from,	 
+and	O	CC	CC	ADJP	 	0	and	and	 
+publicly	O	RB	RB	ADVP	 	0	publicly	publ	 
+perform	O	VB	VB	VP	 	0	perform	perform	 
+such	O	JJ	JJ	NP	content	1	such	such	 
+content.	O	NNS	NNS	NP	 	1	content.	content.	such
+ 	 	 	 	 	 	 	 	 	 
+Before	O	IN	IN	SBAR	 	0	Before	bef	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+submit	O	VBP	VBP	VP	 	0	submit	submit	 
+Your	O	PRP$	PRP$	NP	Content	1	Your	yo	 
+Content	O	NN	NN	NP	 	1	Content	cont	Your
+to	O	TO	TO	PP	 	0	to	to	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+ensure	O	VB	VB	VP	 	0	ensure	ens	 
+that	O	IN	IN	SBAR	 	0	that	that	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+have	O	VBP	VBP	SBAR	 	0	have	hav	 
+the	O	DT	DT	NP	necessary	1	the	the	 
+necessary	O	JJ	JJ	NP	rights	1	necessary	necess	the
+rights	O	NNS	NNS	NP	 	1	right	right	necessary
+including	O	VBG	VBG	PP	 	0	include	includ	 
+the	O	DT	DT	NP	necessary	1	the	the	 
+necessary	O	JJ	JJ	NP	rights	1	necessary	necess	the
+rights	O	NNS	NNS	NP	 	1	right	right	necessary
+from	O	IN	IN	PP	 	0	from	from	 
+your	O	PRP$	PRP$	NP	users	1	your	yo	 
+users	O	NNS	NNS	NP	 	1	users	us	your
+or	O	CC	CC	NP	 	0	or	or	 
+other	O	JJ	JJ	NP	third	1	other	oth	 
+third	O	JJ	JJ	NP	party	1	third	third	other
+party	O	NN	NN	NP	licensors	1	party	party	third
+licensors,	O	NN	NN	NP	 	1	licensors,	licensors,	party
+to	O	TO	TO	VP	 	0	to	to	 
+grant	O	VB	VB	VP	 	0	grant	grant	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+this	O	DT	DT	NP	license	1	this	thi	 
+license.	O	NN	NN	NP	 	1	license.	license.	this
+ 	 	 	 	 	 	 	 	 	 
+All	O	DT	DT	NP	content	1	All	al	 
+content	B-SEC	NN	NN	NP	 	1	content	cont	All
+you	O	PRP	PRP	NP	 	0	you	you	 
+submit	O	VBP	VBP	VP	 	0	submit	submit	 
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+subject	O	JJ	JJ	ADJP	 	0	subject	subject	 
+to	O	TO	TO	PP	 	0	to	to	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	O	NNP	NNP	NP	Community	1	Snap	snap	the
+Community	O	NNP	NNP	NP	Guidelines	1	Community	commun	Snap
+Guidelines.	O	NNP	NNP	NP	 	1	Guidelines.	guidelines.	Community
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+agree	O	VBP	VBP	VP	 	0	agree	agr	 
+to	O	TO	TO	VP	 	0	to	to	 
+cooperate	O	VB	VB	VP	 	0	cooperate	coop	 
+with	O	IN	IN	PP	 	0	with	with	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+in	O	IN	IN	PP	 	0	in	in	 
+this	O	DT	DT	NP	submission	1	this	thi	 
+submission	O	NN	NN	NP	process	1	submission	submit	this
+process	O	NN	NN	NP	 	1	process	process	submission
+and	O	CC	CC	VP	 	0	and	and	 
+to	O	TO	TO	VP	 	0	to	to	 
+answer	O	VB	VB	VP	 	0	answer	answ	 
+questions	O	NNS	NNS	NP	 	0	question	quest	 
+and	O	CC	CC	VP	 	0	and	and	 
+provide	O	VB	VB	VP	 	0	provide	provid	 
+information	B-SEC	NN	NN	NP	and	1	information	inform	 
+and	O	CC	CC	NP	materials	1	and	and	information
+materials	O	NNS	NNS	NP	 	1	materials	mat	and
+reasonably	O	RB	RB	ADVP	 	0	reasonably	reason	 
+requested	O	VBN	VBN	ADJP	 	0	request	request	 
+by	O	IN	IN	PP	 	0	by	by	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+regarding	O	VBG	VBG	VP	 	0	regard	regard	 
+your	O	PRP$	PRP$	NP	submitted	1	your	yo	 
+submitted	O	VBN	VBN	NP	Application	1	submit	submit	your
+Application	O	NNP	NNP	NP	 	1	Application	apply	submitted
+which	O	WDT	WDT	WHNP	 	0	which	which	 
+may	O	MD	MD	VP	 	0	may	may	 
+include,	O	VB	VB	VP	 	0	include,	include,	 
+but	O	CC	CC	PP	 	0	but	but	 
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+not	O	RB	RB	VP	 	0	not	not	 
+limited	O	JJ	JJ	VP	 	0	limit	limit	 
+to,	O	IN	IN	PP	 	0	to,	to,	 
+the	O	DT	DT	NP	operation	1	the	the	 
+operation	O	NN	NN	NP	 	1	operation	op	the
+of	O	IN	IN	PP	 	0	of	of	 
+your	O	PRP$	PRP$	NP	business	1	your	yo	 
+business,	O	NN	NN	NP	 	1	business,	business,	your
+insurance	O	NN	NN	NP	information	1	insurance	ins	 
+information	B-SEC	NN	NN	NP	 	1	information	inform	insurance
+related	O	VBN	VBN	VP	 	0	relate	rel	 
+to	O	TO	TO	PP	 	0	to	to	 
+your	O	PRP$	PRP$	NP	Application	1	your	yo	 
+Application,	O	NNP	NNP	NP	 	1	Application,	application,	your
+and	O	CC	CC	NP	 	0	and	and	,
+your	O	PRP$	PRP$	NP	Application	1	your	yo	 
+obligations	O	NNS	NNS	NP	 	1	obligations	oblig	your
+under	O	IN	IN	PP	 	0	under	und	 
+these	O	DT	DT	NP	Terms	1	these	thes	 
+Terms,.	O	NNP	NNP	NP	and	0	Terms,.	terms,.	 
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	VBP	VBP	PP	 	0	to,:	to,:	 
+Directly	O	RB	RB	ADVP	 	0	Directly	direct	 
+or	O	CC	CC	ADVP	 	0	or	or	 
+indirectly	O	RB	RB	ADVP	 	0	indirectly	indirect	 
+sell,	O	JJ	JJ	S	 	0	sell,	sell,	 
+rent,	O	NN	NN	S	 	0	rent,	rent,	 
+lease,	O	NN	NN	S	 	0	lease,	lease,	 
+license,	O	NN	NN	S	 	0	license,	license,	 
+syndicate,	O	NN	NN	S	 	0	syndicate,	syndicate,	 
+transfer,	O	NN	NN	S	 	0	transfer,	transfer,	 
+lend,	O	NN	NN	S	 	0	lend,	lend,	 
+modify,	O	NN	NN	S	 	0	modify,	modify,	 
+reverse	O	NN	NN	S	 	0	reverse	revers	 
+engineer,	O	NN	NN	S	 	0	engineer,	engineer,	 
+decompile,	O	NN	NN	S	 	0	decompile,	decompile,	 
+or	O	CC	CC	ADVP	 	0	or	or	 
+otherwise	O	RB	RB	ADVP	 	0	otherwise	otherw	 
+alter	O	VB	VB	S	 	0	alter	alt	 
+the	O	DT	DT	ADVP	 	0	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	VBP	VBP	PP	 	0	to,:	to,:	 
+Use	O	VB	VB	VP	 	0	Use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+in	O	IN	IN	PP	 	0	in	in	 
+violation	O	NN	NN	NP	 	0	violation	viol	 
+of	O	IN	IN	PP	 	0	of	of	 
+any	O	DT	DT	NP	applicable	1	any	any	 
+applicable	O	JJ	JJ	NP	law	1	applicable	appl	any
+law,	O	NN	NN	NP	,	1	law,	law,	applicable
+rules,	O	NN	NN	NP	rules	1	rules,	rules,	law
+or	O	CC	CC	NP	regulations	1	or	or	,
+regulations,	O	NN	NN	NP	rules	1	regulations,	regulations,	law
+or	O	CC	CC	NP	regulations	1	or	or	,
+for	O	IN	IN	NP	regulations	1	for	for	,
+any	O	DT	DT	NP	unauthorized	1	any	any	 
+unauthorized	O	JJ	JJ	NP	regulations	1	unauthorized	unauth	,
+purpose.	O	NN	NN	NP	 	1	purpose.	purpose.	unauthorized
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	JJ	JJ	PP	 	0	to,:	to,:	 
+Share	O	NNP	NNP	VP	 	0	Share	shar	 
+your	O	PRP$	PRP$	NP	keys	0	your	yo	 
+keys	B-SEC	NNS	NNS	NP	and	0	key	key	your
+and	O	CC	CC	NP	 	0	and	and	keys
+access	B-SEC	NN	NN	NX	tokens	1	access	access	 
+tokens	I-SEC	NNS	NNS	NX	 	1	tokens	tok	access
+or	O	CC	CC	VP	 	0	or	or	 
+otherwise	O	VB	VB	ADVP	 	0	otherwise	otherw	 
+provide	O	JJ	JJ	VP	 	0	provide	provid	 
+access	O	NN	NN	NP	 	0	access	access	 
+to	O	TO	TO	PP	 	0	to	to	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+to	O	TO	TO	PP	 	0	to	to	 
+anyone	O	NN	NN	NP	 	0	anyone	anyon	 
+outside	O	IN	IN	PP	 	0	outside	outsid	 
+of	O	IN	IN	PP	 	0	of	of	 
+your	O	PRP$	PRP$	NP	organization	1	your	yo	 
+organization,	O	NN	NN	NP	 	1	organization,	organization,	your
+except	O	IN	IN	VP	 	0	except	exceiv	 
+for	O	IN	IN	PP	 	0	for	for	 
+agents	O	NNS	NNS	NP	or	1	agents	ag	 
+or	O	CC	CC	PP	 	0	or	or	 
+contractors	O	NNS	NNS	NP	contractors	1	contractors	contract	agents
+acting	O	VBG	VBG	VP	 	0	act	act	 
+on	O	IN	IN	NP	 	1	on	on	or
+your	O	PRP$	PRP$	NP	behalf	1	your	yo	 
+behalf	O	NN	NN	NP	 	1	behalf	behalf	your
+who	O	WP	WP	WHNP	 	0	who	who	 
+require	O	VBP	VBP	VP	 	0	require	requir	 
+access	O	NN	NN	NP	 	0	access	access	 
+as	O	IN	IN	PP	 	0	as	as	 
+part	O	NN	NN	NP	 	0	part	part	 
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	operation	1	the	the	 
+operation	O	NN	NN	NP	 	1	operation	op	the
+of	O	IN	IN	PP	 	0	of	of	 
+your	O	PRP$	PRP$	NP	Application	1	your	yo	 
+Application	O	NN	NN	NP	 	1	Application	apply	your
+and	O	CC	CC	VP	 	0	and	and	 
+are	O	VBP	VBP	VP	 	0	be	ar	 
+bound	O	VBN	VBN	ADJP	 	0	bind	bound	 
+to	O	TO	TO	PP	 	0	to	to	 
+terms	O	NNS	NNS	NP	 	0	term	term	 
+no	O	DT	DT	ADJP	 	0	no	no	 
+less	O	RBR	RBR	ADJP	 	0	less	less	 
+restrictive	O	JJ	JJ	ADJP	 	0	restrictive	restrict	 
+than	O	IN	IN	PP	 	0	than	than	 
+those	O	DT	DT	NP	 	0	those	thos	 
+set	O	VBN	VBN	VP	 	0	set	set	 
+forth	O	NN	NN	PRT	 	0	forth	for	 
+in	O	IN	IN	PP	 	0	in	in	 
+these	O	DT	DT	NP	Terms	1	these	thes	 
+Terms.	O	NNP	NNP	NP	 	1	Terms.	terms.	these
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	VBP	VBP	PP	 	0	to,:	to,:	 
+Use	O	VB	VB	VP	 	0	Use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+in	O	IN	IN	PP	 	0	in	in	 
+a	O	DT	DT	NP	manner	1	a	a	 
+manner	O	NN	NN	NP	manner	1	manner	man	 
+that,	O	NN	NN	NP	manner	1	that,	that,	 
+as	O	IN	IN	NP	manner	1	as	as	 
+determined	O	VBN	VBN	VP	 	0	determine	determin	 
+by	O	IN	IN	PP	 	0	by	by	 
+Snap,	O	NNP	NNP	SBAR	 	0	Snap,	snap,	 
+exceeds	O	NNS	NNS	VP	 	0	exceed	excess	 
+reasonable	O	JJ	JJ	PP	 	0	reasonable	reason	 
+request	O	NN	NN	NP	volume	1	request	request	reasonable
+volume,	O	NN	NN	SBAR	 	0	volume,	volume,	 
+constitutes	O	VBZ	VBZ	VP	 	0	constitute	constitut	 
+excessive	O	JJ	JJ	ADJP	 	0	excessive	excess	 
+or	O	CC	CC	ADJP	 	0	or	or	 
+abusive	O	JJ	JJ	ADJP	 	0	abusive	abud	 
+usage,	O	NN	NN	SBAR	 	0	usage,	usage,	 
+or	O	CC	CC	ADJP	 	0	or	or	 
+otherwise	O	RB	RB	ADVP	 	0	otherwise	otherw	 
+fails	O	VBZ	VBZ	VP	 	0	fail	fail	 
+to	O	TO	TO	VP	 	0	to	to	 
+comply	O	VB	VB	VP	 	0	comply	comply	 
+with	O	IN	IN	PP	 	0	with	with	 
+or	O	CC	CC	VP	 	0	or	or	 
+is	O	VBZ	VBZ	ADVP	 	0	be	is	 
+inconsistent	O	JJ	JJ	SBAR	 	0	inconsistent	inconsist	 
+with	O	IN	IN	PP	 	0	with	with	 
+any	O	DT	DT	NP	documentation	1	any	any	 
+documentation	O	NN	NN	NP	 	1	documentation	docu	any
+related	O	VBN	VBN	VP	 	0	relate	rel	 
+to	O	TO	TO	VP	 	0	to	to	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNP	NNP	NP	 	1	Services	serv	API
+provided	O	VBN	VBN	VP	 	0	provide	provid	 
+by	O	IN	IN	PP	 	0	by	by	 
+Snap	O	NNP	NNP	NP	API	1	Snap	snap	the
+to	O	TO	TO	PP	 	0	to	to	 
+you.	O	VB	VB	NP	 	0	you.	you.	 
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	VBP	VBP	PP	 	0	to,:	to,:	 
+Use	O	VB	VB	VP	 	0	Use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+in	O	IN	IN	PP	 	0	in	in	 
+a	O	DT	DT	NP	manner	1	a	a	 
+manner	O	NN	NN	NP	manner	1	manner	man	 
+that	O	WDT	WDT	NP	manner	1	that	that	 
+violates	O	VBZ	VBZ	NP	manner	1	violate	viol	 
+any	O	DT	DT	NP	 	0	any	any	 
+mobile	O	JJ	JJ	NX	developer	1	mobile	mobl	 
+developer	O	NN	NN	NX	 	1	developer	develop	mobile
+or	O	CC	CC	NX	 	0	or	or	 
+app	O	NN	NN	NX	store	1	app	ap	 
+store	O	NN	NN	NX	 	0	store	stor	 
+terms,	O	NN	NN	NX	 	1	terms,	terms,	store
+guidelines,	O	NN	NN	NX	 	0	guidelines,	guidelines,	 
+or	O	CC	CC	NX	terms	1	or	or	app
+policies.	O	NN	NN	NX	 	0	policies.	policies.	or
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	JJ	JJ	PP	 	0	to,:	to,:	 
+Feature	O	NNP	NNP	S	 	0	Feature	feat	 
+or	O	CC	CC	S	 	0	or	or	 
+use	O	VB	VB	S	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+any	O	DT	DT	NP	Snap	1	any	any	 
+Snap	O	NNP	NNP	NP	Brand	1	Snap	snap	any
+Brand	O	NNP	NNP	NP	Features	1	Brand	brand	Snap
+Features,	O	NNP	NNP	NP	 	1	Features,	features,	Brand
+in	O	IN	IN	PP	 	0	in	in	 
+any	O	DT	DT	NP	 	0	any	any	 
+pornographic,	O	JJ	JJ	S	 	0	pornographic,	pornographic,	 
+discriminatory,	O	NN	NN	PP	 	0	discriminatory,	discriminatory,	 
+illegal,	O	NN	NN	ADJP	 	0	illegal,	illegal,	 
+or	O	CC	CC	ADJP	 	0	or	or	 
+otherwise	O	RB	RB	ADJP	 	0	otherwise	otherw	 
+indecent	O	JJ	JJ	PP	 	0	indecent	indec	 
+context.	O	NN	NN	NP	 	0	context.	context.	 
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	JJ	JJ	PP	 	0	to,:	to,:	 
+Remove,	O	NNP	NNP	VP	 	0	Remove,	remove,	 
+obscure,	O	NN	NN	VP	 	0	obscure,	obscure,	 
+or	O	CC	CC	VP	 	0	or	or	 
+alter	O	NN	NN	VP	 	0	alter	alt	 
+any	O	DT	DT	NP	legal	0	any	any	 
+legal,	O	JJ	JJ	VP	 	0	legal,	legal,	 
+copyright,	O	NN	NN	VP	 	0	copyright,	copyright,	 
+trademark	B-SEC	NN	NN	NX	 	0	trademark	trademark	 
+,	O	,	,	NP	 	0	,	,	legal
+or	O	CC	CC	VP	 	0	or	or	 
+other	O	JJ	JJ	NP	proprietary	1	other	oth	 
+proprietary	O	JJ	JJ	NP	notice	1	proprietary	propriet	other
+notice	O	NN	NN	NP	 	1	notice	not	proprietary
+contained	O	VBN	VBN	VP	 	0	contain	contain	 
+in	O	IN	IN	VP	 	0	in	in	 
+the	O	DT	DT	NP	proprietary	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+,	O	,	,	NP	or	0	,	,	 
+or	O	CC	CC	NP	 	0	or	or	,
+falsify	O	VB	VB	VP	 	0	falsify	fals	 
+or	O	CC	CC	VP	 	0	or	or	 
+delete	O	VB	VB	VP	 	0	delete	delet	 
+any	O	DT	DT	NP	author	0	any	any	 
+author	O	NN	NN	VP	 	0	author	auth	 
+attributions,	O	JJ	JJ	VP	 	0	attributions,	attributions,	 
+legal	O	JJ	JJ	NP	notices	1	legal	leg	 
+notices,	O	NN	NN	VP	 	0	notices,	notices,	 
+or	O	CC	CC	VP	 	0	or	or	 
+other	O	JJ	JJ	NP	labels	1	other	oth	 
+labels	O	NNS	NNS	NP	 	1	label	label	other
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	labels	1	the	the	 
+origin	O	NN	NN	NP	 	0	origin	origin	,
+or	O	CC	CC	NP	 	0	or	or	,
+source	O	NN	NN	NP	 	1	source	sourc	or
+of	O	IN	IN	PP	 	0	of	of	 
+material.	O	NN	NN	NP	 	0	material.	material.	 
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	VBP	VBP	PP	 	0	to,:	to,:	 
+Use	O	NNP	NNP	VP	 	0	Use	us	 
+any	O	DT	DT	NP	robot	0	any	any	 
+robot,	O	NN	NN	NP	,	0	robot,	robot,	any
+spider,	O	NN	NN	NP	 	0	spider,	spider,	robot
+site	O	NN	NN	NP	search	0	site	sit	,
+search/retrieval	O	JJ	JJ	NP	/	0	search/retrieval	search/retrieval	site
+application,	O	NN	NN	NP	site	0	application,	application,	 
+or	O	CC	CC	NP	 	0	or	or	,
+other	O	JJ	JJ	NP	device	1	other	oth	 
+device	O	NN	NN	NP	 	1	device	dev	other
+to	O	TO	TO	VP	 	0	to	to	 
+collect	O	VB	VB	VP	 	0	collect	collect	 
+information	B-SEC	NN	NN	NP	 	0	information	inform	,
+about	O	IN	IN	PP	 	0	about	about	 
+users	O	NNS	NNS	NP	 	0	users	us	 
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	device	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+for	O	IN	IN	NP	 	0	for	for	 
+any	O	DT	DT	NP	unauthorized	1	any	any	 
+unauthorized	O	JJ	JJ	NP	purpose	1	unauthorized	unauth	any
+purpose.	O	NN	NN	NP	 	1	purpose.	purpose.	unauthorized
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	VBP	VBP	PP	 	0	to,:	to,:	 
+Imply	O	NNP	NNP	VP	 	0	Imply	imply	 
+inaccurate	O	JJ	JJ	NP	creation	1	inaccurate	inacc	 
+creation,	O	NN	NN	NP	 	1	creation,	creation,	inaccurate
+affiliation,	O	NN	NN	NP	 	0	affiliation,	affiliation,	 
+sponsorship,	O	NN	NN	NP	 	0	sponsorship,	sponsorship,	 
+or	O	CC	CC	NP	 	0	or	or	 
+endorsement	O	NN	NN	NP	 	0	endorsement	endors	,
+of	O	IN	IN	PP	 	0	of	of	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+or	O	CC	CC	NP	 	0	or	or	,
+your	O	PRP$	PRP$	NP	 	0	your	yo	 
+Application	O	NN	NN	NP	 	1	Application	apply	your
+by	O	IN	IN	PP	 	0	by	by	 
+Snap.	O	NNP	NNP	NP	 	0	Snap.	snap.	 
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	RB	RB	PP	 	0	to,:	to,:	 
+Make	O	NNP	NNP	VP	 	0	Make	mak	 
+any	O	DT	DT	NP	statement	1	any	any	 
+statement	O	NN	NN	NP	 	1	statement	stat	any
+or	O	CC	CC	VP	 	0	or	or	 
+use	O	VB	VB	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+any	O	DT	DT	NP	Snap	1	any	any	 
+Snap	O	NNP	NNP	NP	Brand	1	Snap	snap	any
+Brand	O	NNP	NNP	NP	Features	1	Brand	brand	Snap
+Features,	O	NNP	NNP	NP	 	1	Features,	features,	Brand
+in	O	IN	IN	PP	 	0	in	in	 
+any	O	DT	DT	NP	advertising	1	any	any	 
+advertising	O	NN	NN	PP	 	0	advertise	advert	 
+or	O	CC	CC	NP	advertising	1	or	or	advertising
+advertising	O	NN	NN	NP	or	1	advertise	advert	any
+product	O	NN	NN	NP	 	1	product	produc	advertising
+or	O	CC	CC	NP	advertising	1	or	or	advertising
+to	O	TO	TO	VP	 	0	to	to	 
+imply	O	VB	VB	VP	 	0	imply	imply	 
+sponsorship	O	JJ	JJ	VP	 	0	sponsorship	spons	 
+by,	O	JJ	JJ	NP	,	0	by,	by,	sponsorship
+endorsement	O	NN	NN	VP	 	0	endorsement	endors	 
+from,	O	NN	NN	NP	endorsement	0	from,	from,	by
+or	O	CC	CC	NP	by	0	or	or	 
+a	O	DT	DT	NP	false	1	a	a	 
+false	O	JJ	JJ	NP	false	1	false	fals	 
+association	O	NN	NN	NP	false	1	association	assocy	 
+with	O	IN	IN	PP	 	0	with	with	 
+Snap,	O	NNP	NNP	NP	false	1	Snap,	snap,	 
+any	O	DT	DT	NP	false	1	any	any	 
+of	O	IN	IN	PP	 	0	of	of	 
+Snap’s	O	NNP	NNP	NP	 	0	Snap’s	snap’s	 
+users,	O	JJ	JJ	NP	 	0	users,	users,	 
+third	O	JJ	JJ	NP	party	1	third	third	 
+party	O	NN	NN	NP	false	1	party	party	 
+content	O	NN	NN	NP	providers	1	content	cont	party
+providers,	O	NN	NN	NP	 	0	providers,	providers,	 
+or	O	CC	CC	NP	 	0	or	or	,
+business	O	NN	NN	NP	partners	1	business	busy	 
+partners.	O	NN	NN	NP	 	1	partners.	partners.	business
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	JJ	JJ	PP	 	0	to,:	to,:	 
+Disclose,	O	NNP	NNP	VP	 	0	Disclose,	disclose,	 
+copy,	O	NN	NN	VP	 	0	copy,	copy,	 
+scrape,	O	NN	NN	VP	 	0	scrape,	scrape,	 
+translate,	O	NN	NN	VP	 	0	translate,	translate,	 
+use,	O	JJ	JJ	VP	 	0	use,	use,	 
+distribute,	O	NN	NN	VP	 	0	distribute,	distribute,	 
+display,	O	NN	NN	VP	 	0	display,	display,	 
+modify,	O	NN	NN	VP	 	0	modify,	modify,	 
+or	O	CC	CC	VP	 	0	or	or	 
+create	O	VB	VB	VP	 	0	create	cre	 
+derivative	O	JJ	JJ	NP	works	1	derivative	der	 
+works	O	NNS	NNS	VP	 	0	work	work	 
+from	O	IN	IN	VP	 	0	from	from	 
+any	O	DT	DT	NP	Snap	1	any	any	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	any
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+in	O	IN	IN	PP	 	0	in	in	 
+a	O	DT	DT	VP	 	0	a	a	 
+manner	O	NN	NN	NP	manner	1	manner	man	 
+or	O	CC	CC	NP	 	1	or	or	derivative
+on	O	IN	IN	PP	 	0	on	on	 
+an	O	DT	DT	NP	Snap	1	an	an	 
+Application	O	NN	NN	NP	manner	1	Application	apply	 
+that	O	WDT	WDT	NP	manner	1	that	that	 
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+inconsistent	O	JJ	JJ	PP	 	0	inconsistent	inconsist	 
+or	O	CC	CC	PP	 	0	or	or	 
+conflicts	O	NNS	NNS	PP	 	0	conflict	conflict	 
+with	O	IN	IN	PP	 	0	with	with	 
+these	O	DT	DT	NP	Terms	1	these	thes	 
+Terms	O	NNS	NNS	NP	 	1	Terms	term	these
+or	O	CC	CC	PP	 	0	or	or	 
+applicable	O	JJ	JJ	NP	manner	1	applicable	appl	 
+law.	O	NN	NN	NP	manner	1	law.	law.	 
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	VBP	VBP	PP	 	0	to,:	to,:	 
+Use	O	VB	VB	VP	 	0	Use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+to	O	TO	TO	VP	 	0	to	to	 
+compete	O	VB	VB	VP	 	0	compete	compet	 
+with	O	IN	IN	PP	 	0	with	with	 
+or	O	CC	CC	VP	 	0	or	or	 
+replicate	O	VB	VB	VP	 	0	replicate	reply	 
+any	O	DT	DT	NP	Snap	0	any	any	 
+Snap	O	NNP	NNP	NP	applications	0	Snap	snap	any
+applications	O	NNS	NNS	NP	or	0	applications	apply	Snap
+or	O	CC	CC	NP	 	0	or	or	applications
+Snap’s	O	NNP	NNP	NP	applications	0	Snap’s	snap’s	any
+products	O	NNS	NNS	NX	and	1	products	produc	’s
+and	O	CC	CC	NX	services	1	and	and	products
+services.	O	NN	NN	NX	 	1	services.	services.	and
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	B-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	VB	VB	PP	 	0	to,:	to,:	 
+Indicate	O	NNP	NNP	VP	 	0	Indicate	ind	 
+that	O	IN	IN	SBAR	 	0	that	that	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	B-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+are	O	VBP	VBP	VP	 	0	be	ar	 
+from	O	IN	IN	PP	 	0	from	from	 
+another	O	DT	DT	NP	social	1	another	anoth	 
+social	O	JJ	JJ	NP	platform	1	social	soc	another
+platform	O	NN	NN	NP	or	1	platform	platform	social
+or	O	CC	CC	NP	or	1	or	or	social
+medium	O	NN	NN	NP	 	1	medium	med	or
+other	O	JJ	JJ	ADJP	 	0	other	oth	 
+than	O	IN	IN	PP	 	0	than	than	 
+from	O	IN	IN	PP	 	0	from	from	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+or	O	CC	CC	NP	 	0	or	or	 
+a	O	DT	DT	NP	 	0	a	a	 
+Snap	O	NNP	NNP	NP	Snap	1	Snap	snap	 
+application.	O	NN	NN	NP	Snap	1	application.	application.	 
+ 	 	 	 	 	 	 	 	 	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	JJ	JJ	PP	 	0	to,:	to,:	 
+Collect	O	NNP	NNP	VP	 	0	Collect	collect	 
+or	O	CC	CC	VP	 	0	or	or	 
+attempt	O	NN	NN	VP	 	0	attempt	attempt	 
+to	O	TO	TO	VP	 	0	to	to	 
+collect	O	VB	VB	VP	 	0	collect	collect	 
+any	O	DT	DT	NP	personal	1	any	any	 
+personal	B-SEC	JJ	JJ	NP	data	1	personal	person	any
+data	I-SEC	NNS	NNS	NP	 	1	data	dat	personal
+from	O	IN	IN	PP	 	0	from	from	 
+Snap	O	NNP	NNP	NP	users	1	Snap	snap	 
+users	O	NNS	NNS	NP	 	1	users	us	Snap
+for	O	IN	IN	PP	 	0	for	for	 
+any	O	DT	DT	NP	unauthorized	1	any	any	 
+unauthorized	O	JJ	JJ	NP	or	1	unauthorized	unauth	any
+or	O	CC	CC	NP	or	1	or	or	any
+unlawful	O	JJ	JJ	NP	purpose	1	unlawful	unlaw	or
+purpose.	O	NN	NN	NP	 	1	purpose.	purpose.	unlawful
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	VP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	VP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NX	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NX	 	1	Content	cont	Snap
+,	O	,	,	VP	 	0	,	,	 
+Proxy,	O	NNP	NNP	VP	 	0	Proxy,	proxy,	 
+request,	O	NN	NN	VP	 	0	request,	request,	 
+or	O	CC	CC	VP	 	0	or	or	 
+collect	O	VB	VB	VP	 	0	collect	collect	 
+Snap	B-SEC	NNP	NNP	NP	usernames	1	Snap	snap	 
+usernames	I-SEC	NNS	NNS	NP	or	1	usernames	usernam	Snap
+or	O	CC	CC	NP	passwords	1	or	or	usernames
+passwords	B-SEC	NNS	NNS	NP	passwords	1	passwords	password	usernames
+.	O	.	.	SBAR	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	VB	VB	PP	 	0	to,:	to,:	 
+Build,	O	NNP	NNP	S	 	0	Build,	build,	 
+help	O	NN	NN	VP	 	0	help	help	 
+build,	O	NN	NN	VP	 	0	build,	build,	 
+or	O	CC	CC	VP	 	0	or	or	 
+supplement	O	NN	NN	VP	 	0	supplement	suppl	 
+any	O	DT	DT	NP	segments	1	any	any	 
+segments,	O	JJ	JJ	VP	 	0	segments,	segments,	 
+profiles	B-SEC	NNS	NNS	NX	 	0	profile	profil	 
+,	O	,	,	VP	 	0	,	,	 
+databases	B-SEC	NNS	NNS	NX	 	0	databases	databas	 
+or	O	CC	CC	VP	 	0	or	or	 
+similar	B-SEC	JJ	JJ	NP	records	1	similar	simil	 
+records	B-SEC	NNS	NNS	NP	 	0	record	record	 
+on	O	IN	IN	VP	 	0	on	on	 
+any	O	DT	DT	NP	individual	1	any	any	 
+individual,	O	JJ	JJ	NX	 	0	individual,	individual,	 
+device	B-SEC	NN	NN	NP	,	1	device	dev	,
+,	O	,	,	NP	device	1	,	,	individual
+content	B-SEC	NN	NN	VP	 	0	content	cont	 
+,	O	,	,	NP	device	1	,	,	individual
+or	O	CC	CC	NP	 	1	or	or	similar
+browser	B-SEC	NN	NN	NP	 	1	browser	brows	or
+or	O	CC	CC	NP	browser	1	or	or	,
+associate	O	VB	VB	NP	 	0	associate	assocy	or
+the	O	DT	DT	NP	behavior	1	the	the	 
+behavior	O	NN	NN	NP	browser	1	behavior	behavy	,
+of	O	IN	IN	VP	 	0	of	of	 
+any	O	DT	DT	NP	individual	1	any	any	 
+individual,	O	JJ	JJ	NP	or	1	individual,	individual,	content
+device	B-SEC	NN	NN	NP	,	1	device	dev	,
+,	O	,	,	NP	device	1	,	,	individual
+content	B-SEC	NN	NN	NP	,	1	content	cont	,
+,	O	,	,	NP	device	1	,	,	individual
+or	O	CC	CC	NP	 	1	or	or	the
+browser	B-SEC	NN	NN	NP	 	1	browser	brows	or
+with	O	IN	IN	VP	 	0	with	with	 
+any	O	DT	DT	NP	individual	1	any	any	 
+segment,	O	NN	NN	NP	content	1	segment,	segment,	device
+profile	B-SEC	NN	NN	VP	 	0	profile	profil	 
+,	O	,	,	NP	or	1	,	,	content
+or	O	CC	CC	NP	browser	1	or	or	,
+similar	O	JJ	JJ	NX	record	0	similar	simil	or
+record,	O	NN	NN	NP	browser	1	record,	record,	,
+or	O	CC	CC	NP	browser	1	or	or	,
+supplement	O	NN	NN	VP	 	0	supplement	suppl	 
+any	O	DT	DT	NP	 	0	any	any	 
+such	O	JJ	JJ	NP	record	1	such	such	any
+record	O	NN	NN	NX	similar	0	record	record	,
+based	O	VBN	VBN	VP	 	0	base	bas	 
+on	O	IN	IN	PP	 	0	on	on	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+or	O	CC	CC	VP	 	0	or	or	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	PP	 	0	Content	cont	 
+or	O	CC	CC	NP	 	1	or	or	such
+other	O	JJ	JJ	NP	information	1	other	oth	 
+information	B-SEC	NN	NN	PP	 	0	information	inform	 
+obtained	O	VBN	VBN	VP	 	0	obtain	obtain	 
+from	O	IN	IN	PP	 	0	from	from	 
+or	O	CC	CC	NP	 	0	or	or	 
+in	O	IN	IN	NP	 	1	in	in	other
+connection	O	NN	NN	PP	 	0	connection	connect	 
+with	O	IN	IN	PP	 	0	with	with	 
+your	O	PRP$	PRP$	NP	use	1	your	yo	 
+use	O	NN	NN	NP	 	1	use	us	your
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	information	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	VB	VB	PP	 	0	to,:	to,:	 
+Build,	O	NNP	NNP	VP	 	0	Build,	build,	 
+help	O	NN	NN	VP	 	0	help	help	 
+build,	O	NN	NN	VP	 	0	build,	build,	 
+or	O	CC	CC	VP	 	0	or	or	 
+supplement	O	NN	NN	VP	 	0	supplement	suppl	 
+any	O	DT	DT	NP	search	1	any	any	 
+search	O	NN	NN	NP	engines	1	search	search	any
+engines,	O	NN	NN	VP	 	0	engines,	engines,	 
+recommendation	O	NN	NN	NP	services	1	recommendation	recommend	 
+services,	O	NN	NN	NP	 	0	services,	services,	 
+directories,	O	NN	NN	NP	 	0	directories,	directories,	 
+or	O	CC	CC	VP	 	0	or	or	 
+similar	O	JJ	JJ	NP	databases	1	similar	simil	 
+databases	O	NNS	NNS	NP	 	1	databases	databas	similar
+based	O	VBN	VBN	VP	 	0	base	bas	 
+on	O	IN	IN	NP	services	1	on	on	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	B-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+or	O	CC	CC	NP	 	0	or	or	,
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	PP	 	0	Content	cont	 
+or	O	CC	CC	NP	 	0	or	or	,
+other	O	JJ	JJ	NP	information	1	other	oth	 
+information	B-SEC	NN	NN	PP	 	0	information	inform	 
+obtained	O	VBN	VBN	VP	 	0	obtain	obtain	 
+from	O	IN	IN	PP	 	0	from	from	 
+or	O	CC	CC	NP	 	0	or	or	 
+in	O	IN	IN	NP	 	1	in	in	other
+connection	O	NN	NN	PP	 	0	connection	connect	 
+with	O	IN	IN	PP	 	0	with	with	 
+your	O	PRP$	PRP$	NP	use	1	your	yo	 
+use	O	NN	NN	NP	 	1	use	us	your
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	information	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	JJ	JJ	PP	 	0	to,:	to,:	 
+Transmit	O	NNP	NNP	NP	 	0	Transmit	transmit	 
+into	O	IN	IN	PP	 	0	into	into	 
+any	O	DT	DT	NP	Snap	1	any	any	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	any
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNP	NNP	NP	 	1	Services	serv	API
+any	O	DT	DT	NP	‘	1	any	any	 
+‘back	O	NNP	NNP	NP	back	1	‘back	‘back	any
+door,’	O	NN	NN	NP	 	1	door,’	door,’	back
+‘time	O	NNP	NNP	NP	back	1	‘time	‘time	any
+bomb,’	O	NN	NN	NP	’	0	bomb,’	bomb,’	 
+‘Trojan	O	NNP	NNP	NP	back	1	‘Trojan	‘trojan	any
+Horse,’	O	NNP	NNP	NP	’	0	Horse,’	horse,’	 
+‘worm,’	O	NNP	NNP	NP	‘	0	‘worm,’	‘worm,’	,
+‘drop	O	NNP	NNP	NP	time	0	‘drop	‘drop	’
+dead	O	JJ	JJ	NP	device	0	dead	dead	drop
+device,’	O	NN	NN	NP	’	0	device,’	device,’	bomb
+‘virus,’	O	NNP	NNP	NP	’	0	‘virus,’	‘virus,’	bomb
+‘spyware,’	O	NNP	NNP	NP	‘	0	‘spyware,’	‘spyware,’	,
+or	O	CC	CC	NP	,	0	or	or	Trojan
+‘malware;’	O	CD	CD	NP	Trojan	0	‘malware;’	‘malware;’	’
+or	O	CC	CC	NP	,	0	or	or	Trojan
+any	O	DT	DT	NP	‘	1	any	any	 
+computer	O	NN	NN	NP	code	1	computer	comput	any
+code	O	NN	NN	NP	or	1	code	cod	computer
+or	O	CC	CC	NP	,	0	or	or	‘
+software	O	NN	NN	NP	routine	1	software	softw	or
+routine,	O	NN	NN	NP	’	0	routine,	routine,	worm
+which	O	WDT	WDT	WHNP	 	0	which	which	 
+permits	O	VBZ	VBZ	VP	 	0	permit	permit	 
+unauthorized	O	JJ	JJ	NP	‘	0	unauthorized	unauth	’
+access	O	NN	NN	NP	 	1	access	access	unauthorized
+to,	O	NN	NN	NP	 	0	to,	to,	device
+disables,	O	NN	NN	NP	 	0	disables,	disables,	device
+damages,	O	NN	NN	NP	 	0	damages,	damages,	 
+erases,	O	NN	NN	NP	 	0	erases,	erases,	 
+disrupts,	O	NN	NN	NP	 	0	disrupts,	disrupts,	 
+or	O	CC	CC	NP	‘	0	or	or	’
+impairs	O	VB	VB	VP	 	0	impair	impair	 
+the	O	DT	DT	NP	normal	1	the	the	 
+normal	O	JJ	JJ	NP	‘	0	normal	norm	’
+operation	O	NN	NN	NP	 	1	operation	op	normal
+of,	O	NN	NN	NP	’	0	of,	of,	 
+or	O	CC	CC	NP	‘	0	or	or	’
+use	O	NN	NN	NP	 	0	use	us	or
+of	O	IN	IN	NP	routine	1	of	of	or
+any	O	DT	DT	NP	computer	1	any	any	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	any
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	VBP	VBP	PP	 	0	to,:	to,:	 
+Use	O	NNP	NNP	VP	 	0	Use	us	 
+or	O	CC	CC	VP	 	0	or	or	 
+combine	O	VB	VB	VP	 	0	combine	combin	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+with	O	IN	IN	PP	 	0	with	with	 
+software	O	NN	NN	NP	 	0	software	softw	 
+offered	O	VBN	VBN	NP	 	0	offer	off	 
+under	O	IN	IN	PP	 	0	under	und	 
+an	O	DT	DT	NP	open	1	an	an	 
+open	O	JJ	JJ	NP	source	1	open	op	an
+source	O	NN	NN	NP	license	1	source	sourc	open
+license	O	NN	NN	NP	 	1	license	licens	source
+in	O	IN	IN	PP	 	0	in	in	 
+such	O	JJ	JJ	NP	a	1	such	such	 
+a	O	DT	DT	NP	way	1	a	a	such
+way	O	NN	NN	NP	way	1	way	way	such
+that	O	WDT	WDT	NP	way	1	that	that	such
+would	O	MD	MD	VP	 	0	would	would	 
+cause	O	VB	VB	VP	 	0	cause	caus	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+to	O	TO	TO	VP	 	0	to	to	 
+be	O	VB	VB	VP	 	0	be	be	 
+subject	O	JJ	JJ	ADJP	 	0	subject	subject	 
+to	O	TO	TO	VP	 	0	to	to	 
+any	O	DT	DT	NP	obligations	1	any	any	 
+obligations	O	NNS	NNS	NP	 	1	obligations	oblig	any
+under	O	IN	IN	PP	 	0	under	und	 
+such	O	JJ	JJ	NP	open	1	such	such	 
+open	O	JJ	JJ	NP	source	1	open	op	such
+source	O	NN	NN	NP	license	1	source	sourc	open
+license.	O	NN	NN	NP	 	1	license.	license.	source
+ 	 	 	 	 	 	 	 	 	 
+When	O	WRB	WRB	WHADVP	 	0	When	when	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+or	O	CC	CC	VP	 	0	or	or	 
+allow	O	VB	VB	VP	 	0	allow	allow	 
+others	O	NNS	NNS	NP	 	0	others	oth	 
+to,:	O	VBP	VBP	PP	 	0	to,:	to,:	 
+Use	O	VB	VB	VP	 	0	Use	us	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+in	O	IN	IN	VP	 	0	in	in	 
+conjunction	O	NN	NN	NP	 	0	conjunction	conjunct	 
+with	O	IN	IN	PP	 	0	with	with	 
+any	O	DT	DT	NP	hardware	1	any	any	 
+hardware	O	NN	NN	NP	accessory	1	hardware	hardw	any
+accessory,	O	NN	NN	NP	 	1	accessory,	accessory,	hardware
+including	O	VBG	VBG	PP	 	0	include	includ	 
+an	O	DT	DT	NP	hardware	1	an	an	 
+Application	O	NN	NN	NP	 	1	Application	apply	an
+that	O	WDT	WDT	WHNP	 	0	that	that	 
+facilitates	O	VBZ	VBZ	VP	 	0	facilitate	facilit	 
+access	O	NN	NN	NP	 	0	access	access	 
+to	O	TO	TO	PP	 	0	to	to	 
+a	O	DT	DT	VP	 	0	a	a	 
+hardware	O	NN	NN	NP	hardware	1	hardware	hardw	 
+accessory,	O	NN	NN	NP	hardware	1	accessory,	accessory,	 
+unless	O	IN	IN	SBAR	 	0	unless	unless	 
+otherwise	O	RB	RB	ADVP	 	0	otherwise	otherw	 
+agreed	O	VBN	VBN	NP	hardware	1	agree	agree	 
+to	O	TO	TO	PP	 	0	to	to	 
+in	O	IN	IN	PP	 	0	in	in	 
+writing	O	VBG	VBG	PP	 	0	write	writ	 
+between	O	IN	IN	PP	 	0	between	between	 
+you	O	PRP	PRP	NP	and	1	you	you	 
+and	O	CC	CC	NP	Snap	1	and	and	you
+Snap.	O	VB	VB	NP	 	1	Snap.	snap.	and
+ 	 	 	 	 	 	 	 	 	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+reserves	O	NNS	NNS	VP	 	0	reserve	reserv	 
+the	O	DT	DT	NP	right	0	the	the	 
+right	O	NN	NN	NP	 	0	right	right	the
+to	O	TO	TO	VP	 	0	to	to	 
+discontinue	O	VB	VB	VP	 	0	discontinue	discontinu	 
+offering	O	VBG	VBG	VP	 	0	offer	off	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+or	O	CC	CC	NP	 	0	or	or	 
+any	O	DT	DT	NP	updates	1	any	any	 
+updates	O	JJ	JJ	NP	 	1	update	upd	any
+thereto,	O	NN	NN	NP	 	0	thereto,	thereto,	 
+or	O	CC	CC	NP	 	0	or	or	,
+to	O	TO	TO	VP	 	0	to	to	 
+modify	O	VB	VB	VP	 	0	modify	mod	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNP	NNP	NP	 	1	Services	serv	API
+at	O	IN	IN	PP	 	0	at	at	 
+any	O	DT	DT	NP	time	1	any	any	 
+time,	O	NN	NN	NP	 	1	time,	time,	any
+in	O	IN	IN	PP	 	0	in	in	 
+its	O	PRP$	PRP$	NP	sole	1	its	it	 
+sole	O	JJ	JJ	NP	discretion	1	sole	sol	its
+discretion,	O	NN	NN	NP	 	1	discretion,	discretion,	sole
+with	O	IN	IN	PP	 	0	with	with	 
+or	O	CC	CC	PP	 	0	or	or	 
+without	O	IN	IN	PP	 	0	without	without	 
+notice	O	NN	NN	NP	 	0	notice	not	 
+to	O	TO	TO	PP	 	0	to	to	 
+you.	O	VB	VB	NP	 	0	you.	you.	 
+ 	 	 	 	 	 	 	 	 	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+not	O	RB	RB	VP	 	0	not	not	 
+obligated	O	VBN	VBN	VP	 	0	obligate	oblig	 
+to	O	TO	TO	VP	 	0	to	to	 
+provide	O	VB	VB	VP	 	0	provide	provid	 
+any	O	DT	DT	NP	 	0	any	any	 
+maintenance,	O	JJ	JJ	ADJP	 	0	maintenance,	maintenance,	 
+technical	O	JJ	JJ	ADJP	 	0	technical	techn	 
+or	O	CC	CC	ADJP	 	0	or	or	 
+other	O	JJ	JJ	ADJP	 	0	other	oth	 
+support	O	NN	NN	NP	 	0	support	support	 
+for	O	IN	IN	PP	 	0	for	for	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+It	O	PRP	PRP	NP	 	0	It	it	 
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+solely	O	RB	RB	ADVP	 	0	solely	sol	 
+your	O	PRP$	PRP$	NP	responsibility	1	your	yo	 
+responsibility	O	NN	NN	NP	 	1	responsibility	respons	your
+at	O	IN	IN	PP	 	0	at	at	 
+all	O	DT	DT	NP	times	1	all	al	 
+times	O	NNS	NNS	NP	 	1	time	tim	all
+to	O	TO	TO	VP	 	0	to	to	 
+be	O	VB	VB	VP	 	0	be	be	 
+prepared	O	VBN	VBN	ADJP	 	0	prepare	prep	 
+to	O	TO	TO	VP	 	0	to	to	 
+conduct	O	VB	VB	VP	 	0	conduct	conduc	 
+your	O	PRP$	PRP$	NP	business	1	your	yo	 
+business	O	NN	NN	NP	 	1	business	busy	your
+and	O	CC	CC	VP	 	0	and	and	 
+operate	O	VB	VB	VP	 	0	operate	op	 
+the	O	DT	DT	NP	Application	1	the	the	 
+Application	O	NN	NN	NP	 	1	Application	apply	the
+without	O	IN	IN	PP	 	0	without	without	 
+access	O	NN	NN	NP	 	0	access	access	 
+to	O	TO	TO	PP	 	0	to	to	 
+any	O	DT	DT	NP	aspect	1	any	any	 
+aspect	O	NN	NN	NP	 	1	aspect	aspect	any
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+In	O	IN	IN	PP	 	0	In	in	 
+addition,	O	JJ	JJ	NP	 	0	addition,	addition,	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+may	O	MD	MD	VP	 	0	may	may	 
+provide	O	VB	VB	VP	 	0	provide	provid	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+with	O	IN	IN	PP	 	0	with	with	 
+upgrades,	O	JJ	JJ	NP	,	1	upgrades,	upgrades,	 
+updates,	O	NN	NN	NP	updates	1	updates,	updates,	upgrades
+or	O	CC	CC	NP	modifications	1	or	or	,
+modifications	O	NNS	NNS	NP	 	1	modifications	mod	or
+for	O	IN	IN	NP	modifications	1	for	for	,
+the	O	DT	DT	NP	Snap	0	the	the	for
+Snap	B-SEC	NNP	NNP	NP	API	0	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	0	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	“	0	Services	serv	API
+“Modifications”,	O	NN	NN	NP	 	0	“Modifications”,	“modifications”,	Services
+in	O	IN	IN	PP	 	0	in	in	 
+Snap’s	O	NNP	NNP	NP	API	0	Snap’s	snap’s	the
+sole	O	NN	NN	NP	discretion	1	sole	sol	 
+discretion.	O	NN	NN	NP	 	1	discretion.	discretion.	sole
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+understand	O	VBP	VBP	S	 	0	understand	understand	 
+and	O	CC	CC	S	 	0	and	and	 
+agree	O	VBP	VBP	S	 	0	agree	agr	 
+that:	O	NNS	NNS	NP	 	0	that:	that:	 
+i,	O	VBP	VBP	NP	 	0	i,	i,	 
+all	O	DT	DT	NP	Modifications	1	all	al	 
+Modifications	O	NNP	NNP	NP	 	0	Modifications	mod	 
+will	O	MD	MD	VP	 	0	will	wil	 
+form	O	VB	VB	VP	 	0	form	form	 
+a	O	DT	DT	NP	 	1	a	a	all
+part	O	NN	NN	NP	part	1	part	part	 
+of	O	IN	IN	PP	 	0	of	of	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+,	O	,	,	VP	 	0	,	,	 
+ii,	O	VB	VB	VP	 	0	ii,	ii,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+must	O	MD	MD	VP	 	0	must	must	 
+implement	O	VB	VB	VP	 	0	implement	impl	 
+all	O	DT	DT	NP	Modifications	1	all	al	 
+Modifications	O	NNS	NNS	NP	 	1	Modifications	mod	all
+required	O	VBN	VBN	VP	 	0	require	requir	 
+by	O	IN	IN	PP	 	0	by	by	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+into	O	IN	IN	PP	 	0	into	into	 
+your	O	PRP$	PRP$	NP	Application	1	your	yo	 
+Application	O	NN	NN	NP	 	1	Application	apply	your
+as	O	RB	RB	ADVP	 	0	as	as	 
+soon	O	RB	RB	ADVP	 	0	soon	soon	 
+as	O	IN	IN	ADVP	 	0	as	as	 
+commercially	O	RB	RB	ADJP	 	0	commercially	commerc	 
+practicable;	O	JJ	JJ	ADJP	 	0	practicable;	practicable;	 
+and	O	CC	CC	S	 	0	and	and	 
+iii,	O	NN	NN	S	 	0	iii,	iii,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+prioritize	O	VB	VB	VP	 	0	prioritize	priorit	 
+changes	O	NNS	NNS	NP	 	0	change	chang	 
+to	O	TO	TO	PP	 	0	to	to	 
+your	O	PRP$	PRP$	NP	 	0	your	yo	 
+Application	O	NNP	NNP	NP	 	1	Application	apply	your
+according	O	VBG	VBG	PP	 	0	accord	accord	 
+to	O	TO	TO	PP	 	0	to	to	 
+Snap’s	O	NNP	NNP	NP	’s	1	Snap’s	snap’s	 
+recommendations.	O	NN	NN	NP	 	1	recommendations.	recommendations.	’s
+ 	 	 	 	 	 	 	 	 	 
+Snap’s	O	NNP	NNP	NP	’s	1	Snap’s	snap’s	 
+communication	O	NN	NN	NP	 	1	communication	commun	’s
+to	O	TO	TO	PP	 	0	to	to	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+and	O	CC	CC	NP	 	0	and	and	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+may	O	MD	MD	VP	 	0	may	may	 
+contain	O	VB	VB	VP	 	0	contain	contain	 
+Snap	O	NNP	NNP	NP	confidential	1	Snap	snap	 
+confidential	B-SEC	JJ	JJ	NP	information	1	confidential	confid	Snap
+information	I-SEC	NN	NN	NP	 	1	information	inform	confidential
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+Snap	O	NNP	NNP	S	 	0	Snap	snap	 
+confidential	B-SEC	JJ	JJ	NP	information	1	confidential	confid	 
+information	I-SEC	NN	NN	NP	 	1	information	inform	confidential
+includes	O	VBZ	VBZ	VP	 	0	include	includ	 
+any	O	DT	DT	NP	materials	0	any	any	 
+materials,	O	NN	NN	NP	,	0	materials,	materials,	any
+documentation,	O	NN	NN	NP	 	0	documentation,	documentation,	materials
+communication,	O	NN	NN	NP	 	0	communication,	communication,	 
+and	O	CC	CC	NP	information	0	and	and	,
+information	I-SEC	NN	NN	NP	 	0	information	inform	and
+that	O	WDT	WDT	WHNP	 	0	that	that	 
+are	O	VBP	VBP	VP	 	0	be	ar	 
+marked	O	VBN	VBN	VP	 	0	mark	mark	 
+confidential	O	JJ	JJ	ADJP	 	0	confidential	confid	 
+or	O	CC	CC	NP	 	0	or	or	and
+would	O	MD	MD	VP	 	0	would	would	 
+reasonably	O	RB	RB	ADVP	 	0	reasonably	reason	 
+be	O	VB	VB	VP	 	0	be	be	 
+understood	O	VBN	VBN	VP	 	0	understand	understood	 
+to	O	TO	TO	VP	 	0	to	to	 
+be	O	VB	VB	VP	 	0	be	be	 
+confidential	O	JJ	JJ	ADJP	 	0	confidential	confid	 
+to	O	TO	TO	VP	 	0	to	to	 
+Snap	O	NNP	NNP	VP	 	0	Snap	snap	 
+under	O	IN	IN	PP	 	0	under	und	 
+these	O	DT	DT	NP	Terms	1	these	thes	 
+Terms.	O	NNP	NNP	NP	 	1	Terms.	terms.	these
+ 	 	 	 	 	 	 	 	 	 
+If	O	IN	IN	SBAR	 	0	If	if	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+receive	O	VBP	VBP	VP	 	0	receive	receiv	 
+any	O	DT	DT	NP	Snap	1	any	any	 
+Snap	B-SEC	NNP	NNP	NP	confidential	1	Snap	snap	any
+confidential	B-SEC	JJ	JJ	NP	information	1	confidential	confid	Snap
+information	I-SEC	NN	NN	NP	 	1	information	inform	confidential
+then	O	RB	RB	ADVP	 	0	then	then	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+not	O	RB	RB	VP	 	0	not	not	 
+disclose	O	VB	VB	VP	 	0	disclose	disclos	 
+it	O	PRP	PRP	NP	 	0	it	it	 
+to	O	TO	TO	PP	 	0	to	to	 
+any	O	DT	DT	NP	third	1	any	any	 
+third	O	JJ	JJ	NP	party	1	third	third	any
+party	O	NN	NN	NP	 	1	party	party	third
+without	O	IN	IN	PP	 	0	without	without	 
+Snap’s	O	NNP	NNP	NP	’s	1	Snap’s	snap’s	 
+prior	O	RB	RB	NP	written	1	prior	pri	 
+written	O	VBN	VBN	NP	consent	1	write	writ	prior
+consent.	O	NN	NN	NP	 	1	consent.	consent.	written
+ 	 	 	 	 	 	 	 	 	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+confidential	B-SEC	JJ	JJ	NP	information	1	confidential	confid	 
+information	I-SEC	NN	NN	NP	 	1	information	inform	confidential
+does	O	VBZ	VBZ	VP	 	0	do	doe	 
+not	O	RB	RB	VP	 	0	not	not	 
+include	O	VB	VB	VP	 	0	include	includ	 
+any	O	DT	DT	NP	information	1	any	any	 
+information	I-SEC	NN	NN	NP	 	1	information	inform	any
+that	O	IN	IN	WHNP	 	0	that	that	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+already	O	RB	RB	ADVP	 	0	already	already	 
+rightfully	O	RB	RB	ADVP	 	0	rightfully	right	 
+knew,	O	VB	VB	VP	 	0	knew,	knew,	 
+that	O	IN	IN	WHNP	 	0	that	that	 
+becomes	O	VBZ	VBZ	SBAR	 	0	become	becom	 
+public	O	JJ	JJ	ADJP	 	0	public	publ	 
+through	O	IN	IN	PP	 	0	through	through	 
+no	O	DT	DT	NP	fault	1	no	no	 
+fault	O	NN	NN	NP	 	1	fault	fault	no
+of	O	IN	IN	PP	 	0	of	of	 
+yours,	O	NN	NN	NP	 	0	yours,	yours,	 
+that	O	WDT	WDT	WHNP	 	0	that	that	 
+was	O	VBD	VBD	VP	 	0	be	was	 
+independently	O	RB	RB	ADVP	 	0	independently	independ	 
+developed	O	VBN	VBN	VP	 	0	develop	develop	 
+by	O	IN	IN	PP	 	0	by	by	 
+you,	O	NN	NN	NP	 	0	you,	you,	 
+or	O	CC	CC	SBAR	 	0	or	or	 
+that	O	DT	DT	WHNP	 	0	that	that	 
+was	O	VBD	VBD	VP	 	0	be	was	 
+lawfully	O	RB	RB	ADVP	 	0	lawfully	law	 
+given	O	VBN	VBN	VP	 	0	give	giv	 
+to	O	TO	TO	PP	 	0	to	to	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+by	O	IN	IN	PP	 	0	by	by	 
+a	O	DT	DT	ADVP	 	0	a	a	 
+third	O	JJ	JJ	NP	party	1	third	third	a
+party	O	NN	NN	NP	third	1	party	party	 
+who	O	WP	WP	WHNP	 	0	who	who	 
+was	O	VBD	VBD	NP	third	1	be	was	 
+under	O	IN	IN	PP	 	0	under	und	 
+no	O	DT	DT	NP	obligation	1	no	no	 
+obligation	O	NN	NN	NP	 	1	obligation	oblig	no
+of	O	IN	IN	PP	 	0	of	of	 
+confidentiality.	O	NN	NN	NP	 	0	confidentiality.	confidentiality.	 
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+may	O	MD	MD	VP	 	0	may	may	 
+disclose	O	VB	VB	VP	 	0	disclose	disclos	 
+Snap	O	NNP	NNP	NP	confidential	1	Snap	snap	 
+confidential	B-SEC	JJ	JJ	NP	information	1	confidential	confid	Snap
+information	I-SEC	NN	NN	NP	 	1	information	inform	confidential
+when	O	WRB	WRB	WHADVP	 	0	when	when	 
+compelled	O	VBN	VBN	WHADVP	 	0	compel	compel	 
+to	O	TO	TO	VP	 	0	to	to	 
+do	O	VB	VB	VP	 	0	do	do	 
+so	O	RB	RB	ADVP	 	0	so	so	 
+by	O	IN	IN	PP	 	0	by	by	 
+law	O	NN	NN	NP	 	0	law	law	 
+if	O	IN	IN	SBAR	 	0	if	if	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+provide	O	VBP	VBP	VP	 	0	provide	provid	 
+Snap	O	NNP	NNP	VP	 	0	Snap	snap	 
+reasonable	O	JJ	JJ	VP	 	0	reasonable	reason	 
+prior	O	RB	RB	VP	 	0	prior	pri	 
+notice,	O	JJ	JJ	VP	 	0	notice,	notice,	 
+unless	O	IN	IN	SBAR	 	0	unless	unless	 
+a	O	DT	DT	S	 	0	a	a	 
+court	O	NN	NN	S	 	0	court	court	 
+orders	O	NNS	NNS	S	 	0	order	ord	 
+that	O	WDT	WDT	SBAR	 	0	that	that	 
+Snap	O	NNP	NNP	S	 	0	Snap	snap	 
+not	O	RB	RB	S	 	0	not	not	 
+receive	O	VB	VB	VP	 	0	receive	receiv	 
+notice.	O	NN	NN	NP	 	0	notice.	notice.	 
+ 	 	 	 	 	 	 	 	 	 
+Upon	O	IN	IN	PP	 	0	Upon	upon	 
+termination	O	NN	NN	NP	 	0	termination	termin	 
+of	O	IN	IN	PP	 	0	of	of	 
+these	O	DT	DT	NP	Terms	1	these	thes	 
+Terms	O	NNS	NNS	NP	 	1	Terms	term	these
+whether	O	IN	IN	SBAR	 	0	whether	wheth	 
+by	O	IN	IN	PP	 	0	by	by	 
+you	O	PRP	PRP	NP	or	1	you	you	 
+or	O	CC	CC	NP	Snap	1	or	or	you
+Snap	O	VB	VB	NP	 	1	Snap	snap	or
+,	O	,	,	S	 	0	,	,	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+will	O	MD	MD	VP	 	0	will	wil	 
+immediately	O	RB	RB	ADVP	 	0	immediately	immedy	 
+stop	O	VB	VB	VP	 	0	stop	stop	 
+accessing	O	NN	NN	VP	 	0	access	access	 
+and	O	CC	CC	VP	 	0	and	and	 
+using	O	VBG	VBG	VP	 	0	use	us	 
+all	O	DT	DT	NP	Snap	1	all	al	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	all
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+and	O	CC	CC	VP	 	0	and	and	 
+delete	O	VB	VB	VP	 	0	delete	delet	 
+and	O	CC	CC	VP	 	0	and	and	 
+destroy	O	VB	VB	VP	 	0	destroy	destroy	 
+all	O	DT	DT	NP	Snap	1	all	al	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	all
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	O	NNP	NNP	NP	confidential	1	Snap	snap	 
+confidential	B-SEC	JJ	JJ	NP	information	1	confidential	confid	Snap
+information	I-SEC	NN	NN	NP	 	1	information	inform	confidential
+including	O	VBG	VBG	PP	 	0	include	includ	 
+Snap	B-SEC	NNP	NNP	NP	Data	1	Snap	snap	 
+Data	I-SEC	NNP	NNP	NP	 	1	Data	dat	Snap
+and	O	CC	CC	NP	 	0	and	and	 
+Snap	B-SEC	NNP	NNP	NP	Content	1	Snap	snap	 
+Content	I-SEC	NNP	NNP	NP	 	1	Content	cont	Snap
+,	O	,	,	NP	 	0	,	,	 
+in	O	IN	IN	PP	 	0	in	in	 
+your	O	PRP$	PRP$	NP	possession	1	your	yo	 
+possession	O	NN	NN	NP	and	1	possession	possess	your
+and	O	CC	CC	NP	control	1	and	and	possession
+control	O	NN	NN	NP	 	1	control	control	and
+including	O	VBG	VBG	PP	 	0	include	includ	 
+from	O	IN	IN	PP	 	0	from	from	 
+your	O	PRP$	PRP$	NP	servers	1	your	yo	 
+servers,.	O	NN	NN	NP	 	1	servers,.	servers,.	your
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+agree	O	VBP	VBP	VP	 	0	agree	agr	 
+that	O	IN	IN	SBAR	 	0	that	that	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+,	O	,	,	S	 	0	,	,	 
+may	O	MD	MD	VP	 	0	may	may	 
+use	O	VB	VB	VP	 	0	use	us	 
+your	O	PRP$	PRP$	NP	name	0	your	yo	 
+name	B-SEC	NN	NN	NP	,	0	name	nam	your
+,	O	,	,	NP	 	0	,	,	name
+logos,	B-SEC	NN	NN	NX	 	0	logos,	logos,	 
+,	O	,	,	NP	,	0	,	,	 
+or	O	CC	CC	NP	 	0	or	or	,
+other	O	JJ	JJ	NP	identifying	1	other	oth	 
+identifying	O	VBG	VBG	NP	information	1	identify	ident	other
+information	B-SEC	NN	NN	NP	or	1	information	inform	identifying
+or	O	CC	CC	NP	or	1	or	or	identifying
+image	O	NN	NN	NP	 	1	image	im	or
+for	O	IN	IN	PP	 	0	for	for	 
+any	O	DT	DT	NP	legitimate	1	any	any	 
+legitimate	O	JJ	JJ	NP	business	1	legitimate	legitim	any
+business	O	NN	NN	NP	purpose	1	business	busy	legitimate
+purpose	O	NN	NN	NP	 	1	purpose	purpos	business
+without	O	IN	IN	PP	 	0	without	without	 
+consent.	O	NN	NN	NP	 	0	consent.	consent.	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+must	O	MD	MD	VP	 	0	must	must	 
+not	O	RB	RB	VP	 	0	not	not	 
+make	O	VB	VB	VP	 	0	make	mak	 
+any	O	DT	DT	NP	public	1	any	any	 
+public	O	JJ	JJ	NP	statement	1	public	publ	any
+statement	O	NN	NN	NP	 	1	statement	stat	public
+regarding	O	VBG	VBG	VP	 	0	regard	regard	 
+your	O	PRP$	PRP$	NP	access	1	your	yo	 
+access	O	NN	NN	NP	 	1	access	access	your
+to,	O	NN	NN	PP	 	0	to,	to,	 
+or	O	CC	CC	PP	 	0	or	or	 
+use	O	NN	NN	PP	 	0	use	us	 
+of,	O	IN	IN	PP	 	0	of,	of,	 
+the	O	DT	DT	NP	Snap	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+without	O	IN	IN	PP	 	0	without	without	 
+Snap’s	O	NNP	NNP	NP	API	1	Snap’s	snap’s	the
+prior	O	RB	RB	NP	review	1	prior	pri	 
+review	O	NN	NN	NP	 	1	review	review	prior
+and	O	CC	CC	NP	 	0	and	and	 
+prior	O	JJ	JJ	NP	review	1	prior	pri	 
+written	O	VBN	VBN	NP	approval	1	write	writ	prior
+approval.	O	NN	NN	NP	 	1	approval.	approval.	written
+ 	 	 	 	 	 	 	 	 	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+may	O	MD	MD	VP	 	0	may	may	 
+give	O	VB	VB	VP	 	0	give	giv	 
+notices	O	NNS	NNS	NP	 	0	notice	not	 
+to	O	TO	TO	PP	 	0	to	to	 
+you	O	PRP	PRP	NP	 	0	you	you	 
+by	O	IN	IN	PP	 	0	by	by	 
+email	B-SEC	NN	NN	NP	 	0	email	email	 
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+You	O	PRP	PRP	NP	 	0	You	you	 
+must	O	MD	MD	VP	 	0	must	must	 
+ensure	O	VB	VB	VP	 	0	ensure	ens	 
+that	O	IN	IN	SBAR	 	0	that	that	 
+your	O	PRP$	PRP$	NP	contact	1	your	yo	 
+contact	B-SEC	NN	NN	NP	and	1	contact	contact	your
+and	O	CC	CC	NP	account	1	and	and	contact
+account	I-SEC	NN	NN	NP	information	1	account	account	and
+information	I-SEC	NN	NN	NP	 	1	information	inform	account
+is	O	VBZ	VBZ	VP	 	0	be	is	 
+current	O	JJ	JJ	ADJP	 	0	current	cur	 
+and	O	CC	CC	ADJP	 	0	and	and	 
+correct,	O	NN	NN	ADJP	 	0	correct,	correct,	 
+and	O	CC	CC	VP	 	0	and	and	 
+promptly	O	RB	RB	ADVP	 	0	promptly	prompt	 
+notify	O	JJ	JJ	VP	 	0	notify	not	 
+Snap	O	NNP	NNP	NP	 	0	Snap	snap	 
+in	O	IN	IN	PP	 	0	in	in	 
+writing	O	NN	NN	PP	 	0	write	writ	 
+of	O	IN	IN	PP	 	0	of	of	 
+any	O	DT	DT	NP	changes	1	any	any	 
+changes	O	NNS	NNS	NP	 	1	change	chang	any
+to	O	TO	TO	PP	 	0	to	to	 
+such	O	JJ	JJ	NP	information	1	such	such	 
+information	I-SEC	NN	NN	NP	 	1	information	inform	such
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 
+The	O	DT	DT	NP	laws	1	The	the	 
+laws	O	NNS	NNS	NP	 	1	laws	law	The
+of	O	IN	IN	PP	 	0	of	of	 
+California,	O	NNP	NNP	NP	 	0	California,	california,	 
+except	O	IN	IN	PP	 	0	except	exceiv	 
+for	O	IN	IN	PP	 	0	for	for	 
+its	O	PRP$	PRP$	NP	conflict	1	its	it	 
+conflict-of-laws	O	JJ	JJ	NP	 	1	conflict-of-laws	conflict-of-laws	its
+principles,	O	NN	NN	NP	 	0	principles,	principles,	 
+govern	O	VBD	VBD	VP	 	0	govern	govern	 
+the	O	DT	DT	NP	Terms	1	the	the	 
+Terms	O	NNS	NNS	NP	 	1	Terms	term	the
+and	O	CC	CC	NP	 	0	and	and	 
+any	O	DT	DT	NP	disputes	1	any	any	 
+disputes	O	NNS	NNS	NP	or	1	dispute	disput	any
+or	O	CC	CC	NP	proceedings	1	or	or	disputes
+proceedings	O	NNS	NNS	NP	 	1	proceed	process	or
+including	O	VBG	VBG	VP	 	0	include	includ	 
+tort	O	NN	NN	NP	proceedings	1	tort	tort	disputes
+claims,	O	NN	NN	NP	 	0	claims,	claims,	 
+arising	O	VBG	VBG	VP	 	0	arise	ar	 
+out	O	IN	IN	PP	 	0	out	out	 
+of	O	IN	IN	PP	 	0	of	of	 
+or	O	CC	CC	NP	claims	1	or	or	 
+relating	O	VBG	VBG	VP	 	0	relate	rel	 
+to	O	TO	TO	NP	claims	1	to	to	 
+the	O	DT	DT	NP	Terms	1	the	the	 
+Terms	O	NNS	NNS	NP	 	1	Terms	term	the
+or	O	CC	CC	VP	 	0	or	or	 
+the	O	DT	DT	NP	Terms	1	the	the	 
+Snap	B-SEC	NNP	NNP	NP	API	1	Snap	snap	the
+API	I-SEC	NNP	NNP	NP	Services	1	API	ap	Snap
+Services	I-SEC	NNPS	NNPS	NP	 	1	Services	serv	API
+.	O	.	.	S	 	0	.	.	 
+ 	 	 	 	 	 	 	 	 	 

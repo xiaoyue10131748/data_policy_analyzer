@@ -1,8 +1,7 @@
-# data_policy_analyzer
+## data_policy_analyzer
 The goal ofData Policy Analyzer(DPA) is to extract third-party  data  sharing  policies  from  an  SDK  ToS
 
-# Project Title
-
+## Project Title
 data_policy_analyzer
 
 ## Getting Started

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from scrapy.linkextractors import LinkExtractor
-from maliciousLibrarySpider.items import MaliciouslibraryspiderItem
 from urllib.parse import urlparse
 from urllib.parse import urljoin
 from selenium import webdriver
@@ -24,16 +23,18 @@ class NlpSpider(scrapy.Spider):
     #scrapy.selector.unified.SelectorList.extract_unquoted
 
     #def __init__(self,url,count, *args, **kwargs):
-    def __init__(self, url, *args, **kwargs):
+    def __init__(self, url, folder, *args, **kwargs):
         self.allowed_domains = [urlparse(url).hostname.strip()]
         print("11111111111111111" + self.allowed_domains[0])
         self.start_urls = [url]
         self.log = ""
         self.originUrl = ""
+        self.folder = folder
         super(NlpSpider, self).__init__(*args, **kwargs)
         d = DesiredCapabilities.CHROME
         d['goog:loggingPrefs'] = {'performance': 'ALL'}
-        DRIVER_BIN = "/usr/local/chromedriver"
+        #DRIVER_BIN = "/usr/local/chromedriver"
+        DRIVER_BIN = "../webdriver/chromedriver"
         self.browser = webdriver.Chrome(desired_capabilities=d, executable_path = DRIVER_BIN)
         dispatcher.connect(self.spider_closed, signals.spider_closed)
 
@@ -234,7 +235,8 @@ class NlpSpider(scrapy.Spider):
 
     def writeToCSV(self,filename,content):
         #path = "/Users/xiaoyue/scrapyenv/policy_crawl/maliciousLibrarySpider/spiders/privacy_policy/" + filename +  ".csv"
-        path = "/Users/huthvincent/Desktop/paper_works/process_terms_of_use/data/callee/data/" + filename + ".csv"
+        #path = "/Users/huthvincent/Desktop/" + filename + ".csv"
+        path = self.folder + filename + ".csv"
         with open(path, "w") as csvfile:
             writer = csv.writer(csvfile)
             for pair in content:

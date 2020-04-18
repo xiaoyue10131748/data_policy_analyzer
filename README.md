@@ -17,6 +17,7 @@ We use seleimun, webdriver, scrapy framework to dynamic crawler the sentence in 
 pip install selenium
 ```
 2. install webdriver: we have already download the webdriver for chrome Version 81.0.4044.113. If you chrome version is inconsistent with this version, please re-download the webdriver for the right verion. Please check [here]https://chromedriver.chromium.org/downloads 
+
 3.install scrapy: It is an open source and collaborative framework for extracting the data you need from websites in a fast, simple, yet extensible way.
 ``` 
 pip install selenium

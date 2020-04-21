@@ -6,7 +6,7 @@ def main():
     xlsx_list = get_raw_file()
     print(xlsx_list)
     for filename in xlsx_list:
-        to_filemame = "../raw data/40_post_processed_data/" + filename.split("40_pre_processed_data/")[1]
+        to_filemame = "../raw data/40_post_processed_data/assign_condition/" + filename.split("40_pre_processed_data/")[1]
         print("===============================" + str(to_filemame))
         if os.path.exists(to_filemame):
             continue
@@ -110,7 +110,7 @@ def get_result_file(filename):
     data["verb_entity_list_with_filter"] = verb_entity_list_with_filter
     data["nmod_entity_list"] = nmod_entity_list
     df = pd.DataFrame(data)
-    to_filemame = "../raw data/40_post_processed_data/" + filename.split("40_pre_processed_data/")[1]
+    to_filemame = "../raw data/40_post_processed_data/assign_condition/" + filename.split("40_pre_processed_data/")[1]
     df.to_excel(to_filemame, index=False, encoding="utf8",
                 header=["sentence_list", "align_paragraph", "subject_co_reference", "co_reference_list",
                         "verb_subject_list", "score", "predict_label", "verb_entity_list_without_filter",

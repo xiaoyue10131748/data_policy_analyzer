@@ -1,0 +1,4 @@
+1. ColumnDocumentReaderAndWriter class is a class to print the final predict results
+2. AnnotationLookup class is to find if a featureAnotation is exists. if what feature you want to add is not in, you need to add it
+3. AbstractSequenceClassifier class to use test file and generate anwsers
+

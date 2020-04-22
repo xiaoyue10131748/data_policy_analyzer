@@ -7,11 +7,24 @@ import pandas as pd
 import os
 import spacy
 from allennlp.predictors.predictor import Predictor
-
+import glob
 
 def main():
-    sheet = pd.read_csv("/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/data/Zoom_SDK.csv",index_col=False)
-    sentence_list = sheet["method_description"]
+
+    xlsx_list = get_raw_file()
+    print(xlsx_list)
+    for filename in xlsx_list:
+        f = filename.split("/data/post_processed_data/")[1]
+        to_filemame = "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/labelAPI/" + f
+        print("===============================" + str(to_filemame))
+        if os.path.exists(to_filemame):
+            continue
+        label_API(filename)
+
+def label_API(filename):
+
+    sheet = pd.read_excel(filename)
+    sentence_list = sheet["hump_expression"]
     nlp = spacy.load("en_core_web_sm")
     consituency_preditor = Predictor.from_path("https://s3-us-west-2.amazonaws.com/allennlp/models/elmo-constituency-parser-2018.03.14.tar.gz")
     sensitive = []
@@ -20,13 +33,38 @@ def main():
             sensitive.append("nan")
             continue
         phrase_set, sensitive_data = extractEntity(sentence,nlp,consituency_preditor)
+
+        ## 如果没有匹配到，判断sensitive token in the sentence
+        if len(phrase_set) == 0:
+            sen_list = check_sensitive_token(sentence)
+            for item in sen_list:
+                phrase_set.add(item)
         sensitive.append(str(phrase_set))
     sheet["labelAPI"] = sensitive
-    to_filemame = "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/labelAPI" + "zoom.xlsx"
+    f = filename.split("/data/post_processed_data/")[1]
+    to_filemame = "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/labelAPI/" + f
     sheet.to_excel(to_filemame, index=False, encoding="utf8",
-                header=["class_name", "class_description","method","method_description","data_type","labelAPI"])
+                header=["class_name", "class_description","method","method_description","data_type","hump_expression","is_hump","labelAPI"])
 
 
+def check_sensitive_token(sentence):
+    necessary_list = ["token", "id", "ID", "Id","Token","id.","ID.","GUID","ids","ids."]
+    word_list = sentence.split()
+    sen_list = []
+    for s in necessary_list:
+        for w in word_list :
+            if s == w:
+                sen_list.append(s)
+    return sen_list
+
+
+
+
+def get_raw_file():
+    xlsx_list = glob.glob('/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/data/post_processed_data/*.xlsx')
+    print(u'have found %s csv files' % len(xlsx_list))
+    print(u'正在处理............')
+    return xlsx_list
 
 
 

@@ -1,5 +1,5 @@
 import glob
-
+import nltk
 import pandas as pd
 import re
 import numpy as np
@@ -9,8 +9,8 @@ def main():
     xlsx_list = get_raw_file()
     print(xlsx_list)
     for filename in xlsx_list:
-        if filename != "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/data/raw data/200test.csv":
-            continue
+        #if filename != "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/data/raw data/test.csv":
+            #continue
         part = filename.split("/data/raw data/")[1].replace(".csv", ".xlsx")
         to_filemame = "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/data/post_processed_data/" + part
         print("===============================" + str(to_filemame))
@@ -23,7 +23,7 @@ def main():
 def process_hump(filename):
     sheet = pd.read_csv(filename,index_col=False)
     sentence_list = sheet["method_description"]
-
+    words = set(nltk.corpus.words.words())
     hump_expression = []
     is_hump = []
     for index, sentence in enumerate(sentence_list):
@@ -31,6 +31,10 @@ def process_hump(filename):
             hump_expression.append("")
             is_hump.append("False")
             continue
+        ## filter non-english-character
+        ## file wechat and kakao need to clean the sentence first
+        sentence = clean(sentence,words)
+
         new_sentence, is_contain = contains_hump(sentence)
         hump_expression.append(new_sentence)
         is_hump.append(is_contain)
@@ -42,6 +46,14 @@ def process_hump(filename):
                   filename.split("/data/raw data/")[1].replace(".csv", ".xlsx")
     sheet.to_excel(to_filemame, index=False, encoding="utf8",
                 header=["class_name", "class_description","method","method_description","data_type","hump_expression","is_hump"])
+
+
+def clean(sentence,words):
+
+    sent = sentence
+    #new_sent = " ".join(w for w in nltk.wordpunct_tokenize(sent) if w.lower() in words or not w.isalpha())
+    new_sent = " ".join(w for w in nltk.wordpunct_tokenize(sent) if w.lower() in words)
+    return new_sent
 
 
 def get_raw_file():

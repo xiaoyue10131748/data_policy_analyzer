@@ -1,0 +1,102 @@
+﻿class_name,class_description,method,method_description,data_type
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage,"batch add card to weixin
+ÊâπÈáèÊ∑ªÂä†Âç°Âà∏Ëá≥ÂæÆ‰ø°",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Req,"card list, less than 40
+ Ë¶ÅÊ∑ªÂä†ÁöÑÂç°Âà∏ÂàóË°®Ôºå‰∏çËÉΩË∂ÖËøá40‰∏™
+",checkArgs(),"Check parameters of this request
+ Ê£ÄÊü•ËØ•ËØ∑Ê±ÇÂêÑ‰∏™ÂèÇÊï∞ÁöÑÂêàÊ≥ïÊÄß
+",boolean
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Req,"card list, less than 40
+ Ë¶ÅÊ∑ªÂä†ÁöÑÂç°Âà∏ÂàóË°®Ôºå‰∏çËÉΩË∂ÖËøá40‰∏™
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Req,"card list, less than 40
+ Ë¶ÅÊ∑ªÂä†ÁöÑÂç°Âà∏ÂàóË°®Ôºå‰∏çËÉΩË∂ÖËøá40‰∏™
+",toBundle(android.os.Bundle¬†data),"Serialize requests into Bundle
+ Â∞ÜËØ∑Ê±ÇÂ∫èÂàóÂåñÂà∞Bundle‰∏≠
+",void
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Resp,"Check parameters of this response
+ Ê£ÄÊü•ËØ•ÂìçÂ∫îÂêÑ‰∏™ÂèÇÊï∞ÁöÑÂêàÊ≥ïÊÄß
+",checkArgs(),"Check parameters of this response
+ Ê£ÄÊü•ËØ•ÂìçÂ∫îÂêÑ‰∏™ÂèÇÊï∞ÁöÑÂêàÊ≥ïÊÄß
+",boolean
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Resp,"Check parameters of this response
+ Ê£ÄÊü•ËØ•ÂìçÂ∫îÂêÑ‰∏™ÂèÇÊï∞ÁöÑÂêàÊ≥ïÊÄß
+",fromBundle(android.os.Bundle¬†data),"Deserialize response data in Bundle
+ ‰ªéBundle‰∏≠ÂèçÂ∫èÂàóÂåñÂìçÂ∫îÊï∞ÊçÆ
+",void
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Resp,"Check parameters of this response
+ Ê£ÄÊü•ËØ•ÂìçÂ∫îÂêÑ‰∏™ÂèÇÊï∞ÁöÑÂêàÊ≥ïÊÄß
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Resp,"Check parameters of this response
+ Ê£ÄÊü•ËØ•ÂìçÂ∫îÂêÑ‰∏™ÂèÇÊï∞ÁöÑÂêàÊ≥ïÊÄß
+",toBundle(android.os.Bundle¬†data),"Serialize responses in Bundle
+ Â∞ÜÂìçÂ∫îÂ∫èÂàóÂåñÂà∞Bundle‰∏≠
+",void
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.WXCardItem,"carExtMsg, should less than 1024 bytes
+ Âç°Âà∏È¢ùÂ§ñÁöÑ‰ø°ÊÅØÔºå‰∏çËÉΩË∂ÖËøá1024Â≠óËäÇ
+",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbase.BaseReq,"Base class of OpenAPI requests
+OpenAPIËØ∑Ê±ÇÂü∫Á±ª",checkArgs(),"Check parameters of this request
+ Ê£ÄÊü•ËØ•ËØ∑Ê±ÇÂêÑ‰∏™ÂèÇÊï∞ÁöÑÂêàÊ≥ïÊÄß
+",abstract boolean
+com.tencent.mm.opensdk.modelbase.BaseReq,"Base class of OpenAPI requests
+OpenAPIËØ∑Ê±ÇÂü∫Á±ª",fromBundle(android.os.Bundle¬†data),"Deserialize request data in Bundle
+ ‰ªéBundle‰∏≠ÂèçÂ∫èÂàóÂåñrequestÊï∞ÊçÆ
+",void
+com.tencent.mm.opensdk.modelbase.BaseReq,"Base class of OpenAPI requests
+OpenAPIËØ∑Ê±ÇÂü∫Á±ª",getType(),"Return type ID of the current request.
+",abstract int
+com.tencent.mm.opensdk.modelbase.BaseReq,"Base class of OpenAPI requests
+OpenAPIËØ∑Ê±ÇÂü∫Á±ª",toBundle(android.os.Bundle¬†data),"Serialize requests into Bundle
+ Â∞ÜËØ∑Ê±ÇÂ∫èÂàóÂåñÂà∞Bundle‰∏≠
+",void
+com.tencent.mm.opensdk.modelbase.BaseResp,"Base class of OpenAPI responses
+OpenAPIÂìçÂ∫îÂü∫Á±ª",checkArgs(),"Check parameters of this response
+ Ê£ÄÊü•ËØ•ÂìçÂ∫îÂêÑ‰∏™ÂèÇÊï∞ÁöÑÂêàÊ≥ïÊÄß
+",abstract boolean
+com.tencent.mm.opensdk.modelbase.BaseResp,"Base class of OpenAPI responses
+OpenAPIÂìçÂ∫îÂü∫Á±ª",fromBundle(android.os.Bundle¬†data),"Deserialize response data in Bundle
+ ‰ªéBundle‰∏≠ÂèçÂ∫èÂàóÂåñÂìçÂ∫îÊï∞ÊçÆ
+",void
+com.tencent.mm.opensdk.modelbase.BaseResp,"Base class of OpenAPI responses
+OpenAPIÂìçÂ∫îÂü∫Á±ª",getType(),"Return type ID of the current response.
+",abstract int
+com.tencent.mm.opensdk.modelbase.BaseResp,"Base class of OpenAPI responses
+OpenAPIÂìçÂ∫îÂü∫Á±ª",toBundle(android.os.Bundle¬†data),"Serialize responses in Bundle
+ Â∞ÜÂìçÂ∫îÂ∫èÂàóÂåñÂà∞Bundle‰∏≠
+",void
+com.tencent.mm.opensdk.modelbase.BaseResp.ErrCode,"Error code for OpenAPI responses
+OpenAPIÂìçÂ∫îÈîôËØØ‰ª£Á†Å",N/A,N/A,N/A
+com.tencent.mm.opensdk.constants.Build,"sdk build info
+sdkÁâàÊú¨‰ø°ÊÅØ",getMajorVersion(),N/A,static int
+com.tencent.mm.opensdk.constants.Build,"sdk build info
+sdkÁâàÊú¨‰ø°ÊÅØ",getMinorVersion(),N/A,static int
+com.tencent.mm.opensdk.modelbiz.ChooseCardFromWXCardPackage,"jiandonglin
+ for select card or coupon",N/A,N/A,N/A
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,paramÏùò encordingÏ†ïÎ≥¥.,getMethod(),http ÌÜµÏã†Î∞©Î≤ï.,String
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,paramÏùò encordingÏ†ïÎ≥¥.,getMultiPartList(),"MultiPartÏóê ÎåÄÌïú Ï†ïÎ≥¥
+ MultiPartÎ°ú ÏöîÏ≤≠ÏùÑ Î≥¥ÎÇºÎïå Í∞íÏùÑ Ï±ÑÏõåÏ£ºÎ©¥ ÎêúÎã§.",List<com.kakao.network.multipart.Part>
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,paramÏùò encordingÏ†ïÎ≥¥.,getParams(),httpÏöîÏ≤≠Ïóê ÌïÑÏöîÌïú params.,"Map<String,String>"
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,paramÏùò encordingÏ†ïÎ≥¥.,getRefreshToken(),N/A,String
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,paramÏùò encordingÏ†ïÎ≥¥.,getUrl(),ÏöîÏ≤≠Ìï† target url.,String
+com.kakao.auth.AgeAuthParamBuilder,Builder for age authentication parameters,build(),Ïó∞Î†πÏù∏Ï¶ù ÏöîÏ≤≠Ïãú ÌïÑÏöîÌïú paramÎì§ÏùÑ Query StringÏúºÎ°ú returnÌïúÎã§.,Bundle
+com.kakao.auth.AgeAuthParamBuilder,Builder for age authentication parameters,setAdultsOnly(Boolean¬†adultsOnly),"Ï≤≠ÏÜåÎÖÑ Ïú†Ìï¥Î¨º Ïó¨Î∂Ä (ÏùåÏïÖ, TV Îì±).",AgeAuthParamBuilder
+com.kakao.auth.AgeAuthParamBuilder,Builder for age authentication parameters,setAgeLimit(AuthService.AgeLimit¬†ageLimit),"Ïó∞Î†πÏ†úÌïú, ÏùºÎ∞òÏ†ÅÏúºÎ°ú 12ÏÑ∏, 15ÏÑ∏, 19ÏÑ∏ AuthService.AgeLimit",AgeAuthParamBuilder
+com.kakao.auth.AgeAuthParamBuilder,Builder for age authentication parameters,setAuthFrom(String¬†authFrom),ÏÑúÎπÑÏä§ Ïù¥Î¶Ñ (client_id or app_id or service_name),AgeAuthParamBuilder
+com.android.billingclient.api.AcknowledgePurchaseParams.Builder,Helps construct AcknowledgePurchaseParams that are used to acknowledge a purchase.,setDeveloperPayload(String developerPayload),This method is deprecated.    Developer payload has been deprecated. See     https://developer.android.com/google/play/billing/billing_overview for recommended     alternatives.,AcknowledgePurchaseParams.Builder
+com.android.billingclient.api.AcknowledgePurchaseParams.Builder,Helps construct AcknowledgePurchaseParams that are used to acknowledge a purchase.,setPurchaseToken(String purchaseToken),Specify the token that identifies the purchase to be acknowledged.,AcknowledgePurchaseParams.Builder
+com.android.billingclient.api.AcknowledgePurchaseResponseListener,Listener to a result of acknowledge purchase request,onAcknowledgePurchaseResponse(BillingResult billingResult),Called to notify that an acknowledge purchase operation has finished,abstract                                        void
+com.android.billingclient.api.BillingClient,Main interface for communication between the library and user application code.,"acknowledgePurchase(AcknowledgePurchaseParams params, AcknowledgePurchaseResponseListener listener)",Acknowledges in-app purchases.,abstract                                        void
+com.android.billingclient.api.BillingClient,Main interface for communication between the library and user application code.,"consumeAsync(ConsumeParams consumeParams, ConsumeResponseListener listener)",Consumes a given in-app product.,abstract                                        void
+com.android.billingclient.api.BillingClient,Main interface for communication between the library and user application code.,endConnection(),Close the connection and release all held resources such as service connections.,abstract                                        void
+com.android.billingclient.api.BillingClient,Main interface for communication between the library and user application code.,isFeatureSupported(String feature),Check if specified feature or capability is supported by the Play Store.,abstract                                        BillingResult
+com.android.billingclient.api.BillingClient,Main interface for communication between the library and user application code.,isReady(),"Checks if the client is currently connected to the service, so that requests to other methods will succeed.",abstract                                        boolean
+com.android.billingclient.api.BillingClient,Main interface for communication between the library and user application code.,"launchBillingFlow(Activity activity, BillingFlowParams params)",Initiate the billing flow for an in-app purchase or subscription.,abstract                                        BillingResult
+com.android.billingclient.api.BillingClient,Main interface for communication between the library and user application code.,"launchPriceChangeConfirmationFlow(Activity activity, PriceChangeFlowParams params, PriceChangeConfirmationListener listener)",Initiate a flow to confirm the change of price for an item subscribed by the user.,abstract                                        void
+com.android.billingclient.api.BillingClient,Main interface for communication between the library and user application code.,"loadRewardedSku(RewardLoadParams params, RewardResponseListener listener)",This method is deprecated.    Rewarded Skus are no longer supported.,abstract                                        void
+,,,,
+,,,,
+,,,,
+,,,,

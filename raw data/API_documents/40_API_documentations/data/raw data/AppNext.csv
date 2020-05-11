@@ -1,180 +1,180 @@
-﻿class_name,class_description,method,method_description,data_type,,
-Native Ads,New Native Ads ad unit,single request,requesting one native Ad,,,
-Native Ads,New Native Ads ad unit,multiple requests,return X amount of Ads at the same time,,,
-Native Ads,New Native Ads ad unit,nativeAd.adImpression(),"The native ad was viewed by the user, and an impression was reported to Appnext",,,
-Native Ads,New Native Ads ad unit,nativeAd.onAdClicked(),The native ad was clicked by the user,,,
-Native Ads,New Native Ads ad unit,nativeAd.onError(),An error has occurred. The following errors codes are passed in the onError callback.,,,
-Native Ads,New Native Ads ad unit,mediaView.setMute(true);,"Boolean. Controls whether the video creative, when in use, play with or without sound. The default value is false.",,,
-Native Ads,New Native Ads ad unit,mediaView.setAutoPLay(true);,"Boolean. Controls whether the video creative, when in use, auto-play itself. The default value is true.",,,
-Native Ads,New Native Ads ad unit,mediaView.setClickEnabled(true);,"Boolean. Defined the functionality when the user clicks the playing video. When set to true, clicking the video will trigger click event (opens the store), when set to false, the video will pause. The default value is true.",,,
-Native Ads,New Native Ads ad unit,"nativeAd.downloadAndDisplayImage(imageView, nativeAd.getIconURL())",The ad Icon,,,
-Native Ads,New Native Ads ad unit,nativeAd.getAdTitle(),"This function fetches the Ad title (String, up to 25 characters)",,,
-Native Ads,New Native Ads ad unit,nativeAd.getAdDescription(),"This function fetches the Ad description (String, up to 90 characters)",,,
-Native Ads,New Native Ads ad unit,nativeAd.getCTAText(),This function fetches the Ad Call-To-Action string (String),,,
-Native Ads,New Native Ads ad unit,nativeAd.getStoreDownloads(),This function fetches the amount of downloads the advertisement's app (String),,,
-Native Ads,New Native Ads ad unit,nativeAd.getStoreRating(),This function fetches the store rating of advertisment's app (String),,,
+﻿class_name,class_description,method,method_description,data_type
+Native Ads,New Native Ads ad unit,single request,requesting one native Ad,
+Native Ads,New Native Ads ad unit,multiple requests,return X amount of Ads at the same time,
+Native Ads,New Native Ads ad unit,nativeAd.adImpression(),"The native ad was viewed by the user, and an impression was reported to Appnext",
+Native Ads,New Native Ads ad unit,nativeAd.onAdClicked(),The native ad was clicked by the user,
+Native Ads,New Native Ads ad unit,nativeAd.onError(),An error has occurred. The following errors codes are passed in the onError callback.,
+Native Ads,New Native Ads ad unit,mediaView.setMute(true);,"Boolean. Controls whether the video creative, when in use, play with or without sound. The default value is false.",
+Native Ads,New Native Ads ad unit,mediaView.setAutoPLay(true);,"Boolean. Controls whether the video creative, when in use, auto-play itself. The default value is true.",
+Native Ads,New Native Ads ad unit,mediaView.setClickEnabled(true);,"Boolean. Defined the functionality when the user clicks the playing video. When set to true, clicking the video will trigger click event (opens the store), when set to false, the video will pause. The default value is true.",
+Native Ads,New Native Ads ad unit,"nativeAd.downloadAndDisplayImage(imageView, nativeAd.getIconURL())",The ad Icon,
+Native Ads,New Native Ads ad unit,nativeAd.getAdTitle(),"This function fetches the Ad title (String, up to 25 characters)",
+Native Ads,New Native Ads ad unit,nativeAd.getAdDescription(),"This function fetches the Ad description (String, up to 90 characters)",
+Native Ads,New Native Ads ad unit,nativeAd.getCTAText(),This function fetches the Ad Call-To-Action string (String),
+Native Ads,New Native Ads ad unit,nativeAd.getStoreDownloads(),This function fetches the amount of downloads the advertisement's app (String),
+Native Ads,New Native Ads ad unit,nativeAd.getStoreRating(),This function fetches the store rating of advertisment's app (String),
 Native Ads,New Native Ads ad unit,nativeAd.setPrivacyPolicyPosition(),"Controls on which corner of the nativeAd view the icon will show. Possibe values:
 
     PrivacyIcon.PP_ICON_POSITION_TOP_RIGHT - Icon is located in the top-right corner of the view (Default)
     PrivacyIcon.PP_ICON_POSITION_TOP_LEFT - Icon is located in the top-left corner of the view
     PrivacyIcon.PP_ICON_POSITION_BOTTOM_RIGHT - Icon is located in the bottom-right corner of the view
     PrivacyIcon.PP_ICON_POSITION_BOTTOM_LEFT - Icon is located in the bottom-left corner of the view
-",,,
+",
 Native Ads,New Native Ads ad unit,nativeAd.setPrivacyPolicyColor(),"Controls the color texture of the ""i"" icon
 
     PrivacyIcon.PP_ICON_COLOR_DARK - The icon is shown with a dark texture
     PrivacyIcon.PP_ICON_COLOR_LIGHT - The icon is shown with a light texture (Default)
-",,,
-Native Ads,New Native Ads ad unit,NativeAdRequest.setCategories(),Set preferred ad categories,,,
-Native Ads,New Native Ads ad unit,NativeAdRequest.setPostback(),Postback parameters that will be posted to your server after user installed an app (make sure to encode the values),,,
+",
+Native Ads,New Native Ads ad unit,NativeAdRequest.setCategories(),Set preferred ad categories,
+Native Ads,New Native Ads ad unit,NativeAdRequest.setPostback(),Postback parameters that will be posted to your server after user installed an app (make sure to encode the values),
 Native Ads,New Native Ads ad unit,NativeAdRequest.setCachingPolicy(CachingPolicy),"setCachingPolicy - Appnext supports four caching options when loading the native ad;
 
     CachingPolicy.ALL - The video and wide image will be cached before showing the ad (Default)
     CachingPolicy.NOTHING - No caching at all
     CachingPolicy.VIDEO_ONLY - Only the video in the creative will be cached
     CachingPolicy.STATIC_ONLY - Only the wide image will be cached. None cached assets will be streamed
-",,,
+",
 Native Ads,New Native Ads ad unit,NativeAdRequest.setCreativeType(NativeAdRequest.CreativeType),"The native ad can filter the ad content based on this setting;
 
     CreativeType.ALL - Both video and static (Default)
     CreativeType.VIDEO_ONLY - Ads with video type creative only
     CreativeType.STATIC_ONLY - Ads with static type creative only
-",,,
+",
 Native Ads,New Native Ads ad unit,NativeAdRequest.setVideoLength(NativeAdRequest.VideoLength),"Sets the preferred length of the ad video creative
 
     VideoLength.SHORT - Up to 15 seconds long videos (Default)
     VideoLength.LONG - 20-60 seconds long videos
-",,,
+",
 Native Ads,New Native Ads ad unit,NativeAdRequest.setVideoQuality(NativeAdRequest.VideoQuality),"Sets the preferred quality of the ad video creative
 
     VideoQuality.HIGH - Video will load in a high quality
     VideoQuality.LOW - Video will load in a low quality (Default)
-",,,
-Native Ads,New Native Ads ad unit,nativeAd.destroy();,Add the following code when you destroy your Activity,,,
-Banners,Banners ad unit,"BannerAdRequest.setCategories(""category1, category2"")",String. Set preferred ad categories,,,
-Banners,Banners ad unit,"BannerAdRequest.setPostback(""Postback string"")",String. Postback parameters that will be posted to your server after user installed an app (make sure to encode the values),,,
+",
+Native Ads,New Native Ads ad unit,nativeAd.destroy();,Add the following code when you destroy your Activity,
+Banners,Banners ad unit,"BannerAdRequest.setCategories(""category1, category2"")",String. Set preferred ad categories,
+Banners,Banners ad unit,"BannerAdRequest.setPostback(""Postback string"")",String. Postback parameters that will be posted to your server after user installed an app (make sure to encode the values),
 Banners,Banners ad unit,BannerAdRequest.setCreativeType(BannerAdRequest.TYPE_VIDEO),"The MEDIUM_RECTANGLE size can show video in addition to static creative. When video is in use, the file will be streamed (default value is ALL - managed by Appnext)
 
     BannerAdRequest.TYPE_ALL
     BannerAdRequest.TYPE_VIDEO
     BannerAdRequest.TYPE_STATIC
-",,,
-Banners,Banners ad unit,BannerAdRequest.setAutoPlay(true),"Boolean. When a video is set as the creative, this setter defining if the video will auto play or not (default value is false)",,,
-Banners,Banners ad unit,BannerAdRequest.setMute(false),"Boolean. When a video is set as the creative, this setter is defining if the video will start on muted volume or not. Un-mute/Mute button is located on the video creative. (default value is true - video is muted)",,,
+",
+Banners,Banners ad unit,BannerAdRequest.setAutoPlay(true),"Boolean. When a video is set as the creative, this setter defining if the video will auto play or not (default value is false)",
+Banners,Banners ad unit,BannerAdRequest.setMute(false),"Boolean. When a video is set as the creative, this setter is defining if the video will start on muted volume or not. Un-mute/Mute button is located on the video creative. (default value is true - video is muted)",
 Banners,Banners ad unit,BannerAdRequest.setVideoLength(BannerAdRequest.VIDEO_LENGTH_SHORT),"When a video is set as the creative, this setter is defining the preferred length of the video. (default value is SHORT)
 
     BannerAdRequest.VIDEO_LENGTH_SHORT - Up to 15 seconds long videos
     BannerAdRequest.VIDEO_LENGTH_LONG - 20-60 seconds long videos
-",,,
-Banners,Banners ad unit,BannerListener.onAdLoaded(String BannerID),"The banner was successfully loaded, and its ready to be shown to the user (String s = banner ID)",,,
-Banners,Banners ad unit,BannerListener.AdImpression(),"The banner was viewed by the user, and an impression was reported to Appnext",,,
-Banners,Banners ad unit,BannerListener.onAdClicked(),The banner was clicked by the user,,,
-Banners,Banners ad unit,BannerListener.onError(),An error has occurred. The following errors codes are passed in the onError callback.,,,
+",
+Banners,Banners ad unit,BannerListener.onAdLoaded(String BannerID),"The banner was successfully loaded, and its ready to be shown to the user (String s = banner ID)",
+Banners,Banners ad unit,BannerListener.AdImpression(),"The banner was viewed by the user, and an impression was reported to Appnext",
+Banners,Banners ad unit,BannerListener.onAdClicked(),The banner was clicked by the user,
+Banners,Banners ad unit,BannerListener.onError(),An error has occurred. The following errors codes are passed in the onError callback.,
 Banners,Banners ad unit,banner.destroy(),"Add the following code when you destroy your Activity
-",,,
-Interstitial,Interstitial ad unit,interstitial_Ad.loadAd();,Loading an Ad,,,
-Interstitial,Interstitial ad unit,interstitial_Ad.showAd();,Showing the Ad,,,
-Interstitial,Interstitial ad unit,"interstitial_Ad.adLoaded(String bannerId, AppnextAdCreativeType creativeType)",Get callback for ad loaded,,,
-Interstitial,Interstitial ad unit,interstitial_Ad.adOpened(),Get callback for ad opened,,,
-Interstitial,Interstitial ad unit,interstitial_Ad.adClicked(),Get callback for ad clicked,,,
-Interstitial,Interstitial ad unit,interstitial_Ad.onAdClosed(),Get callback for ad closed,,,
-Interstitial,Interstitial ad unit,interstitial_Ad.adError(String error),Get callback for ad error,,,
-Interstitial,Interstitial ad unit,"interstitial_Ad.setButtonText(""Install"")","The install button's text (default is ""Install"")",,,
-Interstitial,Interstitial ad unit,"interstitial_Ad.setButtonColor(""#6AB344"")","The install button's color - a 6 hex chars starting with # (default is ""#6AB344""",,,
-Interstitial,Interstitial ad unit,"interstitial_Ad.setCategories(""category1,category2"")",Set preferred ad categories,,,
-Interstitial,Interstitial ad unit,"interstitial_Ad.setPostback(""postback"")",Postback parameters that will be posted to your server after user installed an app (make sure to encode the values),,,
+",
+Interstitial,Interstitial ad unit,interstitial_Ad.loadAd();,Loading an Ad,
+Interstitial,Interstitial ad unit,interstitial_Ad.showAd();,Showing the Ad,
+Interstitial,Interstitial ad unit,"interstitial_Ad.adLoaded(String bannerId, AppnextAdCreativeType creativeType)",Get callback for ad loaded,
+Interstitial,Interstitial ad unit,interstitial_Ad.adOpened(),Get callback for ad opened,
+Interstitial,Interstitial ad unit,interstitial_Ad.adClicked(),Get callback for ad clicked,
+Interstitial,Interstitial ad unit,interstitial_Ad.onAdClosed(),Get callback for ad closed,
+Interstitial,Interstitial ad unit,interstitial_Ad.adError(String error),Get callback for ad error,
+Interstitial,Interstitial ad unit,"interstitial_Ad.setButtonText(""Install"")","The install button's text (default is ""Install"")",
+Interstitial,Interstitial ad unit,"interstitial_Ad.setButtonColor(""#6AB344"")","The install button's color - a 6 hex chars starting with # (default is ""#6AB344""",
+Interstitial,Interstitial ad unit,"interstitial_Ad.setCategories(""category1,category2"")",Set preferred ad categories,
+Interstitial,Interstitial ad unit,"interstitial_Ad.setPostback(""postback"")",Postback parameters that will be posted to your server after user installed an app (make sure to encode the values),
 Interstitial,Interstitial ad unit,interstitial_Ad.setAutoPlay(true),"Set video auto-play (default is ""true"")
 true
-false",,,
+false",
 Interstitial,Interstitial ad unit,interstitial_Ad.setMute(false),"Mute the video which is played in the Interstitial (default is ""false"")
 true
-false",,,
+false",
 Interstitial,Interstitial ad unit,interstitial_Ad.setCreativeType(Interstitial.TYPE_MANAGED),"Set creative type for the main section of the Interstitial (default is ""Interstitial.TYPE_MANAGED"")
 Interstitial.TYPE_MANAGED
 Interstitial.TYPE_VIDEO
-Interstitial.TYPE_STATIC",,,
+Interstitial.TYPE_STATIC",
 Interstitial,Interstitial ad unit,interstitial_Ad.setOrientation(Interstitial.ORIENTATION_AUTO),"Set the preferred orientation if both landscape and portrait are supported by the application (default is ORIENTATION_DEFAULT
 Interstitial.ORIENTATION_DEFAULT
 Interstitial.ORIENTATION_LANDSCAPE
 Interstitial.ORIENTATION_PORTRAIT
-Interstitial.ORIENTATION_AUTO",,,
+Interstitial.ORIENTATION_AUTO",
 Interstitial,Interstitial ad unit,interstitial_Ad.setBackButtonCanClose(false),"Set the behavior of the device ""Back"" button when the interstitial ad unit shows up. The default value is false
 
     true - The back button will close the interstitial ad unit
     false - The back button will not close the interstitial. The user can close the ad unit by clicking the ""X"" button
-",,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.loadAd(),Loading an Ad,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.loadAd(),Loading an Ad,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.showAd(),Showing the Ad,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.showAd(),Showing the Ad,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"fullscreen.adLoaded(String bannerID,AppnextAdCreativeType creativeType)",Get callback for ad loaded,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen.adOpened(),Get callback for ad opened,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen.adClicked(),Get callback for ad clicked,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen.onAdClosed(),Get callback for ad closed,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen.adError(String error),Get callback for ad error,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen.videoEnded(),Get callback when the user saw the video until the end (video ended),,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.adLoaded(String bannerID),Get callback for ad loaded,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.adOpened(),Get callback for ad opened,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.adClicked(),Get callback for ad clicked,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.onAdClosed(),Get callback for ad closed,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.adError(String error),Get callback for ad error,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.videoEnded(),Get callback when the user saw the video until the end (video ended),,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"fullscreen_ad.setCategories(""category1,category2"")",Set preferred ad categories,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"fullscreen_ad.setPostback(""postback"")",Postback parameters that will be posted to your server after user installed an app (make sure to encode the values),,,
+",
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.loadAd(),Loading an Ad,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.loadAd(),Loading an Ad,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.showAd(),Showing the Ad,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.showAd(),Showing the Ad,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"fullscreen.adLoaded(String bannerID,AppnextAdCreativeType creativeType)",Get callback for ad loaded,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen.adOpened(),Get callback for ad opened,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen.adClicked(),Get callback for ad clicked,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen.onAdClosed(),Get callback for ad closed,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen.adError(String error),Get callback for ad error,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen.videoEnded(),Get callback when the user saw the video until the end (video ended),
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.adLoaded(String bannerID),Get callback for ad loaded,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.adOpened(),Get callback for ad opened,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.adClicked(),Get callback for ad clicked,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.onAdClosed(),Get callback for ad closed,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.adError(String error),Get callback for ad error,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.videoEnded(),Get callback when the user saw the video until the end (video ended),
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"fullscreen_ad.setCategories(""category1,category2"")",Set preferred ad categories,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"fullscreen_ad.setPostback(""postback"")",Postback parameters that will be posted to your server after user installed an app (make sure to encode the values),
 Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.setMute(false),"Mute the video which is played in the ad (the default value is ""false"")
 
     true
     false
-",,,
+",
 Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.setVideoLength(Ad.VIDEO_LENGTH_DEFAULT);,"Set video length - 15 or 30 seconds long (default is VIDEO_LENGTH_DEFAULT)
 
     VIDEO_LENGTH_SHORT - Up to 15 seconds long videos
     VIDEO_LENGTH_LONG - 20-60 seconds long videos
     VIDEO_LENGTH_DEFAULT - Appnext's algorithm priority. Any available video campaign will be served
-",,,
+",
 Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.setOrientation(Video.ORIENTATION_DEFAULT);,"Set the preferred orientation if both landscape and portrait are supported by the application (default is ORIENTATION_DEFAULT). The ad unit displayed orientation cannot be changed by the user after the ad unit started.
 
     FullScreenVideo.ORIENTATION_DEFAULT
     FullScreenVideo.ORIENTATION_LANDSCAPE
     FullScreenVideo.ORIENTATION_PORTRAIT
-",,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.setBackButtonCanClose(false);,,,,
+",
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.setBackButtonCanClose(false);,,
 Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.setShowClose(true);,"Display or hide the ""x"" (close) button
 
     true
     false
     time in ms to delay the close button from showing - default value is 0
-",,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.setShowCta(false);,,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.setRollCaptionTime(-1);,The number of seconds that the google play text caption is showing. The caption is shown to the user after clicking the Call-to-action button. The function (setRollCaptionTime) can accepts values from 1 to 20. The default value is 3 seconds. Entering -1 will make the caption visible until the video finish to play,,,
+",
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.setShowCta(false);,,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,fullscreen_ad.setRollCaptionTime(-1);,The number of seconds that the google play text caption is showing. The caption is shown to the user after clicking the Call-to-action button. The function (setRollCaptionTime) can accepts values from 1 to 20. The default value is 3 seconds. Entering -1 will make the caption visible until the video finish to play,
 Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.setMode(RewardedVideo.VIDEO_MODE_MULTI);,"Set the mode the rewarded ad unit will work in:
 
     multi - with pre-roll video selection screen (default)
     normal - without pre-roll video selection screen
-",,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setCategories(""category1,category2"");",Set preferred ad categories,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.setMultiTimerLength(7);,"When ""multi"" mode is on, this function (setMultiTimerLength) sets the number of seconds to make a video selection. The function can accept values from 1 to 20. The default value is 8 seconds.",,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setPostback(""postback"");",Postback parameters that will be posted to your server after user installed an app (make sure to encode the values),,,
+",
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setCategories(""category1,category2"");",Set preferred ad categories,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.setMultiTimerLength(7);,"When ""multi"" mode is on, this function (setMultiTimerLength) sets the number of seconds to make a video selection. The function can accept values from 1 to 20. The default value is 8 seconds.",
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setPostback(""postback"");",Postback parameters that will be posted to your server after user installed an app (make sure to encode the values),
 Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.setMute(false);,"Mute the video which is played in the ad (the default value is ""false"")
 
     true
     false
-",,,
+",
 Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.setVideoLength(Video.VIDEO_LENGTH_DEFAULT);,"Set video length - 15 or 30 seconds long (default is VIDEO_LENGTH_DEFAULT)
 
     VIDEO_LENGTH_SHORT - Up to 15 seconds long videos
     VIDEO_LENGTH_LONG - 20-60 seconds long videos
     VIDEO_LENGTH_DEFAULT - Appnext's algorithm priority. Any available video campaign will be served
-",,,
+",
 Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.setOrientation(ad.ORIENTATION_DEFAULT);,"Set the preferred orientation if both landscape and portrait are supported by the application (default is ORIENTATION_DEFAULT). The ad unit displayed orientation cannot be changed by the user after the ad unit started.
 
     FullScreenVideo.ORIENTATION_DEFAULT
     FullScreenVideo.ORIENTATION_LANDSCAPE
     FullScreenVideo.ORIENTATION_PORTRAIT
-",,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.setRollCaptionTime(3);,The number of seconds that the google play text caption is showing. The caption is shown to the user after clicking the Call-to-action button. The function (setRollCaptionTime) can accepts values from 1 to 20. The default value is 3 seconds. Entering -1 will make the caption visible until the video finish to play,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setRewardsTransactionId(""TransactionId"");",Transaction ID - make sure to set a unique transaction ID per ad view,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setRewardsUserId(""UserId"");",User ID - pass the User ID so you will know which user to reward,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setRewardsRewardTypeCurrency(""TypeCurrency"");",Currency Type - type of reward (life / credit / points),,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setRewardsAmountRewarded(""Amount"");",Amount - the amount of currency that was rewarded,,,
-Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setRewardsCustomParameter(""CustomParameter"");",Custom Parameters - pass any custom value / data,,,
+",
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,rewarded_ad.setRollCaptionTime(3);,The number of seconds that the google play text caption is showing. The caption is shown to the user after clicking the Call-to-action button. The function (setRollCaptionTime) can accepts values from 1 to 20. The default value is 3 seconds. Entering -1 will make the caption visible until the video finish to play,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setRewardsTransactionId(""TransactionId"");",Transaction ID - make sure to set a unique transaction ID per ad view,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setRewardsUserId(""UserId"");",User ID - pass the User ID so you will know which user to reward,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setRewardsRewardTypeCurrency(""TypeCurrency"");",Currency Type - type of reward (life / credit / points),
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setRewardsAmountRewarded(""Amount"");",Amount - the amount of currency that was rewarded,
+Rewarded and Fullscreen Video,Rewarded and Fullscreen video ad unit,"rewarded_ad.setRewardsCustomParameter(""CustomParameter"");",Custom Parameters - pass any custom value / data,

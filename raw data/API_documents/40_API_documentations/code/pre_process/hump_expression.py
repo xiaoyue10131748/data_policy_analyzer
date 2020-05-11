@@ -9,6 +9,8 @@ def main():
     xlsx_list = get_raw_file()
     print(xlsx_list)
     for filename in xlsx_list:
+        if filename != "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/data/raw data/200test.csv":
+            continue
         part = filename.split("/data/raw data/")[1].replace(".csv", ".xlsx")
         to_filemame = "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/data/post_processed_data/" + part
         print("===============================" + str(to_filemame))

@@ -1,0 +1,6 @@
+﻿class_name,class_description,method,method_description,data_type
+com.bytedance.sdk.open.tiktok.api.TikTokOpenApiFactory,First you need to initialize TikTokOpenApiFactory by using client key in your custom Application.,init(new TikTokOpenConfig(clientkey)),First you need to initialize TikTokOpenApiFactory by using client key in your custom Application.,void
+com.bytedance.sdk.open.tiktok.api.TikTokOpenApi,Send Share Request,share(request),"Create a TiktokOpenApi to send share request.
+Build share content for images/videos into the TikTokMediaContent model.
+Create Share.Request instance and set required parameters: request.mMediaContent = [TikTokMediaContent].
+Call method Share() in TiktokOpenApi .",void

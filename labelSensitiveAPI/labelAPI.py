@@ -14,6 +14,8 @@ def main():
     xlsx_list = get_raw_file()
     print(xlsx_list)
     for filename in xlsx_list:
+        if filename != "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/data/post_processed_data/200test.xlsx":
+            continue
         f = filename.split("/data/post_processed_data/")[1]
         to_filemame = "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/labelAPI/" + f
         print("===============================" + str(to_filemame))

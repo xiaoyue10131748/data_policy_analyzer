@@ -1,0 +1,13 @@
+{
+   "release:compatibility":
+   [
+       "Backwards compatible to version 2.x and 1.x",
+       "LWA Android is dropping support for API levels 15 and below. The minimum SDK version for Android has been updated to API level 16 (Android 4.1 JellyBean)."
+   ],
+   "release:new_features":
+   [
+   ],
+   "release:resolved_issues":
+   [
+   ]
+}

@@ -27,11 +27,12 @@ def main():
         if isFound(url):
             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~has found")
             continue
-        cammand = "scrapy crawl  nlp -a url={} -a folder={} ".format(url,outputfile)
+        cammand = "scrapy crawl  nlp -a url={} -a folder={} ".format(url.strip(),outputfile)
         print (cammand)
 
         os.system(cammand)
-        writeToTxt(url,inputfile)
+        writeToTxt(url,"isFound_developer.txt")
+
         time.sleep(3)
 
 

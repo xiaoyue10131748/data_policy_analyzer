@@ -24,12 +24,12 @@ import ast
 
 
 def main():
-	filename = "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/evaluate/evaluate_label_API.xlsx"
-	to_filename = "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/evaluate/here.xlsx"
-	df = pd.read_excel(filename,sheet_name = "here")
-	df2=df.sample(frac=0.06)
+	filename = "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/evluation/regexReturn/regexTest.xlsx"
+	to_filename = "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/evluation/regexReturn/regexTest200.xlsx"
+	df = pd.read_excel(filename,sheet_name = "Sheet1")
+	df2=df.sample(frac=0.0374)
 	#df2.to_excel(to_filename,index=False,encoding="utf8", header = ["sentence_list", "align_paragraph", "subject_co_reference","co_reference_list","verb_subject_list","score","predict_label","verb_entity_list_without_filter","verb_entity_list_with_filter","nmod_entity_list","all_matched_condition_list","pattern_condition_list"])
-	df2.to_excel(to_filename,index=False,encoding="utf8", header = ["class_name","class_description","method","method_description","data_type","labelAPI"])
+	df2.to_excel(to_filename,index=False,encoding="utf8", header = ["class_name","class_description","method","method_description","data_type"])
 
 
 

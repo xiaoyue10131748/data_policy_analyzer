@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="97b7bbf4-c901-480d-899c-4e75fb05bc50" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="maliciousLibrarySpider" />
+  </component>
+  <component name="ProjectId" id="1WXROfVAMyNfxzT6YsBvhmtwBG5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/maliciousLibrarySpider/spiders" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="maliciousLibrarySpider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="nlp" type="PythonConfigurationType" factoryName="Python">
+      <module name="maliciousLibrarySpider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/maliciousLibrarySpider/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/maliciousLibrarySpider/spiders/nlp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97b7bbf4-c901-480d-899c-4e75fb05bc50" name="Default Changelist" comment="" />
+      <created>1574643372010</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574643372010</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579295138297">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state x="304" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.988@0.23.1680.988" timestamp="1579295138297" />
+    <state x="594" y="289" key="EnvironmentVariablesDialog" timestamp="1579295022576">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state x="594" y="289" key="EnvironmentVariablesDialog/0.23.1680.988@0.23.1680.988" timestamp="1579295022576" />
+    <state x="596" y="264" key="FileChooserDialogImpl" timestamp="1581660214690">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state x="596" y="264" key="FileChooserDialogImpl/0.23.1680.988@0.23.1680.988" timestamp="1581660214690" />
+    <state width="912" height="327" key="GridCell.Tab.0.bottom" timestamp="1579297009438">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state width="912" height="327" key="GridCell.Tab.0.bottom/0.23.1680.988@0.23.1680.988" timestamp="1579297009438" />
+    <state width="912" height="327" key="GridCell.Tab.0.center" timestamp="1579297009437">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state width="912" height="327" key="GridCell.Tab.0.center/0.23.1680.988@0.23.1680.988" timestamp="1579297009437" />
+    <state width="912" height="327" key="GridCell.Tab.0.left" timestamp="1579297009437">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state width="912" height="327" key="GridCell.Tab.0.left/0.23.1680.988@0.23.1680.988" timestamp="1579297009437" />
+    <state width="912" height="327" key="GridCell.Tab.0.right" timestamp="1579297009437">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state width="912" height="327" key="GridCell.Tab.0.right/0.23.1680.988@0.23.1680.988" timestamp="1579297009437" />
+    <state x="310" y="141" key="SettingsEditor" timestamp="1581660224787">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state x="310" y="141" key="SettingsEditor/0.23.1680.988@0.23.1680.988" timestamp="1581660224787" />
+    <state x="517" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1581708877012">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state x="517" y="349" key="com.intellij.ide.util.TipDialog/0.23.1680.988@0.23.1680.988" timestamp="1581708877012" />
+    <state x="409" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1579295109127">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state x="409" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.988@0.23.1680.988" timestamp="1579295109127" />
+  </component>
+</project>

@@ -25,7 +25,7 @@ class policy_verb_entity:
                             "instagram", "zendesk", "squareup", "airmap", "zoom", "gotenna", "vimeo", "fortmatic",
                             "slack", "matterport", "trello", "mindbodyonline", "spotify", "snap", "unity", "fabric",
                             "onesignal", "flurry", "startapp", "applovin", "chartboost", "firebase", "amazon",
-                            "paypal", "appsflyer", "airbnb", "mopub", "adcolony", "vungle","square"]
+                            "paypal", "appsflyer", "airbnb", "mopub", "adcolony", "vungle","square","tapjoy","appbrain","ironsource"]
 
 
     nlp = spacy.load("en_core_web_sm")

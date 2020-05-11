@@ -1,0 +1,380 @@
+﻿class_name,class_description,method,method_description,data_type
+com.dropbox.core.http.OkHttp3Requestor,"HttpRequestor implementation that uses OkHttp
+ v3.  You can only use this if your project includes the OkHttp v3 library.
+
+ 
+ To use this, pass INSTANCE to the DbxRequestConfig constructor.
+ ",interceptResponse(okhttp3.Response¬†response),Called before returning Response from a request.,protected okhttp3.Response
+com.amazon.device.iap.model.PurchaseResponse,Represents the result of a call to PurchasingService.purchase(String).,toJSON(),"Utility method to return a JSON object containing the information for a
+ PurchaseResponse instance.",org.json.JSONObject
+com.dropbox.core.v2.sharing.RemoveFileMemberError.Tag,Discriminating tag type for RemoveFileMemberError.,valueOf(String¬†name),Returns the enum constant of this type with the specified name.,static RemoveFileMemberError.Tag
+com.here.android.mpa.routing.Route,Represents a distinct path connecting two or more waypoints GeoCoordinate. A Route consists of a list of maneuvers and route links.,getLength(int¬†subleg),"Gets the length of the route subleg, in meters.",int
+groups,N/A - VK has no Class Descriptions,join,"With this method you can join the group or public page, and also confirm your participation in an event.",Returns 1 if succeeded.
+com.dropbox.core.v2.team.GroupsMembersListContinueError,The cursor is invalid.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static GroupsMembersListContinueError[]
+com.here.android.mpa.mapping.MapCircle,Represents a MapObject in the shape of a circle.,getRadius(),"Returns the current radius of the MapCircle, in meters.",double
+com.dropbox.core.v2.files.FileMetadata,Builder for FileMetadata.,getMediaInfo(),Additional information if the file is a photo or video.,MediaInfo
+com.here.android.mpa.odml.MapPackage,"Represents a model for obtaining information about offline map packages that can be installed using a MapLoader. Map packages are arranged in a tree hierarchy, which is represented in the parent and children data of the MapPackage model.  Note: the root map package is the world map. If a MapPackage having children is installed, each child will also be installed, allowing the installation of entire regions. ",getParent(),"Gets the parent of the MapPackage, if it has one.",MapPackage
+com.dropbox.core.v2.team.GetActivityReport,"Activity Report Result. Each of the items in the storage report is an array
+ of values, one value per day. If there is no data for a day, then the value
+ will be None.",getActiveUsers1Day(),Array of the number of users who have been active in the last day.,List<Long>
+com.dropbox.core.v2.files.FileMetadata,Builder for FileMetadata.,"newBuilder(String¬†name,
+          String¬†id,
+          Date¬†clientModified,
+          Date¬†serverModified,
+          String¬†rev,
+          long¬†size)",Returns a new builder for creating an instance of this class.,static FileMetadata.Builder
+friends,N/A - VK has no Class Descriptions,addlist,Creates a new friend list for the current user.,Returns the ID of the friend list (list_id) that was created.
+com.here.android.mpa.mapping.TransitAccessInfo,Data structure class containing information about Transit Access locations.,getName(),Gets the name for the transit access.,java.lang.String
+com.amazon.device.iap.model.UserDataResponse,Represents the result of a call to PurchasingService.getUserData().,getRequestStatus(),Indicates the status of the getUserData call.,UserDataResponse.RequestStatus
+com.here.android.mpa.venues3d.LinkingRoute,"Represents a link section of the route. The route can contain sections that are inside venue, outside venue, and link sections that typically connects indoor and outdoor locations together.",getTo(),Returns a geolocation of the end point of this route route section.,GeoCoordinate
+messages,N/A - VK has no Class Descriptions,searchconversations,Returns a list of conversations that match search criteria.,Returns the total number of conversations in count field (integer) and array of conversations in items field
+com.dropbox.core.v2.sharing.RevokeSharedLinkError,Catch-all used for unknown tag values returned by the Dropbox servers.,valueOf(String¬†name),Returns the enum constant of this type with the specified name.,static RevokeSharedLinkError
+com.dropbox.core.v2.sharing.ResolvedVisibility,"The actual access permissions values of shared links after taking into
+ account user preferences and the team and shared folder settings. Check the
+ RequestedVisibility for more info on the possible visibility values
+ that can be set by the shared link's owner.",values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static ResolvedVisibility[]
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",getAmr(),Get the Authentication Methods References.,List<String>
+MoPubStreamAdPlacer,"Contains methods to request native ads for a stream (any other type of stream). For a manual native ad integration, refer to MoPubNative.java.",getAdjustedCount(int originalCount),Description: Returns the number of items in the stream. Items include both content and ads; each item is a cell in the list.,public int  
+com.here.android.mpa.venues3d.DeselectionSource,This enumeration defines identifiers for values indicating how a venue was deselected.,values(),"Returns an array containing the constants of this enum type, in the order they are declared.",static DeselectionSource[]
+com.here.android.mpa.routing.Route,Represents a distinct path connecting two or more waypoints GeoCoordinate. A Route consists of a list of maneuvers and route links.,"getRouteElementsFromDuration(long¬†start, long¬†duration)",Gets the RouteElements for a given duration (in seconds) within the route.,RouteElements
+com.here.android.mpa.ftcr.FTCRRoute.FTCRRouteLink,Represents a single segment of a road FTCRRoute.,getRemainDistance(),"Gets the remaining distance to the final destination, in meters.",long
+com.here.android.mpa.mapping.MapRoute,Represents a Route that can be displayed on a Map.,getTextColor(),Returns the current ARGB (Alpha/Red/Green/Blue) integer color value used to define the text on the route.,int
+groups,N/A - VK has no Class Descriptions,getinvitedusers,Returns invited users list of a community,"Returns the total results number in count field and an array of objects describing users in items field. 
+"
+com.dropbox.core.v2.files.ThumbnailError,"This class is a tagged union.  Tagged unions instances are always associated
+ to a specific tag.  This means only one of the isAbc() methods will
+ return true. You can use tag() to determine the tag
+ associated with this instance.",tag(),Returns the tag for this instance.,ThumbnailError.Tag
+com.dropbox.core.v2.sharing.SharedLinkMetadata,The metadata of a shared link,getContentOwnerTeamInfo(),The team information of the content's owner.,Team
+com.here.android.mpa.ar.ARBillboardObject,Represents a 3D AR billboard objects that users can add to a ARController. There are two types of AR billboard objects supported: - Geo positioned billboard - Locally positioned billboard,getLocalPosition(),Get the position of the billboard,Vector3f
+com.here.android.mpa.mapping.AndroidXMapFragment,"A fragment class that automatically creates a Map and handles map UI interactions such as panning and zooming. AndroidXMapFragment extends the Android Fragment class and retains its lifecycle behaviors.  Upon the initialization of AndroidXMapFragment, a Map object is automatically created and bound to the fragment. This Map object is then persisted throughout the AndroidXMapFragment's lifetime. Since AndroidXMapFragment internally calls Fragment.setRetainInstance(true), the Map will retain any properties applied to it during an application's lifetime.   AndroidXMapFragment objects have their own lifecycle, state, and back stack, thus it is unsafe to assume objects returned by a AndroidXMapFragment instance (with the exception of Map) will be available throughout the lifetime of its attached activity.   A AndroidXMapFragment is defined in an Android layout XML file. For example:   
+   <fragment
+       class=""com.here.android.mpa.mapping.AndroidXMapFragment""
+       android:id=""@+id/map_fragment""
+       android:layout_width=""match_parent""
+       android:layout_height=""match_parent""/>
+ 
+   Note: AndroidXMapFragment automatically handles MapEngine pausing and resuming during activity state changes, thus it is not necessary for the activity that owns AndroidXMapFragment instances to manually call MapEngine.onPause() or MapEngine.onResume() during the activity's AndroidXMapFragment.onPause() and AndroidXMapFragment.onResume(). However, considerations should be made in how much processing is done during the onResume() method. Performing significant amounts of processing may delay view rendering in cases such as device orientation changes. In these cases, it is recommended to use a specifically designated handler to organize the amount of processing to be done. ",getCopyrightMargin(),"Returns the current margin for the HERE copyright logo, in number of pixels, as an offset from the edge of the visible map area to the edge of the logo.",int
+com.dropbox.core.v2.sharing.DbxUserSharingRequests,"Routes in namespace ""sharing"".",listFileMembersBatch(List<String>¬†files),Get members of multiple files at once.,List<ListFileMembersBatchResult>
+com.here.android.mpa.mapping.MapPolygon,"A graphical representation of a GeoPolygon to be rendered on a map. In contrast to a MapPolyline, it is assumed that the last coordinate within the path is connected with the first coordinate, thereby constructing an enclosed geometry. Self-intersecting polygons rendering are not supported.",getGeoPolygon(),Gets a copy of the GeoPolygon rendered by this MapPolygon.,GeoPolygon
+com.dropbox.core.v2.sharing.JobStatus,"This class is a tagged union.  Tagged unions instances are always associated
+ to a specific tag.  This means only one of the isAbc() methods will
+ return true. You can use tag() to determine the tag
+ associated with this instance.",getFailedValue(),The asynchronous job returned an error.,JobError
+com.dropbox.core.v2.team.GetActivityReport,"Activity Report Result. Each of the items in the storage report is an array
+ of values, one value per day. If there is no data for a day, then the value
+ will be None.",getAdds(),Array of total number of adds by team members.,List<Long>
+com.here.android.mpa.mapping.MapBuildingObject,"This class represents a specific building on the map. Using the Identifier, the MapBuildingObject can be attached to MapBuildingGroup groups to manipulate color and height properties.",getIdentifier(),Gets the Identifier of the building.,Identifier
+account,N/A - VK has no Class Descriptions,getpushsettings,Gets settings of push notifications.,"Returns an object with following fields: 
+
+disabled — 1 if notifications are disabled. 
+disabled_until — unixtime time value, notifications are temporarily disabled until. 
+conversations — list with settings of specific conversations and their number as the first element. 
+settings — push settings in a special format. 
+
+"
+com.dropbox.core.v2.sharing.JobError,"Error occurred while performing an asynchronous job from DbxUserSharingRequests.unshareFolder(String,boolean) or DbxUserSharingRequests.removeFolderMember(String,MemberSelector,boolean).
+
+  This class is an open tagged union.  Tagged unions instances are always
+ associated to a specific tag.  This means only one of the isAbc()
+ methods will return true. You can use tag() to determine the
+ tag associated with this instance. 
+
+  Open unions may be extended in the future with additional tags. If a new
+ tag is introduced that this SDK does not recognized, the OTHER value
+ will be used. ",toStringMultiline(),"Returns a String representation of this object formatted for easier
+ readability.",String
+com.dropbox.core.v2.files.DbxUserFilesRequests,"Routes in namespace ""files"".",getPreviewBuilder(String¬†path),Get a preview for a file.,GetPreviewBuilder
+com.dropbox.core.v2.sharing.RemoveFileMemberError,"Errors for DbxUserSharingRequests.removeFileMember2(String,MemberSelector).
+
+  This class is an open tagged union.  Tagged unions instances are always
+ associated to a specific tag.  This means only one of the isAbc()
+ methods will return true. You can use tag() to determine the
+ tag associated with this instance. 
+
+  Open unions may be extended in the future with additional tags. If a new
+ tag is introduced that this SDK does not recognized, the OTHER value
+ will be used. ",tag(),Returns the tag for this instance.,RemoveFileMemberError.Tag
+com.here.android.mpa.mapping.TransitStopInfo,Represents information about a public transit stop.,getOperatingHours(),Gets the OperatingHours for the transit stop.,OperatingHours
+com.here.android.mpa.isoline.Isoline,An isoline describes potential routes a user can take and provides a polygon indicating the maximum reach in all directions around the given start position by time or distance. An isoline may consist of several isolated components. This supports use cases where the reachable area is disconnected by ferry links. All islands are returned as separate polygons (components). Ferry links between these polygons are also returned as separate polyline geometries (connections). The range reachable using ferries can be displayed as multiple components (with or without connections) or even as a single component.,getComponentConnections(),Gets list of isoline connections.,java.util.List<Isoline.IsolineComponentConnection>
+com.dropbox.core.v2.team.TeamMemberStatus.Tag,Discriminating tag type for TeamMemberStatus.,valueOf(String¬†name),Returns the enum constant of this type with the specified name.,static TeamMemberStatus.Tag
+com.here.android.mpa.common.GeoPosition,"Represents position, speed, and heading information as provided by a positioning device.",getFloorId(),FloorId is identifying the floor level in the building.,java.lang.Integer
+com.here.android.mpa.mapping.MapRasterTileSource,"Represents an interface for a map raster tile source, used to render custom tile images on top of a Map.  Default attribute values are as follows:   
+  Overlay type:      RasterTileOverlayType.BACKGROUND_REPLACEMENT
+  Transparency:      Transparency.TRANSPARENCY_ON
+  Fallback:          Enabled
+  Tile size:         256x256 pixels
+  Valid zoom levels: 0-20 (all zoom levels)
+  Bounding area:     Top-Left coordinate: (-180.0, 90.0), Bottom-Right coordinate: (179.99, -90.0)
+ 
+   Note: the currently supported pixel format for the tile images is RGBA. ",getOverlayType(),Gets the raster tile overlay type.,MapOverlayType
+com.here.android.mpa.ftcr.FTCRNavigationManager,A navigation manager class that provides guidance advice and information along the FTCR routes.  IMPORTANT: FTCRNavigationManager is a Beta feature. The related classes are subject to change without notice. ,getDistanceToCurrentManeuver(),Return distance in meters to the current maneuver.,long
+com.dropbox.core.v2.sharing.FileMemberActionResult,"Per-member result for DbxUserSharingRequests.removeFileMember2(String,MemberSelector) or DbxUserSharingRequests.addFileMember(String,java.util.List) or DbxUserSharingRequests.changeFileMemberAccess(String,MemberSelector,AccessLevel).",getResult(),The outcome of the action on this member.,FileMemberActionIndividualResult
+com.here.android.mpa.ftcr.FTCRRouter.ErrorResponse,Represents error for route calculation.,getErrorCode(),Gets error code.,RoutingError
+com.here.android.mpa.search.MediaCollectionPage,Represents a base class for a paginateable collection of Media objects of a specific type.  Note: each collection contains objects of one Media.Type. ,getNextPageRequest(),Gets the MediaCollectionPageRequest for requesting the next page of the MediaCollectionPage.,MediaCollectionPageRequest<T>
+com.dropbox.core.v2.sharing.UnshareFolderError,"This class is an open tagged union.  Tagged unions instances are always
+ associated to a specific tag.  This means only one of the isAbc()
+ methods will return true. You can use tag() to determine the
+ tag associated with this instance.
+
+  Open unions may be extended in the future with additional tags. If a new
+ tag is introduced that this SDK does not recognized, the OTHER value
+ will be used. ",tag(),Returns the tag for this instance.,UnshareFolderError.Tag
+com.dropbox.core.v2.sharing.UnshareFileError,"Error result for DbxUserSharingRequests.unshareFile(String).
+
+  This class is an open tagged union.  Tagged unions instances are always
+ associated to a specific tag.  This means only one of the isAbc()
+ methods will return true. You can use tag() to determine the
+ tag associated with this instance. 
+
+  Open unions may be extended in the future with additional tags. If a new
+ tag is introduced that this SDK does not recognized, the OTHER value
+ will be used. ",userError(SharingUserError¬†value),"Returns an instance of UnshareFileError that has its tag set to
+ UnshareFileError.Tag.USER_ERROR.",static UnshareFileError
+com.amazon.device.iap.model.UserDataResponse,Represents the result of a call to PurchasingService.getUserData().,getRequestId(),"Provides access to the request ID originally returned by
+ PurchasingService.getUserData().",RequestId
+com.here.android.mpa.search.TransitLineCategory,Represents the category information for the public transport line.,getTitle(),Gets the localized name of the category.,java.lang.String
+com.dropbox.core.v2.sharing.FileLinkMetadata,The metadata of a file shared link,getRev(),A unique identifier for the current revision of a file.,String
+photos,N/A - VK has no Class Descriptions,search,Returns a list of photos.,Returns a list of photo objects.
+com.here.android.mpa.guidance.NavigationManager,"This class controls turn by turn navigation. If the user of the application revokes the ACCESS_FINE_LOCATION permission at runtime while NavigationManager is active, navigation will stop functioning. Navigation must be restarted once the ACCESS_FINE_LOCATION permission is restored.",getAfterNextManeuver(),Returns the Maneuver after the next Maneuver,Maneuver
+com.adcolony.sdk.AdColonyZone,"Holds all information related to a zone. Can be retrieved at any time via
+ AdColony.getZone(String).
+ Object will be incomplete (information will not be valid) if AdColony has not been configured.",getRewardName(),"Used to retrieve the name of the reward currency as defined on this zone's page on our
+ dashboard.",java.lang.String
+com.here.android.mpa.mapping.MapPolyline,A graphical representation of a GeoPolyline that can be rendered on a map. A MapPolyline has multiple points that combine to create its path.,getLineColor(),"Gets the current line color for this MapPolyline, returning an ARGB (Alpha/Red/Green/Blue) integer color value.",int
+com.here.android.mpa.common.LocationDataSourceAutomotive,"Abstract class that defines the interface for providing positions updates from an automotive location data source (e.g. an external GPS or Dead Reckoning (DR) units). IMPORTANT: This is a Beta API, and is subject to change without notice. Location data sources should provide a concrete implementation of this class and pass it to PositioningManager.setDataSource(LocationDataSource) Setting a source derived from this class will force PositioningManager to use a map matching algorithm designed for automotive use cases which expects a constant stream of position and sensor data from a DR unit at a frequency of 10Hz. The automotive map matcher algorithm does not support any form of extrapolation so if a constant stream of position and sensor data is not provided in tunnels or areas of traditionally poor GPS coverage the map matching performance will be poor. Please note that pedestrian navigation is not supported when automotive location data source is used. \note Attempts to call PositioningManager.setDataSource(LocationDataSource) with an object derived from LocationDataSourceAutomotive will be ignored and return false if access to this operation is denied. Contact your HERE representative for more information.",getHorizontalLargeStandardDeviation(),Called by PositioningManager to get Horizontal radial error (large component) as a standard deviation in meters.,float
+zendesk.support.TicketFieldOption,Model class for ticket field option.,getId(),Gets the ID of the ticket field option.,long
+news feed,N/A - VK has no Class Descriptions,newsfeed.getbanned,Returns a list of users and communities banned from the current user's newsfeed.,"Returns an object with the following fields: 
+
+groups — An array of community IDs that the user removed from the newsfeed. 
+members — An array of friend IDs that the user removed from the newsfeed. 
+ "
+com.here.android.mpa.mapping.AndroidXMapFragment,"A fragment class that automatically creates a Map and handles map UI interactions such as panning and zooming. AndroidXMapFragment extends the Android Fragment class and retains its lifecycle behaviors.  Upon the initialization of AndroidXMapFragment, a Map object is automatically created and bound to the fragment. This Map object is then persisted throughout the AndroidXMapFragment's lifetime. Since AndroidXMapFragment internally calls Fragment.setRetainInstance(true), the Map will retain any properties applied to it during an application's lifetime.   AndroidXMapFragment objects have their own lifecycle, state, and back stack, thus it is unsafe to assume objects returned by a AndroidXMapFragment instance (with the exception of Map) will be available throughout the lifetime of its attached activity.   A AndroidXMapFragment is defined in an Android layout XML file. For example:   
+   <fragment
+       class=""com.here.android.mpa.mapping.AndroidXMapFragment""
+       android:id=""@+id/map_fragment""
+       android:layout_width=""match_parent""
+       android:layout_height=""match_parent""/>
+ 
+   Note: AndroidXMapFragment automatically handles MapEngine pausing and resuming during activity state changes, thus it is not necessary for the activity that owns AndroidXMapFragment instances to manually call MapEngine.onPause() or MapEngine.onResume() during the activity's AndroidXMapFragment.onPause() and AndroidXMapFragment.onResume(). However, considerations should be made in how much processing is done during the onResume() method. Performing significant amounts of processing may delay view rendering in cases such as device orientation changes. In these cases, it is recommended to use a specifically designated handler to organize the amount of processing to be done. ",getCopyrightBoundaryRect(),Gets the current HERE copyright logo's boundary rectangle.,android.graphics.Rect
+com.here.android.mpa.mapping.Map.LayerCategory,"Definition for layer categories within a map. These layer categories can be enabled or disabled dynamically through Map.setVisibleLayers(EnumSet, boolean).",values(),"Returns an array containing the constants of this enum type, in the order they are declared.",static Map.LayerCategory[]
+com.dropbox.core.v2.sharing.AddFolderMemberError.Tag,Discriminating tag type for AddFolderMemberError.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AddFolderMemberError.Tag[]
+com.here.android.mpa.pde.PlatformDataItem.ConditionType,Type of the condition entity as described by the CONDITION_TYPE field.,values(),"Returns an array containing the constants of this enum type, in the order they are declared.",static PlatformDataItem.ConditionType[]
+com.amazon.device.iap.model.ProductDataResponse,Represents the result of a call to PurchasingService.getProductData(java.util.Set).,getUnavailableSkus(),"Returns the set of SKUs provided in the original request to
+ PurchasingService.getProductData(Set) for which product data is
+ not available.",java.util.Set<java.lang.String>
+com.here.android.mpa.mapping.Map,"A Map object represents a virtual model of the world. When embedded in a AndroidXMapFragment, or MapView, Map objects can be used to show maps, add/remove map objects, and enable user interactions.",projectToPixel(java.util.List<GeoCoordinate>¬†coordinates),Converts and returns a list of Map.PixelResult elements that represent screen pixel coordinates from a List of GeoCoordinate objects.,java.util.List<Map.PixelResult>
+com.here.android.positioning.radiomap.RadioMapLoader.Type,Download cell and coarse Wi-Fi radio maps.,values(),"Returns an array containing the constants of this enum type, in the order they are declared.",static RadioMapLoader.Type[]
+com.dropbox.core.v2.sharing.ListFileMembersError,"Error for DbxUserSharingRequests.listFileMembers(String).
+
+  This class is an open tagged union.  Tagged unions instances are always
+ associated to a specific tag.  This means only one of the isAbc()
+ methods will return true. You can use tag() to determine the
+ tag associated with this instance. 
+
+  Open unions may be extended in the future with additional tags. If a new
+ tag is introduced that this SDK does not recognized, the OTHER value
+ will be used. ",tag(),Returns the tag for this instance.,ListFileMembersError.Tag
+messages,N/A - VK has no Class Descriptions,markasread,Marks messages as read.,Returns 1.
+com.linecorp.linesdk.LineProfile,"
+
+
+Class Overview
+Represents a user's LINE profile in the Social API.
+
+
+
+
+
+
+",getDisplayName(),Gets the user's display name.,String
+zendesk.core.SessionStorage,"Class holding storage that is tied to a user. Likely to be cleared after an user logs out or
+ the identity changes.",getAdditionalSdkStorage(),Gets a reference to additional sdk storage,BaseStorage
+messages,N/A - VK has no Class Descriptions,setactivity,Changes the status of a user as typing in a conversation.,"Returns 1. 
+""User N is typing..."" is shown for 10 seconds after the method is called, or until the message is sent. "
+com.here.android.mpa.mapping.OperatingHours,"Represents the hours of operation for different days of the week, plus holidays. For each day, the operating hours are a non-overlapping sequence of intervals in increasing order of time. Used for specifying hours of operation for services.",getFridaySchedule(),Friday schedule as a list of TimeInverval TimeInverval.,java.util.List<TimeInterval>
+zendesk.support.Article,"This is a model class for an Article object that will be created by the
+ HelpCenterProvider.",getHtmlUrl(),Gets the html URL of the article.,java.lang.String
+com.here.android.mpa.tce.TollCostVehicleProfile,Specify vehicle parameters to calculate toll cost. This class can be used to create TollCostOptions that can be further used in TollCostRequest to make request for toll cost .,getVehicleAxles(),Gets number of vehicle's axles (not including trailer axles).,int
+zendesk.support.HelpRequest,Models a request for a flattened view of Help Center,getIncludes(),Gets the includes (side-loads) as a CSV string,java.lang.String
+com.here.android.mpa.ar.ARController.CameraParams,Encapsulates parameters which affect the device camera. The device camera is used when in ARController.ViewType.CAMERA view.,getSize(),Get camera resolution for Camera view.,Size
+com.dropbox.core.v2.files.DbxUserFilesRequests,"Routes in namespace ""files"".",getThumbnailBuilder(String¬†path),Get a thumbnail for an image.,GetThumbnailBuilder
+com.dropbox.core.v2.files.WriteError.Tag,Discriminating tag type for WriteError.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static WriteError.Tag[]
+com.dropbox.core.v2.team.MemberProfile,Basic member profile.,getMembershipType(),"The user's membership type: full (normal team member) vs limited (does
+ not use a license; no access to the team's shared quota).",TeamMembershipType
+com.here.android.mpa.venues3d.Venue,"This class represents a public building or a group of public buildings on a map. Examples of public buildings are shopping malls and airports. Venue objects are based on models stored by the back-end service and constructed as necessary, for example when the map pans to an area where a venue exists. Similarly, when the map is panned away from that area, the venue object is removed from the map view to free up the memory reserved for the venues.  A Venue instance includes one or more Level objects. A Level in turn consists of one or more OuterArea objects. An OuterArea represents a physical form of an outer area of a level in the building. An OuterArea typically contains Space objects that represent, for example, single shops inside the venue.   A Venue cannot be instantiated directly. Instead, an instance can be obtained by calling VenueController.getVenue(). ","getNearbySpaces(Space¬†space, float¬†radius)",This method retrieves spaces that intersect a circle around the center of a space.,java.util.List<Space>
+com.dropbox.core.v1.DbxWriteMode,"Describes how a file should be saved when it is written to Dropbox.  Do not call
+ the constructor.  Instead, call one of the three static functions: add(),
+ force(), update(java.lang.String).",add(),Returns a DbxWriteMode for adding new file.,static DbxWriteMode
+com.here.android.mpa.mapping.MapLocalModel,"Represents a relative local coordinate mesh displayed on a map. The format for the mesh is interpreted as an array of float offsets relative to the anchor, which itself specifies the center base of the objects.  A unit of 1.0f represents 1 meter in the real world. For example, a Vector3f( 100, 200, 300 ) represents a point offset by 100 meters in the x-axis direction (east), 200 meters in the y-axis direction (north), and 300 meters in the z-axis direction (up), all relative to the anchor.   Note: a MapLocalModel object can be augmented by specifying additional attributes such as scale, scale style, or rotation. ",getTexture(),Gets the current texture Image of the MapLocalModel.,Image
+com.here.android.mpa.routing.Route,Represents a distinct path connecting two or more waypoints GeoCoordinate. A Route consists of a list of maneuvers and route links.,"getDistance(int¬†routeElementFrom, GeoCoordinate¬†positionFrom, int¬†routeElementTo, GeoCoordinate¬†positionTo)",Returns the distance between two points on the route.,int
+zendesk.support.Category,"This is a model class for a Category object that will be created by the
+ HelpCenterProvider.",getSourceLocale(),"Gets the source locale of the category in the form of ll-CC, e.g.",java.lang.String
+com.here.android.mpa.tce.TollCostResult,Represent result of TollCostRequest. This class wrap different toll costs.,getTotalTollCost(),Gets the total toll cost of given Route.,java.math.BigDecimal
+com.here.android.mpa.routing.TransitRouteStop,This is a public transit stop within a calculated transit Route.,getPlatformCoordinate(),Gets the GeoCoordinate representing the coordinates of the platform for the TransitRouteStop.,GeoCoordinate
+com.here.android.mpa.common.Identifier,Represents a 64-bit or 128-bit numeric identifier of an instance of ViewObject. The identifiers are used by:  TransitDatabase MapTransitLayer MapBuildingLayer MapBuildingGroup TransitLineObject TransitLineInfo TransitAccessInfo TransitStopInfo ,getString(),Returns the string representation of the Identifier object which is the concatenation of type and the identifier string.,java.lang.String
+com.here.android.mpa.guidance.VoicePackage,Return information about downloaded voice packages. Used in VoiceCatalog.,getLocalizedType(),Get the localized description for the type of voice package.,java.lang.String
+wall,N/A - VK has no Class Descriptions,restorecomment,"Restores a comment deleted from a user wall or community wall. 
+",Returns 1.
+com.dropbox.core.v2.sharing.ParentFolderAccessInfo,Contains information about a parent folder that a member has access to.,toStringMultiline(),"Returns a String representation of this object formatted for easier
+ readability.",String
+com.dropbox.core.BadResponseCodeException,Thrown when the Dropbox server responds with an HTTP status code we didn't expect.,getStatusCode(),Returns HTTP status code received from the Dropbox server.,int
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",getNonce(),Gets the `nonce` value used for performing login in LINE.,String
+zendesk.core.Zendesk,"Configuration class for Zendesk Core SDK initialization. Call this first to configure Zendesk
+ to use the correct credentials and Zendesk URL.",getIdentity(),"Return the current Identity for the SDK, or null if none has been set.",Identity
+com.here.android.mpa.mapping.MapBuildingObject,"This class represents a specific building on the map. Using the Identifier, the MapBuildingObject can be attached to MapBuildingGroup groups to manipulate color and height properties.",getPlaceName(),Gets the name of the MapBuildingObject.,java.lang.String
+com.dropbox.core.v1.DbxClientV1,"Use this class to make remote calls to the Dropbox API.  You'll need an access token first,
+ normally acquired via DbxWebAuth.
+
+ 
+ This class has no mutable state, so it's thread safe as long as you pass in a thread safe
+ HttpRequestor implementation.
+ ","getDeltaC(Collector<DbxDeltaC.Entry<DbxEntry>,C>¬†collector,
+         String¬†cursor,
+         boolean¬†includeMediaInfo)","A more generic version of getDelta(java.lang.String, boolean).",<C>¬†DbxDeltaC<C>
+com.here.android.mpa.routing.TruckRestriction.TrailerType,Represents restriction on a link or lane related to trucks with a specified number of trailers.,values(),"Returns an array containing the constants of this enum type, in the order they are declared.",static TruckRestriction.TrailerType[]
+com.dropbox.core.v2.files.GetTemporaryLinkResult,The temporary link which can be used to stream content the file.,toStringMultiline(),"Returns a String representation of this object formatted for easier
+ readability.",String
+com.here.android.mpa.search.TransitLine,Represents a public transport line.,getName(),Gets the line name.,java.lang.String
+com.here.android.mpa.routing.Route,Represents a distinct path connecting two or more waypoints GeoCoordinate. A Route consists of a list of maneuvers and route links.,"getRouteElementsFromLength(int¬†start, int¬†length)",Gets the RouteElements for a given distance (in meters) within the route.,RouteElements
+com.dropbox.core.v2.team.GroupAccessType,Role of a user in group.,valueOf(String¬†name),Returns the enum constant of this type with the specified name.,static GroupAccessType
+com.dropbox.core.v2.team.ListMemberDevicesResult,Builder for ListMemberDevicesResult.,getMobileClientSessions(),List of mobile client used by this team member,List<MobileClientSession>
+com.here.android.mpa.electronic_horizon.MetaData,"Represents common meta data of a link, which depends on the region of the link.",getCountryCode(),Returns the ISO 3166-1 numeric country code.,int
+com.dropbox.core.v2.sharing.SharedFolderMetadata,The metadata which includes basic information about the shared folder.,getName(),The name of the this shared folder.,String
+com.here.android.mpa.guidance.TrafficWarner,Represents the traffic warning information for the current navigation session.,getNotificationOnRoute(Route¬†route),Gets the traffic notification for a given Route.,static TrafficNotification
+groups,N/A - VK has no Class Descriptions,getbyid,Returns information about communities by their IDs.,"Returns the total results number in count field and an array of objects describing communities in items field. 
+"
+com.dropbox.core.v2.team.MemberDevices,Information on devices of a team's member.,newBuilder(String¬†teamMemberId),Returns a new builder for creating an instance of this class.,static MemberDevices.Builder
+ImpressionData,Methods for retrieving impression-level revenue data (ILRD). Refer to our ILRD article for Android for additional implementation instructions.,getAdUnitName(),Description: Returns the ad unit name associated with the current creative.,public String  
+groups,N/A - VK has no Class Descriptions,approverequest,Allows to approve join request to the community.,Returns 1 if succeeded.
+com.here.android.mpa.mapping.OperatingHours,"Represents the hours of operation for different days of the week, plus holidays. For each day, the operating hours are a non-overlapping sequence of intervals in increasing order of time. Used for specifying hours of operation for services.",getWednesdaySchedule(),Wednesday schedule as a list of TimeInverval TimeInverval.,java.util.List<TimeInterval>
+friends,N/A - VK has no Class Descriptions,edit,Edits the friend lists of the selected user.,Returns 1 if succeeded.
+com.here.android.mpa.mapping.Map,"A Map object represents a virtual model of the world. When embedded in a AndroidXMapFragment, or MapView, Map objects can be used to show maps, add/remove map objects, and enable user interactions.",getCopyright(),Returns the copyright notice text for this Map.,java.lang.String
+com.here.android.mpa.ar.AndroidXCompositeFragment,"Composite fragment which enables usage of AR and Map functionality within the same view context. This class contains methods which are specific to Map as well as methods specific to AR. Concretely, provides the same functionality as AndroidXMapFragment in addition to AR functionality.",getCopyrightLogoHeight(),Returns the height of the copyright logo.,int
+com.here.android.mpa.routing.Maneuver,Represents the action required to leave one street segment and enter the next in the chain of directions that comprises a calculated Route.,getAngle(),Gets the angle of the maneuver.,int
+com.here.android.mpa.mapping.TransitStopInfo,Represents information about a public transit stop.,getParkingHours(),"Gets the parking OperatingHours for the transit stop, if a parking lot is present.",OperatingHours
+zendesk.support.SectionItem,A HelpItem for Help Center sections,getViewType(),Gets the type of the item,int
+com.here.android.mpa.routing.Maneuver,Represents the action required to leave one street segment and enter the next in the chain of directions that comprises a calculated Route.,getRouteElements(),Returns a list of RouteElement within the maneuver,java.util.List<RouteElement>
+com.dropbox.core.v2.team.MembersGetInfoItem,"Describes a result obtained for a single user whose id was specified in the
+ parameter of DbxTeamTeamRequests.membersGetInfo(java.util.List).
+
+  This class is a tagged union.  Tagged unions instances are always
+ associated to a specific tag.  This means only one of the isAbc()
+ methods will return true. You can use tag() to determine the
+ tag associated with this instance. ",memberInfo(TeamMemberInfo¬†value),"Returns an instance of MembersGetInfoItem that has its tag set to
+ MembersGetInfoItem.Tag.MEMBER_INFO.",static MembersGetInfoItem
+com.here.android.mpa.search.Address,"Provides textual address information for a Location. The information is divided among fields such as country, street, postal code, and so on.  To retrieve a combined, formatted string of this address, use the getText() method. ",getCounty(),Gets the current county name for the Address.,java.lang.String
+com.dropbox.core.v2.sharing.SharedFileMetadata,Properties of the shared file.,getOwnerTeam(),The team that owns the file.,Team
+com.dropbox.core.v2.sharing.SharePathError,"This class is an open tagged union.  Tagged unions instances are always
+ associated to a specific tag.  This means only one of the isAbc()
+ methods will return true. You can use tag() to determine the
+ tag associated with this instance.
+
+  Open unions may be extended in the future with additional tags. If a new
+ tag is introduced that this SDK does not recognized, the OTHER value
+ will be used. ",toStringMultiline(),"Returns a String representation of this object formatted for easier
+ readability.",String
+appwidgets,N/A - VK has no Class Descriptions,getgroupimageuploadserver,Returns a URL for uploading a photo to the community collection for community app widgets.,"Returns an object with the only upload_url field. To upload an image, generate POST-request to upload_url with a file in photo field. Then call appWidgets.saveAppImage method. 
+"
+com.dropbox.core.v2.sharing.AddFolderMemberError,"This class is an open tagged union.  Tagged unions instances are always
+ associated to a specific tag.  This means only one of the isAbc()
+ methods will return true. You can use tag() to determine the
+ tag associated with this instance.
+
+  Open unions may be extended in the future with additional tags. If a new
+ tag is introduced that this SDK does not recognized, the OTHER value
+ will be used. ",toStringMultiline(),"Returns a String representation of this object formatted for easier
+ readability.",String
+com.here.android.mpa.common.TrafficSign.WeatherAffects,Defined weather situations that affects the sign,values(),"Returns an array containing the constants of this enum type, in the order they are declared.",static TrafficSign.WeatherAffects[]
+com.here.android.mpa.pde.PlatformDataItemCollection,"Collection of PlatformDataItem items. This class implements List interface. Additionally contains methods useful for manipulating the data (filtering, combining etc.). To avoid overhead when dealing with large data sets, all the items returned by this class and its children are dynamically created on demand. Due to that fact this object and the child objects keep references to their parent object. If you require normal Java behavior, you can obtain regular Java collection of underlying data with PlatformDataItemCollection.extract() method.",listIterator(),Returns a PlatformDataItemCollection iterator on the elements of this PlatformDataItemCollection.,java.util.ListIterator<PlatformDataItem>
+com.dropbox.core.v2.sharing.SharedFolderMetadataBase,Properties of the shared folder.,getOwnerTeam(),The team that owns the folder.,Team
+docs,N/A - VK has no Class Descriptions,getwalluploadserver,Returns the server address for document upload onto a user's or community's wall.,"Returns an object with an upload_url field. After the document is uploaded, use the docs.save method. "
+com.dropbox.core.v2.team.MemberAddResult,"Describes the result of attempting to add a single user to the team.
+ 'success' is the only value indicating that a user was indeed added to the
+ team - the other values explain the type of failure that occurred, and
+ include the email of the user for which the operation has failed.
+
+  This class is a tagged union.  Tagged unions instances are always
+ associated to a specific tag.  This means only one of the isAbc()
+ methods will return true. You can use tag() to determine the
+ tag associated with this instance. ",userOnAnotherTeam(String¬†value),"Returns an instance of MemberAddResult that has its tag set to
+ MemberAddResult.Tag.USER_ON_ANOTHER_TEAM.",static MemberAddResult
+photos,N/A - VK has no Class Descriptions,getmarketuploadserver,Returns the server address for market photo upload.,Returns the object containing upload_url field with the server address.
+com.here.android.mpa.fce.FleetConnectivityService,Main component of Fleet Connectivity Extension responsible for communication.,getRunningJobId(),Retrieves the ID of currently running job.,java.lang.String
+com.amazon.device.iap.PurchasingService,"Presents the primary API for interacting with the Amazon Appstore purchasing framework. First register a
+ PurchasingListener instance via
+ registerListener(Context, PurchasingListener) before using any other API.",getUserData(),Initiates a request to retrieve the user ID of the currently logged-in user.,static RequestId
+com.dropbox.core.v2.sharing.ListFilesResult,Success results for DbxUserSharingRequests.listReceivedFiles(com.dropbox.core.v2.sharing.ListFilesArg).,getCursor(),Cursor used to obtain additional shared files.,String
+com.dropbox.core.v2.files.WriteError,"This class is an open tagged union.  Tagged unions instances are always
+ associated to a specific tag.  This means only one of the isAbc()
+ methods will return true. You can use tag() to determine the
+ tag associated with this instance.
+
+  Open unions may be extended in the future with additional tags. If a new
+ tag is introduced that this SDK does not recognized, the OTHER value
+ will be used. ",getConflictValue(),Couldn't write to the target path because there was something in the way.,WriteConflictError
+com.here.android.mpa.venues3d.Content,"This class encapsulates POI (Point Of Interest) information of the spatial area in a venue. Examples of POI information are the street address, access information, search tags, space type, category.",getAddress(),This method retrieves the postal address of the spatial area.,Address
+com.dropbox.core.v2.team.TeamMemberStatus,"The user's status as a member of a specific team.
+
+  This class is a tagged union.  Tagged unions instances are always
+ associated to a specific tag.  This means only one of the isAbc()
+ methods will return true. You can use tag() to determine the
+ tag associated with this instance. ",removed(RemovedStatus¬†value),"Returns an instance of TeamMemberStatus that has its tag set to
+ TeamMemberStatus.Tag.REMOVED.",static TeamMemberStatus
+com.dropbox.core.v2.sharing.InsufficientQuotaAmounts,"The amount of space left in the user's Dropbox, less than space_needed.",toStringMultiline(),"Returns a String representation of this object formatted for easier
+ readability.",String
+com.here.android.mpa.common.OnEngineInitListener.Error,Represents values describing initialization errors.,values(),"Returns an array containing the constants of this enum type, in the order they are declared.",static OnEngineInitListener.Error[]
+com.here.android.mpa.ar.ARBillboardObject,Represents a 3D AR billboard objects that users can add to a ARController. There are two types of AR billboard objects supported: - Geo positioned billboard - Locally positioned billboard,getOrientation(),Get the orientation mode of the billboard,ARBillboardObject.Orientation
+com.here.android.mpa.tce.TollCostOptions,Represent different input parameters for TollCostRequest.,getVehicleProfile(),Gets the copy of TollCostVehicleProfile.,TollCostVehicleProfile
+com.here.android.mpa.common.CustomConfigurations.Config,"Argument keys for CustomConfigurations.set(Hashtable),",valueOf(java.lang.String¬†name),Returns the enum constant of this type with the specified name.,static CustomConfigurations.Config
+ImpressionData,Methods for retrieving impression-level revenue data (ILRD). Refer to our ILRD article for Android for additional implementation instructions.,getPrecision(),Description: Returns the ad network placement/zone/unit ID if the creative is served by a supported ad network.,public String  
+com.here.android.mpa.common.GeoBoundingBox,"Represents a rectangular area in a geographic coordinate system.  Although a bounding box is specified by its top-left and bottom-right corner, the box is not necessarily the smallest rectangle spanned by these two points. It is possible to define geobounding boxes that are wider than 180 degrees or higher then 90 degrees (e.g. by setting the longitude of the top-left corner to a bigger value than the longitude of the bottom-right corner). Please note the top-left corner's latitude must be greater than or equal to bottom-right corner's latitude. Otherwise, the bounding box will be in invalid state.   For example, a geobounding box with longitude of -180 degrees for the top-left corner and a longitude of 180 degrees for the bottom-right corner will construct an area that encircles the globe, whereas a geobounding box with the same longitude value for both corners will construct an area with a width of 0 degrees. ",getBottomRight(),Gets the current bottom-right GeoCoordinate of the GeoBoundingBox with altitude set to zero.,GeoCoordinate
+com.dropbox.core.v2.team.MemberAddArg,Builder for MemberAddArg.,getMemberExternalId(),External ID for member.,String
+com.dropbox.core.v2.team.ListMembersAppsError,Error returned by DbxTeamTeamRequests.linkedAppsListMembersLinkedApps(String),values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static ListMembersAppsError[]
+com.amazon.device.iap.model.Product,"Represents an in-app product, such as consumable content, entitlement content,
+ or subscription content. Retrieve product data by using
+ PurchasingService.getProductData(java.util.Set)
+ .",getProductType(),Returns the type of product.,ProductType
+com.here.android.mpa.common.GeoPosition,"Represents position, speed, and heading information as provided by a positioning device.",getAltitudeAccuracy(),Gets the current altitude accuracy as measured by the enabled positioning device.,float
+com.dropbox.core.v2.sharing.GetSharedLinkFileError,Catch-all used for unknown tag values returned by the Dropbox servers.,valueOf(String¬†name),Returns the enum constant of this type with the specified name.,static GetSharedLinkFileError
+com.dropbox.core.v2.teampolicies.TeamSharingPolicies,Policies governing sharing within and outside of the team.,getSharedFolderJoinPolicy(),Which shared folders team members can join.,SharedFolderJoinPolicy
+zendesk.support.Category,"This is a model class for a Category object that will be created by the
+ HelpCenterProvider.",getHtmlUrl(),Gets the URL of the category that can be opened in a web browser,java.lang.String
+RequestParameters,Contains methods to set targeting data for native ad (com.mopub.nativeads.RequestParameters) and rewarded video (com.mopub.mobileads.MoPubRewardedVideoManager.RequestParameters).,getKeywords(),Description: Returns a String containing keywords that have been set on the current ad object. Null if not set.,public String  
+com.here.android.mpa.common.ViewRect,Represents a rectangle defined by the top-left corner's coordinate and the width and height of the rectangle.,getY(),Gets the current Y-coordinate of the ViewRect.,int
+com.here.android.mpa.venues3d.Content,"This class encapsulates POI (Point Of Interest) information of the spatial area in a venue. Examples of POI information are the street address, access information, search tags, space type, category.",getPlaceCategoryId(),This method retrieves the Category identifier of the spatial area.,java.lang.String
+com.dropbox.core.v2.files.DbxUserFilesRequests,"Routes in namespace ""files"".","getPreview(String¬†path,
+          String¬†rev)",Get a preview for a file.,DbxDownloader<FileMetadata>
+com.amazon.device.iap.model.UserDataResponse,Represents the result of a call to PurchasingService.getUserData().,getUserData(),"Returns the user ID and marketplace
+ information of the user associated with the purchase.",UserData
+com.dropbox.core.DbxAppInfo,Identifying information about your application.,getSecretFormatError(String¬†key),"If they secret's format looks correct, return null.",static String

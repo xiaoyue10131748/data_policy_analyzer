@@ -1,0 +1,19 @@
+include(
+    ":common",
+    ":template",
+    ":navi",
+    ":network-rx",
+    ":auth-common",
+    ":auth-rx",
+    ":talk-common",
+    ":talk-rx",
+    ":story-common",
+    ":story-rx",
+    ":link-common",
+    ":link-rx",
+    ":user-common",
+    ":user-rx",
+    ":sample-common",
+    ":sample",
+    ":java-sample"
+)

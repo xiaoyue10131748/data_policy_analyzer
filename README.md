@@ -1,6 +1,6 @@
 
 ## Data_policy_analyzer
-The goal ofData Policy Analyzer(DPA) is to extract third-party  data  sharing  policies  from  an  SDK  ToS
+The goal of Data Policy Analyzer(DPA) is to extract third-party  data  sharing  policies  from  an  SDK  ToS
 
 ## Getting Started
 
@@ -27,7 +27,7 @@ pip install selenium
 
 Here we will explain how to run the each module for this system.
 
-### Moudle one: web crawler 
+### part one: web crawler 
 
 The crawler will extract all the text from website and split them into sentence. Put urls you want to crawl in the file "domainList_developer.txt" and specify which folder you want to store the crawl results. Each url will generate a csv file that contains sentences of the webpage.
 
@@ -36,13 +36,20 @@ python3 execute.py -i domainList_developer.txt -o /Users/huthvincent/Desktop/
 
 ```
 
-### Moudle two: customized ner model
+### part two: customized ner model
 The ner model is a sensitive data extracter. You can input a sentence as a paramater, and it will show you the sentensive data entity in the sentence. 
 
 ```
 python3 extract_sensitive_data.py -i "Do not store Twitter passwords."
 ```
 The output is {'Twitter passwords'}
+
+### part three: policy statement discovery
+Put the pre-processed Tos docs under the folder "raw data/40_pre_processed_data", then run extract_policy_statement.py. The results will be in the folder "raw data/40_post_processed_data/policy_statement_discovery". The column "predict_label" will shown whether the sentence is related to third party data sharing.
+
+```
+python3 extract_policy_statement.py.py 
+```
 
 ## Deployment
 

@@ -1,2 +1,0 @@
-﻿class_name,class_description,method,method_description,data_type
-OrderUtils1_0_Global,,"getSignedOrderInfo(""test_subject"", ""test_body"", ""0.01"")","Get PayTask payment object to pay (pay or authorize activity needs to be executed in non-ui thread), code demo:",

@@ -1,0 +1,1865 @@
+class_name,class_description,method,method_description,data_type
+com.unity3d.services.analytics.AcquisitionType,Returns the enum constant of this type with the specified name.,toString(),N/A,java.lang.String
+com.unity3d.services.analytics.AcquisitionType,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static AcquisitionType
+com.unity3d.services.analytics.AcquisitionType,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AcquisitionType[]
+com.unity3d.services.ads.configuration.AdsModuleConfiguration,N/A,getAdUnitViewHandlers(),N/A,"java.util.Map<java.lang.String,java.lang.Class>"
+com.unity3d.services.ads.configuration.AdsModuleConfiguration,N/A,getWebAppApiClassList(),N/A,java.lang.Class[]
+com.unity3d.services.ads.configuration.AdsModuleConfiguration,N/A,initCompleteState(Configuration configuration),N/A,boolean
+com.unity3d.services.ads.configuration.AdsModuleConfiguration,N/A,"initErrorState(Configuration configuration,
+              java.lang.String state,
+              java.lang.String errorMessage)",N/A,boolean
+com.unity3d.services.ads.configuration.AdsModuleConfiguration,N/A,initModuleState(Configuration configuration),N/A,boolean
+com.unity3d.services.ads.configuration.AdsModuleConfiguration,N/A,resetState(Configuration configuration),N/A,boolean
+com.unity3d.ads.properties.AdsProperties,N/A,addListener(IUnityAdsListener listener),N/A,static void
+com.unity3d.ads.properties.AdsProperties,N/A,getListener(),N/A,static IUnityAdsListener
+com.unity3d.ads.properties.AdsProperties,N/A,getListeners(),N/A,static java.util.Set<IUnityAdsListener>
+com.unity3d.ads.properties.AdsProperties,N/A,getShowTimeout(),N/A,static int
+com.unity3d.ads.properties.AdsProperties,N/A,removeListener(IUnityAdsListener listener),N/A,static void
+com.unity3d.ads.properties.AdsProperties,N/A,setListener(IUnityAdsListener listener),N/A,static void
+com.unity3d.ads.properties.AdsProperties,N/A,setShowTimeout(int timeout),N/A,static void
+com.unity3d.services.ads.api.AdsProperties,N/A,"setShowTimeout(java.lang.Integer timeout,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,clearMotionEventCapture(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,close(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,endMotionEventCapture(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,getAdUnitActivity(),N/A,static AdUnitActivity
+com.unity3d.services.ads.api.AdUnit,N/A,getCurrentAdUnitActivityId(),N/A,static int
+com.unity3d.services.ads.api.AdUnit,N/A,getCurrentMotionEventCount(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"getMotionEventCount(org.json.JSONArray eventTypes,
+                   WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"getMotionEventData(org.json.JSONObject infoIndices,
+                  WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,getOrientation(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,getSafeAreaInsets(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"getViewFrame(java.lang.String view,
+            WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,getViews(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"open(java.lang.Integer activityId,
+    org.json.JSONArray views,
+    java.lang.Integer orientation,
+    org.json.JSONArray keyevents,
+    java.lang.Integer systemUiVisibility,
+    java.lang.Boolean hardwareAcceleration,
+    java.lang.Boolean isTransparent,
+    java.lang.Integer displayCutoutMode,
+    WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"open(java.lang.Integer activityId,
+    org.json.JSONArray views,
+    java.lang.Integer orientation,
+    org.json.JSONArray keyevents,
+    java.lang.Integer systemUiVisibility,
+    java.lang.Boolean hardwareAcceleration,
+    java.lang.Boolean isTransparent,
+    WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"open(java.lang.Integer activityId,
+    org.json.JSONArray views,
+    java.lang.Integer orientation,
+    org.json.JSONArray keyevents,
+    java.lang.Integer systemUiVisibility,
+    java.lang.Boolean hardwareAcceleration,
+    WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"open(java.lang.Integer activityId,
+    org.json.JSONArray views,
+    java.lang.Integer orientation,
+    org.json.JSONArray keyevents,
+    WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"open(java.lang.Integer activityId,
+    org.json.JSONArray views,
+    java.lang.Integer orientation,
+    WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,setAdUnitActivity(AdUnitActivity activity),N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,setCurrentAdUnitActivityId(int activityId),N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"setKeepScreenOn(java.lang.Boolean screenOn,
+               WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"setKeyEventList(org.json.JSONArray keyevents,
+               WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"setLayoutInDisplayCutoutMode(java.lang.Integer displayCutoutMode,
+                            WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"setOrientation(java.lang.Integer orientation,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"setSystemUiVisibility(java.lang.Integer systemUiVisibility,
+                     WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"setViewFrame(java.lang.String view,
+            java.lang.Integer x,
+            java.lang.Integer y,
+            java.lang.Integer width,
+            java.lang.Integer height,
+            WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"setViews(org.json.JSONArray views,
+        WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.AdUnit,N/A,"startMotionEventCapture(java.lang.Integer maxEvents,
+                       WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,createLayout(),N/A,protected void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,getLayout(),N/A,AdUnitRelativeLayout
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,getViewFrame(java.lang.String view),N/A,"java.util.Map<java.lang.String,java.lang.Integer>"
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,getViewHandler(java.lang.String name),N/A,IAdUnitViewHandler
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,getViews(),N/A,java.lang.String[]
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,onCreate(android.os.Bundle savedInstanceState),N/A,protected void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,onDestroy(),N/A,protected void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,"onKeyDown(int keyCode,
+         android.view.KeyEvent event)",N/A,boolean
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,onPause(),N/A,protected void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,"onRequestPermissionsResult(int requestCode,
+                          java.lang.String[] permissions,
+                          int[] grantResults)",N/A,void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,onResume(),N/A,protected void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,onSaveInstanceState(android.os.Bundle outState),N/A,void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,onStart(),N/A,protected void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,onStop(),N/A,protected void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,onWindowFocusChanged(boolean hasFocus),N/A,void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,setKeepScreenOn(boolean keepScreenOn),N/A,boolean
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,setKeyEventList(java.util.ArrayList<java.lang.Integer> keyevents),N/A,void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,setLayoutInDisplayCutoutMode(int flags),N/A,void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,setOrientation(int orientation),N/A,void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,setSystemUiVisibility(int flags),N/A,boolean
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,"setViewFrame(java.lang.String view,
+            int x,
+            int y,
+            int width,
+            int height)",N/A,void
+com.unity3d.services.ads.adunit.AdUnitActivity,N/A,setViews(java.lang.String[] views),N/A,void
+com.unity3d.services.ads.adunit.AdUnitError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static AdUnitError
+com.unity3d.services.ads.adunit.AdUnitError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AdUnitError[]
+com.unity3d.services.ads.adunit.AdUnitEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static AdUnitEvent
+com.unity3d.services.ads.adunit.AdUnitEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AdUnitEvent[]
+com.unity3d.services.ads.adunit.AdUnitMotionEvent,N/A,getAction(),N/A,int
+com.unity3d.services.ads.adunit.AdUnitMotionEvent,N/A,getDeviceId(),N/A,int
+com.unity3d.services.ads.adunit.AdUnitMotionEvent,N/A,getEventTime(),N/A,long
+com.unity3d.services.ads.adunit.AdUnitMotionEvent,N/A,getPressure(),N/A,float
+com.unity3d.services.ads.adunit.AdUnitMotionEvent,N/A,getSize(),N/A,float
+com.unity3d.services.ads.adunit.AdUnitMotionEvent,N/A,getSource(),N/A,int
+com.unity3d.services.ads.adunit.AdUnitMotionEvent,N/A,getToolType(),N/A,int
+com.unity3d.services.ads.adunit.AdUnitMotionEvent,N/A,getX(),N/A,float
+com.unity3d.services.ads.adunit.AdUnitMotionEvent,N/A,getY(),N/A,float
+com.unity3d.services.ads.adunit.AdUnitMotionEvent,N/A,isObscured(),N/A,boolean
+com.unity3d.services.ads.adunit.AdUnitOpen,N/A,"open(java.lang.String placementId,
+    org.json.JSONObject options)",N/A,static boolean
+com.unity3d.services.ads.adunit.AdUnitOpen,N/A,showCallback(CallbackStatus status),N/A,static void
+com.unity3d.services.ads.adunit.AdUnitRelativeLayout,N/A,clearCapture(),N/A,void
+com.unity3d.services.ads.adunit.AdUnitRelativeLayout,N/A,endCapture(),N/A,void
+com.unity3d.services.ads.adunit.AdUnitRelativeLayout,N/A,getCurrentEventCount(),N/A,int
+com.unity3d.services.ads.adunit.AdUnitRelativeLayout,N/A,getEventCount(java.util.ArrayList<java.lang.Integer> eventTypes),N/A,android.util.SparseIntArray
+com.unity3d.services.ads.adunit.AdUnitRelativeLayout,N/A,getEvents(android.util.SparseArray<java.util.ArrayList<java.lang.Integer>> requestedInfos),N/A,android.util.SparseArray<android.util.SparseArray<AdUnitMotionEvent>>
+com.unity3d.services.ads.adunit.AdUnitRelativeLayout,N/A,getMaxEventCount(),N/A,int
+com.unity3d.services.ads.adunit.AdUnitRelativeLayout,N/A,onInterceptTouchEvent(android.view.MotionEvent e),N/A,boolean
+com.unity3d.services.ads.adunit.AdUnitRelativeLayout,N/A,startCapture(int maxEvents),N/A,void
+com.unity3d.services.ads.adunit.AdUnitSoftwareActivity,N/A,N/A,N/A,N/A
+com.unity3d.services.ads.adunit.AdUnitTransparentActivity,N/A,createLayout(),N/A,protected void
+com.unity3d.services.ads.adunit.AdUnitTransparentActivity,N/A,onCreate(android.os.Bundle savedInstanceState),N/A,protected void
+com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity,N/A,N/A,N/A,N/A
+com.unity3d.services.core.device.AdvertisingId,N/A,getAdvertisingTrackingId(),N/A,static java.lang.String
+com.unity3d.services.core.device.AdvertisingId,N/A,getLimitedAdTracking(),N/A,static boolean
+com.unity3d.services.core.device.AdvertisingId,N/A,init(android.content.Context context),N/A,static void
+com.unity3d.services.analytics.core.api.Analytics,N/A,"addExtras(java.lang.String extras,
+         WebViewCallback callback)",N/A,static void
+com.unity3d.services.analytics.core.api.Analytics,N/A,setAnalyticsInterface(IAnalytics analytics),N/A,static void
+com.unity3d.services.analytics.interfaces.Analytics,N/A,initialize(IAnalytics analyticsInterfaces),N/A,static void
+com.unity3d.services.analytics.interfaces.AnalyticsError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static AnalyticsError
+com.unity3d.services.analytics.interfaces.AnalyticsError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AnalyticsError[]
+com.unity3d.services.analytics.core.configuration.AnalyticsModuleConfiguration,N/A,getWebAppApiClassList(),N/A,java.lang.Class[]
+com.unity3d.services.analytics.core.configuration.AnalyticsModuleConfiguration,N/A,initCompleteState(Configuration configuration),N/A,boolean
+com.unity3d.services.analytics.core.configuration.AnalyticsModuleConfiguration,N/A,"initErrorState(Configuration configuration,
+              java.lang.String state,
+              java.lang.String message)",N/A,boolean
+com.unity3d.services.analytics.core.configuration.AnalyticsModuleConfiguration,N/A,initModuleState(Configuration configuration),N/A,boolean
+com.unity3d.services.analytics.core.configuration.AnalyticsModuleConfiguration,N/A,resetState(Configuration configuration),N/A,boolean
+com.unity3d.services.core.preferences.AndroidPreferences,N/A,"getBoolean(java.lang.String name,
+          java.lang.String key)",N/A,static java.lang.Boolean
+com.unity3d.services.core.preferences.AndroidPreferences,N/A,"getFloat(java.lang.String name,
+        java.lang.String key)",N/A,static java.lang.Float
+com.unity3d.services.core.preferences.AndroidPreferences,N/A,"getInteger(java.lang.String name,
+          java.lang.String key)",N/A,static java.lang.Integer
+com.unity3d.services.core.preferences.AndroidPreferences,N/A,"getLong(java.lang.String name,
+       java.lang.String key)",N/A,static java.lang.Long
+com.unity3d.services.core.preferences.AndroidPreferences,N/A,"getString(java.lang.String name,
+         java.lang.String key)",N/A,static java.lang.String
+com.unity3d.services.core.preferences.AndroidPreferences,N/A,"hasKey(java.lang.String name,
+      java.lang.String key)",N/A,static boolean
+com.unity3d.services.core.preferences.AndroidPreferences,N/A,"removeKey(java.lang.String name,
+         java.lang.String key)",N/A,static void
+com.unity3d.services.core.preferences.AndroidPreferences,N/A,"setBoolean(java.lang.String name,
+          java.lang.String key,
+          java.lang.Boolean value)",N/A,static void
+com.unity3d.services.core.preferences.AndroidPreferences,N/A,"setFloat(java.lang.String name,
+        java.lang.String key,
+        java.lang.Double value)",N/A,static void
+com.unity3d.services.core.preferences.AndroidPreferences,N/A,"setInteger(java.lang.String name,
+          java.lang.String key,
+          java.lang.Integer value)",N/A,static void
+com.unity3d.services.core.preferences.AndroidPreferences,N/A,"setLong(java.lang.String name,
+       java.lang.String key,
+       java.lang.Long value)",N/A,static void
+com.unity3d.services.core.preferences.AndroidPreferences,N/A,"setString(java.lang.String name,
+         java.lang.String key,
+         java.lang.String value)",N/A,static void
+com.unity3d.services.ar.ARCheck,N/A,isFrameworkPresent(),N/A,static boolean
+com.unity3d.services.ar.ARError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static ARError
+com.unity3d.services.ar.ARError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static ARError[]
+com.unity3d.services.ar.AREvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static AREvent
+com.unity3d.services.ar.AREvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AREvent[]
+com.unity3d.services.ar.configuration.ARModuleConfiguration,N/A,getAdUnitViewHandlers(),N/A,"java.util.Map<java.lang.String,java.lang.Class>"
+com.unity3d.services.ar.configuration.ARModuleConfiguration,N/A,getWebAppApiClassList(),N/A,java.lang.Class[]
+com.unity3d.services.ar.configuration.ARModuleConfiguration,N/A,initCompleteState(Configuration configuration),N/A,boolean
+com.unity3d.services.ar.configuration.ARModuleConfiguration,N/A,"initErrorState(Configuration configuration,
+              java.lang.String state,
+              java.lang.String message)",N/A,boolean
+com.unity3d.services.ar.configuration.ARModuleConfiguration,N/A,initModuleState(Configuration configuration),N/A,boolean
+com.unity3d.services.ar.configuration.ARModuleConfiguration,N/A,resetState(Configuration configuration),N/A,boolean
+com.unity3d.services.ar.ARUtils,N/A,"createConfiguration(org.json.JSONObject properties,
+                   Session session)",N/A,static Config
+com.unity3d.services.ar.ARUtils,N/A,getConfigEnums(),N/A,static org.json.JSONObject
+com.unity3d.services.ar.ARUtils,N/A,isSupported(android.content.Context context),N/A,static int
+com.unity3d.services.ar.view.BackgroundRenderer,N/A,N/A,N/A,N/A
+com.unity3d.services.banners.api.Banner,N/A,"load(java.lang.String bannerViewTypeString,
+    java.lang.Integer width,
+    java.lang.Integer height,
+    java.lang.String bannerAdId,
+    WebViewCallback callback)",N/A,static void
+com.unity3d.services.banners.api.Banner,N/A,"setRefreshRate(java.lang.String placementId,
+              java.lang.Integer refreshRate,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.banners.bridge.BannerBridge,N/A,destroy(java.lang.String bannerAdId),N/A,static void
+com.unity3d.services.banners.bridge.BannerBridge,N/A,didAttach(java.lang.String bannerAdId),N/A,static void
+com.unity3d.services.banners.bridge.BannerBridge,N/A,didDestroy(java.lang.String bannerAdId),N/A,static void
+com.unity3d.services.banners.bridge.BannerBridge,N/A,didDetach(java.lang.String bannerAdId),N/A,static void
+com.unity3d.services.banners.bridge.BannerBridge,N/A,didLoad(java.lang.String bannerAdId),N/A,static void
+com.unity3d.services.banners.bridge.BannerBridge,N/A,"load(java.lang.String placementId,
+    java.lang.String bannerAdId,
+    UnityBannerSize bannerSize)",N/A,static void
+com.unity3d.services.banners.bridge.BannerBridge,N/A,"resize(java.lang.String bannerAdId,
+      int left,
+      int top,
+      int right,
+      int bottom,
+      float alpha)",N/A,static void
+com.unity3d.services.banners.bridge.BannerBridge,N/A,"visibilityChanged(java.lang.String bannerAdId,
+                 int visibility)",N/A,static void
+com.unity3d.services.banners.bridge.BannerBridge.BannerEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static BannerBridge.BannerEvent
+com.unity3d.services.banners.bridge.BannerBridge.BannerEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static BannerBridge.BannerEvent[]
+com.unity3d.services.banners.BannerErrorCode,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static BannerErrorCode
+com.unity3d.services.banners.BannerErrorCode,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static BannerErrorCode[]
+com.unity3d.services.banners.BannerErrorInfo,N/A,N/A,N/A,N/A
+com.unity3d.services.banners.api.BannerListener,N/A,"sendClickEvent(java.lang.String bannerAdId,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.banners.api.BannerListener,N/A,"sendErrorEvent(java.lang.String bannerAdId,
+              java.lang.Integer errorCode,
+              java.lang.String message,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.banners.api.BannerListener,N/A,"sendLeaveApplicationEvent(java.lang.String bannerAdId,
+                         WebViewCallback callback)",N/A,static void
+com.unity3d.services.banners.api.BannerListener,N/A,"sendLoadEvent(java.lang.String bannerAdId,
+             WebViewCallback callback)",N/A,static void
+com.unity3d.services.banners.view.BannerPosition,Returns the enum constant of this type with the specified name.,addLayoutRules(android.widget.RelativeLayout.LayoutParams params),N/A,android.view.ViewGroup.LayoutParams
+com.unity3d.services.banners.view.BannerPosition,Returns the enum constant of this type with the specified name.,fromString(java.lang.String in),N/A,static BannerPosition
+com.unity3d.services.banners.view.BannerPosition,Returns the enum constant of this type with the specified name.,getGravity(),N/A,int
+com.unity3d.services.banners.view.BannerPosition,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static BannerPosition
+com.unity3d.services.banners.view.BannerPosition,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static BannerPosition[]
+com.unity3d.services.banners.properties.BannerRefreshInfo,N/A,getInstance(),N/A,static BannerRefreshInfo
+com.unity3d.services.banners.properties.BannerRefreshInfo,N/A,getRefreshRate(java.lang.String placementId),N/A,java.lang.Integer
+com.unity3d.services.banners.properties.BannerRefreshInfo,N/A,"setRefreshRate(java.lang.String placementId,
+              java.lang.Integer rate)",N/A,void
+com.unity3d.services.banners.configuration.BannersModuleConfiguration,N/A,getWebAppApiClassList(),N/A,java.lang.Class[]
+com.unity3d.services.banners.configuration.BannersModuleConfiguration,N/A,initCompleteState(Configuration configuration),N/A,boolean
+com.unity3d.services.banners.configuration.BannersModuleConfiguration,N/A,"initErrorState(Configuration configuration,
+              java.lang.String state,
+              java.lang.String message)",N/A,boolean
+com.unity3d.services.banners.configuration.BannersModuleConfiguration,N/A,initModuleState(Configuration configuration),N/A,boolean
+com.unity3d.services.banners.configuration.BannersModuleConfiguration,N/A,resetState(Configuration configuration),N/A,boolean
+com.unity3d.services.banners.BannerView,N/A,destroy(),N/A,void
+com.unity3d.services.banners.BannerView,N/A,getListener(),N/A,BannerView.IListener
+com.unity3d.services.banners.BannerView,N/A,getPlacementId(),N/A,java.lang.String
+com.unity3d.services.banners.BannerView,N/A,getSize(),N/A,UnityBannerSize
+com.unity3d.services.banners.BannerView,N/A,load(),N/A,void
+com.unity3d.services.banners.BannerView,N/A,setListener(BannerView.IListener listener),N/A,void
+com.unity3d.services.banners.BannerView.IListener,N/A,onBannerClick(BannerView bannerAdView),N/A,void
+com.unity3d.services.banners.BannerView.IListener,N/A,"onBannerFailedToLoad(BannerView bannerAdView,
+                    BannerErrorInfo errorInfo)",N/A,void
+com.unity3d.services.banners.BannerView.IListener,N/A,onBannerLeftApplication(BannerView bannerView),N/A,void
+com.unity3d.services.banners.BannerView.IListener,N/A,onBannerLoaded(BannerView bannerAdView),N/A,void
+com.unity3d.services.banners.BannerView.Listener,N/A,onBannerClick(BannerView bannerAdView),N/A,void
+com.unity3d.services.banners.BannerView.Listener,N/A,"onBannerFailedToLoad(BannerView bannerAdView,
+                    BannerErrorInfo errorInfo)",N/A,void
+com.unity3d.services.banners.BannerView.Listener,N/A,onBannerLeftApplication(BannerView bannerAdView),N/A,void
+com.unity3d.services.banners.BannerView.Listener,N/A,onBannerLoaded(BannerView bannerAdView),N/A,void
+com.unity3d.services.banners.BannerViewCache,N/A,addBannerView(BannerView bannerAdView),N/A,java.lang.String
+com.unity3d.services.banners.BannerViewCache,N/A,getBannerView(java.lang.String bannerAdId),N/A,BannerView
+com.unity3d.services.banners.BannerViewCache,N/A,getInstance(),N/A,static BannerViewCache
+com.unity3d.services.banners.BannerViewCache,N/A,"loadWebPlayer(java.lang.String bannerAdId,
+             UnityBannerSize size)",N/A,boolean
+com.unity3d.services.banners.BannerViewCache,N/A,removeBannerView(java.lang.String bannerAdId),N/A,void
+com.unity3d.services.banners.BannerViewCache,N/A,triggerBannerClickEvent(java.lang.String bannerAdId),N/A,void
+com.unity3d.services.banners.BannerViewCache,N/A,"triggerBannerErrorEvent(java.lang.String bannerAdId,
+                       BannerErrorInfo bannerErrorInfo)",N/A,void
+com.unity3d.services.banners.BannerViewCache,N/A,triggerBannerLeftApplicationEvent(java.lang.String bannerAdId),N/A,void
+com.unity3d.services.banners.BannerViewCache,N/A,triggerBannerLoadEvent(java.lang.String bannerAdId),N/A,void
+com.unity3d.services.banners.view.BannerWebPlayerContainer,N/A,destroy(),N/A,void
+com.unity3d.services.banners.view.BannerWebPlayerContainer,N/A,getWebPlayer(),N/A,WebPlayerView
+com.unity3d.services.banners.view.BannerWebPlayerContainer,N/A,onAttachedToWindow(),N/A,protected void
+com.unity3d.services.banners.view.BannerWebPlayerContainer,N/A,onDetachedFromWindow(),N/A,protected void
+com.unity3d.services.banners.view.BannerWebPlayerContainer,N/A,"onLayoutChange(android.view.View v,
+              int left,
+              int top,
+              int right,
+              int bottom,
+              int oldLeft,
+              int oldTop,
+              int oldRight,
+              int oldBottom)",N/A,void
+com.unity3d.services.banners.view.BannerWebPlayerContainer,N/A,"onSizeChanged(int w,
+             int h,
+             int oldw,
+             int oldh)",N/A,protected void
+com.unity3d.services.banners.view.BannerWebPlayerContainer,N/A,"onVisibilityChanged(android.view.View changedView,
+                   int visibility)",N/A,protected void
+com.unity3d.services.banners.view.BannerWebPlayerContainer,N/A,setAlpha(float alpha),N/A,void
+com.unity3d.services.banners.view.BannerWebPlayerContainer,N/A,setWebPlayerEventSettings(org.json.JSONObject webPlayerEventSettings),N/A,void
+com.unity3d.services.banners.view.BannerWebPlayerContainer,N/A,"setWebPlayerSettings(org.json.JSONObject webSettings,
+                    org.json.JSONObject webPlayerSettings)",N/A,void
+com.unity3d.services.core.api.Broadcast,N/A,"addBroadcastListener(java.lang.String name,
+                    org.json.JSONArray actions,
+                    WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Broadcast,N/A,"addBroadcastListener(java.lang.String name,
+                    java.lang.String dataScheme,
+                    org.json.JSONArray actions,
+                    WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Broadcast,N/A,removeAllBroadcastListeners(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Broadcast,N/A,"removeBroadcastListener(java.lang.String name,
+                       WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.broadcast.BroadcastError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static BroadcastError
+com.unity3d.services.core.broadcast.BroadcastError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static BroadcastError[]
+com.unity3d.services.core.broadcast.BroadcastEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static BroadcastEvent
+com.unity3d.services.core.broadcast.BroadcastEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static BroadcastEvent[]
+com.unity3d.services.core.broadcast.BroadcastEventReceiver,N/A,"onReceive(android.content.Context context,
+         android.content.Intent intent)",N/A,void
+com.unity3d.services.core.broadcast.BroadcastMonitor,N/A,"addBroadcastListener(java.lang.String name,
+                    java.lang.String dataScheme,
+                    java.lang.String[] actions)",N/A,static void
+com.unity3d.services.core.broadcast.BroadcastMonitor,N/A,removeAllBroadcastListeners(),N/A,static void
+com.unity3d.services.core.broadcast.BroadcastMonitor,N/A,removeBroadcastListener(java.lang.String name),N/A,static void
+com.unity3d.services.core.api.Cache,N/A,"deleteFile(java.lang.String fileId,
+          WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Cache,N/A,"download(java.lang.String url,
+        java.lang.String fileId,
+        org.json.JSONArray headers,
+        java.lang.Boolean append,
+        WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Cache,N/A,getCacheDirectoryExists(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Cache,N/A,getCacheDirectoryType(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Cache,N/A,"getFileContent(java.lang.String fileId,
+              java.lang.String encoding,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Cache,N/A,"getFileInfo(java.lang.String fileId,
+           WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Cache,N/A,"getFilePath(java.lang.String fileId,
+           WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Cache,N/A,getFiles(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Cache,N/A,getFreeSpace(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Cache,N/A,"getHash(java.lang.String fileId,
+       WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Cache,N/A,"getMetaData(java.lang.String fileId,
+           org.json.JSONArray requestedMetaDatas,
+           WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Cache,N/A,getProgressInterval(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Cache,N/A,getTimeouts(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Cache,N/A,getTotalSpace(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Cache,N/A,isCaching(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Cache,N/A,recreateCacheDirectory(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Cache,N/A,"setFileContent(java.lang.String fileId,
+              java.lang.String encoding,
+              java.lang.String content,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Cache,N/A,"setProgressInterval(java.lang.Integer interval,
+                   WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Cache,N/A,"setTimeouts(java.lang.Integer connectTimeout,
+           java.lang.Integer readTimeout,
+           WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Cache,N/A,stop(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.cache.CacheDirectory,N/A,"createCacheDirectory(java.io.File baseDir,
+                    java.lang.String newDir)",N/A,java.io.File
+com.unity3d.services.core.cache.CacheDirectory,N/A,getCacheDirectory(android.content.Context context),N/A,java.io.File
+com.unity3d.services.core.cache.CacheDirectory,N/A,getType(),N/A,CacheDirectoryType
+com.unity3d.services.core.cache.CacheDirectory,N/A,testCacheDirectory(java.io.File directory),N/A,boolean
+com.unity3d.services.core.cache.CacheDirectoryType,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static CacheDirectoryType
+com.unity3d.services.core.cache.CacheDirectoryType,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static CacheDirectoryType[]
+com.unity3d.services.core.cache.CacheError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static CacheError
+com.unity3d.services.core.cache.CacheError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static CacheError[]
+com.unity3d.services.core.cache.CacheEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static CacheEvent
+com.unity3d.services.core.cache.CacheEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static CacheEvent[]
+com.unity3d.services.core.cache.CacheThread,N/A,cancel(),N/A,static void
+com.unity3d.services.core.cache.CacheThread,N/A,"download(java.lang.String source,
+        java.lang.String target,
+        java.util.HashMap<java.lang.String,java.util.List<java.lang.String>> headers,
+        boolean append)",N/A,static void
+com.unity3d.services.core.cache.CacheThread,N/A,getConnectTimeout(),N/A,static int
+com.unity3d.services.core.cache.CacheThread,N/A,getProgressInterval(),N/A,static int
+com.unity3d.services.core.cache.CacheThread,N/A,getReadTimeout(),N/A,static int
+com.unity3d.services.core.cache.CacheThread,N/A,isActive(),N/A,static boolean
+com.unity3d.services.core.cache.CacheThread,N/A,run(),N/A,void
+com.unity3d.services.core.cache.CacheThread,N/A,setConnectTimeout(int connectTimeout),N/A,static void
+com.unity3d.services.core.cache.CacheThread,N/A,setProgressInterval(int interval),N/A,static void
+com.unity3d.services.core.cache.CacheThread,N/A,setReadTimeout(int readTimeout),N/A,static void
+com.unity3d.services.core.webview.bridge.CallbackStatus,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static CallbackStatus
+com.unity3d.services.core.webview.bridge.CallbackStatus,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static CallbackStatus[]
+com.unity3d.services.core.request.CancelableThreadPoolExecutor,N/A,"afterExecute(java.lang.Runnable r,
+            java.lang.Throwable t)",N/A,protected void
+com.unity3d.services.core.request.CancelableThreadPoolExecutor,N/A,"beforeExecute(java.lang.Thread t,
+             java.lang.Runnable r)",N/A,protected void
+com.unity3d.services.core.request.CancelableThreadPoolExecutor,N/A,cancel(),N/A,void
+com.unity3d.services.core.api.ClassDetection,N/A,"areClassesPresent(org.json.JSONArray classNames,
+                 WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.properties.ClientProperties,N/A,areClassesPresent(org.json.JSONArray classNames),N/A,static org.json.JSONArray
+com.unity3d.services.core.properties.ClientProperties,N/A,getActivity(),N/A,static android.app.Activity
+com.unity3d.services.core.properties.ClientProperties,N/A,getApplication(),N/A,static android.app.Application
+com.unity3d.services.core.properties.ClientProperties,N/A,getApplicationContext(),N/A,static android.content.Context
+com.unity3d.services.core.properties.ClientProperties,N/A,getAppName(),N/A,static java.lang.String
+com.unity3d.services.core.properties.ClientProperties,N/A,getAppVersion(),N/A,static java.lang.String
+com.unity3d.services.core.properties.ClientProperties,N/A,getGameId(),N/A,static java.lang.String
+com.unity3d.services.core.properties.ClientProperties,N/A,isAppDebuggable(),N/A,static boolean
+com.unity3d.services.core.properties.ClientProperties,N/A,setActivity(android.app.Activity activity),N/A,static void
+com.unity3d.services.core.properties.ClientProperties,N/A,setApplication(android.app.Application application),N/A,static void
+com.unity3d.services.core.properties.ClientProperties,N/A,setApplicationContext(android.content.Context context),N/A,static void
+com.unity3d.services.core.properties.ClientProperties,N/A,setGameId(java.lang.String gameId),N/A,static void
+com.unity3d.services.monetization.core.properties.ClientProperties,N/A,getListener(),N/A,static IUnityMonetizationListener
+com.unity3d.services.monetization.core.properties.ClientProperties,N/A,isMonetizationEnabled(),N/A,static boolean
+com.unity3d.services.monetization.core.properties.ClientProperties,N/A,setListener(IUnityMonetizationListener listener),N/A,static void
+com.unity3d.services.monetization.core.properties.ClientProperties,N/A,setMonetizationEnabled(boolean monetizationEnabled),N/A,static void
+com.unity3d.services.purchasing.core.properties.ClientProperties,N/A,getAdapter(),N/A,static IPurchasingAdapter
+com.unity3d.services.purchasing.core.properties.ClientProperties,N/A,setAdapter(IPurchasingAdapter adapter),N/A,static void
+com.unity3d.services.core.configuration.Configuration,N/A,buildQueryString(),N/A,protected java.lang.String
+com.unity3d.services.core.configuration.Configuration,N/A,getConfigUrl(),N/A,java.lang.String
+com.unity3d.services.core.configuration.Configuration,N/A,getModuleConfiguration(java.lang.String moduleName),N/A,IModuleConfiguration
+com.unity3d.services.core.configuration.Configuration,N/A,getModuleConfigurationList(),N/A,java.lang.String[]
+com.unity3d.services.core.configuration.Configuration,N/A,getWebAppApiClassList(),N/A,java.lang.Class[]
+com.unity3d.services.core.configuration.Configuration,N/A,getWebViewData(),N/A,java.lang.String
+com.unity3d.services.core.configuration.Configuration,N/A,getWebViewHash(),N/A,java.lang.String
+com.unity3d.services.core.configuration.Configuration,N/A,getWebViewUrl(),N/A,java.lang.String
+com.unity3d.services.core.configuration.Configuration,N/A,getWebViewVersion(),N/A,java.lang.String
+com.unity3d.services.core.configuration.Configuration,N/A,makeRequest(),N/A,protected void
+com.unity3d.services.core.configuration.Configuration,N/A,setConfigUrl(java.lang.String url),N/A,void
+com.unity3d.services.core.configuration.Configuration,N/A,setWebViewData(java.lang.String data),N/A,void
+com.unity3d.services.core.configuration.Configuration,N/A,setWebViewHash(java.lang.String hash),N/A,void
+com.unity3d.services.core.configuration.Configuration,N/A,setWebViewUrl(java.lang.String url),N/A,void
+com.unity3d.services.core.configuration.ConfigurationFailure,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static ConfigurationFailure
+com.unity3d.services.core.configuration.ConfigurationFailure,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static ConfigurationFailure[]
+com.unity3d.services.core.api.Connectivity,N/A,"setConnectionMonitoring(java.lang.Boolean monitoring,
+                       WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.connectivity.ConnectivityChangeReceiver,N/A,"onReceive(android.content.Context context,
+         android.content.Intent intent)",N/A,void
+com.unity3d.services.core.connectivity.ConnectivityChangeReceiver,N/A,register(),N/A,static void
+com.unity3d.services.core.connectivity.ConnectivityChangeReceiver,N/A,unregister(),N/A,static void
+com.unity3d.services.core.connectivity.ConnectivityEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static ConnectivityEvent
+com.unity3d.services.core.connectivity.ConnectivityEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static ConnectivityEvent[]
+com.unity3d.services.core.connectivity.ConnectivityMonitor,N/A,addListener(IConnectivityListener listener),N/A,static void
+com.unity3d.services.core.connectivity.ConnectivityMonitor,N/A,connected(),N/A,static void
+com.unity3d.services.core.connectivity.ConnectivityMonitor,N/A,connectionStatusChanged(),N/A,static void
+com.unity3d.services.core.connectivity.ConnectivityMonitor,N/A,disconnected(),N/A,static void
+com.unity3d.services.core.connectivity.ConnectivityMonitor,N/A,removeListener(IConnectivityListener listener),N/A,static void
+com.unity3d.services.core.connectivity.ConnectivityMonitor,N/A,setConnectionMonitoring(boolean monitoring),N/A,static void
+com.unity3d.services.core.connectivity.ConnectivityMonitor,N/A,stopAll(),N/A,static void
+com.unity3d.services.core.connectivity.ConnectivityNetworkCallback,N/A,onAvailable(android.net.Network network),N/A,void
+com.unity3d.services.core.connectivity.ConnectivityNetworkCallback,N/A,"onCapabilitiesChanged(android.net.Network network,
+                     android.net.NetworkCapabilities capabilities)",N/A,void
+com.unity3d.services.core.connectivity.ConnectivityNetworkCallback,N/A,"onLinkPropertiesChanged(android.net.Network network,
+                       android.net.LinkProperties properties)",N/A,void
+com.unity3d.services.core.connectivity.ConnectivityNetworkCallback,N/A,onLost(android.net.Network network),N/A,void
+com.unity3d.services.core.connectivity.ConnectivityNetworkCallback,N/A,register(),N/A,static void
+com.unity3d.services.core.connectivity.ConnectivityNetworkCallback,N/A,unregister(),N/A,static void
+com.unity3d.services.core.configuration.CoreModuleConfiguration,N/A,getWebAppApiClassList(),N/A,java.lang.Class[]
+com.unity3d.services.core.configuration.CoreModuleConfiguration,N/A,initCompleteState(Configuration configuration),N/A,boolean
+com.unity3d.services.core.configuration.CoreModuleConfiguration,N/A,"initErrorState(Configuration configuration,
+              java.lang.String state,
+              java.lang.String errorMessage)",N/A,boolean
+com.unity3d.services.core.configuration.CoreModuleConfiguration,N/A,initModuleState(Configuration configuration),N/A,boolean
+com.unity3d.services.core.configuration.CoreModuleConfiguration,N/A,resetState(Configuration configuration),N/A,boolean
+com.unity3d.services.monetization.placementcontent.core.CustomEvent,N/A,getCategory(),N/A,java.lang.String
+com.unity3d.services.monetization.placementcontent.core.CustomEvent,N/A,getData(),N/A,"java.util.Map<java.lang.String,java.lang.Object>"
+com.unity3d.services.monetization.placementcontent.core.CustomEvent,N/A,getType(),N/A,java.lang.String
+com.unity3d.services.monetization.placementcontent.core.CustomEvent,N/A,newBuilder(),N/A,static CustomEvent.Builder
+com.unity3d.services.monetization.placementcontent.core.CustomEvent,N/A,setCategory(java.lang.String category),N/A,void
+com.unity3d.services.monetization.placementcontent.core.CustomEvent,N/A,"setData(java.util.Map<java.lang.String,java.lang.Object> data)",N/A,void
+com.unity3d.services.monetization.placementcontent.core.CustomEvent,N/A,setType(java.lang.String type),N/A,void
+com.unity3d.services.monetization.placementcontent.core.CustomEvent.Builder,N/A,build(),N/A,CustomEvent
+com.unity3d.services.monetization.placementcontent.core.CustomEvent.Builder,N/A,"putAllData(java.util.Map<java.lang.String,java.lang.Object> vals)",N/A,CustomEvent.Builder
+com.unity3d.services.monetization.placementcontent.core.CustomEvent.Builder,N/A,"putData(java.lang.String key,
+       java.lang.Object value)",N/A,CustomEvent.Builder
+com.unity3d.services.monetization.placementcontent.core.CustomEvent.Builder,N/A,withCategory(java.lang.String val),N/A,CustomEvent.Builder
+com.unity3d.services.monetization.placementcontent.core.CustomEvent.Builder,N/A,"withData(java.util.Map<java.lang.String,java.lang.Object> val)",N/A,CustomEvent.Builder
+com.unity3d.services.monetization.placementcontent.core.CustomEvent.Builder,N/A,withType(java.lang.String val),N/A,CustomEvent.Builder
+com.unity3d.services.purchasing.core.api.CustomPurchasing,N/A,available(WebViewCallback callback),N/A,static void
+com.unity3d.services.purchasing.core.api.CustomPurchasing,N/A,"purchaseItem(java.lang.String productID,
+            org.json.JSONObject extras,
+            WebViewCallback callback)",N/A,static void
+com.unity3d.services.purchasing.core.api.CustomPurchasing,N/A,refreshCatalog(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.device.Device,N/A,getAdvertisingTrackingId(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getAndroidId(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getApiLevel(),N/A,static int
+com.unity3d.services.core.device.Device,N/A,getApkDigest(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getBatteryLevel(),N/A,static float
+com.unity3d.services.core.device.Device,N/A,getBatteryStatus(),N/A,static int
+com.unity3d.services.core.device.Device,N/A,getBoard(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getBootloader(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getBrand(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getBuildId(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getBuildVersionIncremental(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getCertificateFingerprint(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getCPUCount(),N/A,static long
+com.unity3d.services.core.device.Device,N/A,getDevice(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getDisplayMetricDensity(),N/A,static float
+com.unity3d.services.core.device.Device,N/A,getElapsedRealtime(),N/A,static long
+com.unity3d.services.core.device.Device,N/A,getFingerprint(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getFreeMemory(),N/A,static long
+com.unity3d.services.core.device.Device,N/A,getFreeSpace(java.io.File file),N/A,static long
+com.unity3d.services.core.device.Device,N/A,getGLVersion(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getHardware(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getHost(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getInstalledPackages(boolean hash),N/A,"static java.util.List<java.util.Map<java.lang.String,java.lang.Object>>"
+com.unity3d.services.core.device.Device,N/A,getManufacturer(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getModel(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getNetworkCountryISO(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getNetworkMetered(),N/A,static boolean
+com.unity3d.services.core.device.Device,N/A,getNetworkOperator(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getNetworkOperatorName(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getNetworkType(),N/A,static int
+com.unity3d.services.core.device.Device,N/A,getOsVersion(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getProcessInfo(),N/A,"static java.util.Map<java.lang.String,java.lang.String>"
+com.unity3d.services.core.device.Device,N/A,getProduct(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getRingerMode(),N/A,static int
+com.unity3d.services.core.device.Device,N/A,getScreenBrightness(),N/A,static int
+com.unity3d.services.core.device.Device,N/A,getScreenDensity(),N/A,static int
+com.unity3d.services.core.device.Device,N/A,getScreenHeight(),N/A,static int
+com.unity3d.services.core.device.Device,N/A,getScreenLayout(),N/A,static int
+com.unity3d.services.core.device.Device,N/A,getScreenWidth(),N/A,static int
+com.unity3d.services.core.device.Device,N/A,getSensorList(),N/A,static java.util.List<android.hardware.Sensor>
+com.unity3d.services.core.device.Device,N/A,getStreamMaxVolume(int streamType),N/A,static int
+com.unity3d.services.core.device.Device,N/A,getStreamVolume(int streamType),N/A,static int
+com.unity3d.services.core.device.Device,N/A,getSupportedAbis(),N/A,static java.util.ArrayList<java.lang.String>
+com.unity3d.services.core.device.Device,N/A,"getSystemProperty(java.lang.String propertyName,
+                 java.lang.String defaultValue)",N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getTotalMemory(),N/A,static long
+com.unity3d.services.core.device.Device,N/A,getTotalSpace(java.io.File file),N/A,static long
+com.unity3d.services.core.device.Device,N/A,getUniqueEventId(),N/A,static java.lang.String
+com.unity3d.services.core.device.Device,N/A,getUptime(),N/A,static long
+com.unity3d.services.core.device.Device,N/A,isActiveNetworkConnected(),N/A,static boolean
+com.unity3d.services.core.device.Device,N/A,isAdbEnabled(),N/A,static java.lang.Boolean
+com.unity3d.services.core.device.Device,N/A,isAppInstalled(java.lang.String pkgname),N/A,static boolean
+com.unity3d.services.core.device.Device,N/A,isLimitAdTrackingEnabled(),N/A,static boolean
+com.unity3d.services.core.device.Device,N/A,isRooted(),N/A,static boolean
+com.unity3d.services.core.device.Device,N/A,isUSBConnected(),N/A,static boolean
+com.unity3d.services.core.device.Device,N/A,isUsingWifi(),N/A,static boolean
+com.unity3d.services.core.device.Device,N/A,isWiredHeadsetOn(),N/A,static boolean
+com.unity3d.services.core.device.Device.MemoryInfoType,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static Device.MemoryInfoType
+com.unity3d.services.core.device.Device.MemoryInfoType,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static Device.MemoryInfoType[]
+com.unity3d.services.core.device.DeviceError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static DeviceError
+com.unity3d.services.core.device.DeviceError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static DeviceError[]
+com.unity3d.services.core.api.DeviceInfo,N/A,getAdvertisingTrackingId(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getAndroidId(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getApiLevel(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getApkDigest(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getBatteryLevel(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getBatteryStatus(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getBoard(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getBootloader(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getBrand(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getBuildId(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getBuildVersionIncremental(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getCertificateFingerprint(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getConnectionType(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getCPUCount(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getDevice(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getDeviceId(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,"getDeviceIdWithSlot(java.lang.Integer slotIndex,
+                   WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,"getDeviceMaxVolume(java.lang.Integer streamType,
+                  WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,"getDeviceVolume(java.lang.Integer streamType,
+               WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getDisplayMetricDensity(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getElapsedRealtime(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getFingerprint(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getFreeMemory(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,"getFreeSpace(java.lang.String storageType,
+            WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getGLVersion(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getHardware(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getHeadset(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getHost(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,"getInstalledPackages(boolean md5,
+                    WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getLimitAdTrackingFlag(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getManufacturer(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getModel(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getNetworkCountryISO(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getNetworkMetered(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getNetworkOperator(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getNetworkOperatorName(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getNetworkType(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getOsVersion(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,"getPackageInfo(java.lang.String packageName,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getProcessInfo(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getProduct(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getRingerMode(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getScreenBrightness(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getScreenDensity(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getScreenHeight(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getScreenLayout(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getScreenWidth(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getSensorList(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getSupportedAbis(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getSystemLanguage(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,"getSystemProperty(java.lang.String propertyName,
+                 java.lang.String defaultValue,
+                 WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,"getTimeZone(java.lang.Boolean dst,
+           WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getTimeZoneOffset(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getTotalMemory(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,"getTotalSpace(java.lang.String storageType,
+             WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getUniqueEventId(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,getUptime(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,isAdbEnabled(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,"isAppInstalled(java.lang.String pkgname,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,isRooted(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,isUSBConnected(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,"registerVolumeChangeListener(java.lang.Integer streamType,
+                            WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.DeviceInfo,N/A,"unregisterVolumeChangeListener(java.lang.Integer streamType,
+                              WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.DeviceInfo.DeviceInfoEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static DeviceInfo.DeviceInfoEvent
+com.unity3d.services.core.api.DeviceInfo.DeviceInfoEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static DeviceInfo.DeviceInfoEvent[]
+com.unity3d.services.core.api.DeviceInfo.StorageType,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static DeviceInfo.StorageType
+com.unity3d.services.core.api.DeviceInfo.StorageType,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static DeviceInfo.StorageType[]
+com.unity3d.services.core.log.DeviceLog,N/A,debug(java.lang.String message),N/A,static void
+com.unity3d.services.core.log.DeviceLog,N/A,"debug(java.lang.String format,
+     java.lang.Object... args)",N/A,static void
+com.unity3d.services.core.log.DeviceLog,N/A,entered(),N/A,static void
+com.unity3d.services.core.log.DeviceLog,N/A,error(java.lang.String message),N/A,static void
+com.unity3d.services.core.log.DeviceLog,N/A,"error(java.lang.String format,
+     java.lang.Object... args)",N/A,static void
+com.unity3d.services.core.log.DeviceLog,N/A,"exception(java.lang.String message,
+         java.lang.Exception exception)",N/A,static void
+com.unity3d.services.core.log.DeviceLog,N/A,info(java.lang.String message),N/A,static void
+com.unity3d.services.core.log.DeviceLog,N/A,"info(java.lang.String format,
+    java.lang.Object... args)",N/A,static void
+com.unity3d.services.core.log.DeviceLog,N/A,setLogLevel(int newLevel),N/A,static void
+com.unity3d.services.core.log.DeviceLog,N/A,warning(java.lang.String message),N/A,static void
+com.unity3d.services.core.log.DeviceLog,N/A,"warning(java.lang.String format,
+       java.lang.Object... args)",N/A,static void
+com.unity3d.services.core.log.DeviceLog.UnityAdsLogLevel,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static DeviceLog.UnityAdsLogLevel
+com.unity3d.services.core.log.DeviceLog.UnityAdsLogLevel,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static DeviceLog.UnityAdsLogLevel[]
+com.unity3d.services.core.log.DeviceLogLevel,N/A,getLogTag(),N/A,java.lang.String
+com.unity3d.services.core.log.DeviceLogLevel,N/A,getReceivingMethodName(),N/A,java.lang.String
+com.unity3d.services.ar.view.DisplayRotationHelper,N/A,getRotation(),N/A,int
+com.unity3d.services.ar.view.DisplayRotationHelper,N/A,onDisplayAdded(int displayId),N/A,void
+com.unity3d.services.ar.view.DisplayRotationHelper,N/A,onDisplayChanged(int displayId),N/A,void
+com.unity3d.services.ar.view.DisplayRotationHelper,N/A,onDisplayRemoved(int displayId),N/A,void
+com.unity3d.services.core.configuration.EnvironmentCheck,N/A,isEnvironmentOk(),N/A,static boolean
+com.unity3d.services.core.configuration.EnvironmentCheck,N/A,testCacheDirectory(),N/A,static boolean
+com.unity3d.services.core.configuration.EnvironmentCheck,N/A,testProGuard(),N/A,static boolean
+com.unity3d.services.ads.configuration.IAdsModuleConfiguration,N/A,getAdUnitViewHandlers(),N/A,"java.util.Map<java.lang.String,java.lang.Class>"
+com.unity3d.services.ads.adunit.IAdUnitViewHandler,N/A,create(AdUnitActivity activity),N/A,boolean
+com.unity3d.services.ads.adunit.IAdUnitViewHandler,N/A,destroy(),N/A,boolean
+com.unity3d.services.ads.adunit.IAdUnitViewHandler,N/A,getView(),N/A,android.view.View
+com.unity3d.services.ads.adunit.IAdUnitViewHandler,N/A,"onCreate(AdUnitActivity activity,
+        android.os.Bundle savedInstanceState)",N/A,void
+com.unity3d.services.ads.adunit.IAdUnitViewHandler,N/A,onDestroy(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.IAdUnitViewHandler,N/A,onPause(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.IAdUnitViewHandler,N/A,onResume(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.IAdUnitViewHandler,N/A,onStart(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.IAdUnitViewHandler,N/A,onStop(AdUnitActivity activity),N/A,void
+com.unity3d.services.analytics.interfaces.IAnalytics,N/A,onAddExtras(java.lang.String extras),N/A,void
+com.unity3d.services.core.connectivity.IConnectivityListener,N/A,onConnected(),N/A,void
+com.unity3d.services.core.connectivity.IConnectivityListener,N/A,onDisconnected(),N/A,void
+com.unity3d.services.core.configuration.IInitializationListener,N/A,"onSdkInitializationFailed(java.lang.String message,
+                         int code)",N/A,void
+com.unity3d.services.core.configuration.IInitializationListener,N/A,onSdkInitialized(),N/A,void
+com.unity3d.services.core.configuration.IInitializationNotificationCenter,N/A,addListener(IInitializationListener listener),N/A,void
+com.unity3d.services.core.configuration.IInitializationNotificationCenter,N/A,removeListener(IInitializationListener listener),N/A,void
+com.unity3d.services.core.configuration.IInitializationNotificationCenter,N/A,"triggerOnSdkInitializationFailed(java.lang.String message,
+                                int code)",N/A,void
+com.unity3d.services.core.configuration.IInitializationNotificationCenter,N/A,triggerOnSdkInitialized(),N/A,void
+com.unity3d.services.ads.load.ILoadBridge,N/A,"loadPlacements(java.util.Map<java.lang.String,java.lang.Integer> placements)",N/A,void
+com.unity3d.services.core.configuration.IModuleConfiguration,N/A,getWebAppApiClassList(),N/A,java.lang.Class[]
+com.unity3d.services.core.configuration.IModuleConfiguration,N/A,initCompleteState(Configuration configuration),N/A,boolean
+com.unity3d.services.core.configuration.IModuleConfiguration,N/A,"initErrorState(Configuration configuration,
+              java.lang.String state,
+              java.lang.String message)",N/A,boolean
+com.unity3d.services.core.configuration.IModuleConfiguration,N/A,initModuleState(Configuration configuration),N/A,boolean
+com.unity3d.services.core.configuration.IModuleConfiguration,N/A,resetState(Configuration configuration),N/A,boolean
+com.unity3d.ads.metadata.InAppPurchaseMetaData,N/A,commit(),N/A,void
+com.unity3d.ads.metadata.InAppPurchaseMetaData,N/A,"set(java.lang.String key,
+   java.lang.Object value)",N/A,boolean
+com.unity3d.ads.metadata.InAppPurchaseMetaData,N/A,setCurrency(java.lang.String currency),N/A,void
+com.unity3d.ads.metadata.InAppPurchaseMetaData,N/A,setPrice(java.lang.Double price),N/A,void
+com.unity3d.ads.metadata.InAppPurchaseMetaData,N/A,setProductId(java.lang.String productId),N/A,void
+com.unity3d.ads.metadata.InAppPurchaseMetaData,N/A,setReceiptPurchaseData(java.lang.String receiptPurchaseData),N/A,void
+com.unity3d.ads.metadata.InAppPurchaseMetaData,N/A,setSignature(java.lang.String signature),N/A,void
+com.unity3d.services.core.configuration.InitializationNotificationCenter,N/A,addListener(IInitializationListener listener),N/A,void
+com.unity3d.services.core.configuration.InitializationNotificationCenter,N/A,getInstance(),N/A,static InitializationNotificationCenter
+com.unity3d.services.core.configuration.InitializationNotificationCenter,N/A,removeListener(IInitializationListener listener),N/A,void
+com.unity3d.services.core.configuration.InitializationNotificationCenter,N/A,"triggerOnSdkInitializationFailed(java.lang.String message,
+                                int code)",N/A,void
+com.unity3d.services.core.configuration.InitializationNotificationCenter,N/A,triggerOnSdkInitialized(),N/A,void
+com.unity3d.services.core.configuration.InitializeThread,N/A,initialize(Configuration configuration),N/A,static void
+com.unity3d.services.core.configuration.InitializeThread,N/A,quit(),N/A,void
+com.unity3d.services.core.configuration.InitializeThread,N/A,reset(),N/A,static void
+com.unity3d.services.core.configuration.InitializeThread,N/A,run(),N/A,void
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateComplete,N/A,execute(),N/A,com.unity3d.services.core.configuration.InitializeThread.InitializeState
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateConfig,N/A,execute(),N/A,com.unity3d.services.core.configuration.InitializeThread.InitializeState
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateCreate,N/A,execute(),N/A,com.unity3d.services.core.configuration.InitializeThread.InitializeState
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateCreate,N/A,getConfiguration(),N/A,Configuration
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateCreate,N/A,getWebData(),N/A,java.lang.String
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateError,N/A,execute(),N/A,com.unity3d.services.core.configuration.InitializeThread.InitializeState
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateForceReset,N/A,execute(),N/A,com.unity3d.services.core.configuration.InitializeThread.InitializeState
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateInitModules,N/A,execute(),N/A,com.unity3d.services.core.configuration.InitializeThread.InitializeState
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateInitModules,N/A,getConfiguration(),N/A,Configuration
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateLoadCache,N/A,execute(),N/A,com.unity3d.services.core.configuration.InitializeThread.InitializeState
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateLoadCache,N/A,getConfiguration(),N/A,Configuration
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateLoadWeb,N/A,execute(),N/A,com.unity3d.services.core.configuration.InitializeThread.InitializeState
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateLoadWeb,N/A,getConfiguration(),N/A,Configuration
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateNetworkError,N/A,execute(),N/A,com.unity3d.services.core.configuration.InitializeThread.InitializeState
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateNetworkError,N/A,onConnected(),N/A,void
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateNetworkError,N/A,onDisconnected(),N/A,void
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateReset,N/A,execute(),N/A,com.unity3d.services.core.configuration.InitializeThread.InitializeState
+com.unity3d.services.core.configuration.InitializeThread.InitializeStateRetry,N/A,execute(),N/A,com.unity3d.services.core.configuration.InitializeThread.InitializeState
+com.unity3d.services.core.api.Intent,N/A,"canOpenIntent(org.json.JSONObject intentData,
+             WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Intent,N/A,"canOpenIntents(org.json.JSONArray intents,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Intent,N/A,"launch(org.json.JSONObject intentData,
+      WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Intent,N/A,removeActiveActivity(android.app.Activity activity),N/A,static void
+com.unity3d.services.core.api.Intent,N/A,setActiveActivity(android.app.Activity activity),N/A,static void
+com.unity3d.services.core.api.Intent.IntentError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static Intent.IntentError
+com.unity3d.services.core.api.Intent.IntentError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static Intent.IntentError[]
+com.unity3d.services.core.webview.bridge.Invocation,N/A,"addInvocation(java.lang.String className,
+             java.lang.String methodName,
+             java.lang.Object[] parameters,
+             WebViewCallback callback)",N/A,void
+com.unity3d.services.core.webview.bridge.Invocation,N/A,getId(),N/A,int
+com.unity3d.services.core.webview.bridge.Invocation,N/A,getInvocationById(int id),N/A,static Invocation
+com.unity3d.services.core.webview.bridge.Invocation,N/A,getResponses(),N/A,java.util.ArrayList<java.util.ArrayList<java.lang.Object>>
+com.unity3d.services.core.webview.bridge.Invocation,N/A,nextInvocation(),N/A,boolean
+com.unity3d.services.core.webview.bridge.Invocation,N/A,sendInvocationCallback(),N/A,void
+com.unity3d.services.core.webview.bridge.Invocation,N/A,"setInvocationResponse(CallbackStatus status,
+                     java.lang.Enum error,
+                     java.lang.Object... params)",N/A,void
+com.unity3d.ads.purchasing.IPurchasing,Called whenever the IAP catalog refreshes in the Promo Parser,onGetProductCatalog(),Called whenever the IAP catalog refreshes in the Promo Parser,void
+com.unity3d.ads.purchasing.IPurchasing,Called whenever the IAP catalog refreshes in the Promo Parser,onGetPurchasingVersion(),Called when we initialize the PurchasingAPI in the webview,void
+com.unity3d.ads.purchasing.IPurchasing,Called whenever the IAP catalog refreshes in the Promo Parser,onInitializePurchasing(),Called to trigger intialization of purchasing APIs,void
+com.unity3d.ads.purchasing.IPurchasing,Called whenever the IAP catalog refreshes in the Promo Parser,onPurchasingCommand(java.lang.String eventString),Called when an in-app purchase is initiated from an ad.,void
+com.unity3d.services.purchasing.core.IPurchasingAdapter,N/A,"onPurchase(java.lang.String productID,
+          ITransactionListener listener,
+          java.util.Map<java.lang.String,java.lang.Object> extras)",N/A,void
+com.unity3d.services.purchasing.core.IPurchasingAdapter,N/A,retrieveProducts(IRetrieveProductsListener listener),N/A,void
+com.unity3d.services.core.request.IResolveHostListener,N/A,"onFailed(java.lang.String host,
+        ResolveHostError error,
+        java.lang.String errorMessage)",N/A,void
+com.unity3d.services.core.request.IResolveHostListener,N/A,"onResolve(java.lang.String host,
+         java.lang.String address)",N/A,void
+com.unity3d.services.purchasing.core.IRetrieveProductsListener,N/A,onProductsRetrieved(java.util.List<Product> availableProducts),N/A,void
+com.unity3d.services.monetization.placementcontent.ads.IShowAdListener,"Listener class for the ShowAdPlacementContent.show(Activity, IShowAdListener) method.
+ Can be used to know when an ad has started or finished.
+ A convenience class of ShowAdListenerAdapter can be used when only one method needs overriding.","onAdFinished(java.lang.String placementId,
+            UnityAds.FinishState withState)",Called when the ad has finished.,void
+com.unity3d.services.monetization.placementcontent.ads.IShowAdListener,"Listener class for the ShowAdPlacementContent.show(Activity, IShowAdListener) method.
+ Can be used to know when an ad has started or finished.
+ A convenience class of ShowAdListenerAdapter can be used when only one method needs overriding.",onAdStarted(java.lang.String placementId),Notifies that the ad for the given placement has started.,void
+com.unity3d.services.monetization.placementcontent.purchasing.Item,N/A,getItemId(),N/A,java.lang.String
+com.unity3d.services.monetization.placementcontent.purchasing.Item,N/A,getQuantity(),N/A,long
+com.unity3d.services.monetization.placementcontent.purchasing.Item,N/A,getType(),N/A,java.lang.String
+com.unity3d.services.monetization.placementcontent.purchasing.Item,N/A,newBuilder(),N/A,static Item.Builder
+com.unity3d.services.monetization.placementcontent.purchasing.Item.Builder,N/A,build(),N/A,Item
+com.unity3d.services.monetization.placementcontent.purchasing.Item.Builder,N/A,withItemId(java.lang.String val),N/A,Item.Builder
+com.unity3d.services.monetization.placementcontent.purchasing.Item.Builder,N/A,withQuantity(long val),N/A,Item.Builder
+com.unity3d.services.monetization.placementcontent.purchasing.Item.Builder,N/A,withType(java.lang.String val),N/A,Item.Builder
+com.unity3d.services.purchasing.core.ITransactionListener,N/A,onTransactionComplete(TransactionDetails details),N/A,void
+com.unity3d.services.purchasing.core.ITransactionListener,N/A,onTransactionError(TransactionErrorDetails details),N/A,void
+com.unity3d.ads.mediation.IUnityAdsExtendedListener,Callback for a click event.,onUnityAdsClick(java.lang.String placementId),Callback for a click event.,void
+com.unity3d.ads.mediation.IUnityAdsExtendedListener,Callback for a click event.,"onUnityAdsPlacementStateChanged(java.lang.String placementId,
+                               UnityAds.PlacementState oldState,
+                               UnityAds.PlacementState newState)",Callback for a placement state change event.,void
+com.unity3d.ads.IUnityAdsListener,Callback for different errors in Unity Ads.,"onUnityAdsError(UnityAds.UnityAdsError error,
+               java.lang.String message)",Callback for different errors in Unity Ads.,void
+com.unity3d.ads.IUnityAdsListener,Callback for different errors in Unity Ads.,"onUnityAdsFinish(java.lang.String placementId,
+                UnityAds.FinishState result)",Callback after advertisement has closed.,void
+com.unity3d.ads.IUnityAdsListener,Callback for different errors in Unity Ads.,onUnityAdsReady(java.lang.String placementId),Callback that tells placement is ready to show ads.,void
+com.unity3d.ads.IUnityAdsListener,Callback for different errors in Unity Ads.,onUnityAdsStart(java.lang.String placementId),Callback for a successful start of advertisement after UnityAds.show.,void
+com.unity3d.services.banners.IUnityBannerListener,Called when the banner is clicked.,onUnityBannerClick(java.lang.String placementId),Called when the banner is clicked.,void
+com.unity3d.services.banners.IUnityBannerListener,Called when the banner is clicked.,onUnityBannerError(java.lang.String message),Called when an error is shown showing the banner.,void
+com.unity3d.services.banners.IUnityBannerListener,Called when the banner is clicked.,onUnityBannerHide(java.lang.String placementId),Called when the banner is hidden.,void
+com.unity3d.services.banners.IUnityBannerListener,Called when the banner is clicked.,"onUnityBannerLoaded(java.lang.String placementId,
+                   android.view.View view)",Called when the unity banner is finished loading an ad.,void
+com.unity3d.services.banners.IUnityBannerListener,Called when the banner is clicked.,onUnityBannerShow(java.lang.String placementId),Called when the banner is shown the first time and visible to the user.,void
+com.unity3d.services.banners.IUnityBannerListener,Called when the banner is clicked.,onUnityBannerUnloaded(java.lang.String placementId),Called when the unity banner is unloaded and references to its view should be removed.,void
+com.unity3d.services.monetization.IUnityMonetizationListener,"Listener for events within the Monetization service. Used in UnityMonetization.setListener(IUnityMonetizationListener),
+ UnityMonetization.initialize(Activity, String, IUnityMonetizationListener), or UnityMonetization.initialize(Activity, String, IUnityMonetizationListener, boolean)","onPlacementContentReady(java.lang.String placementId,
+                       PlacementContent placementcontent)",N/A,void
+com.unity3d.services.monetization.IUnityMonetizationListener,"Listener for events within the Monetization service. Used in UnityMonetization.setListener(IUnityMonetizationListener),
+ UnityMonetization.initialize(Activity, String, IUnityMonetizationListener), or UnityMonetization.initialize(Activity, String, IUnityMonetizationListener, boolean)","onPlacementContentStateChange(java.lang.String placementId,
+                             PlacementContent placementcontent,
+                             UnityMonetization.PlacementContentState previousState,
+                             UnityMonetization.PlacementContentState newState)",N/A,void
+com.unity3d.services.IUnityServicesListener,N/A,"onUnityServicesError(UnityServices.UnityServicesError error,
+                    java.lang.String message)",N/A,void
+com.unity3d.services.core.device.IVolumeChangeListener,N/A,getStreamType(),N/A,int
+com.unity3d.services.core.device.IVolumeChangeListener,N/A,onVolumeChanged(int volume),N/A,void
+com.unity3d.services.core.request.IWebRequestListener,N/A,"onComplete(java.lang.String url,
+          java.lang.String response,
+          int responseCode,
+          java.util.Map<java.lang.String,java.util.List<java.lang.String>> headers)",N/A,void
+com.unity3d.services.core.request.IWebRequestListener,N/A,"onFailed(java.lang.String url,
+        java.lang.String error)",N/A,void
+com.unity3d.services.core.request.IWebRequestProgressListener,N/A,"onRequestProgress(java.lang.String url,
+                 long bytes,
+                 long total)",N/A,void
+com.unity3d.services.core.request.IWebRequestProgressListener,N/A,"onRequestStart(java.lang.String url,
+              long total,
+              int responseCode,
+              java.util.Map<java.lang.String,java.util.List<java.lang.String>> headers)",N/A,void
+com.unity3d.services.core.misc.JsonStorage,N/A,clearData(),N/A,void
+com.unity3d.services.core.misc.JsonStorage,N/A,delete(java.lang.String key),N/A,boolean
+com.unity3d.services.core.misc.JsonStorage,N/A,get(java.lang.String key),N/A,java.lang.Object
+com.unity3d.services.core.misc.JsonStorage,N/A,getData(),N/A,org.json.JSONObject
+com.unity3d.services.core.misc.JsonStorage,N/A,"getKeys(java.lang.String key,
+       boolean recursive)",N/A,java.util.List<java.lang.String>
+com.unity3d.services.core.misc.JsonStorage,N/A,hasData(),N/A,boolean
+com.unity3d.services.core.misc.JsonStorage,N/A,initData(),N/A,boolean
+com.unity3d.services.core.misc.JsonStorage,N/A,"set(java.lang.String key,
+   java.lang.Object value)",N/A,boolean
+com.unity3d.services.core.misc.JsonStorage,N/A,setData(org.json.JSONObject data),N/A,void
+com.unity3d.services.monetization.core.utilities.JSONUtilities,N/A,jsonArrayToList(org.json.JSONArray array),N/A,static java.util.List<java.lang.Object>
+com.unity3d.services.monetization.core.utilities.JSONUtilities,N/A,jsonObjectToMap(org.json.JSONObject object),N/A,"static java.util.Map<java.lang.String,java.lang.Object>"
+com.unity3d.services.monetization.core.utilities.JSONUtilities,N/A,"mapToJsonObject(java.util.Map<java.lang.String,java.lang.Object> extras)",N/A,static org.json.JSONObject
+com.unity3d.services.monetization.core.utilities.JSONUtilities,N/A,wrap(java.lang.Object o),N/A,static java.lang.Object
+com.unity3d.services.core.api.Lifecycle,N/A,getLifecycleListener(),N/A,static LifecycleListener
+com.unity3d.services.core.api.Lifecycle,N/A,"register(org.json.JSONArray events,
+        WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Lifecycle,N/A,setLifecycleListener(LifecycleListener listener),N/A,static void
+com.unity3d.services.core.api.Lifecycle,N/A,unregister(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.lifecycle.LifecycleError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static LifecycleError
+com.unity3d.services.core.lifecycle.LifecycleError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static LifecycleError[]
+com.unity3d.services.core.lifecycle.LifecycleEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static LifecycleEvent
+com.unity3d.services.core.lifecycle.LifecycleEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static LifecycleEvent[]
+com.unity3d.services.core.lifecycle.LifecycleListener,N/A,"onActivityCreated(android.app.Activity activity,
+                 android.os.Bundle bundle)",N/A,void
+com.unity3d.services.core.lifecycle.LifecycleListener,N/A,onActivityDestroyed(android.app.Activity activity),N/A,void
+com.unity3d.services.core.lifecycle.LifecycleListener,N/A,onActivityPaused(android.app.Activity activity),N/A,void
+com.unity3d.services.core.lifecycle.LifecycleListener,N/A,onActivityResumed(android.app.Activity activity),N/A,void
+com.unity3d.services.core.lifecycle.LifecycleListener,N/A,"onActivitySaveInstanceState(android.app.Activity activity,
+                           android.os.Bundle bundle)",N/A,void
+com.unity3d.services.core.lifecycle.LifecycleListener,N/A,onActivityStarted(android.app.Activity activity),N/A,void
+com.unity3d.services.core.lifecycle.LifecycleListener,N/A,onActivityStopped(android.app.Activity activity),N/A,void
+com.unity3d.services.ads.api.Listener,N/A,"sendClickEvent(java.lang.String placementId,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.Listener,N/A,"sendErrorEvent(java.lang.String error,
+              java.lang.String message,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.Listener,N/A,"sendFinishEvent(java.lang.String placementId,
+               java.lang.String result,
+               WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.Listener,N/A,"sendPlacementStateChangedEvent(java.lang.String placementId,
+                              java.lang.String oldState,
+                              java.lang.String newState,
+                              WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.Listener,N/A,"sendReadyEvent(java.lang.String placementId,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.Listener,N/A,"sendStartEvent(java.lang.String placementId,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.load.LoadBridge,N/A,"loadPlacements(java.util.Map<java.lang.String,java.lang.Integer> placements)",N/A,void
+com.unity3d.services.ads.load.LoadBridge.LoadEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static LoadBridge.LoadEvent
+com.unity3d.services.ads.load.LoadBridge.LoadEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static LoadBridge.LoadEvent[]
+com.unity3d.services.ads.load.LoadModule,N/A,getInstance(),N/A,static LoadModule
+com.unity3d.services.ads.load.LoadModule,N/A,load(java.lang.String placementId),N/A,void
+com.unity3d.services.ads.load.LoadModule,N/A,"onSdkInitializationFailed(java.lang.String message,
+                         int code)",N/A,void
+com.unity3d.services.ads.load.LoadModule,N/A,onSdkInitialized(),N/A,void
+com.unity3d.ads.metadata.MediationMetaData,N/A,setMissedImpressionOrdinal(int ordinal),N/A,void
+com.unity3d.ads.metadata.MediationMetaData,N/A,setName(java.lang.String mediationNetworkName),N/A,void
+com.unity3d.ads.metadata.MediationMetaData,N/A,setOrdinal(int ordinal),N/A,void
+com.unity3d.ads.metadata.MediationMetaData,N/A,setVersion(java.lang.String mediationSdkVersion),N/A,void
+com.unity3d.ads.metadata.MetaData,N/A,commit(),N/A,void
+com.unity3d.ads.metadata.MetaData,N/A,getCategory(),N/A,java.lang.String
+com.unity3d.ads.metadata.MetaData,N/A,"set(java.lang.String key,
+   java.lang.Object value)",N/A,boolean
+com.unity3d.ads.metadata.MetaData,N/A,setCategory(java.lang.String category),N/A,void
+com.unity3d.ads.metadata.MetaData,N/A,"setRaw(java.lang.String key,
+      java.lang.Object value)",N/A,protected boolean
+com.unity3d.services.monetization.core.api.MonetizationListener,N/A,isMonetizationEnabled(WebViewCallback callback),N/A,static void
+com.unity3d.services.monetization.core.api.MonetizationListener,N/A,"sendPlacementContentReady(java.lang.String placementId,
+                         WebViewCallback callback)",N/A,static void
+com.unity3d.services.monetization.core.api.MonetizationListener,N/A,"sendPlacementContentStateChanged(java.lang.String placementId,
+                                java.lang.String previousState,
+                                java.lang.String newState,
+                                WebViewCallback callback)",N/A,static void
+com.unity3d.services.monetization.core.configuration.MonetizationModuleConfiguration,N/A,getWebAppApiClassList(),N/A,java.lang.Class[]
+com.unity3d.services.monetization.core.configuration.MonetizationModuleConfiguration,N/A,initCompleteState(Configuration configuration),N/A,boolean
+com.unity3d.services.monetization.core.configuration.MonetizationModuleConfiguration,N/A,"initErrorState(Configuration configuration,
+              java.lang.String state,
+              java.lang.String message)",N/A,boolean
+com.unity3d.services.monetization.core.configuration.MonetizationModuleConfiguration,N/A,initModuleState(Configuration configuration),N/A,boolean
+com.unity3d.services.monetization.core.configuration.MonetizationModuleConfiguration,N/A,resetState(Configuration configuration),N/A,boolean
+com.unity3d.services.core.webview.bridge.NativeCallback,N/A,getId(),N/A,java.lang.String
+com.unity3d.services.core.webview.bridge.NativeCallback,N/A,"invoke(java.lang.String status,
+      java.lang.Object... values)",N/A,void
+com.unity3d.services.monetization.placementcontent.purchasing.NativePromoAdapter,N/A,getPromoMetadata(),N/A,PromoMetadata
+com.unity3d.services.monetization.placementcontent.purchasing.NativePromoAdapter,N/A,onClicked(),N/A,void
+com.unity3d.services.monetization.placementcontent.purchasing.NativePromoAdapter,N/A,onClosed(),N/A,void
+com.unity3d.services.monetization.placementcontent.purchasing.NativePromoAdapter,N/A,onShown(),N/A,void
+com.unity3d.services.monetization.placementcontent.purchasing.NativePromoAdapter,N/A,onShown(NativePromoShowType type),N/A,void
+com.unity3d.services.monetization.placementcontent.purchasing.NativePromoShowType,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static NativePromoShowType
+com.unity3d.services.monetization.placementcontent.purchasing.NativePromoShowType,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static NativePromoShowType[]
+com.unity3d.services.core.request.NetworkIOException,N/A,N/A,N/A,N/A
+com.unity3d.services.monetization.placementcontent.core.NoFillPlacementContent,N/A,getDefaultEventCategory(),N/A,protected java.lang.String
+com.unity3d.services.monetization.placementcontent.core.NoFillPlacementContent,N/A,getState(),N/A,UnityMonetization.PlacementContentState
+com.unity3d.services.monetization.placementcontent.core.NoFillPlacementContent,N/A,isReady(),N/A,boolean
+com.unity3d.services.monetization.placementcontent.core.NoFillPlacementContent,N/A,sendCustomEvent(CustomEvent customEvent),N/A,void
+com.unity3d.services.core.api.Permissions,N/A,"checkPermission(java.lang.String permission,
+               WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Permissions,N/A,getPermissions(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Permissions,N/A,"requestPermissions(org.json.JSONArray permissions,
+                  java.lang.Integer requestCode,
+                  WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.adunit.PermissionsEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static PermissionsEvent
+com.unity3d.services.ads.adunit.PermissionsEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static PermissionsEvent[]
+com.unity3d.services.ads.api.Placement,N/A,"setDefaultBannerPlacement(java.lang.String placement,
+                         WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.Placement,N/A,"setDefaultPlacement(java.lang.String placement,
+                   WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.Placement,N/A,"setPlacementState(java.lang.String placement,
+                 java.lang.String placementState,
+                 WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.placement.Placement,N/A,getDefaultBannerPlacement(),N/A,static java.lang.String
+com.unity3d.services.ads.placement.Placement,N/A,getDefaultPlacement(),N/A,static java.lang.String
+com.unity3d.services.ads.placement.Placement,N/A,getPlacementState(),N/A,static UnityAds.PlacementState
+com.unity3d.services.ads.placement.Placement,N/A,getPlacementState(java.lang.String placement),N/A,static UnityAds.PlacementState
+com.unity3d.services.ads.placement.Placement,N/A,isReady(),N/A,static boolean
+com.unity3d.services.ads.placement.Placement,N/A,isReady(java.lang.String placement),N/A,static boolean
+com.unity3d.services.ads.placement.Placement,N/A,reset(),N/A,static void
+com.unity3d.services.ads.placement.Placement,N/A,setDefaultBannerPlacement(java.lang.String placement),N/A,static void
+com.unity3d.services.ads.placement.Placement,N/A,setDefaultPlacement(java.lang.String placement),N/A,static void
+com.unity3d.services.ads.placement.Placement,N/A,"setPlacementState(java.lang.String placement,
+                 java.lang.String placementState)",N/A,static void
+com.unity3d.services.monetization.placementcontent.core.PlacementContent,N/A,getDefaultEventCategory(),N/A,protected java.lang.String
+com.unity3d.services.monetization.placementcontent.core.PlacementContent,N/A,getExtra(java.lang.String key),N/A,java.lang.Object
+com.unity3d.services.monetization.placementcontent.core.PlacementContent,N/A,getExtras(),N/A,"java.util.Map<java.lang.String,java.lang.Object>"
+com.unity3d.services.monetization.placementcontent.core.PlacementContent,N/A,getState(),N/A,UnityMonetization.PlacementContentState
+com.unity3d.services.monetization.placementcontent.core.PlacementContent,N/A,getType(),N/A,java.lang.String
+com.unity3d.services.monetization.placementcontent.core.PlacementContent,N/A,isReady(),N/A,boolean
+com.unity3d.services.monetization.placementcontent.core.PlacementContent,N/A,sendCustomEvent(CustomEvent customEvent),N/A,void
+com.unity3d.services.monetization.placementcontent.core.PlacementContent,N/A,"sendCustomEvent(java.lang.String type,
+               java.util.Map<java.lang.String,java.lang.Object> eventData)",N/A,void
+com.unity3d.services.monetization.placementcontent.core.PlacementContent,N/A,"sendCustomEvent(java.lang.String category,
+               java.lang.String type,
+               java.util.Map<java.lang.String,java.lang.Object> eventData)",N/A,void
+com.unity3d.services.monetization.placementcontent.core.PlacementContent,N/A,setState(UnityMonetization.PlacementContentState state),N/A,void
+com.unity3d.services.monetization.core.placementcontent.PlacementContentEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static PlacementContentEvent
+com.unity3d.services.monetization.core.placementcontent.PlacementContentEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static PlacementContentEvent[]
+com.unity3d.services.monetization.core.placementcontent.PlacementContentListenerError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static PlacementContentListenerError
+com.unity3d.services.monetization.core.placementcontent.PlacementContentListenerError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static PlacementContentListenerError[]
+com.unity3d.services.monetization.core.placementcontent.PlacementContentResultFactory,N/A,"create(java.lang.String placementId,
+      java.util.Map<java.lang.String,java.lang.Object> params)",N/A,static PlacementContent
+com.unity3d.services.monetization.core.placementcontent.PlacementContentResultFactory.PlacementContentResultType,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static PlacementContentResultFactory.PlacementContentResultType
+com.unity3d.services.monetization.core.placementcontent.PlacementContentResultFactory.PlacementContentResultType,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static PlacementContentResultFactory.PlacementContentResultType[]
+com.unity3d.services.monetization.core.api.PlacementContents,N/A,"createPlacementContent(java.lang.String placementId,
+                      org.json.JSONObject params,
+                      WebViewCallback callback)",N/A,static void
+com.unity3d.services.monetization.core.api.PlacementContents,N/A,"sendAdFinished(java.lang.String placementId,
+              java.lang.String finishState,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.monetization.core.api.PlacementContents,N/A,"sendAdStarted(java.lang.String placementId,
+             WebViewCallback callback)",N/A,static void
+com.unity3d.services.monetization.core.api.PlacementContents,N/A,"setPlacementContentState(java.lang.String placementId,
+                        java.lang.String state,
+                        WebViewCallback callback)",N/A,static void
+com.unity3d.services.monetization.core.placementcontent.PlacementContents,N/A,getPlacementContent(java.lang.String placementId),N/A,static PlacementContent
+com.unity3d.services.monetization.core.placementcontent.PlacementContents,N/A,"getPlacementContent(java.lang.String placementId,
+                   java.lang.Class<T> asClass)",N/A,static <T extends PlacementContent>T
+com.unity3d.services.monetization.core.placementcontent.PlacementContents,N/A,isReady(java.lang.String placementId),N/A,static boolean
+com.unity3d.services.monetization.core.placementcontent.PlacementContents,N/A,"putPlacementContent(java.lang.String placementId,
+                   PlacementContent placementcontent)",N/A,static PlacementContent
+com.unity3d.services.monetization.core.placementcontent.PlacementContents,N/A,removePlacementContent(java.lang.String placementId),N/A,static void
+com.unity3d.services.monetization.core.placementcontent.PlacementContents,N/A,"setPlacementContentState(java.lang.String placementId,
+                        UnityMonetization.PlacementContentState state)",N/A,static void
+com.unity3d.ads.metadata.PlayerMetaData,N/A,setServerId(java.lang.String serverId),N/A,void
+com.unity3d.services.core.api.Preferences,N/A,"getBoolean(java.lang.String name,
+          java.lang.String key,
+          WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Preferences,N/A,"getFloat(java.lang.String name,
+        java.lang.String key,
+        WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Preferences,N/A,"getInt(java.lang.String name,
+      java.lang.String key,
+      WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Preferences,N/A,"getLong(java.lang.String name,
+       java.lang.String key,
+       WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Preferences,N/A,"getString(java.lang.String name,
+         java.lang.String key,
+         WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Preferences,N/A,"hasKey(java.lang.String name,
+      java.lang.String key,
+      WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Preferences,N/A,"removeKey(java.lang.String name,
+         java.lang.String key,
+         WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Preferences,N/A,"setBoolean(java.lang.String name,
+          java.lang.String key,
+          java.lang.Boolean value,
+          WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Preferences,N/A,"setFloat(java.lang.String name,
+        java.lang.String key,
+        java.lang.Double value,
+        WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Preferences,N/A,"setInt(java.lang.String name,
+      java.lang.String key,
+      java.lang.Integer value,
+      WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Preferences,N/A,"setLong(java.lang.String name,
+       java.lang.String key,
+       java.lang.Long value,
+       WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Preferences,N/A,"setString(java.lang.String name,
+         java.lang.String key,
+         java.lang.String value,
+         WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.preferences.PreferencesError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static PreferencesError
+com.unity3d.services.core.preferences.PreferencesError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static PreferencesError[]
+com.unity3d.services.purchasing.core.Product,N/A,getIsoCurrencyCode(),N/A,java.lang.String
+com.unity3d.services.purchasing.core.Product,N/A,getLocalizedDescription(),N/A,java.lang.String
+com.unity3d.services.purchasing.core.Product,N/A,getLocalizedPrice(),N/A,double
+com.unity3d.services.purchasing.core.Product,N/A,getLocalizedPriceString(),N/A,java.lang.String
+com.unity3d.services.purchasing.core.Product,N/A,getLocalizedTitle(),N/A,java.lang.String
+com.unity3d.services.purchasing.core.Product,N/A,getProductId(),N/A,java.lang.String
+com.unity3d.services.purchasing.core.Product,N/A,getProductType(),N/A,java.lang.String
+com.unity3d.services.purchasing.core.Product,N/A,newBuilder(),N/A,static Product.Builder
+com.unity3d.services.purchasing.core.Product.Builder,N/A,build(),N/A,Product
+com.unity3d.services.purchasing.core.Product.Builder,N/A,withIsoCurrencyCode(java.lang.String val),N/A,Product.Builder
+com.unity3d.services.purchasing.core.Product.Builder,N/A,withLocalizedDescription(java.lang.String val),N/A,Product.Builder
+com.unity3d.services.purchasing.core.Product.Builder,N/A,withLocalizedPrice(double val),N/A,Product.Builder
+com.unity3d.services.purchasing.core.Product.Builder,N/A,withLocalizedPriceString(java.lang.String val),N/A,Product.Builder
+com.unity3d.services.purchasing.core.Product.Builder,N/A,withLocalizedTitle(java.lang.String val),N/A,Product.Builder
+com.unity3d.services.purchasing.core.Product.Builder,N/A,withProductId(java.lang.String val),N/A,Product.Builder
+com.unity3d.services.purchasing.core.Product.Builder,N/A,withProductType(java.lang.String val),N/A,Product.Builder
+com.unity3d.services.monetization.placementcontent.purchasing.PromoAdPlacementContent,N/A,getDefaultEventCategory(),N/A,protected java.lang.String
+com.unity3d.services.monetization.placementcontent.purchasing.PromoAdPlacementContent,N/A,getMetadata(),N/A,PromoMetadata
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata,Metadata about a promotion.,getCost(),N/A,Item
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata,Metadata about a promotion.,getCosts(),N/A,java.util.List<Item>
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata,Metadata about a promotion.,getCustomInfo(),N/A,"java.util.Map<java.lang.String,java.lang.Object>"
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata,Metadata about a promotion.,getImpressionDate(),N/A,java.util.Date
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata,Metadata about a promotion.,getOfferDuration(),N/A,long
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata,Metadata about a promotion.,getPayout(),N/A,Item
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata,Metadata about a promotion.,getPayouts(),N/A,java.util.List<Item>
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata,Metadata about a promotion.,getPremiumProduct(),N/A,Product
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata,Metadata about a promotion.,newBuilder(),N/A,static PromoMetadata.Builder
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata.Builder,N/A,build(),N/A,PromoMetadata
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata.Builder,N/A,withCosts(java.util.List<Item> costs),N/A,PromoMetadata.Builder
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata.Builder,N/A,"withCustomInfo(java.util.Map<java.lang.String,java.lang.Object> info)",N/A,PromoMetadata.Builder
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata.Builder,N/A,withImpressionDate(java.util.Date impressionDate),N/A,PromoMetadata.Builder
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata.Builder,N/A,withOfferDuration(long val),N/A,PromoMetadata.Builder
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata.Builder,N/A,withPayouts(java.util.List<Item> payouts),N/A,PromoMetadata.Builder
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadata.Builder,N/A,withPremiumProduct(Product product),N/A,PromoMetadata.Builder
+com.unity3d.services.monetization.placementcontent.purchasing.PromoMetadataUtilities,N/A,"createPromoMetadataFromParamsMap(java.util.Map<java.lang.String,java.lang.Object> params)",N/A,static PromoMetadata
+com.unity3d.ads.purchasing.Purchasing,N/A,"dispatchReturnEvent(int event,
+                   java.lang.String payload)",N/A,static void
+com.unity3d.ads.purchasing.Purchasing,N/A,initialize(IPurchasing purchasingInterface),N/A,static void
+com.unity3d.services.ads.api.Purchasing,N/A,getPromoCatalog(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.Purchasing,N/A,getPromoVersion(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.Purchasing,N/A,initializePurchasing(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.Purchasing,N/A,"initiatePurchasingCommand(java.lang.String eventString,
+                         WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.Purchasing,N/A,setPurchasingInterface(IPurchasing purchasing),N/A,static void
+com.unity3d.ads.purchasing.Purchasing.UnityAdsPurchasingEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static Purchasing.UnityAdsPurchasingEvent
+com.unity3d.ads.purchasing.Purchasing.UnityAdsPurchasingEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static Purchasing.UnityAdsPurchasingEvent[]
+com.unity3d.ads.purchasing.PurchasingError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static PurchasingError
+com.unity3d.ads.purchasing.PurchasingError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static PurchasingError[]
+com.unity3d.services.purchasing.core.PurchasingError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static PurchasingError
+com.unity3d.services.purchasing.core.PurchasingError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static PurchasingError[]
+com.unity3d.services.purchasing.core.PurchasingEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static PurchasingEvent
+com.unity3d.services.purchasing.core.PurchasingEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static PurchasingEvent[]
+com.unity3d.services.purchasing.core.configuration.PurchasingModuleConfiguration,N/A,getWebAppApiClassList(),N/A,java.lang.Class[]
+com.unity3d.services.purchasing.core.configuration.PurchasingModuleConfiguration,N/A,initCompleteState(Configuration configuration),N/A,boolean
+com.unity3d.services.purchasing.core.configuration.PurchasingModuleConfiguration,N/A,"initErrorState(Configuration configuration,
+              java.lang.String state,
+              java.lang.String message)",N/A,boolean
+com.unity3d.services.purchasing.core.configuration.PurchasingModuleConfiguration,N/A,initModuleState(Configuration configuration),N/A,boolean
+com.unity3d.services.purchasing.core.configuration.PurchasingModuleConfiguration,N/A,resetState(Configuration configuration),N/A,boolean
+com.unity3d.services.core.api.Request,N/A,"get(java.lang.String id,
+   java.lang.String url,
+   org.json.JSONArray headers,
+   java.lang.Integer connectTimeout,
+   java.lang.Integer readTimeout,
+   WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Request,N/A,getHeadersMap(org.json.JSONArray headers),N/A,"static java.util.HashMap<java.lang.String,java.util.List<java.lang.String>>"
+com.unity3d.services.core.api.Request,N/A,"getResponseHeadersMap(java.util.Map<java.lang.String,java.util.List<java.lang.String>> responseHeaders)",N/A,static org.json.JSONArray
+com.unity3d.services.core.api.Request,N/A,"head(java.lang.String id,
+    java.lang.String url,
+    org.json.JSONArray headers,
+    java.lang.Integer connectTimeout,
+    java.lang.Integer readTimeout,
+    WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Request,N/A,"post(java.lang.String id,
+    java.lang.String url,
+    java.lang.String requestBody,
+    org.json.JSONArray headers,
+    java.lang.Integer connectTimeout,
+    java.lang.Integer readTimeout,
+    WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Request,N/A,"setConcurrentRequestCount(java.lang.Integer count,
+                         WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Request,N/A,"setKeepAliveTime(java.lang.Integer milliseconds,
+                WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Request,N/A,"setMaximumPoolSize(java.lang.Integer count,
+                  WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Resolve,Created by rikshot on 24/03/16.,"resolve(java.lang.String id,
+       java.lang.String host,
+       WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.request.ResolveHostError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static ResolveHostError
+com.unity3d.services.core.request.ResolveHostError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static ResolveHostError[]
+com.unity3d.services.core.request.ResolveHostEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static ResolveHostEvent
+com.unity3d.services.core.request.ResolveHostEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static ResolveHostEvent[]
+com.unity3d.services.monetization.placementcontent.core.RewardablePlacementContent,N/A,getRewardId(),N/A,java.lang.String
+com.unity3d.services.monetization.placementcontent.core.RewardablePlacementContent,N/A,isRewarded(),N/A,boolean
+com.unity3d.services.core.api.Sdk,N/A,getDebugMode(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Sdk,N/A,initComplete(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Sdk,N/A,"initError(java.lang.String message,
+         int code,
+         WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Sdk,N/A,loadComplete(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Sdk,N/A,"logDebug(java.lang.String message,
+        WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Sdk,N/A,"logError(java.lang.String message,
+        WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Sdk,N/A,"logInfo(java.lang.String message,
+       WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Sdk,N/A,"logWarning(java.lang.String message,
+          WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Sdk,N/A,reinitialize(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.Sdk,N/A,"setDebugMode(java.lang.Boolean debugMode,
+            WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.properties.SdkProperties,N/A,getCacheDirectory(),N/A,static java.io.File
+com.unity3d.services.core.properties.SdkProperties,N/A,getCacheDirectory(android.content.Context context),N/A,static java.io.File
+com.unity3d.services.core.properties.SdkProperties,N/A,getCacheDirectoryName(),N/A,static java.lang.String
+com.unity3d.services.core.properties.SdkProperties,N/A,getCacheDirectoryObject(),N/A,static CacheDirectory
+com.unity3d.services.core.properties.SdkProperties,N/A,getCacheFilePrefix(),N/A,static java.lang.String
+com.unity3d.services.core.properties.SdkProperties,N/A,getConfigUrl(),N/A,static java.lang.String
+com.unity3d.services.core.properties.SdkProperties,N/A,getDebugMode(),N/A,static boolean
+com.unity3d.services.core.properties.SdkProperties,N/A,getDefaultConfigUrl(java.lang.String flavor),N/A,static java.lang.String
+com.unity3d.services.core.properties.SdkProperties,N/A,getInitializationTime(),N/A,static long
+com.unity3d.services.core.properties.SdkProperties,N/A,getListener(),N/A,static IUnityServicesListener
+com.unity3d.services.core.properties.SdkProperties,N/A,getLocalStorageFilePrefix(),N/A,static java.lang.String
+com.unity3d.services.core.properties.SdkProperties,N/A,getLocalWebViewFile(),N/A,static java.lang.String
+com.unity3d.services.core.properties.SdkProperties,N/A,getVersionCode(),N/A,static int
+com.unity3d.services.core.properties.SdkProperties,N/A,getVersionName(),N/A,static java.lang.String
+com.unity3d.services.core.properties.SdkProperties,N/A,isChinaLocale(java.lang.String networkISOCode),N/A,static boolean
+com.unity3d.services.core.properties.SdkProperties,N/A,isInitialized(),N/A,static boolean
+com.unity3d.services.core.properties.SdkProperties,N/A,isPerPlacementLoadEnabled(),N/A,static boolean
+com.unity3d.services.core.properties.SdkProperties,N/A,isReinitialized(),N/A,static boolean
+com.unity3d.services.core.properties.SdkProperties,N/A,isTestMode(),N/A,static boolean
+com.unity3d.services.core.properties.SdkProperties,N/A,setCacheDirectory(CacheDirectory cacheDirectory),N/A,static void
+com.unity3d.services.core.properties.SdkProperties,N/A,setConfigUrl(java.lang.String url),N/A,static void
+com.unity3d.services.core.properties.SdkProperties,N/A,setDebugMode(boolean debugMode),N/A,static void
+com.unity3d.services.core.properties.SdkProperties,N/A,setInitializationTime(long milliseconds),N/A,static void
+com.unity3d.services.core.properties.SdkProperties,N/A,setInitialized(boolean initialized),N/A,static void
+com.unity3d.services.core.properties.SdkProperties,N/A,setListener(IUnityServicesListener listener),N/A,static void
+com.unity3d.services.core.properties.SdkProperties,N/A,setPerPlacementLoadEnabled(boolean perPlacementLoad),N/A,static void
+com.unity3d.services.core.properties.SdkProperties,N/A,setReinitialized(boolean status),N/A,static void
+com.unity3d.services.core.properties.SdkProperties,N/A,setTestMode(boolean testMode),N/A,static void
+com.unity3d.services.core.api.SensorInfo,N/A,getAccelerometerData(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.SensorInfo,N/A,isAccelerometerActive(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.api.SensorInfo,N/A,"startAccelerometerUpdates(java.lang.Integer sensorDelay,
+                         WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.SensorInfo,N/A,stopAccelerometerUpdates(WebViewCallback callback),N/A,static void
+com.unity3d.services.core.sensorinfo.SensorInfoError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static SensorInfoError
+com.unity3d.services.core.sensorinfo.SensorInfoError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static SensorInfoError[]
+com.unity3d.services.core.sensorinfo.SensorInfoListener,N/A,getAccelerometerData(),N/A,static org.json.JSONObject
+com.unity3d.services.core.sensorinfo.SensorInfoListener,N/A,isAccelerometerListenerActive(),N/A,static boolean
+com.unity3d.services.core.sensorinfo.SensorInfoListener,N/A,"onAccuracyChanged(android.hardware.Sensor sensor,
+                 int i)",N/A,void
+com.unity3d.services.core.sensorinfo.SensorInfoListener,N/A,onSensorChanged(android.hardware.SensorEvent sensorEvent),N/A,void
+com.unity3d.services.core.sensorinfo.SensorInfoListener,N/A,startAccelerometerListener(int sensorDelay),N/A,static boolean
+com.unity3d.services.core.sensorinfo.SensorInfoListener,N/A,stopAccelerometerListener(),N/A,static void
+com.unity3d.services.ar.view.ShaderLoader,N/A,checkGLError(java.lang.String label),N/A,static boolean
+com.unity3d.services.ar.view.ShaderLoader,N/A,"load(java.lang.String code,
+    int type)",N/A,static int
+com.unity3d.services.monetization.placementcontent.ads.ShowAdListenerAdapter,Called when the ad has finished.,"onAdFinished(java.lang.String placementId,
+            UnityAds.FinishState withState)",Called when the ad has finished.,void
+com.unity3d.services.monetization.placementcontent.ads.ShowAdListenerAdapter,Called when the ad has finished.,onAdStarted(java.lang.String placementId),Notifies that the ad for the given placement has started.,void
+com.unity3d.services.monetization.placementcontent.ads.ShowAdPlacementContent,N/A,"sendAdFinished(java.lang.String placementId,
+              UnityAds.FinishState finishState)",N/A,static void
+com.unity3d.services.monetization.placementcontent.ads.ShowAdPlacementContent,N/A,sendAdStarted(java.lang.String placementId),N/A,static void
+com.unity3d.services.monetization.placementcontent.ads.ShowAdPlacementContent,N/A,"show(android.app.Activity activity,
+    IShowAdListener listener)",N/A,void
+com.unity3d.services.core.api.Storage,N/A,"clear(java.lang.String type,
+     WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Storage,N/A,"delete(java.lang.String type,
+      java.lang.String key,
+      WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Storage,N/A,"get(java.lang.String type,
+   java.lang.String key,
+   WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Storage,N/A,"getKeys(java.lang.String type,
+       java.lang.String key,
+       java.lang.Boolean recursive,
+       WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Storage,N/A,"read(java.lang.String type,
+    WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Storage,N/A,"set(java.lang.String type,
+   java.lang.String key,
+   java.lang.Boolean value,
+   WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Storage,N/A,"set(java.lang.String type,
+   java.lang.String key,
+   java.lang.Double value,
+   WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Storage,N/A,"set(java.lang.String type,
+   java.lang.String key,
+   java.lang.Integer value,
+   WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Storage,N/A,"set(java.lang.String type,
+   java.lang.String key,
+   org.json.JSONArray value,
+   WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Storage,N/A,"set(java.lang.String type,
+   java.lang.String key,
+   org.json.JSONObject value,
+   WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Storage,N/A,"set(java.lang.String type,
+   java.lang.String key,
+   java.lang.Long value,
+   WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Storage,N/A,"set(java.lang.String type,
+   java.lang.String key,
+   java.lang.String value,
+   WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.api.Storage,N/A,"write(java.lang.String type,
+     WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.device.Storage,N/A,clearStorage(),N/A,boolean
+com.unity3d.services.core.device.Storage,N/A,getType(),N/A,StorageManager.StorageType
+com.unity3d.services.core.device.Storage,N/A,initStorage(),N/A,boolean
+com.unity3d.services.core.device.Storage,N/A,readStorage(),N/A,boolean
+com.unity3d.services.core.device.Storage,N/A,"sendEvent(StorageEvent eventType,
+         java.lang.Object value)",N/A,void
+com.unity3d.services.core.device.Storage,N/A,storageFileExists(),N/A,boolean
+com.unity3d.services.core.device.Storage,N/A,writeStorage(),N/A,boolean
+com.unity3d.services.core.device.StorageError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static StorageError
+com.unity3d.services.core.device.StorageError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static StorageError[]
+com.unity3d.services.core.device.StorageEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static StorageEvent
+com.unity3d.services.core.device.StorageEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static StorageEvent[]
+com.unity3d.services.core.device.StorageManager,N/A,"addStorageLocation(StorageManager.StorageType type,
+                  java.lang.String filename)",N/A,static void
+com.unity3d.services.core.device.StorageManager,N/A,getStorage(StorageManager.StorageType type),N/A,static Storage
+com.unity3d.services.core.device.StorageManager,N/A,hasStorage(StorageManager.StorageType type),N/A,static boolean
+com.unity3d.services.core.device.StorageManager,N/A,init(android.content.Context context),N/A,static boolean
+com.unity3d.services.core.device.StorageManager,N/A,initStorage(StorageManager.StorageType type),N/A,static void
+com.unity3d.services.core.device.StorageManager,N/A,removeStorage(StorageManager.StorageType type),N/A,static void
+com.unity3d.services.core.device.StorageManager.StorageType,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static StorageManager.StorageType
+com.unity3d.services.core.device.StorageManager.StorageType,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static StorageManager.StorageType[]
+com.unity3d.services.purchasing.core.Store,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static Store
+com.unity3d.services.purchasing.core.Store,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static Store[]
+com.unity3d.services.store.core.api.Store,N/A,"getPurchaseHistory(java.lang.Integer operationId,
+                  java.lang.String purchaseType,
+                  java.lang.Integer maxPurchases,
+                  WebViewCallback callback)",N/A,static void
+com.unity3d.services.store.core.api.Store,N/A,"getPurchases(java.lang.Integer operationId,
+            java.lang.String purchaseType,
+            WebViewCallback callback)",N/A,static void
+com.unity3d.services.store.core.api.Store,N/A,"getSkuDetails(java.lang.Integer operationId,
+             java.lang.String purchaseType,
+             org.json.JSONArray skuList,
+             WebViewCallback callback)",N/A,static void
+com.unity3d.services.store.core.api.Store,N/A,"initialize(java.lang.String intentName,
+          java.lang.String intentPackage,
+          WebViewCallback callback)",N/A,static void
+com.unity3d.services.store.core.api.Store,N/A,"isBillingSupported(java.lang.Integer operationId,
+                  java.lang.String purchaseType,
+                  WebViewCallback callback)",N/A,static void
+com.unity3d.services.store.core.api.Store,N/A,"startPurchaseTracking(java.lang.Boolean trackAllActivities,
+                     org.json.JSONArray exceptions,
+                     org.json.JSONArray purchaseTypes,
+                     WebViewCallback callback)",N/A,static void
+com.unity3d.services.store.core.api.Store,N/A,stopPurchaseTracking(WebViewCallback callback),N/A,static void
+com.unity3d.services.store.StoreBilling,N/A,"asInterface(android.content.Context context,
+           android.os.IBinder service)",N/A,static java.lang.Object
+com.unity3d.services.store.StoreBilling,N/A,"getPurchaseHistory(android.content.Context context,
+                  java.lang.Object billingServiceObject,
+                  java.lang.String purchaseType,
+                  int maxPurchases)",N/A,static org.json.JSONObject
+com.unity3d.services.store.StoreBilling,N/A,"getPurchases(android.content.Context context,
+            java.lang.Object billingServiceObject,
+            java.lang.String purchaseType)",N/A,static org.json.JSONObject
+com.unity3d.services.store.StoreBilling,N/A,"getSkuDetails(android.content.Context context,
+             java.lang.Object billingServiceObject,
+             java.lang.String purchaseType,
+             java.util.ArrayList<java.lang.String> skuList)",N/A,static org.json.JSONArray
+com.unity3d.services.store.StoreBilling,N/A,"isBillingSupported(android.content.Context context,
+                  java.lang.Object billingServiceObject,
+                  java.lang.String purchaseType)",N/A,static int
+com.unity3d.services.store.StoreError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static StoreError
+com.unity3d.services.store.StoreError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static StoreError[]
+com.unity3d.services.store.StoreEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static StoreEvent
+com.unity3d.services.store.StoreEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static StoreEvent[]
+com.unity3d.services.store.core.StoreException,N/A,getResultCode(),N/A,int
+com.unity3d.services.store.StoreLifecycleListener,N/A,"onActivityCreated(android.app.Activity activity,
+                 android.os.Bundle savedInstanceState)",N/A,void
+com.unity3d.services.store.StoreLifecycleListener,N/A,onActivityDestroyed(android.app.Activity activity),N/A,void
+com.unity3d.services.store.StoreLifecycleListener,N/A,onActivityPaused(android.app.Activity activity),N/A,void
+com.unity3d.services.store.StoreLifecycleListener,N/A,onActivityResumed(android.app.Activity activity),N/A,void
+com.unity3d.services.store.StoreLifecycleListener,N/A,"onActivitySaveInstanceState(android.app.Activity activity,
+                           android.os.Bundle outState)",N/A,void
+com.unity3d.services.store.StoreLifecycleListener,N/A,onActivityStarted(android.app.Activity activity),N/A,void
+com.unity3d.services.store.StoreLifecycleListener,N/A,onActivityStopped(android.app.Activity activity),N/A,void
+com.unity3d.services.store.core.configuration.StoreModuleConfiguration,N/A,getWebAppApiClassList(),N/A,java.lang.Class[]
+com.unity3d.services.store.core.configuration.StoreModuleConfiguration,N/A,initCompleteState(Configuration configuration),N/A,boolean
+com.unity3d.services.store.core.configuration.StoreModuleConfiguration,N/A,"initErrorState(Configuration configuration,
+              java.lang.String state,
+              java.lang.String message)",N/A,boolean
+com.unity3d.services.store.core.configuration.StoreModuleConfiguration,N/A,initModuleState(Configuration configuration),N/A,boolean
+com.unity3d.services.store.core.configuration.StoreModuleConfiguration,N/A,resetState(Configuration configuration),N/A,boolean
+com.unity3d.services.store.StoreMonitor,N/A,"getPurchaseHistory(java.lang.String purchaseType,
+                  int maxPurchases)",N/A,static org.json.JSONObject
+com.unity3d.services.store.StoreMonitor,N/A,getPurchases(java.lang.String purchaseType),N/A,static org.json.JSONObject
+com.unity3d.services.store.StoreMonitor,N/A,"getSkuDetails(java.lang.String purchaseType,
+             java.util.ArrayList<java.lang.String> skuList)",N/A,static org.json.JSONArray
+com.unity3d.services.store.StoreMonitor,N/A,"initialize(java.lang.String intentName,
+          java.lang.String intentPackage)",N/A,static void
+com.unity3d.services.store.StoreMonitor,N/A,isBillingSupported(java.lang.String purchaseType),N/A,static int
+com.unity3d.services.store.StoreMonitor,N/A,isInitialized(),N/A,static boolean
+com.unity3d.services.store.StoreMonitor,N/A,"sendPurchaseStatusOnResume(java.lang.String activityName,
+                          java.util.ArrayList<java.lang.String> purchaseTypes)",N/A,static void
+com.unity3d.services.store.StoreMonitor,N/A,"sendPurchaseStatusOnStop(java.lang.String activityName,
+                        java.util.ArrayList<java.lang.String> purchaseTypes)",N/A,static void
+com.unity3d.services.store.StoreMonitor,N/A,"startPurchaseTracking(boolean trackAllActivities,
+                     java.util.ArrayList<java.lang.String> exceptions,
+                     java.util.ArrayList<java.lang.String> purchaseTypes)",N/A,static void
+com.unity3d.services.store.StoreMonitor,N/A,stopPurchaseTracking(),N/A,static void
+com.unity3d.services.purchasing.core.TransactionDetails,N/A,getCurrency(),N/A,java.lang.String
+com.unity3d.services.purchasing.core.TransactionDetails,N/A,getExtras(),N/A,"java.util.Map<java.lang.String,java.lang.Object>"
+com.unity3d.services.purchasing.core.TransactionDetails,N/A,getPrice(),N/A,java.math.BigDecimal
+com.unity3d.services.purchasing.core.TransactionDetails,N/A,getProductId(),N/A,java.lang.String
+com.unity3d.services.purchasing.core.TransactionDetails,N/A,getReceipt(),N/A,java.lang.String
+com.unity3d.services.purchasing.core.TransactionDetails,N/A,getTransactionId(),N/A,java.lang.String
+com.unity3d.services.purchasing.core.TransactionDetails,N/A,newBuilder(),N/A,static TransactionDetails.Builder
+com.unity3d.services.purchasing.core.TransactionDetails.Builder,N/A,build(),N/A,TransactionDetails
+com.unity3d.services.purchasing.core.TransactionDetails.Builder,N/A,"putExtra(java.lang.String key,
+        java.lang.Object value)",N/A,TransactionDetails.Builder
+com.unity3d.services.purchasing.core.TransactionDetails.Builder,N/A,withCurrency(java.lang.String val),N/A,TransactionDetails.Builder
+com.unity3d.services.purchasing.core.TransactionDetails.Builder,N/A,withPrice(java.math.BigDecimal val),N/A,TransactionDetails.Builder
+com.unity3d.services.purchasing.core.TransactionDetails.Builder,N/A,withPrice(double val),N/A,TransactionDetails.Builder
+com.unity3d.services.purchasing.core.TransactionDetails.Builder,N/A,withProductId(java.lang.String val),N/A,TransactionDetails.Builder
+com.unity3d.services.purchasing.core.TransactionDetails.Builder,N/A,withReceipt(java.lang.String val),N/A,TransactionDetails.Builder
+com.unity3d.services.purchasing.core.TransactionDetails.Builder,N/A,withTransactionId(java.lang.String val),N/A,TransactionDetails.Builder
+com.unity3d.services.purchasing.core.TransactionDetailsUtilities,N/A,getEventDataForTransactionDetails(TransactionDetails details),N/A,"static java.util.Map<java.lang.String,java.lang.Object>"
+com.unity3d.services.purchasing.core.TransactionDetailsUtilities,N/A,getJSONObjectForTransactionDetails(TransactionDetails details),N/A,static org.json.JSONObject
+com.unity3d.services.purchasing.core.TransactionError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static TransactionError
+com.unity3d.services.purchasing.core.TransactionError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static TransactionError[]
+com.unity3d.services.purchasing.core.TransactionErrorDetails,N/A,getExceptionMessage(),N/A,java.lang.String
+com.unity3d.services.purchasing.core.TransactionErrorDetails,N/A,getExtras(),N/A,"java.util.Map<java.lang.String,java.lang.Object>"
+com.unity3d.services.purchasing.core.TransactionErrorDetails,N/A,getStore(),N/A,Store
+com.unity3d.services.purchasing.core.TransactionErrorDetails,N/A,getStoreSpecificErrorCode(),N/A,java.lang.String
+com.unity3d.services.purchasing.core.TransactionErrorDetails,N/A,getTransactionError(),N/A,TransactionError
+com.unity3d.services.purchasing.core.TransactionErrorDetails,N/A,newBuilder(),N/A,static TransactionErrorDetails.Builder
+com.unity3d.services.purchasing.core.TransactionErrorDetails.Builder,N/A,build(),N/A,TransactionErrorDetails
+com.unity3d.services.purchasing.core.TransactionErrorDetails.Builder,N/A,"putExtra(java.lang.String key,
+        java.lang.Object val)",N/A,TransactionErrorDetails.Builder
+com.unity3d.services.purchasing.core.TransactionErrorDetails.Builder,N/A,"putExtras(java.util.Map<java.lang.String,java.lang.Object> val)",N/A,TransactionErrorDetails.Builder
+com.unity3d.services.purchasing.core.TransactionErrorDetails.Builder,N/A,withExceptionMessage(java.lang.String val),N/A,TransactionErrorDetails.Builder
+com.unity3d.services.purchasing.core.TransactionErrorDetails.Builder,N/A,withStore(Store val),N/A,TransactionErrorDetails.Builder
+com.unity3d.services.purchasing.core.TransactionErrorDetails.Builder,N/A,withStoreSpecificErrorCode(java.lang.String val),N/A,TransactionErrorDetails.Builder
+com.unity3d.services.purchasing.core.TransactionErrorDetails.Builder,N/A,withTransactionError(TransactionError val),N/A,TransactionErrorDetails.Builder
+com.unity3d.services.purchasing.core.TransactionErrorDetailsUtilities,N/A,getJSONObjectForTransactionErrorDetails(TransactionErrorDetails details),N/A,static org.json.JSONObject
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,addListener(IUnityAdsListener listener),Add listener for IUnityAdsListener callbacks.,static void
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,getDebugMode(),Get current debug mode status,static boolean
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,getListener(),"Deprecated. 
+this method is deprecated in favor of addListener(IUnityAdsListener) and removeListener(IUnityAdsListener)
+",static IUnityAdsListener
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,getPlacementState(),Get current state of default placement,static UnityAds.PlacementState
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,getPlacementState(java.lang.String placementId),Get current state of a placement,static UnityAds.PlacementState
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,getVersion(),Get current SDK version,static java.lang.String
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,"initialize(android.app.Activity activity,
+          java.lang.String gameId)",Initializes Unity Ads.,static void
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,"initialize(android.app.Activity activity,
+          java.lang.String gameId,
+          boolean testMode)",Initializes Unity Ads.,static void
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,"initialize(android.app.Activity activity,
+          java.lang.String gameId,
+          boolean testMode,
+          boolean enablePerPlacementLoad)",Initializes Unity Ads.,static void
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,"initialize(android.app.Activity activity,
+          java.lang.String gameId,
+          IUnityAdsListener listener)","Deprecated. 
+this method is deprecated in favor of initialize(Activity, String) use addListener(IUnityAdsListener) to add a listener
+",static void
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,"initialize(android.app.Activity activity,
+          java.lang.String gameId,
+          IUnityAdsListener listener,
+          boolean testMode)","Deprecated. 
+this method is deprecated in favor of initialize(Activity, String, boolean) use addListener(IUnityAdsListener) to add a listener
+",static void
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,"initialize(android.app.Activity activity,
+          java.lang.String gameId,
+          IUnityAdsListener listener,
+          boolean testMode,
+          boolean enablePerPlacementLoad)","Deprecated. 
+this method is deprecated in favor of initialize(Activity, String, boolean, boolean) use addListener(IUnityAdsListener) to add a listener
+",static void
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,isInitialized(),Checks if Unity Ads has been initialized.,static boolean
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,isReady(),Check if default placement is ready to show ads,static boolean
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,isReady(java.lang.String placementId),Check if placement is ready to show ads,static boolean
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,isSupported(),Checks if current device supports running Unity Ads,static boolean
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,load(java.lang.String placementId),Request fill for a specific placement ID.,static void
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,removeListener(IUnityAdsListener listener),Remove listener for IUnityAdsListener callbacks,static void
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,setDebugMode(boolean debugMode),Toggles debug mode on/off,static void
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,setListener(IUnityAdsListener listener),"Deprecated. 
+this method is deprecated in favor of addListener(IUnityAdsListener)
+",static void
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,show(android.app.Activity activity),Show one advertisement using default placement.,static void
+com.unity3d.ads.UnityAds,An enumeration for the completion state of an ad.,"show(android.app.Activity activity,
+    java.lang.String placementId)",Show one advertisement with custom placement.,static void
+com.unity3d.ads.UnityAds.FinishState,An enumeration for the completion state of an ad.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static UnityAds.FinishState
+com.unity3d.ads.UnityAds.FinishState,An enumeration for the completion state of an ad.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static UnityAds.FinishState[]
+com.unity3d.ads.UnityAds.PlacementState,Describes state of Unity Ads placements. All placement states other than READY imply that placement is not currently ready to show ads.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static UnityAds.PlacementState
+com.unity3d.ads.UnityAds.PlacementState,Describes state of Unity Ads placements. All placement states other than READY imply that placement is not currently ready to show ads.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static UnityAds.PlacementState[]
+com.unity3d.ads.UnityAds.UnityAdsError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static UnityAds.UnityAdsError
+com.unity3d.ads.UnityAds.UnityAdsError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static UnityAds.UnityAdsError[]
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,addListener(IUnityAdsListener listener),Add listener for IUnityAdsListener callbacks,static void
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,getDebugMode(),Get current debug mode status,static boolean
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,getDefaultPlacement(),N/A,static java.lang.String
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,getListener(),Deprecated. ,static IUnityAdsListener
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,getPlacementState(),Get current state of default placement,static UnityAds.PlacementState
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,getPlacementState(java.lang.String placementId),Get current state of a placement,static UnityAds.PlacementState
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,getVersion(),Get current SDK version,static java.lang.String
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,"initialize(android.app.Activity activity,
+          java.lang.String gameId,
+          IUnityAdsListener listener)",Initializes Unity Ads.,static void
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,"initialize(android.app.Activity activity,
+          java.lang.String gameId,
+          IUnityAdsListener listener,
+          boolean testMode)",Initializes Unity Ads.,static void
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,"initialize(android.app.Activity activity,
+          java.lang.String gameId,
+          IUnityAdsListener listener,
+          boolean testMode,
+          boolean enablePerPlacementLoad)",Initializes Unity Ads.,static void
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,isInitialized(),Checks if Unity Ads has been initialized.,static boolean
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,isReady(),Check if default placement is ready to show ads,static boolean
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,isReady(java.lang.String placementId),Check if placement is ready to show ads,static boolean
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,isSupported(),Checks if current device supports running Unity Ads,static boolean
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,load(java.lang.String placementId),N/A,static void
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,removeListener(IUnityAdsListener listener),Remove listener for IUnityAdsListener callbacks,static void
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,setDebugMode(boolean debugMode),Toggles debug mode on/off,static void
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,setListener(IUnityAdsListener listener),Deprecated. ,static void
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,show(android.app.Activity activity),Show one advertisement using default placement.,static void
+com.unity3d.services.ads.UnityAdsImplementation,Add listener for IUnityAdsListener callbacks,"show(android.app.Activity activity,
+    java.lang.String placementId)",Show one advertisement with custom placement.,static void
+com.unity3d.services.analytics.UnityAnalytics,N/A,"onAdComplete(java.lang.String network,
+            java.lang.String placementId,
+            java.lang.Boolean rewarded)",N/A,static void
+com.unity3d.services.analytics.UnityAnalytics,N/A,onEvent(org.json.JSONObject jsonEvent),N/A,static void
+com.unity3d.services.analytics.UnityAnalytics,N/A,"onIapTransaction(java.lang.String productId,
+                java.lang.Float amount,
+                java.lang.String currency,
+                java.lang.Boolean isPromo,
+                java.lang.String receipt)",N/A,static void
+com.unity3d.services.analytics.UnityAnalytics,N/A,"onItemAcquired(java.lang.String transactionContext,
+              java.lang.Float amount,
+              java.lang.String itemId,
+              java.lang.Float balance,
+              java.lang.String itemType,
+              java.lang.String level,
+              java.lang.String transactionId,
+              AcquisitionType acquisitionType)",N/A,static void
+com.unity3d.services.analytics.UnityAnalytics,N/A,"onItemSpent(java.lang.String transactionContext,
+           java.lang.Float amount,
+           java.lang.String itemId,
+           java.lang.Float balance,
+           java.lang.String itemType,
+           java.lang.String level,
+           java.lang.String transactionId,
+           AcquisitionType acquisitionType)",N/A,static void
+com.unity3d.services.analytics.UnityAnalytics,N/A,onLevelFail(java.lang.String levelIndex),N/A,static void
+com.unity3d.services.analytics.UnityAnalytics,N/A,onLevelUp(java.lang.String newLevelIndex),N/A,static void
+com.unity3d.services.banners.UnityBanners,Deprecated. ,destroy(),Deprecated. ,static void
+com.unity3d.services.banners.UnityBanners,Deprecated. ,getBannerListener(),Deprecated. ,static IUnityBannerListener
+com.unity3d.services.banners.UnityBanners,Deprecated. ,loadBanner(android.app.Activity activity),Deprecated. ,static void
+com.unity3d.services.banners.UnityBanners,Deprecated. ,"loadBanner(android.app.Activity activity,
+          java.lang.String placementId)",Deprecated. ,static void
+com.unity3d.services.banners.UnityBanners,Deprecated. ,setBannerListener(IUnityBannerListener listener),Deprecated. ,static void
+com.unity3d.services.banners.UnityBanners,Deprecated. ,setBannerPosition(BannerPosition position),Deprecated. ,static void
+com.unity3d.services.banners.UnityBannerSize,N/A,getDynamicSize(android.content.Context context),N/A,static UnityBannerSize
+com.unity3d.services.banners.UnityBannerSize,N/A,getHeight(),N/A,int
+com.unity3d.services.banners.UnityBannerSize,N/A,getWidth(),N/A,int
+com.unity3d.services.monetization.UnityMonetization,Deprecated.,getListener(),Deprecated. ,static IUnityMonetizationListener
+com.unity3d.services.monetization.UnityMonetization,Deprecated.,getPlacementContent(java.lang.String placementId),Deprecated. ,static PlacementContent
+com.unity3d.services.monetization.UnityMonetization,Deprecated.,"getPlacementContent(java.lang.String placementId,
+                   java.lang.Class<T> asClass)",Deprecated. ,static <T extends PlacementContent>T
+com.unity3d.services.monetization.UnityMonetization,Deprecated.,"initialize(android.app.Activity activity,
+          java.lang.String gameId,
+          IUnityMonetizationListener listener)",Deprecated. ,static void
+com.unity3d.services.monetization.UnityMonetization,Deprecated.,"initialize(android.app.Activity activity,
+          java.lang.String gameId,
+          IUnityMonetizationListener listener,
+          boolean testMode)",Deprecated. ,static void
+com.unity3d.services.monetization.UnityMonetization,Deprecated.,isReady(java.lang.String placementId),Deprecated. ,static boolean
+com.unity3d.services.monetization.UnityMonetization,Deprecated.,setListener(IUnityMonetizationListener listener),Deprecated. ,static void
+com.unity3d.services.monetization.UnityMonetization.PlacementContentState,"PlacementContentState is an enum representing the state of a placementcontent. All states other than READY describe
+ that the placementcontent should not be used.",valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static UnityMonetization.PlacementContentState
+com.unity3d.services.monetization.UnityMonetization.PlacementContentState,"PlacementContentState is an enum representing the state of a placementcontent. All states other than READY describe
+ that the placementcontent should not be used.",values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static UnityMonetization.PlacementContentState[]
+com.unity3d.services.purchasing.UnityPurchasing,N/A,getAdapter(),N/A,static IPurchasingAdapter
+com.unity3d.services.purchasing.UnityPurchasing,N/A,setAdapter(IPurchasingAdapter adapter),N/A,static void
+com.unity3d.services.UnityServices,Get current debug mode status,getDebugMode(),Get current debug mode status,static boolean
+com.unity3d.services.UnityServices,Get current debug mode status,getVersion(),N/A,static java.lang.String
+com.unity3d.services.UnityServices,Get current debug mode status,"initialize(android.app.Activity activity,
+          java.lang.String gameId,
+          IUnityServicesListener listener,
+          boolean testMode,
+          boolean enablePerPlacementLoad)",Initializes Unity Ads.,static void
+com.unity3d.services.UnityServices,Get current debug mode status,isInitialized(),N/A,static boolean
+com.unity3d.services.UnityServices,Get current debug mode status,isSupported(),N/A,static boolean
+com.unity3d.services.UnityServices,Get current debug mode status,setDebugMode(boolean debugMode),Toggles debug mode on/off,static void
+com.unity3d.services.UnityServices.UnityServicesError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static UnityServices.UnityServicesError
+com.unity3d.services.UnityServices.UnityServicesError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static UnityServices.UnityServicesError[]
+com.unity3d.services.core.misc.Utilities,N/A,"mergeJsonObjects(org.json.JSONObject primary,
+                org.json.JSONObject secondary)",N/A,static org.json.JSONObject
+com.unity3d.services.core.misc.Utilities,N/A,readFileBytes(java.io.File file),N/A,static byte[]
+com.unity3d.services.core.misc.Utilities,N/A,runOnUiThread(java.lang.Runnable runnable),N/A,static void
+com.unity3d.services.core.misc.Utilities,N/A,"runOnUiThread(java.lang.Runnable runnable,
+             long delay)",N/A,static void
+com.unity3d.services.core.misc.Utilities,N/A,Sha256(byte[] input),N/A,static java.lang.String
+com.unity3d.services.core.misc.Utilities,N/A,Sha256(java.io.InputStream inputStream),N/A,static java.lang.String
+com.unity3d.services.core.misc.Utilities,N/A,Sha256(java.lang.String input),N/A,static java.lang.String
+com.unity3d.services.core.misc.Utilities,N/A,toHexString(byte[] array),N/A,static java.lang.String
+com.unity3d.services.core.misc.Utilities,N/A,"writeFile(java.io.File fileToWrite,
+         java.lang.String content)",N/A,static boolean
+com.unity3d.services.ads.api.VideoPlayer,N/A,getCurrentPosition(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,getProgressEventInterval(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,getVideoPlayerView(),N/A,static VideoPlayerView
+com.unity3d.services.ads.api.VideoPlayer,N/A,getVideoViewRectangle(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,getVolume(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,pause(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,play(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,"prepare(java.lang.String url,
+       java.lang.Double initialVolume,
+       java.lang.Integer timeout,
+       WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,"prepare(java.lang.String url,
+       java.lang.Double initialVolume,
+       WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,"seekTo(java.lang.Integer time,
+      WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,"setInfoListenerEnabled(boolean enabled,
+                      WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,"setProgressEventInterval(java.lang.Integer milliseconds,
+                        WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,setVideoPlayerView(VideoPlayerView videoPlayerView),N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,"setVolume(java.lang.Double volume,
+         WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.VideoPlayer,N/A,stop(WebViewCallback callback),N/A,static void
+com.unity3d.services.ads.video.VideoPlayerError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static VideoPlayerError
+com.unity3d.services.ads.video.VideoPlayerError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static VideoPlayerError[]
+com.unity3d.services.ads.video.VideoPlayerEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static VideoPlayerEvent
+com.unity3d.services.ads.video.VideoPlayerEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static VideoPlayerEvent[]
+com.unity3d.services.ads.adunit.VideoPlayerHandler,N/A,create(AdUnitActivity activity),N/A,boolean
+com.unity3d.services.ads.adunit.VideoPlayerHandler,N/A,destroy(),N/A,boolean
+com.unity3d.services.ads.adunit.VideoPlayerHandler,N/A,getView(),N/A,android.view.View
+com.unity3d.services.ads.adunit.VideoPlayerHandler,N/A,"onCreate(AdUnitActivity activity,
+        android.os.Bundle savedInstanceState)",N/A,void
+com.unity3d.services.ads.adunit.VideoPlayerHandler,N/A,onDestroy(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.VideoPlayerHandler,N/A,onPause(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.VideoPlayerHandler,N/A,onResume(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.VideoPlayerHandler,N/A,onStart(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.VideoPlayerHandler,N/A,onStop(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.video.VideoPlayerView,N/A,getProgressEventInterval(),N/A,int
+com.unity3d.services.ads.video.VideoPlayerView,N/A,getVideoViewRectangle(),N/A,int[]
+com.unity3d.services.ads.video.VideoPlayerView,N/A,getVolume(),N/A,float
+com.unity3d.services.ads.video.VideoPlayerView,N/A,pause(),N/A,void
+com.unity3d.services.ads.video.VideoPlayerView,N/A,play(),N/A,void
+com.unity3d.services.ads.video.VideoPlayerView,N/A,"prepare(java.lang.String url,
+       float initialVolume,
+       int timeout)",N/A,boolean
+com.unity3d.services.ads.video.VideoPlayerView,N/A,seekTo(int msec),N/A,void
+com.unity3d.services.ads.video.VideoPlayerView,N/A,setInfoListenerEnabled(boolean enabled),N/A,void
+com.unity3d.services.ads.video.VideoPlayerView,N/A,setProgressEventInterval(int ms),N/A,void
+com.unity3d.services.ads.video.VideoPlayerView,N/A,setVolume(java.lang.Float volume),N/A,void
+com.unity3d.services.ads.video.VideoPlayerView,N/A,stop(),N/A,void
+com.unity3d.services.ads.video.VideoPlayerView,N/A,stopPrepareTimer(),N/A,void
+com.unity3d.services.ads.video.VideoPlayerView,N/A,stopVideoProgressTimer(),N/A,void
+com.unity3d.services.core.misc.ViewUtilities,N/A,"dpFromPx(android.content.Context context,
+        float px)",N/A,static float
+com.unity3d.services.core.misc.ViewUtilities,N/A,"pxFromDp(android.content.Context context,
+        float dp)",N/A,static float
+com.unity3d.services.core.misc.ViewUtilities,N/A,removeViewFromParent(android.view.View view),N/A,static void
+com.unity3d.services.core.misc.ViewUtilities,N/A,"setBackground(android.view.View view,
+             android.graphics.drawable.Drawable drawable)",N/A,static void
+com.unity3d.services.core.device.VolumeChange,N/A,clearAllListeners(),N/A,static void
+com.unity3d.services.core.device.VolumeChange,N/A,registerListener(IVolumeChangeListener listener),N/A,static void
+com.unity3d.services.core.device.VolumeChange,N/A,startObserving(),N/A,static void
+com.unity3d.services.core.device.VolumeChange,N/A,stopObservering(),N/A,static void
+com.unity3d.services.core.device.VolumeChange,N/A,unregisterListener(IVolumeChangeListener listener),N/A,static void
+com.unity3d.services.ads.api.WebPlayer,N/A,"clearSettings(java.lang.String viewId,
+             WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.WebPlayer,N/A,"getErroredSettings(java.lang.String viewId,
+                  WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.WebPlayer,N/A,"getFrame(java.lang.String callId,
+        java.lang.String viewId,
+        WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.WebPlayer,N/A,"sendEvent(org.json.JSONArray parameters,
+         java.lang.String viewId,
+         WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.WebPlayer,N/A,"setData(java.lang.String data,
+       java.lang.String mimeType,
+       java.lang.String encoding,
+       java.lang.String viewId,
+       WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.WebPlayer,N/A,"setDataWithUrl(java.lang.String baseUrl,
+              java.lang.String data,
+              java.lang.String mimeType,
+              java.lang.String encoding,
+              java.lang.String viewId,
+              WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.WebPlayer,N/A,"setEventSettings(org.json.JSONObject eventSettings,
+                java.lang.String viewId,
+                WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.WebPlayer,N/A,"setSettings(org.json.JSONObject webSettings,
+           org.json.JSONObject webPlayerSettings,
+           java.lang.String viewId,
+           WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.api.WebPlayer,N/A,"setUrl(java.lang.String url,
+      java.lang.String viewId,
+      WebViewCallback callback)",N/A,static void
+com.unity3d.services.ads.webplayer.WebPlayerBridgeInterface,N/A,handleEvent(java.lang.String data),N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static WebPlayerError
+com.unity3d.services.ads.webplayer.WebPlayerError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static WebPlayerError[]
+com.unity3d.services.ads.webplayer.WebPlayerEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static WebPlayerEvent
+com.unity3d.services.ads.webplayer.WebPlayerEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static WebPlayerEvent[]
+com.unity3d.services.ads.webplayer.WebPlayerEventBridge,N/A,"error(java.lang.String viewId,
+     java.lang.String failingUrl,
+     java.lang.String errorMessage)",N/A,static void
+com.unity3d.services.ads.webplayer.WebPlayerEventBridge,N/A,"sendFrameUpdate(java.lang.String viewId,
+               int x,
+               int y,
+               int width,
+               int height,
+               float alpha)",N/A,static void
+com.unity3d.services.ads.webplayer.WebPlayerEventBridge,N/A,"sendGetFrameResponse(java.lang.String callId,
+                    java.lang.String viewId,
+                    int x,
+                    int y,
+                    int width,
+                    int height,
+                    float alpha)",N/A,static void
+com.unity3d.services.ads.adunit.WebPlayerHandler,N/A,create(AdUnitActivity activity),N/A,boolean
+com.unity3d.services.ads.adunit.WebPlayerHandler,N/A,destroy(),N/A,boolean
+com.unity3d.services.ads.adunit.WebPlayerHandler,N/A,getView(),N/A,android.view.View
+com.unity3d.services.ads.adunit.WebPlayerHandler,N/A,"onCreate(AdUnitActivity activity,
+        android.os.Bundle savedInstanceState)",N/A,void
+com.unity3d.services.ads.adunit.WebPlayerHandler,N/A,onDestroy(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.WebPlayerHandler,N/A,onPause(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.WebPlayerHandler,N/A,onResume(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.WebPlayerHandler,N/A,onStart(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.WebPlayerHandler,N/A,onStop(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerSettingsCache,N/A,"addWebPlayerEventSettings(java.lang.String viewId,
+                         org.json.JSONObject webPlayerEventSettings)",N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerSettingsCache,N/A,"addWebPlayerSettings(java.lang.String viewId,
+                    org.json.JSONObject webPlayerSettings)",N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerSettingsCache,N/A,"addWebSettings(java.lang.String viewId,
+              org.json.JSONObject webSettings)",N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerSettingsCache,N/A,getInstance(),N/A,static WebPlayerSettingsCache
+com.unity3d.services.ads.webplayer.WebPlayerSettingsCache,N/A,getWebPlayerEventSettings(java.lang.String viewId),N/A,org.json.JSONObject
+com.unity3d.services.ads.webplayer.WebPlayerSettingsCache,N/A,getWebPlayerSettings(java.lang.String viewId),N/A,org.json.JSONObject
+com.unity3d.services.ads.webplayer.WebPlayerSettingsCache,N/A,getWebSettings(java.lang.String viewId),N/A,org.json.JSONObject
+com.unity3d.services.ads.webplayer.WebPlayerSettingsCache,N/A,removeWebPlayerEventSettings(java.lang.String viewId),N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerSettingsCache,N/A,removeWebPlayerSettings(java.lang.String viewId),N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerSettingsCache,N/A,removeWebSettings(java.lang.String viewId),N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerView,N/A,destroy(),N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerView,N/A,getErroredSettings(),N/A,"java.util.Map<java.lang.String,java.lang.String>"
+com.unity3d.services.ads.webplayer.WebPlayerView,N/A,getPrimitiveClass(java.lang.Class<?> className),N/A,java.lang.Class<?>
+com.unity3d.services.ads.webplayer.WebPlayerView,N/A,invokeJavascript(java.lang.String data),N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerView,N/A,onLayoutChange(),N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerView,N/A,"onSizeChanged(int w,
+             int h,
+             int oldw,
+             int oldh)",N/A,protected void
+com.unity3d.services.ads.webplayer.WebPlayerView,N/A,sendEvent(org.json.JSONArray params),N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerView,N/A,setEventSettings(org.json.JSONObject eventSettings),N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerView,N/A,"setSettings(org.json.JSONObject webSettings,
+           org.json.JSONObject webPlayerSettings)",N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerViewCache,N/A,"addWebPlayer(java.lang.String viewId,
+            WebPlayerView webPlayerView)",N/A,void
+com.unity3d.services.ads.webplayer.WebPlayerViewCache,N/A,getInstance(),N/A,static WebPlayerViewCache
+com.unity3d.services.ads.webplayer.WebPlayerViewCache,N/A,getWebPlayer(java.lang.String viewId),N/A,WebPlayerView
+com.unity3d.services.ads.webplayer.WebPlayerViewCache,N/A,removeWebPlayer(java.lang.String viewId),N/A,void
+com.unity3d.services.core.request.WebRequest,N/A,cancel(),N/A,void
+com.unity3d.services.core.request.WebRequest,N/A,getBody(),N/A,java.lang.String
+com.unity3d.services.core.request.WebRequest,N/A,getConnectTimeout(),N/A,int
+com.unity3d.services.core.request.WebRequest,N/A,getContentLength(),N/A,long
+com.unity3d.services.core.request.WebRequest,N/A,getHeaders(),N/A,"java.util.Map<java.lang.String,java.util.List<java.lang.String>>"
+com.unity3d.services.core.request.WebRequest,N/A,getQuery(),N/A,java.lang.String
+com.unity3d.services.core.request.WebRequest,N/A,getReadTimeout(),N/A,int
+com.unity3d.services.core.request.WebRequest,N/A,getRequestType(),N/A,java.lang.String
+com.unity3d.services.core.request.WebRequest,N/A,getResponseCode(),N/A,int
+com.unity3d.services.core.request.WebRequest,N/A,getResponseHeaders(),N/A,"java.util.Map<java.lang.String,java.util.List<java.lang.String>>"
+com.unity3d.services.core.request.WebRequest,N/A,getUrl(),N/A,java.net.URL
+com.unity3d.services.core.request.WebRequest,N/A,isCanceled(),N/A,boolean
+com.unity3d.services.core.request.WebRequest,N/A,makeRequest(),N/A,java.lang.String
+com.unity3d.services.core.request.WebRequest,N/A,makeStreamRequest(java.io.OutputStream outputStream),N/A,long
+com.unity3d.services.core.request.WebRequest,N/A,setBody(java.lang.String body),N/A,void
+com.unity3d.services.core.request.WebRequest,N/A,setConnectTimeout(int timeout),N/A,void
+com.unity3d.services.core.request.WebRequest,N/A,setProgressListener(IWebRequestProgressListener listener),N/A,void
+com.unity3d.services.core.request.WebRequest,N/A,setReadTimeout(int readTimeout),N/A,void
+com.unity3d.services.core.request.WebRequest.RequestType,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static WebRequest.RequestType
+com.unity3d.services.core.request.WebRequest.RequestType,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static WebRequest.RequestType[]
+com.unity3d.services.core.request.WebRequestError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static WebRequestError
+com.unity3d.services.core.request.WebRequestError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static WebRequestError[]
+com.unity3d.services.core.request.WebRequestEvent,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static WebRequestEvent
+com.unity3d.services.core.request.WebRequestEvent,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static WebRequestEvent[]
+com.unity3d.services.core.request.WebRequestRunnable,N/A,run(),N/A,void
+com.unity3d.services.core.request.WebRequestRunnable,N/A,setCancelStatus(boolean canceled),N/A,void
+com.unity3d.services.core.request.WebRequestThread,N/A,cancel(),N/A,static void
+com.unity3d.services.core.request.WebRequestThread,N/A,"request(java.lang.String url,
+       WebRequest.RequestType requestType,
+       java.util.Map<java.lang.String,java.util.List<java.lang.String>> headers,
+       java.lang.Integer connectTimeout,
+       java.lang.Integer readTimeout,
+       IWebRequestListener listener)",N/A,static void
+com.unity3d.services.core.request.WebRequestThread,N/A,"request(java.lang.String url,
+       WebRequest.RequestType requestType,
+       java.util.Map<java.lang.String,java.util.List<java.lang.String>> headers,
+       java.lang.String requestBody,
+       java.lang.Integer connectTimeout,
+       java.lang.Integer readTimeout,
+       IWebRequestListener listener)",N/A,static void
+com.unity3d.services.core.request.WebRequestThread,N/A,reset(),N/A,static void
+com.unity3d.services.core.request.WebRequestThread,N/A,"resolve(java.lang.String host,
+       IResolveHostListener listener)",N/A,static boolean
+com.unity3d.services.core.request.WebRequestThread,N/A,setConcurrentRequestCount(int count),N/A,static void
+com.unity3d.services.core.request.WebRequestThread,N/A,setKeepAliveTime(long milliseconds),N/A,static void
+com.unity3d.services.core.request.WebRequestThread,N/A,setMaximumPoolSize(int count),N/A,static void
+com.unity3d.services.core.webview.WebView,N/A,invokeJavascript(java.lang.String data),N/A,void
+com.unity3d.services.core.webview.WebView,N/A,loadUrl(java.lang.String url),N/A,void
+com.unity3d.services.core.webview.WebViewApp,N/A,addCallback(NativeCallback callback),N/A,void
+com.unity3d.services.core.webview.WebViewApp,N/A,create(Configuration configuration),N/A,static boolean
+com.unity3d.services.core.webview.WebViewApp,N/A,getCallback(java.lang.String callbackId),N/A,NativeCallback
+com.unity3d.services.core.webview.WebViewApp,N/A,getConfiguration(),N/A,Configuration
+com.unity3d.services.core.webview.WebViewApp,N/A,getCurrentApp(),N/A,static WebViewApp
+com.unity3d.services.core.webview.WebViewApp,N/A,getWebView(),N/A,WebView
+com.unity3d.services.core.webview.WebViewApp,N/A,invokeCallback(Invocation invocation),N/A,boolean
+com.unity3d.services.core.webview.WebViewApp,N/A,"invokeMethod(java.lang.String className,
+            java.lang.String methodName,
+            java.lang.reflect.Method callback,
+            java.lang.Object... params)",N/A,boolean
+com.unity3d.services.core.webview.WebViewApp,N/A,isWebAppInitialized(),N/A,boolean
+com.unity3d.services.core.webview.WebViewApp,N/A,isWebAppLoaded(),N/A,boolean
+com.unity3d.services.core.webview.WebViewApp,N/A,removeCallback(NativeCallback callback),N/A,void
+com.unity3d.services.core.webview.WebViewApp,N/A,"sendEvent(java.lang.Enum eventCategory,
+         java.lang.Enum eventId,
+         java.lang.Object... params)",N/A,boolean
+com.unity3d.services.core.webview.WebViewApp,N/A,setConfiguration(Configuration configuration),N/A,void
+com.unity3d.services.core.webview.WebViewApp,N/A,setCurrentApp(WebViewApp app),N/A,static void
+com.unity3d.services.core.webview.WebViewApp,N/A,setWebAppInitialized(boolean initialized),N/A,void
+com.unity3d.services.core.webview.WebViewApp,N/A,setWebAppLoaded(boolean loaded),N/A,void
+com.unity3d.services.core.webview.WebViewApp,N/A,setWebView(WebView webView),N/A,void
+com.unity3d.services.core.webview.bridge.WebViewBridge,N/A,"handleCallback(java.lang.String callbackId,
+              java.lang.String callbackStatus,
+              java.lang.Object[] parameters)",N/A,static void
+com.unity3d.services.core.webview.bridge.WebViewBridge,N/A,"handleInvocation(java.lang.String className,
+                java.lang.String methodName,
+                java.lang.Object[] parameters,
+                WebViewCallback callback)",N/A,static void
+com.unity3d.services.core.webview.bridge.WebViewBridge,N/A,setClassTable(java.lang.Class[] apiClassList),N/A,static void
+com.unity3d.services.core.webview.bridge.WebViewBridgeError,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static WebViewBridgeError
+com.unity3d.services.core.webview.bridge.WebViewBridgeError,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static WebViewBridgeError[]
+com.unity3d.services.core.webview.bridge.WebViewBridgeInterface,N/A,"handleCallback(java.lang.String callbackId,
+              java.lang.String callbackStatus,
+              java.lang.String rawParameters)",N/A,void
+com.unity3d.services.core.webview.bridge.WebViewBridgeInterface,N/A,handleInvocation(java.lang.String data),N/A,void
+com.unity3d.services.core.webview.bridge.WebViewCallback,N/A,describeContents(),N/A,int
+com.unity3d.services.core.webview.bridge.WebViewCallback,N/A,"error(java.lang.Enum error,
+     java.lang.Object... params)",N/A,void
+com.unity3d.services.core.webview.bridge.WebViewCallback,N/A,getCallbackId(),N/A,java.lang.String
+com.unity3d.services.core.webview.bridge.WebViewCallback,N/A,getInvocationId(),N/A,int
+com.unity3d.services.core.webview.bridge.WebViewCallback,N/A,invoke(java.lang.Object... params),N/A,void
+com.unity3d.services.core.webview.bridge.WebViewCallback,N/A,"writeToParcel(android.os.Parcel dest,
+             int flags)",N/A,void
+com.unity3d.services.core.webview.WebViewEventCategory,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static WebViewEventCategory
+com.unity3d.services.core.webview.WebViewEventCategory,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static WebViewEventCategory[]
+com.unity3d.services.monetization.core.webview.WebViewEventCategory,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static WebViewEventCategory
+com.unity3d.services.monetization.core.webview.WebViewEventCategory,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static WebViewEventCategory[]
+com.unity3d.services.purchasing.core.webview.WebViewEventCategory,Returns the enum constant of this type with the specified name.,valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static WebViewEventCategory
+com.unity3d.services.purchasing.core.webview.WebViewEventCategory,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static WebViewEventCategory[]
+com.unity3d.services.core.webview.bridge.WebViewExposed,N/A,N/A,N/A,N/A
+com.unity3d.services.ads.adunit.WebViewHandler,N/A,create(AdUnitActivity activity),N/A,boolean
+com.unity3d.services.ads.adunit.WebViewHandler,N/A,destroy(),N/A,boolean
+com.unity3d.services.ads.adunit.WebViewHandler,N/A,getView(),N/A,android.view.View
+com.unity3d.services.ads.adunit.WebViewHandler,N/A,"onCreate(AdUnitActivity activity,
+        android.os.Bundle savedInstanceState)",N/A,void
+com.unity3d.services.ads.adunit.WebViewHandler,N/A,onDestroy(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.WebViewHandler,N/A,onPause(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.WebViewHandler,N/A,onResume(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.WebViewHandler,N/A,onStart(AdUnitActivity activity),N/A,void
+com.unity3d.services.ads.adunit.WebViewHandler,N/A,onStop(AdUnitActivity activity),N/A,void

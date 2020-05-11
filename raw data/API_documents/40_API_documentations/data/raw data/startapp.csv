@@ -1,0 +1,6 @@
+class_name,class_description,method,method_description,data_type
+com.startapp.startAppSDK,,"StartAppSDK.setUserConsent (this, ""pas"", System.currentTimeMillis(), true);",Use this method in case the user has consented:,
+com.startapp.startAppSDK,,"StartAppSDK.init(this, ""StartApp App ID"", false);","Return ads are enabled and activated by default. If you want to disable this feature, simply pass ""false"" as the 3th parameter of the StartAppSDK.init method:",
+com.startapp.startAppSDK,,StartAppAd.showAd(this),Use the showAd()  method to show an Interstitial Ad at a specific location inside your app,
+com.startapp.startAppSDK,, StartAppAd.enableAutoInterstitial(),You can gain more control over the frequency of Autostitial Ads using two methods: time frequency and activity frequency.,
+com.startapp.startAppSDK,,startAppAd.loadAd(AdMode.REWARDED_VIDEO);,"In order to show a Rewarded Ad, pass the following AdMode parameter when calling the loadAd() method:",

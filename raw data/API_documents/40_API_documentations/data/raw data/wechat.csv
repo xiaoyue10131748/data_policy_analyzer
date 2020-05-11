@@ -1,0 +1,1516 @@
+class_name,class_description,method,method_description,data_type
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage,"batch add card to weixin
+批量添加卡券至微信",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Req,"card list, less than 40
+ 要添加的卡券列表，不能超过40个
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Req,"card list, less than 40
+ 要添加的卡券列表，不能超过40个
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Req,"card list, less than 40
+ 要添加的卡券列表，不能超过40个
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.AddCardToWXCardPackage.WXCardItem,"carExtMsg, should less than 1024 bytes
+ 卡券额外的信息，不能超过1024字节
+",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbase.BaseReq,"Base class of OpenAPI requests
+OpenAPI请求基类",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",abstract boolean
+com.tencent.mm.opensdk.modelbase.BaseReq,"Base class of OpenAPI requests
+OpenAPI请求基类",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelbase.BaseReq,"Base class of OpenAPI requests
+OpenAPI请求基类",getType(),"Return type ID of the current request.
+",abstract int
+com.tencent.mm.opensdk.modelbase.BaseReq,"Base class of OpenAPI requests
+OpenAPI请求基类",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbase.BaseResp,"Base class of OpenAPI responses
+OpenAPI响应基类",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",abstract boolean
+com.tencent.mm.opensdk.modelbase.BaseResp,"Base class of OpenAPI responses
+OpenAPI响应基类",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbase.BaseResp,"Base class of OpenAPI responses
+OpenAPI响应基类",getType(),"Return type ID of the current response.
+",abstract int
+com.tencent.mm.opensdk.modelbase.BaseResp,"Base class of OpenAPI responses
+OpenAPI响应基类",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbase.BaseResp.ErrCode,"Error code for OpenAPI responses
+OpenAPI响应错误代码",N/A,N/A,N/A
+com.tencent.mm.opensdk.constants.Build,"sdk build info
+sdk版本信息",getMajorVersion(),N/A,static int
+com.tencent.mm.opensdk.constants.Build,"sdk build info
+sdk版本信息",getMinorVersion(),N/A,static int
+com.tencent.mm.opensdk.modelbiz.ChooseCardFromWXCardPackage,"jiandonglin
+ for select card or coupon",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.ChooseCardFromWXCardPackage.Req,"App ID that the merchant applied for on WeChat Developer Platform
+ 商户在微信开放平台申请的应用id
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.ChooseCardFromWXCardPackage.Req,"App ID that the merchant applied for on WeChat Developer Platform
+ 商户在微信开放平台申请的应用id
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.ChooseCardFromWXCardPackage.Req,"App ID that the merchant applied for on WeChat Developer Platform
+ 商户在微信开放平台申请的应用id
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.ChooseCardFromWXCardPackage.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.ChooseCardFromWXCardPackage.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.ChooseCardFromWXCardPackage.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.ChooseCardFromWXCardPackage.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.constants.ConstantsAPI,"WeChatOpenAPI Constants
+微信OpenAPI常量定义",N/A,N/A,N/A
+com.tencent.mm.opensdk.constants.ConstantsAPI.AppSupportContentFlag,N/A,N/A,N/A,N/A
+com.tencent.mm.opensdk.constants.ConstantsAPI.OpenWebviewType,N/A,N/A,N/A,N/A
+com.tencent.mm.opensdk.constants.ConstantsAPI.Token,N/A,N/A,N/A,N/A
+com.tencent.mm.opensdk.constants.ConstantsAPI.WXApp,N/A,N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.CreateChatroom,"Create group chatting room
+创建群聊",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.CreateChatroom.Req,"Group chatting room name
+ 群聊名称
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.CreateChatroom.Req,"Group chatting room name
+ 群聊名称
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.CreateChatroom.Req,"Group chatting room name
+ 群聊名称
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.CreateChatroom.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.CreateChatroom.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.CreateChatroom.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.CreateChatroom.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.diffdev.DiffDevOAuthFactory,IDiffDevOAuth工厂类,getDiffDevOAuth(),获取IDiffDevOAuth默认的实现,static IDiffDevOAuth
+com.tencent.mm.opensdk.diffdev.DiffDevOAuthFactory,IDiffDevOAuth工厂类,getDiffDevOAuth(int version),获取IDiffDevOAuth指定版本的实现,static IDiffDevOAuth
+com.tencent.mm.opensdk.modelmsg.GetMessageFromWX,"
+ WeChat sends requests to applications. The application receives the request and call IWXAPI::sendResp() to return the result.
+ 
+
+ 微信发出的向第三方应用请求app message，第三方应用收到后应调用IWXAPI::sendResp()返回处理结果
+ ",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelmsg.GetMessageFromWX.Req,"Request class of GetMessageFromWX, extend from BaseReq
+GetMessageFromWX请求类，继承自BaseReq",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.GetMessageFromWX.Req,"Request class of GetMessageFromWX, extend from BaseReq
+GetMessageFromWX请求类，继承自BaseReq",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelmsg.GetMessageFromWX.Req,"Request class of GetMessageFromWX, extend from BaseReq
+GetMessageFromWX请求类，继承自BaseReq",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelmsg.GetMessageFromWX.Req,"Request class of GetMessageFromWX, extend from BaseReq
+GetMessageFromWX请求类，继承自BaseReq",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelmsg.GetMessageFromWX.Resp,"Response class of GetMessageFromWX, extend from BaseResp
+GetMessageFromWX响应类，继承自BaseResp",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.GetMessageFromWX.Resp,"Response class of GetMessageFromWX, extend from BaseResp
+GetMessageFromWX响应类，继承自BaseResp",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelmsg.GetMessageFromWX.Resp,"Response class of GetMessageFromWX, extend from BaseResp
+GetMessageFromWX响应类，继承自BaseResp",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelmsg.GetMessageFromWX.Resp,"Response class of GetMessageFromWX, extend from BaseResp
+GetMessageFromWX响应类，继承自BaseResp",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.HandleScanResult,N/A,N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.HandleScanResult.Req,"The data of the scan (QRCode) 扫描出的(二维码)数据
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.HandleScanResult.Req,"The data of the scan (QRCode) 扫描出的(二维码)数据
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.HandleScanResult.Req,"The data of the scan (QRCode) 扫描出的(二维码)数据
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.HandleScanResult.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.HandleScanResult.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.HandleScanResult.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.HandleScanResult.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.diffdev.IDiffDevOAuth,添加OAuth过程结果回调,addListener(OAuthListener l),添加OAuth过程结果回调,void
+com.tencent.mm.opensdk.diffdev.IDiffDevOAuth,添加OAuth过程结果回调,"auth(java.lang.String appId,
+    java.lang.String scope,
+    java.lang.String noncestr,
+    java.lang.String timestamp,
+    java.lang.String signature,
+    OAuthListener listener)","发起OAuth
+ 
+需要保证在主线程调用",boolean
+com.tencent.mm.opensdk.diffdev.IDiffDevOAuth,添加OAuth过程结果回调,detach(),释放资源,void
+com.tencent.mm.opensdk.diffdev.IDiffDevOAuth,添加OAuth过程结果回调,removeAllListeners(),移除所有OAuth过程结果回调,void
+com.tencent.mm.opensdk.diffdev.IDiffDevOAuth,添加OAuth过程结果回调,removeListener(OAuthListener l),移除OAuth过程结果回调,void
+com.tencent.mm.opensdk.diffdev.IDiffDevOAuth,添加OAuth过程结果回调,stopAuth(),停止当前OAuth,boolean
+com.tencent.mm.opensdk.openapi.IWXAPI,"
+ WeChat OpenAPI access interface
+ 
+ Entry of OpenAPI functions; creates instances via WXAPIFactory
+
+ 微信OpenAPI访问入口
+ 
+ OpenAPI功能入口，使用时通过WXAPIFactory创建实例
+",detach(),N/A,void
+com.tencent.mm.opensdk.openapi.IWXAPI,"
+ WeChat OpenAPI access interface
+ 
+ Entry of OpenAPI functions; creates instances via WXAPIFactory
+
+ 微信OpenAPI访问入口
+ 
+ OpenAPI功能入口，使用时通过WXAPIFactory创建实例
+",getWXAppSupportAPI(),get api level from installed wechat app,int
+com.tencent.mm.opensdk.openapi.IWXAPI,"
+ WeChat OpenAPI access interface
+ 
+ Entry of OpenAPI functions; creates instances via WXAPIFactory
+
+ 微信OpenAPI访问入口
+ 
+ OpenAPI功能入口，使用时通过WXAPIFactory创建实例
+","handleIntent(android.content.Intent data,
+            IWXAPIEventHandler handler)","Call handleIntent(Intent, IWXAPIEventHandler) in BroadcastReceiver.
+",boolean
+com.tencent.mm.opensdk.openapi.IWXAPI,"
+ WeChat OpenAPI access interface
+ 
+ Entry of OpenAPI functions; creates instances via WXAPIFactory
+
+ 微信OpenAPI访问入口
+ 
+ OpenAPI功能入口，使用时通过WXAPIFactory创建实例
+",isWXAppInstalled(),check wechat app installation status,boolean
+com.tencent.mm.opensdk.openapi.IWXAPI,"
+ WeChat OpenAPI access interface
+ 
+ Entry of OpenAPI functions; creates instances via WXAPIFactory
+
+ 微信OpenAPI访问入口
+ 
+ OpenAPI功能入口，使用时通过WXAPIFactory创建实例
+",openWXApp(),launch wechat app,boolean
+com.tencent.mm.opensdk.openapi.IWXAPI,"
+ WeChat OpenAPI access interface
+ 
+ Entry of OpenAPI functions; creates instances via WXAPIFactory
+
+ 微信OpenAPI访问入口
+ 
+ OpenAPI功能入口，使用时通过WXAPIFactory创建实例
+",registerApp(java.lang.String appId),"Register WeChat app.
+",boolean
+com.tencent.mm.opensdk.openapi.IWXAPI,"
+ WeChat OpenAPI access interface
+ 
+ Entry of OpenAPI functions; creates instances via WXAPIFactory
+
+ 微信OpenAPI访问入口
+ 
+ OpenAPI功能入口，使用时通过WXAPIFactory创建实例
+","registerApp(java.lang.String appId,
+           long appSupportContentType)","Register WeChat app.
+",boolean
+com.tencent.mm.opensdk.openapi.IWXAPI,"
+ WeChat OpenAPI access interface
+ 
+ Entry of OpenAPI functions; creates instances via WXAPIFactory
+
+ 微信OpenAPI访问入口
+ 
+ OpenAPI功能入口，使用时通过WXAPIFactory创建实例
+",sendReq(BaseReq req),send request to wechat app,boolean
+com.tencent.mm.opensdk.openapi.IWXAPI,"
+ WeChat OpenAPI access interface
+ 
+ Entry of OpenAPI functions; creates instances via WXAPIFactory
+
+ 微信OpenAPI访问入口
+ 
+ OpenAPI功能入口，使用时通过WXAPIFactory创建实例
+",sendResp(BaseResp resp),"send response to wechat app, make sure that the response have same transaction with request",boolean
+com.tencent.mm.opensdk.openapi.IWXAPI,"
+ WeChat OpenAPI access interface
+ 
+ Entry of OpenAPI functions; creates instances via WXAPIFactory
+
+ 微信OpenAPI访问入口
+ 
+ OpenAPI功能入口，使用时通过WXAPIFactory创建实例
+",setLogImpl(ILog log),N/A,void
+com.tencent.mm.opensdk.openapi.IWXAPI,"
+ WeChat OpenAPI access interface
+ 
+ Entry of OpenAPI functions; creates instances via WXAPIFactory
+
+ 微信OpenAPI访问入口
+ 
+ OpenAPI功能入口，使用时通过WXAPIFactory创建实例
+",unregisterApp(),"Un-register WeChat app.
+",void
+com.tencent.mm.opensdk.openapi.IWXAPIEventHandler,"Interface used to receive requests and responses
+用于接收请求、响应的接口",onReq(BaseReq req),"This method is called when a request is built from bundle.
+",void
+com.tencent.mm.opensdk.openapi.IWXAPIEventHandler,"Interface used to receive requests and responses
+用于接收请求、响应的接口",onResp(BaseResp resp),"This method is called when a response is built from bundle.
+",void
+com.tencent.mm.opensdk.modelbiz.JoinChatroom,"Join group chatting room
+加入群聊",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.JoinChatroom.Req,"Current user's nickname in group chatting room
+ 当前用户在群聊中的昵称
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.JoinChatroom.Req,"Current user's nickname in group chatting room
+ 当前用户在群聊中的昵称
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.JoinChatroom.Req,"Current user's nickname in group chatting room
+ 当前用户在群聊中的昵称
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.JoinChatroom.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.JoinChatroom.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.JoinChatroom.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.JoinChatroom.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.JumpToBizProfile,"Third App jump to wechat brand account, if user has followed the account, jump to chatting view, otherwise jump to the account profile
+第三方APP跳转微信公众号，如果已关注该公众号，则跳至会话界面，否则跳转公众号主页",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.JumpToBizProfile.Req,"The extra info message, The length should be within 1KB
+ 携带的额外信息，长度不能超度1kb
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.JumpToBizProfile.Req,"The extra info message, The length should be within 1KB
+ 携带的额外信息，长度不能超度1kb
+",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelbiz.JumpToBizProfile.Req,"The extra info message, The length should be within 1KB
+ 携带的额外信息，长度不能超度1kb
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.JumpToBizProfile.Req,"The extra info message, The length should be within 1KB
+ 携带的额外信息，长度不能超度1kb
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.JumpToBizTempSession,"Third App jump to wechat biz temp session
+第三方APP跳转微信公众号临时会话",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.JumpToBizTempSession.Req,"The extra info message, The length should be within 1KB
+ 携带的额外信息，长度不能超度1kb
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.JumpToBizTempSession.Req,"The extra info message, The length should be within 1KB
+ 携带的额外信息，长度不能超度1kb
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.JumpToBizTempSession.Req,"The extra info message, The length should be within 1KB
+ 携带的额外信息，长度不能超度1kb
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.JumpToBizWebview,"Third App jump to wechat webview
+第三方APP跳转微信webview",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.JumpToBizWebview.Req,"The extra info message, The length should be within 1KB
+ 携带的额外信息，长度不能超度1kb
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.JumpToBizWebview.Req,"The extra info message, The length should be within 1KB
+ 携带的额外信息，长度不能超度1kb
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.JumpToBizWebview.Req,"The extra info message, The length should be within 1KB
+ 携带的额外信息，长度不能超度1kb
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelpay.JumpToOfflinePay,"Third App jump to wechat offline pay
+第三方APP跳转微信离线支付页面",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelpay.JumpToOfflinePay.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelpay.JumpToOfflinePay.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelpay.JumpToOfflinePay.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelpay.JumpToOfflinePay.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelpay.JumpToOfflinePay.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelpay.JumpToOfflinePay.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelpay.JumpToOfflinePay.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelpay.JumpToOfflinePay.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelmsg.LaunchFromWX,"
+ WeChat launches application.
+ 
+
+ 微信拉起第三方应用
+ ",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelmsg.LaunchFromWX.Req,"Build an empty request 构造空请求
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.LaunchFromWX.Req,"Build an empty request 构造空请求
+",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelmsg.LaunchFromWX.Req,"Build an empty request 构造空请求
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelmsg.LaunchFromWX.Req,"Build an empty request 构造空请求
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelmsg.LaunchFromWX.Resp,"Response class of ShowMessageFromWX, inherited from
+ BaseResp ShowMessageFromWX响应类，继承自BaseResp",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.LaunchFromWX.Resp,"Response class of ShowMessageFromWX, inherited from
+ BaseResp ShowMessageFromWX响应类，继承自BaseResp",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.diffdev.OAuthErrCode,OAuth返回码,getCode(),N/A,int
+com.tencent.mm.opensdk.diffdev.OAuthErrCode,OAuth返回码,toString(),N/A,java.lang.String
+com.tencent.mm.opensdk.diffdev.OAuthErrCode,OAuth返回码,valueOf(java.lang.String name),返回带有指定名称的该类型的枚举常量。,static OAuthErrCode
+com.tencent.mm.opensdk.diffdev.OAuthErrCode,OAuth返回码,values(),"按照声明该枚举类型的常量的顺序, 返回
+包含这些常量的数组。",static OAuthErrCode[]
+com.tencent.mm.opensdk.diffdev.OAuthListener,"OAuth过程结果回调
+ 
+ 
+回调函数均在主线程执行","onAuthFinish(OAuthErrCode errCode,
+            java.lang.String authCode)",N/A,void
+com.tencent.mm.opensdk.diffdev.OAuthListener,"OAuth过程结果回调
+ 
+ 
+回调函数均在主线程执行","onAuthGotQrcode(java.lang.String qrcodeImgPath,
+               byte[] imgBuf)",N/A,void
+com.tencent.mm.opensdk.diffdev.OAuthListener,"OAuth过程结果回调
+ 
+ 
+回调函数均在主线程执行",onQrcodeScanned(),N/A,void
+com.tencent.mm.opensdk.modelbiz.OpenBusiLuckyMoney,N/A,N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.OpenBusiLuckyMoney.Req,"App ID that the merchant applied for on WeChat Developer Platform
+ 商户在微信开放平台申请的应用id
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.OpenBusiLuckyMoney.Req,"App ID that the merchant applied for on WeChat Developer Platform
+ 商户在微信开放平台申请的应用id
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.OpenBusiLuckyMoney.Req,"App ID that the merchant applied for on WeChat Developer Platform
+ 商户在微信开放平台申请的应用id
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.OpenRankList,"Third App jump to wechat sport rank list
+第三方APP跳转微信运动排行榜",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.OpenRankList.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.OpenRankList.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.OpenWebview,Third App jump to wechat webview 第三方APP跳转微信webview,N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.OpenWebview.Req,"The url you want jump to 要跳转的链接地址
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.OpenWebview.Req,"The url you want jump to 要跳转的链接地址
+",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelbiz.OpenWebview.Req,"The url you want jump to 要跳转的链接地址
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.OpenWebview.Req,"The url you want jump to 要跳转的链接地址
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.OpenWebview.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.OpenWebview.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.OpenWebview.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.OpenWebview.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelpay.PayReq,"App ID that the merchant applied for on WeChat Developer Platform
+ 商户在微信开放平台申请的应用id
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelpay.PayReq,"App ID that the merchant applied for on WeChat Developer Platform
+ 商户在微信开放平台申请的应用id
+",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelpay.PayReq,"App ID that the merchant applied for on WeChat Developer Platform
+ 商户在微信开放平台申请的应用id
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelpay.PayReq,"App ID that the merchant applied for on WeChat Developer Platform
+ 商户在微信开放平台申请的应用id
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelpay.PayReq.Options,N/A,fromBundle(android.os.Bundle data),N/A,void
+com.tencent.mm.opensdk.modelpay.PayReq.Options,N/A,toBundle(android.os.Bundle data),N/A,void
+com.tencent.mm.opensdk.modelpay.PayResp,"
+ Custom string defined by the third-party app.
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelpay.PayResp,"
+ Custom string defined by the third-party app.
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelpay.PayResp,"
+ Custom string defined by the third-party app.
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelpay.PayResp,"
+ Custom string defined by the third-party app.
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelmsg.SendAuth,"
+ WeChat OAuth authentication; authorizes applications via WeChat client
+ 
+
+ 微信OAuth验证功能，通过微信客户端对第三方请求的权限进行授权
+ ",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelmsg.SendAuth.Req,"Request class of SendAuth, extend from BaseReq
+SendAuth请求类，继承自BaseReq",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.SendAuth.Req,"Request class of SendAuth, extend from BaseReq
+SendAuth请求类，继承自BaseReq",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelmsg.SendAuth.Req,"Request class of SendAuth, extend from BaseReq
+SendAuth请求类，继承自BaseReq",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelmsg.SendAuth.Req,"Request class of SendAuth, extend from BaseReq
+SendAuth请求类，继承自BaseReq",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelmsg.SendAuth.Resp,"Response class of SendAuth, extend from BaseResp
+SendAuth响应类，继承自BaseResp",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.SendAuth.Resp,"Response class of SendAuth, extend from BaseResp
+SendAuth响应类，继承自BaseResp",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelmsg.SendAuth.Resp,"Response class of SendAuth, extend from BaseResp
+SendAuth响应类，继承自BaseResp",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelmsg.SendAuth.Resp,"Response class of SendAuth, extend from BaseResp
+SendAuth响应类，继承自BaseResp",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelmsg.SendMessageToWX,"Message sharing request started by applications
+第三方应用主动向微信发起的消息分享请求",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelmsg.SendMessageToWX.Req,"Request class of SendMessageToWX, extend from BaseReq
+SendMessageToWX请求类，继承自BaseReq",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.SendMessageToWX.Req,"Request class of SendMessageToWX, extend from BaseReq
+SendMessageToWX请求类，继承自BaseReq",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelmsg.SendMessageToWX.Req,"Request class of SendMessageToWX, extend from BaseReq
+SendMessageToWX请求类，继承自BaseReq",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelmsg.SendMessageToWX.Req,"Request class of SendMessageToWX, extend from BaseReq
+SendMessageToWX请求类，继承自BaseReq",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelmsg.SendMessageToWX.Resp,"Response class of SendMessageToWX, extend from BaseResp
+SendMessageToWX响应类，继承自BaseResp",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.SendMessageToWX.Resp,"Response class of SendMessageToWX, extend from BaseResp
+SendMessageToWX响应类，继承自BaseResp",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelmsg.SendMessageToWX.Resp,"Response class of SendMessageToWX, extend from BaseResp
+SendMessageToWX响应类，继承自BaseResp",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelmsg.SendMessageToWX.Resp,"Response class of SendMessageToWX, extend from BaseResp
+SendMessageToWX响应类，继承自BaseResp",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelmsg.ShowMessageFromWX,"Message displaying request that WeChat sends to applications
+微信向第三方应用发起的消息展示请求",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelmsg.ShowMessageFromWX.Req,"Request class of ShowMessageFromWX, inherited from BaseReq
+ShowMessageFromWX请求类，继承自BaseReq",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.ShowMessageFromWX.Req,"Request class of ShowMessageFromWX, inherited from BaseReq
+ShowMessageFromWX请求类，继承自BaseReq",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelmsg.ShowMessageFromWX.Req,"Request class of ShowMessageFromWX, inherited from BaseReq
+ShowMessageFromWX请求类，继承自BaseReq",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelmsg.ShowMessageFromWX.Req,"Request class of ShowMessageFromWX, inherited from BaseReq
+ShowMessageFromWX请求类，继承自BaseReq",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelmsg.ShowMessageFromWX.Resp,"Response class of ShowMessageFromWX, inherited from BaseResp
+ShowMessageFromWX响应类，继承自BaseResp",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.ShowMessageFromWX.Resp,"Response class of ShowMessageFromWX, inherited from BaseResp
+ShowMessageFromWX响应类，继承自BaseResp",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.SubscribeMessage,"
+ 订阅微信消息功能，通过微信客户端对第三方请求的权限进行授权
+ ",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.SubscribeMessage.Req,"Request class of SubscribeMessage, extend from BaseReq
+SubscribeMessage请求类，继承自BaseReq",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.SubscribeMessage.Req,"Request class of SubscribeMessage, extend from BaseReq
+SubscribeMessage请求类，继承自BaseReq",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelbiz.SubscribeMessage.Req,"Request class of SubscribeMessage, extend from BaseReq
+SubscribeMessage请求类，继承自BaseReq",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.SubscribeMessage.Req,"Request class of SubscribeMessage, extend from BaseReq
+SubscribeMessage请求类，继承自BaseReq",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.SubscribeMessage.Resp,"Response class of SubscribeMessage, extend from BaseResp
+SubscribeMessage响应类，继承自BaseResp",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.SubscribeMessage.Resp,"Response class of SubscribeMessage, extend from BaseResp
+SubscribeMessage响应类，继承自BaseResp",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.SubscribeMessage.Resp,"Response class of SubscribeMessage, extend from BaseResp
+SubscribeMessage响应类，继承自BaseResp",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.SubscribeMessage.Resp,"Response class of SubscribeMessage, extend from BaseResp
+SubscribeMessage响应类，继承自BaseResp",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.SubscribeMiniProgramMsg,"
+ 订阅微信小程序消息功能，通过微信客户端对第三方请求的权限进行授权
+ ",N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.SubscribeMiniProgramMsg.Req,"Request class of SubscribeMessage, extend from BaseReq
+SubscribeMessage请求类，继承自BaseReq",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.SubscribeMiniProgramMsg.Req,"Request class of SubscribeMessage, extend from BaseReq
+SubscribeMessage请求类，继承自BaseReq",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelbiz.SubscribeMiniProgramMsg.Req,"Request class of SubscribeMessage, extend from BaseReq
+SubscribeMessage请求类，继承自BaseReq",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.SubscribeMiniProgramMsg.Req,"Request class of SubscribeMessage, extend from BaseReq
+SubscribeMessage请求类，继承自BaseReq",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.SubscribeMiniProgramMsg.Resp,"Response class of SubscribeMessage, extend from BaseResp
+SubscribeMessage响应类，继承自BaseResp",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.SubscribeMiniProgramMsg.Resp,"Response class of SubscribeMessage, extend from BaseResp
+SubscribeMessage响应类，继承自BaseResp",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.SubscribeMiniProgramMsg.Resp,"Response class of SubscribeMessage, extend from BaseResp
+SubscribeMessage响应类，继承自BaseResp",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.SubscribeMiniProgramMsg.Resp,"Response class of SubscribeMessage, extend from BaseResp
+SubscribeMessage响应类，继承自BaseResp",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.openapi.WXAPIFactory,IWXAPI 有状态信息appId，每次调用时都实例化一个新对象,"createWXAPI(android.content.Context context,
+           java.lang.String appId)","实例化一个IWXAPI接口的实现
+",static IWXAPI
+com.tencent.mm.opensdk.openapi.WXAPIFactory,IWXAPI 有状态信息appId，每次调用时都实例化一个新对象,"createWXAPI(android.content.Context context,
+           java.lang.String appId,
+           boolean checkSignature)","实例化一个IWXAPI接口的实现
+",static IWXAPI
+com.tencent.mm.opensdk.modelmsg.WXAppExtendObject,"Derived class of WXMediaMessage.IMediaObject; used to describe a application object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个第三方应用对象
+
+ Used as the unique identifier of applications; returned by WeChat after authentication. See SendAuth.Req
+NOTE: extInfo, filePath and fileData can not be null at that same time.
+
+filePath and fileData are not used at the same time.
+
+ 外部应用本身用来标识其请求的唯一性，验证完成后，将由微信终端回传，参考SendAuth.Req
+
+注意：extInfo, filePath和fileData不能同时为空
+
+filePath和fileData不会同时被使用 ",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXAppExtendObject,"Derived class of WXMediaMessage.IMediaObject; used to describe a application object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个第三方应用对象
+
+ Used as the unique identifier of applications; returned by WeChat after authentication. See SendAuth.Req
+NOTE: extInfo, filePath and fileData can not be null at that same time.
+
+filePath and fileData are not used at the same time.
+
+ 外部应用本身用来标识其请求的唯一性，验证完成后，将由微信终端回传，参考SendAuth.Req
+
+注意：extInfo, filePath和fileData不能同时为空
+
+filePath和fileData不会同时被使用 ",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXAppExtendObject,"Derived class of WXMediaMessage.IMediaObject; used to describe a application object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个第三方应用对象
+
+ Used as the unique identifier of applications; returned by WeChat after authentication. See SendAuth.Req
+NOTE: extInfo, filePath and fileData can not be null at that same time.
+
+filePath and fileData are not used at the same time.
+
+ 外部应用本身用来标识其请求的唯一性，验证完成后，将由微信终端回传，参考SendAuth.Req
+
+注意：extInfo, filePath和fileData不能同时为空
+
+filePath和fileData不会同时被使用 ",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXAppExtendObject,"Derived class of WXMediaMessage.IMediaObject; used to describe a application object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个第三方应用对象
+
+ Used as the unique identifier of applications; returned by WeChat after authentication. See SendAuth.Req
+NOTE: extInfo, filePath and fileData can not be null at that same time.
+
+filePath and fileData are not used at the same time.
+
+ 外部应用本身用来标识其请求的唯一性，验证完成后，将由微信终端回传，参考SendAuth.Req
+
+注意：extInfo, filePath和fileData不能同时为空
+
+filePath和fileData不会同时被使用 ",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXAppLaunchData,N/A,N/A,N/A,N/A
+com.tencent.mm.opensdk.modelmsg.WXAppLaunchData.Builder,N/A,fromBundle(android.os.Bundle data),N/A,static WXAppLaunchData
+com.tencent.mm.opensdk.modelmsg.WXAppLaunchData.Builder,N/A,toBundle(WXAppLaunchData obj),N/A,static android.os.Bundle
+com.tencent.mm.opensdk.modelmsg.WXDesignerSharedObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a emoji shared object.
+WXMediaMessage.IMediaObject的派生类，用于描述一套表情设计师对象",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXDesignerSharedObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a emoji shared object.
+WXMediaMessage.IMediaObject的派生类，用于描述一套表情设计师对象",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXDesignerSharedObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a emoji shared object.
+WXMediaMessage.IMediaObject的派生类，用于描述一套表情设计师对象",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXDesignerSharedObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a emoji shared object.
+WXMediaMessage.IMediaObject的派生类，用于描述一套表情设计师对象",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXDynamicVideoMiniProgramObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a miniprogram object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个小程序对象",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXDynamicVideoMiniProgramObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a miniprogram object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个小程序对象",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXDynamicVideoMiniProgramObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a miniprogram object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个小程序对象",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXDynamicVideoMiniProgramObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a miniprogram object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个小程序对象",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXEmojiObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an emoji object
+ 
+NOTE: emojiData and emojiPath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个表情对象
+ 
+注意：emojiData和emojiPath不能同时为空",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXEmojiObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an emoji object
+ 
+NOTE: emojiData and emojiPath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个表情对象
+ 
+注意：emojiData和emojiPath不能同时为空",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXEmojiObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an emoji object
+ 
+NOTE: emojiData and emojiPath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个表情对象
+ 
+注意：emojiData和emojiPath不能同时为空",setEmojiData(byte[] emojiData),N/A,void
+com.tencent.mm.opensdk.modelmsg.WXEmojiObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an emoji object
+ 
+NOTE: emojiData and emojiPath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个表情对象
+ 
+注意：emojiData和emojiPath不能同时为空",setEmojiPath(java.lang.String emojiPath),N/A,void
+com.tencent.mm.opensdk.modelmsg.WXEmojiObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an emoji object
+ 
+NOTE: emojiData and emojiPath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个表情对象
+ 
+注意：emojiData和emojiPath不能同时为空",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXEmojiObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an emoji object
+ 
+NOTE: emojiData and emojiPath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个表情对象
+ 
+注意：emojiData和emojiPath不能同时为空",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXEmojiPageSharedObject,"用于分享表情列表，表情单品等
+ 
+ Created by cpan on 16/3/25.",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXEmojiPageSharedObject,"用于分享表情列表，表情单品等
+ 
+ Created by cpan on 16/3/25.",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXEmojiPageSharedObject,"用于分享表情列表，表情单品等
+ 
+ Created by cpan on 16/3/25.",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXEmojiPageSharedObject,"用于分享表情列表，表情单品等
+ 
+ Created by cpan on 16/3/25.",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXEmojiSharedObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a emoji shared object.
+WXMediaMessage.IMediaObject的派生类，用于描述一套表情对象",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXEmojiSharedObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a emoji shared object.
+WXMediaMessage.IMediaObject的派生类，用于描述一套表情对象",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXEmojiSharedObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a emoji shared object.
+WXMediaMessage.IMediaObject的派生类，用于描述一套表情对象",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXEmojiSharedObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a emoji shared object.
+WXMediaMessage.IMediaObject的派生类，用于描述一套表情对象",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXEnterpriseCardObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a business card object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个名片对象
+ 
+注意：cardInfo不能为空",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXEnterpriseCardObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a business card object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个名片对象
+ 
+注意：cardInfo不能为空",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXEnterpriseCardObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a business card object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个名片对象
+ 
+注意：cardInfo不能为空",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXEnterpriseCardObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a business card object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个名片对象
+ 
+注意：cardInfo不能为空",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a file object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个文件对象
+ 
+注意：fileData和filePath不能同时为空",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a file object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个文件对象
+ 
+注意：fileData和filePath不能同时为空",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a file object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个文件对象
+ 
+注意：fileData和filePath不能同时为空",setContentLengthLimit(int limit),N/A,void
+com.tencent.mm.opensdk.modelmsg.WXFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a file object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个文件对象
+ 
+注意：fileData和filePath不能同时为空",setFileData(byte[] fileData),N/A,void
+com.tencent.mm.opensdk.modelmsg.WXFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a file object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个文件对象
+ 
+注意：fileData和filePath不能同时为空",setFilePath(java.lang.String filePath),N/A,void
+com.tencent.mm.opensdk.modelmsg.WXFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a file object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个文件对象
+ 
+注意：fileData和filePath不能同时为空",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a file object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个文件对象
+ 
+注意：fileData和filePath不能同时为空",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXGameVideoFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a video file object
+WXMediaMessage.IMediaObject的派生类，用于描述一个视频文件对象
+
+注意：目前只支持分享到朋友圈。且该类型只供内部使用",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXGameVideoFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a video file object
+WXMediaMessage.IMediaObject的派生类，用于描述一个视频文件对象
+
+注意：目前只支持分享到朋友圈。且该类型只供内部使用",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXGameVideoFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a video file object
+WXMediaMessage.IMediaObject的派生类，用于描述一个视频文件对象
+
+注意：目前只支持分享到朋友圈。且该类型只供内部使用",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXGameVideoFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a video file object
+WXMediaMessage.IMediaObject的派生类，用于描述一个视频文件对象
+
+注意：目前只支持分享到朋友圈。且该类型只供内部使用",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXImageObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an image object
+ 
+NOTE: imageData and imagePath can not be null at the same time.
+
+imageData and imagePath will not be used at the same time.
+
+WXMediaMessage.IMediaObject的派生类，用于描述一个图片对象
+ 
+注意：imageData和imagePath不能同时为空
+
+imageData和imagePath不会同时被使用
+",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXImageObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an image object
+ 
+NOTE: imageData and imagePath can not be null at the same time.
+
+imageData and imagePath will not be used at the same time.
+
+WXMediaMessage.IMediaObject的派生类，用于描述一个图片对象
+ 
+注意：imageData和imagePath不能同时为空
+
+imageData和imagePath不会同时被使用
+",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXImageObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an image object
+ 
+NOTE: imageData and imagePath can not be null at the same time.
+
+imageData and imagePath will not be used at the same time.
+
+WXMediaMessage.IMediaObject的派生类，用于描述一个图片对象
+ 
+注意：imageData和imagePath不能同时为空
+
+imageData和imagePath不会同时被使用
+",setImagePath(java.lang.String imagePath),N/A,void
+com.tencent.mm.opensdk.modelmsg.WXImageObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an image object
+ 
+NOTE: imageData and imagePath can not be null at the same time.
+
+imageData and imagePath will not be used at the same time.
+
+WXMediaMessage.IMediaObject的派生类，用于描述一个图片对象
+ 
+注意：imageData和imagePath不能同时为空
+
+imageData和imagePath不会同时被使用
+",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXImageObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an image object
+ 
+NOTE: imageData and imagePath can not be null at the same time.
+
+imageData and imagePath will not be used at the same time.
+
+WXMediaMessage.IMediaObject的派生类，用于描述一个图片对象
+ 
+注意：imageData和imagePath不能同时为空
+
+imageData和imagePath不会同时被使用
+",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelbiz.WXInvoiceAuthInsert,Created by pandyduan on 2017/10/23.,N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.WXInvoiceAuthInsert.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.WXInvoiceAuthInsert.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelbiz.WXInvoiceAuthInsert.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.WXInvoiceAuthInsert.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.WXInvoiceAuthInsert.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.WXInvoiceAuthInsert.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.WXInvoiceAuthInsert.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.WXInvoiceAuthInsert.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.WXLaunchMiniProgram,Created by pandyduan on 2017/7/24.,N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.WXLaunchMiniProgram.Req,"the miniprogram type, default is release
+ 
+小程序的类型，默认正式版
+ 
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.WXLaunchMiniProgram.Req,"the miniprogram type, default is release
+ 
+小程序的类型，默认正式版
+ 
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.WXLaunchMiniProgram.Req,"the miniprogram type, default is release
+ 
+小程序的类型，默认正式版
+ 
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.WXLaunchMiniProgram.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.WXLaunchMiniProgram.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.WXLaunchMiniProgram.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.WXLaunchMiniProgram.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelmsg.WXLocationObject,Derived class of WXMediaMessage.IMediaObject. Used to describe a location object. WXMediaMessage.IMediaObject的派生类，用于描述一个文本对象,checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXLocationObject,Derived class of WXMediaMessage.IMediaObject. Used to describe a location object. WXMediaMessage.IMediaObject的派生类，用于描述一个文本对象,serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXLocationObject,Derived class of WXMediaMessage.IMediaObject. Used to describe a location object. WXMediaMessage.IMediaObject的派生类，用于描述一个文本对象,type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXLocationObject,Derived class of WXMediaMessage.IMediaObject. Used to describe a location object. WXMediaMessage.IMediaObject的派生类，用于描述一个文本对象,unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXMediaMessage,Contents of WeChat media message 微信媒体消息内容,getType(),"Load type of the media object 获取媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXMediaMessage,Contents of WeChat media message 微信媒体消息内容,setThumbImage(android.graphics.Bitmap bm),"Set the thumbnail via bitmap object 通过位图对象设置缩略图
+",void
+com.tencent.mm.opensdk.modelmsg.WXMediaMessage.Builder,Builder for WXMediaMessage WXMediaMessage构造器,fromBundle(android.os.Bundle data),"Deserialize bundle to build a WXMediaMessage object 通过反序列化bundle构造出一个WXMediaMessage对象
+",static WXMediaMessage
+com.tencent.mm.opensdk.modelmsg.WXMediaMessage.Builder,Builder for WXMediaMessage WXMediaMessage构造器,toBundle(WXMediaMessage obj),"Serialize a WXMediaMessage object to bundle 将一个WXMediaMessage对象序列化到bundle
+",static android.os.Bundle
+com.tencent.mm.opensdk.modelmsg.WXMediaMessage.IMediaObject,Interface of media message 媒体消息对象接口,checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXMediaMessage.IMediaObject,Interface of media message 媒体消息对象接口,serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXMediaMessage.IMediaObject,Interface of media message 媒体消息对象接口,type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXMediaMessage.IMediaObject,Interface of media message 媒体消息对象接口,unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXMiniProgramObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a miniprogram object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个小程序对象",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXMiniProgramObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a miniprogram object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个小程序对象",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXMiniProgramObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a miniprogram object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个小程序对象",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXMiniProgramObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a miniprogram object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个小程序对象",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXMusicObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an audio object
+ 
+NOTE: musicUrl and musicLowBandUrl can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个音频对象
+ 
+注意：musicUrl和musicLowBandUrl不能同时为空",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXMusicObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an audio object
+ 
+NOTE: musicUrl and musicLowBandUrl can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个音频对象
+ 
+注意：musicUrl和musicLowBandUrl不能同时为空",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXMusicObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an audio object
+ 
+NOTE: musicUrl and musicLowBandUrl can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个音频对象
+ 
+注意：musicUrl和musicLowBandUrl不能同时为空",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXMusicObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe an audio object
+ 
+NOTE: musicUrl and musicLowBandUrl can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个音频对象
+ 
+注意：musicUrl和musicLowBandUrl不能同时为空",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelbiz.WXNontaxPay,Created by pandyduan on 2017/12/5.,N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.WXNontaxPay.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.WXNontaxPay.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelbiz.WXNontaxPay.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.WXNontaxPay.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.WXNontaxPay.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.WXNontaxPay.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.WXNontaxPay.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.WXNontaxPay.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessView,Created by willenwu on 2018/12/20.,N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessView.Req,"the businessType
+ 
+业务类型
+ 
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessView.Req,"the businessType
+ 
+业务类型
+ 
+",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessView.Req,"the businessType
+ 
+业务类型
+ 
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessView.Req,"the businessType
+ 
+业务类型
+ 
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessView.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessView.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessView.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessView.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessWebview,Open Business Webview 打开业务网页,N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessWebview.Req,"Business type 业务类型
+ 1：香港钱包，2：获取发票抬头
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessWebview.Req,"Business type 业务类型
+ 1：香港钱包，2：获取发票抬头
+",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessWebview.Req,"Business type 业务类型
+ 1：香港钱包，2：获取发票抬头
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessWebview.Req,"Business type 业务类型
+ 1：香港钱包，2：获取发票抬头
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessWebview.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessWebview.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessWebview.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.WXOpenBusinessWebview.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.WXPayInsurance,Created by pandyduan on 2017/12/5.,N/A,N/A,N/A
+com.tencent.mm.opensdk.modelbiz.WXPayInsurance.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",checkArgs(),"Check parameters of this request
+ 检查该请求各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.WXPayInsurance.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize request data in Bundle
+ 从Bundle中反序列化request数据
+",void
+com.tencent.mm.opensdk.modelbiz.WXPayInsurance.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",getType(),"Return type ID of the current request.
+",int
+com.tencent.mm.opensdk.modelbiz.WXPayInsurance.Req,"Check parameters of this request
+ 检查该请求各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize requests into Bundle
+ 将请求序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelbiz.WXPayInsurance.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",checkArgs(),"Check parameters of this response
+ 检查该响应各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelbiz.WXPayInsurance.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",fromBundle(android.os.Bundle data),"Deserialize response data in Bundle
+ 从Bundle中反序列化响应数据
+",void
+com.tencent.mm.opensdk.modelbiz.WXPayInsurance.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",getType(),"Return type ID of the current response.
+",int
+com.tencent.mm.opensdk.modelbiz.WXPayInsurance.Resp,"Check parameters of this response
+ 检查该响应各个参数的合法性
+",toBundle(android.os.Bundle data),"Serialize responses in Bundle
+ 将响应序列化到Bundle中
+",void
+com.tencent.mm.opensdk.modelmsg.WXTextObject,Derived class of WXMediaMessage.IMediaObject. Used to describe a text object. WXMediaMessage.IMediaObject的派生类，用于描述一个文本对象,checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXTextObject,Derived class of WXMediaMessage.IMediaObject. Used to describe a text object. WXMediaMessage.IMediaObject的派生类，用于描述一个文本对象,serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXTextObject,Derived class of WXMediaMessage.IMediaObject. Used to describe a text object. WXMediaMessage.IMediaObject的派生类，用于描述一个文本对象,type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXTextObject,Derived class of WXMediaMessage.IMediaObject. Used to describe a text object. WXMediaMessage.IMediaObject的派生类，用于描述一个文本对象,unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXVideoFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a video file object
+WXMediaMessage.IMediaObject的派生类，用于描述一个视频文件对象
+
+注意：目前只支持分享到朋友圈",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXVideoFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a video file object
+WXMediaMessage.IMediaObject的派生类，用于描述一个视频文件对象
+
+注意：目前只支持分享到朋友圈",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXVideoFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a video file object
+WXMediaMessage.IMediaObject的派生类，用于描述一个视频文件对象
+
+注意：目前只支持分享到朋友圈",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXVideoFileObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a video file object
+WXMediaMessage.IMediaObject的派生类，用于描述一个视频文件对象
+
+注意：目前只支持分享到朋友圈",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXVideoObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a video object
+ 
+NOTE: videoUrl and videoLowBandUrl can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个视频对象
+ 
+注意：videoUrl和videoLowBandUrl不能同时为空",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXVideoObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a video object
+ 
+NOTE: videoUrl and videoLowBandUrl can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个视频对象
+ 
+注意：videoUrl和videoLowBandUrl不能同时为空",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXVideoObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a video object
+ 
+NOTE: videoUrl and videoLowBandUrl can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个视频对象
+ 
+注意：videoUrl和videoLowBandUrl不能同时为空",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXVideoObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a video object
+ 
+NOTE: videoUrl and videoLowBandUrl can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个视频对象
+ 
+注意：videoUrl和videoLowBandUrl不能同时为空",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXWebpageObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a webpage object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个网页对象",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXWebpageObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a webpage object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个网页对象",serialize(android.os.Bundle data),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXWebpageObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a webpage object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个网页对象",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXWebpageObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a webpage object.
+WXMediaMessage.IMediaObject的派生类，用于描述一个网页对象",unserialize(android.os.Bundle data),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void
+com.tencent.mm.opensdk.modelmsg.WXWeWorkObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a business card object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个企业微信消息对象
+ 
+",checkArgs(),"Check validity of parameters of MediaObject
+ 检查该MediaObject各个参数的合法性
+",boolean
+com.tencent.mm.opensdk.modelmsg.WXWeWorkObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a business card object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个企业微信消息对象
+ 
+",serialize(android.os.Bundle budle),"Serialize member variables to bundle object 将成员变量序列化到bundle对象中
+",void
+com.tencent.mm.opensdk.modelmsg.WXWeWorkObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a business card object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个企业微信消息对象
+ 
+",type(),"Load type of the current media object 获取当前媒体对象的类型
+",int
+com.tencent.mm.opensdk.modelmsg.WXWeWorkObject,"Derived class of WXMediaMessage.IMediaObject. Used to describe a business card object
+ 
+NOTE: fileData and filePath can not be null at the same time.
+WXMediaMessage.IMediaObject的派生类，用于描述一个企业微信消息对象
+ 
+",unserialize(android.os.Bundle budle),"Deserialize bundle object to initialize member variables 通过反序列化bundle对象初始化成员变量
+",void

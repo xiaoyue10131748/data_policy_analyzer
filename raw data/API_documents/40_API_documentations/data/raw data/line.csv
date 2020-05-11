@@ -1,0 +1,1743 @@
+class_name,class_description,method,method_description,data_type
+com.linecorp.linesdk.LoginDelegate,"
+
+
+Class Overview
+Delegates the login result to the internal login handler. Use the
+ provided create() method to create an object that implements the LoginDelegate
+ interface.
+
+
+
+
+
+
+","onActivityResult(int requestCode, int resultCode, Intent data)",Delegates the login result to the internal login handler.,"abstract
+            
+            
+            
+            
+            boolean"
+com.linecorp.linesdk.LoginDelegate,"
+
+
+Class Overview
+Delegates the login result to the internal login handler. Use the
+ provided create() method to create an object that implements the LoginDelegate
+ interface.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LoginDelegate,"
+
+
+Class Overview
+Delegates the login result to the internal login handler. Use the
+ provided create() method to create an object that implements the LoginDelegate
+ interface.
+
+
+
+
+
+
+","onActivityResult(int requestCode, int resultCode, Intent data)",Delegates the login result to the internal login handler.,"abstract
+            
+            
+            
+            
+            boolean"
+com.linecorp.linesdk.LoginDelegate,"
+
+
+Class Overview
+Delegates the login result to the internal login handler. Use the
+ provided create() method to create an object that implements the LoginDelegate
+ interface.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LoginListener,"
+
+
+Class Overview
+Represents a listener for the login result. The onLoginSuccess(LineLoginResult) method
+ is called if the login is successful; the onLoginFailure(LineLoginResult) is called
+ otherwise.
+
+
+
+  
+      See Also
+      LoginButton
+      
+  
+
+
+",onLoginFailure(LineLoginResult result),Called by com.linecorp.linesdk.internal.LoginHandler if the login fails.,"abstract
+            
+            
+            
+            
+            void"
+com.linecorp.linesdk.LoginListener,"
+
+
+Class Overview
+Represents a listener for the login result. The onLoginSuccess(LineLoginResult) method
+ is called if the login is successful; the onLoginFailure(LineLoginResult) is called
+ otherwise.
+
+
+
+  
+      See Also
+      LoginButton
+      
+  
+
+
+",onLoginSuccess(LineLoginResult result),Called by com.linecorp.linesdk.internal.LoginHandler if the login succeeds.,"abstract
+            
+            
+            
+            
+            void"
+com.linecorp.linesdk.LoginListener,"
+
+
+Class Overview
+Represents a listener for the login result. The onLoginSuccess(LineLoginResult) method
+ is called if the login is successful; the onLoginFailure(LineLoginResult) is called
+ otherwise.
+
+
+
+  
+      See Also
+      LoginButton
+      
+  
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LineAccessToken,"
+
+
+Class Overview
+Represents an access token that is used to call the Social API.
+
+
+
+
+
+
+",getEstimatedExpirationTimeMillis(),Gets the estimated time in UNIX time when the access token expires.,long
+com.linecorp.linesdk.LineAccessToken,"
+
+
+Class Overview
+Represents an access token that is used to call the Social API.
+
+
+
+
+
+
+",getExpiresInMillis(),Gets the amount of time in milliseconds until the access token expires.,long
+com.linecorp.linesdk.LineAccessToken,"
+
+
+Class Overview
+Represents an access token that is used to call the Social API.
+
+
+
+
+
+
+",getIssuedClientTimeMillis(),Gets the time in UNIX time when the access token information was last updated.,long
+com.linecorp.linesdk.LineAccessToken,"
+
+
+Class Overview
+Represents an access token that is used to call the Social API.
+
+
+
+
+
+
+",getTokenString(),Gets the string representation of the access token.,String
+com.linecorp.linesdk.LineAccessToken,"
+
+
+Class Overview
+Represents an access token that is used to call the Social API.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LineApiError,"
+
+
+Class Overview
+Represents an error that is thrown by the Social API.
+
+
+
+
+
+
+",getHttpResponseCode(),Gets the response code associated with the API error.,int
+com.linecorp.linesdk.LineApiError,"
+
+
+Class Overview
+Represents an error that is thrown by the Social API.
+
+
+
+
+
+
+",getMessage(),Gets the error message associated with the API error.,String
+com.linecorp.linesdk.LineApiError,"
+
+
+Class Overview
+Represents an error that is thrown by the Social API.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LineApiResponse,"
+
+
+Class Overview
+Represents a response from the Social API.
+
+
+
+
+
+
+",getErrorData(),Gets information about an API error occurred.,LineApiError
+com.linecorp.linesdk.LineApiResponse,"
+
+
+Class Overview
+Represents a response from the Social API.
+
+
+
+
+
+
+",getResponseCode(),Gets the response code that is returned.,LineApiResponseCode
+com.linecorp.linesdk.LineApiResponse,"
+
+
+Class Overview
+Represents a response from the Social API.
+
+
+
+
+
+
+",getResponseData(),Gets data that is associated with the response if it exists.,R
+com.linecorp.linesdk.LineApiResponse,"
+
+
+Class Overview
+Represents a response from the Social API.
+
+
+
+
+
+
+",isNetworkError(),Checks if the API call fails with a network error.,boolean
+com.linecorp.linesdk.LineApiResponse,"
+
+
+Class Overview
+Represents a response from the Social API.
+
+
+
+
+
+
+",isServerError(),Checks if the API call fails with a server error.,boolean
+com.linecorp.linesdk.LineApiResponse,"
+
+
+Class Overview
+Represents a response from the Social API.
+
+
+
+
+
+
+",isSuccess(),Checks if the API call is successful.,boolean
+com.linecorp.linesdk.LineApiResponse,"
+
+
+Class Overview
+Represents a response from the Social API.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LineCredential,"
+
+
+Class Overview
+Represents credentials that are used to grant access to the Social API.
+
+
+
+
+
+
+",getAccessToken(),Gets the access token.,LineAccessToken
+com.linecorp.linesdk.LineCredential,"
+
+
+Class Overview
+Represents credentials that are used to grant access to the Social API.
+
+
+
+
+
+
+",getScopes(),Gets a list of permissions that the access token holds.,List<Scope>
+com.linecorp.linesdk.LineCredential,"
+
+
+Class Overview
+Represents credentials that are used to grant access to the Social API.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LineFriendshipStatus,"
+
+
+Class Overview
+Represents the friendship status between a bot and a user.
+
+
+
+
+
+
+",isFriend(),Gets the friendship status of the user and the bot linked to your LINE Login channel.,boolean
+com.linecorp.linesdk.LineFriendshipStatus,"
+
+
+Class Overview
+Represents the friendship status between a bot and a user.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",getAmr(),Get the Authentication Methods References.,List<String>
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",getAudience(),Gets the channel ID.,String
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",getAuthTime(),Gets the time when the user authentication occurred.,Date
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",getEmail(),Gets the user's email address.,String
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",getExpiresAt(),Gets the expiration time of the ID Token.,Date
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",getIssuedAt(),Gets the time when the ID token was generated.,Date
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",getIssuer(),Gets the ID of the issuer of the ID token.,String
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",getName(),Gets the user's display name.,String
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",getPicture(),Gets the user's profile image URL.,String
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",getRawString(),Gets the raw string of the ID Token.,String
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",getSubject(),Gets the user ID of the user that the ID token is generated for.,String
+com.linecorp.linesdk.LineIdToken,"
+
+
+Class Overview
+Represents an ID token that contains the user's information. 
+ For more information about each field, please refer to: 
+ OpenID Connect 1.0: ID Token 
+ OpenID Connect 1.0: Standard Claims
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LineProfile,"
+
+
+Class Overview
+Represents a user's LINE profile in the Social API.
+
+
+
+
+
+
+",getDisplayName(),Gets the user's display name.,String
+com.linecorp.linesdk.LineProfile,"
+
+
+Class Overview
+Represents a user's LINE profile in the Social API.
+
+
+
+
+
+
+",getPictureUrl(),Gets the user's profile image URL.,Uri
+com.linecorp.linesdk.LineProfile,"
+
+
+Class Overview
+Represents a user's LINE profile in the Social API.
+
+
+
+
+
+
+",getStatusMessage(),Gets the user's status message.,String
+com.linecorp.linesdk.LineProfile,"
+
+
+Class Overview
+Represents a user's LINE profile in the Social API.
+
+
+
+
+
+
+",getUserId(),Gets the user's user ID.,String
+com.linecorp.linesdk.LineProfile,"
+
+
+Class Overview
+Represents a user's LINE profile in the Social API.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LoginDelegate.Factory,"
+
+
+Class Overview
+Represents a factory that creates objects that implement the LoginDelegate interface.
+
+
+
+
+
+
+",create(),Creates an object that implements the LoginDelegate interface.,"static
+            
+            LoginDelegate"
+com.linecorp.linesdk.LoginDelegate.Factory,"
+
+
+Class Overview
+Represents a factory that creates objects that implement the LoginDelegate interface.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.Scope,"
+
+
+Class Overview
+Represents a scope. A scope is a permission that the user grants your app during the login
+ process.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.Scope,"
+
+
+Class Overview
+Represents a scope. A scope is a permission that the user grants your app during the login
+ process.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LineApiResponseCode,"
+
+
+Class Overview
+Represents a response code returned from the LINE Platform.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LineApiResponseCode,"
+
+
+Class Overview
+Represents a response code returned from the LINE Platform.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.LineApiResponseCode,"
+
+
+Class Overview
+Represents a response code returned from the LINE Platform.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.api.LineApiClient,"
+
+
+Class Overview
+An API client that provides you with access to the LINE Social API to perform operations such as
+ getting the current access token, getting the user profile, logging out the user, refreshing
+ the access token, and verifying the access token.
+
+
+
+
+
+
+",getCurrentAccessToken(),Gets the access token that the SDK is using for the user.,"abstract
+            
+            
+            
+            
+            LineApiResponse<LineAccessToken>"
+com.linecorp.linesdk.api.LineApiClient,"
+
+
+Class Overview
+An API client that provides you with access to the LINE Social API to perform operations such as
+ getting the current access token, getting the user profile, logging out the user, refreshing
+ the access token, and verifying the access token.
+
+
+
+
+
+
+",getFriendshipStatus(),Gets the friendship status between the bot (which is linked to the current channel) and the user.,"abstract
+            
+            
+            
+            
+            LineApiResponse<LineFriendshipStatus>"
+com.linecorp.linesdk.api.LineApiClient,"
+
+
+Class Overview
+An API client that provides you with access to the LINE Social API to perform operations such as
+ getting the current access token, getting the user profile, logging out the user, refreshing
+ the access token, and verifying the access token.
+
+
+
+
+
+
+",getProfile(),Gets the user profile information.,"abstract
+            
+            
+            
+            
+            LineApiResponse<LineProfile>"
+com.linecorp.linesdk.api.LineApiClient,"
+
+
+Class Overview
+An API client that provides you with access to the LINE Social API to perform operations such as
+ getting the current access token, getting the user profile, logging out the user, refreshing
+ the access token, and verifying the access token.
+
+
+
+
+
+
+",logout(),Revokes the access token.,"abstract
+            
+            
+            
+            
+            LineApiResponse<?>"
+com.linecorp.linesdk.api.LineApiClient,"
+
+
+Class Overview
+An API client that provides you with access to the LINE Social API to perform operations such as
+ getting the current access token, getting the user profile, logging out the user, refreshing
+ the access token, and verifying the access token.
+
+
+
+
+
+
+",refreshAccessToken(),Refreshes the access token that the SDK is using for the user.,"abstract
+            
+            
+            
+            
+            LineApiResponse<LineAccessToken>"
+com.linecorp.linesdk.api.LineApiClient,"
+
+
+Class Overview
+An API client that provides you with access to the LINE Social API to perform operations such as
+ getting the current access token, getting the user profile, logging out the user, refreshing
+ the access token, and verifying the access token.
+
+
+
+
+
+
+","sendMessageToMultipleUsers(List<String> targetUserIds, List<MessageData> messages, boolean isOttUsed)",Sends messages to multiple users on behalf of the current user.,"abstract
+            
+            
+            
+            
+            LineApiResponse<List<SendMessageResponse>>"
+com.linecorp.linesdk.api.LineApiClient,"
+
+
+Class Overview
+An API client that provides you with access to the LINE Social API to perform operations such as
+ getting the current access token, getting the user profile, logging out the user, refreshing
+ the access token, and verifying the access token.
+
+
+
+
+
+
+",verifyToken(),Checks whether the access token that the SDK is using for the user is valid.,"abstract
+            
+            
+            
+            
+            LineApiResponse<LineCredential>"
+com.linecorp.linesdk.api.LineApiClient,"
+
+
+Class Overview
+An API client that provides you with access to the LINE Social API to perform operations such as
+ getting the current access token, getting the user profile, logging out the user, refreshing
+ the access token, and verifying the access token.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.api.LineApiClientBuilder,"
+
+
+Class Overview
+Represents a builder for creating LineApiClient objects with the desired settings.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.api.LineApiClientBuilder,"
+
+
+Class Overview
+Represents a builder for creating LineApiClient objects with the desired settings.
+
+
+
+
+
+
+",build(),Creates a LineApiClient instance.,LineApiClient
+com.linecorp.linesdk.api.LineApiClientBuilder,"
+
+
+Class Overview
+Represents a builder for creating LineApiClient objects with the desired settings.
+
+
+
+
+
+
+",disableEncryptorPreparation(),Disables the SDK's feature that prepares an encryptor.,LineApiClientBuilder
+com.linecorp.linesdk.api.LineApiClientBuilder,"
+
+
+Class Overview
+Represents a builder for creating LineApiClient objects with the desired settings.
+
+
+
+
+
+
+",disableTokenAutoRefresh(),Disables the SDK's feature that automatically refreshes the access token.,LineApiClientBuilder
+com.linecorp.linesdk.api.LineApiClientBuilder,"
+
+
+Class Overview
+Represents a builder for creating LineApiClient objects with the desired settings.
+
+
+
+
+
+
+",openidDiscoveryDocumentUrl(Uri openidDiscoveryDocumentUrl),Sets the API base URI.,LineApiClientBuilder
+com.linecorp.linesdk.api.LineApiClientBuilder,"
+
+
+Class Overview
+Represents a builder for creating LineApiClient objects with the desired settings.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineAuthenticationParams,"
+
+
+Class Overview
+Represents a container to hold necessary parameters for performing LINE Login, including
+ permission scopes and the option to determine how to prompt the user to add a bot as a friend
+ during the login process.
+
+
+
+
+
+
+",getBotPrompt(),"Gets the option to determine how to prompt the user to add a bot as a friend during the
+ login process.",LineAuthenticationParams.BotPrompt
+com.linecorp.linesdk.auth.LineAuthenticationParams,"
+
+
+Class Overview
+Represents a container to hold necessary parameters for performing LINE Login, including
+ permission scopes and the option to determine how to prompt the user to add a bot as a friend
+ during the login process.
+
+
+
+
+
+
+",getNonce(),A string used to prevent replay attacks.,String
+com.linecorp.linesdk.auth.LineAuthenticationParams,"
+
+
+Class Overview
+Represents a container to hold necessary parameters for performing LINE Login, including
+ permission scopes and the option to determine how to prompt the user to add a bot as a friend
+ during the login process.
+
+
+
+
+
+
+",getScopes(),Gets a list of scopes.,List<Scope>
+com.linecorp.linesdk.auth.LineAuthenticationParams,"
+
+
+Class Overview
+Represents a container to hold necessary parameters for performing LINE Login, including
+ permission scopes and the option to determine how to prompt the user to add a bot as a friend
+ during the login process.
+
+
+
+
+
+
+",getUILocale(),Gets the language in which login pages are displayed.,Locale
+com.linecorp.linesdk.auth.LineAuthenticationParams,"
+
+
+Class Overview
+Represents a container to hold necessary parameters for performing LINE Login, including
+ permission scopes and the option to determine how to prompt the user to add a bot as a friend
+ during the login process.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineAuthenticationParams.Builder,"
+
+
+Class Overview
+Represents a builder to construct LineAuthenticationParams objects.
+
+
+
+
+
+
+",botPrompt(LineAuthenticationParams.BotPrompt val),Sets the option to determine how to prompt the user to add a bot as a friend.,LineAuthenticationParams.Builder
+com.linecorp.linesdk.auth.LineAuthenticationParams.Builder,"
+
+
+Class Overview
+Represents a builder to construct LineAuthenticationParams objects.
+
+
+
+
+
+
+",build(),Builds LineAuthenticationParams objects.,LineAuthenticationParams
+com.linecorp.linesdk.auth.LineAuthenticationParams.Builder,"
+
+
+Class Overview
+Represents a builder to construct LineAuthenticationParams objects.
+
+
+
+
+
+
+",nonce(String val),Sets nonce to the builder.,LineAuthenticationParams.Builder
+com.linecorp.linesdk.auth.LineAuthenticationParams.Builder,"
+
+
+Class Overview
+Represents a builder to construct LineAuthenticationParams objects.
+
+
+
+
+
+
+",scopes(List<Scope> val),Sets scopes to the builder.,LineAuthenticationParams.Builder
+com.linecorp.linesdk.auth.LineAuthenticationParams.Builder,"
+
+
+Class Overview
+Represents a builder to construct LineAuthenticationParams objects.
+
+
+
+
+
+
+",uiLocale(Locale val),Sets the language in which to display login pages.,LineAuthenticationParams.Builder
+com.linecorp.linesdk.auth.LineAuthenticationParams.Builder,"
+
+
+Class Overview
+Represents a builder to construct LineAuthenticationParams objects.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineLoginApi,"
+
+
+Class Overview
+Represents the API that performs LINE Login.
+ 
+ Usage
+ 1. Start login.
+  Intent loginIntent = LineLoginApi.getLoginIntent(context, channelId); startActivityForResult(loginIntent, REQUEST_CODE_LINE_LOGIN); 
+ 2. Handle the login result.
+  public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (requestCode != REQUEST_CODE_LINE_LOGIN) {         return;     }     LineLoginResult result = LineLoginApi.getLoginResultFromIntent(data);     if (result.isSuccess()) {         // You can retrieve the LINE account information and the access token         // from LineLoginResult.     } else {         updateErrorUi();     } } 
+
+
+
+
+
+
+","getLoginIntent(Context context, String channelId, LineAuthenticationParams params)",Gets an intent for performing LINE Login.,"static
+            
+            Intent"
+com.linecorp.linesdk.auth.LineLoginApi,"
+
+
+Class Overview
+Represents the API that performs LINE Login.
+ 
+ Usage
+ 1. Start login.
+  Intent loginIntent = LineLoginApi.getLoginIntent(context, channelId); startActivityForResult(loginIntent, REQUEST_CODE_LINE_LOGIN); 
+ 2. Handle the login result.
+  public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (requestCode != REQUEST_CODE_LINE_LOGIN) {         return;     }     LineLoginResult result = LineLoginApi.getLoginResultFromIntent(data);     if (result.isSuccess()) {         // You can retrieve the LINE account information and the access token         // from LineLoginResult.     } else {         updateErrorUi();     } } 
+
+
+
+
+
+
+","getLoginIntentWithoutLineAppAuth(Context context, String channelId, LineAuthenticationParams params)",Gets a login intent that only performs browser login.,"static
+            
+            Intent"
+com.linecorp.linesdk.auth.LineLoginApi,"
+
+
+Class Overview
+Represents the API that performs LINE Login.
+ 
+ Usage
+ 1. Start login.
+  Intent loginIntent = LineLoginApi.getLoginIntent(context, channelId); startActivityForResult(loginIntent, REQUEST_CODE_LINE_LOGIN); 
+ 2. Handle the login result.
+  public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (requestCode != REQUEST_CODE_LINE_LOGIN) {         return;     }     LineLoginResult result = LineLoginApi.getLoginResultFromIntent(data);     if (result.isSuccess()) {         // You can retrieve the LINE account information and the access token         // from LineLoginResult.     } else {         updateErrorUi();     } } 
+
+
+
+
+
+
+",getLoginResultFromIntent(Intent intent),Gets a LineLoginResult object from an Intent object.,"static
+            
+            LineLoginResult"
+com.linecorp.linesdk.auth.LineLoginApi,"
+
+
+Class Overview
+Represents the API that performs LINE Login.
+ 
+ Usage
+ 1. Start login.
+  Intent loginIntent = LineLoginApi.getLoginIntent(context, channelId); startActivityForResult(loginIntent, REQUEST_CODE_LINE_LOGIN); 
+ 2. Handle the login result.
+  public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (requestCode != REQUEST_CODE_LINE_LOGIN) {         return;     }     LineLoginResult result = LineLoginApi.getLoginResultFromIntent(data);     if (result.isSuccess()) {         // You can retrieve the LINE account information and the access token         // from LineLoginResult.     } else {         updateErrorUi();     } } 
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",getErrorData(),Gets information about a login error that has occurred.,LineApiError
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",getFriendshipStatusChanged(),Gets the friendship status of the user and the bot linked to your LINE Login channel.,Boolean
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",getLineCredential(),Gets the user's credentials.,LineCredential
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",getLineIdToken(),Gets the ID token that contains the user's information.,LineIdToken
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",getLineProfile(),Gets the user's profile information.,LineProfile
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",getNonce(),Gets the `nonce` value used for performing login in LINE.,String
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",getResponseCode(),Gets the response code that the login returned.,LineApiResponseCode
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",isSuccess(),Checks whether the login was successful.,boolean
+com.linecorp.linesdk.auth.LineLoginResult,"
+
+
+Class Overview
+Represents a login result that is returned from the LINE Platform.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineAuthenticationParams.BotPrompt,"
+
+
+Class Overview
+Represents an option to determine how to prompt the user to add a bot as a friend during the
+ login process.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineAuthenticationParams.BotPrompt,"
+
+
+Class Overview
+Represents an option to determine how to prompt the user to add a bot as a friend during the
+ login process.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.auth.LineAuthenticationParams.BotPrompt,"
+
+
+Class Overview
+Represents an option to determine how to prompt the user to add a bot as a friend during the
+ login process.
+
+
+
+
+
+
+",N/A,N/A,N/A
+com.linecorp.linesdk.widget.LoginButton,"
+
+
+Class Overview
+A button widget that simplifies the login flow. Before you add login listeners to this login button through the
+ addLoginListener(LoginListener) method, set your channel ID through the
+ setChannelId(String) method and login delegate through the
+ setLoginDelegate(LoginDelegate) method. Otherwise, a RuntimeException is thrown.
+ Also, use the provided create() method to create a
+ LoginDelegate instance and set it to this button through the
+ setLoginDelegate(LoginDelegate) method.
+ 
+ By default, this button performs the login process using LINE with the PROFILE
+ scope only. You can create your own LineAuthenticationParams instance using the provided
+ LineAuthenticationParams.Builder method and set the authentication parameters to this
+ button through the setAuthenticationParams(LineAuthenticationParams) method. You can
+ also control whether the user logs in with LINE or with the browser through the
+ enableLineAppAuthentication(boolean) method.
+ 
+ Finally, call the onActivityResult(int, int, Intent) method using the
+ intent that you created with the Activity#onActivityResult(int, int, Intent) method.
+ If you use this button in a Fragment or an androidx.fragment.app.Fragment
+ instance, set the fragment to this button through the setFragment(Fragment) method or
+ the setFragment(androidx.fragment.app.Fragment) method. By doing so, you can call the
+ onActivityResult callback in your fragment after the login process is complete.
+ 
+ The following example shows how to set up the login button with the desired parameters.
+  int loginButtonResId = ...; String channelId = ...; LoginDelegate loginDelegate = LoginDelegate.Factory.create(); LineAuthenticationParams params = LineAuthenticationParams.Builder()                                         .scopes(...)                                         .nonce(...)                                         .botPrompt(...)                                         .build(); LoginButton loginButton = findViewById(loginButtonResId); loginButton.setChannelId(channelId); loginButton.setLoginDelegate(loginDelegate); loginButton.enableLineAppAuthentication(true); loginButton.setAuthenticationParams(params); loginButton.addLoginListener(new LoginListener() {    @Override     public void onLoginSuccess(@NonNull LineLoginResult result) {         ...     }    @Override     public void onLoginFailure(@Nullable LineLoginResult result) {     if (result != null) {         ...     } else {         ...     } }); 
+ The example below handles the login result intent in the onActivityResult method.
+  @Override public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (loginDelegate.onActivityResult(requestCode, resultCode, data)) {         // login result intent is consumed.         return;     } } 
+
+
+
+
+
+
+",addLoginListener(LoginListener loginListener),Sets the given loginListener to listen to the login result.,void
+com.linecorp.linesdk.widget.LoginButton,"
+
+
+Class Overview
+A button widget that simplifies the login flow. Before you add login listeners to this login button through the
+ addLoginListener(LoginListener) method, set your channel ID through the
+ setChannelId(String) method and login delegate through the
+ setLoginDelegate(LoginDelegate) method. Otherwise, a RuntimeException is thrown.
+ Also, use the provided create() method to create a
+ LoginDelegate instance and set it to this button through the
+ setLoginDelegate(LoginDelegate) method.
+ 
+ By default, this button performs the login process using LINE with the PROFILE
+ scope only. You can create your own LineAuthenticationParams instance using the provided
+ LineAuthenticationParams.Builder method and set the authentication parameters to this
+ button through the setAuthenticationParams(LineAuthenticationParams) method. You can
+ also control whether the user logs in with LINE or with the browser through the
+ enableLineAppAuthentication(boolean) method.
+ 
+ Finally, call the onActivityResult(int, int, Intent) method using the
+ intent that you created with the Activity#onActivityResult(int, int, Intent) method.
+ If you use this button in a Fragment or an androidx.fragment.app.Fragment
+ instance, set the fragment to this button through the setFragment(Fragment) method or
+ the setFragment(androidx.fragment.app.Fragment) method. By doing so, you can call the
+ onActivityResult callback in your fragment after the login process is complete.
+ 
+ The following example shows how to set up the login button with the desired parameters.
+  int loginButtonResId = ...; String channelId = ...; LoginDelegate loginDelegate = LoginDelegate.Factory.create(); LineAuthenticationParams params = LineAuthenticationParams.Builder()                                         .scopes(...)                                         .nonce(...)                                         .botPrompt(...)                                         .build(); LoginButton loginButton = findViewById(loginButtonResId); loginButton.setChannelId(channelId); loginButton.setLoginDelegate(loginDelegate); loginButton.enableLineAppAuthentication(true); loginButton.setAuthenticationParams(params); loginButton.addLoginListener(new LoginListener() {    @Override     public void onLoginSuccess(@NonNull LineLoginResult result) {         ...     }    @Override     public void onLoginFailure(@Nullable LineLoginResult result) {     if (result != null) {         ...     } else {         ...     } }); 
+ The example below handles the login result intent in the onActivityResult method.
+  @Override public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (loginDelegate.onActivityResult(requestCode, resultCode, data)) {         // login result intent is consumed.         return;     } } 
+
+
+
+
+
+
+",enableLineAppAuthentication(boolean isEnabled),"Sets whether the user logs in with LINE or with the browser according to the given
+ isEnabled parameter.",void
+com.linecorp.linesdk.widget.LoginButton,"
+
+
+Class Overview
+A button widget that simplifies the login flow. Before you add login listeners to this login button through the
+ addLoginListener(LoginListener) method, set your channel ID through the
+ setChannelId(String) method and login delegate through the
+ setLoginDelegate(LoginDelegate) method. Otherwise, a RuntimeException is thrown.
+ Also, use the provided create() method to create a
+ LoginDelegate instance and set it to this button through the
+ setLoginDelegate(LoginDelegate) method.
+ 
+ By default, this button performs the login process using LINE with the PROFILE
+ scope only. You can create your own LineAuthenticationParams instance using the provided
+ LineAuthenticationParams.Builder method and set the authentication parameters to this
+ button through the setAuthenticationParams(LineAuthenticationParams) method. You can
+ also control whether the user logs in with LINE or with the browser through the
+ enableLineAppAuthentication(boolean) method.
+ 
+ Finally, call the onActivityResult(int, int, Intent) method using the
+ intent that you created with the Activity#onActivityResult(int, int, Intent) method.
+ If you use this button in a Fragment or an androidx.fragment.app.Fragment
+ instance, set the fragment to this button through the setFragment(Fragment) method or
+ the setFragment(androidx.fragment.app.Fragment) method. By doing so, you can call the
+ onActivityResult callback in your fragment after the login process is complete.
+ 
+ The following example shows how to set up the login button with the desired parameters.
+  int loginButtonResId = ...; String channelId = ...; LoginDelegate loginDelegate = LoginDelegate.Factory.create(); LineAuthenticationParams params = LineAuthenticationParams.Builder()                                         .scopes(...)                                         .nonce(...)                                         .botPrompt(...)                                         .build(); LoginButton loginButton = findViewById(loginButtonResId); loginButton.setChannelId(channelId); loginButton.setLoginDelegate(loginDelegate); loginButton.enableLineAppAuthentication(true); loginButton.setAuthenticationParams(params); loginButton.addLoginListener(new LoginListener() {    @Override     public void onLoginSuccess(@NonNull LineLoginResult result) {         ...     }    @Override     public void onLoginFailure(@Nullable LineLoginResult result) {     if (result != null) {         ...     } else {         ...     } }); 
+ The example below handles the login result intent in the onActivityResult method.
+  @Override public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (loginDelegate.onActivityResult(requestCode, resultCode, data)) {         // login result intent is consumed.         return;     } } 
+
+
+
+
+
+
+",removeLoginListener(LoginListener loginListener),Removes the given loginListener and stops it from listening to the login result.,void
+com.linecorp.linesdk.widget.LoginButton,"
+
+
+Class Overview
+A button widget that simplifies the login flow. Before you add login listeners to this login button through the
+ addLoginListener(LoginListener) method, set your channel ID through the
+ setChannelId(String) method and login delegate through the
+ setLoginDelegate(LoginDelegate) method. Otherwise, a RuntimeException is thrown.
+ Also, use the provided create() method to create a
+ LoginDelegate instance and set it to this button through the
+ setLoginDelegate(LoginDelegate) method.
+ 
+ By default, this button performs the login process using LINE with the PROFILE
+ scope only. You can create your own LineAuthenticationParams instance using the provided
+ LineAuthenticationParams.Builder method and set the authentication parameters to this
+ button through the setAuthenticationParams(LineAuthenticationParams) method. You can
+ also control whether the user logs in with LINE or with the browser through the
+ enableLineAppAuthentication(boolean) method.
+ 
+ Finally, call the onActivityResult(int, int, Intent) method using the
+ intent that you created with the Activity#onActivityResult(int, int, Intent) method.
+ If you use this button in a Fragment or an androidx.fragment.app.Fragment
+ instance, set the fragment to this button through the setFragment(Fragment) method or
+ the setFragment(androidx.fragment.app.Fragment) method. By doing so, you can call the
+ onActivityResult callback in your fragment after the login process is complete.
+ 
+ The following example shows how to set up the login button with the desired parameters.
+  int loginButtonResId = ...; String channelId = ...; LoginDelegate loginDelegate = LoginDelegate.Factory.create(); LineAuthenticationParams params = LineAuthenticationParams.Builder()                                         .scopes(...)                                         .nonce(...)                                         .botPrompt(...)                                         .build(); LoginButton loginButton = findViewById(loginButtonResId); loginButton.setChannelId(channelId); loginButton.setLoginDelegate(loginDelegate); loginButton.enableLineAppAuthentication(true); loginButton.setAuthenticationParams(params); loginButton.addLoginListener(new LoginListener() {    @Override     public void onLoginSuccess(@NonNull LineLoginResult result) {         ...     }    @Override     public void onLoginFailure(@Nullable LineLoginResult result) {     if (result != null) {         ...     } else {         ...     } }); 
+ The example below handles the login result intent in the onActivityResult method.
+  @Override public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (loginDelegate.onActivityResult(requestCode, resultCode, data)) {         // login result intent is consumed.         return;     } } 
+
+
+
+
+
+
+",setAuthenticationParams(LineAuthenticationParams params),Sets the authentication parameters that you want your application to use when it performs a login.,void
+com.linecorp.linesdk.widget.LoginButton,"
+
+
+Class Overview
+A button widget that simplifies the login flow. Before you add login listeners to this login button through the
+ addLoginListener(LoginListener) method, set your channel ID through the
+ setChannelId(String) method and login delegate through the
+ setLoginDelegate(LoginDelegate) method. Otherwise, a RuntimeException is thrown.
+ Also, use the provided create() method to create a
+ LoginDelegate instance and set it to this button through the
+ setLoginDelegate(LoginDelegate) method.
+ 
+ By default, this button performs the login process using LINE with the PROFILE
+ scope only. You can create your own LineAuthenticationParams instance using the provided
+ LineAuthenticationParams.Builder method and set the authentication parameters to this
+ button through the setAuthenticationParams(LineAuthenticationParams) method. You can
+ also control whether the user logs in with LINE or with the browser through the
+ enableLineAppAuthentication(boolean) method.
+ 
+ Finally, call the onActivityResult(int, int, Intent) method using the
+ intent that you created with the Activity#onActivityResult(int, int, Intent) method.
+ If you use this button in a Fragment or an androidx.fragment.app.Fragment
+ instance, set the fragment to this button through the setFragment(Fragment) method or
+ the setFragment(androidx.fragment.app.Fragment) method. By doing so, you can call the
+ onActivityResult callback in your fragment after the login process is complete.
+ 
+ The following example shows how to set up the login button with the desired parameters.
+  int loginButtonResId = ...; String channelId = ...; LoginDelegate loginDelegate = LoginDelegate.Factory.create(); LineAuthenticationParams params = LineAuthenticationParams.Builder()                                         .scopes(...)                                         .nonce(...)                                         .botPrompt(...)                                         .build(); LoginButton loginButton = findViewById(loginButtonResId); loginButton.setChannelId(channelId); loginButton.setLoginDelegate(loginDelegate); loginButton.enableLineAppAuthentication(true); loginButton.setAuthenticationParams(params); loginButton.addLoginListener(new LoginListener() {    @Override     public void onLoginSuccess(@NonNull LineLoginResult result) {         ...     }    @Override     public void onLoginFailure(@Nullable LineLoginResult result) {     if (result != null) {         ...     } else {         ...     } }); 
+ The example below handles the login result intent in the onActivityResult method.
+  @Override public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (loginDelegate.onActivityResult(requestCode, resultCode, data)) {         // login result intent is consumed.         return;     } } 
+
+
+
+
+
+
+",setChannelId(String channelId),Sets the channel ID of the channel that your application your application will use to log in.,void
+com.linecorp.linesdk.widget.LoginButton,"
+
+
+Class Overview
+A button widget that simplifies the login flow. Before you add login listeners to this login button through the
+ addLoginListener(LoginListener) method, set your channel ID through the
+ setChannelId(String) method and login delegate through the
+ setLoginDelegate(LoginDelegate) method. Otherwise, a RuntimeException is thrown.
+ Also, use the provided create() method to create a
+ LoginDelegate instance and set it to this button through the
+ setLoginDelegate(LoginDelegate) method.
+ 
+ By default, this button performs the login process using LINE with the PROFILE
+ scope only. You can create your own LineAuthenticationParams instance using the provided
+ LineAuthenticationParams.Builder method and set the authentication parameters to this
+ button through the setAuthenticationParams(LineAuthenticationParams) method. You can
+ also control whether the user logs in with LINE or with the browser through the
+ enableLineAppAuthentication(boolean) method.
+ 
+ Finally, call the onActivityResult(int, int, Intent) method using the
+ intent that you created with the Activity#onActivityResult(int, int, Intent) method.
+ If you use this button in a Fragment or an androidx.fragment.app.Fragment
+ instance, set the fragment to this button through the setFragment(Fragment) method or
+ the setFragment(androidx.fragment.app.Fragment) method. By doing so, you can call the
+ onActivityResult callback in your fragment after the login process is complete.
+ 
+ The following example shows how to set up the login button with the desired parameters.
+  int loginButtonResId = ...; String channelId = ...; LoginDelegate loginDelegate = LoginDelegate.Factory.create(); LineAuthenticationParams params = LineAuthenticationParams.Builder()                                         .scopes(...)                                         .nonce(...)                                         .botPrompt(...)                                         .build(); LoginButton loginButton = findViewById(loginButtonResId); loginButton.setChannelId(channelId); loginButton.setLoginDelegate(loginDelegate); loginButton.enableLineAppAuthentication(true); loginButton.setAuthenticationParams(params); loginButton.addLoginListener(new LoginListener() {    @Override     public void onLoginSuccess(@NonNull LineLoginResult result) {         ...     }    @Override     public void onLoginFailure(@Nullable LineLoginResult result) {     if (result != null) {         ...     } else {         ...     } }); 
+ The example below handles the login result intent in the onActivityResult method.
+  @Override public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (loginDelegate.onActivityResult(requestCode, resultCode, data)) {         // login result intent is consumed.         return;     } } 
+
+
+
+
+
+
+",setFragment(Fragment fragment),"Specifies the fragment that contains this button so that its
+ onActivityResult(int, int, Intent) method is properly called.",void
+com.linecorp.linesdk.widget.LoginButton,"
+
+
+Class Overview
+A button widget that simplifies the login flow. Before you add login listeners to this login button through the
+ addLoginListener(LoginListener) method, set your channel ID through the
+ setChannelId(String) method and login delegate through the
+ setLoginDelegate(LoginDelegate) method. Otherwise, a RuntimeException is thrown.
+ Also, use the provided create() method to create a
+ LoginDelegate instance and set it to this button through the
+ setLoginDelegate(LoginDelegate) method.
+ 
+ By default, this button performs the login process using LINE with the PROFILE
+ scope only. You can create your own LineAuthenticationParams instance using the provided
+ LineAuthenticationParams.Builder method and set the authentication parameters to this
+ button through the setAuthenticationParams(LineAuthenticationParams) method. You can
+ also control whether the user logs in with LINE or with the browser through the
+ enableLineAppAuthentication(boolean) method.
+ 
+ Finally, call the onActivityResult(int, int, Intent) method using the
+ intent that you created with the Activity#onActivityResult(int, int, Intent) method.
+ If you use this button in a Fragment or an androidx.fragment.app.Fragment
+ instance, set the fragment to this button through the setFragment(Fragment) method or
+ the setFragment(androidx.fragment.app.Fragment) method. By doing so, you can call the
+ onActivityResult callback in your fragment after the login process is complete.
+ 
+ The following example shows how to set up the login button with the desired parameters.
+  int loginButtonResId = ...; String channelId = ...; LoginDelegate loginDelegate = LoginDelegate.Factory.create(); LineAuthenticationParams params = LineAuthenticationParams.Builder()                                         .scopes(...)                                         .nonce(...)                                         .botPrompt(...)                                         .build(); LoginButton loginButton = findViewById(loginButtonResId); loginButton.setChannelId(channelId); loginButton.setLoginDelegate(loginDelegate); loginButton.enableLineAppAuthentication(true); loginButton.setAuthenticationParams(params); loginButton.addLoginListener(new LoginListener() {    @Override     public void onLoginSuccess(@NonNull LineLoginResult result) {         ...     }    @Override     public void onLoginFailure(@Nullable LineLoginResult result) {     if (result != null) {         ...     } else {         ...     } }); 
+ The example below handles the login result intent in the onActivityResult method.
+  @Override public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (loginDelegate.onActivityResult(requestCode, resultCode, data)) {         // login result intent is consumed.         return;     } } 
+
+
+
+
+
+
+",setFragment(androidx.fragment.app.Fragment fragment),"Specifies the fragment that contains this button so that its
+ androidx.fragment.app.Fragment#onActivityResult(int, int, Intent) method is properly called.",void
+com.linecorp.linesdk.widget.LoginButton,"
+
+
+Class Overview
+A button widget that simplifies the login flow. Before you add login listeners to this login button through the
+ addLoginListener(LoginListener) method, set your channel ID through the
+ setChannelId(String) method and login delegate through the
+ setLoginDelegate(LoginDelegate) method. Otherwise, a RuntimeException is thrown.
+ Also, use the provided create() method to create a
+ LoginDelegate instance and set it to this button through the
+ setLoginDelegate(LoginDelegate) method.
+ 
+ By default, this button performs the login process using LINE with the PROFILE
+ scope only. You can create your own LineAuthenticationParams instance using the provided
+ LineAuthenticationParams.Builder method and set the authentication parameters to this
+ button through the setAuthenticationParams(LineAuthenticationParams) method. You can
+ also control whether the user logs in with LINE or with the browser through the
+ enableLineAppAuthentication(boolean) method.
+ 
+ Finally, call the onActivityResult(int, int, Intent) method using the
+ intent that you created with the Activity#onActivityResult(int, int, Intent) method.
+ If you use this button in a Fragment or an androidx.fragment.app.Fragment
+ instance, set the fragment to this button through the setFragment(Fragment) method or
+ the setFragment(androidx.fragment.app.Fragment) method. By doing so, you can call the
+ onActivityResult callback in your fragment after the login process is complete.
+ 
+ The following example shows how to set up the login button with the desired parameters.
+  int loginButtonResId = ...; String channelId = ...; LoginDelegate loginDelegate = LoginDelegate.Factory.create(); LineAuthenticationParams params = LineAuthenticationParams.Builder()                                         .scopes(...)                                         .nonce(...)                                         .botPrompt(...)                                         .build(); LoginButton loginButton = findViewById(loginButtonResId); loginButton.setChannelId(channelId); loginButton.setLoginDelegate(loginDelegate); loginButton.enableLineAppAuthentication(true); loginButton.setAuthenticationParams(params); loginButton.addLoginListener(new LoginListener() {    @Override     public void onLoginSuccess(@NonNull LineLoginResult result) {         ...     }    @Override     public void onLoginFailure(@Nullable LineLoginResult result) {     if (result != null) {         ...     } else {         ...     } }); 
+ The example below handles the login result intent in the onActivityResult method.
+  @Override public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (loginDelegate.onActivityResult(requestCode, resultCode, data)) {         // login result intent is consumed.         return;     } } 
+
+
+
+
+
+
+",setLoginDelegate(LoginDelegate loginDelegate),Sets the login delegate.,void
+com.linecorp.linesdk.widget.LoginButton,"
+
+
+Class Overview
+A button widget that simplifies the login flow. Before you add login listeners to this login button through the
+ addLoginListener(LoginListener) method, set your channel ID through the
+ setChannelId(String) method and login delegate through the
+ setLoginDelegate(LoginDelegate) method. Otherwise, a RuntimeException is thrown.
+ Also, use the provided create() method to create a
+ LoginDelegate instance and set it to this button through the
+ setLoginDelegate(LoginDelegate) method.
+ 
+ By default, this button performs the login process using LINE with the PROFILE
+ scope only. You can create your own LineAuthenticationParams instance using the provided
+ LineAuthenticationParams.Builder method and set the authentication parameters to this
+ button through the setAuthenticationParams(LineAuthenticationParams) method. You can
+ also control whether the user logs in with LINE or with the browser through the
+ enableLineAppAuthentication(boolean) method.
+ 
+ Finally, call the onActivityResult(int, int, Intent) method using the
+ intent that you created with the Activity#onActivityResult(int, int, Intent) method.
+ If you use this button in a Fragment or an androidx.fragment.app.Fragment
+ instance, set the fragment to this button through the setFragment(Fragment) method or
+ the setFragment(androidx.fragment.app.Fragment) method. By doing so, you can call the
+ onActivityResult callback in your fragment after the login process is complete.
+ 
+ The following example shows how to set up the login button with the desired parameters.
+  int loginButtonResId = ...; String channelId = ...; LoginDelegate loginDelegate = LoginDelegate.Factory.create(); LineAuthenticationParams params = LineAuthenticationParams.Builder()                                         .scopes(...)                                         .nonce(...)                                         .botPrompt(...)                                         .build(); LoginButton loginButton = findViewById(loginButtonResId); loginButton.setChannelId(channelId); loginButton.setLoginDelegate(loginDelegate); loginButton.enableLineAppAuthentication(true); loginButton.setAuthenticationParams(params); loginButton.addLoginListener(new LoginListener() {    @Override     public void onLoginSuccess(@NonNull LineLoginResult result) {         ...     }    @Override     public void onLoginFailure(@Nullable LineLoginResult result) {     if (result != null) {         ...     } else {         ...     } }); 
+ The example below handles the login result intent in the onActivityResult method.
+  @Override public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (loginDelegate.onActivityResult(requestCode, resultCode, data)) {         // login result intent is consumed.         return;     } } 
+
+
+
+
+
+
+",setOnClickListener(OnClickListener externalListener),Registers a callback to be invoked when this button is tapped.,void
+com.linecorp.linesdk.widget.LoginButton,"
+
+
+Class Overview
+A button widget that simplifies the login flow. Before you add login listeners to this login button through the
+ addLoginListener(LoginListener) method, set your channel ID through the
+ setChannelId(String) method and login delegate through the
+ setLoginDelegate(LoginDelegate) method. Otherwise, a RuntimeException is thrown.
+ Also, use the provided create() method to create a
+ LoginDelegate instance and set it to this button through the
+ setLoginDelegate(LoginDelegate) method.
+ 
+ By default, this button performs the login process using LINE with the PROFILE
+ scope only. You can create your own LineAuthenticationParams instance using the provided
+ LineAuthenticationParams.Builder method and set the authentication parameters to this
+ button through the setAuthenticationParams(LineAuthenticationParams) method. You can
+ also control whether the user logs in with LINE or with the browser through the
+ enableLineAppAuthentication(boolean) method.
+ 
+ Finally, call the onActivityResult(int, int, Intent) method using the
+ intent that you created with the Activity#onActivityResult(int, int, Intent) method.
+ If you use this button in a Fragment or an androidx.fragment.app.Fragment
+ instance, set the fragment to this button through the setFragment(Fragment) method or
+ the setFragment(androidx.fragment.app.Fragment) method. By doing so, you can call the
+ onActivityResult callback in your fragment after the login process is complete.
+ 
+ The following example shows how to set up the login button with the desired parameters.
+  int loginButtonResId = ...; String channelId = ...; LoginDelegate loginDelegate = LoginDelegate.Factory.create(); LineAuthenticationParams params = LineAuthenticationParams.Builder()                                         .scopes(...)                                         .nonce(...)                                         .botPrompt(...)                                         .build(); LoginButton loginButton = findViewById(loginButtonResId); loginButton.setChannelId(channelId); loginButton.setLoginDelegate(loginDelegate); loginButton.enableLineAppAuthentication(true); loginButton.setAuthenticationParams(params); loginButton.addLoginListener(new LoginListener() {    @Override     public void onLoginSuccess(@NonNull LineLoginResult result) {         ...     }    @Override     public void onLoginFailure(@Nullable LineLoginResult result) {     if (result != null) {         ...     } else {         ...     } }); 
+ The example below handles the login result intent in the onActivityResult method.
+  @Override public void onActivityResult(int requestCode, int resultCode, Intent data) {     super.onActivityResult(requestCode, resultCode, data);     if (loginDelegate.onActivityResult(requestCode, resultCode, data)) {         // login result intent is consumed.         return;     } } 
+
+
+
+
+
+
+",N/A,N/A,N/A

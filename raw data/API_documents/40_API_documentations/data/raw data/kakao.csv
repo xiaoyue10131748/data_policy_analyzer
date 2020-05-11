@@ -1,0 +1,1619 @@
+class_name,class_description,method,method_description,data_type
+com.kakao.auth.authorization.accesstoken.AccessToken,Stores access token and refresh token data used by Kakao API.,accessTokenExpiresAt(),Get expire time for access token,Date
+com.kakao.auth.authorization.accesstoken.AccessToken,Stores access token and refresh token data used by Kakao API.,clearAccessToken(),Clear access token and its expire time.,void
+com.kakao.auth.authorization.accesstoken.AccessToken,Stores access token and refresh token data used by Kakao API.,clearRefreshToken(),Clear refresh token and its expire time.,void
+com.kakao.auth.authorization.accesstoken.AccessToken,Stores access token and refresh token data used by Kakao API.,getAccessToken(),Get access token.,String
+com.kakao.auth.authorization.accesstoken.AccessToken,Stores access token and refresh token data used by Kakao API.,getRefreshToken(),Get refresh token.,String
+com.kakao.auth.authorization.accesstoken.AccessToken,Stores access token and refresh token data used by Kakao API.,getRemainingExpireTime(),Get remaining expire time for access token in milliseconds,int
+com.kakao.auth.authorization.accesstoken.AccessToken,Stores access token and refresh token data used by Kakao API.,hasValidAccessToken(),check if access token is valid or not by its expiration time.,boolean
+com.kakao.auth.authorization.accesstoken.AccessToken,Stores access token and refresh token data used by Kakao API.,hasValidRefreshToken(),Check if refresh token is valid or not by its expiration time.,boolean
+com.kakao.auth.authorization.accesstoken.AccessToken,Stores access token and refresh token data used by Kakao API.,refreshTokenExpiresAt(),Get expire time for refresh token,Date
+com.kakao.auth.authorization.accesstoken.AccessToken,Stores access token and refresh token data used by Kakao API.,updateAccessToken(AccessToken accessToken),Update global access token with the given one (which could just be POJO).,void
+com.kakao.auth.authorization.accesstoken.AccessToken.Factory,Factory class for instantiating Access token,createEmptyToken(),"Create a dummy empty token info, usually used to clear access token.",static AccessToken
+com.kakao.auth.authorization.accesstoken.AccessToken.Factory,Factory class for instantiating Access token,"createFromCache(ISessionConfig sessionConfig,
+               com.kakao.util.helper.PersistentKVStore cache)",Create an access token from cache to be used globally by Session.,static AccessToken
+com.kakao.auth.authorization.accesstoken.AccessToken.Factory,Factory class for instantiating Access token,createFromResponse(String stringData),Create an access token from a successful response from Kakao OAuth server.,static AccessToken
+com.kakao.auth.authorization.accesstoken.AccessToken.Factory,Factory class for instantiating Access token,getInstance(),N/A,static AccessToken
+com.kakao.auth.AccessTokenCallback,Success/failure callback for getting access token.,onDidEnd(),해당 Job이 끝날때 불린다.,void
+com.kakao.auth.AccessTokenCallback,Success/failure callback for getting access token.,onDidStart(),해당 Job이 시작될때 불린다.,void
+com.kakao.auth.AccessTokenCallback,Success/failure callback for getting access token.,onFailure(ErrorResult errorResult),요청이 실패한경우 불린다.,void
+com.kakao.auth.AccessTokenCallback,Success/failure callback for getting access token.,onFailureForUiThread(ErrorResult errorResult),요청한 Request가 실패했을때 불리는 callback.,void
+com.kakao.auth.AccessTokenCallback,Success/failure callback for getting access token.,onSuccess(AccessToken accessToken),request에 대한 result.,void
+com.kakao.auth.AccessTokenCallback,Success/failure callback for getting access token.,onSuccessForUiThread(AccessToken result),요청한 Request가 성공했을때 불리는 callback.,void
+com.kakao.auth.authorization.accesstoken.AccessTokenListener,"Interface for access token callback.
+ This interface is used internally only and subject to change.",onAccessTokenFailure(ErrorResult errorResult),N/A,void
+com.kakao.auth.authorization.accesstoken.AccessTokenListener,"Interface for access token callback.
+ This interface is used internally only and subject to change.",onAccessTokenReceived(AccessToken accessToken),N/A,void
+com.kakao.auth.authorization.accesstoken.AccessTokenManager,"Interface responsible for getting access token from Kakao OAuth server. Access token can be acquired
+ with either authorization code or refresh token.
+ 
+ Authorization code is usually used when user tries login via AuthCodeManager, and refresh token
+ is used when a new access token is needed due to expired one.","refreshAccessToken(String refreshToken,
+                  AccessTokenCallback accessTokenCallback)",Requests access token with refresh token.,Future<AccessToken>
+com.kakao.auth.authorization.accesstoken.AccessTokenManager,"Interface responsible for getting access token from Kakao OAuth server. Access token can be acquired
+ with either authorization code or refresh token.
+ 
+ Authorization code is usually used when user tries login via AuthCodeManager, and refresh token
+ is used when a new access token is needed due to expired one.","requestAccessTokenByAuthCode(String authCode,
+                            AccessTokenCallback accessTokenCallback)",Requests access token with auth code retrieved from Kakao OAuth server.,Future<AccessToken>
+com.kakao.auth.authorization.accesstoken.AccessTokenManager.Factory,Initializes and provides singleton instance for AccessTokenManager.,getInstance(),N/A,static AccessTokenManager
+com.kakao.auth.authorization.accesstoken.AccessTokenManager.Factory,Initializes and provides singleton instance for AccessTokenManager.,"initialize(Context context,
+          ApprovalType approvalType)",N/A,static AccessTokenManager
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,param의 encording정보.,getAuthCode(),N/A,String
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,param의 encording정보.,getBodyEncoding(),param의 encording정보.,String
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,param의 encording정보.,getHeaders(),http요청에 필요한 headers.,"Map<String,String>"
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,param의 encording정보.,getMethod(),http 통신방법.,String
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,param의 encording정보.,getMultiPartList(),"MultiPart에 대한 정보
+ MultiPart로 요청을 보낼때 값을 채워주면 된다.",List<com.kakao.network.multipart.Part>
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,param의 encording정보.,getParams(),http요청에 필요한 params.,"Map<String,String>"
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,param의 encording정보.,getRefreshToken(),N/A,String
+com.kakao.auth.authorization.accesstoken.AccessTokenRequest,param의 encording정보.,getUrl(),요청할 target url.,String
+com.kakao.auth.AgeAuthParamBuilder,Builder for age authentication parameters,build(),연령인증 요청시 필요한 param들을 Query String으로 return한다.,Bundle
+com.kakao.auth.AgeAuthParamBuilder,Builder for age authentication parameters,setAdultsOnly(Boolean adultsOnly),"청소년 유해물 여부 (음악, TV 등).",AgeAuthParamBuilder
+com.kakao.auth.AgeAuthParamBuilder,Builder for age authentication parameters,setAgeLimit(AuthService.AgeLimit ageLimit),"연령제한, 일반적으로 12세, 15세, 19세 AuthService.AgeLimit",AgeAuthParamBuilder
+com.kakao.auth.AgeAuthParamBuilder,Builder for age authentication parameters,setAuthFrom(String authFrom),서비스 이름 (client_id or app_id or service_name),AgeAuthParamBuilder
+com.kakao.auth.AgeAuthParamBuilder,Builder for age authentication parameters,setAuthLevel(AuthService.AgeAuthLevel authLevel),연령인증 레벨.,AgeAuthParamBuilder
+com.kakao.auth.AgeAuthParamBuilder,Builder for age authentication parameters,setIsWesternAge(boolean isWesternAge),"만 나이여부
+ 동의하고 시작하기 뷰에 연령제한이 만 나이 기준으로 표시되는지의 여부.",AgeAuthParamBuilder
+com.kakao.auth.AgeAuthParamBuilder,Builder for age authentication parameters,setSkipTerm(boolean isSkipTerms),동의하기 안내화면 skip 여부,AgeAuthParamBuilder
+com.kakao.usermgmt.response.AgeAuthResponse,"CI 제공에 대한 사용자 동의 필요 여부
+
+ OptionalBoolean.TRUE 인 경우 새로운 동의 요청이 가능한 상태이며
+ Session.updateScopes(Activity, List, AccessTokenCallback) 메소드를 이용하여 동의를 받을 수 있습니다.",ciNeedsAgreement(),"CI 제공에 대한 사용자 동의 필요 여부
+
+ OptionalBoolean.TRUE 인 경우 새로운 동의 요청이 가능한 상태이며
+ Session.updateScopes(Activity, List, AccessTokenCallback) 메소드를 이용하여 동의를 받을 수 있습니다.",OptionalBoolean
+com.kakao.usermgmt.response.AgeAuthResponse,"CI 제공에 대한 사용자 동의 필요 여부
+
+ OptionalBoolean.TRUE 인 경우 새로운 동의 요청이 가능한 상태이며
+ Session.updateScopes(Activity, List, AccessTokenCallback) 메소드를 이용하여 동의를 받을 수 있습니다.",getAgeAuthLimitStatus(),true : 인증 받은 연령이 제한 나이 이상 / false : 인증 받은 연령이 제한 나이 미만.,AgeAuthResponse.AgeAuthLimitStatus
+com.kakao.usermgmt.response.AgeAuthResponse,"CI 제공에 대한 사용자 동의 필요 여부
+
+ OptionalBoolean.TRUE 인 경우 새로운 동의 요청이 가능한 상태이며
+ Session.updateScopes(Activity, List, AccessTokenCallback) 메소드를 이용하여 동의를 받을 수 있습니다.",getAuthenticatedAt(),인증 받은 시각.,String
+com.kakao.usermgmt.response.AgeAuthResponse,"CI 제공에 대한 사용자 동의 필요 여부
+
+ OptionalBoolean.TRUE 인 경우 새로운 동의 요청이 가능한 상태이며
+ Session.updateScopes(Activity, List, AccessTokenCallback) 메소드를 이용하여 동의를 받을 수 있습니다.",getAuthLevel(),유저가 받은 인증레벨.,AuthService.AgeAuthLevel
+com.kakao.usermgmt.response.AgeAuthResponse,"CI 제공에 대한 사용자 동의 필요 여부
+
+ OptionalBoolean.TRUE 인 경우 새로운 동의 요청이 가능한 상태이며
+ Session.updateScopes(Activity, List, AccessTokenCallback) 메소드를 이용하여 동의를 받을 수 있습니다.",getAuthLevelCode(),1 (auth_level : AUTH_LEVEL1) / 2 (auth_level : AUTH_LEVEL2) (level을 비교 편의를 제공하기 위해 auth_level에 해당하는 code 제공),int
+com.kakao.usermgmt.response.AgeAuthResponse,"CI 제공에 대한 사용자 동의 필요 여부
+
+ OptionalBoolean.TRUE 인 경우 새로운 동의 요청이 가능한 상태이며
+ Session.updateScopes(Activity, List, AccessTokenCallback) 메소드를 이용하여 동의를 받을 수 있습니다.",getCI(),인증후 받은 CI 값,String
+com.kakao.usermgmt.response.AgeAuthResponse,"CI 제공에 대한 사용자 동의 필요 여부
+
+ OptionalBoolean.TRUE 인 경우 새로운 동의 요청이 가능한 상태이며
+ Session.updateScopes(Activity, List, AccessTokenCallback) 메소드를 이용하여 동의를 받을 수 있습니다.",getUserId(),인증 여부를 확인하는 user의 id,long
+com.kakao.usermgmt.response.AgeAuthResponse,"CI 제공에 대한 사용자 동의 필요 여부
+
+ OptionalBoolean.TRUE 인 경우 새로운 동의 요청이 가능한 상태이며
+ Session.updateScopes(Activity, List, AccessTokenCallback) 메소드를 이용하여 동의를 받을 수 있습니다.",hasCI(),유저의 ci 값 소유 여부.,OptionalBoolean
+com.kakao.usermgmt.response.AgeAuthResponse,"CI 제공에 대한 사용자 동의 필요 여부
+
+ OptionalBoolean.TRUE 인 경우 새로운 동의 요청이 가능한 상태이며
+ Session.updateScopes(Activity, List, AccessTokenCallback) 메소드를 이용하여 동의를 받을 수 있습니다.",toString(),N/A,String
+com.kakao.usermgmt.response.AgeAuthResponse.AgeAuthLimitStatus,인증 받은 연령이 제한 나이 이상,valueOf(String name),Returns the enum constant of this type with the specified name.,static AgeAuthResponse.AgeAuthLimitStatus
+com.kakao.usermgmt.response.AgeAuthResponse.AgeAuthLimitStatus,인증 받은 연령이 제한 나이 이상,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AgeAuthResponse.AgeAuthLimitStatus[]
+com.kakao.usermgmt.response.model.AgeRange,Enum class for age range.,getRange(String value),N/A,static AgeRange
+com.kakao.usermgmt.response.model.AgeRange,Enum class for age range.,getValue(),N/A,String
+com.kakao.usermgmt.response.model.AgeRange,Enum class for age range.,valueOf(String name),Returns the enum constant of this type with the specified name.,static AgeRange
+com.kakao.usermgmt.response.model.AgeRange,Enum class for age range.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AgeRange[]
+com.kakao.auth.ApiErrorCode,ApiErrorCode related to auth module.,N/A,N/A,N/A
+com.kakao.friends.ApiErrorCode,"[친구 API]
+ 카카오톡 미가입 사용자가 요청한 경우 발생한다.",N/A,N/A,N/A
+com.kakao.kakaostory.ApiErrorCode,ApiErrorCode related to kakaostory module.,N/A,N/A,N/A
+com.kakao.kakaotalk.ApiErrorCode,ApiErorCode related to kakaotalk module.,N/A,N/A,N/A
+com.kakao.network.ApiErrorCode,ApiErrorCode related to network module.,N/A,N/A,N/A
+com.kakao.push.ApiErrorCode,ApiErrorCode related to push module.,N/A,N/A,N/A
+com.kakao.usermgmt.ApiErrorCode,ApiErrorCode related to usermgmt module.,N/A,N/A,N/A
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",getAppKey(),N/A,String
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",getAppVer(),N/A,String
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",getBodyEncoding(),param의 encording정보.,String
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",getExtras(),N/A,String
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",getHeaders(),http요청에 필요한 headers.,"Map<String,String>"
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",getHttpUserAgentString(),N/A,String
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",getMethod(),http 통신방법.,abstract String
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",getMultiPartList(),"MultiPart에 대한 정보
+ MultiPart로 요청을 보낼때 값을 채워주면 된다.",List<com.kakao.network.multipart.Part>
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",getParams(),http요청에 필요한 params.,"Map<String,String>"
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",getUriBuilder(),N/A,Uri.Builder
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",getUrl(),요청할 target url.,String
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",setAppKey(String appKey),N/A,void
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",setAppVer(String appVer),N/A,void
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..","setConfiguration(com.kakao.common.PhaseInfo phaseInfo,
+                com.kakao.common.IConfiguration configuration)",N/A,void
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",setExtras(String extras),N/A,void
+com.kakao.network.ApiRequest,"로그인이 필요하지 않을 때 사용하는 Request 클래스. 앱키 정보만 보낸다.
+ Created by kevin.kang on 2016. 11. 25..",setKaHeader(String kaHeader),N/A,void
+com.kakao.auth.ApiResponseCallback,"API 요청에 대한 공통 Callback class.
+ 각 API 서비스는 해당 클래스를 상속하여 callback 을 구현하게 된다.",onFailure(ErrorResult errorResult),요청이 실패한경우 불린다.,void
+com.kakao.auth.ApiResponseCallback,"API 요청에 대한 공통 Callback class.
+ 각 API 서비스는 해당 클래스를 상속하여 callback 을 구현하게 된다.",onFailureForUiThread(ErrorResult errorResult),요청한 Request가 실패했을때 불리는 callback.,void
+com.kakao.auth.ApiResponseCallback,"API 요청에 대한 공통 Callback class.
+ 각 API 서비스는 해당 클래스를 상속하여 callback 을 구현하게 된다.",onNotSignedUp(),"세션 오픈은 성공했으나 사용자 정보 요청 결과 사용자 가입이 안된 상태로
+ 일반적으로 가입창으로 이동한다.",void
+com.kakao.auth.ApiResponseCallback,"API 요청에 대한 공통 Callback class.
+ 각 API 서비스는 해당 클래스를 상속하여 callback 을 구현하게 된다.",onSessionClosed(ErrorResult errorResult),세션이 닫혔을때 불리는 callback,abstract void
+com.kakao.friends.AppFriendContext,"Context containing request parameters for Friends API. This class extends PageableContext, which
+ has PageableContext.getAfterUrl() method.
+ 
+ FriendsApi will automatically fill in after url for this context so
+ that subsequent API requests can be made with this url field, overriding all other parameters
+ such as offset, limit and order.",getAppFriendOrder(),친구 리스트 정렬 기준.,AppFriendOrder
+com.kakao.friends.AppFriendContext,"Context containing request parameters for Friends API. This class extends PageableContext, which
+ has PageableContext.getAfterUrl() method.
+ 
+ FriendsApi will automatically fill in after url for this context so
+ that subsequent API requests can be made with this url field, overriding all other parameters
+ such as offset, limit and order.",getLimit(),"한 페이지에 가져올 친구의 수, default 100,  max 2000",int
+com.kakao.friends.AppFriendContext,"Context containing request parameters for Friends API. This class extends PageableContext, which
+ has PageableContext.getAfterUrl() method.
+ 
+ FriendsApi will automatically fill in after url for this context so
+ that subsequent API requests can be made with this url field, overriding all other parameters
+ such as offset, limit and order.",getOffset(),가져올 친구 리스트의 시작 offset.,int
+com.kakao.friends.AppFriendContext,"Context containing request parameters for Friends API. This class extends PageableContext, which
+ has PageableContext.getAfterUrl() method.
+ 
+ FriendsApi will automatically fill in after url for this context so
+ that subsequent API requests can be made with this url field, overriding all other parameters
+ such as offset, limit and order.",getOrder(),친구리스트 정렬방법.,String
+com.kakao.friends.AppFriendContext,"Context containing request parameters for Friends API. This class extends PageableContext, which
+ has PageableContext.getAfterUrl() method.
+ 
+ FriendsApi will automatically fill in after url for this context so
+ that subsequent API requests can be made with this url field, overriding all other parameters
+ such as offset, limit and order.",isSecureResource(),N/A,boolean
+com.kakao.friends.response.model.AppFriendInfo,"Minimal friend information containing:
+ 1) user id for distinguishing users
+ 2) nickname and profile image for displaying on UI",describeContents(),N/A,int
+com.kakao.friends.response.model.AppFriendInfo,"Minimal friend information containing:
+ 1) user id for distinguishing users
+ 2) nickname and profile image for displaying on UI",equals(Object obj),N/A,boolean
+com.kakao.friends.response.model.AppFriendInfo,"Minimal friend information containing:
+ 1) user id for distinguishing users
+ 2) nickname and profile image for displaying on UI",getId(),App user id,long
+com.kakao.friends.response.model.AppFriendInfo,"Minimal friend information containing:
+ 1) user id for distinguishing users
+ 2) nickname and profile image for displaying on UI",getProfileNickname(),친구의 대표 프로필 닉네임.,String
+com.kakao.friends.response.model.AppFriendInfo,"Minimal friend information containing:
+ 1) user id for distinguishing users
+ 2) nickname and profile image for displaying on UI",getProfileThumbnailImage(),친구의 썸네일 이미지,String
+com.kakao.friends.response.model.AppFriendInfo,"Minimal friend information containing:
+ 1) user id for distinguishing users
+ 2) nickname and profile image for displaying on UI",getUUID(),해당 앱에서 유일한 친구의 code,String
+com.kakao.friends.response.model.AppFriendInfo,"Minimal friend information containing:
+ 1) user id for distinguishing users
+ 2) nickname and profile image for displaying on UI",isFavorite(),즐겨찾기된 친구인지 여부.,OptionalBoolean
+com.kakao.friends.response.model.AppFriendInfo,"Minimal friend information containing:
+ 1) user id for distinguishing users
+ 2) nickname and profile image for displaying on UI",toString(),N/A,String
+com.kakao.friends.response.model.AppFriendInfo,"Minimal friend information containing:
+ 1) user id for distinguishing users
+ 2) nickname and profile image for displaying on UI","writeToParcel(Parcel dest,
+             int flags)",N/A,void
+com.kakao.friends.AppFriendOrder,즐겨찾기 먼저 정렬.,getValue(),N/A,String
+com.kakao.friends.AppFriendOrder,즐겨찾기 먼저 정렬.,valueOf(String name),Returns the enum constant of this type with the specified name.,static AppFriendOrder
+com.kakao.friends.AppFriendOrder,즐겨찾기 먼저 정렬.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AppFriendOrder[]
+com.kakao.friends.response.AppFriendsResponse,"API response for FriendsService.requestAppFriends(AppFriendContext, ApiResponseCallback).",getAfterUrl(),API request url for next page,String
+com.kakao.friends.response.AppFriendsResponse,"API response for FriendsService.requestAppFriends(AppFriendContext, ApiResponseCallback).",getBeforeUrl(),API request url for previous page,String
+com.kakao.friends.response.AppFriendsResponse,"API response for FriendsService.requestAppFriends(AppFriendContext, ApiResponseCallback).",getFavoriteCount(),목록 내 전체 즐겨찾기 친구의 수.,int
+com.kakao.friends.response.AppFriendsResponse,"API response for FriendsService.requestAppFriends(AppFriendContext, ApiResponseCallback).",getFriends(),Return friends list,List<AppFriendInfo>
+com.kakao.friends.response.AppFriendsResponse,"API response for FriendsService.requestAppFriends(AppFriendContext, ApiResponseCallback).",getResultId(),N/A,String
+com.kakao.friends.response.AppFriendsResponse,"API response for FriendsService.requestAppFriends(AppFriendContext, ApiResponseCallback).",getTotalCount(),total count of friends,int
+com.kakao.auth.ApprovalType,Enum class specifying whether the user is authenticated for an individual app or a project.,getApprovalTypeByString(String s),N/A,static ApprovalType
+com.kakao.auth.ApprovalType,Enum class specifying whether the user is authenticated for an individual app or a project.,toString(),N/A,String
+com.kakao.auth.ApprovalType,Enum class specifying whether the user is authenticated for an individual app or a project.,valueOf(String name),Returns the enum constant of this type with the specified name.,static ApprovalType
+com.kakao.auth.ApprovalType,Enum class specifying whether the user is authenticated for an individual app or a project.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static ApprovalType[]
+com.kakao.auth.AuthCodeCallback,Success/failure callback for getting authorization code.,onAuthCodeFailure(ErrorResult errorResult),Called when there was a failure getting authorization code.,abstract void
+com.kakao.auth.AuthCodeCallback,Success/failure callback for getting authorization code.,onAuthCodeReceived(String authCode),Called when authorization code was successfully retrieved.,abstract void
+com.kakao.auth.authorization.authcode.AuthCodeListener,"Interface for auth code callback. Success/error results are all received by the only method
+ onAuthCodeReceived. This interface is subject to improvement in the future, when success/error
+ can be converted to different classes, not same AuthorizationResult class.
+
+ This interface is used internally only and subject to change.","onAuthCodeReceived(int requestCode,
+                  AuthorizationResult result)",N/A,void
+com.kakao.auth.authorization.authcode.AuthCodeManager,Interface responsible for getting authorization code from Kakao OAuth server.,"handleActivityResult(int requestCode,
+                    int resultCode,
+                    Intent data)",N/A,boolean
+com.kakao.auth.authorization.authcode.AuthCodeManager,Interface responsible for getting authorization code from Kakao OAuth server.,isStoryLoginAvailable(),Check if KakaoStory installed supports Kakao login.,boolean
+com.kakao.auth.authorization.authcode.AuthCodeManager,Interface responsible for getting authorization code from Kakao OAuth server.,isTalkLoginAvailable(),Check if KakaoTalk installed supports Kakao login.,boolean
+com.kakao.auth.authorization.authcode.AuthCodeManager,Interface responsible for getting authorization code from Kakao OAuth server.,"requestAuthCode(AuthType authType,
+               Activity activity,
+               AuthCodeCallback authCodeCallback)",Request authorization code with the given AuthType.,void
+com.kakao.auth.authorization.authcode.AuthCodeManager,Interface responsible for getting authorization code from Kakao OAuth server.,"requestAuthCode(AuthType authType,
+               androidx.fragment.app.Fragment fragment,
+               AuthCodeCallback authCodeCallback)",N/A,void
+com.kakao.auth.authorization.authcode.AuthCodeManager,Interface responsible for getting authorization code from Kakao OAuth server.,"requestAuthCode(AuthType authType,
+               com.kakao.auth.helper.StartActivityWrapper wrapper,
+               AuthCodeCallback authCodeCallback)",N/A,void
+com.kakao.auth.authorization.authcode.AuthCodeManager,Interface responsible for getting authorization code from Kakao OAuth server.,"requestAuthCode(AuthType authType,
+               com.kakao.auth.helper.StartActivityWrapper wrapper,
+               Map<String,String> extraParams,
+               AuthCodeCallback authCodeCallback)",N/A,void
+com.kakao.auth.authorization.authcode.AuthCodeManager,Interface responsible for getting authorization code from Kakao OAuth server.,"requestAuthCodeWithCustomAccountsUrl(com.kakao.auth.helper.StartActivityWrapper wrapper,
+                                    Map<String,String> extraParams,
+                                    String path,
+                                    Map<String,String> accountParams,
+                                    AuthCodeCallback callback)",통합 계정 회원 가입 후 authorization code 를 요청.,void
+com.kakao.auth.authorization.authcode.AuthCodeManager,Interface responsible for getting authorization code from Kakao OAuth server.,"requestAuthCodeWithScopes(AuthType authType,
+                         com.kakao.auth.helper.StartActivityWrapper wrapper,
+                         List<String> scopes,
+                         AuthCodeCallback authCodeCallback)",N/A,void
+com.kakao.auth.authorization.authcode.AuthCodeManager.Factory,N/A,getInstance(),N/A,static AuthCodeManager
+com.kakao.auth.authorization.authcode.AuthCodeManager.Factory,N/A,"initialize(Application application,
+          ISessionConfig sessionConfig)",N/A,static AuthCodeManager
+com.kakao.auth.authorization.authcode.AuthCodeService,This is an interface that abstracts various methods of getting authorization code from oauth server.,"handleActivityResult(int requestCode,
+                    int resultCode,
+                    Intent data,
+                    AuthCodeListener listener)",N/A,boolean
+com.kakao.auth.authorization.authcode.AuthCodeService,This is an interface that abstracts various methods of getting authorization code from oauth server.,isLoginAvailable(),Checks whether authorization code can be retrieved from this service.,boolean
+com.kakao.auth.authorization.authcode.AuthCodeService,This is an interface that abstracts various methods of getting authorization code from oauth server.,"requestAuthCode(com.kakao.auth.authorization.authcode.AuthCodeRequest request,
+               com.kakao.auth.helper.StartActivityWrapper wrapper,
+               AuthCodeListener listener)",Request authorization code.,boolean
+com.kakao.auth.authorization.authcode.AuthCodeService.Factory,This is a factory class for various AuthCodeService types.,N/A,N/A,N/A
+com.kakao.auth.authorization.authcode.AuthorizationCode,N/A,createEmptyCode(),N/A,static AuthorizationCode
+com.kakao.auth.authorization.authcode.AuthorizationCode,N/A,createFromRedirectedUri(Uri redirectedUri),N/A,static AuthorizationCode
+com.kakao.auth.authorization.authcode.AuthorizationCode,N/A,describeContents(),N/A,int
+com.kakao.auth.authorization.authcode.AuthorizationCode,N/A,getAuthorizationCode(),N/A,String
+com.kakao.auth.authorization.authcode.AuthorizationCode,N/A,hasAuthorizationCode(),N/A,boolean
+com.kakao.auth.authorization.authcode.AuthorizationCode,N/A,"writeToParcel(Parcel dest,
+             int flags)",N/A,void
+com.kakao.auth.authorization.AuthorizationResult,N/A,createAuthCodeCancelResult(String resultMessage),N/A,static AuthorizationResult
+com.kakao.auth.authorization.AuthorizationResult,N/A,createAuthCodeOAuthErrorResult(Exception e),N/A,static AuthorizationResult
+com.kakao.auth.authorization.AuthorizationResult,N/A,createAuthCodeOAuthErrorResult(String resultMessage),N/A,static AuthorizationResult
+com.kakao.auth.authorization.AuthorizationResult,N/A,createAuthCodePassResult(),N/A,static AuthorizationResult
+com.kakao.auth.authorization.AuthorizationResult,N/A,createSuccessAuthCodeResult(String redirectURL),N/A,static AuthorizationResult
+com.kakao.auth.authorization.AuthorizationResult,N/A,getAccessToken(),N/A,AccessToken
+com.kakao.auth.authorization.AuthorizationResult,N/A,getException(),N/A,Exception
+com.kakao.auth.authorization.AuthorizationResult,N/A,getRedirectUri(),N/A,Uri
+com.kakao.auth.authorization.AuthorizationResult,N/A,getRedirectURL(),N/A,String
+com.kakao.auth.authorization.AuthorizationResult,N/A,getResultMessage(),N/A,String
+com.kakao.auth.authorization.AuthorizationResult,N/A,isAuthError(),N/A,boolean
+com.kakao.auth.authorization.AuthorizationResult,N/A,isCanceled(),N/A,boolean
+com.kakao.auth.authorization.AuthorizationResult,N/A,isError(),N/A,boolean
+com.kakao.auth.authorization.AuthorizationResult,N/A,isPass(),N/A,boolean
+com.kakao.auth.authorization.AuthorizationResult,N/A,isSuccess(),N/A,boolean
+com.kakao.auth.authorization.AuthorizationResult.RESULT_CODE,Returns the enum constant of this type with the specified name.,valueOf(String name),Returns the enum constant of this type with the specified name.,static AuthorizationResult.RESULT_CODE
+com.kakao.auth.authorization.AuthorizationResult.RESULT_CODE,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AuthorizationResult.RESULT_CODE[]
+com.kakao.auth.AuthService,Service class for age authentication or checking access token info.,getInstance(),N/A,static AuthService
+com.kakao.auth.AuthService,Service class for age authentication or checking access token info.,requestAccessTokenInfo(ApiResponseCallback<com.kakao.auth.network.response.AccessTokenInfoResponse> callback),로그인을 통해 얻은 사용자 토큰의 정보를 얻는다.,void
+com.kakao.auth.AuthService,Service class for age authentication or checking access token info.,"requestShowAgeAuthDialog(com.kakao.auth.callback.AccountResponseCallback callback,
+                        Bundle ageAuthParams,
+                        Context context)",연령인증이 필요한 경우에 동의창을 띄우기 위한 용도로 사용된다.,Future<Integer>
+com.kakao.auth.AuthService.AgeAuthLevel,연령인증 레벨을 설정한다.,convertByName(String name),N/A,static AuthService.AgeAuthLevel
+com.kakao.auth.AuthService.AgeAuthLevel,연령인증 레벨을 설정한다.,getName(),N/A,String
+com.kakao.auth.AuthService.AgeAuthLevel,연령인증 레벨을 설정한다.,getValue(),N/A,String
+com.kakao.auth.AuthService.AgeAuthLevel,연령인증 레벨을 설정한다.,valueOf(String name),Returns the enum constant of this type with the specified name.,static AuthService.AgeAuthLevel
+com.kakao.auth.AuthService.AgeAuthLevel,연령인증 레벨을 설정한다.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AuthService.AgeAuthLevel[]
+com.kakao.auth.AuthService.AgeAuthStatus,연령인증시 응답받을 수 있는 StatusCode.,getValue(),N/A,int
+com.kakao.auth.AuthService.AgeAuthStatus,연령인증시 응답받을 수 있는 StatusCode.,valueOf(int i),N/A,static AuthService.AgeAuthStatus
+com.kakao.auth.AuthService.AgeAuthStatus,연령인증시 응답받을 수 있는 StatusCode.,valueOf(String name),Returns the enum constant of this type with the specified name.,static AuthService.AgeAuthStatus
+com.kakao.auth.AuthService.AgeAuthStatus,연령인증시 응답받을 수 있는 StatusCode.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AuthService.AgeAuthStatus[]
+com.kakao.auth.AuthService.AgeLimit,"연령제한, 일반적으로 12세, 15세, 19세",getValue(),N/A,String
+com.kakao.auth.AuthService.AgeLimit,"연령제한, 일반적으로 12세, 15세, 19세",valueOf(String name),Returns the enum constant of this type with the specified name.,static AuthService.AgeLimit
+com.kakao.auth.AuthService.AgeLimit,"연령제한, 일반적으로 12세, 15세, 19세",values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AuthService.AgeLimit[]
+com.kakao.auth.AuthType,Kakao SDK 로그인을 하는 방식에 대한 Enum class,getNumber(),N/A,int
+com.kakao.auth.AuthType,Kakao SDK 로그인을 하는 방식에 대한 Enum class,valueOf(int number),N/A,static AuthType
+com.kakao.auth.AuthType,Kakao SDK 로그인을 하는 방식에 대한 Enum class,valueOf(String name),Returns the enum constant of this type with the specified name.,static AuthType
+com.kakao.auth.AuthType,Kakao SDK 로그인을 하는 방식에 대한 Enum class,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AuthType[]
+com.kakao.usermgmt.response.model.BirthdayType,"생일의 양력,음력 정보",getType(String type),N/A,static BirthdayType
+com.kakao.usermgmt.response.model.BirthdayType,"생일의 양력,음력 정보",toString(),N/A,String
+com.kakao.usermgmt.response.model.BirthdayType,"생일의 양력,음력 정보",valueOf(String name),Returns the enum constant of this type with the specified name.,static BirthdayType
+com.kakao.usermgmt.response.model.BirthdayType,"생일의 양력,음력 정보",values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static BirthdayType[]
+com.kakao.message.template.ButtonObject,Class representing clickable buttons in message template v2.,getLink(),N/A,LinkObject
+com.kakao.message.template.ButtonObject,Class representing clickable buttons in message template v2.,getTitle(),N/A,String
+com.kakao.message.template.ButtonObject,Class representing clickable buttons in message template v2.,toJSONObject(),N/A,JSONObject
+com.kakao.kakaotalk.ChatFilterBuilder,"권한이 있는 채팅방의 리스트중, 내가 얻어올 수 있는 채팅방의 목록을 filtering 하기위해 필요한 데이터를 만들어주는 wrapper class.
+ filter로 넘겨주었지만 권한이 없는경우, 채팅방이 내려가지 않을 수 있다.",addFilter(ChatFilterBuilder.ChatFilter filter),N/A,ChatFilterBuilder
+com.kakao.kakaotalk.ChatFilterBuilder,"권한이 있는 채팅방의 리스트중, 내가 얻어올 수 있는 채팅방의 목록을 filtering 하기위해 필요한 데이터를 만들어주는 wrapper class.
+ filter로 넘겨주었지만 권한이 없는경우, 채팅방이 내려가지 않을 수 있다.",build(),N/A,String
+com.kakao.kakaotalk.ChatFilterBuilder.ChatFilter,1:1 방,valueOf(String name),Returns the enum constant of this type with the specified name.,static ChatFilterBuilder.ChatFilter
+com.kakao.kakaotalk.ChatFilterBuilder.ChatFilter,1:1 방,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static ChatFilterBuilder.ChatFilter[]
+com.kakao.kakaotalk.response.model.ChatInfo,"챗방 클래스.
+ 
+ Class for Chat room.",describeContents(),N/A,int
+com.kakao.kakaotalk.response.model.ChatInfo,"챗방 클래스.
+ 
+ Class for Chat room.",getChatId(),채팅방 고유의 id.,long
+com.kakao.kakaotalk.response.model.ChatInfo,"챗방 클래스.
+ 
+ Class for Chat room.",getChatType(),"""regular"" 일반 채팅방
+ ""open"" 오픈채팅방",String
+com.kakao.kakaotalk.response.model.ChatInfo,"챗방 클래스.
+ 
+ Class for Chat room.",getDisplayMemberImageList(),N/A,List<String>
+com.kakao.kakaotalk.response.model.ChatInfo,"챗방 클래스.
+ 
+ Class for Chat room.",getImageUrl(),그룹채팅방에 대표이미지가 설정된 경우 받을 수 있다.,String
+com.kakao.kakaotalk.response.model.ChatInfo,"챗방 클래스.
+ 
+ Class for Chat room.",getMemberCount(),N/A,int
+com.kakao.kakaotalk.response.model.ChatInfo,"챗방 클래스.
+ 
+ Class for Chat room.",getTargetId(),N/A,String
+com.kakao.kakaotalk.response.model.ChatInfo,"챗방 클래스.
+ 
+ Class for Chat room.",getTitle(),채팅방의 이름.,String
+com.kakao.kakaotalk.response.model.ChatInfo,"챗방 클래스.
+ 
+ Class for Chat room.",getType(),N/A,String
+com.kakao.kakaotalk.response.model.ChatInfo,"챗방 클래스.
+ 
+ Class for Chat room.",isAllowedMsg(),N/A,boolean
+com.kakao.kakaotalk.response.model.ChatInfo,"챗방 클래스.
+ 
+ Class for Chat room.",toString(),N/A,String
+com.kakao.kakaotalk.response.model.ChatInfo,"챗방 클래스.
+ 
+ Class for Chat room.","writeToParcel(Parcel dest,
+             int flags)",N/A,void
+com.kakao.kakaotalk.ChatListContext,"카카오톡의 채팅방을 얻어오는 API에서 사용된다.
+ 한번에 얻어갈 수 있는 채팅방의 수가 제한적이기때문에 현재 요청했던 상태를 관리해주는 용도로 사용된다.
+ (제휴를 통해 권한이 부여된 특정 앱에서만 호출이 가능합니다.)","createContext(ChatFilterBuilder filterBuilder,
+             int fromId,
+             int limit,
+             String order)",N/A,static ChatListContext
+com.kakao.kakaotalk.ChatListContext,"카카오톡의 채팅방을 얻어오는 API에서 사용된다.
+ 한번에 얻어갈 수 있는 채팅방의 수가 제한적이기때문에 현재 요청했던 상태를 관리해주는 용도로 사용된다.
+ (제휴를 통해 권한이 부여된 특정 앱에서만 호출이 가능합니다.)",getFilterString(),채팅방 리스트 filter.,String
+com.kakao.kakaotalk.ChatListContext,"카카오톡의 채팅방을 얻어오는 API에서 사용된다.
+ 한번에 얻어갈 수 있는 채팅방의 수가 제한적이기때문에 현재 요청했던 상태를 관리해주는 용도로 사용된다.
+ (제휴를 통해 권한이 부여된 특정 앱에서만 호출이 가능합니다.)",getFromId(),가져올 챗방 리스트의 시작 offset,int
+com.kakao.kakaotalk.ChatListContext,"카카오톡의 채팅방을 얻어오는 API에서 사용된다.
+ 한번에 얻어갈 수 있는 채팅방의 수가 제한적이기때문에 현재 요청했던 상태를 관리해주는 용도로 사용된다.
+ (제휴를 통해 권한이 부여된 특정 앱에서만 호출이 가능합니다.)",getLimit(),한 페이지에 가져올 챗방의 수.,int
+com.kakao.kakaotalk.ChatListContext,"카카오톡의 채팅방을 얻어오는 API에서 사용된다.
+ 한번에 얻어갈 수 있는 채팅방의 수가 제한적이기때문에 현재 요청했던 상태를 관리해주는 용도로 사용된다.
+ (제휴를 통해 권한이 부여된 특정 앱에서만 호출이 가능합니다.)",getOrder(),챗방리스트 정렬방법.,String
+com.kakao.kakaotalk.response.ChatListResponse,"챗방목록 KakaoTalkService.requestChatRoomList(TalkResponseCallback, ChatListContext) API의 응답 클래스.
+
+ Response class for KakaoTalkService.requestChatRoomList(TalkResponseCallback, ChatListContext)",getAfterUrl(),Paging된 요청 중 다음 요청의 url,String
+com.kakao.kakaotalk.response.ChatListResponse,"챗방목록 KakaoTalkService.requestChatRoomList(TalkResponseCallback, ChatListContext) API의 응답 클래스.
+
+ Response class for KakaoTalkService.requestChatRoomList(TalkResponseCallback, ChatListContext)",getBeforeUrl(),Paging된 요청 중 전 요청의 url,String
+com.kakao.kakaotalk.response.ChatListResponse,"챗방목록 KakaoTalkService.requestChatRoomList(TalkResponseCallback, ChatListContext) API의 응답 클래스.
+
+ Response class for KakaoTalkService.requestChatRoomList(TalkResponseCallback, ChatListContext)",getChatInfoList(),N/A,List<ChatInfo>
+com.kakao.kakaotalk.response.ChatListResponse,"챗방목록 KakaoTalkService.requestChatRoomList(TalkResponseCallback, ChatListContext) API의 응답 클래스.
+
+ Response class for KakaoTalkService.requestChatRoomList(TalkResponseCallback, ChatListContext)",getTotalCount(),총 챗방 갯수,int
+com.kakao.kakaotalk.response.ChatListResponse,"챗방목록 KakaoTalkService.requestChatRoomList(TalkResponseCallback, ChatListContext) API의 응답 클래스.
+
+ Response class for KakaoTalkService.requestChatRoomList(TalkResponseCallback, ChatListContext)",merge(ChatListResponse response),paging된 chat list정보를 모은다.,void
+com.kakao.kakaotalk.response.ChatListResponse,"챗방목록 KakaoTalkService.requestChatRoomList(TalkResponseCallback, ChatListContext) API의 응답 클래스.
+
+ Response class for KakaoTalkService.requestChatRoomList(TalkResponseCallback, ChatListContext)",toString(),N/A,String
+com.kakao.kakaotalk.response.model.ChatMember,"챗 멤버 클래스. 챗 멤버는 아래와 같은 특징을 가진다.
+
+ 
+     친구일수도, 아닐수도 있다.
+     앱 가입자일수도, 아닐수도 있다.
+ 
+
+
+ Class representing chat members.",appRegistered(),챗 멤버의 앱 가입 여부,OptionalBoolean
+com.kakao.kakaotalk.response.model.ChatMember,"챗 멤버 클래스. 챗 멤버는 아래와 같은 특징을 가진다.
+
+ 
+     친구일수도, 아닐수도 있다.
+     앱 가입자일수도, 아닐수도 있다.
+ 
+
+
+ Class representing chat members.",describeContents(),N/A,int
+com.kakao.kakaotalk.response.model.ChatMember,"챗 멤버 클래스. 챗 멤버는 아래와 같은 특징을 가진다.
+
+ 
+     친구일수도, 아닐수도 있다.
+     앱 가입자일수도, 아닐수도 있다.
+ 
+
+
+ Class representing chat members.",equals(Object obj),N/A,boolean
+com.kakao.kakaotalk.response.model.ChatMember,"챗 멤버 클래스. 챗 멤버는 아래와 같은 특징을 가진다.
+
+ 
+     친구일수도, 아닐수도 있다.
+     앱 가입자일수도, 아닐수도 있다.
+ 
+
+
+ Class representing chat members.",getTargetId(),N/A,String
+com.kakao.kakaotalk.response.model.ChatMember,"챗 멤버 클래스. 챗 멤버는 아래와 같은 특징을 가진다.
+
+ 
+     친구일수도, 아닐수도 있다.
+     앱 가입자일수도, 아닐수도 있다.
+ 
+
+
+ Class representing chat members.",getType(),N/A,String
+com.kakao.kakaotalk.response.model.ChatMember,"챗 멤버 클래스. 챗 멤버는 아래와 같은 특징을 가진다.
+
+ 
+     친구일수도, 아닐수도 있다.
+     앱 가입자일수도, 아닐수도 있다.
+ 
+
+
+ Class representing chat members.",id(),사용자 ID.,Long
+com.kakao.kakaotalk.response.model.ChatMember,"챗 멤버 클래스. 챗 멤버는 아래와 같은 특징을 가진다.
+
+ 
+     친구일수도, 아닐수도 있다.
+     앱 가입자일수도, 아닐수도 있다.
+ 
+
+
+ Class representing chat members.",isAllowedMsg(),N/A,boolean
+com.kakao.kakaotalk.response.model.ChatMember,"챗 멤버 클래스. 챗 멤버는 아래와 같은 특징을 가진다.
+
+ 
+     친구일수도, 아닐수도 있다.
+     앱 가입자일수도, 아닐수도 있다.
+ 
+
+
+ Class representing chat members.",msgBlocked(),N/A,OptionalBoolean
+com.kakao.kakaotalk.response.model.ChatMember,"챗 멤버 클래스. 챗 멤버는 아래와 같은 특징을 가진다.
+
+ 
+     친구일수도, 아닐수도 있다.
+     앱 가입자일수도, 아닐수도 있다.
+ 
+
+
+ Class representing chat members.",nickname(),카카오톡 닉네임.,String
+com.kakao.kakaotalk.response.model.ChatMember,"챗 멤버 클래스. 챗 멤버는 아래와 같은 특징을 가진다.
+
+ 
+     친구일수도, 아닐수도 있다.
+     앱 가입자일수도, 아닐수도 있다.
+ 
+
+
+ Class representing chat members.",thumbnailImage(),친구의 썸네일 이미지,String
+com.kakao.kakaotalk.response.model.ChatMember,"챗 멤버 클래스. 챗 멤버는 아래와 같은 특징을 가진다.
+
+ 
+     친구일수도, 아닐수도 있다.
+     앱 가입자일수도, 아닐수도 있다.
+ 
+
+
+ Class representing chat members.",uuid(),"해당 앱에서 유일한 친구의 code
+ 가변적인 데이터.",String
+com.kakao.kakaotalk.response.model.ChatMember,"챗 멤버 클래스. 챗 멤버는 아래와 같은 특징을 가진다.
+
+ 
+     친구일수도, 아닐수도 있다.
+     앱 가입자일수도, 아닐수도 있다.
+ 
+
+
+ Class representing chat members.","writeToParcel(Parcel dest,
+             int flags)",N/A,void
+com.kakao.kakaotalk.response.ChatMembersResponse,"챗멤버 API의 응답 클래스.
+
+ Response model for /v1/api/talk/members API.",activeFriendsCount(),챗방 내 톡친구의 수.,Long
+com.kakao.kakaotalk.response.ChatMembersResponse,"챗멤버 API의 응답 클래스.
+
+ Response model for /v1/api/talk/members API.",activeMembersCount(),챗방 내 멤버의 수.,Long
+com.kakao.kakaotalk.response.ChatMembersResponse,"챗멤버 API의 응답 클래스.
+
+ Response model for /v1/api/talk/members API.",members(),해당 챗방에 참여중인 멤버의 ChatMember 리스트.,List<ChatMember>
+com.kakao.kakaotalk.response.ChatMembersResponse,"챗멤버 API의 응답 클래스.
+
+ Response model for /v1/api/talk/members API.",type(),해당 챗방의 타입.,String
+com.kakao.kakaostory.response.CheckStoryUserResponse,N/A,isStoryUser(),N/A,boolean
+com.kakao.message.template.CommerceDetailObject,Class that defines commerce detail for commerce template.,newBuilder(Integer regularPrice),N/A,static CommerceDetailObject.Builder
+com.kakao.message.template.CommerceDetailObject,Class that defines commerce detail for commerce template.,toJSONObject(),N/A,JSONObject
+com.kakao.message.template.CommerceDetailObject.Builder,Class for building commerce detail objects.,build(),N/A,CommerceDetailObject
+com.kakao.message.template.CommerceDetailObject.Builder,Class for building commerce detail objects.,setDiscountPrice(Integer discountPrice),N/A,CommerceDetailObject.Builder
+com.kakao.message.template.CommerceDetailObject.Builder,Class for building commerce detail objects.,setDiscountRate(Integer discountRate),N/A,CommerceDetailObject.Builder
+com.kakao.message.template.CommerceDetailObject.Builder,Class for building commerce detail objects.,setFixedDiscountPrice(Integer fixedDiscountPrice),N/A,CommerceDetailObject.Builder
+com.kakao.message.template.CommerceTemplate,Class that defines parameters for building commerce messages.,getObjectType(),"Template type such as FEED, LIST, etc.",String
+com.kakao.message.template.CommerceTemplate,Class that defines parameters for building commerce messages.,"newBuilder(ContentObject contentObject,
+          CommerceDetailObject commerceDetail)",N/A,static CommerceTemplate.Builder
+com.kakao.message.template.CommerceTemplate,Class that defines parameters for building commerce messages.,toJSONObject(),"Any message type should be converted to JSONObject before they are validated or sent to
+ KakaoTalk.",JSONObject
+com.kakao.message.template.CommerceTemplate.Builder,Class for building commerce templates.,addButton(ButtonObject buttonObject),N/A,CommerceTemplate.Builder
+com.kakao.message.template.CommerceTemplate.Builder,Class for building commerce templates.,build(),N/A,CommerceTemplate
+com.kakao.message.template.ContentObject,"Class that defines main content in both feed and list template. List tempalte contains a list
+ of content objects.",getDescription(),N/A,String
+com.kakao.message.template.ContentObject,"Class that defines main content in both feed and list template. List tempalte contains a list
+ of content objects.",getImageHeight(),N/A,Integer
+com.kakao.message.template.ContentObject,"Class that defines main content in both feed and list template. List tempalte contains a list
+ of content objects.",getImageUrl(),N/A,String
+com.kakao.message.template.ContentObject,"Class that defines main content in both feed and list template. List tempalte contains a list
+ of content objects.",getImageWidth(),N/A,Integer
+com.kakao.message.template.ContentObject,"Class that defines main content in both feed and list template. List tempalte contains a list
+ of content objects.",getLink(),N/A,LinkObject
+com.kakao.message.template.ContentObject,"Class that defines main content in both feed and list template. List tempalte contains a list
+ of content objects.",getTitle(),N/A,String
+com.kakao.message.template.ContentObject,"Class that defines main content in both feed and list template. List tempalte contains a list
+ of content objects.","newBuilder(String title,
+          String imageUrl,
+          LinkObject link)",N/A,static ContentObject.Builder
+com.kakao.message.template.ContentObject,"Class that defines main content in both feed and list template. List tempalte contains a list
+ of content objects.",toJSONObject(),N/A,JSONObject
+com.kakao.message.template.ContentObject.Builder,Class for building content objects.,build(),N/A,ContentObject
+com.kakao.message.template.ContentObject.Builder,Class for building content objects.,setDescrption(String description),N/A,ContentObject.Builder
+com.kakao.message.template.ContentObject.Builder,Class for building content objects.,setImageHeight(int height),N/A,ContentObject.Builder
+com.kakao.message.template.ContentObject.Builder,Class for building content objects.,setImageWidth(int width),N/A,ContentObject.Builder
+com.kakao.kakaonavi.options.CoordType,좌표 타입을 나타내는 enum class.,getType(),N/A,String
+com.kakao.kakaonavi.options.CoordType,좌표 타입을 나타내는 enum class.,valueOf(String name),Returns the enum constant of this type with the specified name.,static CoordType
+com.kakao.kakaonavi.options.CoordType,좌표 타입을 나타내는 enum class.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static CoordType[]
+com.kakao.message.template.CurrencyUnitPosition,"Enum class for the position of currency unit in currency representation. This feature is not yet
+ supported by Commerce message.",valueOf(String name),Returns the enum constant of this type with the specified name.,static CurrencyUnitPosition
+com.kakao.message.template.CurrencyUnitPosition,"Enum class for the position of currency unit in currency representation. This feature is not yet
+ supported by Commerce message.",values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static CurrencyUnitPosition[]
+com.kakao.kakaonavi.Destination,목적지 파라미터를 위한 class.,getGuideId(),N/A,int
+com.kakao.kakaonavi.Destination,목적지 파라미터를 위한 class.,"newBuilder(String name,
+          double x,
+          double y)",N/A,static Destination.Builder
+com.kakao.kakaonavi.Destination.Builder,Builder for Destination parameter.,build(),N/A,Destination
+com.kakao.kakaonavi.Destination.Builder,Builder for Destination parameter.,setGuideId(Integer guideId),N/A,Destination.Builder
+com.kakao.network.ErrorResult,"Error에 대한 결과값을 저장하고 있는 객체.
+ error code, error message, http status를 저장한다.",equals(Object obj),N/A,boolean
+com.kakao.network.ErrorResult,"Error에 대한 결과값을 저장하고 있는 객체.
+ error code, error message, http status를 저장한다.",getErrorCode(),ErrorCode를 반환한다.,int
+com.kakao.network.ErrorResult,"Error에 대한 결과값을 저장하고 있는 객체.
+ error code, error message, http status를 저장한다.",getErrorMessage(),에러발생 메세지,String
+com.kakao.network.ErrorResult,"Error에 대한 결과값을 저장하고 있는 객체.
+ error code, error message, http status를 저장한다.",getException(),N/A,Exception
+com.kakao.network.ErrorResult,"Error에 대한 결과값을 저장하고 있는 객체.
+ error code, error message, http status를 저장한다.",getHttpStatus(),HttpResponse StatusCode를 반환,int
+com.kakao.network.ErrorResult,"Error에 대한 결과값을 저장하고 있는 객체.
+ error code, error message, http status를 저장한다.",toString(),결과 객체를 String으로 표현,String
+com.kakao.message.template.FeedTemplate,Class that defines parameters for building feed messages.,getButtons(),N/A,List<ButtonObject>
+com.kakao.message.template.FeedTemplate,Class that defines parameters for building feed messages.,getContentObject(),N/A,ContentObject
+com.kakao.message.template.FeedTemplate,Class that defines parameters for building feed messages.,getObjectType(),"Template type such as FEED, LIST, etc.",String
+com.kakao.message.template.FeedTemplate,Class that defines parameters for building feed messages.,getSocial(),N/A,SocialObject
+com.kakao.message.template.FeedTemplate,Class that defines parameters for building feed messages.,newBuilder(ContentObject contentObject),N/A,static FeedTemplate.Builder
+com.kakao.message.template.FeedTemplate,Class that defines parameters for building feed messages.,toJSONObject(),"Any message type should be converted to JSONObject before they are validated or sent to
+ KakaoTalk.",JSONObject
+com.kakao.message.template.FeedTemplate.Builder,Class for building feed templates.,addButton(ButtonObject buttonObject),N/A,FeedTemplate.Builder
+com.kakao.message.template.FeedTemplate.Builder,Class for building feed templates.,build(),N/A,FeedTemplate
+com.kakao.message.template.FeedTemplate.Builder,Class for building feed templates.,setSocial(SocialObject socialObject),N/A,FeedTemplate.Builder
+com.kakao.friends.FriendContext,Context containing request parameters for Partner Friends API.,"createContext(com.kakao.friends.request.FriendsRequest.FriendType friendType,
+             com.kakao.friends.request.FriendsRequest.FriendFilter friendFilter,
+             com.kakao.friends.request.FriendsRequest.FriendOrder friendOrder,
+             boolean secureResource,
+             int offset,
+             int limit,
+             String order)",친구의 리스트를 얻어오는데 필요한 데이터 셋을 생성한다.,static FriendContext
+com.kakao.friends.FriendContext,Context containing request parameters for Partner Friends API.,getFriendFilter(),N/A,com.kakao.friends.request.FriendsRequest.FriendFilter
+com.kakao.friends.FriendContext,Context containing request parameters for Partner Friends API.,getFriendOrder(),N/A,com.kakao.friends.request.FriendsRequest.FriendOrder
+com.kakao.friends.FriendContext,Context containing request parameters for Partner Friends API.,getFriendType(),N/A,com.kakao.friends.request.FriendsRequest.FriendType
+com.kakao.friends.FriendContext,Context containing request parameters for Partner Friends API.,getId(),응답받은 Friends Request에 대한 고유의 id값.,String
+com.kakao.friends.FriendContext,Context containing request parameters for Partner Friends API.,setId(String id),N/A,void
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",describeContents(),N/A,int
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",equals(Object obj),N/A,boolean
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",getRelation(),N/A,FriendInfo.FriendRelation
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",getServiceUserId(),친구의 카카오 회원번호.,long
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",getTalkOs(),톡에 가입된 기기의 os 정보 (android/ios),String
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",getTargetId(),메세지를 전송할 대상에 대한 ID.,String
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",getType(),N/A,String
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",getUUID(),"해당 앱에서 유일한 친구의 code
+ 가변적인 데이터.",String
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",isAllowedMsg(),메세지 수신이 허용되었는지 여부.,boolean
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",isAppRegistered(),친구의 앱 가입 여부,boolean
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",isStoryFriend(),친구와 내가 스토리 친구인지 여부.,boolean
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",isTalkFriend(),친구와 내가 카카오톡 친구인지 여부.,boolean
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.",toString(),N/A,String
+com.kakao.friends.response.model.FriendInfo,"Friend 에 대한 정보.
+ FriendsService.requestFriends(ApiResponseCallback, FriendContext)를
+ 이용하여 얻을 수 있음.","writeToParcel(Parcel parcel,
+             int i)",N/A,void
+com.kakao.friends.response.model.FriendInfo.FriendRelation,친구와 내가 스토리 친구인지 여부.,describeContents(),N/A,int
+com.kakao.friends.response.model.FriendInfo.FriendRelation,친구와 내가 스토리 친구인지 여부.,equals(Object object),N/A,boolean
+com.kakao.friends.response.model.FriendInfo.FriendRelation,친구와 내가 스토리 친구인지 여부.,isStoryFriend(),친구와 내가 스토리 친구인지 여부.,boolean
+com.kakao.friends.response.model.FriendInfo.FriendRelation,친구와 내가 스토리 친구인지 여부.,isTalkFriend(),친구와 내가 톡친구인지 여부,boolean
+com.kakao.friends.response.model.FriendInfo.FriendRelation,친구와 내가 스토리 친구인지 여부.,toString(),N/A,String
+com.kakao.friends.response.model.FriendInfo.FriendRelation,친구와 내가 스토리 친구인지 여부.,"writeToParcel(Parcel parcel,
+             int i)",N/A,void
+com.kakao.friends.response.model.FriendInfo.NotAvailableOperationException,N/A,N/A,N/A,N/A
+com.kakao.friends.FriendOperationContext,Context containing request parameters for Friends operation API.,"createContext(FriendContext firstFriendContext,
+             FriendContext secondFriendContext,
+             com.kakao.friends.request.FriendsOperationRequest.Operation operation,
+             boolean secureResource,
+             int offset,
+             int limit,
+             String order)",N/A,static FriendOperationContext
+com.kakao.friends.FriendOperationContext,Context containing request parameters for Friends operation API.,getFirstId(),N/A,String
+com.kakao.friends.FriendOperationContext,Context containing request parameters for Friends operation API.,getOperation(),N/A,com.kakao.friends.request.FriendsOperationRequest.Operation
+com.kakao.friends.FriendOperationContext,Context containing request parameters for Friends operation API.,getSecondId(),N/A,String
+com.kakao.friends.FriendOperationContext,Context containing request parameters for Friends operation API.,isSecureResource(),N/A,boolean
+com.kakao.friends.response.FriendsResponse,"API response for FriendsService.requestFriends(ApiResponseCallback, FriendContext).",getAfterUrl(),N/A,String
+com.kakao.friends.response.FriendsResponse,"API response for FriendsService.requestFriends(ApiResponseCallback, FriendContext).",getBeforeUrl(),N/A,String
+com.kakao.friends.response.FriendsResponse,"API response for FriendsService.requestFriends(ApiResponseCallback, FriendContext).",getFavoriteCount(),목록 내 전체 즐겨찾기 친구의 수.,int
+com.kakao.friends.response.FriendsResponse,"API response for FriendsService.requestFriends(ApiResponseCallback, FriendContext).",getFriendInfoList(),N/A,List<FriendInfo>
+com.kakao.friends.response.FriendsResponse,"API response for FriendsService.requestFriends(ApiResponseCallback, FriendContext).",getId(),N/A,String
+com.kakao.friends.response.FriendsResponse,"API response for FriendsService.requestFriends(ApiResponseCallback, FriendContext).",getTotalCount(),N/A,int
+com.kakao.friends.response.FriendsResponse,"API response for FriendsService.requestFriends(ApiResponseCallback, FriendContext).",toString(),N/A,String
+com.kakao.friends.FriendsService,유저의 친구 리스트와 각 친구의 정보를 얻어오는 API,getInstance(),Get a singleton instance of FriendsService,static FriendsService
+com.kakao.friends.FriendsService,유저의 친구 리스트와 각 친구의 정보를 얻어오는 API,"requestAppFriends(AppFriendContext context,
+                 ApiResponseCallback<AppFriendsResponse> callback)",카카오톡 친구 중 아래의 조건을 만족하는 친구들의 리스트를 얻어온다.,void
+com.kakao.friends.FriendsService,유저의 친구 리스트와 각 친구의 정보를 얻어오는 API,"requestFriends(ApiResponseCallback<FriendsResponse> callback,
+              FriendContext context)",친구의 리스트를 얻어온다.,void
+com.kakao.usermgmt.response.model.Gender,Enum class for gender.,getGender(String value),N/A,static Gender
+com.kakao.usermgmt.response.model.Gender,Enum class for gender.,getValue(),N/A,String
+com.kakao.usermgmt.response.model.Gender,Enum class for gender.,valueOf(String name),Returns the enum constant of this type with the specified name.,static Gender
+com.kakao.usermgmt.response.model.Gender,Enum class for gender.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static Gender[]
+com.kakao.push.response.GetPushTokenResponse,N/A,N/A,N/A,N/A
+com.kakao.auth.IApplicationConfig,"This interface provides application context to Kakao SDK via getApplicationConfig() method in
+ KakaoAdapter",getApplicationContext(),Returns application context of the application.,Context
+com.kakao.network.INetwork,"http 연결을 할때 사용된다.
+ 사용자는 INetwork를 구현하여 원하는 http 구현체를 사용할 수 있다.","addHeader(String key,
+         String value)",http header에 대한 정보를 추가한다.,void
+com.kakao.network.INetwork,"http 연결을 할때 사용된다.
+ 사용자는 INetwork를 구현하여 원하는 http 구현체를 사용할 수 있다.","addParam(String key,
+        String value)",http param에 대한 정보를 추가한다.,void
+com.kakao.network.INetwork,"http 연결을 할때 사용된다.
+ 사용자는 INetwork를 구현하여 원하는 http 구현체를 사용할 수 있다.",addPart(com.kakao.network.multipart.Part part),file upload용 FilePart를 구현한다.,void
+com.kakao.network.INetwork,"http 연결을 할때 사용된다.
+ 사용자는 INetwork를 구현하여 원하는 http 구현체를 사용할 수 있다.",configure(),connection에 대한 property 설정.,void
+com.kakao.network.INetwork,"http 연결을 할때 사용된다.
+ 사용자는 INetwork를 구현하여 원하는 http 구현체를 사용할 수 있다.",connect(),http 연결을 수행한다.,void
+com.kakao.network.INetwork,"http 연결을 할때 사용된다.
+ 사용자는 INetwork를 구현하여 원하는 http 구현체를 사용할 수 있다.","create(String url,
+      String method,
+      String charset)",INetwork를 생성한다.,void
+com.kakao.network.INetwork,"http 연결을 할때 사용된다.
+ 사용자는 INetwork를 구현하여 원하는 http 구현체를 사용할 수 있다.",disconnect(),연결을 해제한다.,void
+com.kakao.network.INetwork,"http 연결을 할때 사용된다.
+ 사용자는 INetwork를 구현하여 원하는 http 구현체를 사용할 수 있다.",getStatusCode(),http response code를 얻는다.,int
+com.kakao.network.INetwork,"http 연결을 할때 사용된다.
+ 사용자는 INetwork를 구현하여 원하는 http 구현체를 사용할 수 있다.",readFully(),연결된 reqeust에 대한 응답 stread을 끝까지 읽어야 한다.,byte[]
+com.kakao.auth.IPushConfig,푸시를 사용하기 위해 사용되는 정보값을 받아오기 위한 클래스.,getDeviceUUID(),N/A,String
+com.kakao.auth.IPushConfig,푸시를 사용하기 위해 사용되는 정보값을 받아오기 위한 클래스.,getTokenRegisterCallback(),N/A,ApiResponseCallback<Integer>
+com.kakao.network.IRequest,Http 요청에 필요한 정보를 얻기위해 제공된다.,getBodyEncoding(),param의 encording정보.,String
+com.kakao.network.IRequest,Http 요청에 필요한 정보를 얻기위해 제공된다.,getHeaders(),http요청에 필요한 headers.,"Map<String,String>"
+com.kakao.network.IRequest,Http 요청에 필요한 정보를 얻기위해 제공된다.,getMethod(),http 통신방법.,String
+com.kakao.network.IRequest,Http 요청에 필요한 정보를 얻기위해 제공된다.,getMultiPartList(),"MultiPart에 대한 정보
+ MultiPart로 요청을 보낼때 값을 채워주면 된다.",List<com.kakao.network.multipart.Part>
+com.kakao.network.IRequest,Http 요청에 필요한 정보를 얻기위해 제공된다.,getParams(),http요청에 필요한 params.,"Map<String,String>"
+com.kakao.network.IRequest,Http 요청에 필요한 정보를 얻기위해 제공된다.,getUrl(),요청할 target url.,String
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,addCallback(ISessionCallback callback),세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,void
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,clearCallbacks(),Remove all session callbacks.,void
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,close(),N/A,void
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,getAccessTokenCallback(),N/A,AccessTokenCallback
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,getAccessTokenManager(),N/A,AccessTokenManager
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,getAuthCodeManager(),N/A,AuthCodeManager
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,getTokenInfo(),"Returns currently managed AccessToken instance containing access token and refresh
+ token information.",AccessToken
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,isClosed(),현재 세션이 닫힌 상태인지 여부를 반환한다.,boolean
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,isOpenable(),현재 세션이 오픈중(갱신 포함) 상태인지 여부를 반환한다.,boolean
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,isOpened(),현재 세션이 열린 상태인지 여부를 반환한다.,boolean
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,"open(AuthType authType,
+    Activity activity)",세션 오픈을 진행한다.,void
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,"open(AuthType authType,
+    androidx.fragment.app.Fragment supportFragment)",세션 오픈을 진행한다.,void
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,openWithAuthCode(String authCode),Try login (open session) with authorization code.,void
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,refreshAccessToken(AccessTokenCallback callback),N/A,Future<AccessToken>
+com.kakao.auth.ISession,세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,removeCallback(ISessionCallback callback),더이상 세션 상태 변화 콜백을 받고 싶지 않을 때 삭제한다.,void
+com.kakao.auth.ISessionCallback,"세션의 상태 변경에 따른 콜백
+ 세션이 오픈되었을 때, 세션이 만료되어 닫혔을 때 세션 콜백을 넘기게 된다.",onSessionOpened(),access token을 성공적으로 발급 받아 valid access token을 가지고 있는 상태.,void
+com.kakao.auth.ISessionCallback,"세션의 상태 변경에 따른 콜백
+ 세션이 오픈되었을 때, 세션이 만료되어 닫혔을 때 세션 콜백을 넘기게 된다.",onSessionOpenFailed(com.kakao.util.exception.KakaoException exception),로그인을 실패한 상태.,void
+com.kakao.auth.ISessionConfig,Session에서 사용되는 정보값을 받아오기 위한 class.,getApprovalType(),"일반 사용자가 아닌 Kakao와 제휴된 앱에서 사용되는 값으로, 값을 채워주지 않을경우 ApprovalType.INDIVIDUAL 값을 사용하게 된다.",ApprovalType
+com.kakao.auth.ISessionConfig,Session에서 사용되는 정보값을 받아오기 위한 class.,getAuthTypes(),로그인시 인증받을 타입을 지정한다.,AuthType[]
+com.kakao.auth.ISessionConfig,Session에서 사용되는 정보값을 받아오기 위한 class.,isSecureMode(),로그인시 access token과 refresh token을 저장할 때 암호화 여부를 결정한다.,boolean
+com.kakao.auth.ISessionConfig,Session에서 사용되는 정보값을 받아오기 위한 class.,isUsingWebviewTimer(),SDK 로그인시 사용되는 WebView에서 pause와 resume시에 Timer를 설정하여 CPU소모를 절약한다.,boolean
+com.kakao.auth.KakaoAdapter,Kakao SDK와 Application을 연결하는 class.,getApplicationConfig(),KakaoSDK에서 Application에 필요한 정보를 받는 용도로 사용된다.,abstract IApplicationConfig
+com.kakao.auth.KakaoAdapter,Kakao SDK와 Application을 연결하는 class.,getPushConfig(),Push 설정에 필요한 값/콜백을 받는다.,IPushConfig
+com.kakao.auth.KakaoAdapter,Kakao SDK와 Application을 연결하는 class.,getSessionConfig(),Session 설정에 필요한 option 값들을 받는다.,ISessionConfig
+com.kakao.kakaolink.v2.KakaoLinkCallback,해당 Job이 끝날때 불린다.,onDidEnd(),해당 Job이 끝날때 불린다.,void
+com.kakao.kakaolink.v2.KakaoLinkCallback,해당 Job이 끝날때 불린다.,onDidStart(),해당 Job이 시작될때 불린다.,void
+com.kakao.kakaolink.v2.KakaoLinkCallback,해당 Job이 끝날때 불린다.,onFailure(ErrorResult errorResult),요청이 실패한경우 불린다.,void
+com.kakao.kakaolink.v2.KakaoLinkCallback,해당 Job이 끝날때 불린다.,onFailureForUiThread(ErrorResult errorResult),요청한 Request가 실패했을때 불리는 callback.,void
+com.kakao.kakaolink.v2.KakaoLinkCallback,해당 Job이 끝날때 불린다.,onSuccess(KakaoLinkResponse result),request에 대한 result.,void
+com.kakao.kakaolink.v2.KakaoLinkCallback,해당 Job이 끝날때 불린다.,onSuccessForUiThread(KakaoLinkResponse result),요청한 Request가 성공했을때 불리는 callback.,void
+com.kakao.kakaolink.v2.KakaoLinkResponse,"Template validation에 성공하였을 때 반환되는 response.
+ Created by kevin.kang on 2016. 11. 25..",getArgumentMsg(),N/A,JSONObject
+com.kakao.kakaolink.v2.KakaoLinkResponse,"Template validation에 성공하였을 때 반환되는 response.
+ Created by kevin.kang on 2016. 11. 25..",getTemplateArgs(),N/A,JSONObject
+com.kakao.kakaolink.v2.KakaoLinkResponse,"Template validation에 성공하였을 때 반환되는 response.
+ Created by kevin.kang on 2016. 11. 25..",getTemplateId(),N/A,String
+com.kakao.kakaolink.v2.KakaoLinkResponse,"Template validation에 성공하였을 때 반환되는 response.
+ Created by kevin.kang on 2016. 11. 25..",getTemplateMsg(),N/A,JSONObject
+com.kakao.kakaolink.v2.KakaoLinkResponse,"Template validation에 성공하였을 때 반환되는 response.
+ Created by kevin.kang on 2016. 11. 25..",getWarningMsg(),N/A,JSONObject
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.","deleteImageWithToken(Context context,
+                    String imageToken,
+                    ResponseCallback<com.kakao.network.storage.ImageDeleteResponse> callback)",Delete the image with the given token from Kakao storage server.,void
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.",getInstance(),Returns a singleton instance for KakaoLink v2 API.,static KakaoLinkService
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.",getKakaoTalkInstallIntent(Context context),Returns an intent to start KakaoTalk install page of Google play store.,Intent
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.",isKakaoLinkV2Available(Context context),N/A,boolean
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.","scrapImage(Context context,
+          Boolean secureResource,
+          String imageUrl,
+          ResponseCallback<com.kakao.network.storage.ImageUploadResponse> callback)",Upload image with the given URL to Kakao storage server.,void
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.","sendCustom(Context context,
+          String templateId,
+          Map<String,String> templateArgs,
+          Map<String,String> serverCallbackArgs,
+          ResponseCallback<KakaoLinkResponse> callback)",Send KakaoLink v2 message with custom templates.,void
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.","sendCustom(Context context,
+          String templateId,
+          Map<String,String> templateArgs,
+          ResponseCallback<KakaoLinkResponse> callback)",Send KakaoLink v2 message with custom templates.,void
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.","sendDefault(Context context,
+           TemplateParams params,
+           Map<String,String> serverCallbackArgs,
+           ResponseCallback<KakaoLinkResponse> callback)",Send KakaoLink v2 message with default templates.,void
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.","sendDefault(Context context,
+           TemplateParams params,
+           ResponseCallback<KakaoLinkResponse> callback)",Send KakaoLink v2 message with default templates.,void
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.","sendScrap(Context context,
+         String url,
+         Map<String,String> serverCallbackArgs,
+         ResponseCallback<KakaoLinkResponse> callback)",Send a URL scrap message with default scrap template.,void
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.","sendScrap(Context context,
+         String url,
+         ResponseCallback<KakaoLinkResponse> callback)",Send a URL scrap message with default scrap template.,void
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.","sendScrap(Context context,
+         String url,
+         String templateId,
+         Map<String,String> templateArgs,
+         Map<String,String> serverCallbackArgs,
+         ResponseCallback<KakaoLinkResponse> callback)",Send a URL scrap message with custom template and template arguments.,void
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.","sendScrap(Context context,
+         String url,
+         String templateId,
+         Map<String,String> templateArgs,
+         ResponseCallback<KakaoLinkResponse> callback)",Send a URL scrap message with custom template and template arguments.,void
+com.kakao.kakaolink.v2.KakaoLinkService,"Class for sending KakaoTalk messages using KakaoLink v2 API.
+ 
+ 카카오링크 v2를 사용하기 위한 클래스.","uploadImage(Context context,
+           Boolean secureResource,
+           File imageFile,
+           ResponseCallback<com.kakao.network.storage.ImageUploadResponse> callback)",Upload image to Kakao storage server to be used in KakaoLink message.,void
+com.kakao.kakaonavi.KakaoNaviParams,카카오내비에 사용되는 파라미터들을 위한 class.,getDestination(),N/A,Location
+com.kakao.kakaonavi.KakaoNaviParams,카카오내비에 사용되는 파라미터들을 위한 class.,getNaviOptions(),N/A,NaviOptions
+com.kakao.kakaonavi.KakaoNaviParams,카카오내비에 사용되는 파라미터들을 위한 class.,getStops(),N/A,List<Location>
+com.kakao.kakaonavi.KakaoNaviParams,카카오내비에 사용되는 파라미터들을 위한 class.,newBuilder(Location destination),필수 파라미터들을 포함하는 Builder를 생성하는 메소드.,static KakaoNaviParams.Builder
+com.kakao.kakaonavi.KakaoNaviParams.Builder,KakaoNaviParams를 간편하게 build하기 위한 Builder class.,build(),N/A,KakaoNaviParams
+com.kakao.kakaonavi.KakaoNaviParams.Builder,KakaoNaviParams를 간편하게 build하기 위한 Builder class.,setNaviOptions(NaviOptions naviOptions),N/A,KakaoNaviParams.Builder
+com.kakao.kakaonavi.KakaoNaviParams.Builder,KakaoNaviParams를 간편하게 build하기 위한 Builder class.,setViaList(List<Location> stops),N/A,KakaoNaviParams.Builder
+com.kakao.kakaonavi.KakaoNaviService,카카오내비 앱을 호출하여 목적지 공유/길찾기를 하기 위한 API.,getInstance(),N/A,static KakaoNaviService
+com.kakao.kakaonavi.KakaoNaviService,카카오내비 앱을 호출하여 목적지 공유/길찾기를 하기 위한 API.,isKakaoNaviInstalled(Context context),카카오내비 앱이 설치되어 있는지 확인해 주는 메소드.,boolean
+com.kakao.kakaonavi.KakaoNaviService,카카오내비 앱을 호출하여 목적지 공유/길찾기를 하기 위한 API.,"navigate(Context context,
+        KakaoNaviParams params)",카카오내비 앱의 길 안내를 실행하기 위한 API.,void
+com.kakao.kakaonavi.KakaoNaviService,카카오내비 앱을 호출하여 목적지 공유/길찾기를 하기 위한 API.,"navigate(Context context,
+        KakaoNaviParams params,
+        int activityFlags)",카카오내비 앱의 길 안내를 실행하기 위한 API.,void
+com.kakao.kakaonavi.KakaoNaviService,카카오내비 앱을 호출하여 목적지 공유/길찾기를 하기 위한 API.,"shareDestination(Context context,
+                KakaoNaviParams params)",카카오내비 앱의 목적지 공유를 하기 위한 API.,void
+com.kakao.kakaonavi.KakaoNaviService,카카오내비 앱을 호출하여 목적지 공유/길찾기를 하기 위한 API.,"shareDestination(Context context,
+                KakaoNaviParams params,
+                int activityFlags)",카카오내비 앱의 목적지 공유를 하기 위한 API.,void
+com.kakao.kakaonavi.KakaoNaviWebViewActivity,Activity that renders web version of KakaoNavi. This activity takes care of runtime location permission.,"onRequestPermissionsResult(int requestCode,
+                          String[] permissions,
+                          int[] grantResults)",N/A,void
+com.kakao.network.KakaoNetworkImpl,"INetwork를 구현한 구현체.
+ google android에서 제공하는 HttpURLConnection을 기준으로 만들어졌다.
+ Kakao Api를 요청하기위한 하나의 Connection의 용도로 사용되며, Thread Safe 하지 않음.","addHeader(String key,
+         String value)",http header에 대한 정보를 추가한다.,void
+com.kakao.network.KakaoNetworkImpl,"INetwork를 구현한 구현체.
+ google android에서 제공하는 HttpURLConnection을 기준으로 만들어졌다.
+ Kakao Api를 요청하기위한 하나의 Connection의 용도로 사용되며, Thread Safe 하지 않음.","addParam(String key,
+        String value)",http param에 대한 정보를 추가한다.,void
+com.kakao.network.KakaoNetworkImpl,"INetwork를 구현한 구현체.
+ google android에서 제공하는 HttpURLConnection을 기준으로 만들어졌다.
+ Kakao Api를 요청하기위한 하나의 Connection의 용도로 사용되며, Thread Safe 하지 않음.",addPart(com.kakao.network.multipart.Part part),file upload용 FilePart를 구현한다.,void
+com.kakao.network.KakaoNetworkImpl,"INetwork를 구현한 구현체.
+ google android에서 제공하는 HttpURLConnection을 기준으로 만들어졌다.
+ Kakao Api를 요청하기위한 하나의 Connection의 용도로 사용되며, Thread Safe 하지 않음.",configure(),connection에 대한 property 설정.,void
+com.kakao.network.KakaoNetworkImpl,"INetwork를 구현한 구현체.
+ google android에서 제공하는 HttpURLConnection을 기준으로 만들어졌다.
+ Kakao Api를 요청하기위한 하나의 Connection의 용도로 사용되며, Thread Safe 하지 않음.",connect(),http 연결을 수행한다.,void
+com.kakao.network.KakaoNetworkImpl,"INetwork를 구현한 구현체.
+ google android에서 제공하는 HttpURLConnection을 기준으로 만들어졌다.
+ Kakao Api를 요청하기위한 하나의 Connection의 용도로 사용되며, Thread Safe 하지 않음.","create(String url,
+      String method,
+      String charset)","HttpUrlConnection 을 생성하며, property설정을 한다.",void
+com.kakao.network.KakaoNetworkImpl,"INetwork를 구현한 구현체.
+ google android에서 제공하는 HttpURLConnection을 기준으로 만들어졌다.
+ Kakao Api를 요청하기위한 하나의 Connection의 용도로 사용되며, Thread Safe 하지 않음.",disconnect(),연결을 해제한다.,void
+com.kakao.network.KakaoNetworkImpl,"INetwork를 구현한 구현체.
+ google android에서 제공하는 HttpURLConnection을 기준으로 만들어졌다.
+ Kakao Api를 요청하기위한 하나의 Connection의 용도로 사용되며, Thread Safe 하지 않음.",getStatusCode(),http response code를 얻는다.,int
+com.kakao.network.KakaoNetworkImpl,"INetwork를 구현한 구현체.
+ google android에서 제공하는 HttpURLConnection을 기준으로 만들어졌다.
+ Kakao Api를 요청하기위한 하나의 Connection의 용도로 사용되며, Thread Safe 하지 않음.",readFully(),연결된 reqeust에 대한 응답 stread을 끝까지 읽어야 한다.,byte[]
+com.kakao.util.KakaoParameterException,파라미터가 프로토콜에 맞지 않는 경우 던지는 exception,getCode(),exception을 던지는 이유 code값,KakaoParameterException.ERROR_CODE
+com.kakao.util.KakaoParameterException,파라미터가 프로토콜에 맞지 않는 경우 던지는 exception,getMessage(),exception을 던지는 이유 code 값과 에러 메시지,String
+com.kakao.util.KakaoParameterException.ERROR_CODE,카카오링크 프로토콜에 맞지 않는 경우 던지는 에러 코드,valueOf(String name),Returns the enum constant of this type with the specified name.,static KakaoParameterException.ERROR_CODE
+com.kakao.util.KakaoParameterException.ERROR_CODE,카카오링크 프로토콜에 맞지 않는 경우 던지는 에러 코드,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static KakaoParameterException.ERROR_CODE[]
+com.kakao.auth.KakaoSDK,Application에서 구현을 해줘야 하며 Application에서 init method를 KakaoAdapter와 연결한다.,getAdapter(),N/A,static KakaoAdapter
+com.kakao.auth.KakaoSDK,Application에서 구현을 해줘야 하며 Application에서 init method를 KakaoAdapter와 연결한다.,getCurrentActivity(),N/A,static Activity
+com.kakao.auth.KakaoSDK,Application에서 구현을 해줘야 하며 Application에서 init method를 KakaoAdapter와 연결한다.,init(KakaoAdapter adapter),N/A,static void
+com.kakao.auth.KakaoSDK,Application에서 구현을 해줘야 하며 Application에서 init method를 KakaoAdapter와 연결한다.,"init(KakaoAdapter adapter,
+    com.kakao.common.PhaseInfo phaseInfo)",N/A,static void
+com.kakao.auth.KakaoSDK.AlreadyInitializedException,3rd party Application과 Kakao SDK를 연결하는 과정중 adapter를 중복으로 세팅하게 되었을경우 발생할 수 있다.,N/A,N/A,N/A
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,getInstance(),N/A,static KakaoStoryService
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestDeleteMyStory(com.kakao.kakaostory.callback.StoryResponseCallback<Boolean> callback,
+                    String id)",지정한 id에 해당하는 카카오스토리 Activity 삭제 요청,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestFriends(com.kakao.kakaostory.callback.StoryResponseCallback<FriendsResponse> callback,
+              FriendContext context)",카카오스토리 친구 리스트를 요청한다.,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestGetLinkInfo(com.kakao.kakaostory.callback.StoryResponseCallback<LinkInfoResponse> callback,
+                  String linkUrl)",카카오스토리에 링크 포스팅 요청전에 링크로 부터 정보를 얻어오는 과정.,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestGetMyStories(com.kakao.kakaostory.callback.StoryResponseCallback<List<MyStoryInfo>> callback,
+                   String lastMyStoryId)",지정한 id로부터 최신 약 18개 카카오스토리 Activity 요청,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestGetMyStory(com.kakao.kakaostory.callback.StoryResponseCallback<MyStoryInfo> callback,
+                 String storyId)",지정한 id에 해당하는 카카오스토리 Activity 요청,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,requestIsStoryUser(com.kakao.kakaostory.callback.StoryResponseCallback<Boolean> callback),현 사용자가 카카오스토리 가입자인지 확인하는 요청,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestPostLink(com.kakao.kakaostory.callback.StoryResponseCallback<MyStoryInfo> callback,
+               String linkUrl,
+               String content)",카카오스토리에 포스팅 요청,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestPostLink(com.kakao.kakaostory.callback.StoryResponseCallback<MyStoryInfo> callback,
+               String linkUrl,
+               String content,
+               com.kakao.kakaostory.request.PostRequest.StoryPermission permission,
+               boolean enableShare,
+               Map<String,String> androidExecParam,
+               Map<String,String> iosExecParam,
+               Map<String,String> androidMarketParam,
+               Map<String,String> iosMarketParam)",카카오스토리에 포스팅 요청,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestPostLink(com.kakao.kakaostory.callback.StoryResponseCallback<MyStoryInfo> callback,
+               String linkUrl,
+               String content,
+               com.kakao.kakaostory.request.PostRequest.StoryPermission permission,
+               boolean enableShare,
+               String androidExecParam,
+               String iosExecParam,
+               String androidMarketParam,
+               String iosMarketParam)",Deprecated. ,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestPostNote(com.kakao.kakaostory.callback.StoryResponseCallback<MyStoryInfo> callback,
+               String content)",카카오스토리에 포스팅 요청,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestPostNote(com.kakao.kakaostory.callback.StoryResponseCallback<MyStoryInfo> callback,
+               String content,
+               com.kakao.kakaostory.request.PostRequest.StoryPermission permission,
+               boolean enableShare,
+               Map<String,String> androidExecParam,
+               Map<String,String> iosExecParam,
+               Map<String,String> androidMarketParam,
+               Map<String,String> iosMarketParam)",카카오스토리에 포스팅 요청,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestPostNote(com.kakao.kakaostory.callback.StoryResponseCallback<MyStoryInfo> callback,
+               String content,
+               com.kakao.kakaostory.request.PostRequest.StoryPermission permission,
+               boolean enableShare,
+               String androidExecParam,
+               String iosExecParam,
+               String androidMarketParam,
+               String iosMarketParam)",Deprecated. ,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestPostPhoto(com.kakao.kakaostory.callback.StoryResponseCallback<MyStoryInfo> callback,
+                List<File> fileList,
+                String content)",카카오스토리에 이미지 포스팅 요청.,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestPostPhoto(com.kakao.kakaostory.callback.StoryResponseCallback<MyStoryInfo> callback,
+                List<File> fileList,
+                String content,
+                com.kakao.kakaostory.request.PostRequest.StoryPermission permission,
+                boolean enableShare,
+                Map<String,String> androidExecParam,
+                Map<String,String> iosExecParam,
+                Map<String,String> androidMarketParam,
+                Map<String,String> iosMarketParam)",카카오스토리에 이미지 포스팅 요청.,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestPostPhoto(com.kakao.kakaostory.callback.StoryResponseCallback<MyStoryInfo> callback,
+                List<File> fileList,
+                String content,
+                com.kakao.kakaostory.request.PostRequest.StoryPermission permission,
+                boolean enableShare,
+                String androidExecParam,
+                String iosExecParam,
+                String androidMarketParam,
+                String iosMarketParam)",Deprecated. ,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,requestProfile(com.kakao.kakaostory.callback.StoryResponseCallback<ProfileResponse> callback),카카오스토리 프로필 요청,void
+com.kakao.kakaostory.KakaoStoryService,카카오스토리 API 요청을 담당한다.,"requestProfile(com.kakao.kakaostory.callback.StoryResponseCallback<ProfileResponse> callback,
+              boolean secureResource)",카카오스토리 프로필 요청,void
+com.kakao.kakaostory.KakaoStoryService.StoryType,스토리 포스팅의 종류를 나타낸다.,valueOf(String name),Returns the enum constant of this type with the specified name.,static KakaoStoryService.StoryType
+com.kakao.kakaostory.KakaoStoryService.StoryType,스토리 포스팅의 종류를 나타낸다.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static KakaoStoryService.StoryType[]
+com.kakao.kakaotalk.response.KakaoTalkProfile,"* 카카오톡 프로필 요청의 결과 객체로
+ 카카오톡의 닉네임 정보(nickName), 카카오톡의 프로필 이미지 URL(profileImageURL), 카카오톡의 프로필 이미지의 썸네일 URL(thumbnailURL), 카카오톡의 국가코드(countryISO)로 구성되어 있다.",describeContents(),N/A,int
+com.kakao.kakaotalk.response.KakaoTalkProfile,"* 카카오톡 프로필 요청의 결과 객체로
+ 카카오톡의 닉네임 정보(nickName), 카카오톡의 프로필 이미지 URL(profileImageURL), 카카오톡의 프로필 이미지의 썸네일 URL(thumbnailURL), 카카오톡의 국가코드(countryISO)로 구성되어 있다.",equals(Object obj),N/A,boolean
+com.kakao.kakaotalk.response.KakaoTalkProfile,"* 카카오톡 프로필 요청의 결과 객체로
+ 카카오톡의 닉네임 정보(nickName), 카카오톡의 프로필 이미지 URL(profileImageURL), 카카오톡의 프로필 이미지의 썸네일 URL(thumbnailURL), 카카오톡의 국가코드(countryISO)로 구성되어 있다.",getCountryISO(),카카오톡 국가,String
+com.kakao.kakaotalk.response.KakaoTalkProfile,"* 카카오톡 프로필 요청의 결과 객체로
+ 카카오톡의 닉네임 정보(nickName), 카카오톡의 프로필 이미지 URL(profileImageURL), 카카오톡의 프로필 이미지의 썸네일 URL(thumbnailURL), 카카오톡의 국가코드(countryISO)로 구성되어 있다.",getNickName(),카카오톡 별명,String
+com.kakao.kakaotalk.response.KakaoTalkProfile,"* 카카오톡 프로필 요청의 결과 객체로
+ 카카오톡의 닉네임 정보(nickName), 카카오톡의 프로필 이미지 URL(profileImageURL), 카카오톡의 프로필 이미지의 썸네일 URL(thumbnailURL), 카카오톡의 국가코드(countryISO)로 구성되어 있다.",getProfileImageUrl(),640px * 640px 크기의 카카오톡 프로필 이미지 URL,String
+com.kakao.kakaotalk.response.KakaoTalkProfile,"* 카카오톡 프로필 요청의 결과 객체로
+ 카카오톡의 닉네임 정보(nickName), 카카오톡의 프로필 이미지 URL(profileImageURL), 카카오톡의 프로필 이미지의 썸네일 URL(thumbnailURL), 카카오톡의 국가코드(countryISO)로 구성되어 있다.",getThumbnailUrl(),110px * 110px 크기의 카카오톡 썸네일 프로필 이미지 URL,String
+com.kakao.kakaotalk.response.KakaoTalkProfile,"* 카카오톡 프로필 요청의 결과 객체로
+ 카카오톡의 닉네임 정보(nickName), 카카오톡의 프로필 이미지 URL(profileImageURL), 카카오톡의 프로필 이미지의 썸네일 URL(thumbnailURL), 카카오톡의 국가코드(countryISO)로 구성되어 있다.",toString(),각 정보를 string으로 표현하여 반환한다.,String
+com.kakao.kakaotalk.response.KakaoTalkProfile,"* 카카오톡 프로필 요청의 결과 객체로
+ 카카오톡의 닉네임 정보(nickName), 카카오톡의 프로필 이미지 URL(profileImageURL), 카카오톡의 프로필 이미지의 썸네일 URL(thumbnailURL), 카카오톡의 국가코드(countryISO)로 구성되어 있다.","writeToParcel(Parcel parcel,
+             int i)",N/A,void
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,getInstance(),N/A,static KakaoTalkService
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"plusFriends(List<String> publicIds,
+           com.kakao.kakaotalk.callback.TalkResponseCallback<PlusFriendsResponse> callback)",유저가 특정 카카오톡 채널과 친구를 맺었는지 확인.,Future<PlusFriendsResponse>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,plusFriends(com.kakao.kakaotalk.callback.TalkResponseCallback<PlusFriendsResponse> callback),유저가 특정 카카오톡 채널과 친구를 맺었는지 확인.,Future<PlusFriendsResponse>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"requestAppFriends(AppFriendContext context,
+                 com.kakao.kakaotalk.callback.TalkResponseCallback<AppFriendsResponse> callback)","Request for a list of KakaoTalk friends who also:
+ - Registered to this app (Connect with Kakao)
+ - Agreed to provide friends info to this app",Future<AppFriendsResponse>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"requestChatMembers(Long chatId,
+                  Boolean friendsOnly,
+                  com.kakao.kakaotalk.callback.TalkResponseCallback<ChatMembersResponse> callback)","톡 채팅방 멤버 리스트 정보
+ (제휴를 통해 권한이 부여된 특정 앱에서만 호출이 가능합니다.)",Future<ChatMembersResponse>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"requestChatRoomList(com.kakao.kakaotalk.callback.TalkResponseCallback<ChatListResponse> callback,
+                   ChatListContext context)","톡의 채팅방 리스트 정보
+ 권한이 있는 방에 대한 정보만 내려받는다.",Future<ChatListResponse>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"requestFriends(com.kakao.kakaotalk.callback.TalkResponseCallback<FriendsResponse> callback,
+              FriendContext context)",카카오톡 친구 리스트를 요청한다.,Future<FriendsResponse>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,requestProfile(com.kakao.kakaotalk.callback.TalkResponseCallback<KakaoTalkProfile> callback),카카오톡 프로필 요청,Future<KakaoTalkProfile>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"requestProfile(com.kakao.kakaotalk.callback.TalkResponseCallback<KakaoTalkProfile> callback,
+              boolean secureResource)",카카오톡 프로필 요청,Future<KakaoTalkProfile>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"requestSendMemo(String url,
+               String templateId,
+               Map<String,String> templateArgs,
+               com.kakao.kakaotalk.callback.TalkResponseCallback<Boolean> callback)",스크랩 정보를 커스텀 템플릿에 사용하여 나에게 메시지 전송,Future<Boolean>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"requestSendMemo(String url,
+               com.kakao.kakaotalk.callback.TalkResponseCallback<Boolean> callback)",스크랩 템플릿을 사용하여 나에게 메시지 전송,Future<Boolean>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"requestSendMemo(com.kakao.kakaotalk.callback.TalkResponseCallback<Boolean> callback,
+               String templateId,
+               Map<String,String> templateArgs)",Send KakaoTalk message to self with message template v2.,Future<Boolean>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"requestSendMemo(com.kakao.kakaotalk.callback.TalkResponseCallback<Boolean> callback,
+               TemplateParams templateParams)",Send KakaoTalk message to self with message template v2.,Future<Boolean>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"requestSendMessage(com.kakao.kakaotalk.callback.TalkResponseCallback<Boolean> callback,
+                  com.kakao.auth.common.MessageSendable receiverInfo,
+                  String templateId,
+                  Map<String,String> templateArgs)","카카오톡 메시지 전송하며, message template v2로 구성된 template으로 카카오톡 메시지 전송.",Future<Boolean>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"requestSendMessage(com.kakao.kakaotalk.callback.TalkResponseCallback<Boolean> callback,
+                  com.kakao.auth.common.MessageSendable receiverInfo,
+                  TemplateParams templateParams)","카카오톡 메시지 전송하며, message template v2로 구성된 template 으로 카카오톡 메시지 전송.",Future<Boolean>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"sendMessageToFriends(List<String> uuids,
+                    String templateId,
+                    Map<String,String> templateArgs,
+                    com.kakao.kakaotalk.callback.TalkResponseCallback<MessageSendResponse> callback)",앱에 가입한 카카오톡 친구들에게 커스텀 템플릿을 사용하여 카카오톡 메시지 전송,Future<MessageSendResponse>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"sendMessageToFriends(List<String> receiverUuids,
+                    String url,
+                    String templateId,
+                    Map<String,String> templateArgs,
+                    com.kakao.kakaotalk.callback.TalkResponseCallback<MessageSendResponse> callback)",앱에 가입한 카카오톡 친구들에게 스크랩 템플릿을 사용하여 카카오톡 메시지 전송,Future<MessageSendResponse>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"sendMessageToFriends(List<String> receiverUuids,
+                    String url,
+                    com.kakao.kakaotalk.callback.TalkResponseCallback<MessageSendResponse> callback)",앱에 가입한 카카오톡 친구들에게 스크랩 템플릿을 사용하여 카카오톡 메시지 전송,Future<MessageSendResponse>
+com.kakao.kakaotalk.v2.KakaoTalkService,카카오톡 API 요청을 담당한다.,"sendMessageToFriends(List<String> receiverUuids,
+                    TemplateParams templateParams,
+                    com.kakao.kakaotalk.callback.TalkResponseCallback<MessageSendResponse> callback)",앱에 가입한 카카오톡 친구들에게 디폴트 템플릿을 사용하여 카카오톡 메시지 전송,Future<MessageSendResponse>
+com.kakao.util.KakaoUtilService,"This interface checks whether KakaoTalk or KakaoStory are installed or new enough to support
+ features offered by SDK. (such as Kakaolink or Kakao login)","resolveIntent(Context context,
+             Intent intent,
+             int minVersion)","This method checks whether the given intent can be handled by the currently installed
+ kakaotalk or kakaostory.",Intent
+com.kakao.util.KakaoUtilService.Factory,Factory class for maintaining singleton instance of KakaoUtilService,getInstance(),Returns a singleton instance of KakaoUtilService used by this application,static KakaoUtilService
+com.kakao.auth.authorization.authcode.KakaoWebViewActivity,N/A,finish(),N/A,void
+com.kakao.auth.authorization.authcode.KakaoWebViewActivity,N/A,newIntent(Context context),N/A,static Intent
+com.kakao.auth.authorization.authcode.KakaoWebViewActivity,N/A,onBackPressed(),N/A,void
+com.kakao.kakaostory.response.LinkInfoResponse,Deprecated. ,getDescription(),N/A,String
+com.kakao.kakaostory.response.LinkInfoResponse,Deprecated. ,getHost(),N/A,String
+com.kakao.kakaostory.response.LinkInfoResponse,Deprecated. ,getImageList(),N/A,List<String>
+com.kakao.kakaostory.response.LinkInfoResponse,Deprecated. ,getRequestedUrl(),N/A,String
+com.kakao.kakaostory.response.LinkInfoResponse,Deprecated. ,getSection(),N/A,String
+com.kakao.kakaostory.response.LinkInfoResponse,Deprecated. ,getTitle(),N/A,String
+com.kakao.kakaostory.response.LinkInfoResponse,Deprecated. ,getType(),N/A,String
+com.kakao.kakaostory.response.LinkInfoResponse,Deprecated. ,getUrl(),N/A,String
+com.kakao.kakaostory.response.LinkInfoResponse,Deprecated. ,isValidResult(),N/A,boolean
+com.kakao.kakaostory.response.LinkInfoResponse,Deprecated. ,toString(),N/A,String
+com.kakao.message.template.LinkObject,Class representing links for various platforms in message template v2.,getAndroidExecutionParams(),N/A,String
+com.kakao.message.template.LinkObject,Class representing links for various platforms in message template v2.,getIosExecutionParams(),N/A,String
+com.kakao.message.template.LinkObject,Class representing links for various platforms in message template v2.,getMobileWebUrl(),N/A,String
+com.kakao.message.template.LinkObject,Class representing links for various platforms in message template v2.,getWebUrl(),N/A,String
+com.kakao.message.template.LinkObject,Class representing links for various platforms in message template v2.,newBuilder(),N/A,static LinkObject.Builder
+com.kakao.message.template.LinkObject,Class representing links for various platforms in message template v2.,toJSONObject(),N/A,JSONObject
+com.kakao.message.template.LinkObject.Builder,Class for building link objects.,build(),N/A,LinkObject
+com.kakao.message.template.LinkObject.Builder,Class for building link objects.,setAndroidExecutionParams(String params),N/A,LinkObject.Builder
+com.kakao.message.template.LinkObject.Builder,Class for building link objects.,setIosExecutionParams(String params),N/A,LinkObject.Builder
+com.kakao.message.template.LinkObject.Builder,Class for building link objects.,setMobileWebUrl(String url),N/A,LinkObject.Builder
+com.kakao.message.template.LinkObject.Builder,Class for building link objects.,setWebUrl(String url),N/A,LinkObject.Builder
+com.kakao.message.template.ListTemplate,Class that defines parameters for building list messages.,getObjectType(),"Template type such as FEED, LIST, etc.",String
+com.kakao.message.template.ListTemplate,Class that defines parameters for building list messages.,"newBuilder(String headerTitle,
+          LinkObject headerLink)",N/A,static ListTemplate.Builder
+com.kakao.message.template.ListTemplate,Class that defines parameters for building list messages.,toJSONObject(),"Any message type should be converted to JSONObject before they are validated or sent to
+ KakaoTalk.",JSONObject
+com.kakao.message.template.ListTemplate.Builder,Class for building list templates.,addButton(ButtonObject buttonObject),N/A,ListTemplate.Builder
+com.kakao.message.template.ListTemplate.Builder,Class for building list templates.,addContent(ContentObject contentObject),N/A,ListTemplate.Builder
+com.kakao.message.template.ListTemplate.Builder,Class for building list templates.,build(),N/A,ListTemplate
+com.kakao.kakaonavi.Location,목적지/경유지를 나타내기 위한 class.,getCid(),N/A,String
+com.kakao.kakaonavi.Location,목적지/경유지를 나타내기 위한 class.,getName(),N/A,String
+com.kakao.kakaonavi.Location,목적지/경유지를 나타내기 위한 class.,getRpflag(),N/A,String
+com.kakao.kakaonavi.Location,목적지/경유지를 나타내기 위한 class.,getX(),N/A,double
+com.kakao.kakaonavi.Location,목적지/경유지를 나타내기 위한 class.,getY(),N/A,double
+com.kakao.kakaonavi.Location,목적지/경유지를 나타내기 위한 class.,"newBuilder(String name,
+          double x,
+          double y)",필수 파라미터를 포함하는 Builder를 생성하는 메소드.,static Location.Builder
+com.kakao.kakaonavi.Location.Builder,Destination을 간편하게 build하기 위한 Builder class.,build(),N/A,Location
+com.kakao.kakaonavi.Location.Builder,Destination을 간편하게 build하기 위한 Builder class.,setCid(String cid),set confirm id (poi id).,T
+com.kakao.kakaonavi.Location.Builder,Destination을 간편하게 build하기 위한 Builder class.,setRpflag(String rpflag),N/A,T
+com.kakao.message.template.LocationTemplate,Class that defines parameters for building location messages.,getObjectType(),"Template type such as FEED, LIST, etc.",String
+com.kakao.message.template.LocationTemplate,Class that defines parameters for building location messages.,newBuilder(ContentObject contentObject),N/A,static FeedTemplate.Builder
+com.kakao.message.template.LocationTemplate,Class that defines parameters for building location messages.,"newBuilder(String address,
+          ContentObject contentObject)",N/A,static LocationTemplate.Builder
+com.kakao.message.template.LocationTemplate,Class that defines parameters for building location messages.,toJSONObject(),"Any message type should be converted to JSONObject before they are validated or sent to
+ KakaoTalk.",JSONObject
+com.kakao.message.template.LocationTemplate.Builder,Class for building location templates.,addButton(ButtonObject buttonObject),N/A,LocationTemplate.Builder
+com.kakao.message.template.LocationTemplate.Builder,Class for building location templates.,build(),N/A,LocationTemplate
+com.kakao.message.template.LocationTemplate.Builder,Class for building location templates.,setAddressTitle(String addressTitle),N/A,LocationTemplate.Builder
+com.kakao.message.template.LocationTemplate.Builder,Class for building location templates.,setSocial(SocialObject socialObject),N/A,LocationTemplate.Builder
+com.kakao.usermgmt.LoginButton,"로그인 버튼
+ 로그인 layout에 LoginButton을 선언하여 사용한다.",getSupportFragment(),N/A,androidx.fragment.app.Fragment
+com.kakao.usermgmt.LoginButton,"로그인 버튼
+ 로그인 layout에 LoginButton을 선언하여 사용한다.",openSession(AuthType authType),N/A,void
+com.kakao.usermgmt.LoginButton,"로그인 버튼
+ 로그인 layout에 LoginButton을 선언하여 사용한다.",setSupportFragment(androidx.fragment.app.Fragment fragment),N/A,void
+com.kakao.kakaotalk.response.model.MessageFailureInfo,메시지 전송 실패 정보,code(),에러 코드,Integer
+com.kakao.kakaotalk.response.model.MessageFailureInfo,메시지 전송 실패 정보,msg(),에러 메시지,String
+com.kakao.kakaotalk.response.model.MessageFailureInfo,메시지 전송 실패 정보,receiverUuids(),해당 에러코드로 실패한 사용자 uuid 배열,List<String>
+com.kakao.kakaotalk.response.model.MessageFailureInfo,메시지 전송 실패 정보,toString(),N/A,String
+com.kakao.kakaotalk.response.MessageSendResponse,메시지 오픈 API 응답 모델,failureInfo(),실패 정보,List<MessageFailureInfo>
+com.kakao.kakaotalk.response.MessageSendResponse,메시지 오픈 API 응답 모델,successfulReceiverUuids(),성공한 사용자 아이디 배열,List<String>
+com.kakao.kakaotalk.response.MessageSendResponse,메시지 오픈 API 응답 모델,toString(),N/A,String
+com.kakao.message.template.MessageTemplateProtocol,N/A,N/A,N/A,N/A
+com.kakao.usermgmt.response.MeV2Response,"API response from /v2/user/me. /v2/user/me divides user-related data into three categories:
+ - kakaoAccount
+ - properties
+ - forPartners
+ 
+ UserAccount has all the data related to user's Kakao account. Properties contain app-scope
+ user data (including your custom ones). ForPartners have partner-specific data such as uuid and
+ remaining invite counts.",forPartners(),"Return values normally used by Kakao partner services such as:
+ - uuid
+ - remaining_invite_count
+ - remaining_group_msg_count",JSONObject
+com.kakao.usermgmt.response.MeV2Response,"API response from /v2/user/me. /v2/user/me divides user-related data into three categories:
+ - kakaoAccount
+ - properties
+ - forPartners
+ 
+ UserAccount has all the data related to user's Kakao account. Properties contain app-scope
+ user data (including your custom ones). ForPartners have partner-specific data such as uuid and
+ remaining invite counts.",getConnectedAt(),해당 서비스에 연결 완료된 시각.,String
+com.kakao.usermgmt.response.MeV2Response,"API response from /v2/user/me. /v2/user/me divides user-related data into three categories:
+ - kakaoAccount
+ - properties
+ - forPartners
+ 
+ UserAccount has all the data related to user's Kakao account. Properties contain app-scope
+ user data (including your custom ones). ForPartners have partner-specific data such as uuid and
+ remaining invite counts.",getGroupUserToken(),해당앱이 그룹앱에 속한 경우 그룹에서 맵핑정보로 사용할수 있는 값.,String
+com.kakao.usermgmt.response.MeV2Response,"API response from /v2/user/me. /v2/user/me divides user-related data into three categories:
+ - kakaoAccount
+ - properties
+ - forPartners
+ 
+ UserAccount has all the data related to user's Kakao account. Properties contain app-scope
+ user data (including your custom ones). ForPartners have partner-specific data such as uuid and
+ remaining invite counts.",getId(),Returns app user id.,long
+com.kakao.usermgmt.response.MeV2Response,"API response from /v2/user/me. /v2/user/me divides user-related data into three categories:
+ - kakaoAccount
+ - properties
+ - forPartners
+ 
+ UserAccount has all the data related to user's Kakao account. Properties contain app-scope
+ user data (including your custom ones). ForPartners have partner-specific data such as uuid and
+ remaining invite counts.",getKakaoAccount(),Returns data of user's kakao account,UserAccount
+com.kakao.usermgmt.response.MeV2Response,"API response from /v2/user/me. /v2/user/me divides user-related data into three categories:
+ - kakaoAccount
+ - properties
+ - forPartners
+ 
+ UserAccount has all the data related to user's Kakao account. Properties contain app-scope
+ user data (including your custom ones). ForPartners have partner-specific data such as uuid and
+ remaining invite counts.",getProperties(),Returns app-scope user properties.,"Map<String,String>"
+com.kakao.usermgmt.response.MeV2Response,"API response from /v2/user/me. /v2/user/me divides user-related data into three categories:
+ - kakaoAccount
+ - properties
+ - forPartners
+ 
+ UserAccount has all the data related to user's Kakao account. Properties contain app-scope
+ user data (including your custom ones). ForPartners have partner-specific data such as uuid and
+ remaining invite counts.",getSynchedAt(),카카오싱크 간편가입창을 통해 카카오 로그인 한 시각.,String
+com.kakao.usermgmt.response.MeV2Response,"API response from /v2/user/me. /v2/user/me divides user-related data into three categories:
+ - kakaoAccount
+ - properties
+ - forPartners
+ 
+ UserAccount has all the data related to user's Kakao account. Properties contain app-scope
+ user data (including your custom ones). ForPartners have partner-specific data such as uuid and
+ remaining invite counts.",hasSignedUp(),Tells whether user has signed up or not.,OptionalBoolean
+com.kakao.usermgmt.response.MeV2Response,"API response from /v2/user/me. /v2/user/me divides user-related data into three categories:
+ - kakaoAccount
+ - properties
+ - forPartners
+ 
+ UserAccount has all the data related to user's Kakao account. Properties contain app-scope
+ user data (including your custom ones). ForPartners have partner-specific data such as uuid and
+ remaining invite counts.",toString(),N/A,String
+com.kakao.kakaostory.response.MultiUploadResponse,N/A,N/A,N/A,N/A
+com.kakao.kakaostory.response.model.MyStoryImageInfo,내스토리의 이미지를 크기별로 얻을 수 있는 객체.,describeContents(),N/A,int
+com.kakao.kakaostory.response.model.MyStoryImageInfo,내스토리의 이미지를 크기별로 얻을 수 있는 객체.,equals(Object o),N/A,boolean
+com.kakao.kakaostory.response.model.MyStoryImageInfo,내스토리의 이미지를 크기별로 얻을 수 있는 객체.,getLarge(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryImageInfo,내스토리의 이미지를 크기별로 얻을 수 있는 객체.,getMedium(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryImageInfo,내스토리의 이미지를 크기별로 얻을 수 있는 객체.,getOriginal(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryImageInfo,내스토리의 이미지를 크기별로 얻을 수 있는 객체.,getSmall(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryImageInfo,내스토리의 이미지를 크기별로 얻을 수 있는 객체.,getXlarge(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryImageInfo,내스토리의 이미지를 크기별로 얻을 수 있는 객체.,toString(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryImageInfo,내스토리의 이미지를 크기별로 얻을 수 있는 객체.,"writeToParcel(Parcel parcel,
+             int i)",N/A,void
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,describeContents(),N/A,int
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,equals(Object o),N/A,boolean
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,getCommentCount(),N/A,int
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,getCommentList(),N/A,List<StoryComment>
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,getContent(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,getCreatedAt(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,getId(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,getImageInfoList(),N/A,List<MyStoryImageInfo>
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,getLikeCount(),N/A,int
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,getLikeList(),N/A,List<StoryLike>
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,getMediaType(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,getPermission(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,getUrl(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,toString(),N/A,String
+com.kakao.kakaostory.response.model.MyStoryInfo,N/A,"writeToParcel(Parcel parcel,
+             int i)",N/A,void
+com.kakao.kakaonavi.NaviOptions,카카오내비 API에 사용되는 선택적인 파라미터들을 위한 class.,newBuilder(),N/A,static NaviOptions.Builder
+com.kakao.kakaonavi.NaviOptions.Builder,NaviOptions를 간편하게 build하기 위한 Builder class.,build(),N/A,NaviOptions
+com.kakao.kakaonavi.NaviOptions.Builder,NaviOptions를 간편하게 build하기 위한 Builder class.,setCoordType(CoordType coordType),N/A,NaviOptions.Builder
+com.kakao.kakaonavi.NaviOptions.Builder,NaviOptions를 간편하게 build하기 위한 Builder class.,setReturnUri(String returnUri),sets a return URI,NaviOptions.Builder
+com.kakao.kakaonavi.NaviOptions.Builder,NaviOptions를 간편하게 build하기 위한 Builder class.,setRouteInfo(boolean routeInfo),sets option whether to see whole route or not,NaviOptions.Builder
+com.kakao.kakaonavi.NaviOptions.Builder,NaviOptions를 간편하게 build하기 위한 Builder class.,setRpOption(RpOption rpOption),N/A,NaviOptions.Builder
+com.kakao.kakaonavi.NaviOptions.Builder,NaviOptions를 간편하게 build하기 위한 Builder class.,setStartAngle(int startAngle),Sets start angle.,NaviOptions.Builder
+com.kakao.kakaonavi.NaviOptions.Builder,NaviOptions를 간편하게 build하기 위한 Builder class.,setStartX(double startX),N/A,NaviOptions.Builder
+com.kakao.kakaonavi.NaviOptions.Builder,NaviOptions를 간편하게 build하기 위한 Builder class.,setStartY(double startY),N/A,NaviOptions.Builder
+com.kakao.kakaonavi.NaviOptions.Builder,NaviOptions를 간편하게 build하기 위한 Builder class.,setUserId(String userId),N/A,NaviOptions.Builder
+com.kakao.kakaonavi.NaviOptions.Builder,NaviOptions를 간편하게 build하기 위한 Builder class.,setVehicleType(VehicleType vehicleType),N/A,NaviOptions.Builder
+com.kakao.network.NetworkService,Network interface for all other modules throughout the SDK.,"request(IRequest request,
+       com.kakao.network.response.ResponseStringConverter<T> converter)",Sends a network request synchronously.,<T> T
+com.kakao.network.NetworkService,Network interface for all other modules throughout the SDK.,"request(IRequest request,
+       com.kakao.network.response.ResponseStringConverter<T> converter,
+       com.kakao.network.response.CustomErrorConverter<E> errorConverter)",Sends a network request with custom error converter.,"<T,E extends Exception>T"
+com.kakao.network.NetworkService,Network interface for all other modules throughout the SDK.,"request(IRequest request,
+       com.kakao.network.response.ResponseStringConverter<T> converter,
+       com.kakao.network.response.CustomErrorConverter<E> errorConverter,
+       ResponseCallback<T> callback)",Sends a network request asynchronously with custom error converter.,"<T,E extends Exception>Future<T>"
+com.kakao.network.NetworkService,Network interface for all other modules throughout the SDK.,"request(IRequest request,
+       com.kakao.network.response.ResponseStringConverter<T> converter,
+       ResponseCallback<T> callback)",Sends a network request asynchronously.,<T> Future<T>
+com.kakao.network.NetworkService,Network interface for all other modules throughout the SDK.,"requestList(IRequest request,
+           com.kakao.network.response.ResponseStringConverter<T> converter)",Sends a network request that expects an array response.,<T> List<T>
+com.kakao.network.NetworkService,Network interface for all other modules throughout the SDK.,"requestList(IRequest request,
+           com.kakao.network.response.ResponseStringConverter<T> converter,
+           ResponseCallback<List<T>> callback)","Asynchronous version of requestList(IRequest, ResponseStringConverter).",<T> Future<List<T>>
+com.kakao.network.NetworkService.Factory,Factory class for getting instances of NetworkService implementations.,getInstance(),N/A,static NetworkService
+com.kakao.network.NetworkTask,"Http요청을 수행하는 class.
+ INetwork를 구현한 class를 직접 사용할 수도 있다.",request(IRequest request),http 요청.,com.kakao.network.response.ResponseData
+com.kakao.auth.OAuthErrorCode,Error code from Kakao OAuth server.,N/A,N/A,N/A
+com.kakao.util.OptionalBoolean,"Enum class for representing nullable boolean values, usually in API responses. For example,
+ the following API responses will translate to a variable (in a wrapper class) with enum type
+ OptionalBoolean like below:
+
+ {""has_email"": true} = TRUE
+ {""has_email"": false} = FALSE
+ {} = NONE",getBoolean(),N/A,Boolean
+com.kakao.util.OptionalBoolean,"Enum class for representing nullable boolean values, usually in API responses. For example,
+ the following API responses will translate to a variable (in a wrapper class) with enum type
+ OptionalBoolean like below:
+
+ {""has_email"": true} = TRUE
+ {""has_email"": false} = FALSE
+ {} = NONE",getOptionalBoolean(Boolean bool),N/A,static OptionalBoolean
+com.kakao.util.OptionalBoolean,"Enum class for representing nullable boolean values, usually in API responses. For example,
+ the following API responses will translate to a variable (in a wrapper class) with enum type
+ OptionalBoolean like below:
+
+ {""has_email"": true} = TRUE
+ {""has_email"": false} = FALSE
+ {} = NONE",valueOf(String name),Returns the enum constant of this type with the specified name.,static OptionalBoolean
+com.kakao.util.OptionalBoolean,"Enum class for representing nullable boolean values, usually in API responses. For example,
+ the following API responses will translate to a variable (in a wrapper class) with enum type
+ OptionalBoolean like below:
+
+ {""has_email"": true} = TRUE
+ {""has_email"": false} = FALSE
+ {} = NONE",values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static OptionalBoolean[]
+com.kakao.kakaotalk.response.model.PlusFriendInfo,유저와 카카오톡 채널의 관계 정보,getEncodedId(),encoded plus friend id (ex.,String
+com.kakao.kakaotalk.response.model.PlusFriendInfo,유저와 카카오톡 채널의 관계 정보,getRelation(),카카오톡 채널과의 관계.,PlusFriendRelation
+com.kakao.kakaotalk.response.model.PlusFriendInfo,유저와 카카오톡 채널의 관계 정보,getUpdatedAt(),"relation 변경 시각 (현재는 ADDED 상태의 친구 추가시각만 의미)
+ RFC3339 internet date/time format
+ (yyyy-mm-dd'T'HH:mm:ss'Z', yyyy-mm-dd'T'HH:mm:ss'+'HH:mm, yyyy-mm-dd'T'HH:mm:ss'-'HH:mm 가능)",String
+com.kakao.kakaotalk.response.model.PlusFriendInfo,유저와 카카오톡 채널의 관계 정보,getUuid(),plus friend uuid,String
+com.kakao.kakaotalk.response.model.PlusFriendInfo,유저와 카카오톡 채널의 관계 정보,toString(),N/A,String
+com.kakao.kakaotalk.response.model.PlusFriendRelation,채널과의 관계,fromName(String relationName),N/A,static PlusFriendRelation
+com.kakao.kakaotalk.response.model.PlusFriendRelation,채널과의 관계,getName(),N/A,String
+com.kakao.kakaotalk.response.model.PlusFriendRelation,채널과의 관계,valueOf(String name),Returns the enum constant of this type with the specified name.,static PlusFriendRelation
+com.kakao.kakaotalk.response.model.PlusFriendRelation,채널과의 관계,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static PlusFriendRelation[]
+com.kakao.plusfriend.PlusFriendService,"Class for adding plus friend or chatting with plus friend. This class provides methods for
+ 1) opening a plus friend bridge page in browser, which will call KakaoTalk custom scheme for adding or chatting.
+ 2) creating urls for plus friend bridge page.","addFriend(Context context,
+         String plusFriendId)",Opens a bridge page in browser for adding a speicifed plus friend.,void
+com.kakao.plusfriend.PlusFriendService,"Class for adding plus friend or chatting with plus friend. This class provides methods for
+ 1) opening a plus friend bridge page in browser, which will call KakaoTalk custom scheme for adding or chatting.
+ 2) creating urls for plus friend bridge page.","addFriendUrl(Context context,
+            String plusFriendId)","Returns a url of plus friend bridge page for addFriend(Context, String)",Uri
+com.kakao.plusfriend.PlusFriendService,"Class for adding plus friend or chatting with plus friend. This class provides methods for
+ 1) opening a plus friend bridge page in browser, which will call KakaoTalk custom scheme for adding or chatting.
+ 2) creating urls for plus friend bridge page.","chat(Context context,
+    String plusFriendId)",Opens a bridge page in browser for 1:1 chat with a specified plus friend.,void
+com.kakao.plusfriend.PlusFriendService,"Class for adding plus friend or chatting with plus friend. This class provides methods for
+ 1) opening a plus friend bridge page in browser, which will call KakaoTalk custom scheme for adding or chatting.
+ 2) creating urls for plus friend bridge page.","chatUrl(Context context,
+       String plusFriendId)","Returns a url of plus friend bridge page for chat(Context, String)",Uri
+com.kakao.plusfriend.PlusFriendService,"Class for adding plus friend or chatting with plus friend. This class provides methods for
+ 1) opening a plus friend bridge page in browser, which will call KakaoTalk custom scheme for adding or chatting.
+ 2) creating urls for plus friend bridge page.",getInstance(),Returns a singleton PlusFriendService instance,static PlusFriendService
+com.kakao.kakaotalk.response.PlusFriendsResponse,/v1/api/talk/plusfriends 의 응답 모델,getPlusFriends(),각 카카오톡 채널과의 요청사용자 상태 정보,List<PlusFriendInfo>
+com.kakao.kakaotalk.response.PlusFriendsResponse,/v1/api/talk/plusfriends 의 응답 모델,getUserId(),요청자의 사용자 ID,Long
+com.kakao.usermgmt.response.model.Profile,실시간 카카오 계정 프로필 정보.,getNickname(),사용자 별명,String
+com.kakao.usermgmt.response.model.Profile,실시간 카카오 계정 프로필 정보.,getProfileImageUrl(),640px * 640px (일반 프로필 사진) 또는 480px * 480px (움직이는 프로필 사진) 크기의 사용자의 프로필 이미지 경로,String
+com.kakao.usermgmt.response.model.Profile,실시간 카카오 계정 프로필 정보.,getThumbnailImageUrl(),110px * 110px (일반 프로필 사진) 또는 100px * 100px (움직이는 프로필 사진) 크기의 사용자의 썸네일 프로필 이미지 경로,String
+com.kakao.usermgmt.response.model.Profile,실시간 카카오 계정 프로필 정보.,toString(),N/A,String
+com.kakao.kakaostory.response.ProfileResponse,카카오스토리의 생일 타입,getBgImageURL(),Deprecated. ,String
+com.kakao.kakaostory.response.ProfileResponse,카카오스토리의 생일 타입,getBirthday(),Deprecated. ,String
+com.kakao.kakaostory.response.ProfileResponse,카카오스토리의 생일 타입,getBirthdayCalendar(),Deprecated. ,Calendar
+com.kakao.kakaostory.response.ProfileResponse,카카오스토리의 생일 타입,getBirthdayType(),Deprecated. ,ProfileResponse.BirthdayType
+com.kakao.kakaostory.response.ProfileResponse,카카오스토리의 생일 타입,getNickName(),Deprecated. ,String
+com.kakao.kakaostory.response.ProfileResponse,카카오스토리의 생일 타입,getPermalink(),Deprecated. ,String
+com.kakao.kakaostory.response.ProfileResponse,카카오스토리의 생일 타입,getProfile(),N/A,StoryProfile
+com.kakao.kakaostory.response.ProfileResponse,카카오스토리의 생일 타입,getProfileImageURL(),Deprecated. ,String
+com.kakao.kakaostory.response.ProfileResponse,카카오스토리의 생일 타입,getThumbnailURL(),Deprecated. ,String
+com.kakao.kakaostory.response.ProfileResponse,카카오스토리의 생일 타입,toString(),각 정보를 string으로 표현하여 반환한다.,String
+com.kakao.kakaostory.response.ProfileResponse.BirthdayType,카카오스토리의 생일 타입,getDisplaySymbol(),"양력 생일은 '+', 음력 생일은 '-'로 반환한다.",String
+com.kakao.kakaostory.response.ProfileResponse.BirthdayType,카카오스토리의 생일 타입,valueOf(String name),Returns the enum constant of this type with the specified name.,static ProfileResponse.BirthdayType
+com.kakao.kakaostory.response.ProfileResponse.BirthdayType,카카오스토리의 생일 타입,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static ProfileResponse.BirthdayType[]
+com.kakao.push.PushMessageBuilder,자기 자신에게 보내는 푸시 메시지를 구성하는 빌더.,setCollapse(String collapse),푸시 메시지 구분자.,PushMessageBuilder
+com.kakao.push.PushMessageBuilder,자기 자신에게 보내는 푸시 메시지를 구성하는 빌더.,"setCustomField(Map<String,?> customField)",메시지 외 앱에 부가적인 정보를 전달하고자 할 때 사용.,PushMessageBuilder
+com.kakao.push.PushMessageBuilder,자기 자신에게 보내는 푸시 메시지를 구성하는 빌더.,setDryRun(Boolean dryRun),테스트를 위해 사용.,PushMessageBuilder
+com.kakao.push.PushMessageBuilder,자기 자신에게 보내는 푸시 메시지를 구성하는 빌더.,"setNotification(Map<String,?> notification)","알림 페이로드를 구성하는데
+ https://firebase.google.com/docs/cloud-messaging/http-server-ref",PushMessageBuilder
+com.kakao.push.PushMessageBuilder,자기 자신에게 보내는 푸시 메시지를 구성하는 빌더.,setPriority(String priority),단말이 도즈모드 상태에서도 푸시를 받을 수 있도록 한다.(기본값 normal),PushMessageBuilder
+com.kakao.push.PushMessageBuilder,자기 자신에게 보내는 푸시 메시지를 구성하는 빌더.,setReturnUrl(String returnUrl),푸시 알림의 전송 실패에 대한 피드백 처리가 필요할 때 사용한다.,PushMessageBuilder
+com.kakao.push.PushMessageBuilder,자기 자신에게 보내는 푸시 메시지를 구성하는 빌더.,setTimeToLive(Long timeToLive),N/A,PushMessageBuilder
+com.kakao.push.PushMessageBuilder,자기 자신에게 보내는 푸시 메시지를 구성하는 빌더.,toString(),푸시 메시지를 String으로 변환.,String
+com.kakao.push.PushService,푸시 서비스 API 요청을 담당한다.,"deregisterPushToken(ApiResponseCallback<Boolean> callback,
+                   String deviceId)",사용자의 해당 기기의 푸시 토큰을 삭제한다.,void
+com.kakao.push.PushService,푸시 서비스 API 요청을 담당한다.,deregisterPushTokenAll(ApiResponseCallback<Boolean> callback),사용자의 모든 푸시 토큰을 삭제한다.,void
+com.kakao.push.PushService,푸시 서비스 API 요청을 담당한다.,getInstance(),N/A,static PushService
+com.kakao.push.PushService,푸시 서비스 API 요청을 담당한다.,getPushTokens(ApiResponseCallback<List<PushTokenInfo>> callback),현 사용자 ID로 등록된 모든 푸시토큰 정보를 반환한다.,void
+com.kakao.push.PushService,푸시 서비스 API 요청을 담당한다.,init(),N/A,static void
+com.kakao.push.PushService,푸시 서비스 API 요청을 담당한다.,"registerPushToken(ApiResponseCallback<Integer> callback,
+                 String pushToken,
+                 String deviceId,
+                 int appVer)",현 기기의 푸시 토큰을 등록한다.,void
+com.kakao.push.PushService,푸시 서비스 API 요청을 담당한다.,"sendPushMessage(ApiResponseCallback<Boolean> callback,
+               String pushMessage,
+               String deviceId)",자기 자신에게 푸시 메시지를 전송한다.,void
+com.kakao.push.PushToken,푸시 토큰에 대한 utility 객체,clearFcmTokenFromCache(),N/A,static void
+com.kakao.push.PushToken,푸시 토큰에 대한 utility 객체,clearRegistrationId(),푸시 서버로 토큰 삭제를 성공한 후에 기기에도 삭제한다.,static void
+com.kakao.push.PushToken,푸시 토큰에 대한 utility 객체,getFcmTokenFromCache(),N/A,static String
+com.kakao.push.PushToken,푸시 토큰에 대한 utility 객체,getRegistrationId(Context context),기기에 저장된 푸시 토큰을 얻어 온다.,static String
+com.kakao.push.PushToken,푸시 토큰에 대한 utility 객체,saveFcmTokenToCache(String fcmToken),발급받은 FCM 토큰을 앱 캐시에 임시적으로 저장한다.,static void
+com.kakao.push.PushToken,푸시 토큰에 대한 utility 객체,"savePushTokenToCache(String regId,
+                    int appVer,
+                    Integer expiresIn)",푸시 서버로 토큰 등록을 성공한 후에 기기에도 다음번 푸시 토큰을 얻어올 때 GCM으로부터 다시 얻어 오지 않아도 되도록 저장한다.,static void
+com.kakao.push.response.model.PushTokenInfo,Deprecated. ,getCreatedAt(),푸시 토큰을 처음 등록한 시각,String
+com.kakao.push.response.model.PushTokenInfo,Deprecated. ,getDeviceId(),기기의 고유한 ID,String
+com.kakao.push.response.model.PushTokenInfo,Deprecated. ,getPushToken(),"APNS, GCM으로부터 발급받은 Push Token",String
+com.kakao.push.response.model.PushTokenInfo,Deprecated. ,getPushType(),apns 혹은 gcm,String
+com.kakao.push.response.model.PushTokenInfo,Deprecated. ,getUpdatedAt(),푸시 토큰을 업데이트한 시각,String
+com.kakao.push.response.model.PushTokenInfo,Deprecated. ,getUuid(),사용자의 UUID,String
+com.kakao.push.response.model.PushTokenInfo,Deprecated. ,toString(),N/A,String
+com.kakao.push.response.RegisterPushTokenResponse,N/A,getExpiredAt(),N/A,int
+com.kakao.network.callback.ResponseCallback,Callback class that handles network success and errors.,onDidEnd(),해당 Job이 끝날때 불린다.,void
+com.kakao.network.callback.ResponseCallback,Callback class that handles network success and errors.,onDidStart(),해당 Job이 시작될때 불린다.,void
+com.kakao.network.callback.ResponseCallback,Callback class that handles network success and errors.,onFailure(ErrorResult errorResult),요청이 실패한경우 불린다.,abstract void
+com.kakao.network.callback.ResponseCallback,Callback class that handles network success and errors.,onFailureForUiThread(ErrorResult errorResult),요청한 Request가 실패했을때 불리는 callback.,void
+com.kakao.network.callback.ResponseCallback,Callback class that handles network success and errors.,onSuccess(T result),request에 대한 result.,abstract void
+com.kakao.network.callback.ResponseCallback,Callback class that handles network success and errors.,onSuccessForUiThread(T result),요청한 Request가 성공했을때 불리는 callback.,void
+com.kakao.kakaonavi.options.RpOption,경로 옵션을 나타내는 enum class.,getOption(),N/A,int
+com.kakao.kakaonavi.options.RpOption,경로 옵션을 나타내는 enum class.,valueOf(String name),Returns the enum constant of this type with the specified name.,static RpOption
+com.kakao.kakaonavi.options.RpOption,경로 옵션을 나타내는 enum class.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static RpOption[]
+com.kakao.network.ServerProtocol,"Provides string constants necessary to constitute API requests, including server hosts, and
+ api endpoint paths.",accountAuthority(),N/A,static String
+com.kakao.network.ServerProtocol,"Provides string constants necessary to constitute API requests, including server hosts, and
+ api endpoint paths.",accountsAuthority(),N/A,static String
+com.kakao.network.ServerProtocol,"Provides string constants necessary to constitute API requests, including server hosts, and
+ api endpoint paths.",apiAuthority(),N/A,static String
+com.kakao.network.ServerProtocol,"Provides string constants necessary to constitute API requests, including server hosts, and
+ api endpoint paths.",authAuthority(),N/A,static String
+com.kakao.usermgmt.response.model.ServiceTerms,유저의 개별 동의항목 동의 내역.,getAgreedAt(),동의한 시간.,String
+com.kakao.usermgmt.response.model.ServiceTerms,유저의 개별 동의항목 동의 내역.,getAgreedAtDate(),약관에 마지막으로 동의한 시간을 Date 형태로 반환한다.,Date
+com.kakao.usermgmt.response.model.ServiceTerms,유저의 개별 동의항목 동의 내역.,getTag(),동의한 약관의 tag.,String
+com.kakao.usermgmt.response.model.ServiceTerms,유저의 개별 동의항목 동의 내역.,toString(),N/A,String
+com.kakao.usermgmt.response.ServiceTermsResponse,3rd 의 동의항목 내역 응답 모델.,getAllowedTerms(),사용자가 동의한 3rd의 약관 항목들,List<ServiceTerms>
+com.kakao.usermgmt.response.ServiceTermsResponse,3rd 의 동의항목 내역 응답 모델.,getUserId(),app user id,Long
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,addCallback(ISessionCallback callback),세션 상태 변화 콜백을 받고자 할때 콜백을 등록한다.,void
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,checkAndImplicitOpen(),Session 의 상태를 체크후 isOpenable() 상태일 때 Login을 시도한다.,boolean
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,clearCallbacks(),Remove all session callbacks.,void
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,close(),명시적 강제 close(로그아웃/탈퇴).,void
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,getAccessTokenCallback(),N/A,AccessTokenCallback
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,getAccessTokenManager(),Returns an AccessTokenManager instance owned by this Session,AccessTokenManager
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,getAppCache(),앱 캐시를 반환한다.,com.kakao.util.helper.SharedPreferencesCache
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,getAuthCodeCallback(),N/A,AuthCodeCallback
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,getAuthCodeManager(),Returns an AuthCodeManager instance owned by this Session,AuthCodeManager
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,getCurrentSession(),Returns current Session instance.,static Session
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,getRequestType(),현재 진행 중인 요청 타입,com.kakao.auth.Session.RequestType
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,getTokenInfo(),"Returns currently manage AccessToken instance containing access token and refresh
+ token information.",AccessToken
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,"handleActivityResult(int requestCode,
+                    int resultCode,
+                    Intent data)",로그인 activity를 이용하여 sdk에서 필요로 하는 activity를 띄운다.,boolean
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,isClosed(),현재 세션이 닫힌 상태인지 여부를 반환한다.,boolean
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,isOpenable(),현재 세션이 오픈중(갱신 포함) 상태인지 여부를 반환한다.,boolean
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,isOpened(),현재 세션이 열린 상태인지 여부를 반환한다.,boolean
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,"open(AuthType authType,
+    Activity callerActivity)",세션 오픈을 진행한다.,void
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,"open(AuthType authType,
+    Activity callerActivity,
+    Map<String,String> extraParams)",N/A,void
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,"open(AuthType authType,
+    androidx.fragment.app.Fragment fragment)",세션 오픈을 진행한다.,void
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,"open(AuthType authType,
+    androidx.fragment.app.Fragment callerFragment,
+    Map<String,String> extraParams)",N/A,void
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,openWithAuthCode(String authCode),Try login (open session) with authorization code.,void
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,"openWithCustomAccountsUrl(Activity activity,
+                         Map<String,String> extraParams,
+                         String path,
+                         Map<String,String> accountParams)",카카오계정의 특정 페이지를 활용하여 인증처리 후 로그인을 수행합니다.,void
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,refreshAccessToken(AccessTokenCallback callback),"Refresh access token with refresh token, even if access token hasn't expired.",Future<AccessToken>
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,removeCallback(ISessionCallback callback),더이상 세션 상태 변화 콜백을 받고 싶지 않을 때 삭제한다.,void
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,"updateScopes(Activity activity,
+            List<String> scopes,
+            AccessTokenCallback callback)",Update user's scopes (user's agreement to provide specific data to this application) manually.,void
+com.kakao.auth.Session,로그인 상태를 유지 시켜주는 객체로 access token을 관리한다.,"updateScopes(androidx.fragment.app.Fragment fragment,
+            List<String> scopes,
+            AccessTokenCallback callback)",N/A,void
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,getBaseAddress(),우편번호 검색시 채워지는 기본 주소,String
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,getDetailAddress(),기본 주소에 추가하는 상세 주소,String
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,getId(),배송지 ID,Long
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,getName(),배송지,String
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,getReceiverName(),(Optional) 수령인 이름,String
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,getReceiverPhoneNumber1(),(Optional) 수령인 연락처,String
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,getReceiverPhoneNumber2(),(Optional) 수령인 추가 연락처,String
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,getType(),"배송지 타입.구주소(지번,번지 주소) 또는 신주소(도로명 주소)",String
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,getUpdatedAt(),수정시각의 timestamp,Integer
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,getZipCode(),(Optional) 구주소 우편번호.,String
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,getZoneNumber(),(Optional) 신주소 우편번호.,String
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,isDefault(),기본 배송지 여부,OptionalBoolean
+com.kakao.usermgmt.response.model.ShippingAddress,배송지 정보,toString(),N/A,String
+com.kakao.usermgmt.response.ShippingAddressResponse,/v1/user/shipping_address 응담 모델.,getShippingAddresses(),사용자의 배송지 정보 리스트.,List<ShippingAddress>
+com.kakao.usermgmt.response.ShippingAddressResponse,/v1/user/shipping_address 응담 모델.,getUserId(),배송지 정보를 요청한 사용자 아이디(ID),Long
+com.kakao.usermgmt.response.ShippingAddressResponse,/v1/user/shipping_address 응담 모델.,hasShippingAddresses(),배송지 정보를 소유하고 있는 여부.,OptionalBoolean
+com.kakao.usermgmt.response.ShippingAddressResponse,/v1/user/shipping_address 응담 모델.,shippingAddressesNeedsAgreement(),배송지 정보 조회를 위하여 유저에게 제3자 정보제공동의를 받아야 하는지 여부,OptionalBoolean
+com.kakao.message.template.SocialObject,Class representing various social components of messages.,getCommentCount(),N/A,Integer
+com.kakao.message.template.SocialObject,Class representing various social components of messages.,getLikeCount(),N/A,Integer
+com.kakao.message.template.SocialObject,Class representing various social components of messages.,getSharedCount(),N/A,Integer
+com.kakao.message.template.SocialObject,Class representing various social components of messages.,getSubscriberCount(),N/A,Integer
+com.kakao.message.template.SocialObject,Class representing various social components of messages.,getViewCount(),N/A,Integer
+com.kakao.message.template.SocialObject,Class representing various social components of messages.,newBuilder(),N/A,static SocialObject.Builder
+com.kakao.message.template.SocialObject,Class representing various social components of messages.,toJSONObject(),N/A,JSONObject
+com.kakao.message.template.SocialObject.Builder,Class for building social objects.,build(),N/A,SocialObject
+com.kakao.message.template.SocialObject.Builder,Class for building social objects.,setCommentCount(int count),N/A,SocialObject.Builder
+com.kakao.message.template.SocialObject.Builder,Class for building social objects.,setLikeCount(int count),N/A,SocialObject.Builder
+com.kakao.message.template.SocialObject.Builder,Class for building social objects.,setSharedCount(int count),N/A,SocialObject.Builder
+com.kakao.message.template.SocialObject.Builder,Class for building social objects.,setSubscriberCount(int count),N/A,SocialObject.Builder
+com.kakao.message.template.SocialObject.Builder,Class for building social objects.,setViewCount(int count),N/A,SocialObject.Builder
+com.kakao.kakaostory.response.model.StoryActor,N/A,describeContents(),N/A,int
+com.kakao.kakaostory.response.model.StoryActor,N/A,equals(Object o),N/A,boolean
+com.kakao.kakaostory.response.model.StoryActor,N/A,getDisplayName(),N/A,String
+com.kakao.kakaostory.response.model.StoryActor,N/A,getProfileThumbnailUrl(),N/A,String
+com.kakao.kakaostory.response.model.StoryActor,N/A,toString(),N/A,String
+com.kakao.kakaostory.response.model.StoryActor,N/A,"writeToParcel(Parcel parcel,
+             int i)",N/A,void
+com.kakao.kakaostory.response.model.StoryComment,카카오 스토리 덧글,describeContents(),N/A,int
+com.kakao.kakaostory.response.model.StoryComment,카카오 스토리 덧글,equals(Object o),N/A,boolean
+com.kakao.kakaostory.response.model.StoryComment,카카오 스토리 덧글,getText(),N/A,String
+com.kakao.kakaostory.response.model.StoryComment,카카오 스토리 덧글,getWriter(),N/A,StoryActor
+com.kakao.kakaostory.response.model.StoryComment,카카오 스토리 덧글,toString(),N/A,String
+com.kakao.kakaostory.response.model.StoryComment,카카오 스토리 덧글,"writeToParcel(Parcel parcel,
+             int i)",N/A,void
+com.kakao.kakaostory.response.model.StoryLike,느낌 값,describeContents(),N/A,int
+com.kakao.kakaostory.response.model.StoryLike,느낌 값,equals(Object obj),N/A,boolean
+com.kakao.kakaostory.response.model.StoryLike,느낌 값,getActor(),N/A,StoryActor
+com.kakao.kakaostory.response.model.StoryLike,느낌 값,getEmoticon(),N/A,StoryLike.Emotion
+com.kakao.kakaostory.response.model.StoryLike,느낌 값,toString(),N/A,String
+com.kakao.kakaostory.response.model.StoryLike,느낌 값,"writeToParcel(Parcel parcel,
+             int i)",N/A,void
+com.kakao.kakaostory.response.model.StoryLike.Emotion,느낌 값,getEmotion(String emotionString),N/A,static StoryLike.Emotion
+com.kakao.kakaostory.response.model.StoryLike.Emotion,느낌 값,valueOf(String name),Returns the enum constant of this type with the specified name.,static StoryLike.Emotion
+com.kakao.kakaostory.response.model.StoryLike.Emotion,느낌 값,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static StoryLike.Emotion[]
+com.kakao.kakaostory.response.StoryPostResponse,N/A,getMyStoryInfo(),N/A,MyStoryInfo
+com.kakao.kakaostory.response.model.StoryProfile,N/A,describeContents(),N/A,int
+com.kakao.kakaostory.response.model.StoryProfile,N/A,equals(Object o),N/A,boolean
+com.kakao.kakaostory.response.model.StoryProfile,N/A,getBgImageURL(),N/A,String
+com.kakao.kakaostory.response.model.StoryProfile,N/A,getBirthday(),N/A,String
+com.kakao.kakaostory.response.model.StoryProfile,N/A,getBirthdayCalendar(),N/A,Calendar
+com.kakao.kakaostory.response.model.StoryProfile,N/A,getBirthdayType(),N/A,ProfileResponse.BirthdayType
+com.kakao.kakaostory.response.model.StoryProfile,N/A,getNickName(),N/A,String
+com.kakao.kakaostory.response.model.StoryProfile,N/A,getPermalink(),N/A,String
+com.kakao.kakaostory.response.model.StoryProfile,N/A,getProfileImageURL(),N/A,String
+com.kakao.kakaostory.response.model.StoryProfile,N/A,getThumbnailURL(),N/A,String
+com.kakao.kakaostory.response.model.StoryProfile,N/A,"writeToParcel(Parcel parcel,
+             int i)",N/A,void
+com.kakao.kakaotalk.response.TalkProfileResponse,"톡프로필 API KakaoTalkService.requestProfile(TalkResponseCallback, boolean)
+ 의 응답 클래스.
+
+ Response class for KakaoTalkService.requestProfile(TalkResponseCallback, boolean) API.",getProfile(),N/A,KakaoTalkProfile
+com.kakao.message.template.TemplateParams,Interface representing message template v2.,getObjectType(),"Template type such as FEED, LIST, etc.",String
+com.kakao.message.template.TemplateParams,Interface representing message template v2.,toJSONObject(),"Any message type should be converted to JSONObject before they are validated or sent to
+ KakaoTalk.",JSONObject
+com.kakao.message.template.TextTemplate,Class that defines parameters for building text messages.,getButtons(),N/A,List<ButtonObject>
+com.kakao.message.template.TextTemplate,Class that defines parameters for building text messages.,getButtonTitle(),N/A,String
+com.kakao.message.template.TextTemplate,Class that defines parameters for building text messages.,getLinkObject(),N/A,LinkObject
+com.kakao.message.template.TextTemplate,Class that defines parameters for building text messages.,getObjectType(),"Template type such as FEED, LIST, etc.",String
+com.kakao.message.template.TextTemplate,Class that defines parameters for building text messages.,getText(),N/A,String
+com.kakao.message.template.TextTemplate,Class that defines parameters for building text messages.,"newBuilder(String text,
+          LinkObject linkObject)",N/A,static TextTemplate.Builder
+com.kakao.message.template.TextTemplate,Class that defines parameters for building text messages.,toJSONObject(),"Any message type should be converted to JSONObject before they are validated or sent to
+ KakaoTalk.",JSONObject
+com.kakao.message.template.TextTemplate.Builder,Class for building text template.,addButton(ButtonObject button),N/A,TextTemplate.Builder
+com.kakao.message.template.TextTemplate.Builder,Class for building text template.,build(),N/A,TextTemplate
+com.kakao.message.template.TextTemplate.Builder,Class for building text template.,setButtonTitle(String buttonTitle),N/A,TextTemplate.Builder
+com.kakao.usermgmt.response.model.User,N/A,getId(),N/A,long
+com.kakao.usermgmt.response.model.User,N/A,getServiceUserId(),N/A,long
+com.kakao.usermgmt.response.model.User,N/A,getUUID(),N/A,String
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",ageRangeNeedsAgreement(),연령대 제공에 대한 사용자 동의 필요 여부,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",birthdayNeedsAgreement(),생일 제공에 대한 사용자 동의 필요 여부,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",birthyearNeedsAgreement(),생년 제공에 대한 사용자 동의 필요 여부,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",ciAuthenticatedAt(),사용자가 ci를 획득한 시간.,String
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",ciNeedsAgreement(),CI 제공에 대한 사용자 동의 필요 여부,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",emailNeedsAgreement(),이메일 제공에 대한 사용자 동의 필요 여부,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",genderNeedsAgreement(),성별 제공에 대한 사용자 동의 필요 여부,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getAgeRange(),Returns user's age range.,AgeRange
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getBirthday(),"Returns user's birthday in mmdd format (0115, 0427, etc).",String
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getBirthdayType(),"생일의 양력,음력",BirthdayType
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getBirthyear(),유저의 출생 연도를 반환한다.,String
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getCI(),유저의 CI 값,String
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getDisplayId(),Returns user's display id.,String
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getEmail(),Returns email of user's Kakao account.,String
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getGender(),Return user's gender.,Gender
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getLegalBirthDate(),법정 생년월일.,String
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getLegalGender(),법정 성별.,Gender
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getLegalName(),2차 본인인증으로 수집된 사용자의 실명.,String
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getPhoneNumber(),Returns phone number of user's Kakao account.,String
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getProfile(),카카오계정의 프로필,Profile
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",getResponse(),Returns a raw json API response.,JSONObject
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",isEmailValid(),N/A,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",isEmailVerified(),N/A,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",isKakaoTalkUser(),카카오톡 가입 여부,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",isKakaotalkUserNeedsAgreement(),N/A,boolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",legalBirthDateNeedsAgreement(),사용자 동의를 받으면 본인인증된 생년월일(legal_birth_date)를 가지고 갈 수 있는지 여부.,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",legalGenderNeedsAgreement(),사용자 동의를 받으면 본인인증된 성별(legal_gender)를 가지고 갈 수 있는지 여부.,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",legalNameNeedsAgreement(),사용자 동의를 받으면 본인인증된 실명(legal_name)을 가지고 갈 수 있는지 여부.,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",needsScopeIsKakaotalkUser(),Deprecated. ,boolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",phoneNumberNeedsAgreement(),전화번호 제공에 대한 사용자 동의 필요 여부,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",profileNeedsAgreement(),프로필 제공에 대한 사용자 동의 필요 여부,OptionalBoolean
+com.kakao.usermgmt.response.model.UserAccount,"Class for Kakao account user data, meaning these data are account-scoped, not app-scoped.",toString(),N/A,String
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,getInstance(),N/A,static UserManagement
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,"me(List<String> propertyKeys,
+  com.kakao.usermgmt.callback.MeV2ResponseCallback callback)",Request user info with /v2/user/me.,Future<MeV2Response>
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,me(com.kakao.usermgmt.callback.MeV2ResponseCallback callback),Request user info with /v2/user/me.,Future<MeV2Response>
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,"requestAgeAuthInfo(ResponseCallback<AgeAuthResponse> callback,
+                  AuthService.AgeLimit ageLimit,
+                  List<UserManagement.AgeAuthProperty> propertyKeyList)",토큰으로 인증날짜와 CI값을 얻는다.,void
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,requestLogout(com.kakao.usermgmt.callback.LogoutResponseCallback callback),로그아웃 요청,void
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,"requestSignup(ApiResponseCallback<Long> callback,
+             Map<String,String> properties)",가입 요청,void
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,requestUnlink(com.kakao.usermgmt.callback.UnLinkResponseCallback callback),Unlink 요청,void
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,"requestUpdateProfile(ApiResponseCallback<Long> callback,
+                    Map<String,String> properties)",사용자정보 저장 요청,void
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,"requestUpdateProfile(ApiResponseCallback<Long> callback,
+                    String nickName,
+                    String thumbnailImagePath,
+                    String profileImage,
+                    Map<String,String> properties)",N/A,void
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,serviceTerms(ApiResponseCallback<ServiceTermsResponse> callback),User 가 3rd의 동의항목에 동의한 내역을 반환한다.,Future<ServiceTermsResponse>
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,shippingAddresses(ApiResponseCallback<ShippingAddressResponse> callback),앱에 가입한 사용자의 배송지 정보를 얻어간다.,Future<ShippingAddressResponse>
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,"shippingAddresses(Integer fromUpdatedAt,
+                 Integer pageSize,
+                 ApiResponseCallback<ShippingAddressResponse> callback)",앱에 가입한 사용자의 배송지 정보를 페이지 사이즈를 주어서 여러 페이지로 나누어 조회.,Future<ShippingAddressResponse>
+com.kakao.usermgmt.UserManagement,UserManagement API 요청을 담당한다.,"shippingAddresses(Long addressId,
+                 ApiResponseCallback<ShippingAddressResponse> callback)",앱에 가입한 사용자의 배송지 정보 중 특정 배송지 id 만을 지정하여 조회.,Future<ShippingAddressResponse>
+com.kakao.usermgmt.UserManagement.AgeAuthProperty,"추가 동의가 필요로 하는 인증정보를 response에 포함하고 싶은 경우 해당 키 리스트.
+ 현재는 ""account_ci""만 제공(""account_ci"" 추가 동의 필요하므로 해당 동의를 받지 않은 사용자에게는 추가 동의창이 뜨게 됨)",getValue(),N/A,String
+com.kakao.usermgmt.UserManagement.AgeAuthProperty,"추가 동의가 필요로 하는 인증정보를 response에 포함하고 싶은 경우 해당 키 리스트.
+ 현재는 ""account_ci""만 제공(""account_ci"" 추가 동의 필요하므로 해당 동의를 받지 않은 사용자에게는 추가 동의창이 뜨게 됨)",valueOf(String name),Returns the enum constant of this type with the specified name.,static UserManagement.AgeAuthProperty
+com.kakao.usermgmt.UserManagement.AgeAuthProperty,"추가 동의가 필요로 하는 인증정보를 response에 포함하고 싶은 경우 해당 키 리스트.
+ 현재는 ""account_ci""만 제공(""account_ci"" 추가 동의 필요하므로 해당 동의를 받지 않은 사용자에게는 추가 동의창이 뜨게 됨)",values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static UserManagement.AgeAuthProperty[]
+com.kakao.usermgmt.response.UserResponse,N/A,getUserId(),N/A,long
+com.kakao.kakaonavi.options.VehicleType,차종을 나타내는 enum class.,getType(),N/A,int
+com.kakao.kakaonavi.options.VehicleType,차종을 나타내는 enum class.,valueOf(String name),Returns the enum constant of this type with the specified name.,static VehicleType
+com.kakao.kakaonavi.options.VehicleType,차종을 나타내는 enum class.,values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static VehicleType[]

@@ -1,0 +1,408 @@
+class_name,class_description,method,method_description,data_type
+com.twitter.sdk.android.core.services.AccountService,Returns an HTTP 200 OK response code and a representation of the requesting user if authentication was successful; returns a 401 status code and an error message if not.,"verifyCredentials(Boolean includeEntities,                 Boolean skipStatus,                 Boolean includeEmail)",Returns an HTTP 200 OK response code and a representation of the requesting user if authentication was successful; returns a 401 status code and an error message if not.,<any>
+com.twitter.sdk.android.core.internal.ActivityLifecycleManager,This is a convenience class that wraps the ActivityLifecycleCallbacks registration. It provides an abstract Callbacks class that reduces required boilerplate code in your callbacks as well as OS Version checks that make it compatible with Android versions less than Ice Cream Sandwich.,registerCallbacks(ActivityLifecycleManager.Callbacks callbacks),N/A,boolean
+com.twitter.sdk.android.core.internal.ActivityLifecycleManager,This is a convenience class that wraps the ActivityLifecycleCallbacks registration. It provides an abstract Callbacks class that reduces required boilerplate code in your callbacks as well as OS Version checks that make it compatible with Android versions less than Ice Cream Sandwich.,resetCallbacks(),Unregisters all previously registered callbacks on the application context.,void
+com.twitter.sdk.android.core.internal.ActivityLifecycleManager.Callbacks,Override the methods corresponding to the activity.,"onActivityCreated(Activity activity,                 Bundle bundle)",N/A,void
+com.twitter.sdk.android.core.internal.ActivityLifecycleManager.Callbacks,Override the methods corresponding to the activity.,onActivityDestroyed(Activity activity),N/A,void
+com.twitter.sdk.android.core.internal.ActivityLifecycleManager.Callbacks,Override the methods corresponding to the activity.,onActivityPaused(Activity activity),N/A,void
+com.twitter.sdk.android.core.internal.ActivityLifecycleManager.Callbacks,Override the methods corresponding to the activity.,onActivityResumed(Activity activity),N/A,void
+com.twitter.sdk.android.core.internal.ActivityLifecycleManager.Callbacks,Override the methods corresponding to the activity.,"onActivitySaveInstanceState(Activity activity,                           Bundle bundle)",N/A,void
+com.twitter.sdk.android.core.internal.ActivityLifecycleManager.Callbacks,Override the methods corresponding to the activity.,onActivityStarted(Activity activity),N/A,void
+com.twitter.sdk.android.core.internal.ActivityLifecycleManager.Callbacks,Override the methods corresponding to the activity.,onActivityStopped(Activity activity),N/A,void
+com.twitter.sdk.android.core.models.ApiError,"Represents error returned from the Twitter API. For complete list of error codes, see https://dev.twitter.com/overview/api/response-codes",N/A,N/A,N/A
+com.twitter.sdk.android.core.models.ApiErrors,N/A,N/A,N/A,N/A
+com.twitter.sdk.android.core.identity.AuthHandler,Abstract class for handling authorization requests.,authorize(Activity activity),Called to request authorization.,abstract boolean
+com.twitter.sdk.android.core.identity.AuthHandler,Abstract class for handling authorization requests.,"handleOnActivityResult(int requestCode,                      int resultCode,                      Intent data)","Called when Activity.onActivityResult(int, int, android.content.Intent) is called to complete the authorization flow.",boolean
+com.twitter.sdk.android.core.AuthToken,Base class for authentication tokens.,isExpired(),Determines whether a token is known to have expired.,abstract boolean
+com.twitter.sdk.android.core.AuthTokenAdapter,Provides custom serialization and deserialization for classes that hold any type of AuthToken.,"deserialize(JsonElement json,           Type typeOfT,           JsonDeserializationContext context)",N/A,AuthToken
+com.twitter.sdk.android.core.AuthTokenAdapter,Provides custom serialization and deserialization for classes that hold any type of AuthToken.,"serialize(AuthToken src,         Type typeOfSrc,         JsonSerializationContext context)",N/A,JsonElement
+com.twitter.sdk.android.core.models.BindingValues,Map of key/value pairs representing card data.,containsKey(String key),Returns true if specified key exists.,boolean
+com.twitter.sdk.android.core.models.BindingValues,Map of key/value pairs representing card data.,get(String key),Returns the value for the specified key.,<T> T
+com.twitter.sdk.android.core.models.BindingValuesAdapter,N/A,"deserialize(JsonElement json,           Type typeOfT,           JsonDeserializationContext context)",N/A,BindingValues
+com.twitter.sdk.android.core.models.BindingValuesAdapter,N/A,"serialize(BindingValues src,         Type typeOfSrc,         JsonSerializationContext context)",N/A,JsonElement
+com.twitter.sdk.android.core.Callback,"Communicates responses from a server or offline requests. One and only one method will be invoked in response to a given request.  Callback methods are executed using the retrofit2.Retrofit callback executor. When none is specified, the following defaults are used:  Callbacks are executed on the application's main (UI) thread.",failure(TwitterException exception),"Unsuccessful call due to network failure, non-2XX status code, or unexpected exception.",abstract void
+com.twitter.sdk.android.core.Callback,"Communicates responses from a server or offline requests. One and only one method will be invoked in response to a given request.  Callback methods are executed using the retrofit2.Retrofit callback executor. When none is specified, the following defaults are used:  Callbacks are executed on the application's main (UI) thread.","onFailure(<any> call,         Throwable t)",N/A,void
+com.twitter.sdk.android.core.Callback,"Communicates responses from a server or offline requests. One and only one method will be invoked in response to a given request.  Callback methods are executed using the retrofit2.Retrofit callback executor. When none is specified, the following defaults are used:  Callbacks are executed on the application's main (UI) thread.","onResponse(<any> call,          <any> response)",N/A,void
+com.twitter.sdk.android.core.Callback,"Communicates responses from a server or offline requests. One and only one method will be invoked in response to a given request.  Callback methods are executed using the retrofit2.Retrofit callback executor. When none is specified, the following defaults are used:  Callbacks are executed on the application's main (UI) thread.",success(Result<T> result),Called when call completes successfully.,abstract void
+com.twitter.sdk.android.core.models.Card,N/A,N/A,N/A,N/A
+com.twitter.sdk.android.core.services.CollectionService,"Retrieve the identified TwitterCollection, presented as a list of the curated Tweets.","collection(String id,          Integer count,          Long maxPosition,          Long minPosition)","Retrieve the identified TwitterCollection, presented as a list of the curated Tweets.",<any>
+com.twitter.sdk.android.core.internal.CommonUtils,"Closes a Closeable, ignoring any IOExceptions raised in the process.","closeOrLog(Closeable c,          String message)","Closes a Closeable, ignoring any IOExceptions raised in the process.",static void
+com.twitter.sdk.android.core.internal.CommonUtils,"Closes a Closeable, ignoring any IOExceptions raised in the process.",closeQuietly(Closeable closeable),N/A,static void
+com.twitter.sdk.android.core.internal.CommonUtils,"Closes a Closeable, ignoring any IOExceptions raised in the process.","copyStream(InputStream is,          OutputStream os,          byte[] buffer)","Copies all available data from the InputStream into the OutputStream, using the provided buffer.",static void
+com.twitter.sdk.android.core.internal.CommonUtils,"Closes a Closeable, ignoring any IOExceptions raised in the process.","getBooleanResourceValue(Context context,                       String key,                       boolean defaultValue)",Gets a value for a boolean resource by its name.,static boolean
+com.twitter.sdk.android.core.internal.CommonUtils,"Closes a Closeable, ignoring any IOExceptions raised in the process.","getStringResourceValue(Context context,                      String key,                      String defaultValue)",Gets a value for a string resource by its name.,static String
+com.twitter.sdk.android.core.internal.CommonUtils,"Closes a Closeable, ignoring any IOExceptions raised in the process.","logControlled(Context context,             int level,             String tag,             String msg)",Used internally to log only when the com.twitter.sdk.android.TRACE_ENABLED resource value is set to true.,static void
+com.twitter.sdk.android.core.internal.CommonUtils,"Closes a Closeable, ignoring any IOExceptions raised in the process.","logControlled(Context context,             String msg)",Used internally to log only when the com.twitter.sdk.android.TRACE_ENABLED resource value is set to true.,static void
+com.twitter.sdk.android.core.internal.CommonUtils,"Closes a Closeable, ignoring any IOExceptions raised in the process.","logControlledError(Context context,                  String msg,                  Throwable tr)",Used internally to log errors only when the com.twitter.sdk.android.TRACE_ENABLED resource value is set to true.,static void
+com.twitter.sdk.android.core.internal.CommonUtils,"Closes a Closeable, ignoring any IOExceptions raised in the process.","logOrThrowIllegalStateException(String logTag,                               String errorMsg)","If Twitter.isDebug(), throws an IllegalStateException,  else logs a warning.",static void
+com.twitter.sdk.android.core.internal.CommonUtils,"Closes a Closeable, ignoring any IOExceptions raised in the process.",streamToString(InputStream is),N/A,static String
+com.twitter.sdk.android.core.models.Configuration,Current configuration used by Twitter,N/A,N/A,N/A
+com.twitter.sdk.android.core.services.ConfigurationService,"Returns the current configuration used by Twitter including twitter.com slugs which are not user names, maximum photo resolutions, and t.co URL lengths.",configuration(),"Returns the current configuration used by Twitter including twitter.com slugs which are not user names, maximum photo resolutions, and t.co URL lengths.",<any>
+com.twitter.sdk.android.core.models.Coordinates,Represents coordinates of a Tweet's location.,getLatitude(),N/A,Double
+com.twitter.sdk.android.core.models.Coordinates,Represents coordinates of a Tweet's location.,getLongitude(),N/A,Double
+com.twitter.sdk.android.core.internal.CurrentTimeProvider,Internal interface representing a time source. Useful for mocking out in tests so that system time can be fixed and simulated.,getCurrentTimeMillis(),N/A,long
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"d(String tag, String text)",N/A,void
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"d(String tag, String text, Throwable throwable)",N/A,void
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"e(String tag, String text)",N/A,void
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"e(String tag, String text, Throwable throwable)",N/A,void
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,getLogLevel(),N/A,int
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"i(String tag, String text)",N/A,void
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"i(String tag, String text, Throwable throwable)",N/A,void
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"isLoggable(String tag,          int level)",N/A,boolean
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"log(int priority,   String tag,   String msg)",N/A,void
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"log(int priority,   String tag,   String msg,   boolean forceLog)",N/A,void
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,setLogLevel(int logLevel),N/A,void
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"v(String tag, String text)",N/A,void
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"v(String tag, String text, Throwable throwable)",N/A,void
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"w(String tag, String text)",N/A,void
+com.twitter.sdk.android.core.DefaultLogger,Default logger that logs to android.util.Log.,"w(String tag, String text, Throwable throwable)",N/A,void
+com.twitter.sdk.android.core.internal.ExecutorUtils,N/A,buildSingleThreadScheduledExecutorService(String name),N/A,static ScheduledExecutorService
+com.twitter.sdk.android.core.internal.ExecutorUtils,N/A,buildThreadPoolExecutorService(String name),N/A,static ExecutorService
+com.twitter.sdk.android.core.services.FavoriteService,Favorites the status specified in the ID parameter as the authenticating user.,"create(Long id,      Boolean includeEntities)",Favorites the status specified in the ID parameter as the authenticating user.,<any>
+com.twitter.sdk.android.core.services.FavoriteService,Favorites the status specified in the ID parameter as the authenticating user.,"destroy(Long id,       Boolean includeEntities)",Un-favorites the status specified in the ID parameter as the authenticating user.,<any>
+com.twitter.sdk.android.core.services.FavoriteService,Favorites the status specified in the ID parameter as the authenticating user.,"list(Long userId,    String screenName,    Integer count,    String sinceId,    String maxId,    Boolean includeEntities)","Returns recent Tweets favorited by the authenticating or specified user, by default returns 20 tweets.",<any>
+com.twitter.sdk.android.core.internal.persistence.FileStore,N/A,getCacheDir(),N/A,File
+com.twitter.sdk.android.core.internal.persistence.FileStore,N/A,getExternalCacheDir(),N/A,File
+com.twitter.sdk.android.core.internal.persistence.FileStore,N/A,getExternalFilesDir(),N/A,File
+com.twitter.sdk.android.core.internal.persistence.FileStore,N/A,getFilesDir(),N/A,File
+com.twitter.sdk.android.core.internal.persistence.FileStoreImpl,Requires Manifest.permission.WRITE_EXTERNAL_STORAGE,getCacheDir(),N/A,File
+com.twitter.sdk.android.core.internal.persistence.FileStoreImpl,Requires Manifest.permission.WRITE_EXTERNAL_STORAGE,getExternalCacheDir(),Requires Manifest.permission.WRITE_EXTERNAL_STORAGE,File
+com.twitter.sdk.android.core.internal.persistence.FileStoreImpl,Requires Manifest.permission.WRITE_EXTERNAL_STORAGE,getExternalFilesDir(),Requires Manifest.permission.WRITE_EXTERNAL_STORAGE,File
+com.twitter.sdk.android.core.internal.persistence.FileStoreImpl,Requires Manifest.permission.WRITE_EXTERNAL_STORAGE,getFilesDir(),N/A,File
+com.twitter.sdk.android.core.services.params.Geocode,"The parameter value is specified by ""latitude,longitude,radius"", where radius units must be specified as either ""mi"" (miles) or ""km"" (kilometers). Note that you cannot use the near operator via the API to geocode arbitrary locations; however you can use this geocode parameter to search near geocodes directly. Example Values: 37.781157,-122.398720,1mi GET search/tweets",toString(),N/A,String
+com.twitter.sdk.android.core.services.params.Geocode.Distance,Returns the enum constant of this type with the specified name.,valueOf(String name),Returns the enum constant of this type with the specified name.,static Geocode.Distance
+com.twitter.sdk.android.core.services.params.Geocode.Distance,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, inthe order they are declared.",static Geocode.Distance[]
+com.twitter.sdk.android.core.internal.network.GuestAuthenticator,Refreshes guest auth session when server indicates session is expired.,"authenticate(Route route,            Response response)",N/A,Request
+com.twitter.sdk.android.core.internal.network.GuestAuthInterceptor,Signs requests with OAuth2 signature.,intercept(Chain chain),N/A,Response
+com.twitter.sdk.android.core.internal.network.GuestAuthNetworkInterceptor,"The Twitter API uses HTTP status code of 403 to indicate guest session needs to be refreshed. However, the OkHttp Authenticator that refreshes guest sessions only responds to 401. So we map all 403 to 401 responses.",intercept(Chain chain),N/A,Response
+com.twitter.sdk.android.core.internal.oauth.GuestAuthToken,Determines whether a token is known to have expired.,equals(Object o),N/A,boolean
+com.twitter.sdk.android.core.internal.oauth.GuestAuthToken,Determines whether a token is known to have expired.,getGuestToken(),N/A,String
+com.twitter.sdk.android.core.internal.oauth.GuestAuthToken,Determines whether a token is known to have expired.,hashCode(),N/A,int
+com.twitter.sdk.android.core.internal.oauth.GuestAuthToken,Determines whether a token is known to have expired.,isExpired(),Determines whether a token is known to have expired.,boolean
+com.twitter.sdk.android.core.GuestSession,N/A,N/A,N/A,N/A
+com.twitter.sdk.android.core.GuestSession.Serializer,N/A,deserialize(String serializedSession),N/A,GuestSession
+com.twitter.sdk.android.core.GuestSession.Serializer,N/A,serialize(GuestSession session),N/A,String
+com.twitter.sdk.android.core.GuestSessionProvider,N/A,getCurrentSession(),N/A,GuestSession
+com.twitter.sdk.android.core.GuestSessionProvider,N/A,refreshCurrentSession(GuestSession expiredSession),N/A,GuestSession
+com.twitter.sdk.android.core.models.HashtagEntity,Represents hashtags which have been parsed out of the Tweet text.,getEnd(),N/A,int
+com.twitter.sdk.android.core.models.HashtagEntity,Represents hashtags which have been parsed out of the Tweet text.,getStart(),N/A,int
+com.twitter.sdk.android.core.models.Identifiable,Identifiable is an abstraction of types with long identifiers.,getId(),Returns the id.,long
+com.twitter.sdk.android.core.models.Image,Represents an image which has been uploaded to Twitter.,N/A,N/A,N/A
+com.twitter.sdk.android.core.models.ImageValue,N/A,N/A,N/A,N/A
+com.twitter.sdk.android.core.IntentUtils,N/A,"isActivityAvailable(Context context,                   Intent intent)",N/A,static boolean
+com.twitter.sdk.android.core.IntentUtils,N/A,"safeStartActivity(Context context,                 Intent intent)",N/A,static boolean
+com.twitter.sdk.android.core.services.ListService,Returns a timeline of tweets authored by members of the specified list.,"statuses(Long listId,        String slug,        String ownerScreenName,        Long ownerId,        Long sinceId,        Long maxId,        Integer count,        Boolean includeEntities,        Boolean includeRetweets)",Returns a timeline of tweets authored by members of the specified list.,<any>
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"d(String tag, String text)",N/A,void
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"d(String tag, String text, Throwable throwable)",N/A,void
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"e(String tag, String text)",N/A,void
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"e(String tag, String text, Throwable throwable)",N/A,void
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,getLogLevel(),N/A,int
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"i(String tag, String text)",N/A,void
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"i(String tag, String text, Throwable throwable)",N/A,void
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"isLoggable(String tag,          int level)",N/A,boolean
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"log(int priority,   String tag,   String msg)",N/A,void
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"log(int priority,   String tag,   String msg,   boolean forceLog)",N/A,void
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,setLogLevel(int logLevel),N/A,void
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"v(String tag, String text)",N/A,void
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"v(String tag, String text, Throwable throwable)",N/A,void
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"w(String tag, String text)",N/A,void
+com.twitter.sdk.android.core.Logger,Interface to support custom logger.,"w(String tag, String text, Throwable throwable)",N/A,void
+com.twitter.sdk.android.core.models.Media,Represents Media which has been uploaded to Twitter upload endpoints.,N/A,N/A,N/A
+com.twitter.sdk.android.core.models.MediaEntity,Represents media elements uploaded with the Tweet.,getEnd(),N/A,int
+com.twitter.sdk.android.core.models.MediaEntity,Represents media elements uploaded with the Tweet.,getStart(),N/A,int
+com.twitter.sdk.android.core.models.MediaEntity.Size,Height in pixels of this size.,N/A,N/A,N/A
+com.twitter.sdk.android.core.models.MediaEntity.Sizes,Information for a large-sized version of the media.,N/A,N/A,N/A
+com.twitter.sdk.android.core.services.MediaService,Uploads media (images) to Twitter for use in a Tweet or Twitter-hosted Card.,"upload(RequestBody media,      RequestBody mediaData,      RequestBody additionalOwners)",Uploads media (images) to Twitter for use in a Tweet or Twitter-hosted Card.,<any>
+com.twitter.sdk.android.core.models.MentionEntity,Represents other Twitter users mentioned in the text of the Tweet.,getEnd(),N/A,int
+com.twitter.sdk.android.core.models.MentionEntity,Represents other Twitter users mentioned in the text of the Tweet.,getStart(),N/A,int
+com.twitter.sdk.android.core.models.ModelUtils,Util class for twitter-core models,getSafeList(List<T> entities),N/A,static <T> List<T>
+com.twitter.sdk.android.core.models.ModelUtils,Util class for twitter-core models,"getSafeMap(Map<K,V> entities)",N/A,"static <K,V> Map<K,V>"
+com.twitter.sdk.android.core.internal.oauth.OAuth1aHeaders,Gets authorization header for inclusion in HTTP request headers.,"getAuthorizationHeader(TwitterAuthConfig authConfig,                      TwitterAuthToken authToken,                      String callback,                      String method,                      String url,                      Map<String,String> postParams)",Gets authorization header for inclusion in HTTP request headers.,String
+com.twitter.sdk.android.core.internal.oauth.OAuth1aHeaders,Gets authorization header for inclusion in HTTP request headers.,"getOAuthEchoHeaders(TwitterAuthConfig authConfig,                   TwitterAuthToken authToken,                   String callback,                   String method,                   String url,                   Map<String,String> postParams)",N/A,"Map<String,String>"
+com.twitter.sdk.android.core.internal.network.OAuth1aInterceptor,Signs requests with OAuth1a signature,intercept(Chain chain),N/A,Response
+com.twitter.sdk.android.core.internal.oauth.OAuth1aService,"OAuth1.0a service. Provides methods for requesting request tokens, access tokens, and signing requests.",buildCallbackUrl(TwitterAuthConfig authConfig),Builds a callback url that is used to receive a request containing the oauth_token and oauth_verifier parameters.,String
+com.twitter.sdk.android.core.internal.oauth.OAuth1aService,"OAuth1.0a service. Provides methods for requesting request tokens, access tokens, and signing requests.",getApi(),N/A,protected TwitterApi
+com.twitter.sdk.android.core.internal.oauth.OAuth1aService,"OAuth1.0a service. Provides methods for requesting request tokens, access tokens, and signing requests.",getAuthorizeUrl(TwitterAuthToken requestToken),N/A,String
+com.twitter.sdk.android.core.internal.oauth.OAuth1aService,"OAuth1.0a service. Provides methods for requesting request tokens, access tokens, and signing requests.",getRetrofit(),N/A,protected Retrofit
+com.twitter.sdk.android.core.internal.oauth.OAuth1aService,"OAuth1.0a service. Provides methods for requesting request tokens, access tokens, and signing requests.",getTwitterCore(),N/A,protected TwitterCore
+com.twitter.sdk.android.core.internal.oauth.OAuth1aService,"OAuth1.0a service. Provides methods for requesting request tokens, access tokens, and signing requests.",getUserAgent(),N/A,protected String
+com.twitter.sdk.android.core.internal.oauth.OAuth1aService,"OAuth1.0a service. Provides methods for requesting request tokens, access tokens, and signing requests.",parseAuthResponse(String response),N/A,static OAuthResponse
+com.twitter.sdk.android.core.internal.oauth.OAuth1aService,"OAuth1.0a service. Provides methods for requesting request tokens, access tokens, and signing requests.","requestAccessToken(Callback<OAuthResponse> callback,                  TwitterAuthToken requestToken,                  String verifier)",Requests a Twitter access token to act on behalf of a user account.,void
+com.twitter.sdk.android.core.internal.oauth.OAuth1aService,"OAuth1.0a service. Provides methods for requesting request tokens, access tokens, and signing requests.",requestTempToken(Callback<OAuthResponse> callback),Requests a temp token to start the Twitter sign-in flow.,void
+com.twitter.sdk.android.core.internal.oauth.OAuth2Service,OAuth2.0 service. Provides methods for requesting guest auth tokens.,getApi(),N/A,protected TwitterApi
+com.twitter.sdk.android.core.internal.oauth.OAuth2Service,OAuth2.0 service. Provides methods for requesting guest auth tokens.,getRetrofit(),N/A,protected Retrofit
+com.twitter.sdk.android.core.internal.oauth.OAuth2Service,OAuth2.0 service. Provides methods for requesting guest auth tokens.,getTwitterCore(),N/A,protected TwitterCore
+com.twitter.sdk.android.core.internal.oauth.OAuth2Service,OAuth2.0 service. Provides methods for requesting guest auth tokens.,getUserAgent(),N/A,protected String
+com.twitter.sdk.android.core.internal.oauth.OAuth2Service,OAuth2.0 service. Provides methods for requesting guest auth tokens.,requestGuestAuthToken(Callback<GuestAuthToken> callback),Requests a guest auth token.,void
+com.twitter.sdk.android.core.internal.oauth.OAuth2Token,OAuth2.0 token.,describeContents(),N/A,int
+com.twitter.sdk.android.core.internal.oauth.OAuth2Token,OAuth2.0 token.,equals(Object o),N/A,boolean
+com.twitter.sdk.android.core.internal.oauth.OAuth2Token,OAuth2.0 token.,getAccessToken(),N/A,String
+com.twitter.sdk.android.core.internal.oauth.OAuth2Token,OAuth2.0 token.,getTokenType(),N/A,String
+com.twitter.sdk.android.core.internal.oauth.OAuth2Token,OAuth2.0 token.,hashCode(),N/A,int
+com.twitter.sdk.android.core.internal.oauth.OAuth2Token,OAuth2.0 token.,isExpired(),Determines whether a token is known to have expired.,boolean
+com.twitter.sdk.android.core.internal.oauth.OAuth2Token,OAuth2.0 token.,"writeToParcel(Parcel out,             int flags)",N/A,void
+com.twitter.sdk.android.core.identity.OAuthActivity,Activity for performing OAuth flow when Single Sign On is not available. This activity should not be called directly.,onBackPressed(),N/A,void
+com.twitter.sdk.android.core.identity.OAuthActivity,Activity for performing OAuth flow when Single Sign On is not available. This activity should not be called directly.,"onComplete(int resultCode,          Intent data)",N/A,void
+com.twitter.sdk.android.core.identity.OAuthActivity,Activity for performing OAuth flow when Single Sign On is not available. This activity should not be called directly.,onCreate(Bundle savedInstanceState),N/A,protected void
+com.twitter.sdk.android.core.identity.OAuthActivity,Activity for performing OAuth flow when Single Sign On is not available. This activity should not be called directly.,onSaveInstanceState(Bundle outState),N/A,protected void
+com.twitter.sdk.android.core.internal.oauth.OAuthConstants,N/A,N/A,N/A,N/A
+com.twitter.sdk.android.core.internal.oauth.OAuthResponse,Represents an authorization response.,describeContents(),N/A,int
+com.twitter.sdk.android.core.internal.oauth.OAuthResponse,Represents an authorization response.,toString(),N/A,String
+com.twitter.sdk.android.core.internal.oauth.OAuthResponse,Represents an authorization response.,"writeToParcel(Parcel out,             int flags)",N/A,void
+com.twitter.sdk.android.core.OAuthSigning,Provides convenience methods for generating OAuth headers for Twitter,"getAuthorizationHeader(String method,                      String url,                      Map<String,String> postParams)",Gets authorization header for inclusion in HTTP request headers.,String
+com.twitter.sdk.android.core.OAuthSigning,Provides convenience methods for generating OAuth headers for Twitter,"getOAuthEchoHeaders(String method,                   String url,                   Map<String,String> postParams)",Returns OAuth Echo header using given parameters.,"Map<String,String>"
+com.twitter.sdk.android.core.OAuthSigning,Provides convenience methods for generating OAuth headers for Twitter,getOAuthEchoHeadersForVerifyCredentials(),Returns OAuth Echo header for verify_credentials endpoint.,"Map<String,String>"
+com.twitter.sdk.android.core.internal.network.OkHttpClientHelper,N/A,getCertificatePinner(),N/A,static CertificatePinner
+com.twitter.sdk.android.core.internal.network.OkHttpClientHelper,N/A,"getCustomOkHttpClient(OkHttpClient httpClient,                     GuestSessionProvider guestSessionProvider)",N/A,static OkHttpClient
+com.twitter.sdk.android.core.internal.network.OkHttpClientHelper,N/A,"getCustomOkHttpClient(OkHttpClient httpClient,                     Session<? extends TwitterAuthToken> session,                     TwitterAuthConfig authConfig)",N/A,static OkHttpClient
+com.twitter.sdk.android.core.internal.network.OkHttpClientHelper,N/A,getOkHttpClient(GuestSessionProvider guestSessionProvider),N/A,static OkHttpClient
+com.twitter.sdk.android.core.internal.network.OkHttpClientHelper,N/A,"getOkHttpClient(Session<? extends TwitterAuthToken> session,               TwitterAuthConfig authConfig)",N/A,static OkHttpClient
+com.twitter.sdk.android.core.PersistedSessionManager,Implementation of SessionManager that persists sessions.,clearActiveSession(),Clears the active session.,void
+com.twitter.sdk.android.core.PersistedSessionManager,Implementation of SessionManager that persists sessions.,clearSession(long id),Clears the session associated with the id.,void
+com.twitter.sdk.android.core.PersistedSessionManager,Implementation of SessionManager that persists sessions.,getActiveSession(),N/A,T
+com.twitter.sdk.android.core.PersistedSessionManager,Implementation of SessionManager that persists sessions.,getSession(long id),N/A,T
+com.twitter.sdk.android.core.PersistedSessionManager,Implementation of SessionManager that persists sessions.,getSessionMap(),N/A,"Map<Long,T>"
+com.twitter.sdk.android.core.PersistedSessionManager,Implementation of SessionManager that persists sessions.,setActiveSession(T session),Sets the active session.,void
+com.twitter.sdk.android.core.PersistedSessionManager,Implementation of SessionManager that persists sessions.,"setSession(long id,          T session)",Sets the session to associate with the id.,void
+com.twitter.sdk.android.core.internal.persistence.PersistenceStrategy,N/A,clear(),N/A,void
+com.twitter.sdk.android.core.internal.persistence.PersistenceStrategy,N/A,restore(),N/A,T
+com.twitter.sdk.android.core.internal.persistence.PersistenceStrategy,N/A,save(T object),N/A,void
+com.twitter.sdk.android.core.models.Place,"A place is a specific, named location with corresponding geo coordinates.",N/A,N/A,N/A
+com.twitter.sdk.android.core.models.Place.BoundingBox,"A series of longitude and latitude points, defining a box which will contain the Place entity this bounding box is related to.",N/A,N/A,N/A
+com.twitter.sdk.android.core.internal.persistence.PreferenceStore,N/A,edit(),N/A,SharedPreferences.Editor
+com.twitter.sdk.android.core.internal.persistence.PreferenceStore,N/A,get(),N/A,SharedPreferences
+com.twitter.sdk.android.core.internal.persistence.PreferenceStore,N/A,save(SharedPreferences.Editor editor),N/A,boolean
+com.twitter.sdk.android.core.internal.persistence.PreferenceStoreImpl,Apply thread safe saves based on Android API level,edit(),N/A,SharedPreferences.Editor
+com.twitter.sdk.android.core.internal.persistence.PreferenceStoreImpl,Apply thread safe saves based on Android API level,get(),N/A,SharedPreferences
+com.twitter.sdk.android.core.internal.persistence.PreferenceStoreImpl,Apply thread safe saves based on Android API level,save(SharedPreferences.Editor editor),Apply thread safe saves based on Android API level,boolean
+com.twitter.sdk.android.core.internal.persistence.PreferenceStoreStrategy,N/A,clear(),N/A,void
+com.twitter.sdk.android.core.internal.persistence.PreferenceStoreStrategy,N/A,restore(),N/A,T
+com.twitter.sdk.android.core.internal.persistence.PreferenceStoreStrategy,N/A,save(T object),N/A,void
+com.twitter.sdk.android.core.Result,Encapsulates parsed result for delivery.,N/A,N/A,N/A
+com.twitter.sdk.android.core.models.SafeListAdapter,N/A,"create(Gson gson,      <any> tokenType)",N/A,<T> <any>
+com.twitter.sdk.android.core.models.SafeMapAdapter,N/A,"create(Gson gson,      <any> tokenType)",N/A,<T> <any>
+com.twitter.sdk.android.core.models.Search,Collection of relevant Tweets matching a specified query.,N/A,N/A,N/A
+com.twitter.sdk.android.core.models.SearchMetadata,N/A,N/A,N/A,N/A
+com.twitter.sdk.android.core.services.SearchService,Returns a collection of relevant Tweets matching a specified query.,"tweets(String query,      Geocode geocode,      String lang,      String locale,      String resultType,      Integer count,      String until,      Long sinceId,      Long maxId,      Boolean includeEntities)",Returns a collection of relevant Tweets matching a specified query.,<any>
+com.twitter.sdk.android.core.internal.persistence.SerializationStrategy,N/A,deserialize(String serializedObject),N/A,T
+com.twitter.sdk.android.core.internal.persistence.SerializationStrategy,N/A,serialize(T object),N/A,String
+com.twitter.sdk.android.core.Session,Base class for session associated with AuthToken.,equals(Object o),N/A,boolean
+com.twitter.sdk.android.core.Session,Base class for session associated with AuthToken.,getAuthToken(),N/A,T
+com.twitter.sdk.android.core.Session,Base class for session associated with AuthToken.,getId(),N/A,long
+com.twitter.sdk.android.core.Session,Base class for session associated with AuthToken.,hashCode(),N/A,int
+com.twitter.sdk.android.core.SessionManager,SessionManager for managing sessions.,clearActiveSession(),Clears the active session.,void
+com.twitter.sdk.android.core.SessionManager,SessionManager for managing sessions.,clearSession(long id),Clears the session associated with the id.,void
+com.twitter.sdk.android.core.SessionManager,SessionManager for managing sessions.,getActiveSession(),N/A,T
+com.twitter.sdk.android.core.SessionManager,SessionManager for managing sessions.,getSession(long id),N/A,T
+com.twitter.sdk.android.core.SessionManager,SessionManager for managing sessions.,getSessionMap(),N/A,"Map<Long,T>"
+com.twitter.sdk.android.core.SessionManager,SessionManager for managing sessions.,setActiveSession(T session),Sets the active session.,void
+com.twitter.sdk.android.core.SessionManager,SessionManager for managing sessions.,"setSession(long id,          T session)",Sets the session to associate with the id.,void
+com.twitter.sdk.android.core.internal.SessionMonitor,A session monitor for validating sessions.,monitorActivityLifecycle(ActivityLifecycleManager activityLifecycleManager),This is how we hook into the activity lifecycle to detect if the user is using the app.,void
+com.twitter.sdk.android.core.internal.SessionMonitor,A session monitor for validating sessions.,triggerVerificationIfNecessary(),triggerVerificationIfNecessary checks if there are any sessions to verify and if enough time has passed in order to run another verification.,void
+com.twitter.sdk.android.core.internal.SessionMonitor,A session monitor for validating sessions.,verifyAll(),N/A,protected void
+com.twitter.sdk.android.core.internal.SessionMonitor.MonitorState,Encapsulates time based state that rate limits our calls to the verification api. Ensure we don't end up with racy parallel calls with beginVerification.,beginVerification(long currentTime),N/A,boolean
+com.twitter.sdk.android.core.internal.SessionMonitor.MonitorState,Encapsulates time based state that rate limits our calls to the verification api. Ensure we don't end up with racy parallel calls with beginVerification.,endVerification(long currentTime),N/A,void
+com.twitter.sdk.android.core.internal.SessionVerifier,N/A,verifySession(T session),N/A,void
+com.twitter.sdk.android.core.services.StatusesService,Destroys the status specified by the required ID parameter.,"destroy(Long id,       Boolean trimUser)",Destroys the status specified by the required ID parameter.,<any>
+com.twitter.sdk.android.core.services.StatusesService,Destroys the status specified by the required ID parameter.,"homeTimeline(Integer count,            Long sinceId,            Long maxId,            Boolean trimUser,            Boolean excludeReplies,            Boolean contributeDetails,            Boolean includeEntities)",Returns a collection of the most recent Tweets and retweets posted by the authenticating user and the users they follow.,<any>
+com.twitter.sdk.android.core.services.StatusesService,Destroys the status specified by the required ID parameter.,"lookup(String id,      Boolean includeEntities,      Boolean trimUser,      Boolean map)","Returns fully-hydrated Tweet objects for up to 100 tweets per request, as specified by comma-separated values passed to the id parameter.",<any>
+com.twitter.sdk.android.core.services.StatusesService,Destroys the status specified by the required ID parameter.,"mentionsTimeline(Integer count,                Long sinceId,                Long maxId,                Boolean trimUser,                Boolean contributeDetails,                Boolean includeEntities)","Returns most recent mentions (tweets containing a user's @screen_name) for the authenticating user, by default returns 20 tweets.",<any>
+com.twitter.sdk.android.core.services.StatusesService,Destroys the status specified by the required ID parameter.,"retweet(Long id,       Boolean trimUser)",Retweets a Tweet.,<any>
+com.twitter.sdk.android.core.services.StatusesService,Destroys the status specified by the required ID parameter.,"retweetsOfMe(Integer count,            Long sinceId,            Long maxId,            Boolean trimUser,            Boolean includeEntities,            Boolean includeUserEntities)",Returns the most recent tweets authored by the authenticating user that have been retweeted by others.,<any>
+com.twitter.sdk.android.core.services.StatusesService,Destroys the status specified by the required ID parameter.,"show(Long id,    Boolean trimUser,    Boolean includeMyRetweet,    Boolean includeEntities)","Returns a single Tweet, specified by the id parameter.",<any>
+com.twitter.sdk.android.core.services.StatusesService,Destroys the status specified by the required ID parameter.,"unretweet(Long id,         Boolean trimUser)",Destroys the retweet specified by the required source Tweet's ID parameter.,<any>
+com.twitter.sdk.android.core.services.StatusesService,Destroys the status specified by the required ID parameter.,"update(String status,      Long inReplyToStatusId,      Boolean possiblySensitive,      Double latitude,      Double longitude,      String placeId,      Boolean displayCoordinates,      Boolean trimUser,      String mediaIds)","Updates the authenticating user's current status, also known as tweeting.",<any>
+com.twitter.sdk.android.core.services.StatusesService,Destroys the status specified by the required ID parameter.,"userTimeline(Long userId,            String screenName,            Integer count,            Long sinceId,            Long maxId,            Boolean trimUser,            Boolean excludeReplies,            Boolean contributeDetails,            Boolean includeRetweets)",Returns a collection of the most recent tweets posted by the user indicated by the screen_name or user_id parameters.,<any>
+com.twitter.sdk.android.core.models.SymbolEntity,Represents symbols which have been parsed out of the Tweet text.,getEnd(),N/A,int
+com.twitter.sdk.android.core.models.SymbolEntity,Represents symbols which have been parsed out of the Tweet text.,getStart(),N/A,int
+com.twitter.sdk.android.core.internal.SystemCurrentTimeProvider,Default implementation of the CurrentTimeProvider which returns the system time,getCurrentTimeMillis(),N/A,long
+com.twitter.sdk.android.core.models.Tweet,"A Tweet is the basic atomic building block of all things Twitter. Tweets, also known more generically as ""status updates."" Tweets can be embedded, replied to, favorited, unfavorited and deleted.",equals(Object o),N/A,boolean
+com.twitter.sdk.android.core.models.Tweet,"A Tweet is the basic atomic building block of all things Twitter. Tweets, also known more generically as ""status updates."" Tweets can be embedded, replied to, favorited, unfavorited and deleted.",getId(),Returns the id.,long
+com.twitter.sdk.android.core.models.Tweet,"A Tweet is the basic atomic building block of all things Twitter. Tweets, also known more generically as ""status updates."" Tweets can be embedded, replied to, favorited, unfavorited and deleted.",hashCode(),N/A,int
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,build(),N/A,Tweet
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,copy(Tweet tweet),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setCard(Card card),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setCoordinates(Coordinates coordinates),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setCreatedAt(String createdAt),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setCurrentUserRetweet(Object currentUserRetweet),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setDisplayTextRange(List<Integer> displayTextRange),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setEntities(TweetEntities entities),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setExtendedEntities(TweetEntities extendedEntities),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setFavoriteCount(Integer favoriteCount),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setFavorited(boolean favorited),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setFilterLevel(String filterLevel),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setId(long id),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setIdStr(String idStr),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setInReplyToScreenName(String inReplyToScreenName),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setInReplyToStatusId(long inReplyToStatusId),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setInReplyToStatusIdStr(String inReplyToStatusIdStr),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setInReplyToUserId(long inReplyToUserId),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setInReplyToUserIdStr(String inReplyToUserIdStr),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setLang(String lang),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setPlace(Place place),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setPossiblySensitive(boolean possiblySensitive),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setQuotedStatus(Tweet quotedStatus),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setQuotedStatusId(long quotedStatusId),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setQuotedStatusIdStr(String quotedStatusIdStr),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setRetweetCount(int retweetCount),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setRetweeted(boolean retweeted),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setRetweetedStatus(Tweet retweetedStatus),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setScopes(Object scopes),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setSource(String source),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setText(String text),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setTruncated(boolean truncated),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setUser(User user),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setWithheldCopyright(boolean withheldCopyright),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setWithheldInCountries(List<String> withheldInCountries),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetBuilder,N/A,setWithheldScope(String withheldScope),N/A,TweetBuilder
+com.twitter.sdk.android.core.models.TweetEntities,Provides metadata and additional contextual information about content posted in a tweet.,N/A,N/A,N/A
+com.twitter.sdk.android.core.Twitter,The Twitter class stores common configuration and state for TwitterKit SDK.,getActivityLifecycleManager(),N/A,ActivityLifecycleManager
+com.twitter.sdk.android.core.Twitter,The Twitter class stores common configuration and state for TwitterKit SDK.,getContext(String component),N/A,Context
+com.twitter.sdk.android.core.Twitter,The Twitter class stores common configuration and state for TwitterKit SDK.,getExecutorService(),N/A,ExecutorService
+com.twitter.sdk.android.core.Twitter,The Twitter class stores common configuration and state for TwitterKit SDK.,getInstance(),N/A,static Twitter
+com.twitter.sdk.android.core.Twitter,The Twitter class stores common configuration and state for TwitterKit SDK.,getLogger(),N/A,static Logger
+com.twitter.sdk.android.core.Twitter,The Twitter class stores common configuration and state for TwitterKit SDK.,getTwitterAuthConfig(),N/A,TwitterAuthConfig
+com.twitter.sdk.android.core.Twitter,The Twitter class stores common configuration and state for TwitterKit SDK.,initialize(Context context),Entry point to initialize the TwitterKit SDK.,static void
+com.twitter.sdk.android.core.Twitter,The Twitter class stores common configuration and state for TwitterKit SDK.,initialize(TwitterConfig config),Entry point to initialize the TwitterKit SDK.,static void
+com.twitter.sdk.android.core.Twitter,The Twitter class stores common configuration and state for TwitterKit SDK.,isDebug(),N/A,static boolean
+com.twitter.sdk.android.core.internal.TwitterApi,Builds upon the base host url by appending paths to the url.,buildUponBaseHostUrl(String... paths),Builds upon the base host url by appending paths to the url.,Uri.Builder
+com.twitter.sdk.android.core.internal.TwitterApi,Builds upon the base host url by appending paths to the url.,"buildUserAgent(String clientName,              String version)",N/A,static String
+com.twitter.sdk.android.core.internal.TwitterApi,Builds upon the base host url by appending paths to the url.,getBaseHostUrl(),N/A,String
+com.twitter.sdk.android.core.TwitterApiClient,A class to allow authenticated access to Twitter API endpoints. Can be extended to provided additional endpoints by extending and providing Retrofit API interfaces to getService(Class),getAccountService(),N/A,AccountService
+com.twitter.sdk.android.core.TwitterApiClient,A class to allow authenticated access to Twitter API endpoints. Can be extended to provided additional endpoints by extending and providing Retrofit API interfaces to getService(Class),getCollectionService(),"Use CollectionTimeline directly, CollectionService is expected to change.",CollectionService
+com.twitter.sdk.android.core.TwitterApiClient,A class to allow authenticated access to Twitter API endpoints. Can be extended to provided additional endpoints by extending and providing Retrofit API interfaces to getService(Class),getConfigurationService(),N/A,ConfigurationService
+com.twitter.sdk.android.core.TwitterApiClient,A class to allow authenticated access to Twitter API endpoints. Can be extended to provided additional endpoints by extending and providing Retrofit API interfaces to getService(Class),getFavoriteService(),N/A,FavoriteService
+com.twitter.sdk.android.core.TwitterApiClient,A class to allow authenticated access to Twitter API endpoints. Can be extended to provided additional endpoints by extending and providing Retrofit API interfaces to getService(Class),getListService(),N/A,ListService
+com.twitter.sdk.android.core.TwitterApiClient,A class to allow authenticated access to Twitter API endpoints. Can be extended to provided additional endpoints by extending and providing Retrofit API interfaces to getService(Class),getMediaService(),N/A,MediaService
+com.twitter.sdk.android.core.TwitterApiClient,A class to allow authenticated access to Twitter API endpoints. Can be extended to provided additional endpoints by extending and providing Retrofit API interfaces to getService(Class),getSearchService(),N/A,SearchService
+com.twitter.sdk.android.core.TwitterApiClient,A class to allow authenticated access to Twitter API endpoints. Can be extended to provided additional endpoints by extending and providing Retrofit API interfaces to getService(Class),getService(Class<T> cls),Converts Retrofit style interface into instance for API access,protected <T> T
+com.twitter.sdk.android.core.TwitterApiClient,A class to allow authenticated access to Twitter API endpoints. Can be extended to provided additional endpoints by extending and providing Retrofit API interfaces to getService(Class),getStatusesService(),N/A,StatusesService
+com.twitter.sdk.android.core.internal.TwitterApiConstants,N/A,N/A,N/A,N/A
+com.twitter.sdk.android.core.internal.TwitterApiConstants.Errors,N/A,N/A,N/A,N/A
+com.twitter.sdk.android.core.TwitterApiErrorConstants,"Error codes that may be returned from the API. For complete list of error codes, see https://dev.twitter.com/overview/api/response-codes",N/A,N/A,N/A
+com.twitter.sdk.android.core.TwitterApiException,Represents a Twitter API error.,getErrorCode(),Error code returned by API request.,int
+com.twitter.sdk.android.core.TwitterApiException,Represents a Twitter API error.,getErrorMessage(),Error message returned by API request.,String
+com.twitter.sdk.android.core.TwitterApiException,Represents a Twitter API error.,getResponse(),N/A,Response
+com.twitter.sdk.android.core.TwitterApiException,Represents a Twitter API error.,getStatusCode(),N/A,int
+com.twitter.sdk.android.core.TwitterApiException,Represents a Twitter API error.,getTwitterRateLimit(),N/A,TwitterRateLimit
+com.twitter.sdk.android.core.TwitterApiException,Represents a Twitter API error.,readApiError(Response response),N/A,static ApiError
+com.twitter.sdk.android.core.TwitterApiException,Represents a Twitter API error.,readApiRateLimit(Response response),N/A,static TwitterRateLimit
+com.twitter.sdk.android.core.identity.TwitterAuthClient,Client for requesting authorization and email from the user.,"authorize(Activity activity,         Callback<TwitterSession> callback)",Requests authorization.,void
+com.twitter.sdk.android.core.identity.TwitterAuthClient,Client for requesting authorization and email from the user.,cancelAuthorize(),Cancels any pending authorization request,void
+com.twitter.sdk.android.core.identity.TwitterAuthClient,Client for requesting authorization and email from the user.,getRequestCode(),N/A,int
+com.twitter.sdk.android.core.identity.TwitterAuthClient,Client for requesting authorization and email from the user.,"onActivityResult(int requestCode,                int resultCode,                Intent data)","Call this method when Activity.onActivityResult(int, int, Intent) is called to complete the authorization flow.",void
+com.twitter.sdk.android.core.identity.TwitterAuthClient,Client for requesting authorization and email from the user.,"requestEmail(TwitterSession session,            Callback<String> callback)",Requests the user's email address.,void
+com.twitter.sdk.android.core.TwitterAuthConfig,Authorization configuration details.,describeContents(),N/A,int
+com.twitter.sdk.android.core.TwitterAuthConfig,Authorization configuration details.,getConsumerKey(),N/A,String
+com.twitter.sdk.android.core.TwitterAuthConfig,Authorization configuration details.,getConsumerSecret(),N/A,String
+com.twitter.sdk.android.core.TwitterAuthConfig,Authorization configuration details.,getRequestCode(),N/A,int
+com.twitter.sdk.android.core.TwitterAuthConfig,Authorization configuration details.,"writeToParcel(Parcel out,             int flags)",N/A,void
+com.twitter.sdk.android.core.TwitterAuthException,Represents a Twitter authorization error.,N/A,N/A,N/A
+com.twitter.sdk.android.core.TwitterAuthToken,Represents an authorization token and its secret.,describeContents(),N/A,int
+com.twitter.sdk.android.core.TwitterAuthToken,Represents an authorization token and its secret.,equals(Object o),N/A,boolean
+com.twitter.sdk.android.core.TwitterAuthToken,Represents an authorization token and its secret.,hashCode(),N/A,int
+com.twitter.sdk.android.core.TwitterAuthToken,Represents an authorization token and its secret.,isExpired(),Determines whether a token is known to have expired.,boolean
+com.twitter.sdk.android.core.TwitterAuthToken,Represents an authorization token and its secret.,toString(),N/A,String
+com.twitter.sdk.android.core.TwitterAuthToken,Represents an authorization token and its secret.,"writeToParcel(Parcel out,             int flags)",N/A,void
+com.twitter.sdk.android.core.models.TwitterCollection,"TwitterCollection is a new type of timeline you control: you create the collection, give it a name, and select which Tweets to add, either by hand or programmatically using the REST API.",N/A,N/A,N/A
+com.twitter.sdk.android.core.models.TwitterCollection.Content,"Contents represent the grouped, decomposed collection objects (tweets, users).",N/A,N/A,N/A
+com.twitter.sdk.android.core.models.TwitterCollection.Metadata,Metadata lists references to decomposed objects and contextual information (such as cursors) needed to navigate the boundaries of the collection in subsequent requests.,N/A,N/A,N/A
+com.twitter.sdk.android.core.models.TwitterCollection.Metadata.Position,Position information for navigation.,N/A,N/A,N/A
+com.twitter.sdk.android.core.models.TwitterCollection.TimelineItem,Represents an item in a Timeline with a object references.,N/A,N/A,N/A
+com.twitter.sdk.android.core.models.TwitterCollection.TimelineItem.TweetItem,A Tweet id.,N/A,N/A,N/A
+com.twitter.sdk.android.core.TwitterConfig,Configurable Twitter options,N/A,N/A,N/A
+com.twitter.sdk.android.core.TwitterConfig.Builder,Builder for creating TwitterConfig instances.,build(),Build the TwitterConfig instance,TwitterConfig
+com.twitter.sdk.android.core.TwitterConfig.Builder,Builder for creating TwitterConfig instances.,debug(boolean debug),Enable debug mode,TwitterConfig.Builder
+com.twitter.sdk.android.core.TwitterConfig.Builder,Builder for creating TwitterConfig instances.,executorService(ExecutorService executorService),Sets the ExecutorService to build with.,TwitterConfig.Builder
+com.twitter.sdk.android.core.TwitterConfig.Builder,Builder for creating TwitterConfig instances.,logger(Logger logger),Sets the Logger to build with.,TwitterConfig.Builder
+com.twitter.sdk.android.core.TwitterConfig.Builder,Builder for creating TwitterConfig instances.,twitterAuthConfig(TwitterAuthConfig authConfig),Sets the TwitterAuthConfig to build with.,TwitterConfig.Builder
+com.twitter.sdk.android.core.TwitterCore,The TwitterCore Kit provides Login with Twitter and the Twitter API.,"addApiClient(TwitterSession session,            TwitterApiClient customTwitterApiClient)",Add custom TwitterApiClient for authenticated Session access.,void
+com.twitter.sdk.android.core.TwitterCore,The TwitterCore Kit provides Login with Twitter and the Twitter API.,addGuestApiClient(TwitterApiClient customTwitterApiClient),Add custom TwitterApiClient for guest auth access.,void
+com.twitter.sdk.android.core.TwitterCore,The TwitterCore Kit provides Login with Twitter and the Twitter API.,getApiClient(),Creates TwitterApiClient from default Session.,TwitterApiClient
+com.twitter.sdk.android.core.TwitterCore,The TwitterCore Kit provides Login with Twitter and the Twitter API.,getApiClient(TwitterSession session),Creates TwitterApiClient from authenticated Session provided.,TwitterApiClient
+com.twitter.sdk.android.core.TwitterCore,The TwitterCore Kit provides Login with Twitter and the Twitter API.,getAuthConfig(),N/A,TwitterAuthConfig
+com.twitter.sdk.android.core.TwitterCore,The TwitterCore Kit provides Login with Twitter and the Twitter API.,getGuestApiClient(),Creates TwitterApiClient using guest authentication.,TwitterApiClient
+com.twitter.sdk.android.core.TwitterCore,The TwitterCore Kit provides Login with Twitter and the Twitter API.,getGuestSessionProvider(),N/A,GuestSessionProvider
+com.twitter.sdk.android.core.TwitterCore,The TwitterCore Kit provides Login with Twitter and the Twitter API.,getIdentifier(),N/A,String
+com.twitter.sdk.android.core.TwitterCore,The TwitterCore Kit provides Login with Twitter and the Twitter API.,getInstance(),N/A,static TwitterCore
+com.twitter.sdk.android.core.TwitterCore,The TwitterCore Kit provides Login with Twitter and the Twitter API.,getSessionManager(),N/A,SessionManager<TwitterSession>
+com.twitter.sdk.android.core.TwitterCore,The TwitterCore Kit provides Login with Twitter and the Twitter API.,getVersion(),N/A,String
+com.twitter.sdk.android.core.TwitterException,Represents a Twitter error. Base class for all Twitter related exceptions.,N/A,N/A,N/A
+com.twitter.sdk.android.core.identity.TwitterLoginButton,"Log in button for logging into Twitter. When the button is clicked, an authorization request is started and the user is presented with a screen requesting access to the user's Twitter account. If successful, a TwitterSession is provided in the Callback.success(com.twitter.sdk.android.core.Result)",getActivity(),Gets the activity.,protected Activity
+com.twitter.sdk.android.core.identity.TwitterLoginButton,"Log in button for logging into Twitter. When the button is clicked, an authorization request is started and the user is presented with a screen requesting access to the user's Twitter account. If successful, a TwitterSession is provided in the Callback.success(com.twitter.sdk.android.core.Result)",getCallback(),N/A,Callback<TwitterSession>
+com.twitter.sdk.android.core.identity.TwitterLoginButton,"Log in button for logging into Twitter. When the button is clicked, an authorization request is started and the user is presented with a screen requesting access to the user's Twitter account. If successful, a TwitterSession is provided in the Callback.success(com.twitter.sdk.android.core.Result)","onActivityResult(int requestCode,                int resultCode,                Intent data)","Call this method when Activity.onActivityResult(int, int, Intent) is called to complete the authorization flow.",void
+com.twitter.sdk.android.core.identity.TwitterLoginButton,"Log in button for logging into Twitter. When the button is clicked, an authorization request is started and the user is presented with a screen requesting access to the user's Twitter account. If successful, a TwitterSession is provided in the Callback.success(com.twitter.sdk.android.core.Result)",setCallback(Callback<TwitterSession> callback),Sets the Callback to invoke when login completes.,void
+com.twitter.sdk.android.core.identity.TwitterLoginButton,"Log in button for logging into Twitter. When the button is clicked, an authorization request is started and the user is presented with a screen requesting access to the user's Twitter account. If successful, a TwitterSession is provided in the Callback.success(com.twitter.sdk.android.core.Result)",setOnClickListener(View.OnClickListener onClickListener),N/A,void
+com.twitter.sdk.android.core.TwitterRateLimit,Represents the rate limit data returned on the headers of a request,getLimit(),Returns the rate limit ceiling for that given request,int
+com.twitter.sdk.android.core.TwitterRateLimit,Represents the rate limit data returned on the headers of a request,getRemaining(),Returns the number of requests left for the 15 minute window,int
+com.twitter.sdk.android.core.TwitterRateLimit,Represents the rate limit data returned on the headers of a request,getReset(),Returns epoch time that rate limit reset will happen.,long
+com.twitter.sdk.android.core.TwitterSession,Represents a Twitter session that is associated with a TwitterAuthToken.,equals(Object o),N/A,boolean
+com.twitter.sdk.android.core.TwitterSession,Represents a Twitter session that is associated with a TwitterAuthToken.,getUserId(),N/A,long
+com.twitter.sdk.android.core.TwitterSession,Represents a Twitter session that is associated with a TwitterAuthToken.,getUserName(),N/A,String
+com.twitter.sdk.android.core.TwitterSession,Represents a Twitter session that is associated with a TwitterAuthToken.,hashCode(),N/A,int
+com.twitter.sdk.android.core.internal.TwitterSessionVerifier,"Produces new service instances, this code is a separate class so that we can more easily test SessionMonitor",verifySession(TwitterSession session),Verify session uses the synchronous api to simplify marking when verification is done.,void
+com.twitter.sdk.android.core.internal.TwitterSessionVerifier.AccountServiceProvider,"Produces new service instances, this code is a separate class so that we can more easily test SessionMonitor",getAccountService(TwitterSession session),N/A,AccountService
+com.twitter.sdk.android.core.models.UrlEntity,Represents URLs included in the text of a Tweet or within textual fields of a user object.,getEnd(),N/A,int
+com.twitter.sdk.android.core.models.UrlEntity,Represents URLs included in the text of a Tweet or within textual fields of a user object.,getStart(),N/A,int
+com.twitter.sdk.android.core.internal.network.UrlUtils,"Percent encodes by doing the following: 1) url encode string using UTF8 2) apply additional encoding to string, replacing:      ""*"" => ""%2A""      ""+"" => ""%20""      ""%7E"" => ""~""","getQueryParams(String paramsString,              boolean decode)",N/A,"static TreeMap<String,String>"
+com.twitter.sdk.android.core.internal.network.UrlUtils,"Percent encodes by doing the following: 1) url encode string using UTF8 2) apply additional encoding to string, replacing:      ""*"" => ""%2A""      ""+"" => ""%20""      ""%7E"" => ""~""","getQueryParams(URI uri,              boolean decode)",N/A,"static TreeMap<String,String>"
+com.twitter.sdk.android.core.internal.network.UrlUtils,"Percent encodes by doing the following: 1) url encode string using UTF8 2) apply additional encoding to string, replacing:      ""*"" => ""%2A""      ""+"" => ""%20""      ""%7E"" => ""~""",percentEncode(String s),"Percent encodes by doing the following: 1) url encode string using UTF8 2) apply additional encoding to string, replacing:      ""*"" => ""%2A""      ""+"" => ""%20""      ""%7E"" => ""~""",static String
+com.twitter.sdk.android.core.internal.network.UrlUtils,"Percent encodes by doing the following: 1) url encode string using UTF8 2) apply additional encoding to string, replacing:      ""*"" => ""%2A""      ""+"" => ""%20""      ""%7E"" => ""~""",urlDecode(String s),N/A,static String
+com.twitter.sdk.android.core.internal.network.UrlUtils,"Percent encodes by doing the following: 1) url encode string using UTF8 2) apply additional encoding to string, replacing:      ""*"" => ""%2A""      ""+"" => ""%20""      ""%7E"" => ""~""",urlEncode(String s),N/A,static String
+com.twitter.sdk.android.core.models.User,"Users can be anyone or anything. They tweet, follow, create lists, have a home_timeline, can be mentioned, and can be looked up in bulk.",getId(),Returns the id.,long
+com.twitter.sdk.android.core.models.UserBuilder,N/A,build(),N/A,User
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setContributorsEnabled(boolean contributorsEnabled),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setCreatedAt(String createdAt),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setDefaultProfile(boolean defaultProfile),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setDefaultProfileImage(boolean defaultProfileImage),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setDescription(String description),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setEmail(String email),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setEntities(UserEntities entities),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setFavouritesCount(int favouritesCount),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setFollowersCount(int followersCount),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setFollowRequestSent(boolean followRequestSent),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setFriendsCount(int friendsCount),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setGeoEnabled(boolean geoEnabled),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setId(long id),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setIdStr(String idStr),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setIsTranslator(boolean isTranslator),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setLang(String lang),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setListedCount(int listedCount),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setLocation(String location),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setName(String name),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProfileBackgroundColor(String profileBackgroundColor),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProfileBackgroundImageUrl(String profileBackgroundImageUrl),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProfileBackgroundImageUrlHttps(String profileBackgroundImageUrlHttps),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProfileBackgroundTile(boolean profileBackgroundTile),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProfileBannerUrl(String profileBannerUrl),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProfileImageUrl(String profileImageUrl),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProfileImageUrlHttps(String profileImageUrlHttps),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProfileLinkColor(String profileLinkColor),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProfileSidebarBorderColor(String profileSidebarBorderColor),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProfileSidebarFillColor(String profileSidebarFillColor),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProfileTextColor(String profileTextColor),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProfileUseBackgroundImage(boolean profileUseBackgroundImage),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setProtectedUser(boolean protectedUser),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setScreenName(String screenName),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setShowAllInlineMedia(boolean showAllInlineMedia),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setStatus(Tweet status),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setStatusesCount(int statusesCount),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setTimeZone(String timeZone),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setUrl(String url),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setUtcOffset(int utcOffset),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setVerified(boolean verified),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setWithheldInCountries(List<String> withheldInCountries),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserBuilder,N/A,setWithheldScope(String withheldScope),N/A,UserBuilder
+com.twitter.sdk.android.core.models.UserEntities,Entities for User Objects describe URLs that appear in the user defined profile URL and description fields.,N/A,N/A,N/A
+com.twitter.sdk.android.core.models.UserEntities.UrlEntities,N/A,N/A,N/A,N/A
+com.twitter.sdk.android.core.internal.UserUtils,N/A,formatScreenName(CharSequence screenName),N/A,static CharSequence
+com.twitter.sdk.android.core.internal.UserUtils,N/A,"getProfileImageUrlHttps(User user,                       UserUtils.AvatarSize size)",N/A,static String
+com.twitter.sdk.android.core.internal.UserUtils.AvatarSize,Returns the enum constant of this type with the specified name.,valueOf(String name),Returns the enum constant of this type with the specified name.,static UserUtils.AvatarSize
+com.twitter.sdk.android.core.internal.UserUtils.AvatarSize,Returns the enum constant of this type with the specified name.,values(),"Returns an array containing the constants of this enum type, inthe order they are declared.",static UserUtils.AvatarSize[]
+com.twitter.sdk.android.core.models.UserValue,N/A,N/A,N/A,N/A
+com.twitter.sdk.android.core.models.VideoInfo,Contains information about video.,N/A,N/A,N/A
+com.twitter.sdk.android.core.models.VideoInfo.Variant,N/A,N/A,N/A,N/A
+com.twitter.sdk.android.core.internal.VineCardUtils,N/A,getImageValue(Card card),N/A,static ImageValue
+com.twitter.sdk.android.core.internal.VineCardUtils,N/A,getPublisherId(Card card),N/A,static String
+com.twitter.sdk.android.core.internal.VineCardUtils,N/A,getStreamUrl(Card card),N/A,static String
+com.twitter.sdk.android.core.internal.VineCardUtils,N/A,isVine(Card card),N/A,static boolean

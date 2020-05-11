@@ -1,0 +1,1738 @@
+class_name,class_description,method,method_description,return_type
+account,N/A - VK has no Class Descriptions,ban,N/A,N/A
+account,N/A - VK has no Class Descriptions,changepassword,Changes a user password after access is successfully restored with the auth.restore method.,Returns an object with the token field containing a new token. 
+account,N/A - VK has no Class Descriptions,getactiveoffers,"Returns a list of active ads (offers). If the user fulfill their conditions, he will be able to get the appropriate number of votes to his balance.","Returns an array that contains the total number of current user-targeted special offers (first element) and the list of objects containing information about offers. 
+In case no special offer is targeted to the user, the array will include 0 element (number of special offers). 
+"
+account,N/A - VK has no Class Descriptions,getapppermissions,Gets settings of the user in this application.,"Returns a bit mask of the user's settings in this application. 
+
+Example If you need to get permissions for Access to friends and Access to user statuses, your bit mask will be: 2 + 1024 = 1026. 
+If with a bit mask of 1026 you need to check whether it has access to friends, you can run 1026 & 2. For example, alert(1026 & 2);  
+see List of available settings of access permissions 
+"
+account,N/A - VK has no Class Descriptions,getbanned,Returns a user's blacklist.,"Returns the total results number in count field and an array of objects describing users in items field. Each object contains base fields  only. 
+"
+account,N/A - VK has no Class Descriptions,getcounters,Returns non-null values of user counters.,"Returns an object that may include friends, messages, photos, videos, notes, gifts, events, groups, sdk fields (integer) with a counter value. "
+account,N/A - VK has no Class Descriptions,getinfo,Returns current account info.,"Retuns an object with the following fields: 
+country 
+stringstring code of a country identified by ip-address of the current request. https_required 
+integer, [0,1]1 if user set the ""Always use secure connection"" setting; 0 – secure connection is not required. 2fa_required 
+integer, [0,1]1 if user set the ""2-step verification"" setting. own_posts_default 
+integer, [0,1]1 if user set the ""Show only my posts by default"" setting. no_wall_replies 
+integer, [0,1]1 if user set the ""Disable wall comments"" setting. intro 
+integer, [0,1]bit mask  responsible for passing the application usage tutorial. lang 
+integernumeric identifier of user's current language.  "
+account,N/A - VK has no Class Descriptions,getprofileinfo,Returns the current account info.,"Method returns an object containing following fields: 
+first_name
+string User first name. last_name
+string User last name. maiden_name
+stringUser maiden name (female users only). screen_name
+stringScreen name (if any). sex
+integerSex. Possible values: 
+
+1 — female; 
+2 — male; 
+0 — not specified. relation
+integerRelationship status. Possible values: 
+
+1 — single; 
+2 — in a relationship; 
+3 — engaged; 
+4 — married; 
+5 — it's complicated; 
+6 — actively searching; 
+7 — in love; 
+8 — in a civil union; 
+0 — not specified. relation_partner
+objectAn user object, relationship partner (if specified). relation_pending 
+integerReturns 1 if specified partner did not approve a relationship status. relation_requests
+arrayList of user objects who specified a relationship with a current user (if exist). bdate
+stringUser birth date, format: DD.MM.YYYY. bdate_visibility
+integerBirth date visibility. Possible values: 
+
+1 — show birth date; 
+2 — show only month and day; 
+0 — hide birth date. home_town 
+stringHome town title. country
+objectCountry. Object with fields: 
+
+id (integer) — country ID; 
+title (string) — country title. city 
+objectCity. Object with fields: 
+
+id (integer) — city ID; 
+title (string) — city title. name_request 
+objectLast name change request info (if any). Object with fields: 
+
+id (integer) — request id, required to cancel it (only if status = processing); 
+status (string) — request status. Possible values: 
+
+processing — request is processing; 
+declined — request was declined; 
+
+first_name (string) — first name from the request; 
+last_name (string) — last name from the request. status 
+stringProfile status. phone 
+stringPhone number.  "
+account,N/A - VK has no Class Descriptions,getpushsettings,Gets settings of push notifications.,"Returns an object with following fields: 
+
+disabled — 1 if notifications are disabled. 
+disabled_until — unixtime time value, notifications are temporarily disabled until. 
+conversations — list with settings of specific conversations and their number as the first element. 
+settings — push settings in a special format. 
+
+"
+account,N/A - VK has no Class Descriptions,registerdevice,Subscribes an iOS/Android/Windows/Mac based device to receive push notifications,"In case of success returns 1. 
+In iOS and Windows Phone push notifications will be shown unprocessed. 
+In Android events will be received in the following format. 
+"
+account,N/A - VK has no Class Descriptions,saveprofileinfo,Edits current profile info.,"Returns an object containing following fields: 
+
+changed (integer, [0,1]) — returns 1 if the information is saved, 0 if no fields were saved. 
+If there were user's first or last name in the parameters, there will be a name_request field — an object containing following fields: 
+
+id (integer) — request id, required to cancel it (only if status = processing). To cancel a request, you must call the account.saveProfileInfo method with the cancel_request_id parameter; 
+status (string) — request status. Returned values: 
+
+success  — the request is successfully accepted; 
+processing  — the request is processing; 
+declined — the request was declined; 
+was_accepted — there was a successful request recently, new request can't be sent before the date from the repeat_date field; 
+was_declined  — there was an unsuccessful request recently, new request can't be sent before the date from the repeat_date field; 
+
+first name (string) —  first name from the request; 
+last_name (string) — last name from the request. 
+"
+account,N/A - VK has no Class Descriptions,setinfo,Allows to edit the current account info.,In case of success returns 1. 
+account,N/A - VK has no Class Descriptions,setnameinmenu,"Sets an application screen name (up to 17 characters), that is shown to the user in the left menu.","Returns 1 if a screen name is successfully set. 
+If user did not add the application into the left menu, the method would throw an error 148 (Access to the menu of the user denied). This error can be avoided with account.getAppPermissions method. 
+"
+account,N/A - VK has no Class Descriptions,setoffline,Marks a current user as offline.,In case of success returns 1. 
+account,N/A - VK has no Class Descriptions,setonline,Marks the current user as online for 5 minutes.,In case of success returns 1. 
+account,N/A - VK has no Class Descriptions,setpushsettings,Change push settings.,In case of success returns 1. 
+account,N/A - VK has no Class Descriptions,setsilencemode,Mutes push notifications for the set period of time.,In case of success returns 1. 
+account,N/A - VK has no Class Descriptions,unban,N/A,N/A
+account,N/A - VK has no Class Descriptions,unregisterdevice,Unsubscribes a device from push notifications.,In case of success returns 1. 
+appwidgets,N/A - VK has no Class Descriptions,getappimageuploadserver,Returns a URL for uploading a photo to the app collection for community app widgets.,"Returns an object with the only upload_url field. To upload an image, generate POST-request to upload_url with a file in photo field. Then call appWidgets.saveAppImage method. 
+"
+appwidgets,N/A - VK has no Class Descriptions,getappimages,Returns an app collection of images for community app widgets.,"Returns total results count in count (integer) and  items (array) array with objects describing images. 
+Each objects of the items array contains the following fields: 
+id
+(string)Image ID. type 
+(string)Image type. Possible values: 
+
+24x24; 
+50x50; 
+160x160; 
+160x240; 
+510x128. images  (array)Array of image copies. Each objects of the array contains the following fields: 
+
+url (string) — copy URL; 
+width (integer) — width in px; 
+height (integer) — height in px.  
+"
+appwidgets,N/A - VK has no Class Descriptions,getgroupimageuploadserver,Returns a URL for uploading a photo to the community collection for community app widgets.,"Returns an object with the only upload_url field. To upload an image, generate POST-request to upload_url with a file in photo field. Then call appWidgets.saveAppImage method. 
+"
+appwidgets,N/A - VK has no Class Descriptions,getgroupimages,Returns a community collection of images for community app widgets.,"Returns total results count in count (integer) and  items (array) array with objects describing images. 
+Each objects of the items array contains the following fields: 
+id
+(string)Image ID. type 
+(string)Image type. Possible values: 
+
+24x24; 
+50x50; 
+160x160; 
+160x240; 
+510x128. images  (array)Array of image copies. Each objects of the array contains the following fields: 
+
+url (string) — copy URL; 
+width (integer) — width in px; 
+height (integer) — height in px.  "
+appwidgets,N/A - VK has no Class Descriptions,getimagesbyid,Returns an image for community app widgets by its ID.,"Returns an object which contains the following fields: 
+id
+(string)Image ID. type 
+(string)Image type. Possible values: 
+
+24x24; 
+50x50; 
+160x160; 
+160x240; 
+510x128. images  (array)Array of image copies. Each objects of the array contains the following fields: 
+
+url (string) — copy URL; 
+width (integer) — width in px; 
+height (integer) — height in px.  
+"
+appwidgets,N/A - VK has no Class Descriptions,saveappimage,Allows to save image into app collection for community app widgets.,"Returns an object which contains the following fields: 
+id
+(string)Image ID. type 
+(string)Image type. Possible values: 
+
+24x24; 
+50x50; 
+160x160; 
+160x240; 
+510x128. images  (array)Array of image copies. Each objects of the array contains the following fields: 
+
+url (string) — copy URL; 
+width (integer) — width in px; 
+height (integer) — height in px.  "
+appwidgets,N/A - VK has no Class Descriptions,savegroupimage,Allows to save image into community collection for community app widgets.,"Returns an object which contains the following fields: 
+id
+(string)Image ID. type 
+(string)Image type. Possible values: 
+
+24x24; 
+50x50; 
+160x160; 
+160x240; 
+510x128. images  (array)Array of image copies. Each objects of the array contains the following fields: 
+
+url (string) — copy URL; 
+width (integer) — width in px; 
+height (integer) — height in px.  "
+appwidgets,N/A - VK has no Class Descriptions,update,Allows to update community app widget.,Returns 1. 
+apps,N/A - VK has no Class Descriptions,deleteapprequests,Deletes all request notifications from the current app.,Returns 1. 
+apps,N/A - VK has no Class Descriptions,get,Returns applications data.,Returns total results number in count field and an array of app objects in items field. 
+apps,N/A - VK has no Class Descriptions,getcatalog,Returns a list of applications (apps) available to users in the App Catalog.,"Returns total results number in count field and an array of app objects in items field. 
+There can be no more than 60 requests per minute from one IP or ID. "
+apps,N/A - VK has no Class Descriptions,getfriendslist,Creates friends list for requests and invites in current app.,Returns total results number in count field and an array of users in items field. 
+apps,N/A - VK has no Class Descriptions,getleaderboard,Returns players rating in the game.,Returns list of user friends sorted by level or points. 
+apps,N/A - VK has no Class Descriptions,getscopes,N/A,N/A
+apps,N/A - VK has no Class Descriptions,getscore,Returns user score in app.,Returns user's score number. 
+apps,N/A - VK has no Class Descriptions,promohasactivegift,N/A,N/A
+apps,N/A - VK has no Class Descriptions,promousegift,N/A,N/A
+apps,N/A - VK has no Class Descriptions,sendrequest,"Sends a request to another user in an app that uses VK authorization. 
+The method requires the use of a confirmation window. Sending requests in applications that are not from Mobile Platform is available to app's administrators only.","If executed successfully, returns the created request's id, for example: 10013. "
+auth,N/A - VK has no Class Descriptions,checkphone,Checks a user's phone number for correctness.,Returns 1 if the phone number is correct; otherwise returns 0. 
+auth,N/A - VK has no Class Descriptions,restore,"Allows to restore account access using a code received via SMS. 
+ This method is only available for apps with Direct authorization access. ","In case of success the method returns an object containing following fields: 
+
+success — 1; 
+sid — parameter required to get access by code. 
+
+To finish the restoration refer to the following address:  https://oauth.vk.com/token?grant_type=restore_code&client_id={Application ID}&client_secret={Secret key}&username={Phone number}&scope={Permissions list}&sid={Parameter received with this method}&code={Received SMS code} 
+Parameters list: 
+
+grant_type — requires to send  the value: restore_code; 
+client_id — application ID; 
+client_secret — app's secret key; 
+username — phone number used for restoration; 
+scope — list of permissions separated with commas; 
+sid — session ID received after running this method; 
+code — received SMS code. 
+
+While authorizing through restore_code OAuth will return the same data as usual authorization with an extra change_password_hash parameter required for account.changePassword method. "
+board,N/A - VK has no Class Descriptions,addtopic,Creates a new topic on a community's discussion board.,Returns the ID of the created topic. 
+board,N/A - VK has no Class Descriptions,closetopic,Closes a topic on a community's discussion board so that comments cannot be posted.,Returns 1 if succeeded. 
+board,N/A - VK has no Class Descriptions,createcomment,Adds a comment on a topic on a community's discussion board.,Returns the ID of the created comment . 
+board,N/A - VK has no Class Descriptions,deletecomment,Deletes a comment on a topic on a community's discussion board.,Returns 1 if succeeded. 
+board,N/A - VK has no Class Descriptions,deletetopic,Deletes a topic from a community's discussion board.,Returns 1 if succeeded. 
+board,N/A - VK has no Class Descriptions,editcomment,Edits a comment on a topic on a community's discussion board.,Returns 1 if succeeded. 
+board,N/A - VK has no Class Descriptions,edittopic,Edits the title of a topic on a community's discussion board.,Returns 1 if succeeded. 
+board,N/A - VK has no Class Descriptions,fixtopic,Pins a topic (fixes its place) to the top of a community's discussion board.,Returns 1 if succeeded. 
+board,N/A - VK has no Class Descriptions,getcomments,Returns a list of comments on a topic on a community's discussion board.,"Returns an object containing a comments field and poll field (if there is a poll in the topic) and profiles field (if extended is set to 1). 
+Items field contains the total number of comments and an array of  comment objects. 
+If there is a poll in the topic, returns poll field that contains an array with the following fields: 
+
+owner_id — Poll owner ID; 
+poll_id — Poll ID; 
+created — Date (in Unix time) the poll was created; 
+is_closed — Whether the poll is closed  so that no one can participate (0 — not closed; 1 — closed); 
+question — Text of the question; 
+votes — Total number of voters; 
+answer_id — ID of the current user's answer; if the user has not yet participated in the poll, then 0; 
+answers — Array with objects containing answer choices for the poll question: 
+
+id — Answer ID; 
+text — Text of the answer; 
+votes — Number of users who voted for this answer; 
+rate — Rating of this answer as a percentage. 
+
+
+If extended is set to 1, also returns a profiles field containing user objects, as well as the following fields: 
+
+uid — User ID; 
+first_name — User first name; 
+last_name — User last name; 
+photo — URL of the 50x50px user photo; 
+photo_medium_rec — URL of the 100x100px user photo; 
+sex — User sex; 
+online — Information whether the user is online. 
+
+If start_comment_id is set, real_offset will be returned — the resulting offset of a given subset of comments (it can be negative). "
+board,N/A - VK has no Class Descriptions,gettopics,Returns a list of topics on a community's discussion board.,"Returns an object containing the following fields: 
+count
+integer Results number. items
+array Array of objects describing topics. default_order
+integer Sort type. Possible values: 
+
+1 — by descending of the last update date; 
+2 — by descending of the creation date; 
+-1 — by ascending of the last update date; 
+-2 — by ascending of the creation date. can_add_topics
+integer, [0,1] Information whether the current user can create topics in the community. Possible values: 
+
+0 — can; 
+1 — cannot. profiles
+array An array of objects describing users. Each of objects contains base fields andsex, photo_50, photo_100, online, type (= profile) fields. (for extended = 1 only).  "
+board,N/A - VK has no Class Descriptions,opentopic,Re-opens a previously closed topic on a community's discussion board.,Returns 1 if succeeded. 
+board,N/A - VK has no Class Descriptions,restorecomment,Restores a comment deleted from a topic on a community's discussion board.,Returns 1 if succeeded. 
+board,N/A - VK has no Class Descriptions,unfixtopic,Unpins a pinned topic from the top of a community's discussion board.,Returns 1 if succeeded. 
+database,N/A - VK has no Class Descriptions,getchairs,Returns list of chairs on a specified faculty.,"Returns the total results number in count field and an array of objects describing chairs in items field. 
+Each object contains the fields: 
+
+id (integer) — chair ID; 
+title (string) — chair title. 
+"
+database,N/A - VK has no Class Descriptions,getcities,Returns a list of cities.,"Returns the total results number in count field and an array of objects describing cities in items field. 
+Each object contains  the fields: 
+
+id (integer) — city ID; 
+title (string) — city name. 
+
+ If there is info about area or region of the city, contains additional  fields: 
+
+area (string) — area; 
+region (string) — region. 
+
+If q parameter is not set, returns a list of the major cities in the country. If q is specified, a list of cities mathching the query will be returned. 
+Important field marks key cities for current user. "
+database,N/A - VK has no Class Descriptions,getcitiesbyid,Returns information about cities by their IDs.,"Returns an array of objects describing cities in items field. 
+Each object contains  the fields: 
+
+id (integer) — city ID; 
+title (string) — city name. 
+"
+database,N/A - VK has no Class Descriptions,getcountries,Returns a list of countries.,"Returns an array of objects describing countries in items field. 
+Each object contains  the fields: 
+
+id (integer) — country ID; 
+title (string) — country name. 
+
+If need_all and code are not set, returns a list of countries near the current user's country. "
+database,N/A - VK has no Class Descriptions,getcountriesbyid,Returns information about countries by their IDs.,"Returns an array of objects describing countries in items field. 
+Each object contains  the fields: 
+
+id (integer) — country ID; 
+title (string) — country name. 
+"
+database,N/A - VK has no Class Descriptions,getfaculties,"Returns a list of faculties (i.e., university departments).","Returns an array of objects describing faculties in items field. 
+Each object contains  the fields: 
+
+id (integer) — faculty ID; 
+title (string) — faculty name. 
+"
+database,N/A - VK has no Class Descriptions,getmetrostations,N/A,N/A
+database,N/A - VK has no Class Descriptions,getmetrostationsbyid,N/A,N/A
+database,N/A - VK has no Class Descriptions,getregions,Returns a list of regions.,"Returns an array of objects describing regions in items field. 
+Each object contains  the fields: 
+
+id (integer) — region ID; 
+title (string) — region name. 
+
+If q parameter is not set, returns all the regions in country. "
+database,N/A - VK has no Class Descriptions,getschoolclasses,Returns a list of school classes specified for the country.,"Returns an array of objects, each of them is a pair of class ID (integer) and definition (string). "
+database,N/A - VK has no Class Descriptions,getschools,Returns a list of schools.,"Returns an array of objects describing schools in items field. 
+Each object contains  the fields: 
+
+id (integer) — school ID; 
+title (string) — school name. 
+"
+database,N/A - VK has no Class Descriptions,getuniversities,Returns a list of higher education institutions.,"Returns an array of objects describing universities in items field. 
+Each object contains  the fields: 
+
+id (integer) — university ID; 
+title (string) — university name. 
+"
+docs,N/A - VK has no Class Descriptions,add,Copies a document to a user's or community's document list.,Returns the ID of the created document. 
+docs,N/A - VK has no Class Descriptions,delete,Deletes a user or community document.,Returns 1 if succeeded. 
+docs,N/A - VK has no Class Descriptions,edit,Edits a document.,Returns 1 if succeeded. 
+docs,N/A - VK has no Class Descriptions,get,Returns detailed information about user or community documents.,Returns the total results number in count field and an array of objects describing documents in items field. 
+docs,N/A - VK has no Class Descriptions,getbyid,Returns information about documents by their IDs.,Returns the total results number in count field and an array of objects describing documents in items field. 
+docs,N/A - VK has no Class Descriptions,getmessagesuploadserver,Returns the server address for document upload.,Returns an object with the only field upload_url (string). 
+docs,N/A - VK has no Class Descriptions,gettypes,Returns documents types available for current user.,"Returns the total results number in count field and an array of objects describing document type in items field. 
+Each object in items array contains the following fields: 
+
+id (integer) — type ID; 
+name (string) — type name; 
+count (integer) — amount of documents. 
+"
+docs,N/A - VK has no Class Descriptions,getuploadserver,Returns the server address for document upload.,"Returns an object with an upload_url field. After the document is uploaded, use the docs.save method. "
+docs,N/A - VK has no Class Descriptions,getwalluploadserver,Returns the server address for document upload onto a user's or community's wall.,"Returns an object with an upload_url field. After the document is uploaded, use the docs.save method. "
+docs,N/A - VK has no Class Descriptions,save,Saves a document after uploading it to a server.,"Returns an array of objects describing uploaded documents. Each object in this array contains type (string) field with possible values graffiti, audio_message, doc, and corresponding object. 
+For type = graffiti – graffiti object describing graffiti. 
+For type = audio_message – audio_message object describing audio message. 
+For type = doc – doc object describing other types of documents. "
+docs,N/A - VK has no Class Descriptions,search,Returns a list of documents matching the search criteria.,Returns the total results number in count field and an array of objects describing documents in items field. 
+downloadedgames,N/A - VK has no Class Descriptions,getpaidstatus,N/A,N/A
+other,N/A - VK has no Class Descriptions,execute,A universal method for calling a sequence of other methods while saving and filtering interim results.,Returns data requested by the algorithm. NOTE: The structure of the response in XML is close to JSON and can have slight differences from the standard representation of other methods. 
+fave,N/A - VK has no Class Descriptions,addarticle,N/A,N/A
+fave,N/A - VK has no Class Descriptions,addlink,Adds a link to user faves.,Returns 1 if succeeded. 
+fave,N/A - VK has no Class Descriptions,addpage,N/A,N/A
+fave,N/A - VK has no Class Descriptions,addpost,N/A,N/A
+fave,N/A - VK has no Class Descriptions,addproduct,N/A,N/A
+fave,N/A - VK has no Class Descriptions,addtag,N/A,N/A
+fave,N/A - VK has no Class Descriptions,addvideo,N/A,N/A
+fave,N/A - VK has no Class Descriptions,edittag,N/A,N/A
+fave,N/A - VK has no Class Descriptions,get,N/A,N/A
+fave,N/A - VK has no Class Descriptions,getpages,N/A,N/A
+fave,N/A - VK has no Class Descriptions,gettags,N/A,N/A
+fave,N/A - VK has no Class Descriptions,markseen,N/A,N/A
+fave,N/A - VK has no Class Descriptions,removearticle,N/A,N/A
+fave,N/A - VK has no Class Descriptions,removelink,Removes link from the user's faves.,Returns 1 if succeeded. 
+fave,N/A - VK has no Class Descriptions,removepage,N/A,N/A
+fave,N/A - VK has no Class Descriptions,removepost,N/A,N/A
+fave,N/A - VK has no Class Descriptions,removeproduct,N/A,N/A
+fave,N/A - VK has no Class Descriptions,removetag,N/A,N/A
+fave,N/A - VK has no Class Descriptions,removevideo,N/A,N/A
+fave,N/A - VK has no Class Descriptions,reordertags,N/A,N/A
+fave,N/A - VK has no Class Descriptions,setpagetags,N/A,N/A
+fave,N/A - VK has no Class Descriptions,settags,N/A,N/A
+fave,N/A - VK has no Class Descriptions,trackpageinteraction,N/A,N/A
+friends,N/A - VK has no Class Descriptions,add,Approves or creates a friend request.,"Returns one of the following values: 
+
+1 — friend request sent; 
+2 — friend request from the user approved; 
+4 — request resending. 
+"
+friends,N/A - VK has no Class Descriptions,addlist,Creates a new friend list for the current user.,Returns the ID of the friend list (list_id) that was created. 
+friends,N/A - VK has no Class Descriptions,arefriends,Checks the current user's friendship status with other specified users.,"Returns an array of status objects with the following fields: 
+
+user_id — user ID; 
+friend_status  — friendship status with the user: 
+
+0 — the user is not a friend; 
+1 — a friend request was sent to the user; 
+2 — there is an incoming friend request from the user; 
+3 — the user is a friend. 
+
+request_message  — text of the message attached to the friend request, if any; 
+read_state — request status (1 — viewed), returns then friend_status = 2. 
+
+"
+friends,N/A - VK has no Class Descriptions,delete,Declines a friend request or deletes a user from the current user's friend list.,"Returns one of the following values: 
+
+success — friend successfully removed; 
+friend_deleted — user deleted from the current user's friend list; 
+out_request_deleted — friend request to the user declined; 
+in_request_deleted — friend request from the user declined; 
+suggestion_deleted — friend request suggestion for the user deleted. 
+
+For v less than or equal to 5.28 returns one of the following values: 
+
+1 — user deleted from the current user's friend list; 
+2 — friend request from the user declined; 
+3 — friend request suggestion for the user deleted. 
+"
+friends,N/A - VK has no Class Descriptions,deleteallrequests,Marks all incoming friend requests as viewed.,Returns 1 if succeeded. 
+friends,N/A - VK has no Class Descriptions,deletelist,Deletes a friend list of the current user.,Returns 1 if succeeded. 
+friends,N/A - VK has no Class Descriptions,edit,Edits the friend lists of the selected user.,Returns 1 if succeeded. 
+friends,N/A - VK has no Class Descriptions,editlist,Edits a friend list of the current user.,Returns 1 if succeeded. 
+friends,N/A - VK has no Class Descriptions,get,Returns a list of user IDs or detailed information about a user's friends.,"If the fields parameter is not used,  returns the total results number in count field and an array of IDs (id) of the user's friends. 
+If the fields parameter is used, returns the total results number in count field and an array of objects describing users in items field. 
+Returns not more than 5000 friends if fields are used. "
+friends,N/A - VK has no Class Descriptions,getappusers,Returns a list of IDs of the current user's friends who installed the application.,Returns a list of IDs of the current user's friends who installed the application. 
+friends,N/A - VK has no Class Descriptions,getbyphones,"Returns a list of the current user's friends whose phone numbers, validated or specified in a profile, are in a given list.","For users whose validated phone numbers are in the list, returns information as an array of user objects with additional field phone  contains a phone number from the list of phone numbers intended for search. "
+friends,N/A - VK has no Class Descriptions,getlists,Returns a list of the user's friend lists.,"Returns the total results number in count field and an array of objects describing friend lists in items field. Each object contains the following fields: 
+
+name (string) — list title; 
+id (integer) — list ID. 
+"
+friends,N/A - VK has no Class Descriptions,getmutual,Returns a list of user IDs of the mutual friends of two users.,Returns a list of IDs of the mutual friends of the source_uid and target_uid users. 
+friends,N/A - VK has no Class Descriptions,getonline,Returns a list of user IDs of a user's friends who are online.,"Returns a list of IDs of online friends. 
+If online_mobile is set to 1, an online_mobile field is also returned with a list of IDs of friends who are online from their mobile devices. 
+"
+friends,N/A - VK has no Class Descriptions,getrecent,Returns a list of user IDs of the current user's recently added friends.,Returns a list of IDs of the current user's recently added friends sorted in reverse chronological order. 
+friends,N/A - VK has no Class Descriptions,getrequests,Returns information about the current user's incoming and outgoing friend requests.,"
+
+If the need_mutual parameter is not used, returns a list of user IDs sorted in reverse chronological order. 
+
+
+
+If the need_mutual parameter is used, returns an array of objects with information about friend requests with uid field (user ID) and message field (message of request, if any). 
+"
+friends,N/A - VK has no Class Descriptions,getsuggestions,Returns a list of profiles of users whom the current user may know.,Returns the total results number in count field and an array of objects describing users in items field with additional field found_with for friends found through contacts import (can be empty). 
+friends,N/A - VK has no Class Descriptions,search,Returns a list of friends matching the search criteria.,Returns the total results number in count field and an array of objects describing users in items field. 
+gifts,N/A - VK has no Class Descriptions,get,Returns a list of user gifts.,"Returns the total results number in '''count'' field and an array of objects describing gift in items field. 
+Each object in items array contains the following fields: 
+
+id (integer) — gift ID; 
+from_id (integer)  — ID of the user who sent the gift (or 0 if the gift is anonymous); 
+message (string) — message text; 
+date (integer) — date when the gift has been sent in unixtime; 
+gift (object) — gift info. Contains the followting fields: 
+
+thumb_256 (string) — URL of the gift image with 256x256px size; 
+thumb_96 (string) — URL of the gift image with 96x96px size; 
+thumb_48 (string) — URL of the gift image with 48x48px size; 
+
+privacy — privacy settings (for current user only). Possible values: 
+
+0 — name and message are visible to all; 
+1 — name is visible to all and message is visible to owner only; 
+2 — name and message are visible to owner only. 
+
+"
+groups,N/A - VK has no Class Descriptions,addaddress,N/A,N/A
+groups,N/A - VK has no Class Descriptions,addcallbackserver,Adds Callback API server to the community.,If succeed returns server ID in server_id field (integer). 
+groups,N/A - VK has no Class Descriptions,addlink,Allows to add a link to the community.,"Returns an object with the following fields: 
+
+id (integer) — link ID; 
+url (string) — link URL; 
+name (string) — link title; 
+edit_title (integer, [0,1]) — 1 if link title can be edited (for external links only); 
+desc (string) — link description; 
+image_processing (integer, [1]) — 1 if preview image is processing. 
+"
+groups,N/A - VK has no Class Descriptions,approverequest,Allows to approve join request to the community.,Returns 1 if succeeded. 
+groups,N/A - VK has no Class Descriptions,ban,Adds a user or a group to the community blacklist.,Returns 1 if succeeded. 
+groups,N/A - VK has no Class Descriptions,create,Creates a new community.,Returns the ID of the created community. 
+groups,N/A - VK has no Class Descriptions,deleteaddress,N/A,N/A
+groups,N/A - VK has no Class Descriptions,deletecallbackserver,Deletes Callback API server from the community.,Returns 1. 
+groups,N/A - VK has no Class Descriptions,deletelink,Allows to delete a link from the community.,Returns 1 if succeeded. 
+groups,N/A - VK has no Class Descriptions,disableonline,"Disables ""online"" status in the community.",Returns 1. 
+groups,N/A - VK has no Class Descriptions,edit,Edits a community.,Returns 1 if succeeded. 
+groups,N/A - VK has no Class Descriptions,editaddress,N/A,N/A
+groups,N/A - VK has no Class Descriptions,editcallbackserver,Edits Callback API server in the community.,Returns 1. 
+groups,N/A - VK has no Class Descriptions,editlink,Allows to edit a link in the community.,Returns 1 if succeeded. 
+groups,N/A - VK has no Class Descriptions,editmanager,"Allows to add, remove or edit the community manager .",Returns 1 if succeeded. 
+groups,N/A - VK has no Class Descriptions,enableonline,"Enables ""online"" status in the community.",Returns 1. 
+groups,N/A - VK has no Class Descriptions,get,Returns a list of the communities to which a user belongs.,"Returns the total results number in count field and an array of communities IDs in items field. 
+If extended is set to 1, returns an array of  objects describing communities in items field. 
+"
+groups,N/A - VK has no Class Descriptions,getaddresses,N/A,N/A
+groups,N/A - VK has no Class Descriptions,getbanned,Returns a list of users on a community blacklist.,"Returns total results number in the count (integer) field and information about profiles and communities from the blacklist in the items (array) field. Each object in the items array contains following fields: 
+
+type (string) — type. Possible values: 
+
+group — community; 
+profile — user. 
+
+group (object) — community information (for type = group).  Community object. 
+profile (object) — user information (for type = profile). User object. 
+ban_info (object) — information about ban. Object with following fields: 
+
+Объект ban_info —  information about ban.  
+admin_id Administrator ID. 
+ integer date Date in Unixtime when the user or community had been added to the blacklist. 
+ integer reason eason for ban. Possible values: 
+
+
+
+0 — other; 
+1 — spam; 
+2 — verbal abuse; 
+3 — strong language; 
+4 — irrelevant messages. 
+
+
+ integer comment Comment text. 
+ string end_date Expired date for the ban (0 — forever). 
+ integer  
+"
+groups,N/A - VK has no Class Descriptions,getbyid,Returns information about communities by their IDs.,"Returns the total results number in count field and an array of objects describing communities in items field. 
+"
+groups,N/A - VK has no Class Descriptions,getcallbackconfirmationcode,Returns Callback API confirmation code for the community.,Returns a string with the confirmation code. 
+groups,N/A - VK has no Class Descriptions,getcallbackservers,Receives a list of Callback API servers from the community.,"Returns the total number of servers in the count (integer) field and an array of the objects describing servers in the items field. Each object in items array contains following fields: 
+
+id (integer) — server ID; 
+title (string) — server title; 
+creator_id (integer) — ID of the user who had added the server; 
+url (string) — server URL; 
+secret_key (string) — server secret key; 
+status (string) — server status. Possible values: 
+
+unconfigured — URL is not configured; 
+fail — URL confirmation has been failed; 
+wait — waiting for confirmation; 
+ok — URL confirmed. 
+
+"
+groups,N/A - VK has no Class Descriptions,getcallbacksettings,Returns Callback API notifications settings.,
+groups,N/A - VK has no Class Descriptions,getcatalog,Returns communities list for a catalog category.,"Returns the total results number in count field and an array of objects describing communities in items field. 
+"
+groups,N/A - VK has no Class Descriptions,getcataloginfo,Returns categories list for communities catalog,"Returns enabled field (0 – catalog is unavailable for a user, 1 – catalog is available) and if enabled = 1, array of objects describing market categories. 
+Market catalog category.  
+id category identifier. 
+ positive number name category name. 
+ string subcategories returned with subcategories = 1. Array of subcategory objects. Each object contains id and name fields with subcategory id and name.  
+Extra fields (extended = 1)  
+page_count number of communities in a category. 
+ positive number page_previews Array of  community objects for preview.  
+"
+groups,N/A - VK has no Class Descriptions,getinvitedusers,Returns invited users list of a community,"Returns the total results number in count field and an array of objects describing users in items field. 
+"
+groups,N/A - VK has no Class Descriptions,getinvites,Returns a list of invitations to join communities and events.,"Returns the total results number in count field and an array of objects describing communities in items field. 
+Each object contains an additional invited_by field specifying the ID of the user who sent the invitation. "
+groups,N/A - VK has no Class Descriptions,getlongpollserver,Returns data for Bots Long Poll API connection.,"Returns an object with following fields: 
+
+key (string) — key; 
+server (string) — server URL; 
+ts (integer) — timestamp. 
+"
+groups,N/A - VK has no Class Descriptions,getlongpollsettings,Returns Bots Long Poll API settings.,"Возвращает объект, который содержит следующие поля: 
+
+is_enabled (boolean) — true if Bots Long Poll API is enabled. 
+events (object) — Bots Long Poll settings. Object with the events settings in following format - 
+ ""event"":""status"" (0 — disabled, 1 — enabled). Object contains following fields: 
+message_new new message 
+ integer, 1 or 0 message_reply new outcoming message 
+ integer, [0,1] message_edit message has been edited 
+ integer, [0,1] message_allow new user consent to messages sending 
+ integer, 1 or 0 message_deny new user prohibition to messages sending 
+ integer, 1 or 0 photo_new new photo 
+ integer, 1 or 0 audio_new new audio 
+ integer, 1 or 0 video_new new video 
+ integer, 1 or 0 wall_reply_new new comment on wall 
+ integer, 1 or 0 wall_reply_edit comment on wall has been edited 
+ integer, 1 or 0 wall_reply_delete comment on wall has been deleted 
+ integer, 1 or 0 wall_post_new new post on the wall 
+ integer, 1 or 0 wall_repost new repost form the community 
+ integer, 1 or 0 board_post_new new comment in board 
+ integer, 1 or 0 board_post_edit board comment has been edited 
+ integer, 1 or 0 board_post_delete board comment has been deleted 
+ integer, 1 or 0 board_post_restore board comment has been restored 
+ integer, 1 or 0 photo_comment_new new comment to photo
+ integer, 1 or 0 photo_comment_edit photo comment has been edited
+ integer, 1 or 0 photo_comment_delete photo comment has been deleted
+ integer, 1 or 0 photo_comment_restore photo comment has been restored
+ integer, 1 or 0 video_comment_new new comment to video
+ integer, 1 or 0 video_comment_edit video comment has been edited
+ integer, 1 or 0 video_comment_delete video comment has been deleted
+ integer, 1 or 0 video_comment_restore video comment has been restored
+ integer, 1 or 0 market_comment_new new comment to market item
+ integer, 1 or 0 market_comment_edit market comment has been edited
+ integer, 1 or 0 market_comment_delete market comment has been deleted
+ integer, 1 or 0 market_comment_restore market comment has been restored
+ integer, 1 or 0 poll_vote_new new vote in a public poll has been adeed
+ integer, [0,1] group_join joined community 
+ integer, 1 or 0 group_leave left community 
+ integer, 1 or 0 user_block new user in the community's blacklist 
+ integer, 1 or 0 user_unblock a user has been deleted from the community's blacklist 
+ integer, 1 or 0 group_change_settings community settings have been changed 
+ integer, 1 or 0 group_change_photo community main photo has been changed 
+ integer, 1 or 0 group_officers_edit community officers list has been changed 
+ integer, 1 or 0  "
+groups,N/A - VK has no Class Descriptions,getmembers,Returns a list of community members.,"Returns the total number of community members and a list of user IDs (items). 
+If fields parameter is set, items field contains an array of objects describing users. "
+groups,N/A - VK has no Class Descriptions,getonlinestatus,Returns a community's online status.,"Returns an object with following fields: 
+
+status — community's status. Possible values: 
+
+none — not online; 
+online — online (answers instanly); 
+answer_mark — answers quickly. 
+
+minutes — estimated time in minutes (for status = answer_mark). 
+"
+groups,N/A - VK has no Class Descriptions,getrequests,Returns a list of requests to the community.,"Returns the total results number in count field and an array of user IDs (integer) in items field. 
+If the fields parameter is passed, items field contains an array of user describing object. "
+groups,N/A - VK has no Class Descriptions,getsettings,Returns community settings.,"Returns an object containig community data that allows to show interface for groups.edit method. 
+Object contains the following fields: 
+title 
+stringcommunity title. description 
+stringcommunity description. address 
+stringscreen name. place  
+objectobject describing place. wall 
+integerwall settings. photos 
+integerphotos settings. video 
+integervideos settings. audio 
+integeraudios settings. docs 
+integerdocuments settings. topics 
+integertopics settings. wiki 
+integerwikipages settings. obscene_filter
+integerobscene filter settings. obscene_stopwords
+integerkeywords filter settings. obscene_words
+stringkeywords list. access  
+integercommunity type. subject  
+integersubject ID. subject_list  
+arraypossible subjects list. An array of objects containing following fields: 
+
+id (integer) — subject ID; 
+name (string) — subject title. rss 
+stringRSS feed URL. website 
+stringwebsite URL. age_limits 
+integerage limits. market   
+objectmarket settings. Object containing followting fields: 
+
+enabled (integer, [0,1]) — information whether the market is enabled; 
+comments_enabled (integer, [0,1]) — information whether the market comments is enabled; 
+country_ids  (array) — country IDs; 
+city_ids  (array) — cities IDs; 
+contact_id (integer) — contact person ID; 
+currency (object) — currency description.  "
+groups,N/A - VK has no Class Descriptions,gettokenpermissions,Returns permissions scope for the community's access_token.,"Returns an object with following fields: 
+
+mask (integer) — access_token permissions bit mask; 
+settings (array) — an array of objects describing permissions. Each object in the array contains following fields: 
+
+setting (integer) — permission's bit mask; 
+name (string) — permission's name. 
+
+"
+groups,N/A - VK has no Class Descriptions,invite,Allows to invite friends to the community.,Returns 1 if succeeded. 
+groups,N/A - VK has no Class Descriptions,ismember,Returns information specifying whether a user is a member of a community.,"Returns 1 if the user is a member of the community; otherwise returns 0. 
+If extended is set to 1, returns an object containing the following fields: 
+
+member (integer, [0,1]) — whether the user is a member of the community. 
+request (integer, [0,1]) — whether the user left a request to join the group, which can be declined by the groups.leave method. 
+invitation (integer, [0,1]) — whether the user is invited to join the group or event. 
+
+"
+groups,N/A - VK has no Class Descriptions,join,"With this method you can join the group or public page, and also confirm your participation in an event.",Returns 1 if succeeded. 
+groups,N/A - VK has no Class Descriptions,leave,"With this method you can leave a group, public page, or event.",Returns 1 if succeeded. 
+groups,N/A - VK has no Class Descriptions,removeuser,Removes a user from the community.,Returns 1 if succeeded. 
+groups,N/A - VK has no Class Descriptions,reorderlink,Allows to reorder links in the community.,Returns 1 if succeeded. 
+groups,N/A - VK has no Class Descriptions,search,Returns a list of communities matching the search criteria.,"Returns the total results number in count field and an array of objects describing communities in items field. 
+"
+groups,N/A - VK has no Class Descriptions,setcallbacksettings,Allow to set notifications settings for Callback API.,Returns 1. 
+groups,N/A - VK has no Class Descriptions,setlongpollsettings,Allows to set Bots Long Poll API settings in the community.,Returns 1. 
+groups,N/A - VK has no Class Descriptions,setsettings,N/A,N/A
+groups,N/A - VK has no Class Descriptions,unban,N/A,N/A
+leadforms,N/A - VK has no Class Descriptions,create,N/A,N/A
+leadforms,N/A - VK has no Class Descriptions,delete,N/A,N/A
+leadforms,N/A - VK has no Class Descriptions,get,N/A,N/A
+leadforms,N/A - VK has no Class Descriptions,getleads,N/A,N/A
+leadforms,N/A - VK has no Class Descriptions,getuploadurl,N/A,N/A
+leadforms,N/A - VK has no Class Descriptions,list,N/A,N/A
+leadforms,N/A - VK has no Class Descriptions,update,N/A,N/A
+likes,N/A - VK has no Class Descriptions,add,Adds the specified object to the Likes list of the current user.,"Returns an object whose likes field specifies the current number of users who added this object to their Likes list. 
+"
+likes,N/A - VK has no Class Descriptions,delete,Deletes the specified object from the Likes list of the current user.,Returns an object with likes field specifies the number of users who put this object in their Likes list. 
+likes,N/A - VK has no Class Descriptions,getlist,Returns a list of IDs of users who added the specified object to their Likes list.,"Returns an object containing the following fields: 
+
+count — The total number of users who added the specified object to their Likes list. 
+users — List of IDs of users who added the specified object to their Likes list. 
+
+If type is set to sitepage, also returns a list of users who used the Like widget on an external site. The page URL is set with either the page_url or page_id parameter. 
+If extended is set to 1 returns an array items containing additional information about users or communities. "
+likes,N/A - VK has no Class Descriptions,isliked,Checks for the object in the Likes list of the specified user.,"Returns an object containing the following fields: 
+
+liked — the user added the object to their Likes list (1 if added). 
+copied —  the user made a repost (1 if made). 
+
+"
+market,N/A - VK has no Class Descriptions,add,Adds a new item to the market.,Returns market_item_id if succeeded. 
+market,N/A - VK has no Class Descriptions,addalbum,Creates new collection of items,Returns created collection ID in market_album_id field. 
+market,N/A - VK has no Class Descriptions,addtoalbum,Adds an item to one or multiple collections.,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,createcomment,Creates a new comment for an item.,Returns created comment's ID. 
+market,N/A - VK has no Class Descriptions,delete,Deletes an item.,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,deletealbum,Deletes a collection of items.,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,deletecomment,Deletes an item's comment,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,edit,Edits an item.,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,editalbum,Edits a collection of items,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,editcomment,Chages item comment's text,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,get,Returns items list for a community.,Returns the total results number in count field and an array of objects describing market items in items field. 
+market,N/A - VK has no Class Descriptions,getalbumbyid,Returns items album's data,Returns the total results number in count field and an array of objects describing collections in items field. 
+market,N/A - VK has no Class Descriptions,getalbums,Returns community's collections list.,Returns the total results number in count field and an array of objects describing collections in items field. 
+market,N/A - VK has no Class Descriptions,getbyid,Returns information about market items by their ids.,Returns the total results number in count field and an array of objects describing market items in items field. 
+market,N/A - VK has no Class Descriptions,getcategories,Returns a list of market categories.,"Returns the total results number in count field and an array of objects describing market categories in items field. Each object contains the following fields: 
+id 
+(integer) Category ID. name 
+(string) Category name. section 
+(object) Section. Object with the following fields: 
+
+id (integer) — section ID; 
+name (string) — section name.  "
+market,N/A - VK has no Class Descriptions,getcomments,Returns comments list for an item.,Returns the total results number in count field and an array of objects describing comments in items field. 
+market,N/A - VK has no Class Descriptions,removefromalbum,Removes an item from one or multiple collections.,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,reorderalbums,Reorders the collections list.,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,reorderitems,Changes item place in a collection.,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,report,Sends a complaint to the item.,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,reportcomment,Sends a complaint to the item's comment.,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,restore,Restores recently deleted item,Returns 1 if succeeded. 
+market,N/A - VK has no Class Descriptions,restorecomment,Restores a recently deleted comment,"Returns 1 if succeeded, 0 if comment is not deleted. "
+market,N/A - VK has no Class Descriptions,search,Searches market items in a community's catalog,Returns the total results number in count field and an array of objects describing market items in items field. 
+messages,N/A - VK has no Class Descriptions,addchatuser,Adds a new user to a chat.,Returns 1. 
+messages,N/A - VK has no Class Descriptions,allowmessagesfromgroup,Allows sending messages from community to the current user.,Returns 1. 
+messages,N/A - VK has no Class Descriptions,createchat,Creates a chat with several participants.,Returns the ID of the created chat (chat_id). 
+messages,N/A - VK has no Class Descriptions,delete,Deletes one or more messages.,Returns 1. 
+messages,N/A - VK has no Class Descriptions,deletechatphoto,Deletes a chat's cover picture.,"Returns an object with the following fields: 
+
+message_id ­– ID of the system message sent. 
+chat – chat object. 
+ "
+messages,N/A - VK has no Class Descriptions,deleteconversation,Deletes private messages in a conversation.,Returns 1. 
+messages,N/A - VK has no Class Descriptions,denymessagesfromgroup,Denies sending message from community to the current user.,Returns 1. 
+messages,N/A - VK has no Class Descriptions,edit,Edits the message.,Returns 1. 
+messages,N/A - VK has no Class Descriptions,editchat,Edits the title of a chat.,Returns 1. 
+messages,N/A - VK has no Class Descriptions,getbyconversationmessageid,N/A,N/A
+messages,N/A - VK has no Class Descriptions,getbyid,Returns messages by their IDs.,Returns a list of message objects. 
+messages,N/A - VK has no Class Descriptions,getchat,Returns information about a chat.,"Returns a list of chat objects. 
+If the fields parameter is set, the users field contains a list of user objects with an additional invited_by field containing the ID of the user who invited the current user to chat. "
+messages,N/A - VK has no Class Descriptions,getchatpreview,Allows to receive chat preview by the invitation link.,"Returns an object with the following fields: 
+admin_id 
+integerchat creator's ID. members 
+objectchat members list. Contains fields: 
+
+profiles (array) — an array of user objects; 
+groups (array) — an array of  community objects; 
+emails (array) — an array of objects describing e-mails. Each object contains the following fileds: 
+
+id (integer) —  e-mail ID; 
+address (string) — e-mail address. title 
+stringchat title. photo 
+objectchat cover image. Objects with the following fields: 
+
+photo_50 (string) — URL of the image copy with the width of 50 px; 
+photo_100 (string) — URL of the image copy with the width of  100 px; 
+photo_200 (string) — URL of the image copy with the width of  200px.  "
+messages,N/A - VK has no Class Descriptions,getconversationmembers,Returns a list of IDs of users participating in a conversation.,"Returns an object with the following fields: 
+count 
+integernumber of conversation members. items 
+arrayconversation members list. Contains fields: 
+
+member_id (integer) — conversation member ID; 
+invited_by (integer) — ID of the user who invited this member to the conversation; 
+join_date (integer) — date of joining the conversation; 
+is_admin (boolean) — Information whether the user is conversation admin. profiles 
+arrayan array of user objects. groups 
+arrayan array of  community objects.  "
+messages,N/A - VK has no Class Descriptions,getconversations,Returns a list of conversations.,"Returns an object with the following fields: 
+count 
+integernumber of conversations. items 
+arrayconversations list. Contains fields: 
+
+conversation (object) — conversation object; 
+last_message (object) —  object describing last message in conversation. unread_count 
+integernumber of unread conversations. profiles 
+arrayan array of user objects. groups 
+arrayan array of  community objects.  "
+messages,N/A - VK has no Class Descriptions,getconversationsbyid,Returns conversations by their IDs.,Returns the total number of conversations in count field (integer) and array of conversations in items field. 
+messages,N/A - VK has no Class Descriptions,gethistory,Returns message history for the specified user or group chat.,Returns a list of message objects. 
+messages,N/A - VK has no Class Descriptions,gethistoryattachments,Returns media files from the dialog or group chat.,"Returns a list of photo, video, audio or doc objects depending on media_type parameter value and additional next_from field containing new offset value. 
+For media_type=link returns a list of objects: 
+url link URL. 
+ string title link title. 
+ string description link description. 
+ string image_src URL of the link preview image. 
+ string  "
+messages,N/A - VK has no Class Descriptions,getimportantmessages,N/A,N/A
+messages,N/A - VK has no Class Descriptions,getinvitelink,Receives a link to invite a user to the chat.,Returns an objects with the only field link (string) containing the link for inviting. 
+messages,N/A - VK has no Class Descriptions,getlastactivity,Returns a user's current status and date of last activity.,"Returns an object with the following fields: 
+
+online — User's current status (0 — offline, 1 — online). 
+time — Date (in Unix time) of the user's last activity. "
+messages,N/A - VK has no Class Descriptions,getlongpollhistory,Returns updates in user's private messages.,"Returns an object that contains the following fields: 
+
+history — An array similar to updates field returned from the Long Poll server, with these exceptions: 
+
+For events with code 4 (addition of a new message), there are no fields except the first three. 
+There are no events with codes 8, 9 (friend goes online/offline) or with codes 61, 62 (typing during conversation/chat). 
+
+messages — An array of private message objects that were found among events with code 4 (addition of a new message) from the history field. Each object of message contains a set of fields described here. The first array element is the total number of messages. 
+"
+messages,N/A - VK has no Class Descriptions,getlongpollserver,Returns data required for connection to a Long Poll server.,"Returns an object with key, server, ts fields. 
+With such data you can connect to an instant message server to immediately receive incoming messages and other events. "
+messages,N/A - VK has no Class Descriptions,ismessagesfromgroupallowed,Returns information whether sending messages from the community to current user is allowed.,Returns an object with the one is_allowed field. It contains 1 if messages are allowed and 0 if not. 
+messages,N/A - VK has no Class Descriptions,joinchatbyinvitelink,Allows to enter the chat by the invitation link.,Returns an object with the only field chat_id containing chat ID. 
+messages,N/A - VK has no Class Descriptions,markasansweredconversation,N/A,N/A
+messages,N/A - VK has no Class Descriptions,markasimportant,Marks and unmarks messages as important (starred).,Return a list of IDs for successfully marked messages. 
+messages,N/A - VK has no Class Descriptions,markasimportantconversation,N/A,N/A
+messages,N/A - VK has no Class Descriptions,markasread,Marks messages as read.,Returns 1. 
+messages,N/A - VK has no Class Descriptions,pin,N/A,N/A
+messages,N/A - VK has no Class Descriptions,removechatuser,"Allows the current user to leave a chat or, if the current user started the chat, allows the user to remove another user from the chat.","Returns 1. 
+"
+messages,N/A - VK has no Class Descriptions,restore,Restores a deleted message.,Returns 1. 
+messages,N/A - VK has no Class Descriptions,search,Returns a list of the current user's private messages that match search criteria.,"Returns an objects with a total number of items in the count (integer) field and an array of  messages objects in the items (array) field. 
+If extended = 1 returns an array of conversation objects in the items (array) field. profiles (array) and groups (array) arrays will be returned additionally. "
+messages,N/A - VK has no Class Descriptions,searchconversations,Returns a list of conversations that match search criteria.,Returns the total number of conversations in count field (integer) and array of conversations in items field 
+messages,N/A - VK has no Class Descriptions,send,Sends a message.,"Returns sent message ID. 
+If user_ids parameter is used, returns an array of objects containing following fields: 
+
+peer_id (integer) — peer ID; 
+message_id (integer) — message ID; 
+error — error message, if message is not delivered. 
+"
+messages,N/A - VK has no Class Descriptions,setactivity,Changes the status of a user as typing in a conversation.,"Returns 1. 
+""User N is typing..."" is shown for 10 seconds after the method is called, or until the message is sent. "
+messages,N/A - VK has no Class Descriptions,setchatphoto,Sets a previously-uploaded picture as the cover picture of a chat.,"Returns an object with the following fields: 
+
+message_id ­– ID of the system message sent. 
+chat – a chat object. 
+ "
+messages,N/A - VK has no Class Descriptions,unpin,N/A,N/A
+news feed,N/A - VK has no Class Descriptions,newsfeed.addban,Prevents news from specified users and communities from appearing in the current user's newsfeed.,Returns 1. 
+news feed,N/A - VK has no Class Descriptions,newsfeed.deleteban,Allows news from previously banned users and communities to be shown in the current user's newsfeed.,Returns 1. 
+news feed,N/A - VK has no Class Descriptions,newsfeed.deletelist,N/A,N/A
+news feed,N/A - VK has no Class Descriptions,newsfeed.get,Returns data required to show newsfeed for the current user.,"Returns an object containing the following fields: 
+
+items — News array for the current user. 
+profiles — Information about users in the newsfeed. 
+groups — Information about groups in the newsfeed. 
+new_offset — Contains an offset parameter that is passed to get the next array of news. 
+next_from — Contains a from parameter that is passed to get the next array of news. 
+
+
+Items field description Contains an array of wall objects, as well as the following fields: 
+
+type — Type of newsfeed, based on the specified filters (e.g., post, photo). 
+source_id — ID of the news source (positive number signifies a user; negative number signifies a community). 
+post_id — Post ID on the owner wall. 
+photos, photo_tags, notes, friends — Information about the count of objects of corresponding types (except wall posts) and up to the last 5 objects related to the current news. 
+
+Each array element in the photos and photo_tags fields contains: 
+
+pid — Photo ID. 
+owner_id — Photo owner ID. 
+aid — Photo album ID. 
+src — URL of the preview image. 
+src_big — URL of the full-size image. 
+
+Each array element in the notes field contains: 
+
+nid — Note ID. 
+owner_id — Note owner ID. 
+title — Note title. 
+ncom — Number of note comments. 
+
+Each array element in the friends field contains: 
+
+uid — User ID. 
+
+
+Profiles field description Contains an array of user objects, as well as the following fields: 
+
+photo — URL of the 50x50px user photo. 
+photo_medium_rec — URL of the 100x100px user photo. 
+
+
+Groups field description Contains an array of community objects with information about communities found in news. 
+NOTE: You can get the full list of photos, returned with type photo or photo_tag with the  photos.get method, using parameters feed (date of event in date field), feed_type (event type, photo or photo_tag), and uid — ID  of user for whom event has occurred (source_id field). "
+news feed,N/A - VK has no Class Descriptions,newsfeed.getbanned,Returns a list of users and communities banned from the current user's newsfeed.,"Returns an object with the following fields: 
+
+groups — An array of community IDs that the user removed from the newsfeed. 
+members — An array of friend IDs that the user removed from the newsfeed. 
+ "
+news feed,N/A - VK has no Class Descriptions,newsfeed.getcomments,Returns a list of comments in the current user's newsfeed.,"Returns an object containing the following fields: 
+
+items — News array for the current user. 
+profiles — Information about users in the newsfeed. 
+groups — Information about communities in the newsfeed. 
+
+
+Items field description Contains an array of wall objects, as well as the following fields: 
+
+type — Type of newsfeed, based on the specified filters (e.g., post, photo). 
+source_id — ID of the news source (positive number signifies a user; negative number signifies a community). 
+post_id — Post ID on the owner wall. 
+photos, photo_tags, notes, friends — Information about the count of objects of corresponding types (except wall posts) and up to the last 5 objects related to the current news. 
+
+Each array element in the photos and photo_tags fields contains: 
+
+pid — Photo ID. 
+owner_id — Photo owner ID. 
+aid — Photo album ID. 
+src — URL of the preview image. 
+src_big — URL of the full-size image. 
+
+Each array element in the notes field contains: 
+
+nid — Note ID. 
+owner_id — Note owner ID. 
+title — Note title. 
+ncom — Number of note comments. 
+
+Each array element in the friends field contains: 
+
+uid — User ID. 
+
+
+Profiles field description Contains an array of user objects, as well as the following fields: 
+
+photo — URL of the 50x50px user photo. 
+photo_medium_rec — URL of the 100x100px user photo. 
+
+
+Groups field description Contains an array of community objects with information about communities found in news. "
+news feed,N/A - VK has no Class Descriptions,newsfeed.getlists,Returns a list of newsfeeds followed by the current user.,"Returns a list of objects, each containing the following fields: 
+
+id — List ID. 
+title — List title. 
+
+If extended=1 parameter was transmitted, following extra fields are returned: 
+
+no_reposts – if reposts are switched off or not; 
+source_ids – users and communities identifiers from the list. 
+
+News by specified list can be returned via the newsfeed.get method, using the source_ids parameter. "
+news feed,N/A - VK has no Class Descriptions,newsfeed.getmentions,"Returns a list of posts on user walls in which the current user is mentioned. 
+",Returns the number of posts and an array of wall objects. 
+news feed,N/A - VK has no Class Descriptions,newsfeed.getrecommended," 
+Returns a list of newsfeeds recommended to the current user.","Returns an object containing the following fields: 
+
+items — News array for the current user. 
+profiles — Information about users in the newsfeed. 
+groups — Information about communities in the newsfeed. 
+new_offset — Contains an offset parameter that is passed to get the next array of news. 
+new_from — Contains a from parameter that is passed to get the next array of news. 
+
+
+Items field description  Contains an array of wall objects, as well as the following fields: 
+
+type — Type of newsfeed, based on the specified filter (e.g., post, photo). 
+source_id — ID of the news source (positive number signifies a user; negative number signifies a community). 
+post_id — Post ID on the owner wall. 
+photos, photo_tags, notes, friends — Information about the count of objects of corresponding types (except wall posts) and up to the last 5 objects related to the current news. 
+
+Each array element in the photos and photo_tags fields contains: 
+
+pid — Photo ID. 
+owner_id — Photo owner ID. 
+aid — Photo album ID. 
+src — URL of the preview image. 
+src_big — URL of the full-size image. 
+
+Each array element in the notes field contains: 
+
+nid — Note ID. 
+owner_id — Note owner ID. 
+title — Note title. 
+ncom — Number of note comments. 
+
+Each array element in the friends field contains: 
+
+uid — User ID. 
+
+
+Profiles field description Contains an array of user objects, as well as the following fields: 
+
+photo — URL of the 50x50px user photo. 
+photo_medium_rec — URL of the 100x100px user photo. 
+
+
+Groups field description Contains an array of community objects with information about communities found in news. 
+NOTE: You can get the full list of photos, returned with type photo or photo_tag with the  photos.get method, using parameters feed (date of event in date field), feed_type (event type, photo or photo_tag), and uid — ID  of user for whom event has occurred (source_id field). 
+ "
+news feed,N/A - VK has no Class Descriptions,newsfeed.getsuggestedsources,Returns communities and users that current user is suggested to follow.,List of users and communities objects. 
+news feed,N/A - VK has no Class Descriptions,newsfeed.ignoreitem,Hides an item from the newsfeed.,If executed successfully returns 1. 
+news feed,N/A - VK has no Class Descriptions,newsfeed.savelist,Creates and edits user newsfeed lists,"If successfully executed, returns a created or edited list identifier. "
+news feed,N/A - VK has no Class Descriptions,newsfeed.search,"Returns search results by statuses. 
+","Returns the total number of posts and an array of wall objects, as well as the following fields: 
+
+owner_id — Post owner ID. If the post was left by a community, the parameter is -gid (group ID preceded by a minus sign). 
+
+If extended is set to 1, also returns the following: 
+
+profiles — Contains user objects, as well as the following fields: 
+
+photo — URL of the 50x50px user photo. 
+photo_medium_rec — URL of the 100x100px user photo. 
+
+groups — Contains community objects. 
+ "
+news feed,N/A - VK has no Class Descriptions,newsfeed.unignoreitem,Returns a hidden item to the newsfeed.,If executed successfully returns 1. 
+news feed,N/A - VK has no Class Descriptions,newsfeed.unsubscribe,Unsubscribes the current user from specified newsfeeds.,Returns 1. 
+notes,N/A - VK has no Class Descriptions,add,Creates a new note for the current user.,Returns the ID of the created note (nid). 
+notes,N/A - VK has no Class Descriptions,createcomment,Adds a new comment on a note.,Returns the ID of the created comment (cid). 
+notes,N/A - VK has no Class Descriptions,delete,Deletes a note of the current user.,Returns 1. 
+notes,N/A - VK has no Class Descriptions,deletecomment,Deletes a comment on a note.,Returns 1. 
+notes,N/A - VK has no Class Descriptions,edit,Edits a note of the current user.,Returns 1. 
+notes,N/A - VK has no Class Descriptions,editcomment,Edits a comment on a note.,Returns 1. 
+notes,N/A - VK has no Class Descriptions,get,Returns a list of notes created by a user.,Returns a list of note objects. 
+notes,N/A - VK has no Class Descriptions,getbyid,Returns a note by its ID.,"Returns a list of note objects containing the following additional fields: 
+
+privacy — Access level for the note (0 — all users, 1 — only friends, 2 — friends and friends' friends, 3 — only the user). 
+comment_privacy — Access level for note commenting (0 — all users, 1 — only friends, 2 — friends and friends' friends, 3 — only the user). 
+can_comment — Whether the current user can comment on the note (0 — cannot comment, 1 — can comment). "
+notes,N/A - VK has no Class Descriptions,getcomments,Returns a list of comments on a note.,"Returns an array of comment objects, each containing the following fields: 
+
+id — Comment ID. 
+uid — Comment author ID. 
+nid — Note ID. 
+oid — Note owner ID. 
+date — Date (in Unix time) when the comment was added. 
+message — Comment text. 
+reply_to — ID of the comment to which the current comment replied, if any. "
+notes,N/A - VK has no Class Descriptions,restorecomment,Restores a deleted comment on a note.,Returns 1. 
+notifications,N/A - VK has no Class Descriptions,get,Returns a list of notifications about other users' feedback to the current user's wall posts.,"Returns an object with the following fields: 
+
+items — An array of notifications for the current user. 
+profiles — Information in notifications about users. 
+groups — Information in notifications about communities. 
+
+
+Items field description Contains an array of items objects, each corresponding to one notification and each containing the following fields: 
+
+type — Notification type (see below). 
+date — Date (in Unix time) the feedback appeared. 
+parent (is absent for follow, mention, or wall type) — An object describing a material owns feedback (wall post, comment, photo, video, or topic — see type). 
+feedback — An object (or an array of objects for follow, like_*, or copy_* type) describing feedback. Notifications about new followers, likes, and copied posts can be grouped as an array. 
+reply — An object describing a comment by the user, sent as a reply to the notification. Is absent if there are no replies. 
+
+
+Type field description Describes a notification type. Presence and content of parent and feedback fields depend on this type. 
+Type valueParent field typeFeedback field typeDescription follow-user[]One or more followers of the user have appeared. friend_accepted-user[]A friend request made by the user has been accepted. mention-postA new post that mentions the user has been posted on someone else's wall. mention_commentspostcommentA new comment that mentions the user has been posted. wall-postA new post has been created on the user's wall. comment_postpostcommentA new comment has been added about the user's post. comment_photophotocommentA new comment has been added about the user's photo. comment_videovideocommentA new comment has been added about the user's video. reply_commentcommentcommentA new reply has been added about the user's comment. reply_comment_photocommentcommentA new reply has been added about the user's comment about a photo. reply_comment_videocommentcommentA new reply has been added about the user's comment about a video. reply_topictopiccommentA new reply has been added about the user's topic. like_postpostuser[]One or more Likes have been added to the user's post. like_commentcommentuser[]One or more Likes have been added to the user's comment. like_photophotouser[]One or more Likes have been added to the user's photo. like_videovideouser[]One or more Likes have been added to the user's video. like_comment_photocommentuser[]One or more Likes have been added to the user's comment about a photo. like_comment_videocommentuser[]One or more Likes have been added to the user's comment about a video. like_comment_topiccommentuser[]One or more Likes have been added to the user's comment about a topic. copy_postpostcopy[]One or more users have copied the user's post. copy_photophotocopy[]One or more users have copied the user's photo. copy_videovideocopy[]One or more users have copied the user's video.  
+
+Parent field description (post) Contains information about a wall post. 
+
+Parent field description (comment) Contains information about a comment, with the following additional fields: 
+
+post — (for reply_comment and like_comment types) Post to which the comment was added. 
+photo — (for reply_comment_photo and like_comment_photo types) Photo to which the comment was added. 
+video — (for reply_comment_video and like_comment_video types) Video to which the comment was added. 
+topic — (for like_comment_topic type) Topic to which the comment was added. 
+
+
+Parent field description (photo) Contains information about a photo. 
+
+Parent field description (video) Contains information about a video. 
+
+Parent field description (topic) Contains information about a topic: 
+
+id — Topic ID. 
+owner_id — Community ID (with ""-""). 
+title — Topic title. 
+created — Date (as Unix time) when the topic was created. 
+created_by — Topic creator ID. 
+updated — Date (as Unix time) of the last message in the topic. 
+updated_by — ID of the author of the last message in the topic. 
+is_closed — Whether the topic is closed, e.g. does not allow comments (0 — is not closed, 1 — is closed). 
+is_fixed — Whether the topic is fixed to the top of the board (0 — is not fixed, 1 — is fixed). 
+comments — Number of comments in the topic. 
+
+
+Feedback field description Contains information about a notification: 
+
+id (is absent if type is follow or like_*) — Reply ID. 
+owner_id — Feedback author ID. 
+text (is absent if type is follow, like_*, or copy_*) — Text of the reply. 
+likes — Information about likes to the post; an object containing: 
+
+count — Number of users who liked the post. 
+user_likes — Whether the user liked (0 — not liked, 1 — liked). 
+can_like — Whether the user can like (0 — cannot, 1 — can). 
+can_publish — Whether the user can repost (0 — cannot, 1 — can). 
+
+
+If feedback is a wall post (type post in a table), the feedback object contains additional fields: 
+
+attachments — information about post attachments (photos, links, etc.; see Description of ""attachments"" field); 
+geo — Information about location; an object containing: 
+
+place_id — Location ID. 
+title — Location title. 
+type — Location type. 
+country_id — Country ID. 
+city_id — City ID. 
+address — Street address. 
+showmap — Used if a map of the location is attached. 
+
+
+
+Reply fields description Contains information about a user's reply to a notification: 
+
+id — Comment ID. 
+date — Date (in Unix time) the comment was added. 
+text — Text of the comment. "
+notifications,N/A - VK has no Class Descriptions,markasviewed,Resets the counter of new notifications about other users' feedback to the current user's wall posts.,Returns 1 if the current user has new notifications; otherwise returns 0. 
+notifications,N/A - VK has no Class Descriptions,sendmessage,N/A,N/A
+pages,N/A - VK has no Class Descriptions,clearcache,Allows to clear the cache of particular external pages which may be attached to VK posts.,"If cache is cleared successfully, method returns 1. "
+pages,N/A - VK has no Class Descriptions,get,Returns information about a wiki page.,"Returns a page object containing the following fields: 
+
+pid — Page ID. 
+group_id — Community ID. 
+creator_id — ID of the page creator. 
+title — Page title. 
+source — Text of the wiki page. 
+current_user_can_edit — Whether a user can edit page text (0 — cannot, 1 — can). 
+current_user_can_edit_access — Whether a user can edit page access permissions (0 — cannot, 1 — can). 
+who_can_view — Who can view the wiki page (0 — only community managers, 1 — only community members, 2 — all users). 
+who_can_edit — Who can edit the wiki page (0 — only community managers, 1 — only community members, 2 — all users). 
+editor_id — ID of the last user who edited the page. 
+edited — Date of the last change. 
+created — Page creation date. 
+parent — Title of the parent page for navigation, if any. 
+parent2 — Title of the second parent page for navigation, if any. "
+pages,N/A - VK has no Class Descriptions,gethistory,Returns a list of all previous versions of a wiki page.,"Returns an array of page_version objects, each containing the following fields: 
+
+hid — ID of the page version. 
+length — Length of the page version (in bytes). 
+edited — Date on which the page was edited. 
+editor_id — ID of the user who edited the page. 
+editor_name — Name of the user who edited the page. "
+pages,N/A - VK has no Class Descriptions,gettitles,Returns a list of wiki pages in a group.,"Returns an array of page objects, each containing the following fields: 
+
+pid — Page ID. 
+title — Page title. 
+group_id — Community ID. 
+creator_id — ID of the page creator. 
+created — Page creation date. 
+editor_id — ID of the last user who edited the page. 
+editor_name — Name of the last user who edited the page. 
+edited — Date of the last change. 
+who_can_view — Who can view the wiki page (0 — only community managers, 1 — only community members, 2 — all users). 
+who_can_edit — Who can edit the wiki page (0 — only community managers, 1 — only community members, 2 — all users). "
+pages,N/A - VK has no Class Descriptions,getversion,Returns the text of one of the previous versions of a wiki page.,"Returns a page object containing the following fields: 
+
+hid — Page version ID. 
+pid — Page ID. 
+group_id — Community ID. 
+creator_id — Page creator ID. 
+title — Page title. 
+source — Text of the wiki page. 
+current_user_can_edit — Whether the current user can edit page text (0 — cannot, 1 — can). 
+who_can_view — Who can view the wiki page (0 — only community managers, 1 — only community members, 2 — all users). 
+who_can_edit — Who can edit the wiki page (0 — only community managers, 1 — only community members, 2 — all users). 
+version_created — Version creation date. 
+parent — Title of the parent page for navigation, if any. 
+parent2 — Title of the second parent page for navigation, if any. "
+pages,N/A - VK has no Class Descriptions,parsewiki,Returns HTML representation of the wiki markup.,Returns escaped HTML code corresponding to the wiki markup. 
+pages,N/A - VK has no Class Descriptions,save,Saves the text of a wiki page.,Returns the ID of the created wiki page (id). 
+pages,N/A - VK has no Class Descriptions,saveaccess,Saves modified read and edit access settings for a wiki page.,Returns the ID of the edited wiki page (id). 
+photos,N/A - VK has no Class Descriptions,confirmtag,Confirms a tag on a photo.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,copy,"Allows to copy a photo to the ""Saved photos"" album",Returns the created photo ID. 
+photos,N/A - VK has no Class Descriptions,createalbum,Creates an empty photo album.,"Returns an object containing the following fields: 
+
+aid — ID of the created album. 
+thumb_id — ID of the album cover photo. 
+owner_id — ID of the user or community that owns the album. 
+title — Album title. 
+description — Album description. 
+created — Date (in Unix time) when the album was created. 
+updated — Date (in Unix time) the album was last updated. 
+size — Number of photos in the album. 
+privacy — Privacy settings for viewing the album. 
+comment_privacy — Privacy settings for commenting on the album. "
+photos,N/A - VK has no Class Descriptions,createcomment,Adds a new comment on the photo.,Returns the ID of the created comment (cid). 
+photos,N/A - VK has no Class Descriptions,delete,Deletes a photo.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,deletealbum,Deletes a photo album belonging to the current user.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,deletecomment,Deletes a comment on the photo.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,edit,Edits the caption of a photo.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,editalbum,Edits information about a photo album.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,editcomment,Edits a comment on a photo.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,get,Returns a list of a user's or community's photos.,"Returns a list of photo objects. 
+If location is attached to a photo, also returns lat and long fields, containing geographical coordinates mark. 
+If extended is set to 1, returns the following additional fields: 
+
+likes — Number of likes and information whether the current user liked the photo. 
+comments — Number of comments on the photo. 
+tags — Number of tags on the photo. 
+can_comment — Whether the current user can comment on the photo (1 — can, 0 — cannot). 
+
+If photo_sizes is set to 1, returns photo sizes in a special format instead of width and height fields. "
+photos,N/A - VK has no Class Descriptions,getalbums,Returns a list of a user's or community's photo albums.,"Returns an array of album objects, each containing the following fields: 
+
+aid — Album ID. 
+thumb_id — ID of the album cover photo. 
+owner_id — ID of the user or community that owns the album. 
+title — Album title. 
+description — Album description. 
+created — Date (in Unix time) the album was created. 
+updated — Date (in Unix time) the album was last updated. 
+size — Number of photos in the album. 
+privacy — Privacy settings for viewing the album. 
+thumb_src — (If need_covers was specified) Link to the album cover photo. "
+photos,N/A - VK has no Class Descriptions,getalbumscount,Returns the number of photo albums belonging to a user or community.,Returns the number of photo albums belonging to the user or community (considering privacy settings). 
+photos,N/A - VK has no Class Descriptions,getall,"Returns a list of photos belonging to a user or community, in reverse chronological order.","Returns a list of photo objects. 
+If extended is set to 1, returns the likes field: 
+
+user_likes – 1 – current user likes the photo, 0 – not specified. 
+count – number of likes for the photo. 
+If photo_sizes is set to 1, returns photo sizes in a special format instead of width and height fields. 
+If need_hidden is set to 1, each photo object will contain hidden=1 if a photo is hidden from a block above the wall. 
+If skip_hidden is set to 1 the response object will contain more either 1 or 0, meaning there more pages available or not. Also, each photo object will contain real_offset field, meaning the real position of photo in system album ""all"". You should set a greatest received value from real_offset as offset for the next page request. "
+photos,N/A - VK has no Class Descriptions,getallcomments,Returns a list of comments on a specific photo album or all albums of the user sorted in reverse chronological order.,"Returns an array of comment objects, each containing the following fields: 
+
+cid — Comment ID. 
+from_id — Comment author ID. 
+date — Date (in Unix time) the comment was added. 
+message — Comment text. 
+pid — ID of the photo to which the comment was added. "
+photos,N/A - VK has no Class Descriptions,getbyid,Returns information about photos by their IDs.,"Returns a list of photo objects. 
+If extended is set to 1, returns the following additional fields: 
+
+likes — Number of likes and information whether the current user liked the photo. 
+comments — Number of comments on the photo. 
+tags — Number of tags on the photo. 
+can_comment — Whether the current user can comment on the photo (1 — can, 0 — cannot). 
+
+If photo_sizes is set to 1, returns photo sizes in a special format instead of width and height fields. "
+photos,N/A - VK has no Class Descriptions,getchatuploadserver,Returns an upload link for chat cover pictures.,Returns an object with an upload_url field. 
+photos,N/A - VK has no Class Descriptions,getcomments,Returns a list of comments on a photo.,"Returns a list of comment objects. 
+If need_likes is set to 1, returns an additional likes field containing the following subfields: 
+
+count — Number of users who liked the comment. 
+user_likes — Whether the current user liked the comment (0 — not liked, 1 — liked). 
+can_like — Whether the current user can like the comment (0 — cannot, 1 — can). "
+photos,N/A - VK has no Class Descriptions,getmarketalbumuploadserver,Returns the server address for market album photo upload.,Returns the object containing upload_url field with the server address. 
+photos,N/A - VK has no Class Descriptions,getmarketuploadserver,Returns the server address for market photo upload.,Returns the object containing upload_url field with the server address. 
+photos,N/A - VK has no Class Descriptions,getmessagesuploadserver,Returns the server address for photo upload in a private message for a user.,"Returns an object with an upload_url, album_id and group_id (for community messages) fields. "
+photos,N/A - VK has no Class Descriptions,getnewtags,Returns a list of photos with tags that have not been viewed.,"Returns a list of photo objects with the following additional fields: 
+
+placer_id — ID of the user who added the tag. 
+tag_created — Tag creation date (in Unix time). 
+tag_id — Tag ID. "
+photos,N/A - VK has no Class Descriptions,getownercoverphotouploadserver,Receives server address for uploading community cover.,Returns an object with the only upload_url field. 
+photos,N/A - VK has no Class Descriptions,getownerphotouploadserver,Returns an upload server address for a profile or community photo.,If executed successfully returns upload_url. 
+photos,N/A - VK has no Class Descriptions,gettags,Returns a list of tags on a photo.,"Returns an array of tag objects, each containing the following fields: 
+
+uid — ID of the user to whom the tag corresponds. 
+tag_id — Tag ID. 
+placer_id — ID of the user who added the tag. 
+tagged_name — Tag name. 
+date — Date (in Unix time) the tag was added. 
+x, y, x2, y2 — Coordinates of the rectangular area where the tag was added (upper left corner and lower right corner). 
+viewed — Tag status (1 — confirmed, 0 — not confirmed). "
+photos,N/A - VK has no Class Descriptions,getuploadserver,Returns the server address for photo upload.,Returns an object with upload_url and aid fields. 
+photos,N/A - VK has no Class Descriptions,getuserphotos,Returns a list of photos in which a user is tagged.,"Returns a list of photo objects. 
+If extended is set to 1, returns the following additional fields: 
+
+likes — Number of likes and information whether the current user liked the photo. 
+comments — Number of comments on the photo. 
+tags — Number of tags on the photo. 
+can_comment — Whether the current user can comment the photo (1 — can, 0 — cannot). 
+
+If photo_sizes is set to 1, returns photo sizes in a special format instead of width and height fields. "
+photos,N/A - VK has no Class Descriptions,getwalluploadserver,Returns the server address for photo upload onto a user's wall.,Returns an object with an upload_url field. 
+photos,N/A - VK has no Class Descriptions,makecover,Makes a photo into an album cover.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,move,Moves a photo from one album to another.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,puttag,Adds a tag on the photo.,Returns the ID of the created tag. 
+photos,N/A - VK has no Class Descriptions,removetag,Removes a tag from a photo.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,reorderalbums,Reorders the album in the list of user albums.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,reorderphotos,Reorders the photo in the list of photos of the user album.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,report,"Reports (submits a complaint about) a photo. 
+",Returns 1. 
+photos,N/A - VK has no Class Descriptions,reportcomment,"Reports (submits a complaint about) a comment on a photo. 
+",Returns 1. 
+photos,N/A - VK has no Class Descriptions,restore,Restores a deleted photo.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,restorecomment,Restores a deleted comment on a photo.,Returns 1. 
+photos,N/A - VK has no Class Descriptions,save,Saves photos after successful uploading.,Returns a list of photo objects. 
+photos,N/A - VK has no Class Descriptions,savemarketalbumphoto,Saves market album photos after successful uploading.,Returns a photo object. 
+photos,N/A - VK has no Class Descriptions,savemarketphoto,Saves market photos after successful uploading.,Returns a photo object. 
+photos,N/A - VK has no Class Descriptions,savemessagesphoto,Saves a photo after being successfully uploaded. URL obtained with photos.getMessagesUploadServer method.,"Returns an array with the uploaded photo, the returned object contains id, pid, aid, owner_id, src, src_big, src_small, created fields. In case there are high-resolution photos, addresses with src_xbig and src_xxbig names will also be returned. "
+photos,N/A - VK has no Class Descriptions,saveownercoverphoto,Saves cover photo after successful uploading.,"Returns an images array with objects describing copies of the photo uploaded. Each object contains following fields: 
+
+url (string) — copy URL; 
+width (integer) — copy width in px; 
+height (integer) — copy height in px. 
+"
+photos,N/A - VK has no Class Descriptions,saveownerphoto,Saves  a profile or community photo.,"If executed successfully, returns an object with photo_hash and photo_src fields (if VK.api is used, method will return photo_src, photo_src_big and photo_src_small fields). 
+photo_hash parameter is required for Javascript API saveProfilePhoto method. photo_src contains a path to the uploaded photo. "
+photos,N/A - VK has no Class Descriptions,savewallphoto,Saves a photo to a user's or community's wall after being uploaded.,If executed successfully returns an array with uploaded photo. 
+photos,N/A - VK has no Class Descriptions,search,Returns a list of photos.,Returns a list of photo objects. 
+podcasts,N/A - VK has no Class Descriptions,clearrecentsearches,N/A,N/A
+podcasts,N/A - VK has no Class Descriptions,getpopular,N/A,N/A
+podcasts,N/A - VK has no Class Descriptions,getrecentsearchrequests,N/A,N/A
+podcasts,N/A - VK has no Class Descriptions,search,N/A,N/A
+polls,N/A - VK has no Class Descriptions,addvote,Adds the current user's vote to the selected answer in the poll.,"Returns one of the following values: 
+
+1 — Vote was added to the selected answer. 
+0 — User has already voted in this poll. 
+"
+polls,N/A - VK has no Class Descriptions,create,Creates polls that can be attached to the users' or communities' posts.,"If executed successfully, a poll object is returned. "
+polls,N/A - VK has no Class Descriptions,deletevote,Deletes the current user's vote from the selected answer in the poll.,"Returns one of the following values: 
+
+1 — Vote was removed from the selected answer. 
+0 — Either the user has not yet voted or the answer specified was not selected by the user. 
+"
+polls,N/A - VK has no Class Descriptions,edit,Edits created polls,"If successfully executed, returns 1. "
+polls,N/A - VK has no Class Descriptions,getbackgrounds,Return default backgrounds for polls.,"Returns an array of objects describing backgrounds. Each object contains following fields: 
+
+type (string) — background type. Possible values: gradient, tile. 
+angle (integer) — (for type = gradient) gradient angle for X axe. 
+color (string) — HEX-code for alternative color (without #). 
+width (integer) — (for type = tile) tile's width. 
+height (integer) — (for type = tile) tile's height. 
+images (array) — (for type = tile) tile's image. Image object array. 
+points (array) — (for type = gradient) gradient's points. Array of objects containing  position (number) field  and color (string) field. 
+id (integer) — background ID. 
+"
+polls,N/A - VK has no Class Descriptions,getbyid,Returns detailed information about a poll by its ID.,"Returns an object that contains the following fields: 
+
+owner_id — Poll owner ID. 
+poll_id — Poll ID. 
+created — Date (in Unix time) the poll was created. 
+question — Text of the question. 
+votes — Total users who voted. 
+answer_id — ID of the current user's answer; if the user has not yet participated in the poll, then 0. 
+answers — Array with objects containing answer choices for the poll question: 
+
+id — Answer ID. 
+text — Text of the answer. 
+votes — Number of users who voted for this answer. 
+rate — Rating of this answer as a percentage. 
+
+"
+polls,N/A - VK has no Class Descriptions,getphotouploadserver,Returns a URL for uploading a photo to a poll.,Returns an object with the only upload_url (string) field. 
+polls,N/A - VK has no Class Descriptions,getvoters,Returns a list of IDs of users who selected specific answers in the poll.,"For each answer, returns an object that contains the following fields: 
+
+answer_id — Answer ID. 
+users — A list of user IDs — considering offset and count parameters — of those who voted for this answer. 
+
+If the fields parameter is used, returns an array of user objects, each containing a set of fields defined by the fields parameter. The uid, first_name, last_name, lists, and online fields are always returned, regardless of the selected fields. 
+"
+polls,N/A - VK has no Class Descriptions,savephoto,Allows to save poll's uploaded photo.,Returns uploaded photo's ID. 
+prettycards,N/A - VK has no Class Descriptions,create,N/A,N/A
+prettycards,N/A - VK has no Class Descriptions,delete,N/A,N/A
+prettycards,N/A - VK has no Class Descriptions,edit,N/A,N/A
+prettycards,N/A - VK has no Class Descriptions,get,N/A,N/A
+prettycards,N/A - VK has no Class Descriptions,getbyid,N/A,N/A
+prettycards,N/A - VK has no Class Descriptions,getuploadurl,N/A,N/A
+search,N/A - VK has no Class Descriptions,gethints,Allows the programmer to do a quick search for any substring.,"Returns an array of objects, each containing standard type, section, and description fields. 
+
+If type is set to group, returns a list of group objects, as well as the following additional fields: 
+
+section — Returns the object's type:  groups, events, or publics. 
+description — Returns the object's description: type and number of members, e.g., Group, 269,136 members. 
+
+If type is set to profiles, returns a list of user objects, as well as the following additional fields: 
+
+section — Returns the object's type: people, friends, or mutual friends. 
+description — Returns the object's description: 
+
+If section is set to people or friends, returns university name or city. 
+If section is set to mutual friends, returns N mutual friends. 
+For the current user profile, returns That's you. 
+
+
+
+ 
+"
+stats,N/A - VK has no Class Descriptions,get,Returns statistics of a community or an application.,"Returns an array of period objects, each containing the following fields: 
+
+day — Day as YYYY-MM-DD. 
+views — Number of views. 
+visitors — Number of unique visitors. 
+reach — Full coverage. 
+reach_subscribers — Followers coverage. 
+sex — A list of structures describing statistics by sex. 
+age — A list of structures describing statistics by age. 
+sex_age — A list of structures describing statistics by sex and age. 
+cities — A list of structures describing statistics by cities. 
+countries — A list of structures describing statistics by countries. 
+
+Structure in sex, age, sex_age, cities lists contains the following fields: 
+
+visitors — Audience for value index. 
+value — Meaning of demographic index. Meanings available: 
+
+sex (f — female, m — male). 
+age — One of the following intervals: 12-18, 18-21, 21-24, 24-27, 27-30, 30-35, 35-45, 45-100. 
+sex_age — Combination of sex and age values, separated by "";"", e.g., m;21-24 
+cities — City ID or other for other cities. 
+
+name — Literal name for the meaning in value (only for cities). 
+ "
+stats,N/A - VK has no Class Descriptions,getpostreach,Returns stats for a wall post.,"Returns stats data as an object with following fields: 
+
+
+reach_subscribers - subscribers reach; 
+reach_total - overall reach; 
+links - link clicks; 
+to_group - group visits; 
+join_group - new members; 
+report - number of complaints for a post; 
+hide - number of people hidden a post; 
+unsubscribe - number of people left community. 
+"
+stats,N/A - VK has no Class Descriptions,trackvisitor,Adds current session's data in the application statistics.,Returns 1. 
+status,N/A - VK has no Class Descriptions,get,Returns data required to show the status of a user or community.,"Returns an object with a text field containing the text of the status of the user or community. 
+If the user added broadcasting of the playing music in the status, and an audio file is currently playing, this method also returns a list of audio objects. 
+ "
+status,N/A - VK has no Class Descriptions,set,Sets a new status for the current user.,Returns 1. 
+storage,N/A - VK has no Class Descriptions,get,Returns a value of variable with the name set by key parameter.,"Returns a value of one or more variables. If there is no variable on server, an empty string will be returned. "
+storage,N/A - VK has no Class Descriptions,getkeys,Returns the names of all variables.,Returns an array of variables names. 
+storage,N/A - VK has no Class Descriptions,set,Saves a value of variable with the name set by key parameter.,"Returns 1 if the variable is saved successfully. 
+To delete the variable you shall pass a blank value in value parameter. 
+"
+stories,N/A - VK has no Class Descriptions,banowner,Allows to hide stories from chosen sources from current user's feed.,Returns 1. 
+stories,N/A - VK has no Class Descriptions,delete,Allows to delete story.,Return 1. 
+stories,N/A - VK has no Class Descriptions,get,Returns stories available for current user.,"Returns results number in count (integer) field and an array of stories objects arrays in items field. Each array (element of items array) is a collection of stories from one source. 
+If extended = 1, returns additional fields profiles (array) with users and groups (array) with communities. "
+stories,N/A - VK has no Class Descriptions,getbanned,Returns list of sources hidden from current user's feed.,"Returns total results number in count (integer) field and its IDs in  items (array) field. If extended = 1, items contains two fields: 
+
+profiles (array) — objects describing users; 
+groups (array) — objects describing communities. 
+"
+stories,N/A - VK has no Class Descriptions,getbyid,Returns story by its ID.,"Returns total results number in count (integer) field and story objects in  items (array) field. Note that seen field in story object will not be returned. 
+If extended = 1, returns objects describing users in profiles (array) field and objects describing communities in groups (array). "
+stories,N/A - VK has no Class Descriptions,getphotouploadserver,Returns URL for uploading a story with photo.,"Returns an object with following fields: 
+
+upload_url (string) — upload URL; 
+user_ids (integer) — users ID who can to see story. 
+"
+stories,N/A - VK has no Class Descriptions,getreplies,Returns replies to the story.,"Returns total results number in count (integer) fields and story objects in items (array) field. If extended = 1, returns objects describing users in profiles (array) field objects describing communities in groups (array) field. "
+stories,N/A - VK has no Class Descriptions,getstats,Return statictics data for the story.,"Returns an object with following fields: 
+
+views (object) — views. Contains following fields: 
+
+state (string) — counter's availability (on — available, off — unavailable); 
+count (integer) — counter's value; 
+
+replies  (object) — replies to the story. Contains following fields: 
+
+state (string) — counter's availability (on — available, off — unavailable); 
+count (integer) — counter's value; 
+
+answer  (object) — . Contains following fields: 
+
+state (string) — counter's availability (on — available, off — unavailable); 
+count (integer) — counter's value; 
+
+shares  (object) — shares. Contains following fields: 
+
+state (string) — counter's availability (on — available, off — unavailable); 
+count (integer) — counter's value; 
+
+subscribers (object) — new subscribers. Contains following fields: 
+
+state (string) — counter's availability (on — available, off — unavailable); 
+count (integer) — counter's value; 
+
+bans  (object) — bans. Contains following fields: 
+
+state (string) — counter's availability (on — available, off — unavailable); 
+count (integer) — counter's value; 
+
+open_link (object) — link's clicks. Contains following fields: 
+
+state (string) — counter's availability (on — available, hidden — unavailable); 
+count (integer) — counter's value; 
+
+"
+stories,N/A - VK has no Class Descriptions,getvideouploadserver,Allows to receive URL for uploading story with video.,"Returns an object with following fields: 
+
+upload_url (string) — upload URL; 
+user_ids (integer) — users ID who can to see story. 
+"
+stories,N/A - VK has no Class Descriptions,getviewers,Returns a list of story viewers.,"Returns total results number in count (integer) field in users IDs in items (array) field. If extended = 1, items (array) field contains an array of objects describing users. "
+stories,N/A - VK has no Class Descriptions,hideallreplies,Hides all replies in the last 24 hours from the user to current user's stories.,Returns 1. 
+stories,N/A - VK has no Class Descriptions,hidereply,Hides the reply to the current user's story.,Returns 1. 
+stories,N/A - VK has no Class Descriptions,search,N/A,N/A
+stories,N/A - VK has no Class Descriptions,sendinteraction,N/A,N/A
+stories,N/A - VK has no Class Descriptions,unbanowner,Allows to show stories from hidden sources in current user's feed.,Returns 1. 
+streaming,N/A - VK has no Class Descriptions,getserverurl,Allows to receive data for the connection to Streaming API.,"Returns an object with following fields: 
+
+endpoint (string) — server host; 
+key (string) — access key. Key has endless lifetime and revokes only then new key has been received. 
+"
+streaming,N/A - VK has no Class Descriptions,getsettings,Allows to receive monthly tier for Streaming API.,"Returns an object with the only monthly_limit (string) field containing values tier_1-tier_6 or unlimited, which corresponds to monthly tier. "
+streaming,N/A - VK has no Class Descriptions,getstats,Allows to receive statistics for prepared and received events in Streaming API.,"Returns an array of objects, each contains following fields: 
+
+event_type (string) — events type. Possible values: 
+
+post — posts on wall; 
+comment — comments; 
+share — reposts. 
+
+stats (array) — statistics values. Array of objects, each contains following fields: 
+
+timestamp (integer) — timestamp for a value; 
+value (integer) — value. 
+
+
+"
+streaming,N/A - VK has no Class Descriptions,getstem,N/A,N/A
+streaming,N/A - VK has no Class Descriptions,setsettings,Allows to set monthly tier for Streaming API.,Returns 1. 
+users,N/A - VK has no Class Descriptions,get,Returns detailed information on users.,"Returns a list of user objects. 
+A deactivated field may be returned with the value deleted or banned if a user has been suspended. "
+users,N/A - VK has no Class Descriptions,getfollowers,"Returns a list of IDs of followers of the user in question, sorted by date added, most recent first.",Returns a list of user objects. 
+users,N/A - VK has no Class Descriptions,getsubscriptions,Returns a list of IDs of users and public pages followed by the user.,"Returns user and community objects, each containing the following fields: 
+
+count — The number of results. 
+items — The list of IDs of users/communities followed by the user. 
+
+If extended is set to 1, returns a combined list of user objects and community objects. "
+users,N/A - VK has no Class Descriptions,report,Reports (submits a complain about) a user.,"Returns 1. 
+"
+users,N/A - VK has no Class Descriptions,search,Returns a list of users matching the search criteria.,Returns a list of user objects. 
+utils,N/A - VK has no Class Descriptions,checklink,Checks whether a link is blocked in VK.,"Returns a status field: 
+
+not_banned – Link is not blocked. 
+banned – Link is blocked. 
+processing – Link is being checked; retry after several seconds. 
+
+Also returns a link field containing the link as supplied or, if a URL to a link shortener was supplied, the full link. "
+utils,N/A - VK has no Class Descriptions,deletefromlastshortened,Deletes shortened link from user's list.,Returns 1. 
+utils,N/A - VK has no Class Descriptions,getlastshortenedlinks,Returns a list of user's shortened links.,"Returns links number in count (integer) field and items array of objects describing links. Each object contains following fields: 
+
+timestamp (integer) — creation time in Unixtime; 
+url (string) — full URL; 
+short_url (string) — shortened URL; 
+key (string) — link key (characters after ""vk.cc""); 
+views (integer) — views number; 
+access_key (string) — access key for private stats. 
+"
+utils,N/A - VK has no Class Descriptions,getlinkstats,Returns stats data for shortened link.,"Returns an object which contains key field with key value and stats array with the stats data. Each object in stats contains timestamp field with the start time, views field with total views number, and stats arrays: sex_age, countries, cities. 
+Each object in sex_age array contains following fields: 
+
+age_range (string) — age denotation; 
+female (integer) — views by female users; 
+male (integer) — views by male users 
+
+Each object in countries (cities) array contains following fields: 
+
+country_id (city_id) (integer) —  country (city) ID; 
+views (integer) — views number. 
+"
+utils,N/A - VK has no Class Descriptions,getservertime,Returns the current time of the VK server.,Returns the current time (in Unix time). 
+utils,N/A - VK has no Class Descriptions,getshortlink,Allows to receive a link shortened via vk.cc.,"Returns an object with following fields: 
+
+short_url (string) — shortened URL; 
+access_key (string) — access key for private stats; 
+key (string) — link key (characters after ""vk.cc""); 
+url (string) — full URL. 
+"
+utils,N/A - VK has no Class Descriptions,resolvescreenname,"Detects a type of object (e.g., user, community, application) and its ID by screen name.","Returns an object with following fields: 
+
+type — Object type (user, group, application). 
+object_id — Object ID. 
+
+If screen_name is not specified, returns an empty object. "
+video,N/A - VK has no Class Descriptions,add,Adds a video to a user or community page.,Returns 1 if executed successfully. 
+video,N/A - VK has no Class Descriptions,addalbum,Creates an empty album for videos.,Returns the ID of the created album (album_id). 
+video,N/A - VK has no Class Descriptions,addtoalbum,N/A,N/A
+video,N/A - VK has no Class Descriptions,createcomment,Adds a new comment on a video.,Returns the ID of the created comment (cid). 
+video,N/A - VK has no Class Descriptions,delete,Deletes a video from a user or community page.,Returns 1. 
+video,N/A - VK has no Class Descriptions,deletealbum,Deletes a video album.,Returns 1. 
+video,N/A - VK has no Class Descriptions,deletecomment,Deletes a comment on a video.,Returns 1. 
+video,N/A - VK has no Class Descriptions,edit,Edits information about a video on a user or community page.,Returns 1. 
+video,N/A - VK has no Class Descriptions,editalbum,Edits the title of a video album.,Returns 1. 
+video,N/A - VK has no Class Descriptions,editcomment,Edits the text of a comment on a video.,Returns 1. 
+video,N/A - VK has no Class Descriptions,get,Returns detailed information about videos.,"Returns a list of video objects with an additional comments field indicating the number of comments on the video. 
+If extended is set to 1, returns the following additional fields: 
+
+privacy_view — Privacy settings in a special format (only for the current user). 
+privacy_comment — Comment privacy settings in a special format (only for the current user). 
+can_comment — Whether the current user can comment on the video (1 — can, 0 — cannot). 
+can_repost — Whether the current user can copy the video using the ""Share with friends"" feature (1 — can, 0 — cannot). 
+likes — Information about likes: 
+
+user_likes — Whether the current user liked the photo. 
+count — Number of likes. 
+
+
+ "
+video,N/A - VK has no Class Descriptions,getalbumbyid,Returns video album info,"If executed successfully, returns an object containing following fields: 
+
+id – album ID; 
+owner_id – album owner ID; 
+title – album title; 
+count – number of videos in the album; 
+photo_320 – URL of the album cover with 320px width; 
+photo_169 – URL of the album cover with 169px width; 
+updated_time – last update time in unixtime format. 
+"
+video,N/A - VK has no Class Descriptions,getalbums,Returns a list of video albums owned by a user or community.,"Returns the total number of video albums and an array of album objects, each containing the following fields: 
+
+owner_id — Album owner ID. 
+album_id — Album ID. 
+title — Album title. 
+"
+video,N/A - VK has no Class Descriptions,getalbumsbyvideo,N/A,N/A
+video,N/A - VK has no Class Descriptions,getcomments,Returns a list of comments on a video.,"Returns the total number of comments and an array of comment objects, each containing the following fields: 
+
+id — Comment ID. 
+from_id — Comment author ID. 
+date — Date (in Unix time) the comment was added. 
+message — Comment text. 
+likes — (If need_likes is set to 1) Information about likes, containing the following subfields: 
+
+count — Number of likes. 
+user_likes — Whether the current user liked the comment. 
+can_like — Whether the current user can like the comment (1 — can, 0 — cannot). "
+video,N/A - VK has no Class Descriptions,removefromalbum,N/A,N/A
+video,N/A - VK has no Class Descriptions,reorderalbums,Reorders the album in the list of user video albums.,Returns 1. 
+video,N/A - VK has no Class Descriptions,reordervideos,Reorders the video in the video album.,
+video,N/A - VK has no Class Descriptions,report,Reports (submits a complaint about) a video.,Returns 1. 
+video,N/A - VK has no Class Descriptions,reportcomment,"Reports (submits a complaint about) a comment on a video. 
+",Returns 1. 
+video,N/A - VK has no Class Descriptions,restore,Restores a previously deleted video.,Returns 1. 
+video,N/A - VK has no Class Descriptions,restorecomment,Restores a previously deleted comment on a video.,Returns 1. 
+video,N/A - VK has no Class Descriptions,save,Returns a server address (required for upload) and video data.,"Returns an object with upload_url, vid, name, description, and owner_id fields. "
+video,N/A - VK has no Class Descriptions,search,Returns a list of videos under the set search criterion.,"Returns a list of video objects. 
+If you use direct authorization in your app, returns an additional files field, containing a link to the video file (if the video is placed on a VK server) or a link to an external site (if the video is integrated from another video hosting service). "
+wall,N/A - VK has no Class Descriptions,checkcopyrightlink,N/A,N/A
+wall,N/A - VK has no Class Descriptions,closecomments,N/A,N/A
+wall,N/A - VK has no Class Descriptions,createcomment,Adds a comment to a post on a user wall or community wall.,Returns added comment ID in comment_id (integer) field and an array of parent comments in parent_stack (array) field. 
+wall,N/A - VK has no Class Descriptions,delete,Deletes a post from a user wall or community wall.,Returns 1. 
+wall,N/A - VK has no Class Descriptions,deletecomment,"Deletes a comment on a post on a user wall or community wall. 
+","Returns 1. 
+ "
+wall,N/A - VK has no Class Descriptions,edit,Edits a post on a user wall or community wall.,Returns 1. 
+wall,N/A - VK has no Class Descriptions,editadsstealth,Allows to edit hidden post.,Returns 1. 
+wall,N/A - VK has no Class Descriptions,editcomment,"Edits a comment on a user wall or community wall. 
+",Returns 1. 
+wall,N/A - VK has no Class Descriptions,get,Returns a list of posts on a user wall or community wall.,"Returns a list of post objects. 
+If extended is set to 1, also returns the following: 
+
+wall — Contains a list of post objects. 
+profiles — Contains user objects with additional fields photo and online. 
+groups — Contains community objects. 
+
+"
+wall,N/A - VK has no Class Descriptions,getbyid,Returns a list of posts from user or community walls by their IDs.,"Returns a list of post objects. 
+If extended is set to 1, returns the following: 
+
+wall — Contains post objects. 
+profiles — Contains user objects with additional fields  sex, photo, photo_medium_rec, and online. 
+groups — Contains  community objects. 
+
+If the post is a copy of another post, returns an additional array copy_history with information about original posts. 
+"
+wall,N/A - VK has no Class Descriptions,getcomment,Allows to obtain wall comment info.,Returns an object describing wall comment. If extended = 1 returns additional groups (array) and profiles (array) fields with users and communities data. 
+wall,N/A - VK has no Class Descriptions,getcomments,Returns a list of comments on a post on a user wall or community wall.,"Returns total number of comments in count (integer) field and an array of comment objects in items (array) field. Additional fields are: 
+
+current_level_count (integer) — number of comments. 
+can_post (boolean) – true if current user can post comments in this thread. 
+show_reply_button (boolean) – true if it is recommended to display ""reply"" button. 
+groups_can_post (boolean) – true if groups can post comments in this thread. 
+
+If need_likes is set to 1, returns an additional likes field containing the following: 
+
+count — Number of users who liked the comment. 
+user_likes — Whether the user liked the comment (0 — not liked, 1 — liked). 
+can_like — Whether the user can like the comment (0 — cannot, 1 — can). 
+
+"
+wall,N/A - VK has no Class Descriptions,getreposts,Returns information about reposts of a post on user wall or community wall.,"Returns an object containing the following fields: 
+
+items — An array of wall reposts. 
+profiles — Information about  users with additional fields sex, online, photo, photo_medium_rec, and screen_name. 
+groups — Information about communities. 
+
+"
+wall,N/A - VK has no Class Descriptions,opencomments,N/A,N/A
+wall,N/A - VK has no Class Descriptions,pin,Pins the post on wall.,Returns 1. 
+wall,N/A - VK has no Class Descriptions,post,Adds a new post on a user wall or community wall. Can also be used to publish suggested or scheduled posts.,Returns the ID of the created post (post_id). 
+wall,N/A - VK has no Class Descriptions,postadsstealth,"Allows to create hidden post which will not be shown on the community's wall and can be used for creating an ad with type ""Community post"".",Returns the ID of the created post. 
+wall,N/A - VK has no Class Descriptions,reportcomment,"Reports (submits a complaint about) a comment on a post on a user wall or community wall. 
+",Returns 1. 
+wall,N/A - VK has no Class Descriptions,reportpost,"Reports (submits a complaint about) a post on a user wall or community wall. 
+",Returns 1. 
+wall,N/A - VK has no Class Descriptions,repost,Reposts (copies) an object to a user wall or community wall.,"Returns an object containing the following fields: 
+
+post_id — ID of the created post. 
+reposts_count — Total number of reposts for the object, including the current repost. 
+likes_count — Number of likes for the post. "
+wall,N/A - VK has no Class Descriptions,restore,Restores a post deleted from a user wall or community wall.,Returns 1. 
+wall,N/A - VK has no Class Descriptions,restorecomment,"Restores a comment deleted from a user wall or community wall. 
+",Returns 1. 
+wall,N/A - VK has no Class Descriptions,search,Allows to search posts on user or community walls.,"If executed successfully, returns a list of post objects. "
+wall,N/A - VK has no Class Descriptions,unpin,Unpins the post on wall.,Returns 1. 
+widgets,N/A - VK has no Class Descriptions,getcomments,Gets a list of comments for the page added through the Comments widget.,"Returns an object with the following fields: 
+
+count — Total number of first-level comments for the page (without taking into account the count parameter). 
+posts — List of first-level comments. Each item of the list has a structure similar to post objects from results of wall.get method. In addition: 
+
+If replies was specified among the required fields, a comments.replies field contains a list of second-level comments. Each item of this list has a structure similar to comment objects from results of wall.getComments method. 
+If any other required profile field was specified, each post and comment element includes a user field containing relevant information about the author of the comment. "
+widgets,N/A - VK has no Class Descriptions,getpages,Gets a list of application/site pages where the Comments widget or Like widget is installed.,"Returns an object with the following fields: 
+
+count — Total number of pages (without taking into account the count parameter); 
+pages — List of page objects, each containing the following fields: 
+
+id — Page ID in the system. 
+title — Page title (from the page's meta tags or as set by the pageTitle parameter during initialization). 
+description — Short description of the page (from the page's meta tags or as set by the pageDescription parameter during initialization). 
+photo — Object containing a page thumbnail (from the page's meta tags or as set by the pageImage parameter during initialization). 
+url — Absolute URL address of the page. 
+likes — Object containing a count field showing the number of page Likes. Use likes.getList method with the type parameter set to site_page to get a list of users who like the page. 
+comments — Object containing a count field showing the number of page comments within the widget. Use widgets.getComments method to get a list of comments. 
+date — Date when the widgets were invoked on the page for the first time. 
+page_id — Internal ID of an application/site page (if the page_id parameter was used during widget initialization). 
+
+
+"

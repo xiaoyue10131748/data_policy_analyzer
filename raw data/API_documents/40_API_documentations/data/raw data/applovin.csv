@@ -1,0 +1,568 @@
+class_name,class_description,method,method_description,data_type
+com.applovin.sdk.AppLovinAd,This interface represents an ad that has been served by the AppLovin server and should be displayed to the user.,getAdIdNumber(),Represents a unique ID for the current ad.,long
+com.applovin.sdk.AppLovinAd,This interface represents an ad that has been served by the AppLovin server and should be displayed to the user.,getAdValue(java.lang.String key),Get an arbitrary ad value for a given key.,java.lang.String
+com.applovin.sdk.AppLovinAd,This interface represents an ad that has been served by the AppLovin server and should be displayed to the user.,getSize(),Get size of the ad to display.,AppLovinAdSize
+com.applovin.sdk.AppLovinAd,This interface represents an ad that has been served by the AppLovin server and should be displayed to the user.,getType(),Get the ad type of the current ad.,AppLovinAdType
+com.applovin.sdk.AppLovinAd,This interface represents an ad that has been served by the AppLovin server and should be displayed to the user.,getZoneId(),"The zone identifier for the ad, if any.",java.lang.String
+com.applovin.sdk.AppLovinAd,This interface represents an ad that has been served by the AppLovin server and should be displayed to the user.,isVideoAd(),Check whether this is a video ad.,boolean
+com.applovin.sdk.AppLovinAdClickListener,"This interface defines a listener intended to be notified when a user clicks on an ad.
+ 
+ Since all AppLovin ads launch the device browser on click, this effectively notifies you that your app is about to be minimized to the background.",adClicked(AppLovinAd ad),This method is invoked when the ad is clicked.,void
+com.applovin.sdk.AppLovinAdDisplayListener,This interface defines a listener intended to be notified when an ad is shown or hidden to the user.,adDisplayed(AppLovinAd ad),This method is invoked when an ad is displayed inside of the AppLovinAdView or AppLovinInterstitialAdDialog.,void
+com.applovin.sdk.AppLovinAdDisplayListener,This interface defines a listener intended to be notified when an ad is shown or hidden to the user.,adHidden(AppLovinAd ad),This method is invoked when an ad is displayed inside of the AppLovinAdView or AppLovinInterstitialAdDialog.,void
+com.applovin.sdk.AppLovinAdLoadListener,"This interface defines a listener intended to be notified when the SDK loads, or fails to load, an ad over the network.",adReceived(AppLovinAd ad),This method is called when a new ad has been received.,void
+com.applovin.sdk.AppLovinAdLoadListener,"This interface defines a listener intended to be notified when the SDK loads, or fails to load, an ad over the network.",failedToReceiveAd(int errorCode),This method is called when an ad could not be retrieved from the server.,void
+com.applovin.sdk.AppLovinAdRewardListener,"This interface defines a listener intended to be notified when a user watches a rewarded video, and the SDK has received a response from the AppLovin server either validating or rejecting their virtual currency reward.",userDeclinedToViewAd(AppLovinAd ad),"This method will be invoked if the user selected ""no"" when asked if they want to view an ad.",void
+com.applovin.sdk.AppLovinAdRewardListener,"This interface defines a listener intended to be notified when a user watches a rewarded video, and the SDK has received a response from the AppLovin server either validating or rejecting their virtual currency reward.","userOverQuota(AppLovinAd ad,
+             java.util.Map<java.lang.String,java.lang.String> response)",This method will be invoked if the user has already received the maximum allocated rewards for the day.,void
+com.applovin.sdk.AppLovinAdRewardListener,"This interface defines a listener intended to be notified when a user watches a rewarded video, and the SDK has received a response from the AppLovin server either validating or rejecting their virtual currency reward.","userRewardRejected(AppLovinAd ad,
+                  java.util.Map<java.lang.String,java.lang.String> response)",This method will be invoked if the user's reward was detected as fraudulent and not awarded.,void
+com.applovin.sdk.AppLovinAdRewardListener,"This interface defines a listener intended to be notified when a user watches a rewarded video, and the SDK has received a response from the AppLovin server either validating or rejecting their virtual currency reward.","userRewardVerified(AppLovinAd ad,
+                  java.util.Map<java.lang.String,java.lang.String> response)","If you are using reward validation for incentivized videos, this method will be invoked if we contacted AppLovin successfully.",void
+com.applovin.sdk.AppLovinAdRewardListener,"This interface defines a listener intended to be notified when a user watches a rewarded video, and the SDK has received a response from the AppLovin server either validating or rejecting their virtual currency reward.","validationRequestFailed(AppLovinAd ad,
+                       int errorCode)","This method will be invoked if we were unable to contact AppLovin, therefore no ping will be heading to your server.",void
+com.applovin.sdk.AppLovinAdService,"This class is responsible for loading and displaying advertisements.
+ 
+ An instance of this class can be obtained from an AppLovinSdk instance via getAdService().",addAdUpdateListener(AppLovinAdUpdateListener adListener),"Deprecated. 
+Listening to ad updates has been deprecated. The AppLovinAdView class for banners, leaderboards, and mrecs no longer automatically refresh contents by itself.
+ You must explicitly call AppLovinAdView.loadNextAd() or AppLovinAdView.renderAd(AppLovinAd). This method will be removed in a future SDK version.
+",void
+com.applovin.sdk.AppLovinAdService,"This class is responsible for loading and displaying advertisements.
+ 
+ An instance of this class can be obtained from an AppLovinSdk instance via getAdService().","addAdUpdateListener(AppLovinAdUpdateListener adListener,
+                   AppLovinAdSize adSize)","Deprecated. 
+Listening to ad updates has been deprecated. The AppLovinAdView class for banners, leaderboards, and mrecs no longer automatically refresh contents by itself.
+ You must explicitly call AppLovinAdView.loadNextAd() or AppLovinAdView.renderAd(AppLovinAd). This method will be removed in a future SDK version.
+",void
+com.applovin.sdk.AppLovinAdService,"This class is responsible for loading and displaying advertisements.
+ 
+ An instance of this class can be obtained from an AppLovinSdk instance via getAdService().",getBidToken(),Generates a token used for advanced header bidding.,java.lang.String
+com.applovin.sdk.AppLovinAdService,"This class is responsible for loading and displaying advertisements.
+ 
+ An instance of this class can be obtained from an AppLovinSdk instance via getAdService().",hasPreloadedAd(AppLovinAdSize adSize),"Deprecated. 
+Manually preloading ads in the background has been deprecated and will be removed in a future SDK version. Please use loadNextAd(AppLovinAdSize, AppLovinAdLoadListener) to load ads to display.
+",boolean
+com.applovin.sdk.AppLovinAdService,"This class is responsible for loading and displaying advertisements.
+ 
+ An instance of this class can be obtained from an AppLovinSdk instance via getAdService().",hasPreloadedAdForZoneId(java.lang.String zoneId),"Deprecated. 
+Manually preloading ads in the background has been deprecated and will be removed in a future SDK version. Please use loadNextAdForZoneId(String, AppLovinAdLoadListener) to load ads to display.
+",boolean
+com.applovin.sdk.AppLovinAdService,"This class is responsible for loading and displaying advertisements.
+ 
+ An instance of this class can be obtained from an AppLovinSdk instance via getAdService().","loadNextAd(AppLovinAdSize adSize,
+          AppLovinAdLoadListener callback)","Fetch a new ad, of a given size, notifying a supplied listener on completion.",void
+com.applovin.sdk.AppLovinAdService,"This class is responsible for loading and displaying advertisements.
+ 
+ An instance of this class can be obtained from an AppLovinSdk instance via getAdService().","loadNextAdForAdToken(java.lang.String adToken,
+                    AppLovinAdLoadListener callback)",Fetch a new ad for the given ad token.,void
+com.applovin.sdk.AppLovinAdService,"This class is responsible for loading and displaying advertisements.
+ 
+ An instance of this class can be obtained from an AppLovinSdk instance via getAdService().","loadNextAdForZoneId(java.lang.String zoneId,
+                   AppLovinAdLoadListener callback)","Fetch a new ad, for a given zone, notifying a supplied listener on completion.",void
+com.applovin.sdk.AppLovinAdService,"This class is responsible for loading and displaying advertisements.
+ 
+ An instance of this class can be obtained from an AppLovinSdk instance via getAdService().","loadNextAdForZoneIds(java.util.List<java.lang.String> zoneIds,
+                    AppLovinAdLoadListener callback)",Fetch a new ad for any of the provided zone ids.,void
+com.applovin.sdk.AppLovinAdService,"This class is responsible for loading and displaying advertisements.
+ 
+ An instance of this class can be obtained from an AppLovinSdk instance via getAdService().",preloadAd(AppLovinAdSize adSize),"Deprecated. 
+Manually preloading ads in the background has been deprecated and will be removed in a future SDK version. Please use loadNextAd(AppLovinAdSize, AppLovinAdLoadListener) to load ads to display.
+",void
+com.applovin.sdk.AppLovinAdService,"This class is responsible for loading and displaying advertisements.
+ 
+ An instance of this class can be obtained from an AppLovinSdk instance via getAdService().",preloadAdForZoneId(java.lang.String zoneId),"Deprecated. 
+Manually preloading ads in the background has been deprecated and will be removed in a future SDK version. Please use loadNextAdForZoneId(String, AppLovinAdLoadListener) to load ads to display.
+",void
+com.applovin.sdk.AppLovinAdService,"This class is responsible for loading and displaying advertisements.
+ 
+ An instance of this class can be obtained from an AppLovinSdk instance via getAdService().","removeAdUpdateListener(AppLovinAdUpdateListener adListener,
+                      AppLovinAdSize adSize)","Deprecated. 
+Listening to ad updates has been deprecated. The AppLovinAdView class for banners, leaderboards, and mrecs no longer automatically refresh contents by itself.
+ You must explicitly call AppLovinAdView.loadNextAd() or AppLovinAdView.renderAd(AppLovinAd). This method will be removed in a future SDK version.
+",void
+com.applovin.sdk.AppLovinAdSize,"This class defines a size of an ad to be displayed. It is recommended to use default sizes that are declared in this class (BANNER, MREC, INTERSTITIAL)",allSizes(),Obtain a set of all available Ad Sizes.,static java.util.Set<AppLovinAdSize>
+com.applovin.sdk.AppLovinAdSize,"This class defines a size of an ad to be displayed. It is recommended to use default sizes that are declared in this class (BANNER, MREC, INTERSTITIAL)",fromString(java.lang.String sizeName),Create a size object from a string representation,static AppLovinAdSize
+com.applovin.sdk.AppLovinAdSize,"This class defines a size of an ad to be displayed. It is recommended to use default sizes that are declared in this class (BANNER, MREC, INTERSTITIAL)",getHeight(),Get requested ad height,int
+com.applovin.sdk.AppLovinAdSize,"This class defines a size of an ad to be displayed. It is recommended to use default sizes that are declared in this class (BANNER, MREC, INTERSTITIAL)",getLabel(),Get a name of the ad size,java.lang.String
+com.applovin.sdk.AppLovinAdSize,"This class defines a size of an ad to be displayed. It is recommended to use default sizes that are declared in this class (BANNER, MREC, INTERSTITIAL)",getWidth(),Get requested ad width,int
+com.applovin.sdk.AppLovinAdSize,"This class defines a size of an ad to be displayed. It is recommended to use default sizes that are declared in this class (BANNER, MREC, INTERSTITIAL)",toString(),Simply calls getLabel().,java.lang.String
+com.applovin.sdk.AppLovinAdType,This class defines a categorization of the behavior of an ad.,allTypes(),Obtain a set of all available Ad Types.,static java.util.Set<AppLovinAdType>
+com.applovin.sdk.AppLovinAdType,This class defines a categorization of the behavior of an ad.,fromString(java.lang.String type),N/A,static AppLovinAdType
+com.applovin.sdk.AppLovinAdType,This class defines a categorization of the behavior of an ad.,getLabel(),Generate a String which contains the name of this ad type.,java.lang.String
+com.applovin.sdk.AppLovinAdType,This class defines a categorization of the behavior of an ad.,toString(),Simply calls getLabel().,java.lang.String
+com.applovin.sdk.AppLovinAdVideoPlaybackListener,"This interface defines a listener to ad video playback state. All registered listeners will be notified when a video ad changes to a relevant state. If a given ad is not a video ad, no video callbacks will be triggered.",videoPlaybackBegan(AppLovinAd ad),Triggered when a video begins playing in a video advertisement.,void
+com.applovin.sdk.AppLovinAdVideoPlaybackListener,"This interface defines a listener to ad video playback state. All registered listeners will be notified when a video ad changes to a relevant state. If a given ad is not a video ad, no video callbacks will be triggered.","videoPlaybackEnded(AppLovinAd ad,
+                  double percentViewed,
+                  boolean fullyWatched)",Triggered when a video stops playing in a video advertisement.,void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,destroy(),Destroy current ad.,void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,getAdViewController(),"Deprecated. 
+- This is for internal use only and will be removed in a later SDK version.
+",AdViewController
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,getSize(),Get current ad view size.,AppLovinAdSize
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,getZoneId(),"The zone identifier this AppLovinAdView was initialized with and is loading ads for, if any.",java.lang.String
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,isAdReadyToDisplay(),"Deprecated. 
+Checking whether an ad is ready for display has been deprecated and will be removed in a future SDK version. Please use one of the loadNextAd(...) methods in AppLovinAdService or renderAd(AppLovinAd) to display an ad.
+",boolean
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,loadNextAd(),Loads AND displays an ad into the view.,void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,onAttachedToWindow(),This should only be called by the Android system and not the developer.,protected void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,onDetachedFromWindow(),This should only be called by the Android system and not the developer.,protected void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,pause(),Pause all animations and clear current ad,void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,renderAd(AppLovinAd ad),Render specified ad.,void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,"renderAd(AppLovinAd ad,
+        java.lang.String placement)","Deprecated. 
+Placements have been deprecated and will be removed in a future SDK version. Please configure zones from the UI and use them instead.
+",void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,resume(),Resume all animations and the current ad,void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,setAdClickListener(AppLovinAdClickListener callback),Set a callback that would be notified of ad click events.,void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,setAdDisplayListener(AppLovinAdDisplayListener callback),Set a callback that would be notified of ad display events.,void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,setAdLoadListener(AppLovinAdLoadListener callback),Set a callback that would be notified of ad loading events.,void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,setAdViewEventListener(AppLovinAdViewEventListener callback),Set a callback that would be notified of events specific to this ad view.,void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,setAutoDestroy(boolean isAutoDestroy),"Deprecated. 
+isAutoDestroy is now by default false. This method will be removed in a future SDK version.
+",void
+com.applovin.adview.AppLovinAdView,This class provides a subclass of android.view.View which is used to render AppLovin advertisements.,toString(),N/A,java.lang.String
+com.applovin.adview.AppLovinAdViewDisplayErrorCode,"This enum contains possible error codes that should be returned when the ad view fails to display an ad.
+ 
+ Created by thomasso on 7/5/17.",valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static AppLovinAdViewDisplayErrorCode
+com.applovin.adview.AppLovinAdViewDisplayErrorCode,"This enum contains possible error codes that should be returned when the ad view fails to display an ad.
+ 
+ Created by thomasso on 7/5/17.",values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AppLovinAdViewDisplayErrorCode[]
+com.applovin.adview.AppLovinAdViewEventListener,"This interface defines a listener for ad view events.
+ 
+ Created by thomasso on 6/25/17.
+ ","adClosedFullscreen(AppLovinAd ad,
+                  AppLovinAdView adView)",This method is invoked after the fullscreen content is dismissed.,void
+com.applovin.adview.AppLovinAdViewEventListener,"This interface defines a listener for ad view events.
+ 
+ Created by thomasso on 6/25/17.
+ ","adFailedToDisplay(AppLovinAd ad,
+                 AppLovinAdView adView,
+                 AppLovinAdViewDisplayErrorCode code)",This method is invoked if the ad view fails to display an ad.,void
+com.applovin.adview.AppLovinAdViewEventListener,"This interface defines a listener for ad view events.
+ 
+ Created by thomasso on 6/25/17.
+ ","adLeftApplication(AppLovinAd ad,
+                 AppLovinAdView adView)",This method is invoked before the user is taken out of the application after a click.,void
+com.applovin.adview.AppLovinAdViewEventListener,"This interface defines a listener for ad view events.
+ 
+ Created by thomasso on 6/25/17.
+ ","adOpenedFullscreen(AppLovinAd ad,
+                  AppLovinAdView adView)",This method is invoked after the ad view presents fullscreen content.,void
+com.applovin.communicator.AppLovinCommunicator,"Created by Thomas So on July 22 2019
+ 
+ The communicator SDK acts as a hub for all SDK pub/sub communication.",a(CoreSdk sdk),N/A,void
+com.applovin.communicator.AppLovinCommunicator,"Created by Thomas So on July 22 2019
+ 
+ The communicator SDK acts as a hub for all SDK pub/sub communication.",getInstance(android.content.Context context),Returns the default communicator instance.,static AppLovinCommunicator
+com.applovin.communicator.AppLovinCommunicator,"Created by Thomas So on July 22 2019
+ 
+ The communicator SDK acts as a hub for all SDK pub/sub communication.",getMessagingService(),The messaging service for the communicator SDK responsible for relaying messages within the system.,AppLovinCommunicatorMessagingService
+com.applovin.communicator.AppLovinCommunicator,"Created by Thomas So on July 22 2019
+ 
+ The communicator SDK acts as a hub for all SDK pub/sub communication.","subscribe(AppLovinCommunicatorSubscriber subscriber,
+         java.util.List<java.lang.String> topics)",Add the provided AppLovinCommunicatorSubscriber to the set of subscribers for the given topics.,void
+com.applovin.communicator.AppLovinCommunicator,"Created by Thomas So on July 22 2019
+ 
+ The communicator SDK acts as a hub for all SDK pub/sub communication.","subscribe(AppLovinCommunicatorSubscriber subscriber,
+         java.lang.String topic)",Add the provided AppLovinCommunicatorSubscriber to the set of subscribers for a given topic.,void
+com.applovin.communicator.AppLovinCommunicator,"Created by Thomas So on July 22 2019
+ 
+ The communicator SDK acts as a hub for all SDK pub/sub communication.",toString(),N/A,java.lang.String
+com.applovin.communicator.AppLovinCommunicator,"Created by Thomas So on July 22 2019
+ 
+ The communicator SDK acts as a hub for all SDK pub/sub communication.","unsubscribe(AppLovinCommunicatorSubscriber subscriber,
+           java.util.List<java.lang.String> topics)",Remove the provided AppLovinCommunicatorSubscriber from the set of subscribers for the given topics.,void
+com.applovin.communicator.AppLovinCommunicator,"Created by Thomas So on July 22 2019
+ 
+ The communicator SDK acts as a hub for all SDK pub/sub communication.","unsubscribe(AppLovinCommunicatorSubscriber subscriber,
+           java.lang.String topic)",Remove the provided AppLovinCommunicatorSubscriber from the set of subscribers for a given topic.,void
+com.applovin.communicator.AppLovinCommunicatorEntity,Created by Thomas So on July 22 2019,getCommunicatorId(),Unique identifier representing the entity (publisher or subscriber) in the AppLovin pub/sub system.,java.lang.String
+com.applovin.communicator.AppLovinCommunicatorMessage,"Created by Thomas So on July 22 2019
+ 
+ Class representing messages passed in the Communicator SDK.",getMessageData(),Get the raw data of the message.,android.os.Bundle
+com.applovin.communicator.AppLovinCommunicatorMessage,"Created by Thomas So on July 22 2019
+ 
+ Class representing messages passed in the Communicator SDK.",getPublisherId(),Get the id of the publisher of the message.,java.lang.String
+com.applovin.communicator.AppLovinCommunicatorMessage,"Created by Thomas So on July 22 2019
+ 
+ Class representing messages passed in the Communicator SDK.",getTopic(),Get the topic of the message.,java.lang.String
+com.applovin.communicator.AppLovinCommunicatorMessagingService,Created by Thomas So on July 22 2019,publish(AppLovinCommunicatorMessage message),Publish the given message to the pub/sub system.,void
+com.applovin.communicator.AppLovinCommunicatorPublisher,"Created by Thomas So on July 22 2019
+ 
+ Interface representing a publisher in the AppLovin pub/sub system.",N/A,N/A,N/A
+com.applovin.communicator.AppLovinCommunicatorSubscriber,"Created by Thomas So on July 22 2019
+ 
+ Interface that subscribers in the AppLovin pub-sub system should conform to in order to receive messages from subscribed topics.",onMessageReceived(AppLovinCommunicatorMessage message),Called when a message of a topic the subscriber is interested in has been received.,void
+com.applovin.sdk.AppLovinErrorCodes,This class contains a set of common integer error codes seen in the SDK.,N/A,N/A,N/A
+com.applovin.sdk.AppLovinEventParameters,"Class containing constants for use with AppLovinEventService.trackEvent(String, Map).",N/A,N/A,N/A
+com.applovin.sdk.AppLovinEventService,Service used for tracking various analytical events.,getSuperProperties(),Returns a map representing the currently set super properties that are passed up on events.,"java.util.Map<java.lang.String,java.lang.Object>"
+com.applovin.sdk.AppLovinEventService,Service used for tracking various analytical events.,"setSuperProperty(java.lang.Object superProperty,
+                java.lang.String key)",Set a super property to be recorded with all future events.,void
+com.applovin.sdk.AppLovinEventService,Service used for tracking various analytical events.,"trackCheckout(java.lang.String transactionId,
+             java.util.Map<java.lang.String,java.lang.String> parameters)",Track a checkout / standard purchase.,void
+com.applovin.sdk.AppLovinEventService,Service used for tracking various analytical events.,trackEvent(java.lang.String eventName),Track an event without additional data.,void
+com.applovin.sdk.AppLovinEventService,Service used for tracking various analytical events.,"trackEvent(java.lang.String eventName,
+          java.util.Map<java.lang.String,java.lang.String> parameters)",Track an event with additional data.,void
+com.applovin.sdk.AppLovinEventService,Service used for tracking various analytical events.,"trackInAppPurchase(android.content.Intent purchaseIntent,
+                  java.util.Map<java.lang.String,java.lang.String> parameters)",Track an in app purchase.,void
+com.applovin.sdk.AppLovinEventTypes,"Class containing constants for use with AppLovinEventService.trackEvent(String, Map).",N/A,N/A,N/A
+com.applovin.adview.AppLovinFullscreenActivity,"Created by Thomas So on November 14 2019
+ 
+ AppLovin's new state-of-the-art Activity for displaying various types of fullscreen ads.
+ Presenters for a few of the currently available ads include:
+ 
+ 1. FullscreenVideoAdPresenter
+ 2. FullscreenGraphicAdPresenter
+ 3. FullscreenWebAdPresenter",dismiss(),N/A,void
+com.applovin.adview.AppLovinFullscreenActivity,"Created by Thomas So on November 14 2019
+ 
+ AppLovin's new state-of-the-art Activity for displaying various types of fullscreen ads.
+ Presenters for a few of the currently available ads include:
+ 
+ 1. FullscreenVideoAdPresenter
+ 2. FullscreenGraphicAdPresenter
+ 3. FullscreenWebAdPresenter",onBackPressed(),N/A,void
+com.applovin.adview.AppLovinFullscreenActivity,"Created by Thomas So on November 14 2019
+ 
+ AppLovin's new state-of-the-art Activity for displaying various types of fullscreen ads.
+ Presenters for a few of the currently available ads include:
+ 
+ 1. FullscreenVideoAdPresenter
+ 2. FullscreenGraphicAdPresenter
+ 3. FullscreenWebAdPresenter",onConfigurationChanged(android.content.res.Configuration newConfig),N/A,void
+com.applovin.adview.AppLovinFullscreenActivity,"Created by Thomas So on November 14 2019
+ 
+ AppLovin's new state-of-the-art Activity for displaying various types of fullscreen ads.
+ Presenters for a few of the currently available ads include:
+ 
+ 1. FullscreenVideoAdPresenter
+ 2. FullscreenGraphicAdPresenter
+ 3. FullscreenWebAdPresenter",onCreate(android.os.Bundle savedInstanceState),N/A,protected void
+com.applovin.adview.AppLovinFullscreenActivity,"Created by Thomas So on November 14 2019
+ 
+ AppLovin's new state-of-the-art Activity for displaying various types of fullscreen ads.
+ Presenters for a few of the currently available ads include:
+ 
+ 1. FullscreenVideoAdPresenter
+ 2. FullscreenGraphicAdPresenter
+ 3. FullscreenWebAdPresenter",onDestroy(),N/A,protected void
+com.applovin.adview.AppLovinFullscreenActivity,"Created by Thomas So on November 14 2019
+ 
+ AppLovin's new state-of-the-art Activity for displaying various types of fullscreen ads.
+ Presenters for a few of the currently available ads include:
+ 
+ 1. FullscreenVideoAdPresenter
+ 2. FullscreenGraphicAdPresenter
+ 3. FullscreenWebAdPresenter","onKeyDown(int keyCode,
+         android.view.KeyEvent event)",N/A,boolean
+com.applovin.adview.AppLovinFullscreenActivity,"Created by Thomas So on November 14 2019
+ 
+ AppLovin's new state-of-the-art Activity for displaying various types of fullscreen ads.
+ Presenters for a few of the currently available ads include:
+ 
+ 1. FullscreenVideoAdPresenter
+ 2. FullscreenGraphicAdPresenter
+ 3. FullscreenWebAdPresenter",onLowMemory(),N/A,void
+com.applovin.adview.AppLovinFullscreenActivity,"Created by Thomas So on November 14 2019
+ 
+ AppLovin's new state-of-the-art Activity for displaying various types of fullscreen ads.
+ Presenters for a few of the currently available ads include:
+ 
+ 1. FullscreenVideoAdPresenter
+ 2. FullscreenGraphicAdPresenter
+ 3. FullscreenWebAdPresenter",onPause(),N/A,protected void
+com.applovin.adview.AppLovinFullscreenActivity,"Created by Thomas So on November 14 2019
+ 
+ AppLovin's new state-of-the-art Activity for displaying various types of fullscreen ads.
+ Presenters for a few of the currently available ads include:
+ 
+ 1. FullscreenVideoAdPresenter
+ 2. FullscreenGraphicAdPresenter
+ 3. FullscreenWebAdPresenter",onResume(),N/A,protected void
+com.applovin.adview.AppLovinFullscreenActivity,"Created by Thomas So on November 14 2019
+ 
+ AppLovin's new state-of-the-art Activity for displaying various types of fullscreen ads.
+ Presenters for a few of the currently available ads include:
+ 
+ 1. FullscreenVideoAdPresenter
+ 2. FullscreenGraphicAdPresenter
+ 3. FullscreenWebAdPresenter",onStop(),N/A,protected void
+com.applovin.adview.AppLovinFullscreenActivity,"Created by Thomas So on November 14 2019
+ 
+ AppLovin's new state-of-the-art Activity for displaying various types of fullscreen ads.
+ Presenters for a few of the currently available ads include:
+ 
+ 1. FullscreenVideoAdPresenter
+ 2. FullscreenGraphicAdPresenter
+ 3. FullscreenWebAdPresenter",onWindowFocusChanged(boolean hasFocus),N/A,void
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,create(AppLovinSdk sdk),Create a new instance of AppLovinIncentivizedInterstitial.,static AppLovinIncentivizedInterstitial
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,create(android.content.Context context),Create a new instance of AppLovinIncentivizedInterstitial.,static AppLovinIncentivizedInterstitial
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,"create(java.lang.String zoneId,
+      AppLovinSdk sdk)",Create a new instance of AppLovinIncentivizedInterstitial.,static AppLovinIncentivizedInterstitial
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,"createIncentivizedAdController(java.lang.String zoneId,
+                              AppLovinSdk sdk)",Create a new controller that would load and render this ad.,protected IncentivizedAdController
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,dismiss(),"Deprecated. 
+Explicitly dismissing an ad has been deprecated and will be removed in a future SDK version.
+",void
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,getUserIdentifier(),"Deprecated. 
+Please use AppLovinSdk.getUserIdentifier() instead to properly identify your users in our system. This property is now deprecated and will be removed in a future SDK version.
+",java.lang.String
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,getZoneId(),"The zone identifier this incentivized ad was initialized with and is loading ads for, if any.",java.lang.String
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,isAdReadyToDisplay(),Check if an ad is currently ready on this object.,boolean
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,preload(AppLovinAdLoadListener adLoadListener),Pre-load an incentivized interstitial.,void
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,setUserIdentifier(java.lang.String userIdentifier),"Deprecated. 
+Please use AppLovinSdk.setUserIdentifier(String) instead to properly identify your users in our system. This property is now deprecated and will be removed in a future SDK version.
+",void
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,"show(AppLovinAd ad,
+    android.content.Context context,
+    AppLovinAdRewardListener adRewardListener,
+    AppLovinAdVideoPlaybackListener videoPlaybackListener,
+    AppLovinAdDisplayListener adDisplayListener,
+    AppLovinAdClickListener adClickListener)",Show a pre-loaded incentivized interstitial.,void
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,show(android.content.Context context),Show a pre-loaded incentivized interstitial.,void
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,"show(android.content.Context context,
+    AppLovinAdRewardListener adRewardListener)",Show a pre-loaded incentivized interstitial.,void
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,"show(android.content.Context context,
+    AppLovinAdRewardListener adRewardListener,
+    AppLovinAdVideoPlaybackListener videoPlaybackListener)",Show a pre-loaded incentivized interstitial.,void
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,"show(android.content.Context context,
+    AppLovinAdRewardListener adRewardListener,
+    AppLovinAdVideoPlaybackListener videoPlaybackListener,
+    AppLovinAdDisplayListener adDisplayListener)",Show a pre-loaded incentivized interstitial.,void
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,"show(android.content.Context context,
+    AppLovinAdRewardListener adRewardListener,
+    AppLovinAdVideoPlaybackListener videoPlaybackListener,
+    AppLovinAdDisplayListener adDisplayListener,
+    AppLovinAdClickListener adClickListener)",Show a pre-loaded incentivized interstitial.,void
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,"show(android.content.Context context,
+    java.lang.String placement,
+    AppLovinAdRewardListener adRewardListener,
+    AppLovinAdVideoPlaybackListener videoPlaybackListener,
+    AppLovinAdDisplayListener adDisplayListener,
+    AppLovinAdClickListener adClickListener)","Deprecated. 
+Placements have been deprecated and will be removed in a future SDK version. Please configure zones from the UI and use them instead.
+",void
+com.applovin.adview.AppLovinIncentivizedInterstitial,This class implements rewarded videos..,toString(),N/A,java.lang.String
+com.applovin.adview.AppLovinInterstitialAd,This class represents an interstitial ad that is rendered on top of the current activity.,"create(AppLovinSdk sdk,
+      android.content.Context context)",Create a new interstitial dialog that can be shown to the user.,static AppLovinInterstitialAdDialog
+com.applovin.adview.AppLovinInterstitialAd,This class represents an interstitial ad that is rendered on top of the current activity.,isAdReadyToDisplay(android.content.Context context),"Deprecated. 
+Checking whether an ad is ready for display has been deprecated and will be removed in a future SDK version. Please use show(Context), or create an instance of AppLovinInterstitialAdDialog and use AppLovinInterstitialAdDialog.show() or AppLovinInterstitialAdDialog.showAndRender(AppLovinAd) to display an ad.
+",static boolean
+com.applovin.adview.AppLovinInterstitialAd,This class represents an interstitial ad that is rendered on top of the current activity.,show(android.content.Context context),Show a new interstitial ad.,static void
+com.applovin.adview.AppLovinInterstitialAd,This class represents an interstitial ad that is rendered on top of the current activity.,toString(),N/A,java.lang.String
+com.applovin.adview.AppLovinInterstitialAdDialog,This interface defines an AppLovin interstitial dialog. The interface can be used for finer control of interstitial flow.,dismiss(),"Deprecated. 
+Explicitly dismissing an ad has been deprecated and will be removed in a future SDK version.
+",void
+com.applovin.adview.AppLovinInterstitialAdDialog,This interface defines an AppLovin interstitial dialog. The interface can be used for finer control of interstitial flow.,isAdReadyToDisplay(),Check if an ad is currently preloaded and ready to be displayed.,boolean
+com.applovin.adview.AppLovinInterstitialAdDialog,This interface defines an AppLovin interstitial dialog. The interface can be used for finer control of interstitial flow.,setAdClickListener(AppLovinAdClickListener callback),"Set a callback that will be notified of ad click events, which are generated whenever the user clicks on the ad.",void
+com.applovin.adview.AppLovinInterstitialAdDialog,This interface defines an AppLovin interstitial dialog. The interface can be used for finer control of interstitial flow.,setAdDisplayListener(AppLovinAdDisplayListener callback),Set a callback that will be notified of ad display events.,void
+com.applovin.adview.AppLovinInterstitialAdDialog,This interface defines an AppLovin interstitial dialog. The interface can be used for finer control of interstitial flow.,setAdLoadListener(AppLovinAdLoadListener callback),Set a callback that will be notified of ad loading events.,void
+com.applovin.adview.AppLovinInterstitialAdDialog,This interface defines an AppLovin interstitial dialog. The interface can be used for finer control of interstitial flow.,setAdVideoPlaybackListener(AppLovinAdVideoPlaybackListener callback),"Set a callback that may be notified of video playback events, if and only if the ad contains a video.",void
+com.applovin.adview.AppLovinInterstitialAdDialog,This interface defines an AppLovin interstitial dialog. The interface can be used for finer control of interstitial flow.,show(),Show the interstitial dialog and load the next ad,void
+com.applovin.adview.AppLovinInterstitialAdDialog,This interface defines an AppLovin interstitial dialog. The interface can be used for finer control of interstitial flow.,showAndRender(AppLovinAd ad),Show the interstitial dialog an render specified pre-loaded ad.,void
+com.applovin.sdk.AppLovinMediationProvider,"Created by thomasso on 1/28/18.
+ 
+ A class containing the name of mediation providers.",N/A,N/A,N/A
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,getAdId(),"Retrieve a unique identifier for this ad, which can be provided to AppLovin should you see issues with this particular ad.",long
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,getCaptionText(),Retrieve the caption of the application being advertised.,java.lang.String
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,getCtaText(),Retrieve the call-to-action / button text of the application being advertised.,java.lang.String
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,getDescriptionText(),Retrieve the description of the application being advertised.,java.lang.String
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,getIconUrl(),Retrieve the URL of an image containing the launcher icon of the application being advertised,java.lang.String
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,getImageUrl(),Retrieve the URL of an image containing a promotional image or screenshot of the application being advertised.,java.lang.String
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,getStarRating(),Retrieve the URL of an image containing the current Google Play star rating of the application being advertised.,float
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,getTitle(),Retrieve the title of the application being advertised.,java.lang.String
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,"getVideoEndTrackingUrl(int percentViewed,
+                      boolean firstPlay)",Retrieve the URL which should be fired upon video completion.,java.lang.String
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,getVideoStartTrackingUrl(),Retrieve the URL which should be fired upon video start.,java.lang.String
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,getVideoUrl(),"Retrieve the URL of a promotional video, if this ad contains a video.",java.lang.String
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,getZoneId(),"Deprecated. 
+- Native ads do not have support for zones. This API will be removed in a future SDK release.
+",java.lang.String
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,isImagePrecached(),Check whether or not all image assets for this ad have been precached.,boolean
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,isVideoPrecached(),Check whether or not this ad's video have been precached.,boolean
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,launchClickTarget(android.content.Context context),Handle a click on this native ad by launching the ad's destination.,void
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,trackImpression(),Fires the impression asynchronously.,void
+com.applovin.nativeAds.AppLovinNativeAd,Defines an in-content ad which should be rendered by you into a custom view that matches the look and feel of your application.,trackImpression(AppLovinPostbackListener postbackListener),Fires the impression asynchronously and notifies the provided delegate.,void
+com.applovin.nativeAds.AppLovinNativeAdLoadListener,Defines a listener which will be notified of successful and failed native ad load events.,onNativeAdsFailedToLoad(int errorCode),Invoked when a native ad has failed to load.,void
+com.applovin.nativeAds.AppLovinNativeAdLoadListener,Defines a listener which will be notified of successful and failed native ad load events.,onNativeAdsLoaded(java.util.List<AppLovinNativeAd> nativeAds),Invoked when a new group of native ads has been loaded.,void
+com.applovin.nativeAds.AppLovinNativeAdPrecacheListener,Defines a listener which will be notified when native ad resources are pre-cached.,"onNativeAdImagePrecachingFailed(AppLovinNativeAd ad,
+                               int errorCode)",Invoked if pre-caching image resources fails.,void
+com.applovin.nativeAds.AppLovinNativeAdPrecacheListener,Defines a listener which will be notified when native ad resources are pre-cached.,onNativeAdImagesPrecached(AppLovinNativeAd ad),Invoked when image resources have been successfully pre-cached in a native ad.,void
+com.applovin.nativeAds.AppLovinNativeAdPrecacheListener,Defines a listener which will be notified when native ad resources are pre-cached.,"onNativeAdVideoPrecachingFailed(AppLovinNativeAd ad,
+                               int errorCode)",Invoked if pre-caching video resources fails.,void
+com.applovin.nativeAds.AppLovinNativeAdPrecacheListener,Defines a listener which will be notified when native ad resources are pre-cached.,onNativeAdVideoPreceached(AppLovinNativeAd ad),Invoked when image resources have been successfully pre-cached in a native ad.,void
+com.applovin.nativeAds.AppLovinNativeAdService,Service which allows loading and pre-caching of native ads.,"loadNativeAds(int numAdsToLoad,
+             AppLovinNativeAdLoadListener listener)","Deprecated. 
+Loading multiple native ads has been deprecated and will be removed in a future SDK version. Please use  loadNextAd(com.applovin.nativeAds.AppLovinNativeAdLoadListener) instead.
+",void
+com.applovin.nativeAds.AppLovinNativeAdService,Service which allows loading and pre-caching of native ads.,loadNextAd(AppLovinNativeAdLoadListener callback),Load a native ad asynchronously.,void
+com.applovin.nativeAds.AppLovinNativeAdService,Service which allows loading and pre-caching of native ads.,"precacheResources(AppLovinNativeAd ad,
+                 AppLovinNativeAdPrecacheListener listener)",Pre-cache image and video resources of a native ad.,void
+com.applovin.sdk.AppLovinPostbackListener,Defines a listener which will be notified upon completion of a postback requested via AppLovinPostbackService.,"onPostbackFailure(java.lang.String url,
+                 int errorCode)",Indicates that a postback dispatched to a given URL has failed.,void
+com.applovin.sdk.AppLovinPostbackListener,Defines a listener which will be notified upon completion of a postback requested via AppLovinPostbackService.,onPostbackSuccess(java.lang.String url),Indicates that a postback dispatched to a given URL completed successfully.,void
+com.applovin.sdk.AppLovinPostbackService,"Defines an AppLovin service which can be used to dispatch HTTP GET postbacks to arbitrary URLs.
+ 
+ While we provide this service primarily as a convenience for native ad tracking URLs, you are welcome to use it for any postbacks you need to dispatch. Postbacks dispatched from this service happen in a asynchronous task.","dispatchPostbackAsync(java.lang.String targetUrl,
+                     AppLovinPostbackListener postbackListener)",Dispatch a postback to a given URL.,void
+com.applovin.sdk.AppLovinPrivacySettings,This class contains privacy settings for AppLovin.,hasUserConsent(android.content.Context context),Check if user has provided consent for information sharing.,static boolean
+com.applovin.sdk.AppLovinPrivacySettings,This class contains privacy settings for AppLovin.,isAgeRestrictedUser(android.content.Context context),Check if user is age restricted.,static boolean
+com.applovin.sdk.AppLovinPrivacySettings,This class contains privacy settings for AppLovin.,isDoNotSell(android.content.Context context),Check if the user has opted out of the sale of their personal information.,static boolean
+com.applovin.sdk.AppLovinPrivacySettings,This class contains privacy settings for AppLovin.,"setDoNotSell(boolean doNotSell,
+            android.content.Context context)",Set whether or not user has opted out of the sale of their personal information.,static void
+com.applovin.sdk.AppLovinPrivacySettings,This class contains privacy settings for AppLovin.,"setHasUserConsent(boolean hasUserConsent,
+                 android.content.Context context)",Set whether or not user has provided consent for information sharing.,static void
+com.applovin.sdk.AppLovinPrivacySettings,This class contains privacy settings for AppLovin.,"setIsAgeRestrictedUser(boolean isAgeRestrictedUser,
+                      android.content.Context context)",Mark user as age restricted (i.e.,static void
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,a(),All the AppLovin SDK instances currently in memory.,static java.util.List<AppLovinSdk>
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getAdService(),Get an instance of the AppLovin Ad service.,AppLovinAdService
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getConfiguration(),Get the SDK configuration object provided upon initialization.,AppLovinSdkConfiguration
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getEventService(),Get an instance of the AppLovin event service.,AppLovinEventService
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,"getInstance(AppLovinSdkSettings settings,
+           android.content.Context context)",Get instance of AppLovin SDK that is configured in AndroidManifest.xml.,static AppLovinSdk
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getInstance(android.content.Context context),Get instance of AppLovin SDK that is configured in AndroidManifest.xml.,static AppLovinSdk
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,"getInstance(java.lang.String sdkKey,
+           AppLovinSdkSettings userSettings,
+           android.content.Context context)",Get an instance of AppLovin SDK.,static AppLovinSdk
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getLogger(),"Deprecated. 
+This method is for internal use only and will be removed in a future SDK version.
+",Logger
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getMediationProvider(),"Get the mediation provider that was last set using setMediationProvider(String), or null if none was set.",java.lang.String
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getNativeAdService(),Get an instance of the AppLovin native ad service.,AppLovinNativeAdService
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getPostbackService(),Get an instance of the AppLovin postback service.,AppLovinPostbackService
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getSdkKey(),Get client SDK key.,java.lang.String
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getSettings(),Get SDK settings provided on initialization,AppLovinSdkSettings
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getUserIdentifier(),An identifier for the current user.,java.lang.String
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getUserService(),Get an instance of the AppLovin user service object for performing user-related tasks.,AppLovinUserService
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,getVariableService(),Get an instance of the AppLovin variable service.,AppLovinVariableService
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,hasCriticalErrors(),Check if SDK has a critical error prior to initialization.,boolean
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,initializeSdk(),Initialize the SDK,void
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,initializeSdk(AppLovinSdk.SdkInitializationListener listener),Initialize the SDK with a given listener.,void
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,initializeSdk(android.content.Context context),Initialize the default version of the SDK.,static void
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,"initializeSdk(android.content.Context context,
+             AppLovinSdk.SdkInitializationListener listener)",Initialize the default version of the SDK.,static void
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,isEnabled(),Check if SDK is enabled.,boolean
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,setMediationProvider(java.lang.String mediationProvider),"Set mediation provider using one of the provided strings above specified by AppLovinMediationProvider, or your own if not defined.",void
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,setPluginVersion(java.lang.String version),Set Plugin version.,void
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,setUserIdentifier(java.lang.String userIdentifier),Set an identifier for the current user.,void
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,showMediationDebugger(),Present the mediation debugger UI.,void
+com.applovin.sdk.AppLovinSdk,This is the base class for AppLovin SDK.,toString(),N/A,java.lang.String
+com.applovin.sdk.AppLovinSdk.SdkInitializationListener,Listener interface to be used with AppLovinSdk.initializeSdk(SdkInitializationListener),onSdkInitialized(AppLovinSdkConfiguration config),N/A,void
+com.applovin.sdk.AppLovinSdkConfiguration,"Created by Thomas So on October 02 2018
+ 
+ Object containing various flags related to the SDK configuration.",getConsentDialogState(),Get the consent dialog state for this user.,AppLovinSdkConfiguration.ConsentDialogState
+com.applovin.sdk.AppLovinSdkConfiguration.ConsentDialogState,"This enum represents whether or not the consent dialog should be shown for this user.
+ The state where no such determination could be made is represented by UNKNOWN.",valueOf(java.lang.String name),Returns the enum constant of this type with the specified name.,static AppLovinSdkConfiguration.ConsentDialogState
+com.applovin.sdk.AppLovinSdkConfiguration.ConsentDialogState,"This enum represents whether or not the consent dialog should be shown for this user.
+ The state where no such determination could be made is represented by UNKNOWN.",values(),"Returns an array containing the constants of this enum type, in
+the order they are declared.",static AppLovinSdkConfiguration.ConsentDialogState[]
+com.applovin.sdk.AppLovinSdkSettings,This class contains settings for AppLovin SDK.,getBannerAdRefreshSeconds(),"Deprecated. 
+Manually setting of banner ad refresh interval has been deprecated as automatic banner refresh has been disabled. This method will be removed in a future SDK version.
+",long
+com.applovin.sdk.AppLovinSdkSettings,This class contains settings for AppLovin SDK.,getTestDeviceAdvertisingIds(),Get the list of advertising identifiers that will receive test ads.,java.util.List<java.lang.String>
+com.applovin.sdk.AppLovinSdkSettings,This class contains settings for AppLovin SDK.,isMuted(),Whether video ads begin in a muted state or not.,boolean
+com.applovin.sdk.AppLovinSdkSettings,This class contains settings for AppLovin SDK.,isVerboseLoggingEnabled(),Check if verbose logging is enabled for the AppLovin SDK.,boolean
+com.applovin.sdk.AppLovinSdkSettings,This class contains settings for AppLovin SDK.,setBannerAdRefreshSeconds(long adRefreshSeconds),"Deprecated. 
+Manually setting of banner ad refresh interval has been deprecated as automatic banner refresh has been disabled. This method will be removed in a future SDK version.
+",void
+com.applovin.sdk.AppLovinSdkSettings,This class contains settings for AppLovin SDK.,setMuted(boolean muted),Set whether to begin video ads in a muted state or not.,void
+com.applovin.sdk.AppLovinSdkSettings,This class contains settings for AppLovin SDK.,setTestDeviceAdvertisingIds(java.util.List<java.lang.String> testDeviceAdvertisingIds),"Enable devices to receive test ads, by passing in the advertising identifier (GAID) of each test device.",void
+com.applovin.sdk.AppLovinSdkSettings,This class contains settings for AppLovin SDK.,setVerboseLogging(boolean isVerboseLoggingEnabled),Toggle verbose logging of AppLovin SDK.,void
+com.applovin.sdk.AppLovinSdkSettings,This class contains settings for AppLovin SDK.,toString(),N/A,java.lang.String
+com.applovin.sdk.AppLovinUserService,"Created by Thomas So on October 02 2018
+ 
+ Service object for performing user-related tasks.","showConsentDialog(android.app.Activity parentActivity,
+                 AppLovinUserService.OnConsentDialogDismissListener listener)",Show the user consent dialog to the user using one from AppLovin's SDK.,void
+com.applovin.sdk.AppLovinUserService.OnConsentDialogDismissListener,Interface used to allow the presented of the consent dialog to run some code when the dialog is dismissed.,onDismiss(),This method will be invoked when the consent dialog is dismissed.,void
+com.applovin.sdk.AppLovinVariableService,"Created by Thomas So on October 06 2018
+ 
+ This service allows for retrieval of variables pre-defined on AppLovin's dashboard.",getBoolean(java.lang.String name),"Returns the variable value associated with the given key, or false if
+ no mapping of the desired type exists for the given key.",boolean
+com.applovin.sdk.AppLovinVariableService,"Created by Thomas So on October 06 2018
+ 
+ This service allows for retrieval of variables pre-defined on AppLovin's dashboard.","getBoolean(java.lang.String name,
+          boolean defaultValue)","Returns the variable value associated with the given key, or the specified default value if
+ no mapping of the desired type exists for the given key.",boolean
+com.applovin.sdk.AppLovinVariableService,"Created by Thomas So on October 06 2018
+ 
+ This service allows for retrieval of variables pre-defined on AppLovin's dashboard.",getString(java.lang.String name),"Returns the variable value associated with the given key, or null if
+ no mapping of the desired type exists for the given key.",java.lang.String
+com.applovin.sdk.AppLovinVariableService,"Created by Thomas So on October 06 2018
+ 
+ This service allows for retrieval of variables pre-defined on AppLovin's dashboard.","getString(java.lang.String name,
+         java.lang.String defaultValue)","Returns the variable value associated with the given key, or the specified default value if
+ no mapping of the desired type exists for the given key.",java.lang.String
+com.applovin.sdk.AppLovinVariableService,"Created by Thomas So on October 06 2018
+ 
+ This service allows for retrieval of variables pre-defined on AppLovin's dashboard.",loadVariables(),Explicitly retrieve the latest variables to be returned via the listener.,void
+com.applovin.sdk.AppLovinVariableService,"Created by Thomas So on October 06 2018
+ 
+ This service allows for retrieval of variables pre-defined on AppLovin's dashboard.",setOnVariablesUpdateListener(AppLovinVariableService.OnVariablesUpdateListener listener),Register a callback to be invoked when the latest variables are retrieved from the server.,void
+com.applovin.sdk.AppLovinVariableService.OnVariablesUpdateListener,Interface definition for a callback to be invoked when latest variables are retrieved from the server.,onVariablesUpdate(android.os.Bundle variables),Called when new variables are retrieved.,void
+com.applovin.mediation.MaxAd,This interface represents an ad that has been served by AppLovin's mediation server and should be displayed to the user.,getAdUnitId(),The ad unit id for which this ad was loaded.,java.lang.String
+com.applovin.mediation.MaxAd,This interface represents an ad that has been served by AppLovin's mediation server and should be displayed to the user.,getFormat(),Get format of this ad.,MaxAdFormat
+com.applovin.mediation.MaxAd,This interface represents an ad that has been served by AppLovin's mediation server and should be displayed to the user.,getNetworkName(),The ad network for which this ad was loaded from.,java.lang.String
+com.applovin.mediation.MaxAdFormat,This class defines a format of an ad.,getLabel(),N/A,java.lang.String
+com.applovin.mediation.MaxAdFormat,This class defines a format of an ad.,toString(),N/A,java.lang.String
+com.applovin.mediation.MaxAdListener,This interface defines a listener intended to be notified about ad events.,onAdClicked(MaxAd ad),This method is invoked when the ad is clicked.,void
+com.applovin.mediation.MaxAdListener,This interface defines a listener intended to be notified about ad events.,onAdDisplayed(MaxAd ad),This method is invoked when an ad is displayed.,void
+com.applovin.mediation.MaxAdListener,This interface defines a listener intended to be notified about ad events.,"onAdDisplayFailed(MaxAd ad,
+                 int errorCode)",This method is invoked when the ad failed to displayed.,void
+com.applovin.mediation.MaxAdListener,This interface defines a listener intended to be notified about ad events.,onAdHidden(MaxAd ad),This method is invoked when an ad is hidden.,void
+com.applovin.mediation.MaxAdListener,This interface defines a listener intended to be notified about ad events.,onAdLoaded(MaxAd ad),This method is called when a new ad has been loaded.,void
+com.applovin.mediation.MaxAdListener,This interface defines a listener intended to be notified about ad events.,"onAdLoadFailed(java.lang.String adUnitId,
+              int errorCode)",This method is called when an ad could not be retrieved.,void
+com.applovin.mediation.ads.MaxAdView,"This class represents a view-based ad - i.e. banner, mrec or leader.",destroy(),Destroy current ad and fully remove it from memory.,void
+com.applovin.mediation.ads.MaxAdView,"This class represents a view-based ad - i.e. banner, mrec or leader.",getPlacement(),Get the placement to which the ad events are tied to.,java.lang.String
+com.applovin.mediation.ads.MaxAdView,"This class represents a view-based ad - i.e. banner, mrec or leader.",loadAd(),Load the next banner ad.,void
+com.applovin.mediation.ads.MaxAdView,"This class represents a view-based ad - i.e. banner, mrec or leader.",onWindowVisibilityChanged(int visibility),N/A,protected void
+com.applovin.mediation.ads.MaxAdView,"This class represents a view-based ad - i.e. banner, mrec or leader.",setAlpha(float alpha),N/A,void
+com.applovin.mediation.ads.MaxAdView,"This class represents a view-based ad - i.e. banner, mrec or leader.",setBackgroundColor(int color),N/A,void
+com.applovin.mediation.ads.MaxAdView,"This class represents a view-based ad - i.e. banner, mrec or leader.","setExtraParameter(java.lang.String key,
+                 java.lang.String value)",Set an extra parameter to pass to AppLovin server.,void
+com.applovin.mediation.ads.MaxAdView,"This class represents a view-based ad - i.e. banner, mrec or leader.",setListener(MaxAdViewAdListener listener),Set a listener that will be notified about ad events.,void
+com.applovin.mediation.ads.MaxAdView,"This class represents a view-based ad - i.e. banner, mrec or leader.",setPlacement(java.lang.String placement),Set the placement to tie the future ad events to.,void
+com.applovin.mediation.ads.MaxAdView,"This class represents a view-based ad - i.e. banner, mrec or leader.",startAutoRefresh(),Starts or resumes auto-refreshing of the banner.,void
+com.applovin.mediation.ads.MaxAdView,"This class represents a view-based ad - i.e. banner, mrec or leader.",stopAutoRefresh(),Pauses auto-refreshing of the banner.,void
+com.applovin.mediation.ads.MaxAdView,"This class represents a view-based ad - i.e. banner, mrec or leader.",toString(),N/A,java.lang.String
+com.applovin.mediation.MaxAdViewAdListener,This interface defines a listener that is notified about ad view events,onAdCollapsed(MaxAd ad),This method will be invoked when the MaxAdView has collapsed back to its original size.,void
+com.applovin.mediation.MaxAdViewAdListener,This interface defines a listener that is notified about ad view events,onAdExpanded(MaxAd ad),This method will be invoked when the MaxAdView has expanded full screen.,void
+com.applovin.mediation.MaxDebuggerDetailActivity,N/A,N/A,N/A,N/A
+com.applovin.mediation.MaxErrorCodes,Indicates that an attempt to show a fullscreen ad (interstitial or rewarded) was made while another fullscreen ad is still showing.,N/A,N/A,N/A
+com.applovin.mediation.ads.MaxInterstitialAd,This class represents a full screen interstitial ad.,destroy(),Destroy current ad and fully remove it from memory.,void
+com.applovin.mediation.ads.MaxInterstitialAd,This class represents a full screen interstitial ad.,getActivity(),N/A,android.app.Activity
+com.applovin.mediation.ads.MaxInterstitialAd,This class represents a full screen interstitial ad.,isReady(),Check if this ad is ready to be shown.,boolean
+com.applovin.mediation.ads.MaxInterstitialAd,This class represents a full screen interstitial ad.,loadAd(),Load ad for the current interstitial.,void
+com.applovin.mediation.ads.MaxInterstitialAd,This class represents a full screen interstitial ad.,"setExtraParameter(java.lang.String key,
+                 java.lang.String value)",Set an extra parameter to pass to the server.,void
+com.applovin.mediation.ads.MaxInterstitialAd,This class represents a full screen interstitial ad.,setListener(MaxAdListener listener),Set a listener that will be notified about ad events.,void
+com.applovin.mediation.ads.MaxInterstitialAd,This class represents a full screen interstitial ad.,showAd(),Show the loaded interstitial.,void
+com.applovin.mediation.ads.MaxInterstitialAd,This class represents a full screen interstitial ad.,showAd(java.lang.String placement),Show the loaded interstitial ad for a given placement to tie ad events to.,void
+com.applovin.mediation.ads.MaxInterstitialAd,This class represents a full screen interstitial ad.,toString(),N/A,java.lang.String
+com.applovin.mediation.MaxReward,This object represents a reward given to the user.,"create(int amount,
+      java.lang.String label)",Creates an instance of this class with the provided amount and label.,static MaxReward
+com.applovin.mediation.MaxReward,This object represents a reward given to the user.,createDefault(),Creates an instance of this class with the default amount and label.,static MaxReward
+com.applovin.mediation.MaxReward,This object represents a reward given to the user.,getAmount(),Get rewarded amount.,int
+com.applovin.mediation.MaxReward,This object represents a reward given to the user.,getLabel(),Get rewarded label.,java.lang.String
+com.applovin.mediation.MaxReward,This object represents a reward given to the user.,toString(),N/A,java.lang.String
+com.applovin.mediation.ads.MaxRewardedAd,This class represents a full screen rewarded ad.,destroy(),Destroy current ad and fully remove it from memory.,void
+com.applovin.mediation.ads.MaxRewardedAd,This class represents a full screen rewarded ad.,getActivity(),N/A,android.app.Activity
+com.applovin.mediation.ads.MaxRewardedAd,This class represents a full screen rewarded ad.,"getInstance(java.lang.String adUnitId,
+           android.app.Activity activity)",Get an instance of rewarded ad.,static MaxRewardedAd
+com.applovin.mediation.ads.MaxRewardedAd,This class represents a full screen rewarded ad.,"getInstance(java.lang.String adUnitId,
+           AppLovinSdk sdk,
+           android.app.Activity activity)",Get an instance of rewarded ad.,static MaxRewardedAd
+com.applovin.mediation.ads.MaxRewardedAd,This class represents a full screen rewarded ad.,isReady(),Check if this ad is ready to be shown.,boolean
+com.applovin.mediation.ads.MaxRewardedAd,This class represents a full screen rewarded ad.,loadAd(),Load ad for the current rewarded ad.,void
+com.applovin.mediation.ads.MaxRewardedAd,This class represents a full screen rewarded ad.,"setExtraParameter(java.lang.String key,
+                 java.lang.String value)",Set an extra parameter to pass to AppLovin server.,void
+com.applovin.mediation.ads.MaxRewardedAd,This class represents a full screen rewarded ad.,setListener(MaxRewardedAdListener listener),Set a listener that will be notified about ad display events (i.e.,void
+com.applovin.mediation.ads.MaxRewardedAd,This class represents a full screen rewarded ad.,showAd(),Show the loaded rewarded ad.,void
+com.applovin.mediation.ads.MaxRewardedAd,This class represents a full screen rewarded ad.,showAd(java.lang.String placement),Show the loaded rewarded ad for a given placement to tie ad events to.,void
+com.applovin.mediation.ads.MaxRewardedAd,This class represents a full screen rewarded ad.,toString(),N/A,java.lang.String
+com.applovin.mediation.ads.MaxRewardedAd,This class represents a full screen rewarded ad.,updateActivity(android.app.Activity activity),Update currently active activity.,static void
+com.applovin.mediation.MaxRewardedAdListener,This interface defines a listener intended to be notified when a user watches a rewarded video and whether a reward was granted or rejected.,onRewardedVideoCompleted(MaxAd ad),This method will be invoked when rewarded video has completed.,void
+com.applovin.mediation.MaxRewardedAdListener,This interface defines a listener intended to be notified when a user watches a rewarded video and whether a reward was granted or rejected.,onRewardedVideoStarted(MaxAd ad),This method will be invoked when rewarded video has started.,void
+com.applovin.mediation.MaxRewardedAdListener,This interface defines a listener intended to be notified when a user watches a rewarded video and whether a reward was granted or rejected.,"onUserRewarded(MaxAd ad,
+              MaxReward reward)",This method will be invoked when a user should be granted a reward.,void

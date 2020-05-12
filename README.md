@@ -21,7 +21,10 @@ DRIVER_BIN = "../webdriver/chromedriver"
 ``` 
 pip install selenium
 ``` 
-
+4. install commom NLP tools. (eg., nltk, allennlp, spacy,stanza)
+``` 
+pip install nltk/allennlp/spacy/stanza
+``` 
 
 ## Usage
 

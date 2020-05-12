@@ -65,7 +65,7 @@ python3 condition_extractor.py
 
 ## Authors
 
-* **Yue Xiao** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Yue Xiao** - *Initial work* - [PurpleBooth](https://github.com/xiaoyue10131748)
 
 ## Acknowledgments
 

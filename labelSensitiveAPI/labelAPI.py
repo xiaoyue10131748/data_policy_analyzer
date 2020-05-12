@@ -14,10 +14,10 @@ def main():
     xlsx_list = get_raw_file()
     print(xlsx_list)
     for filename in xlsx_list:
-        if filename != "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/data/post_processed_data/200test.xlsx":
-            continue
+        #if filename != "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/data/post_processed_data/200test.xlsx":
+            #continue
         f = filename.split("/data/post_processed_data/")[1]
-        to_filemame = "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/labelAPI/" + f
+        to_filemame = "//Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/data/labeled_API/" + f
         print("===============================" + str(to_filemame))
         if os.path.exists(to_filemame):
             continue
@@ -44,7 +44,7 @@ def label_API(filename):
         sensitive.append(str(phrase_set))
     sheet["labelAPI"] = sensitive
     f = filename.split("/data/post_processed_data/")[1]
-    to_filemame = "/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/labelAPI/" + f
+    to_filemame = "//Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/API_documents/40_API_documentations/data/labeled_API/" + f
     sheet.to_excel(to_filemame, index=False, encoding="utf8",
                 header=["class_name", "class_description","method","method_description","data_type","hump_expression","is_hump","labelAPI"])
 

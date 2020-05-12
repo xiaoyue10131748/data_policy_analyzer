@@ -25,7 +25,7 @@ pip install selenium
 ``` 
 pip install nltk/allennlp/spacy/stanza
 ``` 
-5. install some useful util tool to process tree graph structure. (eg., ete3,networkx)
+5. install some useful util tool to process tree and graph structure. (eg., ete3,networkx)
 ``` 
 pip install ete3/networkx
 ``` 

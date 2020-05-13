@@ -39,7 +39,7 @@ def getshnum(fh):
 
 
 def get_raw_file():
-    xlsx_list = glob.glob('../raw data/40_post_processed_data/apply_Lexicosyntatic_patterns/*.xlsx') #查看同文件夹下的csv文件数
+    xlsx_list = glob.glob('/Users/huthvincent/Documents/research/malicious_library_hunting/data_policy_analyzer/raw data/40_post_processed_data/condition_extraction/*.xlsx') #查看同文件夹下的csv文件数
     print(u'共发现%s个CSV文件'% len(xlsx_list))
     print(u'正在处理............')
     return xlsx_list
